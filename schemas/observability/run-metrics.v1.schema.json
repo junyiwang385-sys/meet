@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-metrics.v1.schema.json",
+  "title": "Harness Run Metrics V1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "identity",
+    "status",
+    "stage_counts",
+    "stage_elapsed_seconds",
+    "llm",
+    "memory",
+    "error_count",
+    "artifact_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "run-metrics.v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "identity": {
+      "$ref": "../observability/run-manifest.v1.schema.json#/$defs/identity"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "total_elapsed_seconds": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "stage_counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "stage_elapsed_seconds": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "llm": {
+      "type": "object",
+      "properties": {
+        "request_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "transport_request_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "http_response_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "response_parse_success_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "successful_response_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "validated_request_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "validation_failed_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retry_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "split_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reused_request_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "memory": {
+      "type": "object"
+    },
+    "error_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "artifact_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

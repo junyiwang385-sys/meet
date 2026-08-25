@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "meeting_transcript_turns_v0.schema.json",
+  "title": "Meeting Transcript Turns V0",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "start", "end", "speaker", "speaker_kind", "text", "chunk_ids"],
+    "properties": {
+      "id": {"type": "integer", "minimum": 1},
+      "start": {"type": "number", "minimum": 0},
+      "end": {"type": "number", "minimum": 0},
+      "speaker": {"type": "string", "minLength": 1},
+      "speaker_kind": {"type": "string", "minLength": 1},
+      "texts": {"type": "array", "items": {"type": "string"}},
+      "text": {"type": "string", "minLength": 1},
+      "chunk_ids": {"type": "array", "items": {"type": "integer", "minimum": 1}}
+    }
+  }
+}

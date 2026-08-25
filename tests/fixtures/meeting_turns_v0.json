@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 4.0,
+    "speaker": "speaker_1",
+    "speaker_kind": "main",
+    "texts": ["讨论安全检查，需要确认进出通道畅通。"],
+    "text": "讨论安全检查，需要确认进出通道畅通。",
+    "chunk_ids": [1]
+  },
+  {
+    "id": 2,
+    "start": 4.2,
+    "end": 8.0,
+    "speaker": "speaker_2",
+    "speaker_kind": "main",
+    "texts": ["决定明天复查，负责人暂未明确。"],
+    "text": "决定明天复查，负责人暂未明确。",
+    "chunk_ids": [2]
+  },
+  {
+    "id": 3,
+    "start": 8.5,
+    "end": 12.0,
+    "speaker": "speaker_1",
+    "speaker_kind": "main",
+    "texts": ["高处作业存在坠落风险，需要继续确认防护措施。"],
+    "text": "高处作业存在坠落风险，需要继续确认防护措施。",
+    "chunk_ids": [3]
+  }
+]

@@ -1,0 +1,44 @@
+.library-shell {
+  background: #fff;
+}
+
+.library-shell .filter-button,
+.library-shell .primary-button,
+.library-shell .secondary-button,
+.library-shell .search-field {
+  border-radius: 0;
+}
+
+.library-shell .new-meeting-popover {
+  width: 310px;
+  padding: 8px;
+}
+
+.library-shell .popover-header {
+  min-height: 35px;
+  padding-inline: 7px;
+}
+
+.library-shell .source-option {
+  min-height: 55px;
+}
+
+.library-shell .source-option-icon {
+  border-radius: 0;
+}
+
+.library-shell .meeting-row:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+
+.library-shell .page-state-action {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 680px) {
+  .library-shell .new-meeting-popover {
+    width: auto;
+  }
+}

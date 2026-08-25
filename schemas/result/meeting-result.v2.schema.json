@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "meeting-result.v2.schema.json",
+  "title": "Meeting Agent Harness Result V2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "harness_version", "status", "run_id", "meeting", "runtime", "artifacts", "errors"],
+  "properties": {
+    "schema_version": {"const": "meeting-result.v2"},
+    "harness_version": {"type": "string"},
+    "status": {"enum": ["running", "ok", "failed"]},
+    "run_id": {"type": "string", "minLength": 1},
+    "meeting": {"$ref": "#/$defs/meeting"},
+    "transcript": {"type": ["object", "null"]},
+    "summary": {"type": ["object", "null"]},
+    "quality": {"type": "object"},
+    "runtime": {"$ref": "#/$defs/runtime"},
+    "artifacts": {"type": "object", "additionalProperties": {"$ref": "#/$defs/artifact"}},
+    "errors": {"type": "array", "items": {"type": "object"}},
+    "output_dir": {"type": "string"}
+  },
+  "$defs": {
+    "meeting": {
+      "type": "object",
+      "required": ["source_audio_sha256", "source_audio_size_bytes"],
+      "additionalProperties": true,
+      "properties": {
+        "meeting_id": {"type": "string"},
+        "source_audio": {"type": "string"},
+        "source_audio_sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+        "source_audio_size_bytes": {"type": "integer", "minimum": 0},
+        "duration_ms": {"type": ["integer", "null"], "minimum": 0}
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "stages": {"type": "object"},
+        "llm": {"type": "object"},
+        "memory": {"type": "object"},
+        "total_elapsed_seconds": {"type": ["number", "null"], "minimum": 0}
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["path"],
+      "additionalProperties": true,
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "size_bytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"}
+      }
+    }
+  }
+}

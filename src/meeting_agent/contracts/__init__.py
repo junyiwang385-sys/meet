@@ -1,0 +1,23 @@
+"""Stable cross-layer contracts for Meeting Agent."""
+
+from .identity import RunIdentity
+from .results import (
+    ERROR_REPORT_SCHEMA_VERSION,
+    HARNESS_VERSION,
+    RESULT_SCHEMA_VERSION,
+    RUN_EVENT_SCHEMA_VERSION,
+    RUN_MANIFEST_SCHEMA_VERSION,
+    RUN_METRICS_SCHEMA_VERSION,
+    SUMMARY_SCHEMA_VERSION,
+)
+
+__all__ = [
+    "RunIdentity",
+    "HARNESS_VERSION",
+    "RESULT_SCHEMA_VERSION",
+    "SUMMARY_SCHEMA_VERSION",
+    "RUN_EVENT_SCHEMA_VERSION",
+    "RUN_MANIFEST_SCHEMA_VERSION",
+    "RUN_METRICS_SCHEMA_VERSION",
+    "ERROR_REPORT_SCHEMA_VERSION",
+]

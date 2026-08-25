@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meeting-agent"
+version = "0.1.0"
+description = "Local-first RK1828 meeting processing agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+meeting-agent-harness = "meeting_agent.harness.main:main"
+meeting-agent-board-agent = "meeting_agent.adapters.board.board_agent_api_v0:main"
+meeting-agent-gateway = "meeting_agent.adapters.gateway.meeting_agent_gateway_v0:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"meeting_agent.adapters.gateway" = ["*.html", "funasr/*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

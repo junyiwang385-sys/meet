@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-event.v1.schema.json",
+  "title": "Harness Run Event V1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "seq", "ts", "level", "trace_id", "meeting_id", "task_id", "run_id", "stage", "event"],
+  "properties": {
+    "schema_version": {"const": "run-event.v1"},
+    "seq": {"type": "integer", "minimum": 1},
+    "ts": {"type": "string", "format": "date-time"},
+    "level": {"enum": ["debug", "info", "warning", "error"]},
+    "trace_id": {"type": "string", "minLength": 1},
+    "meeting_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "stage": {"type": "string", "minLength": 1},
+    "event": {"type": "string", "minLength": 1},
+    "message": {"type": "string"},
+    "duration_ms": {"type": "integer", "minimum": 0},
+    "metrics": {"type": "object"},
+    "artifacts": {"type": ["object", "array"]},
+    "error": {"type": "object"},
+    "request": {"type": "object"},
+    "details": {"type": "object"}
+  }
+}

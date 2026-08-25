@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "meeting-diagnostics.v1.schema.json",
+  "title": "Meeting Diagnostics V1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "stage", "code", "message"],
+  "properties": {
+    "schema_version": {"const": "meeting-diagnostics.v1"},
+    "meeting_id": {"type": "string"},
+    "board_task_id": {"type": "string"},
+    "task_kind": {"type": "string"},
+    "stage": {"type": "string", "minLength": 1},
+    "product_phase": {"type": "string"},
+    "code": {"type": "string", "minLength": 1},
+    "message": {"type": "string"},
+    "return_code": {"type": ["integer", "null"]},
+    "elapsed_seconds": {"type": ["number", "null"], "minimum": 0},
+    "run_id": {"type": "string"},
+    "cause": {"type": "string"},
+    "stage_details": {"type": ["object", "null"]},
+    "artifact_refs": {"type": "object", "additionalProperties": {"type": "string"}},
+    "worker_log_ref": {"type": "string"},
+    "truncated": {"type": "boolean"}
+  }
+}

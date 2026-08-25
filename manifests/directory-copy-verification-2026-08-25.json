@@ -1,0 +1,1299 @@
+{
+  "schema_version": "directory-copy-verification.v1",
+  "generated_at": "2026-08-25T03:26:49.609676Z",
+  "source_root": "D:\\Meeting_Agent_fresh",
+  "destination_root": "D:\\Meeting_Agent_mainline",
+  "copy_mode": "copy-then-verify",
+  "file_count": 214,
+  "total_bytes": 9228784,
+  "protected_source_unchanged": true,
+  "entries": [
+    {
+      "source": ".gitignore",
+      "destination": ".gitignore",
+      "size": 859,
+      "sha256": "73cdb8692c3ffa97a322f909dac4234d39de52dd804ae3f9c8f08e98f6e4220b"
+    },
+    {
+      "source": "docs/architecture/RK1828会议助手-技术方案与选型.md",
+      "destination": "docs/architecture/RK1828会议助手-技术方案与选型.md",
+      "size": 13136,
+      "sha256": "c231c8f078c69f10c631bf2b5b43f3857e7efbd8b37ee363790468ee6fe276f2"
+    },
+    {
+      "source": "docs/inventory/2026-08-20-project-layout.md",
+      "destination": "docs/inventory/2026-08-20-project-layout.md",
+      "size": 6135,
+      "sha256": "7c5ac2045327e9a3daeeadee715530cb41f21e91eeffd311d27e00c2f597108c"
+    },
+    {
+      "source": "docs/inventory/board-sync-20260820.md",
+      "destination": "docs/inventory/board-sync-20260820.md",
+      "size": 4182,
+      "sha256": "444ca43933f7447465efbd987c05f0052c27ec0baad8a2cc1d1df4985d188208"
+    },
+    {
+      "source": "docs/operations/extraction.md",
+      "destination": "docs/operations/extraction.md",
+      "size": 454,
+      "sha256": "e6aaf29dd6a95e4072f78f7741b4ef24d929fbe92dd60c24d5004cc891e294e4"
+    },
+    {
+      "source": "docs/operations/rk1828_qwen_asr_llm_deployment_summary.md",
+      "destination": "docs/operations/rk1828_qwen_asr_llm_deployment_summary.md",
+      "size": 13049,
+      "sha256": "2ca6b63375bf8c5f5a6352324962bc7e40ead5cf2022df870bfc14598a3af22f"
+    },
+    {
+      "source": "docs/reference/rockchip/Rockchip_RK182X_Quick_Start_RKNN3_SDK_V1.0.0_CN.pdf",
+      "destination": "docs/reference/rockchip/Rockchip_RK182X_Quick_Start_RKNN3_SDK_V1.0.0_CN.pdf",
+      "size": 5389840,
+      "sha256": "b594f7a8ac713bcfb503e8f37cf0011a1a725515238c7a81d6469f8c5f6af842"
+    },
+    {
+      "source": "docs/reference/rockchip/Rockchip_RK182X_ReleaseNote_RKNN3_SDK_V1.0.0_CN.pdf",
+      "destination": "docs/reference/rockchip/Rockchip_RK182X_ReleaseNote_RKNN3_SDK_V1.0.0_CN.pdf",
+      "size": 588108,
+      "sha256": "4f0ef4e93d4536e2025c0e4ddfd8d550a41387c8036cf1ce61905e71520972e7"
+    },
+    {
+      "source": "docs/reference/rockchip/Rockchip_RKNPU3_ReleaseNote_RKNN3_SDK_V1.0.4_CN.pdf",
+      "destination": "docs/reference/rockchip/Rockchip_RKNPU3_ReleaseNote_RKNN3_SDK_V1.0.4_CN.pdf",
+      "size": 796970,
+      "sha256": "d8ac1b6e23d205d59f162956afc3bdc12d09eb97f38ad927a2b905c639c6e369"
+    },
+    {
+      "source": "docs/troubleshooting/2026-08-10_Meeting_Agent_fresh目录重构报告.md",
+      "destination": "docs/troubleshooting/2026-08-10_Meeting_Agent_fresh目录重构报告.md",
+      "size": 6220,
+      "sha256": "5aa364861250f171b03700ba348728492ca8250b418bbce3cdc6fc1b7fd2e299"
+    },
+    {
+      "source": "docs/troubleshooting/2026-08-10_RK1828_Qwen3-ASR批处理优化方案与验证结果.md",
+      "destination": "docs/troubleshooting/2026-08-10_RK1828_Qwen3-ASR批处理优化方案与验证结果.md",
+      "size": 9602,
+      "sha256": "26218e160d42412f6dfc533a797d36359dcbeea19d52c3aa0e07d49614bbf24a"
+    },
+    {
+      "source": "docs/troubleshooting/extraction.md",
+      "destination": "docs/troubleshooting/extraction.md",
+      "size": 468,
+      "sha256": "4c72ae5009c21452ffaf8201723a57c419403e3ef257b3630a2c8e60e8f483e8"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/.gitignore",
+      "destination": "frontend/meeting-agent-ui-v1/.gitignore",
+      "size": 32,
+      "sha256": "14c5fa3058a51a5c28557903432f9024889771eab6d8085c55012aaca9a5d537"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/index.html",
+      "destination": "frontend/meeting-agent-ui-v1/index.html",
+      "size": 417,
+      "sha256": "bf2baad6e6c6b01c6ad2c00e2048ec9351ea8bb8f6a328ba6b83d78cb1b57e96"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/package-lock.json",
+      "destination": "frontend/meeting-agent-ui-v1/package-lock.json",
+      "size": 43151,
+      "sha256": "43ea3ad6f5d1e540425969f7d0d44129f44ff75b03eb451d9737a863e314722b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/package.json",
+      "destination": "frontend/meeting-agent-ui-v1/package.json",
+      "size": 571,
+      "sha256": "09227447e4a56d5e4e0d02476430fe8caaa38304e71a88fe9b9b20a214422150"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/public/brand/xgimi-logo.jpg",
+      "destination": "frontend/meeting-agent-ui-v1/public/brand/xgimi-logo.jpg",
+      "size": 9777,
+      "sha256": "f9fe479bd0b60ceba6dac19b01121a90cebc2d4624fe20a29a3d0c77d26121fe"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/api/gateway-meeting-api.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/api/gateway-meeting-api.ts",
+      "size": 9735,
+      "sha256": "d686ee5a7ccbc2620d2f21b956c5c809c0b29648e5df398e4e9ad6197ef8b09b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/api/index.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/api/index.ts",
+      "size": 501,
+      "sha256": "4af73b0f4526e9c13e65e4b8ca64cf449f120469e7db6007bb65af18ee556d2e"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/api/meeting-api.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/api/meeting-api.ts",
+      "size": 6811,
+      "sha256": "8ea9eba3874895d3151581d272598893bec35c9656d11ad28ecd8f5cae428232"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/api/mock-meeting-api.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/api/mock-meeting-api.ts",
+      "size": 32091,
+      "sha256": "4145aa0021b9c0ce3cda5a29cd801a944a6d358012990b790681e62ba9b0f62d"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/api/types.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/api/types.ts",
+      "size": 13874,
+      "sha256": "53a2e9f64114822d402070e9a2f6899195099a3283a65d3d7ef1d0350b83f331"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/app/App.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/app/App.tsx",
+      "size": 2594,
+      "sha256": "f39a1186a22fab418e545552a9497536735eae35c7fea790e4dda95b685f91f0"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/app/GatewayBoundary.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/app/GatewayBoundary.tsx",
+      "size": 2162,
+      "sha256": "2f0189963bfc300f55077432f3e29637c5ea5b886f45e1ad5fce56d6de820196"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/app/upload-draft.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/app/upload-draft.tsx",
+      "size": 1998,
+      "sha256": "75f9e1a85b3d4ba3d4a6dc2160aa656673e92054bb8159315b08ca5ab66d8a6b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/components/Brand.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/components/Brand.tsx",
+      "size": 359,
+      "sha256": "a4a874a4c97ebd6159d9770bdd8acc7550723f1f8cbde5c0e424c1842231fb9b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/components/Icons.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/components/Icons.tsx",
+      "size": 3211,
+      "sha256": "aedc4667cba084f2cca6905d9ed1af29e776acc0b9994a9390e332b8503e0408"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/components/NewMeetingPopover.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/components/NewMeetingPopover.tsx",
+      "size": 3939,
+      "sha256": "9741a0dd4ebdd3eec906f15a407af70c22d163340843c75745097670659ac369"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/components/PageState.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/components/PageState.tsx",
+      "size": 445,
+      "sha256": "e7ed3bfe00479005d90a738d64710acf90a70624aa0d493c45f18eb7c08666c4"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/components/Toast.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/components/Toast.tsx",
+      "size": 243,
+      "sha256": "5104a186786cf0501704291cada49cda9972bbfa427695c2d46b61600ec9fe9d"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/formal/MeetingFormalPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/formal/MeetingFormalPage.css",
+      "size": 7548,
+      "sha256": "dc7c099d13132281d11c87d0744557370e3898803d2433d6a10c46a2f2ae9797"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/formal/MeetingFormalPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/formal/MeetingFormalPage.tsx",
+      "size": 13460,
+      "sha256": "b95ad17aedccd5ad2aa09139c2d182ee1c7acf170e0d693bba27efbeef9af755"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/import/LocalAudioImportPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/import/LocalAudioImportPage.css",
+      "size": 5449,
+      "sha256": "4497a3cc0afd54c3dc85a3ef5a822a41a66cfea819aecde78ccee8389a0c15f3"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/import/LocalAudioImportPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/import/LocalAudioImportPage.tsx",
+      "size": 8529,
+      "sha256": "611f1c515a520545c37f012a843332b2d43b5fbcc2d165ef75266b682e54f0e4"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/meetings/MeetingLibraryPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/meetings/MeetingLibraryPage.css",
+      "size": 700,
+      "sha256": "10b6c3143748895a70f9fada69ef546d58c7a987f0d8b560a8106ec77503658a"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/meetings/MeetingLibraryPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/meetings/MeetingLibraryPage.tsx",
+      "size": 9298,
+      "sha256": "031caa3f76d9bb9bc29bab92248b658038a88339bb74130ceca9780a3736cc75"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/playback/MeetingPlaybackPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/playback/MeetingPlaybackPage.css",
+      "size": 8141,
+      "sha256": "05d9ae851bee877a26e6c6148f02b427b26778b1e95f53b80d649fac8df0253f"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/playback/MeetingPlaybackPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/playback/MeetingPlaybackPage.tsx",
+      "size": 16567,
+      "sha256": "932d100fd1eaca7ff02fdfe5ed2e4fcc96fbf20ece83ace8a6a443357fef7046"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/processing/MeetingProcessingPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/processing/MeetingProcessingPage.css",
+      "size": 10177,
+      "sha256": "ca5ff7406ffa77c0ba27df563714f599ba417cbddacf6d3dcb1b1a53b84a5d34"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/processing/MeetingProcessingPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/processing/MeetingProcessingPage.tsx",
+      "size": 17685,
+      "sha256": "6199b81949eeec6e12593c7e217280068ab8da63dfbe9997a9d7a3d8f01346e0"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/recording/BoardRecordingPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/recording/BoardRecordingPage.css",
+      "size": 1657,
+      "sha256": "e9e47ecec86b21b957ac489b62d6f13f11874426cef72c1a18caf5242c31b1e7"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/recording/BoardRecordingPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/recording/BoardRecordingPage.tsx",
+      "size": 21177,
+      "sha256": "bc94bc7f30af0ae6915f0010a9a52408d49cf436599e56ac29fd6f51169bbc84"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/recording/PcRecordingPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/recording/PcRecordingPage.css",
+      "size": 12613,
+      "sha256": "b69c0bc36640d0a5bd378e8915ad39bae73a0afbf7d42befe492b176c30c278b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/recording/PcRecordingPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/recording/PcRecordingPage.tsx",
+      "size": 24743,
+      "sha256": "171c85c2d98c598c824c756b4f6ef39859e08229cd6690bb7ef93150d5e2d075"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/review/MeetingReviewPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/review/MeetingReviewPage.css",
+      "size": 22855,
+      "sha256": "e777c890e0ae0f6f39db02a21e3880266c6c7ff8314252574cddee0c3a7784a0"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/review/MeetingReviewPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/review/MeetingReviewPage.tsx",
+      "size": 55284,
+      "sha256": "0fe0d61525ac3c9d60a995355bb8bda7fdab4396604cb30fcbbe5804f25b06eb"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/settings/SettingsPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/settings/SettingsPage.css",
+      "size": 6721,
+      "sha256": "55be4ba6bdf30249acafeced5f38bd14133b23fb98fd6da550532e968d52668f"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/settings/SettingsPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/settings/SettingsPage.tsx",
+      "size": 15474,
+      "sha256": "e2f5799852ad8ff1ba45d01918ce3cf74b1a7e63c05f391255c34d602aac0592"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/settings/StorageManagementPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/settings/StorageManagementPage.css",
+      "size": 8432,
+      "sha256": "229ed6763ccfbeedba0daeba1c5bac58cc74ad4187dbab67949d4065d514ab39"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/settings/StorageManagementPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/settings/StorageManagementPage.tsx",
+      "size": 16045,
+      "sha256": "267201ec003c9279b5f24848ac1b51d9a906e997a700233f936a53e35618b79b"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/shared/PlaceholderPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/shared/PlaceholderPage.tsx",
+      "size": 568,
+      "sha256": "a25aea3dfc358a5dd8a212c10cea96a2a69759a3358227c8bab451c68c1ad8f1"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/shared/StagePageShell.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/shared/StagePageShell.css",
+      "size": 5584,
+      "sha256": "789af710107d1d496ed2c552e8f7c98ec11961530de73e59230d6cb45d84ec88"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/shared/StagePageShell.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/shared/StagePageShell.tsx",
+      "size": 4103,
+      "sha256": "78979b58d63f5261d241c4f0ace3fcd031609e819830cd297cb739fe69ee6dd3"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/shared/WorkspaceShell.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/shared/WorkspaceShell.tsx",
+      "size": 1588,
+      "sha256": "d62090a4c43d93df902ae61f770b6de5b6a8d095fbfdffbd8d5aa3617e20c420"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/storage/StorageInsufficientPage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/storage/StorageInsufficientPage.css",
+      "size": 13828,
+      "sha256": "5c92ed4eb71049b047d3f5ce66103b2b6841f83f8eb16e56c22485b1dca77b02"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/storage/StorageInsufficientPage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/storage/StorageInsufficientPage.tsx",
+      "size": 16360,
+      "sha256": "2889ab37bbb66c34d00179fc0f2eb9a0aaac540eed953fffa59f212aae37c11f"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/BoardOfflinePage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/BoardOfflinePage.css",
+      "size": 8672,
+      "sha256": "6b606872c3d0a7977120c4b7744043ffed1fc6a81345e365958418bc02e6781c"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/BoardOfflinePage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/BoardOfflinePage.tsx",
+      "size": 9417,
+      "sha256": "b140cec9f82c0b22846ebf8506ea8600a0b6d39d8d93d1cc0cb5387f819d5c84"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/GatewayOfflinePage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/GatewayOfflinePage.css",
+      "size": 12238,
+      "sha256": "77a15246922e1d25331bd414ab0c600cebbff7aa24d20904b0ee7888ae4ef8da"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/GatewayOfflinePage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/GatewayOfflinePage.tsx",
+      "size": 9386,
+      "sha256": "bff86a94bb8871061769f94a846acabdec8009fa3a2ea21081a692a9c732f83d"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/ResultUnavailablePage.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/ResultUnavailablePage.css",
+      "size": 13790,
+      "sha256": "feab98afc622e9b822e7393ad25fecd4932e75dbb534725908d7d6473ce807ad"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/features/system/ResultUnavailablePage.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/features/system/ResultUnavailablePage.tsx",
+      "size": 16993,
+      "sha256": "7842ceefaeb0623a83823e54c7f024b06f00ca7acdc3738404a9fade48b9647d"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/fixtures/meetings.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/fixtures/meetings.ts",
+      "size": 23944,
+      "sha256": "c85426f95273426d7b61e9a240ded558428b10870df520187a2a8546dbcefa10"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/main.tsx",
+      "destination": "frontend/meeting-agent-ui-v1/src/main.tsx",
+      "size": 810,
+      "sha256": "d880181bd654e71ee6faa2da15d1709e9799915048e13aa7c511e1c7d5d26007"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/styles/global.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/styles/global.css",
+      "size": 19785,
+      "sha256": "e55c07280753db11e03da807f33935db957d08159fe0a0d1099236a72d14b557"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/styles/tokens.css",
+      "destination": "frontend/meeting-agent-ui-v1/src/styles/tokens.css",
+      "size": 727,
+      "sha256": "c5feac1e998e99373e397e479f8a9569d750b5316bb094bc396eefcf7e18d484"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/src/vite-env.d.ts",
+      "destination": "frontend/meeting-agent-ui-v1/src/vite-env.d.ts",
+      "size": 209,
+      "sha256": "7067a898f941d27936f59c44e5b6cc1f86b61ce042fac88b9636f4ac5bd4cc7c"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/tsconfig.app.json",
+      "destination": "frontend/meeting-agent-ui-v1/tsconfig.app.json",
+      "size": 678,
+      "sha256": "1ef548f49ec4ae21325000b60b0b711c4f3d94befa37b1157f94e4628e3f398c"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/tsconfig.json",
+      "destination": "frontend/meeting-agent-ui-v1/tsconfig.json",
+      "size": 119,
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/tsconfig.node.json",
+      "destination": "frontend/meeting-agent-ui-v1/tsconfig.node.json",
+      "size": 413,
+      "sha256": "2fba2f25e1859f193b54edef5d2d2cd08cae2a37fab64c08699f6f8672bea2cc"
+    },
+    {
+      "source": "frontend/meeting-agent-ui-v1/vite.config.ts",
+      "destination": "frontend/meeting-agent-ui-v1/vite.config.ts",
+      "size": 136,
+      "sha256": "0709465427668ae85ef999f63762d7a06fd92962363fe8cc142ad656d3548115"
+    },
+    {
+      "source": "manifests/extracted-source-20260825.json",
+      "destination": "manifests/extracted-source-20260825.json",
+      "size": 7553,
+      "sha256": "70c86c2d5b9f82bd67a289484528dd69fb19a609c372fcdce385d54f040a5235"
+    },
+    {
+      "source": "prompts/meeting_minutes_compact_json_zh.txt",
+      "destination": "prompts/meeting_minutes_compact_json_zh.txt",
+      "size": 1565,
+      "sha256": "91cc7bdac1362642b623a43e69f94197a1ee2506262d1ac3bac3c672369d2a14"
+    },
+    {
+      "source": "prompts/meeting_minutes_map_v0_zh.txt",
+      "destination": "prompts/meeting_minutes_map_v0_zh.txt",
+      "size": 1613,
+      "sha256": "116f38f2492ce5820a1316963c75429eff9d5a9b9723c69393ada67f911b9f5d"
+    },
+    {
+      "source": "prompts/meeting_minutes_reduce_v0_zh.txt",
+      "destination": "prompts/meeting_minutes_reduce_v0_zh.txt",
+      "size": 1632,
+      "sha256": "c2962b68ea9d1dd2f30c7e70e1d722465b228a0d4d05b9fcdda3f15f4cab1770"
+    },
+    {
+      "source": "prompts/meeting_overview_map_v0_zh.txt",
+      "destination": "prompts/meeting_overview_map_v0_zh.txt",
+      "size": 1521,
+      "sha256": "b02bcbcaecf4c289e5aa0054b940c58b7b8765eaff1e68c128b3ade2355b2da6"
+    },
+    {
+      "source": "prompts/meeting_overview_reduce_v0_zh.txt",
+      "destination": "prompts/meeting_overview_reduce_v0_zh.txt",
+      "size": 1622,
+      "sha256": "2a7893237479e7255446a8cd94abeb903725b1acb768586394ab9768c55b6271"
+    },
+    {
+      "source": "pyproject.toml",
+      "destination": "pyproject.toml",
+      "size": 766,
+      "sha256": "82b22100fef79c165476c806d1ad426abc7f946ac13800e599d5e65c16a7e2d3"
+    },
+    {
+      "source": "schemas/README.md",
+      "destination": "schemas/README.md",
+      "size": 355,
+      "sha256": "4d63e9d0e9ae6165174f70900d4eb5887768e62b7192bac8299bc72200aaee8e"
+    },
+    {
+      "source": "schemas/meeting/meeting_minutes_map_v0.schema.json",
+      "destination": "schemas/meeting/meeting_minutes_map_v0.schema.json",
+      "size": 3257,
+      "sha256": "2d79a7ad5e6b28f4fc2421c04d22e6c2a7b9b0abec6269cf9a8737b7828ad6ee"
+    },
+    {
+      "source": "schemas/meeting/meeting_overview_map_v0.schema.json",
+      "destination": "schemas/meeting/meeting_overview_map_v0.schema.json",
+      "size": 1652,
+      "sha256": "d5bf51e204b70ababaf244ebaebaba60014e7a78da7acf2c84aa49ec44161db6"
+    },
+    {
+      "source": "schemas/meeting/meeting_overview_v0.schema.json",
+      "destination": "schemas/meeting/meeting_overview_v0.schema.json",
+      "size": 1444,
+      "sha256": "6bb7ced934f98c3fd0d213746e3916e783fa2d41d1f66610a4aaf5bd27fa84de"
+    },
+    {
+      "source": "schemas/meeting_minutes_map_v0.schema.json",
+      "destination": "schemas/meeting_minutes_map_v0.schema.json",
+      "size": 3257,
+      "sha256": "2d79a7ad5e6b28f4fc2421c04d22e6c2a7b9b0abec6269cf9a8737b7828ad6ee"
+    },
+    {
+      "source": "schemas/meeting_minutes_v0.schema.json",
+      "destination": "schemas/meeting_minutes_v0.schema.json",
+      "size": 3459,
+      "sha256": "a89e8b925dda4279f2dcb65ce0c03caa57208a7fbcc6a0d2e6d0394904a310c5"
+    },
+    {
+      "source": "schemas/meeting_overview_map_v0.schema.json",
+      "destination": "schemas/meeting_overview_map_v0.schema.json",
+      "size": 1652,
+      "sha256": "d5bf51e204b70ababaf244ebaebaba60014e7a78da7acf2c84aa49ec44161db6"
+    },
+    {
+      "source": "schemas/meeting_overview_v0.schema.json",
+      "destination": "schemas/meeting_overview_v0.schema.json",
+      "size": 1444,
+      "sha256": "6bb7ced934f98c3fd0d213746e3916e783fa2d41d1f66610a4aaf5bd27fa84de"
+    },
+    {
+      "source": "schemas/meeting_transcript_turns_v0.schema.json",
+      "destination": "schemas/meeting_transcript_turns_v0.schema.json",
+      "size": 779,
+      "sha256": "53d2624448ad94ba987d4df37dfa0f3e4ad349f8ac607ef7b004a20e88327bad"
+    },
+    {
+      "source": "schemas/observability/error-report.v1.schema.json",
+      "destination": "schemas/observability/error-report.v1.schema.json",
+      "size": 876,
+      "sha256": "4494c61ce3eb59901bc45d900e3350fe9cbb4e10ed9c4315a10b87c72e416b5f"
+    },
+    {
+      "source": "schemas/observability/run-event.v1.schema.json",
+      "destination": "schemas/observability/run-event.v1.schema.json",
+      "size": 1121,
+      "sha256": "a59a534372f92ba6700994b7875a904e6e0464704d13ac1ed7b7cce6885f16e2"
+    },
+    {
+      "source": "schemas/observability/run-manifest.v1.schema.json",
+      "destination": "schemas/observability/run-manifest.v1.schema.json",
+      "size": 1353,
+      "sha256": "28d8319dadadac32c2e2b78b0c8db59a43a5ac1861e8e609896c57fa9cffa874"
+    },
+    {
+      "source": "schemas/observability/run-metrics.v1.schema.json",
+      "destination": "schemas/observability/run-metrics.v1.schema.json",
+      "size": 1080,
+      "sha256": "176adcb664bb153c26a9828d42b2b960c35952e65d56bf88f35917a39308d17b"
+    },
+    {
+      "source": "schemas/result/meeting-diagnostics.v1.schema.json",
+      "destination": "schemas/result/meeting-diagnostics.v1.schema.json",
+      "size": 1032,
+      "sha256": "5c0aa12fc9054d69ccd8bb9296d4bb423c956c4d97a24c7c3c8d8fdff0d9a931"
+    },
+    {
+      "source": "schemas/result/meeting-result.v2.schema.json",
+      "destination": "schemas/result/meeting-result.v2.schema.json",
+      "size": 2080,
+      "sha256": "68d212a585fdb57ffa53291af2a8b921001b652d87192fccf6b485935d3a4b55"
+    },
+    {
+      "source": "schemas/summary/meeting_minutes_v0.schema.json",
+      "destination": "schemas/summary/meeting_minutes_v0.schema.json",
+      "size": 3459,
+      "sha256": "a89e8b925dda4279f2dcb65ce0c03caa57208a7fbcc6a0d2e6d0394904a310c5"
+    },
+    {
+      "source": "schemas/transcript/meeting_transcript_turns_v0.schema.json",
+      "destination": "schemas/transcript/meeting_transcript_turns_v0.schema.json",
+      "size": 779,
+      "sha256": "53d2624448ad94ba987d4df37dfa0f3e4ad349f8ac607ef7b004a20e88327bad"
+    },
+    {
+      "source": "snapshots/README.md",
+      "destination": "snapshots/README.md",
+      "size": 284,
+      "sha256": "d7be8fd9d1327585a9be250aa5acca51f05e81665d379683d2e757d6c455872d"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/SHA256SUMS",
+      "destination": "snapshots/board_sync_20260820/SHA256SUMS",
+      "size": 5095,
+      "sha256": "e74d8555976bb5c0cc9cee72db744eae72afcfd60fc193682381bfe65d3a84a7"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py",
+      "size": 85740,
+      "sha256": "05bfb07fe9ca28df144c26e0159a72a30a94a1e394d844077a7d67c1d6da49a6"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py.bak_before_token_limit_fix_20260812-142419",
+      "destination": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py.bak_before_token_limit_fix_20260812-142419",
+      "size": 85273,
+      "sha256": "fb64762a1143d661766d9b990bb28a3968779635f1e7b83929141e35d918f48d"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py.bak_qwen3_20260812",
+      "destination": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_minutes_map_reduce_v0.py.bak_qwen3_20260812",
+      "size": 85123,
+      "sha256": "def1993ca0cdb057e03cd8cf1fdb43d0c971588349b484ec692046a69accbf29"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_overview_map_reduce_v0.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board/minutes/meeting_overview_map_reduce_v0.py",
+      "size": 55299,
+      "sha256": "ce97dc99f49f9adeea32883edd392c5623b9063ff225256259a2170a7d7ceb9b"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_3dspeaker_asr_chain.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_3dspeaker_asr_chain.py",
+      "size": 6862,
+      "sha256": "9e21e06701681e77fe0a3f28023cf1f0918a0736f456a16bfd81a806d8aa0329"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_3dspeaker_segment_prepare.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_3dspeaker_segment_prepare.py",
+      "size": 15271,
+      "sha256": "0159372d38beb7703fe72534021278e0bcfe508f6749af6d891ca38569000f58"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_3dspeaker_segment_prepare_absorb_unknown.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_3dspeaker_segment_prepare_absorb_unknown.py",
+      "size": 26650,
+      "sha256": "389908df2d6ec4b1287259e410ee8461f9a900cfcca9cbd368be9fffbfd56508"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_agent_api_v0.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_agent_api_v0.py",
+      "size": 36379,
+      "sha256": "65e6c1ba78496e6d7be2e46203e7933cf6774b75fb5a8f2677dee379f62d8433"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_agent_api_v0.py.pre_harness_20260818",
+      "destination": "snapshots/board_sync_20260820/scripts/board_agent_api_v0.py.pre_harness_20260818",
+      "size": 26195,
+      "sha256": "90ffcc66f8dfa36ff5cbecbc5dfeabbfc2fc1b78bd3b5e1c0a63c1e56ca53863"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_asr_direct_flac_eval.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_asr_direct_flac_eval.py",
+      "size": 5737,
+      "sha256": "d25aee321bf58ebab7b4f60f7f5c99e9e658190b1176983f86260737bc547c8d"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_asr_eval_common.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_asr_eval_common.py",
+      "size": 16796,
+      "sha256": "d445abd46cd87674bf36781b27d4d6ff795b4fbd9aaea6c502b0c4302bd66249"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_asr_standard_wav_eval.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_asr_standard_wav_eval.py",
+      "size": 12761,
+      "sha256": "72c506ff63c1724fcdab7294679fc742861e988bd27fdfdf9b6bddfd9a2cd8c7"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_full_meeting_pipeline_profile.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_full_meeting_pipeline_profile.py",
+      "size": 13477,
+      "sha256": "0b22f6f4d9dc8d75fb4da7306f5f8650a15972b6eecd359b81df948c1ad69407"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_harness_result_stats.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_harness_result_stats.py",
+      "size": 6050,
+      "sha256": "5c1dc8efb4a1afa0b75db07ff0e0c35685140d3edc798de4990e277812a48c7c"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_harness_timeline_test.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_harness_timeline_test.py",
+      "size": 9879,
+      "sha256": "c783dccb4837c8fa178b25902c20de55e680bfd55eaa375823f5d14218feb3fb"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_harness_window_stats.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_harness_window_stats.py",
+      "size": 12163,
+      "sha256": "43efe3c8e0c0a21fb886026eb154b4ed060f7d86284a2feddf9ecd5a25941ac1"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_harness_worker_v0.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_harness_worker_v0.py",
+      "size": 14670,
+      "sha256": "ef4e0bd43f4a87fda5312e77b70d9565087a999618264e4c6cc994440a8c4f03"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_inspect_chapter_overlap.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_inspect_chapter_overlap.py",
+      "size": 5667,
+      "sha256": "dd0c040b805bf11847726cd53e2eb2c22301dd89a777026f0dca7aacba9b4ddb"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_meeting_chain_profile.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_meeting_chain_profile.py",
+      "size": 27798,
+      "sha256": "6ec3516b10b5c8f83235810302c622bce26b00d2183aa570449cc5867366c324"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_rkllm_context_memory_probe.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_rkllm_context_memory_probe.py",
+      "size": 7611,
+      "sha256": "b900c39c3cf2f2e9b1506d6e07bbb06c8124bc5133c706788bde5ac809e4eba1"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_rkllm_server_start_probe.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_rkllm_server_start_probe.py",
+      "size": 6055,
+      "sha256": "d8f19b75c1833694e4338c800eef72edaeefbd58dbcb300b4526061f0ba9bade"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_segment_asr_batch.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_segment_asr_batch.py",
+      "size": 15116,
+      "sha256": "8002cfa2a98371b3ab331dc6284621c3d3dd4d0efd3401ceb78a37d88fd05804"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/board_timeline_summary_profile.py",
+      "destination": "snapshots/board_sync_20260820/scripts/board_timeline_summary_profile.py",
+      "size": 20068,
+      "sha256": "b06fc0e547aea30f85c9876f7c25dabe49a8dfcd700f217b5867af9880702f2f"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/diarization_segment_plan_stats.py",
+      "destination": "snapshots/board_sync_20260820/scripts/diarization_segment_plan_stats.py",
+      "size": 24346,
+      "sha256": "c67c4bb66c442c446bb5cebeec0366ad70fab7ecebdf7bfbf2839a4b32b21abc"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/evaluate_segment_asr_with_textgrid.py",
+      "destination": "snapshots/board_sync_20260820/scripts/evaluate_segment_asr_with_textgrid.py",
+      "size": 16910,
+      "sha256": "094df48d716cd8297a118af23038b9b485450e9e2ef8335d55d78edf4c5a108e"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/__init__.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/__init__.py",
+      "size": 167,
+      "sha256": "183b14e27204b584031f37ccd5a5280dc28fb1af1370e4d915a39b77f3e7c990"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/artifacts.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/artifacts.py",
+      "size": 4977,
+      "sha256": "9a4c6ca8ce3785704c28299ef5be6942960a33966d3e2f452d86d069d2a65094"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/chunking.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/chunking.py",
+      "size": 6853,
+      "sha256": "3f661a98c5748e26d07179e214bd312a4771d5c910aadeb8f81be9d8c1d5f4c2"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/compat_export.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/compat_export.py",
+      "size": 9207,
+      "sha256": "f20c43aa8115525ad790c4466f9ab561a96f38bae32212379609e12d42a7427e"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/display.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/display.py",
+      "size": 5264,
+      "sha256": "5c815d77703f6f2bb9b388d7a69f4d444cb1cbb8f52a5cf1f30cf64c8715e895"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/llm.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/llm.py",
+      "size": 23383,
+      "sha256": "f453e0cc534517b3869ebf6543e86bc09fda66829bffb07ac32ab68cec62127c"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/main.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/main.py",
+      "size": 5176,
+      "sha256": "01f320f63121e31ac6d138abd2e449f2357a6898283c1c85fbf88deccca2d010"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/pipeline.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/pipeline.py",
+      "size": 41643,
+      "sha256": "260756a5900913fc3945e72d78f759c84686b38a791488c8a97b4f779713e0b7"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/prefix_test.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/prefix_test.py",
+      "size": 16852,
+      "sha256": "0bac64944dccb9d37425747f50afe1551cc7a0796a0153b2ad3315cc1dc0db6b"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/product_summary.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/product_summary.py",
+      "size": 85984,
+      "sha256": "528a61c545b7048010b3b482fe78e4b39b98c1554d35e2a64e93018fe5349dae"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/product_summary.py.previous",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/product_summary.py.previous",
+      "size": 37570,
+      "sha256": "0188880d632deb9ead06dfd135726cfd0d649ff99c61e37fc567224608f08e91"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/product_summary.py.v11",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/product_summary.py.v11",
+      "size": 39836,
+      "sha256": "66decf4bb6b279bb7b9d65bb5c7d02876df52d5221e44d829ce7bb43ba6189c8"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/runlog.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/runlog.py",
+      "size": 18053,
+      "sha256": "239d6eb57b79f84fa4a6a093bff5563aae443f4ff08264773c093cb40eca7250"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/summary.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/summary.py",
+      "size": 17619,
+      "sha256": "85fe95b5ab69f47b21ee99aef672d601c497a3518183bb992067c966bc56f129"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/transcript.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/transcript.py",
+      "size": 4612,
+      "sha256": "b158190d61858231ab890ad22ba1af024dd13b4743cbad7901b02741926d72a3"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/harness/validation.py",
+      "destination": "snapshots/board_sync_20260820/scripts/harness/validation.py",
+      "size": 12343,
+      "sha256": "0af8ed4bb3b9a8461db8a5134234293da878716ef1410ba9c557087e27648307"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/patch_board_segment_asr_batch_drop_finished_text.py",
+      "destination": "snapshots/board_sync_20260820/scripts/patch_board_segment_asr_batch_drop_finished_text.py",
+      "size": 1138,
+      "sha256": "cd591b3eb1e6e654638f0d0275803f5eab6a2756aea36e79d9421cdf025b208a"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/patch_board_segment_asr_batch_filter_finished.py",
+      "destination": "snapshots/board_sync_20260820/scripts/patch_board_segment_asr_batch_filter_finished.py",
+      "size": 1722,
+      "sha256": "4ef0420f701181ad36a89e45ccf461fa6b5027b4318eb90fde777b312debcf19"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/patch_infer_diarization_rknn_vad_score_floor.py",
+      "destination": "snapshots/board_sync_20260820/scripts/patch_infer_diarization_rknn_vad_score_floor.py",
+      "size": 1917,
+      "sha256": "96e20659186d7db15f7cdaac04ddbf54d01657130e5b16d4a062417fd050fdab"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/patch_infer_diarization_rknn_vad_score_floor_indent_fix.py",
+      "destination": "snapshots/board_sync_20260820/scripts/patch_infer_diarization_rknn_vad_score_floor_indent_fix.py",
+      "size": 1776,
+      "sha256": "3941f2f7aac1ba1b8bef5b14fd680d0b895487036684a7d703229732eaf69296"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/rk1828_v104_meeting_chain_smoke.py",
+      "destination": "snapshots/board_sync_20260820/scripts/rk1828_v104_meeting_chain_smoke.py",
+      "size": 28757,
+      "sha256": "2a4bee201c35c1b801e6deef91b8a3f6e839dda49c5a3ecf350e00b7388ad48e"
+    },
+    {
+      "source": "snapshots/board_sync_20260820/scripts/segment_duration_distribution.py",
+      "destination": "snapshots/board_sync_20260820/scripts/segment_duration_distribution.py",
+      "size": 2911,
+      "sha256": "3b6431959ff81a11c646bcea8a06378179c7c538e952944723fc99104d761922"
+    },
+    {
+      "source": "src/meeting_agent/__init__.py",
+      "destination": "src/meeting_agent/__init__.py",
+      "size": 74,
+      "sha256": "252484bc273aeec37dcc8291cb3555f2145d3a6df19fab2c1bc7b115109e0a10"
+    },
+    {
+      "source": "src/meeting_agent/adapters/README.md",
+      "destination": "src/meeting_agent/adapters/README.md",
+      "size": 414,
+      "sha256": "4848728b11ffaddb5f1044806dc8db2652286625c75c55d78c53d25968ec82e3"
+    },
+    {
+      "source": "src/meeting_agent/adapters/__init__.py",
+      "destination": "src/meeting_agent/adapters/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/__init__.py",
+      "destination": "src/meeting_agent/adapters/board/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/asr/__init__.py",
+      "destination": "src/meeting_agent/adapters/board/asr/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/asr/meeting_spk_asr_batch_v1.py",
+      "destination": "src/meeting_agent/adapters/board/asr/meeting_spk_asr_batch_v1.py",
+      "size": 14931,
+      "sha256": "5ef5894260b8b6942c40a715ac713f692217e3b8043da69d610e71b83ff185fa"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/asr/meeting_spk_asr_v1.py",
+      "destination": "src/meeting_agent/adapters/board/asr/meeting_spk_asr_v1.py",
+      "size": 33439,
+      "sha256": "f6d2de7f08230e10c9cfc37b4d5730c975ef2f3c7e771ad5a7e39bf5615cf520"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/board_agent_api_v0.py",
+      "destination": "src/meeting_agent/adapters/board/board_agent_api_v0.py",
+      "size": 41688,
+      "sha256": "87acb08c6e58d0ac7d6ecdbabd7902732cb00de2cf8f82cc94557f7ff0835aa3"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/board_harness_worker_v0.py",
+      "destination": "src/meeting_agent/adapters/board/board_harness_worker_v0.py",
+      "size": 21146,
+      "sha256": "6cbc7ed07df18b06a3e1ff40fb72c117061a13fbf03821293b87118ce7b57718"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/llm/__init__.py",
+      "destination": "src/meeting_agent/adapters/board/llm/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/llm/rkllm_smoke_test.py",
+      "destination": "src/meeting_agent/adapters/board/llm/rkllm_smoke_test.py",
+      "size": 6517,
+      "sha256": "45ea307fbd7056f14ea5880b91fc0b21a34c4ddb4c25b997bef4a985971cce41"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/minutes/__init__.py",
+      "destination": "src/meeting_agent/adapters/board/minutes/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/minutes/meeting_minutes_map_reduce_v0.py",
+      "destination": "src/meeting_agent/adapters/board/minutes/meeting_minutes_map_reduce_v0.py",
+      "size": 88193,
+      "sha256": "d2a9d0de91447f7ee9aafc243e24cca7f6a6e649da9a9d81b41be48d64620839"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/minutes/meeting_overview_map_reduce_v0.py",
+      "destination": "src/meeting_agent/adapters/board/minutes/meeting_overview_map_reduce_v0.py",
+      "size": 56749,
+      "sha256": "210ff4672d378f9fd4968e00839b6aae76fdae109f5d4ebe9ca7d8507109501c"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/smoke/__init__.py",
+      "destination": "src/meeting_agent/adapters/board/smoke/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/board/smoke/rk1828_v104_meeting_chain_smoke.py",
+      "destination": "src/meeting_agent/adapters/board/smoke/rk1828_v104_meeting_chain_smoke.py",
+      "size": 28757,
+      "sha256": "2a4bee201c35c1b801e6deef91b8a3f6e839dda49c5a3ecf350e00b7388ad48e"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/__init__.py",
+      "destination": "src/meeting_agent/adapters/gateway/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/funasr/__init__.py",
+      "destination": "src/meeting_agent/adapters/gateway/funasr/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/funasr/funasr_pc_asr_server.py",
+      "destination": "src/meeting_agent/adapters/gateway/funasr/funasr_pc_asr_server.py",
+      "size": 23638,
+      "sha256": "4a1299ebf4841c5f55707328dacec0007669ef8b81649544d9b661f026375e3c"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/funasr/requirements-funasr-pc.txt",
+      "destination": "src/meeting_agent/adapters/gateway/funasr/requirements-funasr-pc.txt",
+      "size": 191,
+      "sha256": "f30bf467761fd9c13d1bcdf9c50941535a2efa91695dc94155e436417c5e9e54"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/gateway_settings.py",
+      "destination": "src/meeting_agent/adapters/gateway/gateway_settings.py",
+      "size": 11285,
+      "sha256": "94ed7492c8aa8c9b0eef536797f6e95c394bf6b7994eb686c7704b6676001507"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/gateway_storage.py",
+      "destination": "src/meeting_agent/adapters/gateway/gateway_storage.py",
+      "size": 7414,
+      "sha256": "d263371395b2dc271b45937352b2030d37ea283d3eb9f7b2b3cfd6fc0ce03819"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_ui_v0.html",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_ui_v0.html",
+      "size": 20276,
+      "sha256": "a781bba64cbd649216877daab25966dce792b8790d4d8ca42dcbc607d3ae767c"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_v0.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_v0.py",
+      "size": 118668,
+      "sha256": "84906b7e0cd19040450b684a6fa18fad031eb368085a0c542532bd94232b4877"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/meeting_library.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_library.py",
+      "size": 13048,
+      "sha256": "83cac55cf8545329a8905a89d8a6c575c9a3227d115ec28f711e13bca05cbab2"
+    },
+    {
+      "source": "src/meeting_agent/adapters/gateway/meeting_result_adapter.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_result_adapter.py",
+      "size": 12928,
+      "sha256": "1e0eb5176c33812b844bb40b80a8e4d63fb9b49e63623ef7c9a4461df8fc3bd5"
+    },
+    {
+      "source": "src/meeting_agent/cli/__init__.py",
+      "destination": "src/meeting_agent/cli/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/cli/board_agent.py",
+      "destination": "src/meeting_agent/cli/board_agent.py",
+      "size": 148,
+      "sha256": "c4c81db27bce40d7191872d51c40a559aeb2003cef788e3e5284b7bb614c71cb"
+    },
+    {
+      "source": "src/meeting_agent/cli/gateway.py",
+      "destination": "src/meeting_agent/cli/gateway.py",
+      "size": 178,
+      "sha256": "0dd0e60ac0808bc240f46276e05c21a841cca060d4dc8b4303f23a6608a9c3ee"
+    },
+    {
+      "source": "src/meeting_agent/cli/harness.py",
+      "destination": "src/meeting_agent/cli/harness.py",
+      "size": 143,
+      "sha256": "bf60130fa842b0b5de5597b7065b0c8589a7341608c405f3e30051d05bf29500"
+    },
+    {
+      "source": "src/meeting_agent/contracts/__init__.py",
+      "destination": "src/meeting_agent/contracts/__init__.py",
+      "size": 593,
+      "sha256": "0308fb573080c71ce13d54963c9f6b4dc1e6da3044315a5263fea66499522be9"
+    },
+    {
+      "source": "src/meeting_agent/contracts/errors.py",
+      "destination": "src/meeting_agent/contracts/errors.py",
+      "size": 5459,
+      "sha256": "7341c00b56bd72cee41a1e0ffdf352cf1416e36f54ffd29cd2fd813f554d6f7e"
+    },
+    {
+      "source": "src/meeting_agent/contracts/identity.py",
+      "destination": "src/meeting_agent/contracts/identity.py",
+      "size": 1219,
+      "sha256": "e13d8b0652444c0eb1640f6cfc7703fb98850c9d5241da59e7e2ba6adf66e300"
+    },
+    {
+      "source": "src/meeting_agent/contracts/results.py",
+      "destination": "src/meeting_agent/contracts/results.py",
+      "size": 843,
+      "sha256": "5da81eed78c05a352d2ced53d315deaf435b11b786f92d6c75857ac2ac2d9a50"
+    },
+    {
+      "source": "src/meeting_agent/harness/__init__.py",
+      "destination": "src/meeting_agent/harness/__init__.py",
+      "size": 233,
+      "sha256": "550e7b221135e2a6d3f8766e3d7fed68c41426ccb4df88497dcd09c87beb684d"
+    },
+    {
+      "source": "src/meeting_agent/harness/artifacts.py",
+      "destination": "src/meeting_agent/harness/artifacts.py",
+      "size": 129,
+      "sha256": "3c0d82ee65c6cc45d50ab1f0921e30dafa6ef1105b27a1d15480cb794ac09243"
+    },
+    {
+      "source": "src/meeting_agent/harness/errors.py",
+      "destination": "src/meeting_agent/harness/errors.py",
+      "size": 1220,
+      "sha256": "756ad5970428427d1e29a44e108863b06f76dde7c64c5c6efadd4d1bead596e1"
+    },
+    {
+      "source": "src/meeting_agent/harness/lifecycle.py",
+      "destination": "src/meeting_agent/harness/lifecycle.py",
+      "size": 8715,
+      "sha256": "e1d96e2b22ba112482c68790809754eeb5f9530ad2809bf7b17de469f935b13c"
+    },
+    {
+      "source": "src/meeting_agent/harness/main.py",
+      "destination": "src/meeting_agent/harness/main.py",
+      "size": 5176,
+      "sha256": "01f320f63121e31ac6d138abd2e449f2357a6898283c1c85fbf88deccca2d010"
+    },
+    {
+      "source": "src/meeting_agent/harness/pipeline.py",
+      "destination": "src/meeting_agent/harness/pipeline.py",
+      "size": 33402,
+      "sha256": "eca838ec57e84d8924078ebcf0a386e2bd05593a1168c3f0347e41d1849475ab"
+    },
+    {
+      "source": "src/meeting_agent/llm/__init__.py",
+      "destination": "src/meeting_agent/llm/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/llm/chunking.py",
+      "destination": "src/meeting_agent/llm/chunking.py",
+      "size": 7054,
+      "sha256": "5de2d8c80b3dae89501c6de050df5ca4b7aecb8b5e1a8542c5f55aaa8a5a8e38"
+    },
+    {
+      "source": "src/meeting_agent/llm/llm.py",
+      "destination": "src/meeting_agent/llm/llm.py",
+      "size": 23392,
+      "sha256": "6cae0c604bc67c771b18542b943c7bf07b083ee677b5a77fb5104512002addba"
+    },
+    {
+      "source": "src/meeting_agent/observability/__init__.py",
+      "destination": "src/meeting_agent/observability/__init__.py",
+      "size": 227,
+      "sha256": "50ff61966953104f1110c53b9d674b90c94ec804cfc436cee11a292adfcaf94d"
+    },
+    {
+      "source": "src/meeting_agent/observability/error_report.py",
+      "destination": "src/meeting_agent/observability/error_report.py",
+      "size": 1963,
+      "sha256": "2672a07236bed59a8708cc4c414272fc95502f1666a6e05272da0676a01d08da"
+    },
+    {
+      "source": "src/meeting_agent/observability/metrics.py",
+      "destination": "src/meeting_agent/observability/metrics.py",
+      "size": 2050,
+      "sha256": "61e8940c8909ba29bfe870dc47c35466112310aeb3f4718c054b1ccebb27ed63"
+    },
+    {
+      "source": "src/meeting_agent/observability/runlog.py",
+      "destination": "src/meeting_agent/observability/runlog.py",
+      "size": 9880,
+      "sha256": "61966f0a790eb1ca64672a302cee5f5832f8eee7cd0cd6a14fb9a43bb0fd32a0"
+    },
+    {
+      "source": "src/meeting_agent/stages/__init__.py",
+      "destination": "src/meeting_agent/stages/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/stages/compat_export.py",
+      "destination": "src/meeting_agent/stages/compat_export.py",
+      "size": 9480,
+      "sha256": "6a6921356614c88497399da69c1e0a00ee9608fa1fe20cf07e3d090fde6b2c38"
+    },
+    {
+      "source": "src/meeting_agent/stages/display.py",
+      "destination": "src/meeting_agent/stages/display.py",
+      "size": 5264,
+      "sha256": "5c815d77703f6f2bb9b388d7a69f4d444cb1cbb8f52a5cf1f30cf64c8715e895"
+    },
+    {
+      "source": "src/meeting_agent/stages/product_summary.py",
+      "destination": "src/meeting_agent/stages/product_summary.py",
+      "size": 86003,
+      "sha256": "8baac77310280977730beee9500197922e8efb150a9a22f2ac7c511a8ab79e21"
+    },
+    {
+      "source": "src/meeting_agent/stages/transcript.py",
+      "destination": "src/meeting_agent/stages/transcript.py",
+      "size": 4745,
+      "sha256": "a2309fb30714f2b8401b9923066af544419dd05c47ace29ae5afceeec660627c"
+    },
+    {
+      "source": "src/meeting_agent/stages/validation.py",
+      "destination": "src/meeting_agent/stages/validation.py",
+      "size": 12343,
+      "sha256": "0af8ed4bb3b9a8461db8a5134234293da878716ef1410ba9c557087e27648307"
+    },
+    {
+      "source": "src/meeting_agent/storage/__init__.py",
+      "destination": "src/meeting_agent/storage/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "src/meeting_agent/storage/artifacts.py",
+      "destination": "src/meeting_agent/storage/artifacts.py",
+      "size": 4977,
+      "sha256": "9a4c6ca8ce3785704c28299ef5be6942960a33966d3e2f452d86d069d2a65094"
+    },
+    {
+      "source": "tests/contract/__init__.py",
+      "destination": "tests/contract/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/contract/test_schema_inventory.py",
+      "destination": "tests/contract/test_schema_inventory.py",
+      "size": 1170,
+      "sha256": "75865e137eba80dbb2f40e51415d0b62e337f904021cb0e85ef4474df199ab53"
+    },
+    {
+      "source": "tests/fixtures/meeting_turns_v0.json",
+      "destination": "tests/fixtures/meeting_turns_v0.json",
+      "size": 838,
+      "sha256": "918f89be6d87390174c9daf2627c213a2f8b5c1b792035a5e3269a47a30c5d2a"
+    },
+    {
+      "source": "tests/integration/__init__.py",
+      "destination": "tests/integration/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/integration/test_extracted_sidecars.py",
+      "destination": "tests/integration/test_extracted_sidecars.py",
+      "size": 1650,
+      "sha256": "8a550ab1e378123f7002c01fb6dbeaea7ed3b136fba74f60e6b0054bcb0d6766"
+    },
+    {
+      "source": "tests/unit/__init__.py",
+      "destination": "tests/unit/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/unit/harness/__init__.py",
+      "destination": "tests/unit/harness/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/unit/harness/test_package_import.py",
+      "destination": "tests/unit/harness/test_package_import.py",
+      "size": 792,
+      "sha256": "dd01b053271282be6eacbf95874ebcc8119c8cd2a78f1100d9440ba2cc235397"
+    },
+    {
+      "source": "tests/unit/llm/__init__.py",
+      "destination": "tests/unit/llm/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/unit/llm/test_chunking.py",
+      "destination": "tests/unit/llm/test_chunking.py",
+      "size": 433,
+      "sha256": "9e95d266e25529a614b5ebbeb95b667aeacd7775239337775abeb41ad551b431"
+    },
+    {
+      "source": "tests/unit/observability/__init__.py",
+      "destination": "tests/unit/observability/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/unit/observability/test_runlog.py",
+      "destination": "tests/unit/observability/test_runlog.py",
+      "size": 7495,
+      "sha256": "2813701a5d682f59419bcc3217fe9989f753979f888902ff8a36debb0ac895ae"
+    },
+    {
+      "source": "tests/unit/stages/__init__.py",
+      "destination": "tests/unit/stages/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "tests/unit/stages/test_meeting_minutes_map_reduce_v0.py",
+      "destination": "tests/unit/stages/test_meeting_minutes_map_reduce_v0.py",
+      "size": 15831,
+      "sha256": "665ad949799481c8bab08b1c64ba046d53c494eaf54a4cc0f43d37774419b9d7"
+    },
+    {
+      "source": "tests/unit/stages/test_meeting_overview_map_reduce_v0.py",
+      "destination": "tests/unit/stages/test_meeting_overview_map_reduce_v0.py",
+      "size": 17160,
+      "sha256": "9eb717afe549461413c315fda59ec11df7e96f036fad5e90607330a3ab52fc27"
+    }
+  ],
+  "notes": [
+    "Generated split documentation is intentionally excluded from source-equality entries: docs/contracts/source-map.md"
+  ]
+}

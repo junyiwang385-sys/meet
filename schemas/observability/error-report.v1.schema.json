@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "error-report.v1.schema.json",
+  "title": "Harness Error Report V1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "generated_at", "identity", "status", "error", "diagnosis"],
+  "properties": {
+    "schema_version": {"const": "error-report.v1"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "identity": {"$ref": "../observability/run-manifest.v1.schema.json#/$defs/identity"},
+    "status": {"const": "failed"},
+    "error": {"type": "object", "required": ["stage", "code", "category", "message", "retryable"]},
+    "stage_details": {"type": ["object", "null"]},
+    "log_tail": {"type": ["string", "null"]},
+    "diagnosis": {"type": "object", "required": ["agent_enabled", "inputs"]},
+    "result_status": {"type": ["string", "null"]}
+  }
+}

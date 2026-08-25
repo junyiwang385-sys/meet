@@ -1,0 +1,55 @@
+# Python / editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+._*
+
+# Local environments
+.venv*/
+.conda*/
+.rknn3_v100/
+.cache/
+.modelscope/
+
+# Secrets / local machine state
+.ssh_transfer/
+.claude/
+.codex/
+.agents/
+
+# Model weights, generated artifacts, and build scratch
+output/
+tmp/
+hf_models/
+SenseVoiceSmall/
+audio/
+local_test_results/
+lifelog-summarizer-v1/
+
+# Vendored upstream repos checked out locally
+rknn3-model-zoo/
+rknn3-toolkit/
+
+# Frontend dependencies and build output
+frontend/**/node_modules/
+frontend/**/dist/
+
+# Runtime logs
+*.log
+
+# Generated calibration arrays can be rebuilt and are large.
+data/lifelog_quant/dataset_np/
+
+# Large model formats if they appear outside ignored dirs
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.rknn
+*.weight
+*.bin
+*.npy
+*.gguf

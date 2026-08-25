@@ -1,0 +1,84 @@
+.board-record-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 9px;
+  border: 1px solid var(--color-rule);
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-muted);
+  font-size: 9px;
+}
+
+.board-record-badge::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
+
+.board-record-badge-recording {
+  color: var(--color-success);
+}
+
+.board-record-badge-starting,
+.board-record-badge-stopping {
+  color: var(--color-warning);
+}
+
+.board-record-badge-disconnected,
+.board-record-badge-error {
+  color: var(--color-danger);
+}
+
+.board-record-timer {
+  margin-top: 17px;
+}
+
+.board-record-primary {
+  min-width: 126px;
+}
+
+.pc-record-context-disconnected,
+.pc-device-state-disconnected {
+  color: var(--color-danger);
+}
+
+.pc-record-context-starting,
+.pc-record-context-stopping,
+.pc-device-state-starting,
+.pc-device-state-stopping {
+  color: var(--color-warning);
+}
+
+.board-record-check-dot-idle,
+.board-record-check-dot-starting,
+.board-record-live-dot-idle,
+.board-record-live-dot-starting {
+  background: var(--color-muted);
+}
+
+.board-record-check-dot-recording,
+.board-record-check-dot-saved,
+.board-record-live-dot-recording {
+  background: var(--color-success);
+}
+
+.board-record-check-dot-stopping,
+.board-record-live-dot-stopping {
+  background: var(--color-warning);
+}
+
+.board-record-check-dot-disconnected,
+.board-record-check-dot-error,
+.board-record-live-dot-disconnected,
+.board-record-live-dot-error {
+  background: var(--color-danger);
+}
+
+.board-record-unknown-state {
+  color: var(--color-danger);
+  font-family: inherit;
+  font-size: 11px;
+}

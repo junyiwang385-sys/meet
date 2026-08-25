@@ -1,0 +1,140 @@
+{
+  "schema_version": "extracted-source-manifest.v1",
+  "generated_for": "2026-08-25 parallel source extraction",
+  "source_root": "D:\\Meeting_Agent_fresh",
+  "entries": [
+    {
+      "source": "board_sync_20260820/scripts/harness/main.py",
+      "destination": "src/meeting_agent/harness/main.py",
+      "source_sha256": "01f320f63121e31ac6d138abd2e449f2357a6898283c1c85fbf88deccca2d010",
+      "destination_sha256": "01f320f63121e31ac6d138abd2e449f2357a6898283c1c85fbf88deccca2d010",
+      "note": "current Harness CLI"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/pipeline.py",
+      "destination": "src/meeting_agent/harness/pipeline.py",
+      "source_sha256": "260756a5900913fc3945e72d78f759c84686b38a791488c8a97b4f779713e0b7",
+      "destination_sha256": "eca838ec57e84d8924078ebcf0a386e2bd05593a1168c3f0347e41d1849475ab",
+      "note": "current pipeline adapted to src package"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/transcript.py",
+      "destination": "src/meeting_agent/stages/transcript.py",
+      "source_sha256": "b158190d61858231ab890ad22ba1af024dd13b4743cbad7901b02741926d72a3",
+      "destination_sha256": "a2309fb30714f2b8401b9923066af544419dd05c47ace29ae5afceeec660627c",
+      "note": "current transcript stage"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/product_summary.py",
+      "destination": "src/meeting_agent/stages/product_summary.py",
+      "source_sha256": "528a61c545b7048010b3b482fe78e4b39b98c1554d35e2a64e93018fe5349dae",
+      "destination_sha256": "8baac77310280977730beee9500197922e8efb150a9a22f2ac7c511a8ab79e21",
+      "note": "current product summary stage"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/validation.py",
+      "destination": "src/meeting_agent/stages/validation.py",
+      "source_sha256": "0af8ed4bb3b9a8461db8a5134234293da878716ef1410ba9c557087e27648307",
+      "destination_sha256": "0af8ed4bb3b9a8461db8a5134234293da878716ef1410ba9c557087e27648307",
+      "note": "current validation stage"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/compat_export.py",
+      "destination": "src/meeting_agent/stages/compat_export.py",
+      "source_sha256": "f20c43aa8115525ad790c4466f9ab561a96f38bae32212379609e12d42a7427e",
+      "destination_sha256": "6a6921356614c88497399da69c1e0a00ee9608fa1fe20cf07e3d090fde6b2c38",
+      "note": "current compatibility export"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/display.py",
+      "destination": "src/meeting_agent/stages/display.py",
+      "source_sha256": "5c815d77703f6f2bb9b388d7a69f4d444cb1cbb8f52a5cf1f30cf64c8715e895",
+      "destination_sha256": "5c815d77703f6f2bb9b388d7a69f4d444cb1cbb8f52a5cf1f30cf64c8715e895",
+      "note": "current display projection"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/llm.py",
+      "destination": "src/meeting_agent/llm/llm.py",
+      "source_sha256": "f453e0cc534517b3869ebf6543e86bc09fda66829bffb07ac32ab68cec62127c",
+      "destination_sha256": "6cae0c604bc67c771b18542b943c7bf07b083ee677b5a77fb5104512002addba",
+      "note": "current LLM transport"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/chunking.py",
+      "destination": "src/meeting_agent/llm/chunking.py",
+      "source_sha256": "3f661a98c5748e26d07179e214bd312a4771d5c910aadeb8f81be9d8c1d5f4c2",
+      "destination_sha256": "5de2d8c80b3dae89501c6de050df5ca4b7aecb8b5e1a8542c5f55aaa8a5a8e38",
+      "note": "current context chunking"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/artifacts.py",
+      "destination": "src/meeting_agent/storage/artifacts.py",
+      "source_sha256": "9a4c6ca8ce3785704c28299ef5be6942960a33966d3e2f452d86d069d2a65094",
+      "destination_sha256": "9a4c6ca8ce3785704c28299ef5be6942960a33966d3e2f452d86d069d2a65094",
+      "note": "current artifact storage"
+    },
+    {
+      "source": "board_sync_20260820/scripts/harness/runlog.py",
+      "destination": "src/meeting_agent/observability/runlog.py",
+      "source_sha256": "239d6eb57b79f84fa4a6a093bff5563aae443f4ff08264773c093cb40eca7250",
+      "destination_sha256": "61966f0a790eb1ca64672a302cee5f5832f8eee7cd0cd6a14fb9a43bb0fd32a0",
+      "note": "current runlog refactored into observability package"
+    },
+    {
+      "source": "scripts/board/board_agent_api_v0.py",
+      "destination": "src/meeting_agent/adapters/board/board_agent_api_v0.py",
+      "source_sha256": "bcaf86ed217b4a773e196a54b21bdd20cceed652a71c79cf34a7e1a5f5ad4d48",
+      "destination_sha256": "87acb08c6e58d0ac7d6ecdbabd7902732cb00de2cf8f82cc94557f7ff0835aa3",
+      "note": "current Board Agent adapter"
+    },
+    {
+      "source": "scripts/board/board_harness_worker_v0.py",
+      "destination": "src/meeting_agent/adapters/board/board_harness_worker_v0.py",
+      "source_sha256": "6cbc7ed07df18b06a3e1ff40fb72c117061a13fbf03821293b87118ce7b57718",
+      "destination_sha256": "6cbc7ed07df18b06a3e1ff40fb72c117061a13fbf03821293b87118ce7b57718",
+      "note": "current cancellable Worker adapter"
+    },
+    {
+      "source": "scripts/pc/meeting_agent_gateway_v0.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_v0.py",
+      "source_sha256": "b0988e2190284b70dbf8f2b0c293c725f4ad70802a794bc7b810ccc7baeeddd4",
+      "destination_sha256": "84906b7e0cd19040450b684a6fa18fad031eb368085a0c542532bd94232b4877",
+      "note": "current Windows Gateway adapter"
+    },
+    {
+      "source": "scripts/pc/meeting_library.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_library.py",
+      "source_sha256": "83cac55cf8545329a8905a89d8a6c575c9a3227d115ec28f711e13bca05cbab2",
+      "destination_sha256": "83cac55cf8545329a8905a89d8a6c575c9a3227d115ec28f711e13bca05cbab2",
+      "note": "current meeting storage library"
+    },
+    {
+      "source": "scripts/pc/gateway_settings.py",
+      "destination": "src/meeting_agent/adapters/gateway/gateway_settings.py",
+      "source_sha256": "34545b32cde46174b8dd320b01d9813f46641a41cc7acdb5790e7b24cfa77839",
+      "destination_sha256": "94ed7492c8aa8c9b0eef536797f6e95c394bf6b7994eb686c7704b6676001507",
+      "note": "current settings persistence"
+    },
+    {
+      "source": "scripts/pc/gateway_storage.py",
+      "destination": "src/meeting_agent/adapters/gateway/gateway_storage.py",
+      "source_sha256": "d263371395b2dc271b45937352b2030d37ea283d3eb9f7b2b3cfd6fc0ce03819",
+      "destination_sha256": "d263371395b2dc271b45937352b2030d37ea283d3eb9f7b2b3cfd6fc0ce03819",
+      "note": "current storage projection"
+    },
+    {
+      "source": "scripts/pc/meeting_result_adapter.py",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_result_adapter.py",
+      "source_sha256": "1e0eb5176c33812b844bb40b80a8e4d63fb9b49e63623ef7c9a4461df8fc3bd5",
+      "destination_sha256": "1e0eb5176c33812b844bb40b80a8e4d63fb9b49e63623ef7c9a4461df8fc3bd5",
+      "note": "current result projection"
+    },
+    {
+      "source": "scripts/pc/meeting_agent_gateway_ui_v0.html",
+      "destination": "src/meeting_agent/adapters/gateway/meeting_agent_gateway_ui_v0.html",
+      "source_sha256": "a781bba64cbd649216877daab25966dce792b8790d4d8ca42dcbc607d3ae767c",
+      "destination_sha256": "a781bba64cbd649216877daab25966dce792b8790d4d8ca42dcbc607d3ae767c",
+      "note": "current Gateway technical validation UI; runtime logs intentionally excluded"
+    }
+  ]
+}

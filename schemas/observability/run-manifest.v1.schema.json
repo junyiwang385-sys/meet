@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-manifest.v1.schema.json",
+  "title": "Harness Run Manifest V1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "generated_at", "identity", "harness_version", "result_schema_version", "source_audio", "output_dir", "config", "sidecars"],
+  "properties": {
+    "schema_version": {"const": "run-manifest.v1"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "identity": {"$ref": "#/$defs/identity"},
+    "harness_version": {"type": "string"},
+    "result_schema_version": {"type": "string"},
+    "source_audio": {"type": "object", "required": ["path", "sha256", "size_bytes"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}, "size_bytes": {"type": "integer", "minimum": 0}}},
+    "output_dir": {"type": "string"},
+    "config": {"type": "object"},
+    "config_identity": {"type": ["object", "null"]},
+    "sidecars": {"type": "object", "required": ["run_events", "run_metrics", "error_report", "stage_status"]}
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "required": ["trace_id", "meeting_id", "task_id", "run_id"],
+      "properties": {"trace_id": {"type": "string"}, "meeting_id": {"type": "string"}, "task_id": {"type": "string"}, "run_id": {"type": "string"}}
+    }
+  }
+}

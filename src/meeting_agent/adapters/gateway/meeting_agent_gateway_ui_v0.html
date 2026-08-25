@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端侧会议助手</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --panel-muted: #f8fafc;
+      --text: #172033;
+      --muted: #667085;
+      --line: #dbe3ef;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --success: #15803d;
+      --warning: #b45309;
+      --danger: #b42318;
+      --shadow: 0 16px 40px rgba(23, 32, 51, 0.08);
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+    }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; opacity: 0.52; }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 48px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(26px, 4vw, 38px); line-height: 1.15; }
+    .subtitle { margin: 10px 0 0; color: var(--muted); line-height: 1.65; }
+
+    .badge {
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .badge::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #98a2b3;
+      content: "";
+    }
+    .badge.ready { color: var(--success); border-color: #b7e1c1; }
+    .badge.ready::before { background: var(--success); }
+    .badge.error { color: var(--danger); border-color: #f2c3c0; }
+    .badge.error::before { background: var(--danger); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: 18px;
+    }
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .panel h2 { margin: 0 0 16px; font-size: 18px; }
+    .panel h3 { margin: 24px 0 10px; font-size: 14px; }
+
+    .connection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel-muted);
+    }
+    .connection small { display: block; margin-top: 3px; color: var(--muted); }
+    .task-choice {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+    .task-choice label { color: var(--muted); font-size: 13px; font-weight: 700; }
+    .task-choice select {
+      width: 100%;
+      min-height: 40px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      color: var(--text);
+    }
+    .task-choice small { color: var(--muted); line-height: 1.45; }
+
+    .dropzone {
+      display: block;
+      padding: 24px;
+      border: 1px dashed #9db4d4;
+      border-radius: 14px;
+      background: #f8fbff;
+      text-align: center;
+      transition: border-color 120ms ease, background 120ms ease;
+    }
+    .dropzone:hover { border-color: var(--primary); background: #f1f6ff; }
+    .dropzone strong { display: block; margin-bottom: 6px; }
+    .dropzone span { color: var(--muted); font-size: 13px; }
+    .dropzone input { width: 100%; margin-top: 16px; }
+
+    .file-card {
+      display: none;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel-muted);
+    }
+    .file-card.visible { display: block; }
+    .file-name { overflow-wrap: anywhere; font-weight: 700; }
+    .file-meta { margin-top: 4px; color: var(--muted); font-size: 13px; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .button {
+      min-height: 40px;
+      padding: 9px 15px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .button.primary { background: var(--primary); color: #fff; }
+    .button.primary:hover:not(:disabled) { background: var(--primary-dark); }
+    .button.secondary { border-color: var(--line); background: var(--panel); color: var(--text); }
+    .button.danger { border-color: #f2c3c0; background: #fff7f6; color: var(--danger); }
+
+    .notice {
+      min-height: 24px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .notice.success { color: var(--success); }
+    .notice.error { color: var(--danger); }
+    .notice.warning { color: var(--warning); }
+
+    .kv { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 9px 14px; margin: 0; font-size: 14px; }
+    .kv dt { color: var(--muted); }
+    .kv dd { min-width: 0; margin: 0; overflow-wrap: anywhere; font-weight: 600; }
+    .state-pill {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 12px;
+    }
+    .state-pill.success { background: #ecfdf3; color: var(--success); }
+    .state-pill.warning { background: #fffaeb; color: var(--warning); }
+    .state-pill.error { background: #fff1f0; color: var(--danger); }
+
+    .json-box {
+      max-height: 280px;
+      overflow: auto;
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #111827;
+      color: #d1fae5;
+      font: 12px/1.55 Consolas, "Courier New", monospace;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .footnote { margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+
+    @media (max-width: 760px) {
+      .hero { display: block; }
+      .badge { margin-top: 16px; }
+      .grid { grid-template-columns: 1fr; }
+      .panel { padding: 18px; }
+      .kv { grid-template-columns: 118px minmax(0, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Local Meeting Agent</p>
+        <h1>端侧智能会议助手</h1>
+        <p class="subtitle">选择本地 WAV，通过 PC Gateway 发送到开发板，查看输入完整性和任务状态。</p>
+      </div>
+      <div id="healthBadge" class="badge">未检查连接</div>
+    </header>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>连接与上传</h2>
+        <div class="connection">
+          <div>
+            <strong>Gateway 本地通道</strong>
+            <small id="healthDetail">等待健康检查</small>
+          </div>
+          <button id="healthButton" class="button secondary" type="button">检查连接</button>
+        </div>
+
+        <div class="task-choice">
+          <label for="taskKind">处理模式</label>
+          <select id="taskKind">
+            <option value="harness_meeting_v0">Harness 完整链路（Qwen3-4B 16K）</option>
+            <option value="audio_upload_probe">仅上传完整性探针</option>
+          </select>
+          <small>当前不启用此前失败的 Qwen3-8B 配置。Harness 会依次运行分段、Batch ASR、Timeline、摘要和兼容导出。</small>
+        </div>
+
+        <label class="dropzone" for="audioFile">
+          <strong>选择非敏感 WAV 文件</strong>
+          <span>音频只发送到局域网开发板，不上传公共云</span>
+          <input id="audioFile" type="file" accept=".wav,audio/wav,audio/x-wav">
+        </label>
+        <div id="fileCard" class="file-card">
+          <div id="fileName" class="file-name"></div>
+          <div id="fileMeta" class="file-meta"></div>
+        </div>
+
+        <div class="actions">
+          <button id="uploadButton" class="button primary" type="button" disabled>创建并上传</button>
+          <button id="refreshButton" class="button secondary" type="button" disabled>刷新状态</button>
+          <button id="resultButton" class="button secondary" type="button" disabled>查看会议结果</button>
+          <button id="cancelButton" class="button danger" type="button" disabled>取消任务</button>
+        </div>
+        <div id="notice" class="notice">请选择 WAV 文件后开始。</div>
+        <p class="footnote">上传探针的 completed 只表示 input_verified。Harness 模式只有进入 meeting_ready 后，才表示当前脚本链路已生成会议结果；这仍属于技术验证，不代表生产级会议处理完成。</p>
+      </section>
+
+      <section class="panel">
+        <h2>任务证据</h2>
+        <dl class="kv">
+          <dt>会议 ID</dt><dd id="meetingId">—</dd>
+          <dt>板端任务 ID</dt><dd id="boardTaskId">—</dd>
+          <dt>状态</dt><dd id="taskState">—</dd>
+          <dt>阶段</dt><dd id="taskStage">—</dd>
+          <dt>处理配置</dt><dd id="modelProfile">—</dd>
+          <dt>输入大小</dt><dd id="inputSize">—</dd>
+          <dt>输入 SHA-256</dt><dd id="inputSha256">—</dd>
+          <dt>完整性确认</dt><dd id="inputVerified">—</dd>
+        </dl>
+        <h3>原始响应</h3>
+        <pre id="rawJson" class="json-box">等待任务响应</pre>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const state = {
+      file: null,
+      meetingId: null,
+      taskKind: "harness_meeting_v0",
+      boardTask: null,
+      busy: false,
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function formatBytes(bytes) {
+      if (!Number.isFinite(bytes)) return "—";
+      if (bytes < 1024) return `${bytes} B`;
+      if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KiB`;
+      if (bytes < 1024 * 1024 * 1024) return `${(bytes / (1024 * 1024)).toFixed(2)} MiB`;
+      return `${(bytes / (1024 * 1024 * 1024)).toFixed(2)} GiB`;
+    }
+
+    function setNotice(message, kind = "") {
+      const element = $("notice");
+      element.textContent = message;
+      element.className = `notice ${kind}`.trim();
+    }
+
+    function setHealth(ready, detail) {
+      const badge = $("healthBadge");
+      badge.textContent = ready ? "板端已连接" : "板端不可用";
+      badge.className = `badge ${ready ? "ready" : "error"}`;
+      $("healthDetail").textContent = detail;
+    }
+
+    function taskStateClass(value) {
+      if (value === "completed") return "success";
+      if (value === "failed" || value === "cancelled") return "error";
+      if (value === "uploading" || value === "running" || value === "processing") return "warning";
+      return "";
+    }
+
+    function renderTask(response) {
+      const task = response && response.board_task ? response.board_task : response;
+      if (!task || typeof task !== "object") return;
+      state.boardTask = task;
+      if (response && response.meeting_id) state.meetingId = response.meeting_id;
+
+      $("meetingId").textContent = state.meetingId || task.meeting_id || "—";
+      $("boardTaskId").textContent = response && response.board_task_id ? response.board_task_id : (task.task_id || "—");
+      const stateValue = task.state || "—";
+      $("taskState").innerHTML = `<span class="state-pill ${taskStateClass(stateValue)}">${stateValue}</span>`;
+      $("taskStage").textContent = task.stage || "—";
+      $("modelProfile").textContent = task.harness_model_profile || (state.taskKind === "harness_meeting_v0" ? "qwen3-4b-v104-ctx16k" : "—");
+      $("inputSize").textContent = task.input_size == null ? "—" : formatBytes(Number(task.input_size)) + ` (${task.input_size} bytes)`;
+      $("inputSha256").textContent = task.input_sha256 || "—";
+      $("inputVerified").textContent = task.input_verified === true ? "true" : (task.input_verified === false ? "false" : "—");
+      $("rawJson").textContent = JSON.stringify(response, null, 2);
+      updateButtons();
+    }
+
+    function updateButtons() {
+      const task = state.boardTask;
+      const terminal = !task || ["completed", "cancelled", "failed"].includes(task.state);
+      $("uploadButton").disabled = !state.file || state.busy;
+      $("refreshButton").disabled = !state.meetingId || state.busy;
+      $("resultButton").disabled = state.taskKind !== "harness_meeting_v0" || !state.meetingId || state.busy || !task || task.state !== "completed";
+      $("cancelButton").disabled = !state.meetingId || state.busy || terminal;
+    }
+
+    async function requestJson(url, options = {}) {
+      const response = await fetch(url, options);
+      const text = await response.text();
+      let payload = {};
+      if (text) {
+        try {
+          payload = JSON.parse(text);
+        } catch (_error) {
+          payload = { error: { code: "invalid_response", message: text } };
+        }
+      }
+      if (!response.ok) {
+        const message = payload.error && payload.error.message ? payload.error.message : `HTTP ${response.status}`;
+        const error = new Error(message);
+        error.payload = payload;
+        error.status = response.status;
+        throw error;
+      }
+      return payload;
+    }
+
+    async function checkHealth() {
+      try {
+        const payload = await requestJson("/api/board/health");
+        setHealth(true, `${payload.board_id || "board"} · ${payload.model_profile || "model profile unavailable"}`);
+        setNotice("Gateway 与板端连接正常。", "success");
+      } catch (error) {
+        setHealth(false, error.message);
+        setNotice(`健康检查失败：${error.message}`, "error");
+      }
+    }
+
+    function uploadFile(url, file) {
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("PUT", url, true);
+        xhr.setRequestHeader("Content-Type", file.type || "audio/wav");
+        xhr.responseType = "text";
+        xhr.upload.addEventListener("progress", (event) => {
+          if (event.lengthComputable) {
+            const percent = Math.round((event.loaded / event.total) * 100);
+            setNotice(`正在上传：${percent}%`, "warning");
+          } else {
+            setNotice("正在上传音频…", "warning");
+          }
+        });
+        xhr.onload = () => {
+          let payload = {};
+          if (xhr.responseText) {
+            try {
+              payload = JSON.parse(xhr.responseText);
+            } catch (_error) {
+              payload = { error: { code: "invalid_response", message: xhr.responseText } };
+            }
+          }
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve(payload);
+          } else {
+            const message = payload.error && payload.error.message ? payload.error.message : `HTTP ${xhr.status}`;
+            const error = new Error(message);
+            error.payload = payload;
+            error.status = xhr.status;
+            reject(error);
+          }
+        };
+        xhr.onerror = () => reject(new Error("浏览器无法连接 Gateway"));
+        xhr.onabort = () => reject(new Error("上传已中止"));
+        xhr.send(file);
+      });
+    }
+
+    async function createAndUpload() {
+      if (!state.file || state.busy) return;
+      const file = state.file;
+      if (!file.name.toLowerCase().endsWith(".wav")) {
+        setNotice("当前页面只接受 WAV 文件。", "error");
+        return;
+      }
+
+      state.busy = true;
+      state.boardTask = null;
+      updateButtons();
+      setNotice("正在创建板端上传任务…", "warning");
+      try {
+        state.taskKind = $("taskKind").value;
+        const created = await requestJson("/api/meetings", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ task_kind: state.taskKind }),
+        });
+        state.meetingId = created.meeting_id;
+        renderTask(created);
+        setNotice("任务已创建，正在流式上传 WAV…", "warning");
+        const uploaded = await uploadFile(`/api/meetings/${encodeURIComponent(state.meetingId)}/audio`, file);
+        renderTask(uploaded);
+        if (state.taskKind === "harness_meeting_v0") {
+          setNotice("上传完成，Harness 已在板端后台启动，请刷新状态查看阶段。", "success");
+        } else {
+          setNotice("上传完成，板端已返回完整性校验结果。", "success");
+        }
+      } catch (error) {
+        if (error.payload) renderTask(error.payload);
+        setNotice(`操作失败：${error.message}`, "error");
+      } finally {
+        state.busy = false;
+        updateButtons();
+      }
+    }
+
+    async function refreshStatus() {
+      if (!state.meetingId || state.busy) return;
+      try {
+        const payload = await requestJson(`/api/meetings/${encodeURIComponent(state.meetingId)}`);
+        renderTask(payload);
+        setNotice("任务状态已刷新。", "success");
+      } catch (error) {
+        if (error.payload) renderTask(error.payload);
+        setNotice(`状态查询失败：${error.message}`, "error");
+      }
+    }
+
+    async function loadResult() {
+      if (!state.meetingId || state.busy || state.taskKind !== "harness_meeting_v0") return;
+      try {
+        const payload = await requestJson(`/api/meetings/${encodeURIComponent(state.meetingId)}/result`);
+        $("rawJson").textContent = JSON.stringify(payload, null, 2);
+        setNotice("Harness 会议结果已加载。", "success");
+      } catch (error) {
+        if (error.payload) $("rawJson").textContent = JSON.stringify(error.payload, null, 2);
+        setNotice(`结果读取失败：${error.message}`, "error");
+      }
+    }
+
+    async function cancelTask() {
+      if (!state.meetingId || state.busy) return;
+      state.busy = true;
+      updateButtons();
+      setNotice("正在请求取消任务…", "warning");
+      try {
+        const payload = await requestJson(`/api/meetings/${encodeURIComponent(state.meetingId)}/cancel`, { method: "POST" });
+        renderTask(payload);
+        setNotice(`任务状态：${payload.board_task && payload.board_task.state ? payload.board_task.state : "已返回"}`, "success");
+      } catch (error) {
+        if (error.payload) renderTask(error.payload);
+        setNotice(`取消失败：${error.message}`, "error");
+      } finally {
+        state.busy = false;
+        updateButtons();
+      }
+    }
+
+    $("audioFile").addEventListener("change", (event) => {
+      const file = event.target.files && event.target.files[0] ? event.target.files[0] : null;
+      state.file = file;
+      state.meetingId = null;
+      state.boardTask = null;
+      $("rawJson").textContent = "等待任务响应";
+      $("meetingId").textContent = "—";
+      $("boardTaskId").textContent = "—";
+      $("taskState").textContent = "—";
+      $("taskStage").textContent = "—";
+      $("modelProfile").textContent = "—";
+      $("inputSize").textContent = "—";
+      $("inputSha256").textContent = "—";
+      $("inputVerified").textContent = "—";
+      if (file) {
+        $("fileCard").classList.add("visible");
+        $("fileName").textContent = file.name;
+        $("fileMeta").textContent = `${formatBytes(file.size)} · ${file.type || "audio/wav"}`;
+        setNotice("文件已选择，可以开始上传。", "success");
+      } else {
+        $("fileCard").classList.remove("visible");
+        setNotice("请选择 WAV 文件后开始。");
+      }
+      updateButtons();
+    });
+
+    $("taskKind").addEventListener("change", (event) => {
+      state.taskKind = event.target.value;
+      updateButtons();
+    });
+    $("healthButton").addEventListener("click", checkHealth);
+    $("uploadButton").addEventListener("click", createAndUpload);
+    $("refreshButton").addEventListener("click", refreshStatus);
+    $("resultButton").addEventListener("click", loadResult);
+    $("cancelButton").addEventListener("click", cancelTask);
+    updateButtons();
+    checkHealth();
+  </script>
+</body>
+</html>

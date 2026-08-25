@@ -1,0 +1,2154 @@
+#!/usr/bin/env python3
+"""Generate evidence-backed meeting minutes from Batch ASR turns on RK1828.
+
+The runner keeps one rkllm3-server process alive, sends independent MAP requests,
+then reduces the validated facts into ``meeting_minutes_v0``. It uses only the
+Python standard library so the same file can run directly on the board.
+"""
+
+from __future__ import annotations
+
+import argparse
+import gc
+import hashlib
+import json
+import os
+import re
+import socket
+import statistics
+import subprocess
+import sys
+import threading
+import time
+import urllib.error
+import urllib.request
+import unicodedata
+from pathlib import Path
+from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple
+
+
+DEFAULT_TURNS = "/userdata/meeting_agent/output/asr_spk_batch_full/asr_batch_turns.json"
+DEFAULT_OUT_DIR = "/userdata/meeting_agent/output/minutes/meeting_minutes_map_reduce_v0"
+DEFAULT_MODEL_DIR = "/userdata/meeting_agent/models/llm/v100/qwen25-7b-ctx8k-v100"
+DEFAULT_SERVER = "/usr/bin/rkllm3-server"
+DEFAULT_HOST = "127.0.0.1"
+DEFAULT_PORT = 18247
+
+REQUIRED_SUFFIXES = {
+    "rknn": ".rknn",
+    "weight": ".weight",
+    "vocab": ".tokenizer.gguf",
+    "embed": ".embed.bin",
+}
+
+EXIT_RUNTIME = 1
+EXIT_ENV = 2
+EXIT_VALIDATION = 3
+
+
+class MinutesError(Exception):
+    exit_code = EXIT_RUNTIME
+
+
+class EnvironmentError(MinutesError):
+    exit_code = EXIT_ENV
+
+
+class ValidationError(MinutesError):
+    exit_code = EXIT_VALIDATION
+
+
+class EmptyServerResponse(MinutesError):
+    pass
+
+
+class PromptBudgetExceeded(ValidationError):
+    def __init__(
+        self,
+        prompt_tokens: int,
+        limit: int,
+        metadata: Dict[str, Any],
+        message: Optional[str] = None,
+    ):
+        super().__init__(message or f"prompt tokens {prompt_tokens} exceed safety limit {limit}")
+        self.prompt_tokens = prompt_tokens
+        self.limit = limit
+        self.metadata = metadata
+
+
+def read_text(path: Path) -> str:
+    return path.read_text(encoding="utf-8", errors="replace")
+
+
+def write_text(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+
+def write_json(path: Path, data: Any) -> None:
+    write_text(path, json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+
+
+def append_jsonl(path: Path, data: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n")
+        f.flush()
+        os.fsync(f.fileno())
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as f:
+        while True:
+            block = f.read(1024 * 1024)
+            if not block:
+                break
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def require_file(path: Path, label: str) -> None:
+    if not path.is_file():
+        raise EnvironmentError(f"{label} not found: {path}")
+
+
+def require_executable(path: Path, label: str) -> None:
+    require_file(path, label)
+    if not os.access(str(path), os.X_OK):
+        raise EnvironmentError(f"{label} is not executable: {path}")
+
+
+def resolve_asset(explicit: Optional[str], relative_path: str) -> Path:
+    if explicit:
+        path = Path(explicit)
+        require_file(path, relative_path)
+        return path
+
+    here = Path(__file__).resolve()
+    candidates: List[Path] = []
+    # In the extracted src layout the repository root is five parents above this file;
+    # the original flat deployment layout used a shallower relative path.  Check both
+    # forms so the same adapter remains usable before and after package installation.
+    for index in (5, 3):
+        if len(here.parents) > index:
+            candidates.append(here.parents[index] / relative_path)
+    candidates.extend([
+        Path("/userdata/meeting_agent") / relative_path,
+        Path.cwd() / relative_path,
+    ])
+    for path in candidates:
+        if path.is_file():
+            return path
+    rendered = ", ".join(str(path) for path in candidates)
+    raise EnvironmentError(f"asset {relative_path} not found; checked: {rendered}")
+
+
+def is_number(value: Any) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def fmt_ts(seconds: float) -> str:
+    millis = max(0, int(round(seconds * 1000)))
+    hours, rem = divmod(millis, 3_600_000)
+    minutes, rem = divmod(rem, 60_000)
+    secs, ms = divmod(rem, 1000)
+    return f"{hours:02d}:{minutes:02d}:{secs:02d}.{ms:03d}"
+
+
+def load_turns(path: Path) -> List[Dict[str, Any]]:
+    require_file(path, "turns file")
+    try:
+        raw = json.loads(read_text(path))
+    except json.JSONDecodeError as exc:
+        raise ValidationError(f"turns JSON is invalid: {exc}") from exc
+
+    if isinstance(raw, dict):
+        raw = raw.get("turns")
+    if not isinstance(raw, list):
+        raise ValidationError("turns file must be an array or an object containing turns[]")
+
+    turns: List[Dict[str, Any]] = []
+    seen_ids = set()
+    for index, item in enumerate(raw):
+        path_label = f"turns[{index}]"
+        if not isinstance(item, dict):
+            raise ValidationError(f"{path_label} must be an object")
+        for key in ("id", "start", "end", "speaker", "text", "chunk_ids"):
+            if key not in item:
+                raise ValidationError(f"{path_label}.{key} is missing")
+        if not isinstance(item["id"], int) or isinstance(item["id"], bool) or item["id"] < 1:
+            raise ValidationError(f"{path_label}.id must be a positive integer")
+        if item["id"] in seen_ids:
+            raise ValidationError(f"duplicate turn id: {item['id']}")
+        seen_ids.add(item["id"])
+        if not is_number(item["start"]) or not is_number(item["end"]):
+            raise ValidationError(f"{path_label}.start/end must be numbers")
+        start, end = float(item["start"]), float(item["end"])
+        if start < 0 or end < start:
+            raise ValidationError(f"{path_label} has invalid range {start}-{end}")
+        speaker = item["speaker"]
+        text = item["text"]
+        if not isinstance(speaker, str) or not speaker.strip():
+            raise ValidationError(f"{path_label}.speaker must be a non-empty string")
+        if not isinstance(text, str) or not text.strip():
+            raise ValidationError(f"{path_label}.text must be a non-empty string")
+        chunk_ids = item["chunk_ids"]
+        if not isinstance(chunk_ids, list) or any(
+            not isinstance(value, int) or isinstance(value, bool) or value < 1
+            for value in chunk_ids
+        ):
+            raise ValidationError(f"{path_label}.chunk_ids must be positive integers")
+        speaker_kind = item.get("speaker_kind", "main")
+        if not isinstance(speaker_kind, str) or not speaker_kind:
+            raise ValidationError(f"{path_label}.speaker_kind must be a non-empty string")
+        turns.append({
+            "id": item["id"],
+            "start": start,
+            "end": end,
+            "speaker": speaker.strip(),
+            "speaker_kind": speaker_kind,
+            "text": text.strip(),
+            "chunk_ids": list(chunk_ids),
+        })
+
+    turns.sort(key=lambda value: (value["start"], value["end"], value["id"]))
+    return turns
+
+
+def sentence_chunks(text: str, target_chars: int) -> List[Tuple[int, int, str]]:
+    if len(text) <= target_chars:
+        return [(0, len(text), text)]
+
+    boundaries = [m.end() for m in re.finditer(r"[。！？!?；;]\s*", text)]
+    chunks: List[Tuple[int, int, str]] = []
+    start = 0
+    while start < len(text):
+        hard_end = min(len(text), start + target_chars)
+        candidates = [value for value in boundaries if start < value <= hard_end]
+        end = max(candidates) if candidates else hard_end
+        piece = text[start:end].strip()
+        if piece:
+            chunks.append((start, end, piece))
+        start = end
+    return chunks
+
+
+def prepare_units(turns: List[Dict[str, Any]], target_chars: int) -> List[Dict[str, Any]]:
+    units: List[Dict[str, Any]] = []
+    for turn in turns:
+        pieces = sentence_chunks(turn["text"], target_chars)
+        text_length = max(1, len(turn["text"]))
+        duration = max(0.0, turn["end"] - turn["start"])
+        for part, (char_start, char_end, text) in enumerate(pieces, 1):
+            start = turn["start"] + duration * (char_start / text_length)
+            end = turn["start"] + duration * (char_end / text_length)
+            units.append({
+                "unit_id": len(units) + 1,
+                "source_turn_id": turn["id"],
+                "part": part,
+                "part_count": len(pieces),
+                "start": round(start, 3),
+                "end": round(max(start, end), 3),
+                "speaker": turn["speaker"],
+                "speaker_kind": turn["speaker_kind"],
+                "text": text,
+                "chunk_ids": turn["chunk_ids"],
+            })
+    return units
+
+
+def canonical_unit_line(unit: Dict[str, Any]) -> str:
+    turn_label = f"{unit['source_turn_id']:04d}"
+    if unit.get("part_count", 1) > 1:
+        turn_label += f".{unit['part']}"
+    return (
+        f"[turn {turn_label}]"
+        f"[{fmt_ts(float(unit['start']))}-{fmt_ts(float(unit['end']))}] "
+        f"{unit['speaker']}: {unit['text']}"
+    )
+
+
+def window_char_count(units: Iterable[Dict[str, Any]]) -> int:
+    return sum(len(canonical_unit_line(unit)) + 1 for unit in units)
+
+
+def choose_window_end(
+    units: List[Dict[str, Any]],
+    start: int,
+    provisional_end: int,
+    target_chars: int,
+) -> int:
+    if provisional_end >= len(units) or provisional_end <= start + 1:
+        return provisional_end
+
+    earliest = start + 1
+    running = 0
+    minimum = int(target_chars * 0.65)
+    candidates: List[Tuple[int, int, float]] = []
+    for index in range(start, provisional_end):
+        running += len(canonical_unit_line(units[index])) + 1
+        cut = index + 1
+        if cut < provisional_end and running >= minimum:
+            left, right = units[index], units[cut]
+            speaker_change = int(left["speaker"] != right["speaker"])
+            gap = max(0.0, float(right["start"]) - float(left["end"]))
+            score = speaker_change * 10 + min(gap, 10.0)
+            candidates.append((cut, speaker_change, score))
+    if not candidates:
+        return provisional_end
+    return max(candidates, key=lambda value: (value[2], value[0]))[0]
+
+
+def make_window(
+    window_id: int,
+    units: List[Dict[str, Any]],
+    indexes: List[int],
+    parent_window_id: Optional[int] = None,
+) -> Dict[str, Any]:
+    selected = [units[index] for index in indexes]
+    transcript = "\n".join(canonical_unit_line(unit) for unit in selected)
+    return {
+        "window_id": window_id,
+        "parent_window_id": parent_window_id,
+        "active": True,
+        "unit_indexes": indexes,
+        "turn_ids": sorted({unit["source_turn_id"] for unit in selected}),
+        "start": selected[0]["start"],
+        "end": selected[-1]["end"],
+        "char_count": len(transcript),
+        "transcript": transcript,
+    }
+
+
+def plan_windows(
+    units: List[Dict[str, Any]],
+    target_chars: int,
+    max_turns: int,
+    overlap_turns: int,
+) -> List[Dict[str, Any]]:
+    if not units:
+        return []
+    windows: List[Dict[str, Any]] = []
+    start = 0
+    while start < len(units):
+        end = start
+        chars = 0
+        source_turn_ids = set()
+        while end < len(units):
+            unit = units[end]
+            next_chars = chars + len(canonical_unit_line(unit)) + 1
+            next_turn_ids = source_turn_ids | {unit["source_turn_id"]}
+            if end > start and (next_chars > target_chars or len(next_turn_ids) > max_turns):
+                break
+            chars = next_chars
+            source_turn_ids = next_turn_ids
+            end += 1
+        if end == start:
+            end += 1
+        end = choose_window_end(units, start, end, target_chars)
+        indexes = list(range(start, end))
+        windows.append(make_window(len(windows) + 1, units, indexes))
+        if end >= len(units):
+            break
+        next_start = end
+        if overlap_turns > 0:
+            overlap_ids: List[int] = []
+            cursor = end - 1
+            while cursor >= start and len(overlap_ids) < overlap_turns:
+                source_id = units[cursor]["source_turn_id"]
+                if source_id not in overlap_ids:
+                    overlap_ids.append(source_id)
+                cursor -= 1
+            next_start = end
+            while (
+                next_start > start
+                and units[next_start - 1]["source_turn_id"] in overlap_ids
+            ):
+                next_start -= 1
+            next_start = max(start + 1, next_start)
+        start = next_start
+    return windows
+
+
+def build_window_plan(
+    turns: List[Dict[str, Any]],
+    target_chars: int,
+    max_turns: int,
+    overlap_turns: int,
+) -> Dict[str, Any]:
+    units = prepare_units(turns, target_chars)
+    windows = plan_windows(units, target_chars, max_turns, overlap_turns)
+    return {
+        "schema_version": "meeting_window_plan_v0",
+        "target_chars": target_chars,
+        "max_turns": max_turns,
+        "overlap_turns": overlap_turns,
+        "units": units,
+        "windows": windows,
+    }
+
+
+def split_window(plan: Dict[str, Any], window: Dict[str, Any]) -> List[Dict[str, Any]]:
+    indexes = window["unit_indexes"]
+    if len(indexes) < 2:
+        raise PromptBudgetExceeded(0, 0, {"window_id": window["window_id"]})
+    midpoint = len(indexes) // 2
+    next_id = max(item["window_id"] for item in plan["windows"]) + 1
+    children = [
+        make_window(next_id, plan["units"], indexes[:midpoint], window["window_id"]),
+        make_window(next_id + 1, plan["units"], indexes[midpoint:], window["window_id"]),
+    ]
+    window["active"] = False
+    window["split_into"] = [child["window_id"] for child in children]
+    plan["windows"].extend(children)
+    return children
+
+
+def render_map_prompt(template: str, window: Dict[str, Any]) -> str:
+    return (
+        template.replace("{window_id}", str(window["window_id"]))
+        .replace("{window_start}", f"{float(window['start']):.3f}")
+        .replace("{window_end}", f"{float(window['end']):.3f}")
+        .replace("{transcript}", window["transcript"])
+    )
+
+
+def evidence_time_range(value: Dict[str, Any]) -> Tuple[float, float]:
+    starts: List[float] = []
+    ends: List[float] = []
+    for range_key in ("time_range", "_source_time_range"):
+        source_range = value.get(range_key)
+        if isinstance(source_range, dict):
+            source_start, source_end = source_range.get("start"), source_range.get("end")
+            if is_number(source_start) and is_number(source_end):
+                starts.append(float(source_start))
+                ends.append(float(source_end))
+    for field in ("participants", "topics", "decisions", "action_items", "risks", "open_questions"):
+        items = value.get(field)
+        if not isinstance(items, list):
+            continue
+        for item in items:
+            if not isinstance(item, dict) or not isinstance(item.get("evidence"), list):
+                continue
+            for evidence in item["evidence"]:
+                if not isinstance(evidence, dict):
+                    continue
+                start, end = evidence.get("start"), evidence.get("end")
+                if is_number(start) and is_number(end):
+                    starts.append(float(start))
+                    ends.append(float(end))
+    return (min(starts), max(ends)) if starts else (0.0, 0.0)
+
+
+def normalize_reduce_inputs(values: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    normalized: List[Dict[str, Any]] = []
+    for index, value in enumerate(values, 1):
+        if value.get("schema_version") == "meeting_minutes_map_v0":
+            normalized.append(value)
+            continue
+        if value.get("schema_version") == "meeting_minutes_v0":
+            start, end = evidence_time_range(value)
+            normalized.append({
+                "schema_version": "meeting_minutes_map_v0",
+                "window_id": index,
+                "time_range": {"start": start, "end": end},
+                "participants": value.get("participants", []),
+                "topics": value.get("topics", []),
+                "decisions": value.get("decisions", []),
+                "action_items": value.get("action_items", []),
+                "risks": value.get("risks", []),
+                "open_questions": value.get("open_questions", []),
+                "warnings": value.get("warnings", []),
+            })
+            continue
+        raise ValidationError(f"unsupported REDUCE input schema at index {index}")
+    return normalized
+
+
+FACT_FIELDS = (
+    "participants", "topics", "decisions", "action_items", "risks", "open_questions"
+)
+
+
+def build_reduce_sources(values: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, Any]]]:
+    prompt_values: List[Dict[str, Any]] = []
+    source_lookup: Dict[str, Dict[str, Any]] = {}
+    for value_index, value in enumerate(normalize_reduce_inputs(values), 1):
+        prompt_value = {
+            "schema_version": "meeting_minutes_map_v0",
+            "window_id": value.get("window_id", value_index),
+            "time_range": value.get("time_range", {"start": 0.0, "end": 0.0}),
+            "participants": [],
+            "topics": [],
+            "decisions": [],
+            "action_items": [],
+            "risks": [],
+            "open_questions": [],
+            "warnings": value.get("warnings", []),
+        }
+        for field in FACT_FIELDS:
+            items = value.get(field)
+            if not isinstance(items, list):
+                continue
+            for item_index, item in enumerate(items, 1):
+                if not isinstance(item, dict):
+                    continue
+                source_id = f"v{value_index}-{field}-{item_index}"
+                source_lookup[source_id] = {
+                    "field": field,
+                    "evidence": item.get("evidence", []),
+                }
+                prompt_item = {
+                    key: item.get(key)
+                    for key in item
+                    if key != "evidence" and not key.startswith("_")
+                }
+                prompt_item["source_id"] = source_id
+                prompt_value[field].append(prompt_item)
+        prompt_values.append(prompt_value)
+    return prompt_values, source_lookup
+
+
+def render_reduce_prompt(template: str, values: List[Dict[str, Any]]) -> str:
+    prompt_values, _ = build_reduce_sources(values)
+    compact = json.dumps(prompt_values, ensure_ascii=False, separators=(",", ":"))
+    return template.replace("{map_results}", compact)
+
+
+def find_first_json_object_text(content: str) -> Optional[str]:
+    start = content.find("{")
+    while start != -1:
+        depth = 0
+        in_string = False
+        escaped = False
+        for index in range(start, len(content)):
+            char = content[index]
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif char == "\\":
+                    escaped = True
+                elif char == '"':
+                    in_string = False
+                continue
+            if char == '"':
+                in_string = True
+            elif char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+                if depth == 0:
+                    return content[start:index + 1]
+                if depth < 0:
+                    break
+        start = content.find("{", start + 1)
+    return None
+
+
+def normalize_json_syntax(text: str) -> str:
+    """Normalize full-width ASCII only outside JSON strings.
+
+    Qwen2.5-7B occasionally emits full-width digits or punctuation for numeric
+    JSON values. Keeping string contents untouched avoids rewriting meeting
+    facts while making the JSON grammar parseable.
+    """
+    result: List[str] = []
+    in_string = False
+    escaped = False
+    for char in text:
+        if in_string:
+            result.append(char)
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            continue
+        if char == '"':
+            in_string = True
+            result.append(char)
+        elif char == "　":
+            result.append(" ")
+        elif "！" <= char <= "～":
+            result.append(chr(ord(char) - 0xFEE0))
+        else:
+            result.append(char)
+    return "".join(result)
+
+
+def parse_json_content(content: str) -> Tuple[Dict[str, Any], bool]:
+    content = re.sub(r"^\s*<think>.*?</think>\s*", "", content, count=1, flags=re.DOTALL)
+    stripped = normalize_json_syntax(content.strip())
+    try:
+        value = json.loads(stripped)
+        extracted = False
+    except json.JSONDecodeError as full_error:
+        candidate = find_first_json_object_text(stripped)
+        if not candidate:
+            raise ValidationError(f"model output has no JSON object: {full_error}") from full_error
+        try:
+            value = json.loads(candidate)
+        except json.JSONDecodeError as extract_error:
+            raise ValidationError(f"extracted JSON is invalid: {extract_error}") from extract_error
+        extracted = True
+    if not isinstance(value, dict):
+        raise ValidationError("model JSON output must be an object")
+    return value, extracted
+
+
+def add_exact_key_errors(
+    value: Dict[str, Any],
+    expected: Iterable[str],
+    path: str,
+    errors: List[str],
+) -> None:
+    expected_set = set(expected)
+    missing = sorted(expected_set - set(value))
+    extra = sorted(set(value) - expected_set)
+    if missing:
+        errors.append(f"{path} missing keys: {', '.join(missing)}")
+    if extra:
+        errors.append(f"{path} extra keys: {', '.join(extra)}")
+
+
+def normalize_schema_version(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    normalized = unicodedata.normalize("NFKC", value).strip()
+    aliases = {
+        "meeting_minutes_vO": "meeting_minutes_v0",
+        "meeting_minutes_map_vO": "meeting_minutes_map_v0",
+    }
+    return aliases.get(normalized, normalized)
+
+
+def normalize_warning_list(value: Any) -> Any:
+    if not isinstance(value, list):
+        return value
+    warnings: List[str] = []
+    for item in value:
+        if isinstance(item, str):
+            text = item.strip()
+        elif isinstance(item, dict):
+            text_value = item.get("text") or item.get("warning") or item.get("message")
+            text = text_value.strip() if isinstance(text_value, str) else json.dumps(item, ensure_ascii=False, separators=(",", ":"))
+        else:
+            text = str(item).strip()
+        if text and text not in warnings:
+            warnings.append(text)
+    return warnings
+
+
+def normalize_model_output(data: Dict[str, Any]) -> Dict[str, Any]:
+    normalized = dict(data)
+    normalized["schema_version"] = normalize_schema_version(normalized.get("schema_version"))
+    normalized["warnings"] = normalize_warning_list(normalized.get("warnings"))
+    return normalize_reference_fields(normalized)
+
+
+def validate_string_list(value: Any, path: str, errors: List[str]) -> None:
+    if not isinstance(value, list):
+        errors.append(f"{path} must be an array")
+        return
+    for index, item in enumerate(value):
+        if not isinstance(item, str):
+            errors.append(f"{path}[{index}] must be a string")
+
+
+def normalize_identifier(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    return unicodedata.normalize("NFKC", value).strip()
+
+
+def normalize_int_list(value: Any) -> Any:
+    if not isinstance(value, list):
+        return value
+    result: List[Any] = []
+    for item in value:
+        if isinstance(item, int) and not isinstance(item, bool):
+            normalized: Any = item
+        elif isinstance(item, str):
+            text = normalize_identifier(item)
+            if text.isdigit():
+                normalized = int(text)
+            else:
+                match = re.fullmatch(
+                    r"\[?\s*turn\s*[:#_-]?\s*0*(\d+)\s*\]?",
+                    text,
+                    flags=re.IGNORECASE,
+                )
+                normalized = int(match.group(1)) if match else item
+        else:
+            normalized = item
+        if normalized not in result:
+            result.append(normalized)
+    return result
+
+
+def normalize_id_list(value: Any) -> Any:
+    if not isinstance(value, list):
+        return value
+    result: List[Any] = []
+    for item in value:
+        normalized = normalize_identifier(item)
+        if normalized not in result:
+            result.append(normalized)
+    return result
+
+
+def normalize_reference_fields(data: Dict[str, Any]) -> Dict[str, Any]:
+    normalized = dict(data)
+    for field in ("participants", "topics", "decisions", "action_items", "risks", "open_questions"):
+        values = normalized.get(field)
+        if not isinstance(values, list):
+            continue
+        normalized_values = []
+        for item in values:
+            if not isinstance(item, dict):
+                normalized_values.append(item)
+                continue
+            normalized_item = dict(item)
+            if "turn_ids" in normalized_item:
+                normalized_item["turn_ids"] = normalize_int_list(normalized_item["turn_ids"])
+            if "source_ids" in normalized_item:
+                normalized_item["source_ids"] = normalize_id_list(normalized_item["source_ids"])
+            if "speaker" in normalized_item:
+                normalized_item["speaker"] = normalize_identifier(normalized_item["speaker"])
+            normalized_values.append(normalized_item)
+        normalized[field] = normalized_values
+    return normalized
+
+
+def evidence_from_turn_ids(
+    turn_ids: Any,
+    turns: List[Dict[str, Any]],
+    path: str,
+    errors: List[str],
+) -> List[Dict[str, Any]]:
+    if not isinstance(turn_ids, list) or not turn_ids:
+        errors.append(f"{path} must be a non-empty integer array")
+        return []
+    lookup = {turn["id"]: turn for turn in turns}
+    evidence: List[Dict[str, Any]] = []
+    for index, turn_id in enumerate(turn_ids):
+        if not isinstance(turn_id, int) or isinstance(turn_id, bool):
+            errors.append(f"{path}[{index}] must be an integer")
+            continue
+        turn = lookup.get(turn_id)
+        if turn is None:
+            errors.append(f"{path}[{index}] references unknown turn {turn_id}")
+            continue
+        item = {
+            "speaker": turn["speaker"],
+            "start": float(turn["start"]),
+            "end": float(turn["end"]),
+        }
+        if item not in evidence:
+            evidence.append(item)
+    return evidence
+
+
+def evidence_matches_turns(
+    speaker: str,
+    start: float,
+    end: float,
+    turns: List[Dict[str, Any]],
+    tolerance: float = 0.25,
+) -> bool:
+    return any(
+        turn["speaker"] == speaker
+        and end + tolerance >= float(turn["start"])
+        and start - tolerance <= float(turn["end"])
+        for turn in turns
+    )
+
+
+def validate_evidence(
+    value: Any,
+    path: str,
+    turns: List[Dict[str, Any]],
+    errors: List[str],
+) -> None:
+    if not isinstance(value, list) or not value:
+        errors.append(f"{path} must be a non-empty array")
+        return
+    for index, item in enumerate(value):
+        item_path = f"{path}[{index}]"
+        if not isinstance(item, dict):
+            errors.append(f"{item_path} must be an object")
+            continue
+        add_exact_key_errors(item, ("speaker", "start", "end"), item_path, errors)
+        speaker, start, end = item.get("speaker"), item.get("start"), item.get("end")
+        if not isinstance(speaker, str) or not speaker:
+            errors.append(f"{item_path}.speaker must be a non-empty string")
+            continue
+        if not is_number(start) or not is_number(end):
+            errors.append(f"{item_path}.start/end must be numbers")
+            continue
+        start_f, end_f = float(start), float(end)
+        if start_f < 0 or end_f < start_f:
+            errors.append(f"{item_path} has invalid time range")
+            continue
+        if not evidence_matches_turns(speaker, start_f, end_f, turns):
+            errors.append(f"{item_path} does not match an input turn")
+
+
+def validate_fact_arrays(
+    data: Dict[str, Any],
+    turns: List[Dict[str, Any]],
+    errors: List[str],
+) -> None:
+    specs = {
+        "participants": (("speaker", "summary", "evidence"), ("speaker", "summary")),
+        "topics": (("name", "summary", "key_points", "evidence"), ("name", "summary")),
+        "decisions": (("decision", "evidence"), ("decision",)),
+        "action_items": (("task", "owner", "due", "evidence"), ("task",)),
+        "risks": (("text", "evidence"), ("text",)),
+        "open_questions": (("text", "evidence"), ("text",)),
+    }
+    for field, (keys, string_keys) in specs.items():
+        value = data.get(field)
+        if not isinstance(value, list):
+            errors.append(f"$.{field} must be an array")
+            continue
+        for index, item in enumerate(value):
+            path = f"$.{field}[{index}]"
+            if not isinstance(item, dict):
+                errors.append(f"{path} must be an object")
+                continue
+            add_exact_key_errors(item, keys, path, errors)
+            for key in string_keys:
+                if not isinstance(item.get(key), str) or not item.get(key):
+                    errors.append(f"{path}.{key} must be a non-empty string")
+            if field == "topics":
+                validate_string_list(item.get("key_points"), f"{path}.key_points", errors)
+            if field == "action_items":
+                for key in ("owner", "due"):
+                    if item.get(key) is not None and not isinstance(item.get(key), str):
+                        errors.append(f"{path}.{key} must be string or null")
+                    if item.get(key) == "未明确":
+                        errors.append(f"{path}.{key} must be null when unknown")
+            validate_evidence(item.get("evidence"), f"{path}.evidence", turns, errors)
+
+
+def materialize_map_output(
+    data: Dict[str, Any],
+    expected_window: Dict[str, Any],
+    allowed_turns: List[Dict[str, Any]],
+) -> Tuple[Dict[str, Any], List[str]]:
+    errors: List[str] = []
+    allowed_top_keys = set(FACT_FIELDS) | {
+        "warnings", "schema_version", "window_id", "time_range"
+    }
+    extra_top_keys = sorted(set(data) - allowed_top_keys)
+    if extra_top_keys:
+        errors.append(f"$ extra keys: {', '.join(extra_top_keys)}")
+    output = {
+        "schema_version": "meeting_minutes_map_v0",
+        "window_id": expected_window["window_id"],
+        "time_range": {
+            "start": float(expected_window["start"]),
+            "end": float(expected_window["end"]),
+        },
+        "participants": [],
+        "topics": [],
+        "decisions": [],
+        "action_items": [],
+        "risks": [],
+        "open_questions": [],
+        "warnings": normalize_warning_list(data.get("warnings", [])),
+    }
+    specs = {
+        "participants": ("speaker", "summary"),
+        "topics": ("name", "summary", "key_points"),
+        "decisions": ("decision",),
+        "action_items": ("task", "owner", "due"),
+        "risks": ("text",),
+        "open_questions": ("text",),
+    }
+    for field, content_keys in specs.items():
+        values = data.get(field)
+        if not isinstance(values, list):
+            errors.append(f"$.{field} must be an array")
+            continue
+        converted = []
+        for index, item in enumerate(values):
+            if not isinstance(item, dict):
+                converted.append(item)
+                continue
+            path = f"$.{field}[{index}]"
+            expected_keys = set(content_keys) | {"turn_ids", "evidence"}
+            missing_keys = sorted((set(content_keys) | {"turn_ids"}) - set(item))
+            extra_keys = sorted(set(item) - expected_keys)
+            if missing_keys:
+                errors.append(f"{path} missing keys: {', '.join(missing_keys)}")
+            if extra_keys:
+                errors.append(f"{path} extra keys: {', '.join(extra_keys)}")
+            evidence = evidence_from_turn_ids(
+                item.get("turn_ids"), allowed_turns, f"{path}.turn_ids", errors
+            )
+            converted_item = {key: item.get(key) for key in content_keys}
+            converted_item["evidence"] = evidence
+            converted.append(converted_item)
+        output[field] = converted
+    output["window_id"] = expected_window["window_id"]
+    output["time_range"] = {
+        "start": float(expected_window["start"]),
+        "end": float(expected_window["end"]),
+    }
+    return output, errors
+
+
+def validate_map_model_output(
+    data: Any,
+    expected_window: Dict[str, Any],
+    allowed_turns: List[Dict[str, Any]],
+) -> List[str]:
+    if not isinstance(data, dict):
+        return ["$ must be an object"]
+    _, errors = materialize_map_output(data, expected_window, allowed_turns)
+    return errors
+
+
+def validate_map_output(
+    data: Any,
+    expected_window: Dict[str, Any],
+    allowed_turns: List[Dict[str, Any]],
+) -> List[str]:
+    errors: List[str] = []
+    if not isinstance(data, dict):
+        return ["$ must be an object"]
+    expected = (
+        "schema_version", "window_id", "time_range", "participants", "topics",
+        "decisions", "action_items", "risks", "open_questions", "warnings",
+    )
+    add_exact_key_errors(data, expected, "$", errors)
+    if data.get("schema_version") != "meeting_minutes_map_v0":
+        errors.append("$.schema_version must be meeting_minutes_map_v0")
+    if data.get("window_id") != expected_window["window_id"]:
+        errors.append(f"$.window_id must be {expected_window['window_id']}")
+    time_range = data.get("time_range")
+    if not isinstance(time_range, dict):
+        errors.append("$.time_range must be an object")
+    else:
+        add_exact_key_errors(time_range, ("start", "end"), "$.time_range", errors)
+        start, end = time_range.get("start"), time_range.get("end")
+        if not is_number(start) or not is_number(end) or float(end) < float(start):
+            errors.append("$.time_range must contain a valid numeric range")
+        elif (
+            float(end) < float(expected_window["start"]) - 1.0
+            or float(start) > float(expected_window["end"]) + 1.0
+        ):
+            errors.append("$.time_range does not overlap the input window")
+    validate_fact_arrays(data, allowed_turns, errors)
+    validate_string_list(data.get("warnings"), "$.warnings", errors)
+    return errors
+
+
+def merge_evidence(values: List[List[Dict[str, Any]]]) -> List[Dict[str, Any]]:
+    result: List[Dict[str, Any]] = []
+    for evidence_list in values:
+        if not isinstance(evidence_list, list):
+            continue
+        for evidence in evidence_list:
+            if isinstance(evidence, dict) and evidence not in result:
+                result.append(evidence)
+    return result
+
+
+def materialize_reduce_output(
+    data: Dict[str, Any],
+    source_lookup: Dict[str, Dict[str, Any]],
+) -> Tuple[Dict[str, Any], List[str]]:
+    errors: List[str] = []
+    allowed_top_keys = {
+        "schema_version", "meeting_title", "meeting_type", "executive_summary",
+        "participants", "topics", "decisions", "action_items",
+        "risks", "open_questions", "warnings",
+    }
+    extra_top_keys = sorted(set(data) - allowed_top_keys)
+    if extra_top_keys:
+        errors.append(f"$ extra keys: {', '.join(extra_top_keys)}")
+    output = {
+        "schema_version": "meeting_minutes_v0",
+        "meeting_title": data.get("meeting_title"),
+        "meeting_type": data.get("meeting_type"),
+        "executive_summary": data.get("executive_summary"),
+        "participants": [],
+        "topics": [],
+        "decisions": [],
+        "action_items": [],
+        "risks": [],
+        "open_questions": [],
+        "warnings": normalize_warning_list(data.get("warnings", [])),
+    }
+    content_keys = {
+        "participants": ("speaker", "summary"),
+        "topics": ("name", "summary", "key_points"),
+        "decisions": ("decision",),
+        "action_items": ("task", "owner", "due"),
+        "risks": ("text",),
+        "open_questions": ("text",),
+    }
+    for field, keys in content_keys.items():
+        values = data.get(field)
+        if not isinstance(values, list):
+            continue
+        converted = []
+        for index, item in enumerate(values):
+            if not isinstance(item, dict):
+                converted.append(item)
+                continue
+            path = f"$.{field}[{index}]"
+            expected_keys = set(keys) | {"source_ids", "evidence"}
+            missing_keys = sorted((set(keys) | {"source_ids"}) - set(item))
+            extra_keys = sorted(set(item) - expected_keys)
+            if missing_keys:
+                errors.append(f"{path} missing keys: {', '.join(missing_keys)}")
+            if extra_keys:
+                errors.append(f"{path} extra keys: {', '.join(extra_keys)}")
+            source_ids = item.get("source_ids")
+            if not isinstance(source_ids, list) or not source_ids:
+                errors.append(f"{path}.source_ids must be a non-empty string array")
+                source_ids = []
+            evidence_lists = []
+            for source_index, source_id in enumerate(source_ids):
+                if not isinstance(source_id, str):
+                    errors.append(f"{path}.source_ids[{source_index}] must be a string")
+                    continue
+                source = source_lookup.get(source_id)
+                if source is None:
+                    errors.append(f"{path}.source_ids[{source_index}] references unknown source {source_id}")
+                    continue
+                if source["field"] != field:
+                    errors.append(
+                        f"{path}.source_ids[{source_index}] references {source['field']}, expected {field}"
+                    )
+                    continue
+                evidence_lists.append(source.get("evidence", []))
+            converted_item = {key: item.get(key) for key in keys}
+            converted_item["evidence"] = merge_evidence(evidence_lists)
+            if not converted_item["evidence"]:
+                errors.append(f"{path} resolved to no evidence")
+            converted.append(converted_item)
+        output[field] = converted
+    return output, errors
+
+
+def validate_reduce_model_output(
+    data: Any,
+    source_lookup: Dict[str, Dict[str, Any]],
+    turns: List[Dict[str, Any]],
+) -> List[str]:
+    if not isinstance(data, dict):
+        return ["$ must be an object"]
+    materialized, errors = materialize_reduce_output(data, source_lookup)
+    errors.extend(validate_minutes_output(materialized, turns))
+    return errors
+
+
+def validate_minutes_output(data: Any, turns: List[Dict[str, Any]]) -> List[str]:
+    errors: List[str] = []
+    if not isinstance(data, dict):
+        return ["$ must be an object"]
+    expected = (
+        "schema_version", "meeting_title", "meeting_type", "executive_summary",
+        "participants", "topics", "decisions", "action_items", "risks",
+        "open_questions", "warnings",
+    )
+    add_exact_key_errors(data, expected, "$", errors)
+    if data.get("schema_version") != "meeting_minutes_v0":
+        errors.append("$.schema_version must be meeting_minutes_v0")
+    for key in ("meeting_title", "executive_summary"):
+        if not isinstance(data.get(key), str):
+            errors.append(f"$.{key} must be a string")
+    if data.get("meeting_type") not in {
+        "discussion", "decision", "planning", "review", "training", "other",
+    }:
+        errors.append("$.meeting_type has an unsupported value")
+    validate_fact_arrays(data, turns, errors)
+    validate_string_list(data.get("warnings"), "$.warnings", errors)
+    return errors
+
+
+def read_meminfo() -> Dict[str, int]:
+    result: Dict[str, int] = {}
+    try:
+        for line in Path("/proc/meminfo").read_text().splitlines():
+            if ":" not in line:
+                continue
+            key, rest = line.split(":", 1)
+            match = re.search(r"(\d+)", rest)
+            if match:
+                result[key] = int(match.group(1))
+    except OSError:
+        pass
+    return result
+
+
+def read_process_memory(pid: Optional[int]) -> Dict[str, int]:
+    result = {"VmRSS": 0, "VmHWM": 0, "VmSize": 0}
+    if not pid:
+        return result
+    try:
+        for line in Path(f"/proc/{pid}/status").read_text().splitlines():
+            if ":" not in line:
+                continue
+            key, rest = line.split(":", 1)
+            if key in result:
+                match = re.search(r"(\d+)", rest)
+                if match:
+                    result[key] = int(match.group(1))
+    except OSError:
+        pass
+    return result
+
+
+def find_server_pid(port: int) -> Optional[int]:
+    proc = Path("/proc")
+    if not proc.is_dir():
+        return None
+    needle = str(port).encode()
+    for child in proc.iterdir():
+        if not child.name.isdigit():
+            continue
+        try:
+            cmdline = (child / "cmdline").read_bytes()
+        except OSError:
+            continue
+        if b"rkllm3-server" in cmdline and needle in cmdline:
+            return int(child.name)
+    return None
+
+
+class MemoryMonitor:
+    def __init__(self, out_dir: Path, interval: float, leak_threshold_mb: float):
+        self.samples_path = out_dir / "memory_samples.jsonl"
+        self.anchors_path = out_dir / "memory_anchors.jsonl"
+        self.interval = interval
+        self.leak_threshold_mb = leak_threshold_mb
+        self.server_pid: Optional[int] = None
+        self.context: Dict[str, Any] = {"phase": "startup"}
+        self.lock = threading.Lock()
+        self.stop_event = threading.Event()
+        self.thread: Optional[threading.Thread] = None
+
+    def set_server_pid(self, pid: Optional[int]) -> None:
+        with self.lock:
+            self.server_pid = pid
+
+    def set_context(self, **values: Any) -> None:
+        with self.lock:
+            self.context = dict(values)
+
+    def sample(self, kind: str = "sample") -> Dict[str, Any]:
+        with self.lock:
+            context = dict(self.context)
+            pid = self.server_pid
+        mem = read_meminfo()
+        process = read_process_memory(pid)
+        total = mem.get("MemTotal", 0)
+        available = mem.get("MemAvailable", 0)
+        return {
+            "timestamp": time.time(),
+            "kind": kind,
+            **context,
+            "server_pid": pid,
+            "mem_total_kb": total,
+            "mem_available_kb": available,
+            "board_used_kb": max(0, total - available),
+            "cached_kb": mem.get("Cached", 0),
+            "slab_kb": mem.get("Slab", 0),
+            "sreclaimable_kb": mem.get("SReclaimable", 0),
+            "cma_free_kb": mem.get("CmaFree", 0),
+            "server_rss_kb": process["VmRSS"],
+            "server_hwm_kb": process["VmHWM"],
+            "server_vmsize_kb": process["VmSize"],
+        }
+
+    def record_anchor(self, kind: str, **extra: Any) -> Dict[str, Any]:
+        sample = self.sample(kind)
+        sample.update(extra)
+        append_jsonl(self.anchors_path, sample)
+        return sample
+
+    def start(self) -> None:
+        self.samples_path.parent.mkdir(parents=True, exist_ok=True)
+        self.thread = threading.Thread(target=self._run, name="memory-monitor", daemon=True)
+        self.thread.start()
+
+    def _run(self) -> None:
+        with self.samples_path.open("a", encoding="utf-8") as f:
+            while not self.stop_event.is_set():
+                f.write(json.dumps(self.sample(), ensure_ascii=False, separators=(",", ":")) + "\n")
+                f.flush()
+                self.stop_event.wait(self.interval)
+            f.write(json.dumps(self.sample("monitor_stop"), ensure_ascii=False, separators=(",", ":")) + "\n")
+
+    def stop(self) -> None:
+        self.stop_event.set()
+        if self.thread:
+            self.thread.join(timeout=max(2.0, self.interval * 5))
+
+
+def read_jsonl(path: Path) -> List[Dict[str, Any]]:
+    if not path.is_file():
+        return []
+    records: List[Dict[str, Any]] = []
+    for line_number, line in enumerate(read_text(path).splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValidationError(f"invalid JSONL at {path}:{line_number}: {exc}") from exc
+        if isinstance(value, dict):
+            records.append(value)
+    return records
+
+
+def median(values: List[float]) -> float:
+    return float(statistics.median(values)) if values else 0.0
+
+
+def assess_memory_leak(anchors: List[Dict[str, Any]], threshold_mb: float) -> Dict[str, Any]:
+    idle = [item for item in anchors if item.get("kind") == "post_idle"]
+    if len(idle) < 2:
+        return {
+            "memory_leak_suspected": False,
+            "confidence": "insufficient_samples",
+            "idle_sample_count": len(idle),
+        }
+    width = min(3, max(1, len(idle) // 2))
+    first, last = idle[:width], idle[-width:]
+    first_available = median([float(item.get("mem_available_kb", 0)) for item in first])
+    last_available = median([float(item.get("mem_available_kb", 0)) for item in last])
+    first_cached = median([float(item.get("cached_kb", 0)) for item in first])
+    last_cached = median([float(item.get("cached_kb", 0)) for item in last])
+    first_rss = median([float(item.get("server_rss_kb", 0)) for item in first])
+    last_rss = median([float(item.get("server_rss_kb", 0)) for item in last])
+    first_cma = median([float(item.get("cma_free_kb", 0)) for item in first])
+    last_cma = median([float(item.get("cma_free_kb", 0)) for item in last])
+
+    available_decline_mb = (first_available - last_available) / 1024
+    cached_growth_mb = (last_cached - first_cached) / 1024
+    rss_growth_mb = (last_rss - first_rss) / 1024
+    cma_decline_mb = (first_cma - last_cma) / 1024
+    reclaimable_explains = cached_growth_mb >= max(0.0, available_decline_mb * 0.5)
+    suspected = (
+        available_decline_mb > threshold_mb
+        and not reclaimable_explains
+        and (rss_growth_mb > threshold_mb * 0.25 or cma_decline_mb > threshold_mb * 0.25)
+    )
+    return {
+        "memory_leak_suspected": suspected,
+        "confidence": "high" if len(idle) >= 6 else "low",
+        "idle_sample_count": len(idle),
+        "comparison_width": width,
+        "mem_available_decline_mb": round(available_decline_mb, 3),
+        "cached_growth_mb": round(cached_growth_mb, 3),
+        "server_rss_growth_mb": round(rss_growth_mb, 3),
+        "cma_free_decline_mb": round(cma_decline_mb, 3),
+        "threshold_mb": threshold_mb,
+        "reclaimable_cache_explains_decline": reclaimable_explains,
+    }
+
+
+def summarize_memory(out_dir: Path, server_log: Path, threshold_mb: float) -> Dict[str, Any]:
+    samples = read_jsonl(out_dir / "memory_samples.jsonl")
+    anchors = read_jsonl(out_dir / "memory_anchors.jsonl")
+    result: Dict[str, Any] = assess_memory_leak(anchors, threshold_mb)
+    if samples:
+        result.update({
+            "sample_count": len(samples),
+            "baseline_board_used_mb": round(float(samples[0].get("board_used_kb", 0)) / 1024, 3),
+            "board_used_peak_mb": round(max(float(x.get("board_used_kb", 0)) for x in samples) / 1024, 3),
+            "mem_available_min_mb": round(min(float(x.get("mem_available_kb", 0)) for x in samples) / 1024, 3),
+            "server_rss_peak_mb": round(max(float(x.get("server_rss_kb", 0)) for x in samples) / 1024, 3),
+            "server_hwm_peak_mb": round(max(float(x.get("server_hwm_kb", 0)) for x in samples) / 1024, 3),
+            "cma_free_min_mb": round(min(float(x.get("cma_free_kb", 0)) for x in samples) / 1024, 3),
+        })
+    if server_log.is_file():
+        log = read_text(server_log)
+        internal = [int(value) for value in re.findall(r"internal memory.*?size=(\d+)", log)]
+        result.update({
+            "internal_memory_mb": round(sum(internal) / 1024 / 1024, 3),
+            "server_prompt_tokens": [int(value) for value in re.findall(r"n_prompt_tokens = (\d+)", log)],
+            "server_truncated_flags": [int(value) for value in re.findall(r"truncated = (\d+)", log)],
+            "session_init_count": len(re.findall(r"rknn3_session_init", log)),
+            "session_stop_count": len(re.findall(r"rknn3_session_stop done", log)),
+        })
+    return result
+
+
+def find_one_by_suffix(model_dir: Path, suffix: str, label: str) -> Path:
+    matches = sorted(path for path in model_dir.iterdir() if path.is_file() and path.name.endswith(suffix))
+    if not matches:
+        raise EnvironmentError(f"missing {label} (*{suffix}) in {model_dir}")
+    if len(matches) > 1:
+        names = ", ".join(path.name for path in matches)
+        raise EnvironmentError(f"multiple {label} files in {model_dir}: {names}; use explicit option")
+    return matches[0]
+
+
+def discover_llm_files(args: argparse.Namespace) -> Dict[str, Path]:
+    model_dir = Path(args.model_dir)
+    if not model_dir.is_dir():
+        raise EnvironmentError(f"model directory not found: {model_dir}")
+    explicit = {
+        "rknn": args.llm_rknn,
+        "weight": args.llm_weight,
+        "vocab": args.llm_vocab,
+        "embed": args.llm_embed,
+    }
+    result: Dict[str, Path] = {}
+    for key, suffix in REQUIRED_SUFFIXES.items():
+        if explicit[key]:
+            path = Path(explicit[key])
+            require_file(path, f"LLM {key}")
+            result[key] = path
+        else:
+            result[key] = find_one_by_suffix(model_dir, suffix, key)
+    return result
+
+
+def is_port_open(host: str, port: int, timeout: float = 0.5) -> bool:
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except OSError:
+        return False
+
+
+def wait_ready(host: str, port: int, timeout_s: int) -> None:
+    url = f"http://{host}:{port}/health"
+    deadline = time.time() + timeout_s
+    last_error = ""
+    while time.time() < deadline:
+        try:
+            with urllib.request.urlopen(url, timeout=2) as response:
+                if 200 <= response.status < 500:
+                    return
+        except Exception as exc:  # noqa: BLE001 - readiness polling
+            last_error = str(exc)
+        time.sleep(1)
+    raise EnvironmentError(f"rkllm3-server not ready at {url}; last error: {last_error}")
+
+
+def start_server(
+    args: argparse.Namespace,
+    llm_files: Dict[str, Path],
+    server_log: Path,
+) -> Tuple[Optional[subprocess.Popen[Any]], Optional[int]]:
+    if args.reuse_server:
+        wait_ready(args.host, args.port, args.ready_timeout)
+        return None, find_server_pid(args.port)
+    if is_port_open(args.host, args.port):
+        raise EnvironmentError(f"port {args.host}:{args.port} is already open")
+    server = Path(args.server)
+    require_executable(server, "rkllm3-server")
+    cmd = [
+        str(server), "-m", str(llm_files["rknn"]),
+        "--weight", str(llm_files["weight"]),
+        "--vocab", str(llm_files["vocab"]),
+        "--embed", str(llm_files["embed"]),
+        "-c", str(args.ctx), "-n", str(args.predict),
+        "--host", args.host, "--port", str(args.port),
+    ]
+    if args.server_temp is not None:
+        cmd += ["--temp", str(args.server_temp)]
+    if args.server_top_k is not None:
+        cmd += ["--top-k", str(args.server_top_k)]
+    if args.server_top_p is not None:
+        cmd += ["--top-p", str(args.server_top_p)]
+    if args.server_repeat_penalty is not None:
+        cmd += ["--repeat-penalty", str(args.server_repeat_penalty)]
+
+    server_log.parent.mkdir(parents=True, exist_ok=True)
+    log_file = server_log.open("w", encoding="utf-8", errors="replace")
+    process = subprocess.Popen(
+        cmd,
+        cwd=str(Path(args.model_dir)),
+        stdout=log_file,
+        stderr=subprocess.STDOUT,
+        text=True,
+    )
+    process._meeting_minutes_log_file = log_file  # type: ignore[attr-defined]
+    try:
+        wait_ready(args.host, args.port, args.ready_timeout)
+    except Exception:
+        if process.poll() is None:
+            process.terminate()
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
+        log_file.close()
+        raise
+    return process, process.pid
+
+
+def stop_server(process: Optional[subprocess.Popen[Any]], keep: bool) -> None:
+    if process is None:
+        return
+    if not keep and process.poll() is None:
+        process.terminate()
+        try:
+            process.wait(timeout=15)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait(timeout=10)
+    log_file = getattr(process, "_meeting_minutes_log_file", None)
+    if log_file is not None:
+        log_file.close()
+
+
+def find_resource_conflicts(allow_server: bool = False) -> List[Dict[str, Any]]:
+    conflicts: List[Dict[str, Any]] = []
+    proc = Path("/proc")
+    if not proc.is_dir():
+        return conflicts
+    current_pid = os.getpid()
+    patterns = ("rknn_qwen3_asr", "meeting_spk_asr", "rkllm3-server")
+    for child in proc.iterdir():
+        if not child.name.isdigit() or int(child.name) == current_pid:
+            continue
+        try:
+            cmdline = (child / "cmdline").read_bytes().replace(b"\0", b" ").decode(errors="replace")
+        except OSError:
+            continue
+        if not cmdline or not any(pattern in cmdline for pattern in patterns):
+            continue
+        if allow_server and "rkllm3-server" in cmdline:
+            continue
+        conflicts.append({"pid": int(child.name), "cmdline": cmdline.strip()})
+    return conflicts
+
+
+def post_chat(args: argparse.Namespace, prompt: str, max_tokens: int) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    payload = {
+        "model": args.model_name,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": max_tokens,
+        "temperature": args.temperature,
+        "chat_template_kwargs": {"enable_thinking": False},
+    }
+    if args.response_format_json_object:
+        payload["response_format"] = {"type": "json_object"}
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        f"http://{args.host}:{args.port}/v1/chat/completions",
+        data=body,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=args.request_timeout) as response:
+            raw = response.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise MinutesError(f"LLM HTTP {exc.code}: {detail[:1000]}") from exc
+    except urllib.error.URLError as exc:
+        raise MinutesError(f"LLM request failed: {exc}") from exc
+    if not raw.strip():
+        raise EmptyServerResponse("LLM HTTP response body is empty")
+    try:
+        return payload, json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise MinutesError(f"LLM response is not JSON: {exc}; body={raw[:1000]}") from exc
+
+
+def response_content(response: Dict[str, Any]) -> Tuple[str, Optional[str], Dict[str, Any]]:
+    choices = response.get("choices")
+    if not isinstance(choices, list) or not choices or not isinstance(choices[0], dict):
+        raise ValidationError("response missing choices[0]")
+    first = choices[0]
+    message = first.get("message")
+    if not isinstance(message, dict):
+        raise ValidationError("response missing choices[0].message")
+    content = message.get("content")
+    if not isinstance(content, str) or not content.strip():
+        raise ValidationError("model content is empty")
+    finish_reason = first.get("finish_reason")
+    usage = response.get("usage") if isinstance(response.get("usage"), dict) else {}
+    return content, finish_reason if isinstance(finish_reason, str) else None, usage
+
+
+def call_model(
+    args: argparse.Namespace,
+    prompt: str,
+    max_tokens: int,
+    artifact_dir: Path,
+    stage_context: Dict[str, Any],
+    validator: Callable[[Dict[str, Any]], List[str]],
+    monitor: MemoryMonitor,
+    transform: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
+) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    artifact_dir.mkdir(parents=True, exist_ok=True)
+    correction = ""
+    last_error = ""
+    for attempt in range(1, args.max_retries + 2):
+        request_prompt = prompt + correction
+        estimated_prompt_tokens = max(1, int(len(request_prompt) * args.chars_to_tokens_ratio))
+        if estimated_prompt_tokens > args.max_prompt_tokens:
+            metadata = {
+                "attempt": attempt,
+                "estimated_prompt_tokens": estimated_prompt_tokens,
+                "estimate_only": True,
+            }
+            write_json(artifact_dir / f"result.attempt_{attempt:02d}.json", {
+                "status": "estimated_prompt_over_budget",
+                **metadata,
+            })
+            raise PromptBudgetExceeded(estimated_prompt_tokens, args.max_prompt_tokens, metadata)
+        monitor.set_context(**stage_context, attempt=attempt)
+        monitor.record_anchor("pre_request", **stage_context, attempt=attempt)
+        started = time.time()
+        try:
+            payload, response = post_chat(args, request_prompt, max_tokens)
+            elapsed = time.time() - started
+            write_json(artifact_dir / f"request.attempt_{attempt:02d}.json", payload)
+            write_json(artifact_dir / f"response.attempt_{attempt:02d}.json", response)
+            content, finish_reason, usage = response_content(response)
+            write_text(artifact_dir / f"content.attempt_{attempt:02d}.txt", content)
+            prompt_tokens = usage.get("prompt_tokens")
+            metadata = {
+                "attempt": attempt,
+                "elapsed_sec": round(elapsed, 3),
+                "finish_reason": finish_reason,
+                "usage": usage,
+            }
+            if isinstance(prompt_tokens, int) and prompt_tokens > args.max_prompt_tokens:
+                write_json(artifact_dir / f"result.attempt_{attempt:02d}.json", {
+                    "status": "prompt_over_budget", **metadata,
+                })
+                raise PromptBudgetExceeded(prompt_tokens, args.max_prompt_tokens, metadata)
+            completion_limit_reached = bool(
+                finish_reason and finish_reason.lower() in {"length", "max_tokens"}
+            )
+            if completion_limit_reached:
+                metadata["completion_limit_reached"] = True
+            try:
+                parsed, extracted = parse_json_content(content)
+                parsed = normalize_model_output(parsed)
+                errors = validator(parsed)
+                if errors:
+                    raise ValidationError("; ".join(errors))
+                if transform is not None:
+                    parsed = transform(parsed)
+            except ValidationError:
+                if completion_limit_reached:
+                    metadata["completion_truncated"] = True
+                    write_json(artifact_dir / f"result.attempt_{attempt:02d}.json", {
+                        "status": "completion_truncated", **metadata,
+                    })
+                    completion_tokens = usage.get("completion_tokens")
+                    raise PromptBudgetExceeded(
+                        int(prompt_tokens) if isinstance(prompt_tokens, int) else estimated_prompt_tokens,
+                        args.max_prompt_tokens,
+                        metadata,
+                        message=(
+                            f"completion truncated at {completion_tokens} tokens"
+                            if isinstance(completion_tokens, int)
+                            else "completion truncated"
+                        ),
+                    )
+                raise
+            if completion_limit_reached:
+                metadata["complete_json_at_limit"] = True
+            metadata["json_extracted_from_content"] = extracted
+            write_json(artifact_dir / "result.json", {"status": "ok", **metadata, "output": parsed})
+            del response, content
+            gc.collect()
+            if args.idle_seconds > 0:
+                time.sleep(args.idle_seconds)
+            monitor.record_anchor("post_idle", **stage_context, attempt=attempt, status="ok")
+            return parsed, metadata
+        except PromptBudgetExceeded:
+            gc.collect()
+            monitor.record_anchor("post_idle", **stage_context, attempt=attempt, status="prompt_over_budget")
+            raise
+        except EmptyServerResponse as exc:
+            last_error = str(exc)
+            write_json(artifact_dir / f"result.attempt_{attempt:02d}.json", {
+                "status": "empty_server_response",
+                "attempt": attempt,
+                "elapsed_sec": round(time.time() - started, 3),
+                "error": last_error,
+            })
+            gc.collect()
+            if args.idle_seconds > 0:
+                time.sleep(args.idle_seconds)
+            monitor.record_anchor("post_idle", **stage_context, attempt=attempt, status="empty_server_response")
+            if attempt > args.max_retries:
+                break
+            correction = ""
+        except MinutesError as exc:
+            last_error = str(exc)
+            write_json(artifact_dir / f"result.attempt_{attempt:02d}.json", {
+                "status": "failed",
+                "attempt": attempt,
+                "elapsed_sec": round(time.time() - started, 3),
+                "error": last_error,
+            })
+            gc.collect()
+            if args.idle_seconds > 0:
+                time.sleep(args.idle_seconds)
+            monitor.record_anchor("post_idle", **stage_context, attempt=attempt, status="failed")
+            if attempt > args.max_retries:
+                break
+            correction = (
+                "\n\n上一次输出未通过校验。请重新输出完整 JSON，不要解释。"
+                f"校验错误：{last_error[:800]}"
+            )
+    raise ValidationError(f"model stage failed after retries: {last_error}")
+
+
+def turns_for_window(window: Dict[str, Any], units: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    result: List[Dict[str, Any]] = []
+    for index in window["unit_indexes"]:
+        unit = units[index]
+        result.append({
+            "id": unit["source_turn_id"],
+            "start": unit["start"],
+            "end": unit["end"],
+            "speaker": unit["speaker"],
+            "text": unit["text"],
+            "chunk_ids": unit["chunk_ids"],
+        })
+    return result
+
+
+def latest_map_records(path: Path) -> Dict[int, Dict[str, Any]]:
+    latest: Dict[int, Dict[str, Any]] = {}
+    for record in read_jsonl(path):
+        window_id = record.get("window_id")
+        if isinstance(window_id, int):
+            latest[window_id] = record
+    return latest
+
+
+def placeholder_for_failed_window(window: Dict[str, Any], error: str) -> Dict[str, Any]:
+    return {
+        "schema_version": "meeting_minutes_map_v0",
+        "window_id": window["window_id"],
+        "time_range": {"start": window["start"], "end": window["end"]},
+        "participants": [],
+        "topics": [],
+        "decisions": [],
+        "action_items": [],
+        "risks": [],
+        "open_questions": [],
+        "warnings": [
+            f"MAP window {window['window_id']} failed for {window['start']:.3f}-{window['end']:.3f}: {error}"
+        ],
+    }
+
+
+def run_map_stage(
+    args: argparse.Namespace,
+    plan: Dict[str, Any],
+    turns: List[Dict[str, Any]],
+    prompt_template: str,
+    run_dir: Path,
+    repeat: int,
+    monitor: MemoryMonitor,
+    plan_path: Path,
+) -> List[Dict[str, Any]]:
+    results_path = run_dir / "map_results.jsonl"
+    latest = latest_map_records(results_path) if args.resume else {}
+    queue = [window for window in plan["windows"] if window.get("active", True)]
+    outputs: Dict[int, Dict[str, Any]] = {}
+    for window in queue:
+        previous = latest.get(window["window_id"])
+        if previous and previous.get("status") == "ok" and isinstance(previous.get("output"), dict):
+            outputs[window["window_id"]] = previous["output"]
+
+    while queue:
+        window = queue.pop(0)
+        window_id = window["window_id"]
+        previous = latest.get(window_id)
+        if previous and previous.get("status") == "ok" and isinstance(previous.get("output"), dict):
+            outputs[window_id] = previous["output"]
+            continue
+
+        prompt = render_map_prompt(prompt_template, window)
+        artifact_dir = run_dir / "map" / "windows" / f"window_{window_id:04d}"
+        allowed = turns_for_window(window, plan["units"])
+        allowed_ids = {item["id"] for item in allowed}
+        allowed = [turn for turn in turns if turn["id"] in allowed_ids]
+        validator = lambda value, w=window, t=allowed: validate_map_model_output(value, w, t)
+        transform = lambda value, w=window, t=allowed: materialize_map_output(value, w, t)[0]
+        try:
+            output, metadata = call_model(
+                args,
+                prompt,
+                args.map_max_tokens,
+                artifact_dir,
+                {"phase": "map", "repeat": repeat, "window_id": window_id},
+                validator,
+                monitor,
+                transform,
+            )
+            record = {
+                "timestamp": time.time(),
+                "status": "ok",
+                "window_id": window_id,
+                "repeat": repeat,
+                "metadata": metadata,
+                "output": output,
+            }
+            append_jsonl(results_path, record)
+            latest[window_id] = record
+            outputs[window_id] = output
+        except PromptBudgetExceeded as exc:
+            active_count = sum(item.get("active", True) for item in plan["windows"])
+            if len(window["unit_indexes"]) < 2 or active_count >= args.max_map_windows:
+                error = str(exc)
+                if active_count >= args.max_map_windows:
+                    error += f"; active MAP window limit {args.max_map_windows} reached"
+                placeholder = placeholder_for_failed_window(window, error)
+                record = {
+                    "timestamp": time.time(), "status": "failed", "window_id": window_id,
+                    "repeat": repeat, "error": error, "output": placeholder,
+                }
+                append_jsonl(results_path, record)
+                outputs[window_id] = placeholder
+                continue
+            children = split_window(plan, window)
+            write_json(plan_path, plan)
+            record = {
+                "timestamp": time.time(), "status": "split", "window_id": window_id,
+                "repeat": repeat, "error": str(exc),
+                "split_into": [child["window_id"] for child in children],
+            }
+            append_jsonl(results_path, record)
+            queue = children + queue
+        except ValidationError as exc:
+            placeholder = placeholder_for_failed_window(window, str(exc))
+            record = {
+                "timestamp": time.time(), "status": "failed", "window_id": window_id,
+                "repeat": repeat, "error": str(exc), "output": placeholder,
+            }
+            append_jsonl(results_path, record)
+            outputs[window_id] = placeholder
+
+    active_ids = [
+        window["window_id"] for window in plan["windows"] if window.get("active", True)
+    ]
+    return [outputs[window_id] for window_id in active_ids if window_id in outputs]
+
+
+def run_reduce_stage(
+    args: argparse.Namespace,
+    map_results: List[Dict[str, Any]],
+    turns: List[Dict[str, Any]],
+    prompt_template: str,
+    run_dir: Path,
+    repeat: int,
+    monitor: MemoryMonitor,
+) -> Dict[str, Any]:
+    if not map_results:
+        raise ValidationError("no MAP results are available for REDUCE")
+
+    current = map_results
+    level = 1
+    while True:
+        groups = [current[index:index + args.reduce_group_size] for index in range(0, len(current), args.reduce_group_size)]
+        next_level: List[Dict[str, Any]] = []
+        for group_index, group in enumerate(groups, 1):
+            pending_groups = [group]
+            while pending_groups:
+                current_group = pending_groups.pop(0)
+                prompt_values, source_lookup = build_reduce_sources(current_group)
+                compact = json.dumps(prompt_values, ensure_ascii=False, separators=(",", ":"))
+                prompt = prompt_template.replace("{map_results}", compact)
+                dynamic_group = len(next_level) + 1
+                artifact_dir = run_dir / "reduce" / f"level_{level:02d}_group_{dynamic_group:03d}"
+                validator = lambda value, s=source_lookup, t=turns: validate_reduce_model_output(value, s, t)
+                transform = lambda value, s=source_lookup: materialize_reduce_output(value, s)[0]
+                try:
+                    output, _ = call_model(
+                        args,
+                        prompt,
+                        args.reduce_max_tokens,
+                        artifact_dir,
+                        {"phase": "reduce", "repeat": repeat, "level": level, "group": dynamic_group},
+                        validator,
+                        monitor,
+                        transform,
+                    )
+                except PromptBudgetExceeded as exc:
+                    if len(current_group) == 1:
+                        raise ValidationError(
+                            f"single REDUCE input exceeds prompt budget: {exc.prompt_tokens}"
+                        ) from exc
+                    midpoint = len(current_group) // 2
+                    pending_groups = [current_group[:midpoint], current_group[midpoint:]] + pending_groups
+                    continue
+                source_ranges = [evidence_time_range(value) for value in current_group]
+                starts = [start for start, end in source_ranges if end >= start]
+                ends = [end for start, end in source_ranges if end >= start]
+                output["_source_time_range"] = {
+                    "start": min(starts) if starts else 0.0,
+                    "end": max(ends) if ends else 0.0,
+                }
+                next_level.append(output)
+        if len(next_level) == 1:
+            final = dict(next_level[0])
+            final.pop("_source_time_range", None)
+            return final
+        if len(next_level) >= len(current):
+            raise ValidationError(
+                "REDUCE tree did not shrink; increase --reduce-group-size or prompt budget"
+            )
+        current = next_level
+        level += 1
+        if level > 16:
+            raise ValidationError("REDUCE tree exceeded 16 levels")
+
+
+def build_snapshot(
+    args: argparse.Namespace,
+    turns_path: Path,
+    map_prompt: Path,
+    reduce_prompt: Path,
+    llm_files: Optional[Dict[str, Path]],
+) -> Dict[str, Any]:
+    model_files = {}
+    for key, path in (llm_files or {}).items():
+        model_files[key] = {"path": str(path), "size": path.stat().st_size}
+    return {
+        "schema_version": "meeting_minutes_input_snapshot_v0",
+        "turns_file": str(turns_path),
+        "turns_sha256": sha256_file(turns_path),
+        "map_prompt": str(map_prompt),
+        "map_prompt_sha256": sha256_file(map_prompt),
+        "reduce_prompt": str(reduce_prompt),
+        "reduce_prompt_sha256": sha256_file(reduce_prompt),
+        "model_files": model_files,
+        "ctx": args.ctx,
+        "predict": args.predict,
+        "map_target_chars": args.map_target_chars,
+        "map_max_turns": args.map_max_turns,
+        "max_map_windows": args.max_map_windows,
+        "overlap_turns": args.overlap_turns,
+        "max_prompt_tokens": args.max_prompt_tokens,
+        "chars_to_tokens_ratio": args.chars_to_tokens_ratio,
+        "map_max_tokens": args.map_max_tokens,
+        "reduce_max_tokens": args.reduce_max_tokens,
+        "reduce_group_size": args.reduce_group_size,
+    }
+
+
+def verify_resume_snapshot(path: Path, current: Dict[str, Any]) -> None:
+    if not path.is_file():
+        return
+    previous = json.loads(read_text(path))
+    for key in (
+        "turns_sha256", "map_prompt_sha256", "reduce_prompt_sha256", "ctx", "predict",
+        "map_target_chars", "map_max_turns", "max_map_windows", "overlap_turns", "max_prompt_tokens",
+        "chars_to_tokens_ratio", "map_max_tokens", "reduce_max_tokens", "reduce_group_size",
+    ):
+        if previous.get(key) != current.get(key):
+            raise ValidationError(
+                f"resume snapshot mismatch for {key}: {previous.get(key)!r} != {current.get(key)!r}"
+            )
+
+
+def load_or_create_plan(
+    path: Path,
+    turns: List[Dict[str, Any]],
+    args: argparse.Namespace,
+) -> Dict[str, Any]:
+    if args.resume and path.is_file():
+        value = json.loads(read_text(path))
+        if not isinstance(value, dict) or not isinstance(value.get("windows"), list):
+            raise ValidationError(f"invalid window plan: {path}")
+        return value
+    plan = build_window_plan(turns, args.map_target_chars, args.map_max_turns, args.overlap_turns)
+    write_json(path, plan)
+    return plan
+
+
+def is_failed_map_placeholder(value: Dict[str, Any]) -> bool:
+    facts = sum(
+        len(value.get(field, [])) if isinstance(value.get(field), list) else 0
+        for field in (
+            "participants", "topics", "decisions", "action_items", "risks", "open_questions"
+        )
+    )
+    warnings = value.get("warnings") if isinstance(value.get("warnings"), list) else []
+    return facts == 0 and any(
+        isinstance(warning, str)
+        and warning.startswith("MAP window ")
+        and " failed " in warning
+        for warning in warnings
+    )
+
+
+def run_repeat(
+    args: argparse.Namespace,
+    plan: Dict[str, Any],
+    turns: List[Dict[str, Any]],
+    map_prompt: str,
+    reduce_prompt: str,
+    run_dir: Path,
+    repeat: int,
+    monitor: MemoryMonitor,
+    plan_path: Path,
+) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    run_dir.mkdir(parents=True, exist_ok=True)
+    repeat_plan = json.loads(json.dumps(plan))
+    repeat_plan_path = plan_path if repeat == 1 else run_dir / "window_plan.json"
+    if repeat > 1:
+        write_json(repeat_plan_path, repeat_plan)
+    map_results = run_map_stage(
+        args, repeat_plan, turns, map_prompt, run_dir, repeat, monitor, repeat_plan_path
+    )
+    failed_map_count = sum(is_failed_map_placeholder(value) for value in map_results)
+    minutes = run_reduce_stage(
+        args, map_results, turns, reduce_prompt, run_dir, repeat, monitor
+    )
+    write_json(run_dir / "minutes.json", minutes)
+    repeat_status = "pass" if failed_map_count == 0 else "partial"
+    repeat_result = {
+        "status": repeat_status,
+        "repeat": repeat,
+        "map_result_count": len(map_results),
+        "failed_map_count": failed_map_count,
+        "minutes": str(run_dir / "minutes.json"),
+    }
+    write_json(run_dir / "result.json", repeat_result)
+    return minutes, repeat_result
+
+
+def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="RK1828 structured ASR turns -> evidence-backed MAP/REDUCE meeting minutes"
+    )
+    parser.add_argument("--turns-file", default=DEFAULT_TURNS)
+    parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR)
+    parser.add_argument("--model-dir", default=DEFAULT_MODEL_DIR)
+    parser.add_argument("--server", default=DEFAULT_SERVER)
+    parser.add_argument("--host", default=DEFAULT_HOST)
+    parser.add_argument("--port", type=int, default=DEFAULT_PORT)
+    parser.add_argument("--model-name", default="default")
+    parser.add_argument("--ctx", type=int, default=8192)
+    parser.add_argument("--predict", type=int, default=1024)
+    parser.add_argument("--map-max-tokens", type=int, default=512)
+    parser.add_argument("--reduce-max-tokens", type=int, default=1024)
+    parser.add_argument("--map-target-chars", type=int, default=4500)
+    parser.add_argument("--map-max-turns", type=int, default=40)
+    parser.add_argument(
+        "--max-map-windows",
+        type=int,
+        default=16,
+        help="Hard cap after automatic prompt-budget splits",
+    )
+    parser.add_argument("--max-prompt-tokens", type=int, default=6600)
+    parser.add_argument(
+        "--chars-to-tokens-ratio",
+        type=float,
+        default=0.85,
+        help="Conservative preflight estimate used before sending a request",
+    )
+    parser.add_argument("--overlap-turns", type=int, default=1)
+    parser.add_argument("--reduce-group-size", type=int, default=5)
+    parser.add_argument("--max-retries", type=int, default=2)
+    parser.add_argument("--stability-repeat", type=int, default=1)
+    parser.add_argument("--sample-interval", type=float, default=0.1)
+    parser.add_argument("--idle-seconds", type=float, default=0.5)
+    parser.add_argument("--leak-threshold-mb", type=float, default=128.0)
+    parser.add_argument("--ready-timeout", type=int, default=300)
+    parser.add_argument("--request-timeout", type=int, default=900)
+    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--reuse-server", action="store_true")
+    parser.add_argument("--keep-server", action="store_true")
+    parser.add_argument("--allow-resource-overlap", action="store_true")
+    parser.add_argument("--resume", dest="resume", action="store_true", default=True)
+    parser.add_argument("--no-resume", dest="resume", action="store_false")
+    parser.add_argument("--plan-only", action="store_true")
+    parser.add_argument("--response-format-json-object", dest="response_format_json_object", action="store_true", default=True)
+    parser.add_argument("--no-response-format-json-object", dest="response_format_json_object", action="store_false")
+    parser.add_argument("--server-temp", type=float)
+    parser.add_argument("--server-top-k", type=int)
+    parser.add_argument("--server-top-p", type=float)
+    parser.add_argument("--server-repeat-penalty", type=float)
+    parser.add_argument("--llm-rknn")
+    parser.add_argument("--llm-weight")
+    parser.add_argument("--llm-vocab")
+    parser.add_argument("--llm-embed")
+    parser.add_argument("--prompt-map")
+    parser.add_argument("--prompt-reduce")
+    parser.add_argument("--schema-dir")
+    return parser.parse_args(argv)
+
+
+def validate_args(args: argparse.Namespace) -> None:
+    if args.ctx < 512 or args.predict < 1:
+        raise ValidationError("--ctx must be >=512 and --predict must be positive")
+    if args.max_prompt_tokens >= args.ctx:
+        raise ValidationError("--max-prompt-tokens must be lower than --ctx")
+    for key in ("map_max_tokens", "reduce_max_tokens", "map_target_chars", "map_max_turns", "max_map_windows", "stability_repeat"):
+        if getattr(args, key) < 1:
+            raise ValidationError(f"--{key.replace('_', '-')} must be positive")
+    if args.reduce_group_size < 2:
+        raise ValidationError("--reduce-group-size must be at least 2")
+    if args.overlap_turns < 0 or args.max_retries < 0:
+        raise ValidationError("overlap/retry values cannot be negative")
+    if args.sample_interval <= 0 or args.idle_seconds < 0:
+        raise ValidationError("sampling interval must be positive and idle delay non-negative")
+    if args.chars_to_tokens_ratio <= 0:
+        raise ValidationError("--chars-to-tokens-ratio must be positive")
+
+
+def run(args: argparse.Namespace) -> int:
+    validate_args(args)
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    result_path = out_dir / "result.json"
+    started = time.time()
+    process: Optional[subprocess.Popen[Any]] = None
+    monitor = MemoryMonitor(out_dir, args.sample_interval, args.leak_threshold_mb)
+    server_log = out_dir / "server.log"
+
+    try:
+        turns_path = Path(args.turns_file)
+        turns = load_turns(turns_path)
+        map_prompt_path = resolve_asset(args.prompt_map, "prompts/meeting_minutes_map_v0_zh.txt")
+        reduce_prompt_path = resolve_asset(args.prompt_reduce, "prompts/meeting_minutes_reduce_v0_zh.txt")
+        map_prompt = read_text(map_prompt_path)
+        reduce_prompt = read_text(reduce_prompt_path)
+        if "{transcript}" not in map_prompt or "{map_results}" not in reduce_prompt:
+            raise ValidationError("prompt templates are missing required placeholders")
+
+        schema_dir = Path(args.schema_dir) if args.schema_dir else resolve_asset(
+            None, "schemas/meeting_minutes_v0.schema.json"
+        ).parent
+        for name in (
+            "meeting_transcript_turns_v0.schema.json",
+            "meeting_minutes_map_v0.schema.json",
+            "meeting_minutes_v0.schema.json",
+        ):
+            schema_path = schema_dir / name
+            require_file(schema_path, f"schema {name}")
+            json.loads(read_text(schema_path))
+
+        plan_path = out_dir / "window_plan.json"
+        plan = load_or_create_plan(plan_path, turns, args)
+        write_text(
+            out_dir / "canonical_transcript.txt",
+            "\n".join(canonical_unit_line(unit) for unit in plan["units"]) + "\n",
+        )
+
+        llm_files = None if args.plan_only else discover_llm_files(args)
+        snapshot = build_snapshot(args, turns_path, map_prompt_path, reduce_prompt_path, llm_files)
+        snapshot_path = out_dir / "input_snapshot.json"
+        if args.resume and not args.plan_only and not args.reuse_server:
+            verify_resume_snapshot(snapshot_path, snapshot)
+        write_json(snapshot_path, snapshot)
+
+        if args.plan_only:
+            write_json(result_path, {
+                "status": "planned",
+                "turn_count": len(turns),
+                "unit_count": len(plan["units"]),
+                "window_count": len([w for w in plan["windows"] if w.get("active", True)]),
+                "window_plan": str(plan_path),
+            })
+            print(f"PLANNED: {result_path}")
+            return 0
+
+        conflicts = find_resource_conflicts(allow_server=args.reuse_server)
+        if conflicts and not args.allow_resource_overlap:
+            raise EnvironmentError(
+                "AI resource conflict detected; stop ASR/LLM processes or pass "
+                f"--allow-resource-overlap explicitly: {conflicts}"
+            )
+
+        monitor.start()
+        monitor.record_anchor("before_server_start")
+        process, server_pid = start_server(args, llm_files or {}, server_log)
+        if server_pid is None:
+            server_pid = find_server_pid(args.port)
+        monitor.set_server_pid(server_pid)
+        monitor.record_anchor("after_server_ready", server_pid=server_pid)
+
+        final_minutes: Optional[Dict[str, Any]] = None
+        repeat_results = []
+        for repeat in range(1, args.stability_repeat + 1):
+            run_dir = out_dir if repeat == 1 else out_dir / "repeats" / f"repeat_{repeat:03d}"
+            repeat_started = time.time()
+            repeat_args = argparse.Namespace(**vars(args))
+            if repeat > 1:
+                repeat_args.resume = False
+            final_minutes, repeat_result = run_repeat(
+                repeat_args, plan, turns, map_prompt, reduce_prompt,
+                run_dir, repeat, monitor, plan_path,
+            )
+            repeat_results.append({
+                **repeat_result,
+                "elapsed_sec": round(time.time() - repeat_started, 3),
+            })
+
+        if final_minutes is None:
+            raise ValidationError("no final minutes were generated")
+        write_json(out_dir / "minutes.json", final_minutes)
+        overall_status = "pass" if all(item["status"] == "pass" for item in repeat_results) else "partial"
+        result = {
+            "status": overall_status,
+            "turn_count": len(turns),
+            "unit_count": len(plan["units"]),
+            "active_window_count": len([w for w in plan["windows"] if w.get("active", True)]),
+            "stability_repeat": args.stability_repeat,
+            "repeats": repeat_results,
+            "elapsed_sec": round(time.time() - started, 3),
+            "minutes": str(out_dir / "minutes.json"),
+        }
+        write_json(result_path, result)
+        print(f"PASS: {result_path}")
+        return 0
+    except MinutesError as exc:
+        write_json(result_path, {
+            "status": "fail",
+            "error": str(exc),
+            "error_type": type(exc).__name__,
+            "exit_code": exc.exit_code,
+            "elapsed_sec": round(time.time() - started, 3),
+        })
+        print(f"FAIL: {exc}", file=sys.stderr)
+        print(f"See: {result_path}", file=sys.stderr)
+        return exc.exit_code
+    except Exception as exc:  # noqa: BLE001 - top-level result preservation
+        write_json(result_path, {
+            "status": "fail",
+            "error": str(exc),
+            "error_type": type(exc).__name__,
+            "exit_code": EXIT_RUNTIME,
+            "elapsed_sec": round(time.time() - started, 3),
+        })
+        print(f"FAIL: {type(exc).__name__}: {exc}", file=sys.stderr)
+        print(f"See: {result_path}", file=sys.stderr)
+        return EXIT_RUNTIME
+    finally:
+        if monitor.thread is not None:
+            monitor.record_anchor("before_server_stop")
+        stop_server(process, args.keep_server)
+        if monitor.thread is not None:
+            monitor.set_server_pid(None)
+            monitor.record_anchor("after_server_stop")
+            monitor.stop()
+            summary = summarize_memory(out_dir, server_log, args.leak_threshold_mb)
+            write_json(out_dir / "memory_summary.json", summary)
+
+
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    return run(parse_args(argv))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

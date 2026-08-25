@@ -1,0 +1,983 @@
+"""Board-oriented full-context and sliding-chapter meeting summarization."""
+
+from __future__ import annotations
+
+import json
+import pathlib
+import time
+from dataclasses import dataclass
+from typing import Any, Callable
+
+from .artifacts import atomic_write_json, atomic_write_text, load_json, sha256_file
+from .chunking import (
+    BudgetPolicy,
+    ChunkingError,
+    estimate_message_tokens,
+    messages_fit,
+    stable_hash,
+)
+from .llm import LlmConfig, RkllmServerSession, SYSTEM_PROMPT
+from .transcript import render_timeline
+from .validation import (
+    SummaryValidationError,
+    clean_text,
+    parse_content,
+    validate_llm_result,
+    validate_summary_object,
+)
+
+
+PRODUCT_SUMMARY_VERSION = "product-summary.v7"
+
+CHAPTER_WINDOW_SHAPE = {
+    "completed_chapters": [
+        {
+            "title": "章节标题",
+            "summary": "章节摘要",
+            "start_ref": "seg-000001",
+            "end_ref": "seg-000010",
+            "key_refs": ["seg-000002", "seg-000008"],
+        }
+    ],
+    "action_candidates": [
+        {
+            "task": "明确提出的待办",
+            "owner": None,
+            "deadline": None,
+            "refs": ["seg-000008"],
+        }
+    ],
+    "carryover_start_ref": None,
+}
+
+FULL_MEETING_SHAPE = {
+    "title": None,
+    "overview": {"text": "全文摘要", "refs": ["seg-000001"]},
+    "chapters": [
+        {
+            "title": "章节标题",
+            "overview": "章节摘要",
+            "start_ref": "seg-000001",
+            "end_ref": "seg-000010",
+            "refs": ["seg-000001", "seg-000010"],
+        }
+    ],
+    "speakers": [
+        {"speaker_id": "speaker_A", "overview": "发言人总结", "refs": ["seg-000001"]}
+    ],
+    "speaker_key_points": [
+        {"speaker_id": "speaker_A", "text": "该发言人的重点事项", "refs": ["seg-000001"]}
+    ],
+    "action_items": [
+        {
+            "task": "明确待办事项",
+            "owner": None,
+            "deadline": None,
+            "refs": ["seg-000001"],
+        }
+    ],
+}
+
+FULL_SUMMARY_SHAPE = {
+    "title": None,
+    "overview": {"text": "全文摘要", "refs": ["seg-000001"]},
+}
+
+ACTION_REVIEW_SHAPE = {
+    "action_items": [
+        {
+            "task": "确认后的待办",
+            "owner": None,
+            "deadline": None,
+            "refs": ["seg-000001"],
+        }
+    ]
+}
+
+
+@dataclass(frozen=True)
+class ProductSummaryConfig:
+    llm: LlmConfig
+    safety_tokens: int
+    chars_per_token: float
+    fixed_overhead_tokens: int
+    resume: bool
+
+    @property
+    def budget(self) -> BudgetPolicy:
+        return BudgetPolicy(
+            ctx=self.llm.ctx,
+            output_tokens=self.llm.max_tokens,
+            safety_tokens=self.safety_tokens,
+            chars_per_token=self.chars_per_token,
+            fixed_overhead_tokens=self.fixed_overhead_tokens,
+            overlap_segments=0,
+        )
+
+
+def _full_meeting_messages(
+    timeline: str,
+    speaker_ids: list[str],
+) -> list[dict[str, str]]:
+    prompt = (
+        "这是完整会议时间线，不存在后续窗口。请一次完成板端会议总结需要的全部分析："
+        "全文摘要、章节速览、发言人总结、发言人要点和待办事项。\n"
+        "章节必须按时间连续排列，使用 start_ref/end_ref 标记完整范围。\n"
+        "发言人总结和发言人要点必须绑定 speaker_id，refs 只能引用该发言人自己的原文。\n"
+        "待办必须是明确要求后续执行的事项；owner/deadline 无明确依据时为 null。\n"
+        "允许先 thinking；</think> 后只输出一个 JSON 对象。不要输出决策、风险、关键词等其他字段。\n"
+        f"允许的 speaker_id：{json.dumps(speaker_ids, ensure_ascii=False)}\n"
+        f"{json.dumps(FULL_MEETING_SHAPE, ensure_ascii=False, indent=2)}\n\n"
+        f"完整 Timeline：\n{timeline}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
+def _chapter_window_messages(
+    segments: list[dict[str, Any]],
+    *,
+    window_id: str,
+    is_final: bool,
+) -> list[dict[str, str]]:
+    timeline = render_timeline(segments)
+    final_notice = (
+        "这是会议最后一个窗口，必须把剩余内容全部整理为完整章节，carryover_start_ref 必须为 null。"
+        if is_final
+        else "窗口结尾若有尚未说完的话题，不要输出为完整章节；返回该话题起点 carryover_start_ref。"
+    )
+    prompt = (
+        f"这是长会议的章节滑动窗口 {window_id}，输入不是整场会议。\n"
+        "从窗口第一条 segment 开始，按时间连续划分章节。只输出已经完整结束的章节。\n"
+        "completed_chapters 必须从窗口第一条 segment 连续覆盖到 carryover_start_ref 之前，不能跳段、交叉或倒序。\n"
+        "carryover_start_ref 只能使用当前窗口中真实存在的 segment_id。只要 completed_chapters 没有覆盖到窗口最后一条，就必须填写第一条未覆盖 segment；只有完整覆盖窗口全部内容时才使用 JSON null（不加引号），禁止输出字符串 \"null\"，也禁止猜测下一条未输入的 segment_id。\n"
+        "如果一个话题占满整个窗口，必须按自然子主题至少完成一个章节，保证下一窗口能够向后推进。\n"
+        "章节 start_ref/end_ref 表示完整连续范围；key_refs 只列支撑摘要的关键原文，每个章节最多 3 个 key_refs，不要列出整个章节的所有 segment_id。\n"
+        "同时提取已完成章节中明确提出的待办候选。待办 refs 必须全部位于 completed_chapters 覆盖范围内；未完成尾部中的待办不要输出，留到下一窗口处理。普通建议、观点和讨论不能升级为待办。\n"
+        f"{final_notice}\n"
+        "允许先 thinking；</think> 后只输出一个 JSON 对象。结构如下：\n"
+        f"{json.dumps(CHAPTER_WINDOW_SHAPE, ensure_ascii=False, indent=2)}\n\n"
+        f"窗口 Timeline：\n{timeline}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
+def _full_summary_messages(chapters: list[dict[str, Any]]) -> list[dict[str, str]]:
+    compact = [
+        {
+            "id": index,
+            "title": chapter["title"],
+            "summary": chapter["overview"],
+            "start_ref": chapter["start_ref"],
+            "end_ref": chapter["end_ref"],
+            "refs": chapter["refs"],
+        }
+        for index, chapter in enumerate(chapters, 1)
+    ]
+    prompt = (
+        "下面是整场会议按时间排列且已校验的章节速览。请综合全部章节生成会议标题和全文摘要。\n"
+        "全文摘要应覆盖主要主题和结论，但不要逐章机械拼接，不得加入章节中没有的事实。\n"
+        "refs 只能使用输入章节已有的 segment_id。允许先 thinking；</think> 后只输出 JSON。\n"
+        f"{json.dumps(FULL_SUMMARY_SHAPE, ensure_ascii=False, indent=2)}\n\n"
+        f"章节速览：\n{json.dumps(compact, ensure_ascii=False, indent=2)}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
+def _action_review_messages(
+    candidates: list[dict[str, Any]],
+    segment_by_id: dict[str, dict[str, Any]],
+) -> list[dict[str, str]]:
+    evidence_ids = []
+    seen = set()
+    for candidate in candidates:
+        for ref in candidate.get("refs", []):
+            if ref in segment_by_id and ref not in seen:
+                seen.add(ref)
+                evidence_ids.append(ref)
+    evidence = [
+        {
+            "segment_id": ref,
+            "speaker_id": segment_by_id[ref]["speaker_id"],
+            "text": segment_by_id[ref]["text"],
+        }
+        for ref in evidence_ids
+    ]
+    prompt = (
+        "下面是长会议各章节窗口提取的待办候选及其原文证据。请复核、去重并输出最终待办。\n"
+        "只有明确要求后续执行的事项才是待办；普通建议和讨论必须删除。\n"
+        "owner 必须有对应 speaker 原文依据，deadline 必须在原文明确出现，否则为 null。\n"
+        "允许先 thinking；</think> 后只输出 JSON。\n"
+        f"{json.dumps(ACTION_REVIEW_SHAPE, ensure_ascii=False, indent=2)}\n\n"
+        f"候选：\n{json.dumps(candidates, ensure_ascii=False, indent=2)}\n\n"
+        f"证据：\n{json.dumps(evidence, ensure_ascii=False, indent=2)}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
+def _fit_window(
+    nonempty: list[dict[str, Any]],
+    start: int,
+    policy: BudgetPolicy,
+) -> tuple[int, list[dict[str, str]], int]:
+    last_fit = None
+    end = start
+    while end < len(nonempty):
+        candidate = nonempty[start : end + 1]
+        messages = _chapter_window_messages(
+            candidate,
+            window_id="window-estimate",
+            is_final=end + 1 == len(nonempty),
+        )
+        estimate = estimate_message_tokens(messages, policy)
+        if estimate > policy.input_token_budget:
+            break
+        last_fit = (end + 1, messages, estimate)
+        end += 1
+    if last_fit is None:
+        raise ChunkingError(
+            f"segment_exceeds_chapter_window_budget: {nonempty[start]['segment_id']}"
+        )
+    return last_fit
+
+
+def _validate_window(
+    content: str,
+    finish_reason: Any,
+    context_truncated: bool,
+    window_segments: list[dict[str, Any]],
+    *,
+    is_final: bool,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int, dict[str, Any]]:
+    if finish_reason != "stop":
+        raise SummaryValidationError(f"chapter window finish_reason is {finish_reason!r}")
+    if context_truncated:
+        raise SummaryValidationError("chapter window input was truncated")
+    raw = parse_content(content)
+    raw_chapters = raw.get("completed_chapters")
+    raw_actions = raw.get("action_candidates", [])
+    if not isinstance(raw_chapters, list) or not raw_chapters:
+        raise SummaryValidationError("chapter window must complete at least one chapter")
+    if not isinstance(raw_actions, list):
+        raise SummaryValidationError("action_candidates must be an array")
+    by_id = {segment["segment_id"]: segment for segment in window_segments}
+    positions = {segment["segment_id"]: index for index, segment in enumerate(window_segments)}
+    repairs = []
+    candidates = []
+    for index, chapter in enumerate(raw_chapters):
+        if not isinstance(chapter, dict):
+            repairs.append(
+                {"type": "drop_non_object_chapter", "location": f"completed_chapters[{index}]"}
+            )
+            continue
+        title = clean_text(chapter.get("title"))
+        overview = clean_text(chapter.get("summary"))
+        start_ref = str(chapter.get("start_ref") or "")
+        end_ref = str(chapter.get("end_ref") or "")
+        if title is None or overview is None:
+            repairs.append(
+                {"type": "drop_empty_chapter", "location": f"completed_chapters[{index}]"}
+            )
+            continue
+        if start_ref not in positions or end_ref not in positions:
+            repairs.append(
+                {"type": "drop_invalid_chapter_range", "location": f"completed_chapters[{index}]"}
+            )
+            continue
+        start_pos = positions[start_ref]
+        end_pos = positions[end_ref]
+        if end_pos < start_pos:
+            repairs.append(
+                {"type": "drop_reversed_chapter_range", "location": f"completed_chapters[{index}]"}
+            )
+            continue
+        candidates.append(
+            {
+                "index": index,
+                "title": title,
+                "overview": overview,
+                "start_pos": start_pos,
+                "end_pos": end_pos,
+                "key_refs": chapter.get("key_refs", []),
+            }
+        )
+
+    candidates.sort(key=lambda item: (item["start_pos"], item["end_pos"], item["index"]))
+    normalized = []
+    expected_start = 0
+    for candidate in candidates:
+        index = candidate["index"]
+        start_pos = candidate["start_pos"]
+        end_pos = candidate["end_pos"]
+        if end_pos < expected_start:
+            repairs.append(
+                {"type": "drop_fully_overlapped_chapter", "location": f"completed_chapters[{index}]"}
+            )
+            continue
+        if start_pos > expected_start:
+            repairs.append(
+                {
+                    "type": "extend_chapter_over_uncovered_gap",
+                    "location": f"completed_chapters[{index}]",
+                    "from_ref": window_segments[expected_start]["segment_id"],
+                    "to_ref": window_segments[start_pos - 1]["segment_id"],
+                }
+            )
+            start_pos = expected_start
+        elif start_pos < expected_start:
+            repairs.append(
+                {
+                    "type": "trim_chapter_overlap",
+                    "location": f"completed_chapters[{index}]",
+                    "new_start_ref": window_segments[expected_start]["segment_id"],
+                }
+            )
+            start_pos = expected_start
+        if end_pos < start_pos:
+            continue
+        start_ref = window_segments[start_pos]["segment_id"]
+        end_ref = window_segments[end_pos]["segment_id"]
+        key_refs = candidate["key_refs"]
+        if not isinstance(key_refs, list):
+            key_refs = []
+            repairs.append(
+                {"type": "replace_invalid_chapter_key_refs", "location": f"completed_chapters[{index}]"}
+            )
+        key_refs = [str(ref) for ref in key_refs]
+        invalid_key_refs = [
+            ref
+            for ref in key_refs
+            if ref not in positions or not (start_pos <= positions[ref] <= end_pos)
+        ]
+        if invalid_key_refs:
+            repairs.append(
+                {
+                    "type": "drop_chapter_key_refs_outside_range",
+                    "location": f"completed_chapters[{index}]",
+                    "values": invalid_key_refs,
+                }
+            )
+            key_refs = [ref for ref in key_refs if ref not in invalid_key_refs]
+        refs = []
+        for ref in (start_ref, *key_refs, end_ref):
+            if ref not in refs:
+                refs.append(ref)
+        cited = [by_id[ref] for ref in refs]
+        normalized.append(
+            {
+                "title": candidate["title"],
+                "overview": candidate["overview"],
+                "start_ref": start_ref,
+                "end_ref": end_ref,
+                "start_ms": by_id[start_ref]["start_ms"],
+                "end_ms": by_id[end_ref]["end_ms"],
+                "speaker_ids": sorted({item["speaker_id"] for item in cited}),
+                "refs": refs,
+            }
+        )
+        expected_start = end_pos + 1
+
+    if not normalized:
+        raise SummaryValidationError("chapter window has no usable chapters")
+
+    carryover_raw = raw.get("carryover_start_ref")
+    if carryover_raw is None:
+        carryover = None
+    elif isinstance(carryover_raw, str) and carryover_raw.strip().lower() in {
+        "",
+        "null",
+        "none",
+        "无",
+    }:
+        carryover = None
+    else:
+        carryover = str(carryover_raw)
+    if isinstance(carryover_raw, str) and carryover_raw.strip().lower() in {
+        "null",
+        "none",
+        "无",
+    }:
+        repairs.append(
+            {
+                "type": "normalize_string_null_carryover",
+                "value": carryover_raw,
+            }
+        )
+    if not is_final and carryover is None and expected_start < len(window_segments):
+        carryover = window_segments[expected_start]["segment_id"]
+        repairs.append(
+            {
+                "type": "infer_missing_carryover_from_uncovered_tail",
+                "value": carryover,
+            }
+        )
+    if is_final:
+        if carryover is not None or expected_start != len(window_segments):
+            raise SummaryValidationError("final chapter window must cover all remaining segments")
+        next_offset = len(window_segments)
+    elif carryover is None:
+        if expected_start != len(window_segments):
+            raise SummaryValidationError("window has uncovered tail without carryover")
+        next_offset = len(window_segments)
+    else:
+        if carryover not in positions:
+            if expected_start == len(window_segments):
+                next_offset = len(window_segments)
+            else:
+                raise SummaryValidationError("carryover_start_ref is outside current window")
+        else:
+            carryover_pos = positions[carryover]
+            if carryover_pos != expected_start or carryover_pos <= 0:
+                raise SummaryValidationError("carryover must immediately follow completed chapters")
+            next_offset = carryover_pos
+
+    actions = []
+    completed_end = next_offset - 1
+    for index, item in enumerate(raw_actions):
+        if not isinstance(item, dict):
+            raise SummaryValidationError(f"action_candidates[{index}] must be an object")
+        task = clean_text(item.get("task"))
+        refs = item.get("refs")
+        if task is None or not isinstance(refs, list) or not refs:
+            continue
+        refs = list(dict.fromkeys(str(ref) for ref in refs))
+        valid_refs = [
+            ref
+            for ref in refs
+            if ref in positions and positions[ref] <= completed_end
+        ]
+        invalid_refs = [ref for ref in refs if ref not in valid_refs]
+        if invalid_refs:
+            repairs.append(
+                {
+                    "type": "drop_action_candidate_refs_outside_completed_chapters",
+                    "location": f"action_candidates[{index}]",
+                    "values": invalid_refs,
+                }
+            )
+        if not valid_refs:
+            repairs.append(
+                {
+                    "type": "drop_action_candidate_without_completed_evidence",
+                    "location": f"action_candidates[{index}]",
+                }
+            )
+            continue
+        refs = valid_refs
+        actions.append(
+            {
+                "task": task,
+                "owner": clean_text(item.get("owner")),
+                "deadline": clean_text(item.get("deadline")),
+                "refs": refs,
+            }
+        )
+    quality = {
+        "status": "pass",
+        "checks": {
+            "finish_reason": True,
+            "context_not_truncated": True,
+            "chapter_ranges_continuous": True,
+            "carryover_valid": True,
+            "action_refs": True,
+        },
+        "repairs": repairs,
+    }
+    return normalized, actions, next_offset, quality
+
+
+def _validate_overview(
+    content: str,
+    finish_reason: Any,
+    context_truncated: bool,
+    segment_by_id: dict[str, dict[str, Any]],
+) -> tuple[str | None, dict[str, Any]]:
+    if finish_reason != "stop" or context_truncated:
+        raise SummaryValidationError("full summary request did not finish cleanly")
+    raw = parse_content(content)
+    title = clean_text(raw.get("title"))
+    overview = raw.get("overview")
+    if not isinstance(overview, dict):
+        raise SummaryValidationError("overview must be an object")
+    text = clean_text(overview.get("text"))
+    refs = overview.get("refs")
+    if text is None or not isinstance(refs, list) or not refs:
+        raise SummaryValidationError("overview text and refs are required")
+    refs = list(dict.fromkeys(str(ref) for ref in refs))
+    if any(ref not in segment_by_id or not segment_by_id[ref].get("text") for ref in refs):
+        raise SummaryValidationError("overview contains invalid refs")
+    return title, {"text": text, "refs": refs}
+
+
+def _empty_long_summary() -> dict[str, Any]:
+    return {
+        "title": None,
+        "overview": None,
+        "chapters": [],
+        "speakers": [],
+        "speaker_key_points": [],
+        "key_points": [],
+        "decisions": [],
+        "action_items": [],
+        "open_questions": [],
+        "risks": [],
+        "keywords": [],
+    }
+
+
+def _validate_actions(
+    content: str,
+    finish_reason: Any,
+    context_truncated: bool,
+    segments: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    if finish_reason != "stop":
+        raise SummaryValidationError(f"action review finish_reason is {finish_reason!r}")
+    if context_truncated:
+        raise SummaryValidationError("action review input was truncated")
+    raw = parse_content(content)
+    summary, _ = validate_summary_object(
+        {**_empty_long_summary(), "action_items": raw.get("action_items", [])},
+        segments,
+    )
+    return summary["action_items"]
+
+
+def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:
+    return {
+        "request_id": result.get("request_id"),
+        "estimated_prompt_tokens": estimate,
+        "usage": result.get("usage"),
+        "timings": result.get("timings"),
+        "thinking_characters": len(result.get("thinking") or ""),
+        "context_truncated": result.get("context_truncated"),
+    }
+
+
+def _model_identity(files: dict[str, Any]) -> dict[str, Any]:
+    identity = {}
+    for name, value in sorted(files.items()):
+        path = pathlib.Path(str(value))
+        item: dict[str, Any] = {"path": str(path)}
+        if path.is_file():
+            item.update({"size_bytes": path.stat().st_size, "sha256": sha256_file(path)})
+        identity[name] = item
+    return identity
+
+
+def _request_fingerprint(
+    *,
+    request_kind: str,
+    messages: list[dict[str, str]],
+    config: ProductSummaryConfig,
+    model_identity: dict[str, Any],
+) -> str:
+    return stable_hash(
+        {
+            "version": PRODUCT_SUMMARY_VERSION,
+            "request_kind": request_kind,
+            "messages": messages,
+            "ctx": config.llm.ctx,
+            "predict": config.llm.predict,
+            "max_tokens": config.llm.max_tokens,
+            "temperature": config.llm.temperature,
+            "model_identity": model_identity,
+        }
+    )
+
+
+def _load_reusable_request(
+    request_dir: pathlib.Path,
+    fingerprint: str,
+    validator: Callable[[str, Any, bool], Any],
+) -> Any | None:
+    identity_path = request_dir / "request_identity.json"
+    status_path = request_dir / "status.json"
+    final_path = request_dir / "final_json.txt"
+    validated_path = request_dir / "validated_result.json"
+    validation_path = request_dir / "validation.json"
+    paths = {
+        "final_json": final_path,
+        "validated_result": validated_path,
+        "validation": validation_path,
+        "status": status_path,
+    }
+    if not identity_path.is_file() or any(not path.is_file() for path in paths.values()):
+        return None
+    try:
+        identity = load_json(identity_path)
+        status = load_json(status_path)
+        validated = load_json(validated_path)
+        quality = load_json(validation_path)
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        return None
+    if identity.get("fingerprint") != fingerprint:
+        return None
+    expected_hashes = identity.get("artifact_sha256")
+    if not isinstance(expected_hashes, dict):
+        return None
+    if any(expected_hashes.get(name) != sha256_file(path) for name, path in paths.items()):
+        return None
+    if status.get("finish_reason") != "stop" or status.get("context_truncated"):
+        return None
+    if not isinstance(quality, dict) or quality.get("status") != "pass":
+        return None
+    try:
+        current = validator(final_path.read_text(encoding="utf-8"), "stop", False)
+    except (OSError, SummaryValidationError, KeyError, TypeError, ValueError):
+        return None
+    if current != validated:
+        return None
+    return current
+
+
+def _save_reusable_request(
+    request_dir: pathlib.Path,
+    *,
+    fingerprint: str,
+    request_kind: str,
+    validated: Any,
+    quality: dict[str, Any],
+) -> None:
+    validated_path = request_dir / "validated_result.json"
+    validation_path = request_dir / "validation.json"
+    atomic_write_json(validated_path, validated)
+    atomic_write_json(validation_path, quality)
+    paths = {
+        "final_json": request_dir / "final_json.txt",
+        "validated_result": validated_path,
+        "validation": validation_path,
+        "status": request_dir / "status.json",
+    }
+    atomic_write_json(
+        request_dir / "request_identity.json",
+        {
+            "fingerprint": fingerprint,
+            "request_kind": request_kind,
+            "artifact_sha256": {name: sha256_file(path) for name, path in paths.items()},
+        },
+    )
+
+
+def run_product_summary_stage(
+    *,
+    config: ProductSummaryConfig,
+    segments: list[dict[str, Any]],
+    speaker_ids: list[str],
+    timeline: str,
+    out_dir: pathlib.Path,
+    sampler: Any | None,
+) -> dict[str, Any]:
+    started = time.time()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    budget = config.budget
+    full_messages = _full_meeting_messages(timeline, speaker_ids)
+    full_estimate = estimate_message_tokens(full_messages, budget)
+    plan: dict[str, Any] = {
+        "version": PRODUCT_SUMMARY_VERSION,
+        "input_token_budget": budget.input_token_budget,
+        "full_estimated_prompt_tokens": full_estimate,
+        "full_request_fits": messages_fit(full_messages, budget),
+    }
+    request_records: list[dict[str, Any]] = []
+    reused_count = 0
+    session: RkllmServerSession | None = None
+    cached_files: dict[str, Any] | None = None
+
+    def build_session() -> RkllmServerSession:
+        nonlocal session, cached_files
+        if session is None:
+            session = RkllmServerSession(config.llm, out_dir, sampler)
+            cached_files = session.files
+        return session
+
+    def model_identity() -> dict[str, Any]:
+        return _model_identity(build_session().files)
+
+    def ensure_session() -> RkllmServerSession:
+        current = build_session()
+        current.start()
+        return current
+
+    def run_request(
+        *,
+        messages: list[dict[str, str]],
+        request_dir: pathlib.Path,
+        request_id: str,
+        request_kind: str,
+        phase: str,
+        estimate: int,
+        validator: Callable[[str, Any, bool], Any],
+        quality_builder: Callable[[Any], dict[str, Any]] | None = None,
+    ) -> Any:
+        nonlocal reused_count
+        fingerprint = _request_fingerprint(
+            request_kind=request_kind,
+            messages=messages,
+            config=config,
+            model_identity=model_identity(),
+        )
+        if config.resume:
+            reused = _load_reusable_request(request_dir, fingerprint, validator)
+            if reused is not None:
+                reused_count += 1
+                return reused
+        request_messages = messages
+        result = None
+        validated = None
+        for attempt in range(2):
+            result = ensure_session().request(
+                request_messages,
+                request_dir,
+                phase=phase,
+                request_id=request_id,
+            )
+            try:
+                validated = validator(
+                    result["content"],
+                    result["finish_reason"],
+                    bool(result["context_truncated"]),
+                )
+                break
+            except SummaryValidationError as exc:
+                if attempt != 0 or "LLM content is not valid JSON" not in str(exc):
+                    raise
+                request_messages = [
+                    *messages,
+                    {
+                        "role": "user",
+                        "content": (
+                            "上一条输出不是可解析的 JSON。请重新完整输出当前请求的 JSON，"
+                            "不要输出解释，不要截断，不要在字符串中放入未转义的换行或制表符；"
+                            "每个章节最多输出 3 个 key_refs。"
+                        ),
+                    },
+                ]
+        assert result is not None
+        assert validated is not None
+        quality = quality_builder(validated) if quality_builder is not None else {"status": "pass"}
+        _save_reusable_request(
+            request_dir,
+            fingerprint=fingerprint,
+            request_kind=request_kind,
+            validated=validated,
+            quality=quality,
+        )
+        request_records.append(_request_record(result, estimate))
+        return validated
+
+    def result_payload(
+        summary: dict[str, Any],
+        quality: dict[str, Any],
+        policy: str,
+    ) -> dict[str, Any]:
+        return {
+            "summary": summary,
+            "quality": quality,
+            "policy": policy,
+            "request_count": session.request_count if session is not None else 0,
+            "validated_request_count": len(request_records),
+            "reused_request_count": reused_count,
+            "requests": request_records,
+            "server_ready_seconds": session.ready_seconds if session is not None else None,
+            "resolved_model_files": cached_files,
+            "elapsed_seconds": round(time.time() - started, 3),
+            "plan": plan,
+        }
+
+    try:
+        if plan["full_request_fits"]:
+            def validate_full(content: str, finish_reason: Any, truncated: bool) -> dict[str, Any]:
+                summary, _ = validate_llm_result(
+                    content,
+                    finish_reason,
+                    segments,
+                    context_truncated=truncated,
+                )
+                return summary
+
+            summary = run_request(
+                messages=full_messages,
+                request_dir=out_dir / "requests" / "full",
+                request_id="full",
+                request_kind="full",
+                phase="llm_summary_full",
+                estimate=full_estimate,
+                validator=validate_full,
+                quality_builder=lambda value: validate_summary_object(value, segments)[1],
+            )
+            summary, quality = validate_summary_object(summary, segments)
+            quality["checks"].update({"finish_reason": True, "context_not_truncated": True})
+            if reused_count:
+                quality["warnings"].append("reused validated LLM artifact")
+            plan["policy"] = "single_request_all_features"
+            atomic_write_json(out_dir / "plan.json", plan)
+            return result_payload(summary, quality, plan["policy"])
+
+        nonempty = [segment for segment in segments if segment.get("text")]
+        segment_by_id = {segment["segment_id"]: segment for segment in nonempty}
+        chapters = []
+        action_candidates = []
+        window_records = []
+        cursor = 0
+        window_number = 1
+        while cursor < len(nonempty):
+            window_end, _, estimate = _fit_window(nonempty, cursor, budget)
+            window_segments = nonempty[cursor:window_end]
+            is_final = window_end == len(nonempty)
+            window_id = f"window-{window_number:06d}"
+            messages = _chapter_window_messages(
+                window_segments,
+                window_id=window_id,
+                is_final=is_final,
+            )
+            estimate = estimate_message_tokens(messages, budget)
+            request_dir = out_dir / "chapter_windows" / window_id
+            atomic_write_text(request_dir / "timeline.txt", render_timeline(window_segments))
+
+            def validate_window_request(
+                content: str,
+                finish_reason: Any,
+                truncated: bool,
+                current_segments: list[dict[str, Any]] = window_segments,
+                final: bool = is_final,
+            ) -> dict[str, Any]:
+                new_chapters, new_actions, next_offset, quality = _validate_window(
+                    content,
+                    finish_reason,
+                    truncated,
+                    current_segments,
+                    is_final=final,
+                )
+                return {
+                    "chapters": new_chapters,
+                    "action_candidates": new_actions,
+                    "next_offset": next_offset,
+                    "quality": quality,
+                }
+
+            window_result = run_request(
+                messages=messages,
+                request_dir=request_dir,
+                request_id=window_id,
+                request_kind="chapter-window",
+                phase="llm_chapter_window",
+                estimate=estimate,
+                validator=validate_window_request,
+                quality_builder=lambda value: value["quality"],
+            )
+            new_chapters = window_result["chapters"]
+            new_actions = window_result["action_candidates"]
+            next_offset = int(window_result["next_offset"])
+            quality = window_result["quality"]
+            if next_offset <= 0:
+                raise SummaryValidationError("chapter window made no forward progress")
+            chapters.extend(new_chapters)
+            action_candidates.extend(new_actions)
+            next_cursor = cursor + next_offset
+            window_record = {
+                "window_id": window_id,
+                "start_ref": window_segments[0]["segment_id"],
+                "end_ref": window_segments[-1]["segment_id"],
+                "next_start_ref": nonempty[next_cursor]["segment_id"] if next_cursor < len(nonempty) else None,
+                "completed_chapter_count": len(new_chapters),
+                "action_candidate_count": len(new_actions),
+                "estimated_prompt_tokens": estimate,
+                "quality": quality,
+            }
+            atomic_write_json(request_dir / "validated_window.json", window_record)
+            window_records.append(window_record)
+            cursor = next_cursor
+            window_number += 1
+
+        atomic_write_json(out_dir / "chapters.json", chapters)
+        atomic_write_json(out_dir / "action_candidates.json", action_candidates)
+
+        summary_messages = _full_summary_messages(chapters)
+        summary_estimate = estimate_message_tokens(summary_messages, budget)
+        if summary_estimate > budget.input_token_budget:
+            raise ChunkingError("validated chapters exceed full-summary input budget")
+
+        def validate_overview_request(
+            content: str,
+            finish_reason: Any,
+            truncated: bool,
+        ) -> dict[str, Any]:
+            title, overview = _validate_overview(
+                content,
+                finish_reason,
+                truncated,
+                segment_by_id,
+            )
+            return {"title": title, "overview": overview}
+
+        overview_result = run_request(
+            messages=summary_messages,
+            request_dir=out_dir / "requests" / "full_summary",
+            request_id="full-summary",
+            request_kind="full-summary",
+            phase="llm_full_summary",
+            estimate=summary_estimate,
+            validator=validate_overview_request,
+        )
+        title = overview_result["title"]
+        overview = overview_result["overview"]
+
+        action_items = []
+        if action_candidates:
+            action_messages = _action_review_messages(action_candidates, segment_by_id)
+            action_estimate = estimate_message_tokens(action_messages, budget)
+            if action_estimate > budget.input_token_budget:
+                raise ChunkingError("action candidates exceed action-review input budget")
+            action_items = run_request(
+                messages=action_messages,
+                request_dir=out_dir / "requests" / "action_review",
+                request_id="action-review",
+                request_kind="action-review",
+                phase="llm_action_review",
+                estimate=action_estimate,
+                validator=lambda content, finish_reason, truncated: _validate_actions(
+                    content,
+                    finish_reason,
+                    truncated,
+                    segments,
+                ),
+            )
+
+        summary = _empty_long_summary()
+        summary.update(
+            {
+                "title": title,
+                "overview": overview,
+                "chapters": chapters,
+                "action_items": action_items,
+            }
+        )
+        summary, quality = validate_summary_object(summary, segments)
+        quality["checks"].update(
+            {
+                "full_meeting_coverage": cursor == len(nonempty),
+                "sliding_chapter_windows": True,
+                "long_meeting_features_limited": True,
+            }
+        )
+        quality["warnings"].append(
+            "long-meeting path omits speaker summaries and speaker key points"
+        )
+        if reused_count:
+            quality["warnings"].append("reused validated LLM artifacts")
+        plan.update(
+            {
+                "policy": "sliding_chapter_windows",
+                "window_count": len(window_records),
+                "windows": window_records,
+                "action_candidate_count": len(action_candidates),
+            }
+        )
+        atomic_write_json(out_dir / "plan.json", plan)
+        atomic_write_json(out_dir / "chapters.json", chapters)
+        atomic_write_json(out_dir / "full_summary.json", {"title": title, "overview": overview})
+        atomic_write_json(out_dir / "action_items.json", action_items)
+        return result_payload(summary, quality, plan["policy"])
+    finally:
+        if session is not None:
+            session.close()

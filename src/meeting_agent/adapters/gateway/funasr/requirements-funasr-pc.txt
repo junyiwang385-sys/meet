@@ -1,0 +1,9 @@
+# PC-side FunASR ASR server dependencies.
+# Install torch/torchaudio separately for CPU or CUDA before this file.
+funasr
+modelscope
+fastapi
+uvicorn[standard]
+python-multipart
+soundfile
+numpy
