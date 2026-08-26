@@ -396,7 +396,27 @@ def _safe_metrics(value: object) -> dict[str, object]:
         "error_count",
         "total_elapsed_seconds",
     )
-    return {key: value[key] for key in allowed if key in value}
+    projection = {key: value[key] for key in allowed if key in value}
+    llm = value.get("llm")
+    if isinstance(llm, dict):
+        llm_allowed = (
+            "request_count",
+            "transport_request_count",
+            "http_response_count",
+            "response_parse_success_count",
+            "successful_response_count",
+            "validated_request_count",
+            "validation_failed_count",
+            "retry_count",
+            "split_count",
+            "reused_request_count",
+        )
+        projection["llm"] = {
+            key: _bounded_task_value(llm[key])
+            for key in llm_allowed
+            if key in llm
+        }
+    return projection
 
 
 def _safe_runtime(value: object) -> dict[str, object] | None:

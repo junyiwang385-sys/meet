@@ -135,6 +135,9 @@ class P0DiagnosticsIntegrationTests(unittest.TestCase):
                 self.assertEqual(
                     diagnostics["artifact_refs"]["run_metrics"], "run_metrics.json"
                 )
+                safe_metrics = task_snapshot["error"]["metrics"]
+                self.assertEqual(safe_metrics["llm"]["request_count"], 1)
+                self.assertNotIn("request_attempts", safe_metrics["llm"])
             finally:
                 board_agent._task = old_task
 
