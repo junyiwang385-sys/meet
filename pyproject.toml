@@ -12,6 +12,7 @@ dependencies = []
 
 [project.scripts]
 meeting-agent-harness = "meeting_agent.harness.main:main"
+meeting-agent-run-report = "meeting_agent.observability.run_report:main"
 meeting-agent-board-agent = "meeting_agent.adapters.board.board_agent_api_v0:main"
 meeting-agent-gateway = "meeting_agent.adapters.gateway.meeting_agent_gateway_v0:main"
 

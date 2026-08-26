@@ -54,3 +54,21 @@ ops/
 - 任务单：`ops/board-tasks/inbox/2026-08-26_001_gateway-diagnostics-check.md`
 - 结果目录：`ops/board-results/2026-08-26_001_gateway-diagnostics-check/`（内含 `result.md` + 小体积附件）
 - 完成后任务单移至 `ops/board-tasks/done/`，末尾「执行状态」记录：executed_at / 使用的板端地址 / 结果目录 / 结论一句话。
+
+## 6. 测试开发期：每次跑拉回 PC + 聚合报告
+
+开发阶段每跑一次板端，都把**完整 harness 产物目录**拉回 PC（本地留存、便于逐块复盘），并生成一份**聚合优化报告**沉淀指标、跨轮对比。
+
+**中转机侧（每次运行后）：**
+
+```powershell
+# 1) 把板端整份 out-dir 拉回 PC（完整文件，本地开发用）
+scp -r <board>:/userdata/.../<task>/harness  <本地目录>\<task>\harness
+# 2) 生成聚合报告（在 mainline 仓库根，src 在 PYTHONPATH）
+$env:PYTHONPATH="src"; python -m meeting_agent.observability.run_report <本地目录>\<task>\harness
+#    → 产出 harness\run_report.md 和 harness\run_report.json
+```
+
+**报告内容**（`run_report.md` / `.json`）：版本/配置、各阶段时延、分段(块数/章节数/边界理由/块尺寸)、块摘要字数分布/重试块、overview 来源与字数/空字段、LLM 经济学(token/thinking/finish_reason/**实测 chars_per_token 校准**)、质量，以及**自动优化红旗**（块摘要偏短、think 未关、过切、重试率、字段缺失等）。
+
+**回传约定**：`run_report.md` / `run_report.json` 是**纯聚合指标（不含 prompt/响应原文）**，可放入 `ops/board-results/<task>/` 回传 GitHub，作为跨轮对比基线；完整 `harness/` 目录只在 PC 本地留存，**不进 GitHub**（含敏感全文 + 大文件）。
