@@ -8,9 +8,11 @@ from meeting_agent.stages.product_summary import (
     _build_compact_ref_map,
     _build_compact_speaker_map,
     _build_retry_messages,
+    _overview_from_source_messages,
     _reduce_blocks_to_chapters,
     _validate_block_summary,
 )
+from meeting_agent.stages.transcript import render_timeline
 from meeting_agent.stages.validation import (
     SummaryValidationError,
     validate_summary_object,
@@ -197,6 +199,44 @@ class ReduceBlocksTests(unittest.TestCase):
         validated, quality = validate_summary_object(summary, self.segments)
         self.assertEqual(len(validated["chapters"]), 2)
         self.assertEqual(quality["status"], "pass")
+
+
+class OverviewFromSourceTests(unittest.TestCase):
+    def setUp(self):
+        self.segments = [
+            _seg(0, 0, 3000, "speaker_1", "采购预算按季度拆分执行。"),
+            _seg(1, 3100, 6000, "speaker_2", "散热与风扇噪音测试安排。"),
+        ]
+        self.ref_map, _ = _build_compact_ref_map(self.segments)
+        self.speaker_map, _ = _build_compact_speaker_map(
+            [s["speaker_id"] for s in self.segments]
+        )
+        self.timeline = render_timeline(self.segments)
+        self.chapters = [
+            {
+                "title": "采购预算",
+                "overview": "这是章节摘要不应出现在原文档版提示词里的二次压缩内容。",
+                "start_ref": "seg-000000",
+                "end_ref": "seg-000000",
+                "refs": ["seg-000000"],
+            }
+        ]
+
+    def test_includes_source_timeline_and_skeleton_not_chapter_summary(self):
+        messages = _overview_from_source_messages(
+            self.timeline, self.chapters,
+            ref_map=self.ref_map, speaker_map=self.speaker_map,
+        )
+        self.assertEqual(len(messages), 2)
+        user = messages[1]["content"]
+        # 原文事实在场
+        self.assertIn("采购预算按季度拆分执行", user)
+        self.assertIn("散热与风扇噪音测试", user)
+        # 章节提纲（标题）在场
+        self.assertIn("章节提纲", user)
+        self.assertIn("采购预算", user)
+        # 章节摘要（二次压缩）不应泄露
+        self.assertNotIn("不应出现在原文档版", user)
 
 
 class RetryMessagesTests(unittest.TestCase):

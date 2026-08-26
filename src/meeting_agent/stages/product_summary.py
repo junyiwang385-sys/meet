@@ -409,6 +409,50 @@ def _full_summary_messages(
     return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
 
 
+def _overview_from_source_messages(
+    timeline: str,
+    chapters: list[dict[str, Any]],
+    *,
+    ref_map: dict[str, str],
+    speaker_map: dict[str, str],
+) -> list[dict[str, str]]:
+    """自适应 overview 的"原文档"版：给完整原文 Timeline + 章节提纲，只产标题和全文摘要。
+
+    章节提纲只给标题和核心区间当结构线索，不给章节摘要，避免二次压缩；事实必须来自原文，
+    从而让 overview 直接接地，不依赖章节摘要质量。
+    """
+    compact_timeline = timeline
+    for canonical, compact in ref_map.items():
+        compact_timeline = compact_timeline.replace(f"[{canonical}]", f"[{compact}]")
+    for canonical, compact in speaker_map.items():
+        compact_timeline = compact_timeline.replace(f"[{canonical}]", f"[{compact}]")
+    skeleton = [
+        {
+            "id": index,
+            "title": chapter.get("title"),
+            "start_ref": chapter.get("start_ref"),
+            "end_ref": chapter.get("end_ref"),
+        }
+        for index, chapter in enumerate(chapters, 1)
+    ]
+    skeleton = _compactize_payload(skeleton, ref_map, speaker_map)
+    prompt = (
+        "任务：\n"
+        "根据下面的完整会议 Timeline 和章节提纲，生成会议标题和全文摘要。\n\n"
+        "全文摘要要求：\n"
+        "- 使用约 300～500 个中文字符。\n"
+        "- 事实、数据、方案、分歧和结论必须来自 Timeline 原文；章节提纲只用于把握结构和先后顺序。\n"
+        "- 综合主要议题、关键背景与数据、重要观点或方案、主要分歧与取舍、形成的结论以及明确的后续行动。\n"
+        "- 体现议题之间的逻辑关系，不要逐章机械拼接；没有明确结论时保持讨论或建议语气。\n"
+        "- 只输出标题和摘要正文，不要输出或讨论 refs；引用由程序从已校验章节自动合并。\n\n"
+        "输出结构：\n"
+        f"{json.dumps(FULL_SUMMARY_SHAPE, ensure_ascii=False, indent=2)}\n\n"
+        f"章节提纲：\n{json.dumps(skeleton, ensure_ascii=False, indent=2)}\n\n"
+        f"完整 Timeline：\n{compact_timeline}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
 def _build_speaker_documents(
     segments: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
@@ -2010,16 +2054,50 @@ def run_product_summary_stage(
         atomic_write_json(out_dir / "chapters.json", chapters)
         atomic_write_json(out_dir / "action_candidates.json", action_candidates)
 
+        # 章节质量门：合并后仍过短的章节标记为弱章，不静默平均进 overview（供人工核对）
+        weak_chapters = [
+            {
+                "title": chapter["title"],
+                "start_ref": chapter["start_ref"],
+                "end_ref": chapter["end_ref"],
+                "overview_chars": len(chapter["overview"]),
+            }
+            for chapter in chapters
+            if len(chapter["overview"]) < MIN_BLOCK_SUMMARY_CHARS
+        ]
+
         overview_refs = list(dict.fromkeys(
             str(ref)
             for chapter in chapters
             for ref in chapter.get("refs", [])
             if str(ref) in segment_by_id
         ))
-        summary_messages = _full_summary_messages(chapters, ref_map=ref_map, speaker_map=speaker_map)
+        # 自适应 overview 来源：原文放得下就从原文+章节提纲生成（接地，不依赖章节摘要质量）；
+        # 放不下才退化为从章节摘要 reduce。
+        if plan["full_request_fits"]:
+            summary_messages = _overview_from_source_messages(
+                timeline, chapters, ref_map=ref_map, speaker_map=speaker_map
+            )
+            overview_source = "source_timeline"
+        else:
+            summary_messages = _full_summary_messages(
+                chapters, ref_map=ref_map, speaker_map=speaker_map
+            )
+            overview_source = "chapter_summaries"
         summary_estimate = estimate_message_tokens(summary_messages, budget)
+        if summary_estimate > budget.input_token_budget and overview_source == "source_timeline":
+            # 原文提纲版意外超预算，退回章节摘要 reduce。
+            summary_messages = _full_summary_messages(
+                chapters, ref_map=ref_map, speaker_map=speaker_map
+            )
+            overview_source = "chapter_summaries"
+            summary_estimate = estimate_message_tokens(summary_messages, budget)
         if summary_estimate > budget.input_token_budget:
+            # TODO(层级归并)：章节过多时应做树状多级 reduce（每 5~8 章一组，多级合并），
+            # 而非硬失败。当前长会章节爆预算会在此 raise，属已知健壮性缺口。
             raise ChunkingError("validated chapters exceed full-summary input budget")
+        plan["overview_source"] = overview_source
+        plan["overview_estimated_prompt_tokens"] = summary_estimate
 
         def validate_overview_request(
             content: str,
@@ -2218,8 +2296,16 @@ def run_product_summary_stage(
                 "full_meeting_coverage": segmentation["coverage_complete"],
                 "deterministic_blocks": True,
                 "speaker_batches_processed": True,
+                "overview_source": overview_source,
+                "chapter_quality_gate": not weak_chapters,
             }
         )
+        if weak_chapters:
+            quality["warnings"].append(
+                f"{len(weak_chapters)} chapter(s) below quality threshold "
+                f"(<{MIN_BLOCK_SUMMARY_CHARS} chars); flagged for manual review"
+            )
+            quality["weak_chapters"] = weak_chapters
         if reused_count:
             quality["warnings"].append("reused validated LLM artifacts")
         plan.update(
@@ -2227,6 +2313,8 @@ def run_product_summary_stage(
                 "policy": "deterministic_blocks_map_reduce",
                 "block_count": len(blocks),
                 "chapter_count": len(chapters),
+                "overview_source": overview_source,
+                "weak_chapter_count": len(weak_chapters),
                 "segmentation": segmentation,
                 "action_candidate_count": len(action_candidates),
                 "speaker_count": len(speaker_documents),
