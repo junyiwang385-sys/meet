@@ -49,17 +49,39 @@ class TopicSegmentationTests(unittest.TestCase):
         self.assertEqual(result["block_count"], 2)
         self.assertIn("gap", result["blocks"][1]["opened_by"])
 
-    def test_speaker_and_topic_change_opens_new_block(self):
+    def test_deep_topic_shift_creates_boundary(self):
+        # 话题 A（采购预算）4段 → 话题 B（机房散热）4段，seam 处内聚度深谷 → 应切且理由含 cohesion。
+        a = "采购预算季度拆分执行对齐责任划分"
+        b = "机房散热风扇噪音温度测试功耗曲线"
         segments = [
-            _seg(0, 0, 3000, "speaker_1", "采购预算这块我们按季度拆分执行落实。"),
-            _seg(1, 3100, 6000, "speaker_2", "换个话题说说机房散热和风扇噪音测试。"),
+            _seg(0, 0, 3000, "speaker_1", a + "细节一"),
+            _seg(1, 3100, 6000, "speaker_2", a + "细节二"),
+            _seg(2, 6100, 9000, "speaker_1", a + "细节三"),
+            _seg(3, 9100, 12000, "speaker_2", a + "细节四"),
+            _seg(4, 12100, 15000, "speaker_3", b + "细节一"),
+            _seg(5, 15100, 18000, "speaker_4", b + "细节二"),
+            _seg(6, 18100, 21000, "speaker_3", b + "细节三"),
+            _seg(7, 21100, 24000, "speaker_4", b + "细节四"),
         ]
-        config = SegmentationConfig(min_block_chars=1, cohesion_min_chars=4)
-        result = segment_blocks(segments, self.policy, config)
+        result = segment_blocks(segments, self.policy, SegmentationConfig(min_block_chars=1))
         self.assertEqual(result["block_count"], 2)
-        self.assertTrue(
-            {"speaker", "cohesion"} & set(result["blocks"][1]["opened_by"])
-        )
+        # 唯一边界应落在 A→B 的 seam（seg-000004 开头），且理由含 cohesion 深谷
+        self.assertEqual(result["blocks"][1]["segment_ids"][0], "seg-000004")
+        self.assertIn("cohesion", result["blocks"][1]["opened_by"])
+
+    def test_speaker_alternation_within_topic_does_not_oversplit(self):
+        # 核心修复：同一话题内说话人来回（Q&A），无 gap、无深谷 → 不应被切成多块。
+        topic = "接口鉴权方案我们统一走网关校验令牌再回源"
+        segments = [
+            _seg(i, i * 3000, i * 3000 + 2900,
+                 "speaker_1" if i % 2 == 0 else "speaker_2",
+                 topic + f"补充{i}")
+            for i in range(8)
+        ]
+        result = segment_blocks(segments, self.policy, SegmentationConfig(min_block_chars=1))
+        # 8段全同话题、4次换人；修复前会切出多块，修复后应为 1 块
+        self.assertEqual(result["block_count"], 1)
+        self.assertEqual(result["boundary_reason_counts"].get("speaker", 0), 0)
 
     def test_speaker_change_alone_does_not_split_when_topic_continues(self):
         # 说话人变了但话题连续、无 gap -> 单信号 0.5 < 阈值，不应断开。

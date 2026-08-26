@@ -18,7 +18,7 @@ from typing import Any
 from ..llm.chunking import BudgetPolicy, estimate_text_tokens
 
 
-SEGMENTATION_VERSION = "topic-segmentation.v1"
+SEGMENTATION_VERSION = "topic-segmentation.v2"
 
 
 @dataclass(frozen=True)
@@ -27,11 +27,16 @@ class SegmentationConfig:
 
     vad_gap_ms: int = 1500
     cohesion_window_segments: int = 3
-    cohesion_threshold: float = 0.20
+    # 内聚度用"低谷深度"判定，而非绝对阈值：只有明显低于左右邻域峰值的深谷才算话题漂移，
+    # 这样普通换人带来的浅坑不再被误判为边界（换人≠话题变，是所有多人会的共性）。
+    cohesion_depth_threshold: float = 0.30
+    depth_window_segments: int = 4
     cohesion_min_chars: int = 12
     gap_weight: float = 1.0
-    speaker_weight: float = 0.5
-    cohesion_weight: float = 0.6
+    # speaker 降为弱助推：单独不足以切（0.25 < 阈值），只能给"深谷+换人"的真边界加分，
+    # 从根上解绑"换人→浅内聚坑→切"的混淆。
+    speaker_weight: float = 0.25
+    cohesion_weight: float = 1.0
     boundary_score_threshold: float = 1.0
     # 块尺寸下限：过短的块并入相邻，避免碎块浪费 B 层调用与提示词开销。
     min_block_chars: int = 400
@@ -66,10 +71,67 @@ def _window_text(segments: list[dict[str, Any]], start: int, end: int) -> str:
     return "".join(str(segments[i].get("text") or "") for i in range(start, end))
 
 
+def _cohesion_curve(
+    segments: list[dict[str, Any]],
+    config: SegmentationConfig,
+) -> list[float | None]:
+    """每个相邻位置的词汇内聚度（前窗 vs 后窗的字符 bigram 余弦）。
+
+    curve[i] 是"在 segment i 之前断开处"的内聚度；窗口文本不足时为 None（信息不够，不判谷）。
+    """
+    n = len(segments)
+    window = config.cohesion_window_segments
+    curve: list[float | None] = [None] * n
+    for i in range(1, n):
+        before = _window_text(segments, max(0, i - window), i)
+        after = _window_text(segments, i, min(n, i + window))
+        if len(before) >= config.cohesion_min_chars and len(after) >= config.cohesion_min_chars:
+            curve[i] = _cosine(_char_bigrams(before), _char_bigrams(after))
+    return curve
+
+
+def _nearest_defined(curve: list[float | None], index: int, step: int) -> float | None:
+    j = index + step
+    while 0 <= j < len(curve):
+        if curve[j] is not None:
+            return curve[j]
+        j += step
+    return None
+
+
+def _valley_depth(
+    curve: list[float | None],
+    index: int,
+    config: SegmentationConfig,
+) -> float:
+    """位置 index 相对左右邻域峰值的低谷深度（TextTiling 思路）。
+
+    只在"局部最小值"（谷底）处计深度，避免谷的斜坡上多点同时超阈值造成过切；
+    深谷 = 内聚度明显低于两侧峰值 = 真话题漂移；浅坑（如普通换人）深度接近 0。
+    """
+    if curve[index] is None:
+        return 0.0
+    center = curve[index]
+    # 只保留谷底：相邻已定义邻居都不低于自己，才算局部极小值。
+    left_neighbor = _nearest_defined(curve, index, -1)
+    right_neighbor = _nearest_defined(curve, index, +1)
+    if left_neighbor is not None and left_neighbor < center:
+        return 0.0
+    if right_neighbor is not None and right_neighbor < center:
+        return 0.0
+    span = config.depth_window_segments
+    left = [curve[j] for j in range(max(1, index - span), index) if curve[j] is not None]
+    right = [curve[j] for j in range(index + 1, min(len(curve), index + 1 + span)) if curve[j] is not None]
+    left_peak = max(left) if left else center
+    right_peak = max(right) if right else center
+    return max(0.0, left_peak - center) + max(0.0, right_peak - center)
+
+
 def _boundary_signals(
     segments: list[dict[str, Any]],
     index: int,
     config: SegmentationConfig,
+    curve: list[float | None],
 ) -> tuple[float, list[str]]:
     """返回位置 index（在其之前断开）的边界得分与命中的信号名。"""
     prev = segments[index - 1]
@@ -93,14 +155,10 @@ def _boundary_signals(
         score += config.speaker_weight
         reasons.append("speaker")
 
-    window = config.cohesion_window_segments
-    before = _window_text(segments, max(0, index - window), index)
-    after = _window_text(segments, index, min(len(segments), index + window))
-    if len(before) >= config.cohesion_min_chars and len(after) >= config.cohesion_min_chars:
-        similarity = _cosine(_char_bigrams(before), _char_bigrams(after))
-        if similarity < config.cohesion_threshold:
-            score += config.cohesion_weight
-            reasons.append("cohesion")
+    # 只有"深谷"才算 cohesion 信号：depth 需超阈值（真话题漂移），滤掉换人浅坑。
+    if _valley_depth(curve, index, config) >= config.cohesion_depth_threshold:
+        score += config.cohesion_weight
+        reasons.append("cohesion")
     return score, reasons
 
 
@@ -190,10 +248,11 @@ def segment_blocks(
             "max_block_tokens": max_tokens,
         }
 
-    # 1. 逐相邻对打分，得到原始边界位置及其命中信号。
+    # 1. 先算全局内聚度曲线，再逐相邻对打分（cohesion 用低谷深度，非绝对阈值）。
+    curve = _cohesion_curve(nonempty, config)
     boundary_reasons: dict[int, list[str]] = {}
     for index in range(1, len(nonempty)):
-        score, reasons = _boundary_signals(nonempty, index, config)
+        score, reasons = _boundary_signals(nonempty, index, config, curve)
         if score >= config.boundary_score_threshold:
             boundary_reasons[index] = reasons
 
@@ -257,8 +316,12 @@ def segment_blocks(
         "config": {
             "vad_gap_ms": config.vad_gap_ms,
             "cohesion_window_segments": config.cohesion_window_segments,
-            "cohesion_threshold": config.cohesion_threshold,
+            "cohesion_depth_threshold": config.cohesion_depth_threshold,
+            "depth_window_segments": config.depth_window_segments,
+            "speaker_weight": config.speaker_weight,
+            "cohesion_weight": config.cohesion_weight,
             "boundary_score_threshold": config.boundary_score_threshold,
             "min_block_chars": config.min_block_chars,
+            "target_block_tokens": config.target_block_tokens,
         },
     }
