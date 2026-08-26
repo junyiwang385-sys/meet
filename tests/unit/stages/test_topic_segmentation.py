@@ -68,7 +68,7 @@ class TopicSegmentationTests(unittest.TestCase):
             _seg(0, 0, 3000, "speaker_1", shared),
             _seg(1, 3100, 6000, "speaker_2", shared),
         ]
-        result = segment_blocks(segments, self.policy)
+        result = segment_blocks(segments, self.policy, SegmentationConfig(min_block_chars=1))
         self.assertEqual(result["block_count"], 1)
 
     def test_coverage_is_complete_and_ordered(self):
@@ -91,11 +91,25 @@ class TopicSegmentationTests(unittest.TestCase):
             _seg(i, i * 4000, i * 4000 + 3000, "speaker_1", long_text)
             for i in range(4)
         ]
-        config = SegmentationConfig(min_block_chars=1, max_block_tokens=120)
+        config = SegmentationConfig(min_block_chars=1, max_block_tokens=120, target_block_tokens=120)
         result = segment_blocks(segments, policy, config)
         self.assertGreater(result["block_count"], 1)
         self.assertTrue(result["coverage_complete"])
-        self.assertIn("budget_split", result["boundary_reason_counts"])
+        self.assertIn("size_split", result["boundary_reason_counts"])
+
+    def test_long_single_topic_splits_by_soft_target(self):
+        # 单人、单话题、无长停顿：语义信号都不触发，但块过长应被软目标切开。
+        text = "关于采购预算季度拆分执行细节风险应对验收标准的持续对齐说明。"
+        segments = [
+            _seg(i, i * 3000, i * 3000 + 2900, "speaker_1", text)
+            for i in range(20)
+        ]
+        # 每段约 28 字≈35 token，20 段≈700 token；target 设 200 逼出多块。
+        config = SegmentationConfig(min_block_chars=1, target_block_tokens=200)
+        result = segment_blocks(segments, self.policy, config)
+        self.assertGreater(result["block_count"], 1)
+        self.assertTrue(result["coverage_complete"])
+        self.assertIn("size_split", result["boundary_reason_counts"])
 
     def test_deterministic(self):
         segments = [

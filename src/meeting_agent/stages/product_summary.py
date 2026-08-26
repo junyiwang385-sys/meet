@@ -47,6 +47,45 @@ BLOCK_SUMMARY_SHAPE = {
     ],
 }
 
+# 按 request_kind 决定是否开 think 与输出预留（4B int4）。
+# 抽取/压缩类关 think：省紧张的输出预算、避免 thinking 吃掉答案导致 JSON 截断。
+# 判断类（action-review，将来的专名纠错）开 think：需要权衡的推理收益最高。
+_THINK_KINDS = {"action-review"}
+_KIND_OUTPUT_TOKENS = {
+    "block-summary": 1200,
+    "full-summary": 1400,
+    "speaker-batch": 1400,
+    "action-review": 3072,
+    "full": 3072,
+}
+
+
+def _kind_uses_think(request_kind: str) -> bool:
+    return request_kind in _THINK_KINDS
+
+
+def _kind_output_tokens(request_kind: str, config: "ProductSummaryConfig") -> int:
+    return min(
+        _KIND_OUTPUT_TOKENS.get(request_kind, config.llm.max_tokens),
+        config.llm.max_tokens,
+    )
+
+
+def _apply_think_directive(
+    messages: list[dict[str, str]], think: bool
+) -> list[dict[str, str]]:
+    """think 关闭时在最后一条 user 内容尾部追加 Qwen3 的 /no_think 软开关。"""
+    if think:
+        return messages
+    patched = [dict(message) for message in messages]
+    for message in reversed(patched):
+        if message.get("role") == "user":
+            content = str(message.get("content") or "")
+            if "/no_think" not in content:
+                message["content"] = content + "\n/no_think"
+            break
+    return patched
+
 # NOTE(v25 弃用)：CHAPTER_WINDOW_SHAPE / _chapter_window_messages / _fit_window /
 # _validate_window 属于旧的 sliding_chapter_windows 路径，已被 A 层确定性分割 +
 # B 层逐块摘要取代，当前不再被编排调用。保留仅为对照，待独立清理提交移除。
@@ -1762,6 +1801,8 @@ def run_product_summary_stage(
                     details={"request_dir": request_dir.name},
                 )
                 return reused
+        think = _kind_uses_think(request_kind)
+        kind_max_tokens = _kind_output_tokens(request_kind, config)
         request_messages = messages
         result = None
         validated = None
@@ -1770,8 +1811,9 @@ def run_product_summary_stage(
             attempt_request_id = request_id if attempt == 0 else f"{request_id}-attempt-{attempt + 1}"
             try:
                 result = ensure_session().request(
-                    request_messages,
+                    _apply_think_directive(request_messages, think),
                     attempt_dir,
+                    max_tokens=kind_max_tokens,
                     phase=phase,
                     request_id=attempt_request_id,
                     request_kind=request_kind,
@@ -2072,28 +2114,31 @@ def run_product_summary_stage(
             for ref in chapter.get("refs", [])
             if str(ref) in segment_by_id
         ))
-        # 自适应 overview 来源：原文放得下就从原文+章节提纲生成（接地，不依赖章节摘要质量）；
-        # 放不下才退化为从章节摘要 reduce。
-        if plan["full_request_fits"]:
-            summary_messages = _overview_from_source_messages(
-                timeline, chapters, ref_map=ref_map, speaker_map=speaker_map
-            )
+        # 自适应 overview 来源：用 overview 自己的输出预留（比"全都要"的账小）判定原文放不放得下，
+        # 尽量多留在原文接地版；放不下才退化为章节摘要 reduce。
+        overview_output = _kind_output_tokens("full-summary", config)
+        overview_budget = BudgetPolicy(
+            ctx=budget.ctx,
+            output_tokens=overview_output,
+            safety_tokens=budget.safety_tokens,
+            chars_per_token=budget.chars_per_token,
+            fixed_overhead_tokens=budget.fixed_overhead_tokens,
+            overlap_segments=0,
+        )
+        overview_messages = _overview_from_source_messages(
+            timeline, chapters, ref_map=ref_map, speaker_map=speaker_map
+        )
+        if messages_fit(overview_messages, overview_budget):
+            summary_messages = overview_messages
             overview_source = "source_timeline"
         else:
             summary_messages = _full_summary_messages(
                 chapters, ref_map=ref_map, speaker_map=speaker_map
             )
             overview_source = "chapter_summaries"
-        summary_estimate = estimate_message_tokens(summary_messages, budget)
-        if summary_estimate > budget.input_token_budget and overview_source == "source_timeline":
-            # 原文提纲版意外超预算，退回章节摘要 reduce。
-            summary_messages = _full_summary_messages(
-                chapters, ref_map=ref_map, speaker_map=speaker_map
-            )
-            overview_source = "chapter_summaries"
-            summary_estimate = estimate_message_tokens(summary_messages, budget)
-        if summary_estimate > budget.input_token_budget:
-            # TODO(层级归并)：章节过多时应做树状多级 reduce（每 5~8 章一组，多级合并），
+        summary_estimate = estimate_message_tokens(summary_messages, overview_budget)
+        if summary_estimate > overview_budget.input_token_budget:
+            # TODO(层级归并)：章节过多致此处超预算时，应做树状多级 reduce（每 5~8 章一组，多级合并），
             # 而非硬失败。当前长会章节爆预算会在此 raise，属已知健壮性缺口。
             raise ChunkingError("validated chapters exceed full-summary input budget")
         plan["overview_source"] = overview_source

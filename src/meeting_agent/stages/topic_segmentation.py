@@ -33,8 +33,12 @@ class SegmentationConfig:
     speaker_weight: float = 0.5
     cohesion_weight: float = 0.6
     boundary_score_threshold: float = 1.0
-    min_block_chars: int = 60
-    # 单块原文的 token 上限；None 表示由预算推导（留出 B 层提示词开销）。
+    # 块尺寸下限：过短的块并入相邻，避免碎块浪费 B 层调用与提示词开销。
+    min_block_chars: int = 400
+    # 软目标：块攒过这个 token 数就在最弱内聚点切开，即使没有强语义边界，
+    # 让长而平滑（单人/单主题）的内容也落进 4B 的舒适区，而不是一路撑到硬上限。
+    target_block_tokens: int = 1800
+    # 单块原文的 token 硬上限（兜底）；None 表示由预算推导（留出 B 层提示词开销）。
     max_block_tokens: int | None = None
     block_overhead_tokens: int = 512
 
@@ -125,15 +129,20 @@ def _block_text_tokens(seg_slice: list[dict[str, Any]], policy: BudgetPolicy) ->
     return estimate_text_tokens(text, policy)
 
 
-def _force_split_over_budget(
+def _split_over_cap(
     seg_slice: list[dict[str, Any]],
     opened_by: list[str],
     policy: BudgetPolicy,
     config: SegmentationConfig,
-    max_tokens: int,
+    cap_tokens: int,
+    reason: str,
 ) -> list[tuple[list[dict[str, Any]], list[str]]]:
-    """超预算块按最弱内聚点递归切开；实在切不动时按中点硬切。"""
-    if len(seg_slice) <= 1 or _block_text_tokens(seg_slice, policy) <= max_tokens:
+    """超过 cap_tokens 的块按最弱内聚点递归切开；实在切不动时按中点硬切。
+
+    同一函数服务软目标（target_block_tokens）与硬上限（max_block_tokens）——
+    段尺寸驱动的切分，右半块用 reason 标注来源（size_split）。
+    """
+    if len(seg_slice) <= 1 or _block_text_tokens(seg_slice, policy) <= cap_tokens:
         return [(seg_slice, opened_by)]
     best_pos = None
     best_similarity = None
@@ -149,8 +158,8 @@ def _force_split_over_budget(
     left = seg_slice[:split_at]
     right = seg_slice[split_at:]
     return [
-        *_force_split_over_budget(left, opened_by, policy, config, max_tokens),
-        *_force_split_over_budget(right, ["budget_split"], policy, config, max_tokens),
+        *_split_over_cap(left, opened_by, policy, config, cap_tokens, reason),
+        *_split_over_cap(right, [reason], policy, config, cap_tokens, reason),
     ]
 
 
@@ -217,11 +226,12 @@ def segment_blocks(
             merged[1] = (first_slice + second_slice, first_reasons)
             merged.pop(0)
 
-    # 4. 预算兜底：超长块按最弱内聚点切开。
+    # 4. 尺寸切分：软目标优先（min 到 target），硬上限兜底；长而平滑的块被切到舒适区。
+    size_cap = min(max_tokens, config.target_block_tokens)
     budgeted: list[tuple[list[dict[str, Any]], list[str]]] = []
     for seg_slice, reasons in merged:
         budgeted.extend(
-            _force_split_over_budget(seg_slice, reasons, policy, config, max_tokens)
+            _split_over_cap(seg_slice, reasons, policy, config, size_cap, "size_split")
         )
 
     blocks = [

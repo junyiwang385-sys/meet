@@ -1,13 +1,17 @@
 import json
+import types
 import unittest
 
 from meeting_agent.stages.product_summary import (
     MAX_RETRY_ECHO_CHARS,
     MIN_BLOCK_SUMMARY_CHARS,
+    _apply_think_directive,
     _block_summary_messages,
     _build_compact_ref_map,
     _build_compact_speaker_map,
     _build_retry_messages,
+    _kind_output_tokens,
+    _kind_uses_think,
     _overview_from_source_messages,
     _reduce_blocks_to_chapters,
     _validate_block_summary,
@@ -274,6 +278,56 @@ class RetryMessagesTests(unittest.TestCase):
     def test_base_messages_not_mutated(self):
         _build_retry_messages(self.base, "x", "c")
         self.assertEqual(len(self.base), 2)
+
+
+class ThinkAndBudgetTests(unittest.TestCase):
+    def _config(self, max_tokens=3072):
+        return types.SimpleNamespace(llm=types.SimpleNamespace(max_tokens=max_tokens))
+
+    def test_extraction_kinds_no_think_judgment_kinds_think(self):
+        self.assertFalse(_kind_uses_think("block-summary"))
+        self.assertFalse(_kind_uses_think("full-summary"))
+        self.assertFalse(_kind_uses_think("speaker-batch"))
+        self.assertTrue(_kind_uses_think("action-review"))
+
+    def test_kind_output_tokens_capped_by_global(self):
+        cfg = self._config(max_tokens=3072)
+        self.assertEqual(_kind_output_tokens("block-summary", cfg), 1200)
+        self.assertEqual(_kind_output_tokens("action-review", cfg), 3072)
+        # 未知 kind 回退到全局
+        self.assertEqual(_kind_output_tokens("unknown", cfg), 3072)
+        # 全局更小时不得超过全局
+        self.assertEqual(_kind_output_tokens("full-summary", self._config(900)), 900)
+
+    def test_no_think_appends_directive_to_last_user_turn(self):
+        messages = [
+            {"role": "system", "content": "sys"},
+            {"role": "user", "content": "任务"},
+        ]
+        patched = _apply_think_directive(messages, think=False)
+        self.assertTrue(patched[1]["content"].endswith("/no_think"))
+        # 原对象不被改动
+        self.assertEqual(messages[1]["content"], "任务")
+
+    def test_think_true_is_passthrough(self):
+        messages = [{"role": "user", "content": "判断题"}]
+        self.assertIs(_apply_think_directive(messages, think=True), messages)
+
+    def test_no_think_targets_last_user_not_assistant(self):
+        messages = [
+            {"role": "system", "content": "sys"},
+            {"role": "user", "content": "任务"},
+            {"role": "assistant", "content": "上次输出"},
+            {"role": "user", "content": "纠正"},
+        ]
+        patched = _apply_think_directive(messages, think=False)
+        self.assertEqual(patched[2]["content"], "上次输出")
+        self.assertTrue(patched[3]["content"].endswith("/no_think"))
+
+    def test_no_think_not_duplicated(self):
+        messages = [{"role": "user", "content": "任务\n/no_think"}]
+        patched = _apply_think_directive(messages, think=False)
+        self.assertEqual(patched[0]["content"].count("/no_think"), 1)
 
 
 if __name__ == "__main__":

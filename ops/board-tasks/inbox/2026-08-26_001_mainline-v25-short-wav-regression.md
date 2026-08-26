@@ -61,6 +61,15 @@ error_report.json                 # 若失败
 
 **不要回传**：`demo_short.wav` 音频、完整 `logs/`、完整模型输出、`03_llm_summary/blocks/` 与 `requests/` 目录下的完整 prompt/响应、绝对路径。
 
+### 本次新增验证点（v25 预算与 think 分配）
+
+- **`/no_think` 是否被 rkllm3-server 支持**：抽取类请求(block-summary/full-summary/speaker-batch)已追加 `/no_think`；确认板端是否真的不再产出 `<think>`（看 `03_llm_summary/blocks/*/thinking.txt` 是否为空、`request.json` 的 messages 尾部有 `/no_think`）。action-review 应仍有 thinking。
+- **block 尺寸分布**：`segmentation.json` 的 `boundary_reason_counts`（含 `size_split`）与各 block `text_chars`/token，确认软目标(~1800)是否把长块切到舒适区。
+- **overview 来源**：`plan.json` 的 `overview_source`（`source_timeline` 期望更多）与 `overview_estimated_prompt_tokens`。
+- **retry / too_short**：`run_metrics.json` 的 `retry_count`；关 think 后 block-summary 截断/重试应下降。
+- **tokenizer 校准**：从 `run_metrics.json` / 各 `request.json` 的 `estimated_prompt_tokens` 对比 server 实际 `usage.prompt_tokens`，回传几组数用于校准 `chars_per_token`（当前 1.3，疑偏保守）。
+- **多轮含 assistant 轮**：若有重试，确认带 assistant 回显的多轮请求被正常处理（不报错、结果变长/变对）。
+
 ## 安全约束
 
 - 只用非敏感演示 WAV；不删失败会议证据；不上公共云。
