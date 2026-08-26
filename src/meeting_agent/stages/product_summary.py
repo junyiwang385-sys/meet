@@ -19,6 +19,7 @@ from ..llm.chunking import (
 )
 from ..llm.llm import LlmConfig, LlmRunError, RkllmServerSession, SYSTEM_PROMPT
 from .transcript import render_timeline
+from .topic_segmentation import SegmentationConfig, segment_blocks
 from .validation import (
     SummaryValidationError,
     clean_text,
@@ -27,8 +28,25 @@ from .validation import (
 )
 
 
-PRODUCT_SUMMARY_VERSION = "product-summary.v24"
+PRODUCT_SUMMARY_VERSION = "product-summary.v25"
 
+# D 层长度门（软约束，触发一次受控重试而不是硬失败）
+MIN_BLOCK_SUMMARY_CHARS = 60
+MIN_OVERVIEW_CHARS = 120
+
+BLOCK_SUMMARY_SHAPE = {
+    "title": "本块小标题",
+    "summary": "本块摘要",
+    "continues_previous": False,
+    "key_refs": ["r1", "r3"],
+    "action_candidates": [
+        {"task": "明确待办", "owner": None, "deadline": None, "refs": ["r1"]}
+    ],
+}
+
+# NOTE(v25 弃用)：CHAPTER_WINDOW_SHAPE / _chapter_window_messages / _fit_window /
+# _validate_window 属于旧的 sliding_chapter_windows 路径，已被 A 层确定性分割 +
+# B 层逐块摘要取代，当前不再被编排调用。保留仅为对照，待独立清理提交移除。
 CHAPTER_WINDOW_SHAPE = {
     "completed_chapters": [
         {
@@ -182,6 +200,7 @@ def _compactize_payload(
         "core_end_ref",
         "carryover_start_ref",
         "refs",
+        "key_refs",
     }
     speaker_keys = {"speaker_id", "owner"}
     if isinstance(value, dict):
@@ -213,6 +232,7 @@ def _expand_payload(
         "core_end_ref",
         "carryover_start_ref",
         "refs",
+        "key_refs",
     }
     speaker_keys = {"speaker_id", "owner"}
     if isinstance(value, dict):
@@ -1225,6 +1245,8 @@ def _validate_overview(
     text = clean_text(overview.get("text"))
     if text is None:
         raise SummaryValidationError("overview text is required")
+    if len(text) < MIN_OVERVIEW_CHARS:
+        raise SummaryValidationError(f"overview text is too short ({len(text)} chars)")
     refs = list(dict.fromkeys(
         str(ref)
         for ref in overview_refs
@@ -1421,6 +1443,153 @@ def _save_reusable_request(
     )
 
 
+def _block_summary_messages(
+    block_segments: list[dict[str, Any]],
+    prev_context: dict[str, str] | None,
+    *,
+    ref_map: dict[str, str],
+    speaker_map: dict[str, str],
+) -> list[dict[str, str]]:
+    """B 层逐块摘要提示词：只处理一块，并判定是否延续上一块话题。"""
+    timeline = _render_compact_timeline(block_segments, ref_map, speaker_map)
+    prompt_shape = _compactize_payload(BLOCK_SUMMARY_SHAPE, ref_map, speaker_map)
+    if prev_context is not None:
+        prev_text = (
+            f"上一块标题：{prev_context.get('title', '')}\n"
+            f"上一块摘要：{prev_context.get('summary', '')}\n\n"
+        )
+    else:
+        prev_text = "（这是第一块，没有上一块。）\n\n"
+    prompt = (
+        "任务：\n"
+        "为下面这一小段会议 Timeline 生成一个块级小标题和摘要，并判断它是否延续上一块的同一话题。\n\n"
+        "要求：\n"
+        "- summary 使用约 150～300 个中文字符，说明这一块的背景或问题、关键事实或方案、结论或影响。\n"
+        "- 只依据本块 Timeline，不得引入块外信息；不要写寒暄、过渡和重复确认。\n"
+        "- continues_previous：本块是否在延续上一块的同一话题（同一问题、对象或结论方向）。没有上一块时填 false。\n"
+        "- key_refs 最多 3 个，必须来自本块，用于代表本块核心内容。\n"
+        "- action_candidates 只提取本块中明确要求执行、确认执行或明确分配的待办；没有则返回 []。\n"
+        "- owner 只有原文明确支持时才填对应 speaker_id，否则 null；deadline 只有原文明确出现才填，否则 null。\n\n"
+        f"{prev_text}"
+        "输出结构：\n"
+        f"{json.dumps(prompt_shape, ensure_ascii=False, indent=2)}\n\n"
+        f"本块 Timeline：\n{timeline}"
+    )
+    return [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+
+
+def _validate_block_summary(
+    content: str,
+    finish_reason: Any,
+    context_truncated: bool,
+    block_segments: list[dict[str, Any]],
+    *,
+    ref_map: dict[str, str],
+    speaker_map: dict[str, str],
+) -> dict[str, Any]:
+    if finish_reason != "stop":
+        raise SummaryValidationError(f"block summary finish_reason is {finish_reason!r}")
+    if context_truncated:
+        raise SummaryValidationError("block summary input was truncated")
+    raw = parse_content(content)
+    compact_ref_map = {compact: canonical for canonical, compact in ref_map.items()}
+    compact_speaker_map = {compact: canonical for canonical, compact in speaker_map.items()}
+    raw = _expand_payload(raw, compact_ref_map, compact_speaker_map)
+    title = clean_text(raw.get("title"))
+    summary = clean_text(raw.get("summary"))
+    if title is None or summary is None:
+        raise SummaryValidationError("block summary requires title and summary")
+    if len(summary) < MIN_BLOCK_SUMMARY_CHARS:
+        raise SummaryValidationError(
+            f"block summary is too short ({len(summary)} chars)"
+        )
+    by_id = {segment["segment_id"]: segment for segment in block_segments}
+    key_refs = raw.get("key_refs")
+    key_refs = key_refs if isinstance(key_refs, list) else []
+    valid_refs = list(dict.fromkeys(
+        str(ref)
+        for ref in key_refs
+        if str(ref) in by_id and by_id[str(ref)].get("text")
+    ))
+    if not valid_refs:
+        valid_refs = list(dict.fromkeys(
+            [block_segments[0]["segment_id"], block_segments[-1]["segment_id"]]
+        ))
+    continues_raw = raw.get("continues_previous")
+    continues_previous = continues_raw is True or (
+        isinstance(continues_raw, str)
+        and continues_raw.strip().lower() in {"true", "yes", "是"}
+    )
+    actions: list[dict[str, Any]] = []
+    raw_actions = raw.get("action_candidates", [])
+    if isinstance(raw_actions, list):
+        for item in raw_actions:
+            if not isinstance(item, dict):
+                continue
+            task = clean_text(item.get("task"))
+            refs = item.get("refs")
+            if task is None or not isinstance(refs, list):
+                continue
+            action_refs = list(dict.fromkeys(
+                str(ref)
+                for ref in refs
+                if str(ref) in by_id and by_id[str(ref)].get("text")
+            ))
+            if not action_refs:
+                continue
+            actions.append(
+                {
+                    "task": task,
+                    "owner": clean_text(item.get("owner")),
+                    "deadline": clean_text(item.get("deadline")),
+                    "refs": action_refs,
+                }
+            )
+    return {
+        "title": title,
+        "summary": summary,
+        "continues_previous": continues_previous,
+        "refs": valid_refs,
+        "action_candidates": actions,
+        "start_ref": block_segments[0]["segment_id"],
+        "end_ref": block_segments[-1]["segment_id"],
+    }
+
+
+def _reduce_blocks_to_chapters(
+    block_results: list[dict[str, Any]],
+    segment_by_id: dict[str, dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """把逐块摘要合并成最终章节：相邻块 continues_previous 的并入上一章。"""
+    chapters: list[dict[str, Any]] = []
+    action_candidates: list[dict[str, Any]] = []
+    for block in block_results:
+        action_candidates.extend(block.get("action_candidates", []))
+        if chapters and block.get("continues_previous"):
+            chapter = chapters[-1]
+            chapter["overview"] = f"{chapter['overview']}；{block['summary']}"
+            chapter["end_ref"] = block["end_ref"]
+            chapter["refs"] = list(dict.fromkeys(chapter["refs"] + block["refs"]))
+        else:
+            chapters.append(
+                {
+                    "title": block["title"],
+                    "overview": block["summary"],
+                    "start_ref": block["start_ref"],
+                    "end_ref": block["end_ref"],
+                    "refs": list(block["refs"]),
+                }
+            )
+    for chapter in chapters:
+        cited = [segment_by_id[ref] for ref in chapter["refs"] if ref in segment_by_id]
+        chapter["speaker_ids"] = sorted({item["speaker_id"] for item in cited})
+        start_segment = segment_by_id.get(chapter["start_ref"])
+        end_segment = segment_by_id.get(chapter["end_ref"])
+        chapter["start_ms"] = int(start_segment["start_ms"]) if start_segment else 0
+        chapter["end_ms"] = int(end_segment["end_ms"]) if end_segment else 0
+    return chapters, action_candidates
+
+
 def run_product_summary_stage(
     *,
     config: ProductSummaryConfig,
@@ -1439,6 +1608,9 @@ def run_product_summary_stage(
         [segment["speaker_id"] for segment in segments] or speaker_ids
     )
     nonempty = [segment for segment in segments if segment.get("text")]
+    # A 层：先做确定性话题分割，块数决定走单请求快路径还是分块 map-reduce
+    segmentation = segment_blocks(nonempty, budget, SegmentationConfig())
+    blocks = segmentation["blocks"]
     full_messages = _full_meeting_messages(
         timeline,
         speaker_ids,
@@ -1446,11 +1618,15 @@ def run_product_summary_stage(
         speaker_map=speaker_map,
     )
     full_estimate = estimate_message_tokens(full_messages, budget)
+    # single_request 已降级为"仅单块极短会"的快路径；多块一律走分块 map-reduce。
+    use_single_request = len(blocks) <= 1 and messages_fit(full_messages, budget)
     plan: dict[str, Any] = {
         "version": PRODUCT_SUMMARY_VERSION,
         "input_token_budget": budget.input_token_budget,
         "full_estimated_prompt_tokens": full_estimate,
         "full_request_fits": messages_fit(full_messages, budget),
+        "block_count": len(blocks),
+        "use_single_request": use_single_request,
     }
     request_records: list[dict[str, Any]] = []
     # 保留每次传输和业务校验尝试；request_records 继续只表示最终通过校验的请求，
@@ -1618,14 +1794,22 @@ def run_product_summary_stage(
                     and "length" in message
                 )
                 retry_context_truncated = "input was truncated" in message
+                retry_too_short = "too short" in message
                 if attempt != 0 or not (
                     retry_json
                     or retry_missing_speakers
                     or retry_output_length
                     or retry_context_truncated
+                    or retry_too_short
                 ):
                     raise
-                if retry_output_length:
+                if retry_too_short:
+                    correction = (
+                        "上一条摘要过短。请重新完整输出 JSON，把 summary/overview 写得更充实，"
+                        "覆盖背景或问题、关键事实或方案、结论及影响，约 150 个汉字以上；"
+                        "只依据输入内容，不要解释、不要额外字段、不要输出 markdown。"
+                    )
+                elif retry_output_length:
                     correction = (
                         "上一条响应达到输出长度上限。请重新完整输出 JSON，严格只保留 speakers 字段；"
                         "每个 speaker 只输出一条 overview，overview 控制在 40 个汉字以内，"
@@ -1710,7 +1894,7 @@ def run_product_summary_stage(
         }
 
     try:
-        if plan["full_request_fits"]:
+        if use_single_request:
             def validate_full(content: str, finish_reason: Any, truncated: bool) -> dict[str, Any]:
                 summary, _ = _validate_full_core_result(
                     content,
@@ -1738,100 +1922,54 @@ def run_product_summary_stage(
             atomic_write_json(out_dir / "plan.json", plan)
             return result_payload(summary, quality, plan["policy"])
 
+        # A 层切块已在入口算好（segmentation / blocks），这里落盘并建索引。
+        atomic_write_json(out_dir / "segmentation.json", segmentation)
         segment_by_id = {segment["segment_id"]: segment for segment in nonempty}
-        nonempty_positions = {
-            segment["segment_id"]: index for index, segment in enumerate(nonempty)
-        }
-        chapters = []
-        action_candidates = []
-        window_records = []
-        cursor = 0
-        window_number = 1
-        while cursor < len(nonempty):
-            window_end, _, estimate = _fit_window(nonempty, cursor, budget, ref_map=ref_map, speaker_map=speaker_map)
-            window_segments = nonempty[cursor:window_end]
-            is_final = window_end == len(nonempty)
-            window_id = f"window-{window_number:06d}"
-            messages = _chapter_window_messages(window_segments, ref_map=ref_map, speaker_map=speaker_map)
-            estimate = estimate_message_tokens(messages, budget)
-            request_dir = out_dir / "chapter_windows" / window_id
-            atomic_write_text(request_dir / "timeline.txt", render_timeline(window_segments))
 
-            def validate_window_request(
+        # B 层：逐块摘要（map），一次调用一块，附上一块上下文判定是否延续同一话题
+        block_results: list[dict[str, Any]] = []
+        prev_context: dict[str, str] | None = None
+        for block in blocks:
+            block_id = block["block_id"]
+            block_segments = [segment_by_id[seg_id] for seg_id in block["segment_ids"]]
+            messages = _block_summary_messages(
+                block_segments, prev_context, ref_map=ref_map, speaker_map=speaker_map
+            )
+            estimate = estimate_message_tokens(messages, budget)
+            request_dir = out_dir / "blocks" / block_id
+            atomic_write_text(request_dir / "timeline.txt", render_timeline(block_segments))
+
+            def validate_block_request(
                 content: str,
                 finish_reason: Any,
                 truncated: bool,
-                current_segments: list[dict[str, Any]] = window_segments,
-                final: bool = is_final,
+                current_segments: list[dict[str, Any]] = block_segments,
             ) -> dict[str, Any]:
-                new_chapters, new_actions, next_offset, quality = _validate_window(
+                return _validate_block_summary(
                     content,
                     finish_reason,
                     truncated,
                     current_segments,
-                    is_final=final,
+                    ref_map=ref_map,
+                    speaker_map=speaker_map,
                 )
-                return {
-                    "chapters": new_chapters,
-                    "action_candidates": new_actions,
-                    "next_offset": next_offset,
-                    "quality": quality,
-                }
 
-            window_result = run_request(
+            block_result = run_request(
                 messages=messages,
                 request_dir=request_dir,
-                request_id=window_id,
-                request_kind="chapter-window",
-                phase="llm_chapter_window",
+                request_id=block_id,
+                request_kind="block-summary",
+                phase="llm_block_summary",
                 estimate=estimate,
-                validator=validate_window_request,
-                quality_builder=lambda value: value["quality"],
+                validator=validate_block_request,
             )
-            new_chapters = window_result["chapters"]
-            new_actions = window_result["action_candidates"]
-            next_offset = int(window_result["next_offset"])
-            quality = window_result["quality"]
-            if next_offset <= 0:
-                raise SummaryValidationError("chapter window made no forward progress")
-            chapters.extend(new_chapters)
-            action_candidates.extend(new_actions)
-            next_cursor = cursor + next_offset
-            completed_end_ref = new_chapters[-1]["end_ref"] if new_chapters else None
-            carryover_start_ref = quality.get("carryover_start_ref")
-            chapter_covered_segment_count = sum(
-                nonempty_positions[chapter["end_ref"]]
-                - nonempty_positions[chapter["start_ref"]]
-                + 1
-                for chapter in new_chapters
-            )
-            window_record = {
-                "window_id": window_id,
-                "input_start_ref": window_segments[0]["segment_id"],
-                "input_end_ref": window_segments[-1]["segment_id"],
-                "completed_end_ref": completed_end_ref,
-                "carryover_start_ref": carryover_start_ref,
-                "start_ref": window_segments[0]["segment_id"],
-                "end_ref": window_segments[-1]["segment_id"],
-                "next_start_ref": carryover_start_ref,
-                "input_segment_count": len(window_segments),
-                "chapter_covered_segment_count": chapter_covered_segment_count,
-                "cursor_advance_segment_count": next_offset,
-                "carryover_context_segment_count": len(window_segments) - next_offset,
-                "completed_segment_count": chapter_covered_segment_count,
-                "carryover_segment_count": len(window_segments) - next_offset,
-                "completed_chapter_count": len(new_chapters),
-                "completed_chapters": new_chapters,
-                "action_candidates": new_actions,
-                "action_candidate_count": len(new_actions),
-                "estimated_prompt_tokens": estimate,
-                "quality": quality,
-            }
-            atomic_write_json(request_dir / "validated_window.json", window_record)
-            window_records.append(window_record)
-            cursor = next_cursor
-            window_number += 1
+            block_result = {**block_result, "block_id": block_id, "segment_ids": block["segment_ids"]}
+            atomic_write_json(request_dir / "validated_block.json", block_result)
+            block_results.append(block_result)
+            prev_context = {"title": block_result["title"], "summary": block_result["summary"]}
 
+        # 合并（reduce over boundaries）：相邻块 continues_previous 的并成一章，把 A 层过切收回来
+        chapters, action_candidates = _reduce_blocks_to_chapters(block_results, segment_by_id)
         atomic_write_json(out_dir / "chapters.json", chapters)
         atomic_write_json(out_dir / "action_candidates.json", action_candidates)
 
@@ -2040,8 +2178,8 @@ def run_product_summary_stage(
         summary, quality = validate_summary_object(summary, segments)
         quality["checks"].update(
             {
-                "full_meeting_coverage": cursor == len(nonempty),
-                "sliding_chapter_windows": True,
+                "full_meeting_coverage": segmentation["coverage_complete"],
+                "deterministic_blocks": True,
                 "speaker_batches_processed": True,
             }
         )
@@ -2049,9 +2187,10 @@ def run_product_summary_stage(
             quality["warnings"].append("reused validated LLM artifacts")
         plan.update(
             {
-                "policy": "sliding_chapter_windows",
-                "window_count": len(window_records),
-                "windows": window_records,
+                "policy": "deterministic_blocks_map_reduce",
+                "block_count": len(blocks),
+                "chapter_count": len(chapters),
+                "segmentation": segmentation,
                 "action_candidate_count": len(action_candidates),
                 "speaker_count": len(speaker_documents),
                 "speaker_batch_count": len(speaker_batch_records),
