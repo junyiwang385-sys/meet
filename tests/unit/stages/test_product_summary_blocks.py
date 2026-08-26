@@ -2,10 +2,12 @@ import json
 import unittest
 
 from meeting_agent.stages.product_summary import (
+    MAX_RETRY_ECHO_CHARS,
     MIN_BLOCK_SUMMARY_CHARS,
     _block_summary_messages,
     _build_compact_ref_map,
     _build_compact_speaker_map,
+    _build_retry_messages,
     _reduce_blocks_to_chapters,
     _validate_block_summary,
 )
@@ -195,6 +197,43 @@ class ReduceBlocksTests(unittest.TestCase):
         validated, quality = validate_summary_object(summary, self.segments)
         self.assertEqual(len(validated["chapters"]), 2)
         self.assertEqual(quality["status"], "pass")
+
+
+class RetryMessagesTests(unittest.TestCase):
+    def setUp(self):
+        self.base = [
+            {"role": "system", "content": "sys"},
+            {"role": "user", "content": "原始任务"},
+        ]
+
+    def test_previous_output_is_echoed_as_assistant_turn(self):
+        messages, echo = _build_retry_messages(
+            self.base, '{"summary":"太短"}', "请写详实些"
+        )
+        self.assertEqual(len(messages), 4)
+        self.assertEqual(messages[0]["role"], "system")
+        self.assertEqual(messages[1]["role"], "user")
+        self.assertEqual(messages[2]["role"], "assistant")
+        self.assertEqual(messages[2]["content"], '{"summary":"太短"}')
+        self.assertEqual(messages[3]["role"], "user")
+        self.assertEqual(messages[3]["content"], "请写详实些")
+        self.assertEqual(echo, '{"summary":"太短"}')
+
+    def test_long_previous_output_is_truncated(self):
+        long_output = "字" * (MAX_RETRY_ECHO_CHARS + 500)
+        messages, echo = _build_retry_messages(self.base, long_output, "改正")
+        self.assertTrue(echo.endswith("…（后续省略）"))
+        self.assertEqual(len(echo), MAX_RETRY_ECHO_CHARS + len("…（后续省略）"))
+        self.assertEqual(messages[2]["content"], echo)
+
+    def test_none_previous_output_is_safe(self):
+        messages, echo = _build_retry_messages(self.base, None, "改正")
+        self.assertEqual(echo, "")
+        self.assertEqual(messages[2]["content"], "")
+
+    def test_base_messages_not_mutated(self):
+        _build_retry_messages(self.base, "x", "c")
+        self.assertEqual(len(self.base), 2)
 
 
 if __name__ == "__main__":

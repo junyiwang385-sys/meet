@@ -34,6 +34,9 @@ PRODUCT_SUMMARY_VERSION = "product-summary.v25"
 MIN_BLOCK_SUMMARY_CHARS = 60
 MIN_OVERVIEW_CHARS = 120
 
+# 重试轮把上次输出作为 assistant 轮回显给模型时的字符上限（防止撑爆上下文）
+MAX_RETRY_ECHO_CHARS = 600
+
 BLOCK_SUMMARY_SHAPE = {
     "title": "本块小标题",
     "summary": "本块摘要",
@@ -1590,6 +1593,31 @@ def _reduce_blocks_to_chapters(
     return chapters, action_candidates
 
 
+def _build_retry_messages(
+    base_messages: list[dict[str, str]],
+    previous_output: str | None,
+    correction: str,
+    *,
+    echo_limit: int = MAX_RETRY_ECHO_CHARS,
+) -> tuple[list[dict[str, str]], str]:
+    """把上次(坏)输出作为有界 assistant 轮回显，再接一条纠正 user 轮。
+
+    贪心解码下，只有真正改变输入才可能得到不同输出；让模型看到自己上一条输出，
+    纠正指令里的"上一条"才有指代对象。回显做长度上限保护，避免撑爆上下文。
+    """
+    previous_output = previous_output or ""
+    if len(previous_output) > echo_limit:
+        echo = previous_output[:echo_limit] + "…（后续省略）"
+    else:
+        echo = previous_output
+    messages = [
+        *base_messages,
+        {"role": "assistant", "content": echo},
+        {"role": "user", "content": correction},
+    ]
+    return messages, echo
+
+
 def run_product_summary_stage(
     *,
     config: ProductSummaryConfig,
@@ -1834,7 +1862,16 @@ def run_product_summary_stage(
                         "不要输出解释，不要截断，不要在字符串中放入未转义的换行或制表符；"
                         "每个章节最多输出 3 个 key_refs。"
                     )
+                correction = (
+                    f"{correction}\n"
+                    f"校验反馈（程序自动判定，含实测数值）：{message}\n"
+                    "上一条 assistant 内容就是你上次的输出，请在它的问题基础上直接改正，"
+                    "不要重复同样的结果。"
+                )
                 retry_count += 1
+                request_messages, echo = _build_retry_messages(
+                    messages, result.get("content"), correction
+                )
                 _emit_run_log(
                     run_log,
                     "retry_requested",
@@ -1847,12 +1884,12 @@ def run_product_summary_stage(
                         "finish_reason": result.get("finish_reason"),
                         "context_truncated": result.get("context_truncated"),
                     },
-                    details={"cause": failure_cause},
+                    details={
+                        "cause": failure_cause,
+                        "feedback": message[:200],
+                        "echoed_previous_chars": len(echo),
+                    },
                 )
-                request_messages = [
-                    *messages,
-                    {"role": "user", "content": correction},
-                ]
         assert result is not None
         assert validated is not None
         quality = quality_builder(validated) if quality_builder is not None else {"status": "pass"}
