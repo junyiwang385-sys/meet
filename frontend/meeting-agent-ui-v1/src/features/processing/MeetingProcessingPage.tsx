@@ -23,12 +23,34 @@ function isPolling(detail: MeetingDetail | undefined): boolean {
   return Boolean(detail && ['created', 'recording', 'uploading', 'processing', 'finalizing'].includes(detail.state));
 }
 
+function isKnownSpeaker(id: string | null | undefined): boolean {
+  return Boolean(id) && id !== 'unknown';
+}
+
+// unknown 段顺延归并到相邻已知说话人（先向前顺延，开头的再向后回填），只影响展示。
+function carryOverUnknownSpeakers(ids: string[]): string[] {
+  const carried = [...ids];
+  let last: string | null = null;
+  for (let i = 0; i < carried.length; i += 1) {
+    if (isKnownSpeaker(carried[i])) last = carried[i];
+    else if (last !== null) carried[i] = last;
+  }
+  let next: string | null = null;
+  for (let i = carried.length - 1; i >= 0; i -= 1) {
+    if (isKnownSpeaker(carried[i])) next = carried[i];
+    else if (next !== null) carried[i] = next;
+  }
+  return carried;
+}
+
 function transcriptRows(result: MeetingResultV1) {
   const speakers = new Map(result.speakers?.map((speaker) => [speaker.speaker_id, speaker.display_name]));
-  return result.transcript?.segments.map((segment) => ({
+  const segments = result.transcript?.segments ?? [];
+  const carried = carryOverUnknownSpeakers(segments.map((segment) => segment.speaker_id));
+  return segments.map((segment, index) => ({
     ...segment,
-    speaker: speakers.get(segment.speaker_id) ?? segment.speaker_id,
-  })) ?? [];
+    speaker: speakers.get(carried[index]) ?? carried[index],
+  }));
 }
 
 function milestoneClass(done: boolean, current: boolean): string {
@@ -141,6 +163,8 @@ export function MeetingProcessingPage() {
   const { meetingId = '' } = useParams();
   const queryClient = useQueryClient();
   const newestSequence = useRef(-1);
+  const elapsedSyncRef = useRef({ elapsed: 0, at: 0 });
+  const [, forceTick] = useState(0);
   const [stableDetail, setStableDetail] = useState<MeetingDetail | undefined>();
   const [cancelDialogOpen, setCancelDialogOpen] = useState(false);
 
@@ -163,6 +187,8 @@ export function MeetingProcessingPage() {
     if (!detail || detail.seq < newestSequence.current) return;
     newestSequence.current = detail.seq;
     setStableDetail(detail);
+    // 记录后端已用时与收到它的墙钟时刻，供两次轮询之间在本地平滑跳秒。
+    elapsedSyncRef.current = { elapsed: detail.progress.elapsed_seconds, at: Date.now() };
   }, [detailQuery.data]);
 
   useEffect(() => {
@@ -172,6 +198,14 @@ export function MeetingProcessingPage() {
     setStableDetail(detail);
     queryClient.setQueryData(['meeting', meetingId], detail);
   }, [diagnosticsQuery.data, meetingId, queryClient]);
+
+  // 非终态时每秒本地重渲染，让"已用时"平滑跳动、进度条保持活动反馈。
+  const polling = isPolling(stableDetail);
+  useEffect(() => {
+    if (!polling) return;
+    const timer = window.setInterval(() => forceTick((value) => value + 1), 1000);
+    return () => window.clearInterval(timer);
+  }, [polling]);
 
   const resultQuery = useQuery({
     queryKey: ['meeting-result', meetingId],
@@ -256,6 +290,11 @@ export function MeetingProcessingPage() {
   const failed = detail.state === 'failed';
   const cancelled = detail.state === 'cancelled';
   const remaining = detail.progress.estimated_remaining_seconds;
+  const sync = elapsedSyncRef.current;
+  const liveElapsedSeconds =
+    polling && sync.at > 0
+      ? sync.elapsed + Math.max(0, (Date.now() - sync.at) / 1000)
+      : detail.progress.elapsed_seconds;
   const statusTitle = failed ? detail.error?.message ?? '处理未完成' : phaseCopy[detail.phase];
   const statusMessage = cancelled
     ? '本次会议处理已经停止'
@@ -298,11 +337,11 @@ export function MeetingProcessingPage() {
             </div>
             <div className="processing-progress-value">{detail.progress.percent}%</div>
           </div>
-          <div className="processing-progress-track" aria-label={`处理进度 ${detail.progress.percent}%`}>
+          <div className={`processing-progress-track${polling ? ' is-active' : ''}`} aria-label={`处理进度 ${detail.progress.percent}%`}>
             <span style={{ width: `${detail.progress.percent}%` }} />
           </div>
           <div className="processing-progress-meta">
-            <span>已用时 {formatDuration(detail.progress.elapsed_seconds * 1000)}</span>
+            <span>已用时 {formatDuration(Math.round(liveElapsedSeconds) * 1000)}</span>
             <span>
               {completed ? '处理完成' : remaining === null ? '剩余时间待确认' : `${detail.progress.estimated ? '预计' : ''}还需 ${formatDuration(remaining * 1000)}`}
             </span>

@@ -81,11 +81,31 @@
 }
 
 .processing-progress-track {
+  position: relative;
   height: 7px;
   margin-top: 17px;
   overflow: hidden;
   border-radius: 4px;
   background: var(--stage-alt);
+}
+
+/* 非终态时持续活动反馈：即使 percent 长时间不动，也有可见的进行中动画 */
+.processing-progress-track.is-active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+  animation: processing-indeterminate 1.4s ease-in-out infinite;
+}
+
+@keyframes processing-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .processing-progress-track.is-active::after { animation: none; }
 }
 
 .processing-progress-track span {
