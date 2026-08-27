@@ -20,6 +20,7 @@ from ..llm.chunking import (
 from ..llm.llm import LlmConfig, LlmRunError, RkllmServerSession, SYSTEM_PROMPT
 from .transcript import render_timeline
 from .topic_segmentation import SegmentationConfig, segment_blocks
+from .summary_profiles import DomainProfile, GENERIC_PROFILE
 from .validation import (
     SummaryValidationError,
     clean_text,
@@ -41,10 +42,6 @@ SPEAKER_REFS_PER_SPEAKER = 2
 
 # 重试轮把上次输出作为 assistant 轮回显给模型时的字符上限（防止撑爆上下文）
 MAX_RETRY_ECHO_CHARS = 600
-
-# 级别一 extract-then-compose：先抽取要点/锚点，再据此成文。每项封顶防泛滥。
-BLOCK_KEY_POINTS_MAX = 6
-BLOCK_ANCHORS_MAX = 8
 
 BLOCK_SUMMARY_SHAPE = {
     "title": "本块小标题",
@@ -179,6 +176,8 @@ class ProductSummaryConfig:
     chars_per_token: float
     fixed_overhead_tokens: int
     resume: bool
+    # 领域画像（域相关的"抽取什么"）；默认通用版，将来由会议类型识别选出。
+    profile: DomainProfile = GENERIC_PROFILE
 
     @property
     def budget(self) -> BudgetPolicy:
@@ -1542,10 +1541,12 @@ def _block_summary_messages(
     *,
     ref_map: dict[str, str],
     speaker_map: dict[str, str],
+    profile: DomainProfile = GENERIC_PROFILE,
 ) -> list[dict[str, str]]:
-    """B 层逐块摘要提示词：只处理一块，并判定是否延续上一块话题。"""
+    """B 层逐块摘要提示词：只处理一块，并判定是否延续上一块话题。抽取维度由 profile 决定。"""
     timeline = _render_compact_timeline(block_segments, ref_map, speaker_map)
     prompt_shape = _compactize_payload(BLOCK_SUMMARY_SHAPE, ref_map, speaker_map)
+    markers = "/".join(profile.discourse_markers)
     if prev_context is not None:
         prev_text = (
             f"上一块标题：{prev_context.get('title', '')}\n"
@@ -1558,12 +1559,13 @@ def _block_summary_messages(
         "先从下面这一小段会议 Timeline 抽取要点与锚点，再据此写摘要，并判断是否延续上一块话题。\n"
         "务必按 key_points → anchors → summary 的顺序：先想清楚重点，再成文。\n\n"
         "抽取要求（先做）：\n"
-        f"- key_points：本块最重要的结论/决定/方案/事实，最多 {BLOCK_KEY_POINTS_MAX} 条，按重要性排序。\n"
-        "  特别注意被“总结一下/第一第二第三/所以/结论是/记住”等标记的内容，这些通常就是重点。\n"
+        f"- key_points：{profile.aspects}，最多 {profile.key_points_max} 条，按重要性排序。\n"
+        f"  特别注意被“{markers}”等标记的内容，这些通常就是重点。\n"
         "  只收明确表达的实质内容，不收寒暄、过渡、重复确认；宁缺毋滥，不要把普通讨论都算进来。\n"
-        f"- anchors：原文出现的具体例子、数字、专有名词，最多 {BLOCK_ANCHORS_MAX} 条，原样保留不要改写。\n"
+        f"- anchors：{profile.anchor_guidance}，最多 {profile.anchors_max} 条，原样保留不要改写。\n"
         "成文要求（后做）：\n"
-        "- summary 约 150～300 个中文字符，必须涵盖上面的 key_points，并把 anchors 自然嵌入其中。\n"
+        f"- summary 约 {profile.summary_target_min}～{profile.summary_target_max} 个中文字符，"
+        "必须涵盖上面的 key_points，并把 anchors 自然嵌入其中。\n"
         "- 结论前置：先说本块最重要的结论，再补背景与展开；不要写成“会议讨论了X、强调了Y”的流水账。\n"
         "- 只依据本块 Timeline，不得引入块外信息，不得改写 anchors 的原意。\n"
         "其它字段：\n"
@@ -1587,6 +1589,7 @@ def _validate_block_summary(
     *,
     ref_map: dict[str, str],
     speaker_map: dict[str, str],
+    profile: DomainProfile = GENERIC_PROFILE,
 ) -> dict[str, Any]:
     if finish_reason != "stop":
         raise SummaryValidationError(f"block summary finish_reason is {finish_reason!r}")
@@ -1600,7 +1603,7 @@ def _validate_block_summary(
     summary = clean_text(raw.get("summary"))
     if title is None or summary is None:
         raise SummaryValidationError("block summary requires title and summary")
-    if len(summary) < MIN_BLOCK_SUMMARY_CHARS:
+    if len(summary) < profile.summary_min_chars:
         raise SummaryValidationError(
             f"block summary is too short ({len(summary)} chars)"
         )
@@ -1646,8 +1649,8 @@ def _validate_block_summary(
                     "refs": action_refs,
                 }
             )
-    key_points = _clean_bullet_list(raw.get("key_points"), BLOCK_KEY_POINTS_MAX)
-    anchors = _clean_bullet_list(raw.get("anchors"), BLOCK_ANCHORS_MAX)
+    key_points = _clean_bullet_list(raw.get("key_points"), profile.key_points_max)
+    anchors = _clean_bullet_list(raw.get("anchors"), profile.anchors_max)
     return {
         "title": title,
         "key_points": key_points,
@@ -2107,7 +2110,8 @@ def run_product_summary_stage(
             block_id = block["block_id"]
             block_segments = [segment_by_id[seg_id] for seg_id in block["segment_ids"]]
             messages = _block_summary_messages(
-                block_segments, prev_context, ref_map=ref_map, speaker_map=speaker_map
+                block_segments, prev_context, ref_map=ref_map, speaker_map=speaker_map,
+                profile=config.profile,
             )
             estimate = estimate_message_tokens(messages, budget)
             request_dir = out_dir / "blocks" / block_id
@@ -2126,6 +2130,7 @@ def run_product_summary_stage(
                     current_segments,
                     ref_map=ref_map,
                     speaker_map=speaker_map,
+                    profile=config.profile,
                 )
 
             block_result = run_request(

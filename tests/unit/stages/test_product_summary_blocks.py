@@ -16,6 +16,11 @@ from meeting_agent.stages.product_summary import (
     _reduce_blocks_to_chapters,
     _validate_block_summary,
 )
+from meeting_agent.stages.summary_profiles import (
+    DomainProfile,
+    GENERIC_PROFILE,
+    get_profile,
+)
 from meeting_agent.stages.transcript import render_timeline
 from meeting_agent.stages.validation import (
     SummaryValidationError,
@@ -381,6 +386,41 @@ class Level1ExtractTests(unittest.TestCase):
         self.assertNotIn("；", chapters[0]["overview"])            # 近重复不拼接
         self.assertEqual(chapters[0]["key_points"], ["市场饱和", "客户分流"])  # 合并
         self.assertEqual(chapters[0]["anchors"], ["石头饼"])       # 去重
+
+
+class DomainProfileTests(unittest.TestCase):
+    def _maps(self, segs):
+        rmap, _ = _build_compact_ref_map(segs)
+        smap, _ = _build_compact_speaker_map([s["speaker_id"] for s in segs])
+        return rmap, smap
+
+    def test_get_profile_fallback(self):
+        self.assertIs(get_profile(None), GENERIC_PROFILE)
+        self.assertIs(get_profile("nope"), GENERIC_PROFILE)
+        self.assertEqual(get_profile("generic").name, "generic")
+
+    def test_profile_drives_block_prompt(self):
+        custom = DomainProfile(
+            name="tech", aspects="决定/待办/方案取舍/风险/参数",
+            anchor_guidance="模块名/参数/指标", key_points_max=4,
+        )
+        segs = [_seg(0, 0, 3000, "speaker_1", "接口鉴权统一走网关校验令牌再回源方案确定。")]
+        rmap, smap = self._maps(segs)
+        user = _block_summary_messages(segs, None, ref_map=rmap, speaker_map=smap, profile=custom)[1]["content"]
+        self.assertIn("决定/待办/方案取舍/风险/参数", user)   # 域相关 aspect 进了 prompt
+        self.assertIn("模块名/参数/指标", user)
+        self.assertIn("最多 4 条", user)                     # 域相关 cap 生效
+
+    def test_profile_caps_in_validator(self):
+        custom = DomainProfile(name="c", aspects="x", anchor_guidance="y", key_points_max=2, summary_min_chars=10)
+        segs = [_seg(0, 0, 3000, "speaker_1", "实质发言内容一二三")]
+        rmap, smap = self._maps(segs)
+        content = json.dumps(
+            {"title": "t", "summary": "十个字以上的摘要内容示例", "key_points": ["a", "b", "c", "d"], "key_refs": ["r0"]},
+            ensure_ascii=False,
+        )
+        res = _validate_block_summary(content, "stop", False, segs, ref_map=rmap, speaker_map=smap, profile=custom)
+        self.assertEqual(len(res["key_points"]), 2)          # 封顶 2（profile 驱动）
 
 
 if __name__ == "__main__":
