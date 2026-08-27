@@ -701,7 +701,16 @@ export function MeetingReviewPage() {
                 >
                   {saveMutation.isPending ? '正在保存' : '保存草稿'}
                 </button>
-              ) : null}
+              ) : (
+                <button
+                  className="review-quiet-button"
+                  type="button"
+                  disabled
+                  title="当前无法保存草稿：草稿保存接口能力暂不可用"
+                >
+                  保存草稿（暂不可用）
+                </button>
+              )}
               {detail.capabilities.can_finalize ? (
                 <button
                   className="review-primary-button"
@@ -715,7 +724,16 @@ export function MeetingReviewPage() {
                 <button className="review-primary-button" type="button" disabled>正在生成</button>
               ) : detail.state === 'finalized' ? (
                 <Link className="review-quiet-button" to={`/meetings/${meetingId}/formal`}>正式版本</Link>
-              ) : null}
+              ) : (
+                <button
+                  className="review-primary-button"
+                  type="button"
+                  disabled
+                  title="当前无法确认纪要：确认与导出接口能力暂不可用"
+                >
+                  确认纪要（暂不可用）
+                </button>
+              )}
             </div>
           </header>
 
