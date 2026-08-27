@@ -1,0 +1,39 @@
+{
+  "schema_version": "meeting-diagnostics.v1",
+  "task_id": "2026-08-27_001",
+  "meeting_id": "meeting-1d9ca8d1c0b9",
+  "board_task_id": "task-2a83a3a8a98a",
+  "run_id": "mtg_9c6133819814365e",
+  "task_kind": "harness_meeting_v0",
+  "stage": "llm_summary",
+  "product_phase": "synthesizing",
+  "status": "failed",
+  "code": "HARNESS_FAILED",
+  "nested_code": "validation_failed",
+  "message": "LLM 摘要校验失败：missing speaker summaries: speaker_0, speaker_1, speaker_2, speaker_5",
+  "return_code": 7,
+  "elapsed_seconds": 451.799,
+  "transcript": {
+    "available": true,
+    "segment_count": 174,
+    "nonempty_segment_count": 166,
+    "empty_segment_count": 8
+  },
+  "summary": {
+    "minutes": false,
+    "chapters": false,
+    "decisions": false,
+    "action_items": false,
+    "evidence": false,
+    "formal_version": false
+  },
+  "preserved": {
+    "audio": true,
+    "transcript": true,
+    "speakers": true,
+    "summary": false,
+    "formal_version": false
+  },
+  "diagnostic_source": "harness_error_report",
+  "sensitive_content_included": false
+}

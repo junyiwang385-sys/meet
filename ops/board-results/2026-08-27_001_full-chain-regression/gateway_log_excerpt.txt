@@ -1,0 +1,25 @@
+# Gateway sanitized log excerpt
+# Source: local Gateway runtime log
+# Full logs and content-bearing artifacts are intentionally excluded.
+
+[2026-08-27T01:51:15.945273Z] GET /api/settings -> 200
+[2026-08-27T01:51:15.958959Z] GET /api/board/health -> 200
+[2026-08-27T01:52:55.381421Z] GET /api/info -> 200
+[2026-08-27T01:53:12.533402Z] POST /api/meetings -> 201
+[2026-08-27T01:53:18.090326Z] PUT /api/meetings/{meeting_id}/audio -> 202
+[2026-08-27T01:54:26.977399Z] GET /api/meetings/{meeting_id} -> 200
+[2026-08-27T02:01:00.137458Z] GET /api/meetings/{meeting_id}/result -> 200
+[2026-08-27T02:01:00.231043Z] GET /api/meetings/{meeting_id}?include=diagnostics -> 200
+[2026-08-27T02:04:58.960287Z] GET /api/board/health -> 200
+
+Observed failure projection:
+state=failed
+stage=llm_summary
+code=HARNESS_FAILED
+nested_code=validation_failed
+return_code=7
+missing_speaker_summaries=speaker_0,speaker_1,speaker_2,speaker_5
+
+Separate API observation:
+POST /api/meetings/{meeting_id}/finalize -> 404
+Gateway capability finalize=false
