@@ -42,9 +42,15 @@ SPEAKER_REFS_PER_SPEAKER = 2
 # 重试轮把上次输出作为 assistant 轮回显给模型时的字符上限（防止撑爆上下文）
 MAX_RETRY_ECHO_CHARS = 600
 
+# 级别一 extract-then-compose：先抽取要点/锚点，再据此成文。每项封顶防泛滥。
+BLOCK_KEY_POINTS_MAX = 6
+BLOCK_ANCHORS_MAX = 8
+
 BLOCK_SUMMARY_SHAPE = {
     "title": "本块小标题",
-    "summary": "本块摘要",
+    "key_points": ["先抽取：本块最重要的结论/决定/方案（含被“总结/第一二三/所以/结论是”标记的内容）"],
+    "anchors": ["具体例子/数字/专有名词（如：微波炉、300万、某模块名）"],
+    "summary": "再据上面 key_points 与 anchors 写成的连续摘要",
     "continues_previous": False,
     "key_refs": ["r1", "r3"],
     "action_candidates": [
@@ -1549,10 +1555,18 @@ def _block_summary_messages(
         prev_text = "（这是第一块，没有上一块。）\n\n"
     prompt = (
         "任务：\n"
-        "为下面这一小段会议 Timeline 生成一个块级小标题和摘要，并判断它是否延续上一块的同一话题。\n\n"
-        "要求：\n"
-        "- summary 使用约 150～300 个中文字符，说明这一块的背景或问题、关键事实或方案、结论或影响。\n"
-        "- 只依据本块 Timeline，不得引入块外信息；不要写寒暄、过渡和重复确认。\n"
+        "先从下面这一小段会议 Timeline 抽取要点与锚点，再据此写摘要，并判断是否延续上一块话题。\n"
+        "务必按 key_points → anchors → summary 的顺序：先想清楚重点，再成文。\n\n"
+        "抽取要求（先做）：\n"
+        f"- key_points：本块最重要的结论/决定/方案/事实，最多 {BLOCK_KEY_POINTS_MAX} 条，按重要性排序。\n"
+        "  特别注意被“总结一下/第一第二第三/所以/结论是/记住”等标记的内容，这些通常就是重点。\n"
+        "  只收明确表达的实质内容，不收寒暄、过渡、重复确认；宁缺毋滥，不要把普通讨论都算进来。\n"
+        f"- anchors：原文出现的具体例子、数字、专有名词，最多 {BLOCK_ANCHORS_MAX} 条，原样保留不要改写。\n"
+        "成文要求（后做）：\n"
+        "- summary 约 150～300 个中文字符，必须涵盖上面的 key_points，并把 anchors 自然嵌入其中。\n"
+        "- 结论前置：先说本块最重要的结论，再补背景与展开；不要写成“会议讨论了X、强调了Y”的流水账。\n"
+        "- 只依据本块 Timeline，不得引入块外信息，不得改写 anchors 的原意。\n"
+        "其它字段：\n"
         "- continues_previous：本块是否在延续上一块的同一话题（同一问题、对象或结论方向）。没有上一块时填 false。\n"
         "- key_refs 最多 3 个，必须来自本块，用于代表本块核心内容。\n"
         "- action_candidates 只提取本块中明确要求执行、确认执行或明确分配的待办；没有则返回 []。\n"
@@ -1632,8 +1646,12 @@ def _validate_block_summary(
                     "refs": action_refs,
                 }
             )
+    key_points = _clean_bullet_list(raw.get("key_points"), BLOCK_KEY_POINTS_MAX)
+    anchors = _clean_bullet_list(raw.get("anchors"), BLOCK_ANCHORS_MAX)
     return {
         "title": title,
+        "key_points": key_points,
+        "anchors": anchors,
         "summary": summary,
         "continues_previous": continues_previous,
         "refs": valid_refs,
@@ -1641,6 +1659,32 @@ def _validate_block_summary(
         "start_ref": block_segments[0]["segment_id"],
         "end_ref": block_segments[-1]["segment_id"],
     }
+
+
+def _clean_bullet_list(raw: Any, cap: int) -> list[str]:
+    """把模型给的要点/锚点数组归一成去重、非空、封顶的字符串列表（防泛滥）。"""
+    if not isinstance(raw, list):
+        return []
+    cleaned: list[str] = []
+    for item in raw:
+        text = clean_text(item) if not isinstance(item, str) else clean_text(item)
+        if text and text not in cleaned:
+            cleaned.append(text)
+        if len(cleaned) >= cap:
+            break
+    return cleaned
+
+
+def _summaries_too_similar(left: str, right: str, threshold: float = 0.8) -> bool:
+    """字符 bigram Jaccard 判两段摘要是否近乎重复，避免合并时冗余拼接。"""
+    def grams(text: str) -> set[str]:
+        joined = "".join(str(text).split())
+        return {joined[i : i + 2] for i in range(len(joined) - 1)}
+
+    left_grams, right_grams = grams(left), grams(right)
+    if not left_grams or not right_grams:
+        return False
+    return len(left_grams & right_grams) / len(left_grams | right_grams) >= threshold
 
 
 def _reduce_blocks_to_chapters(
@@ -1654,7 +1698,11 @@ def _reduce_blocks_to_chapters(
         action_candidates.extend(block.get("action_candidates", []))
         if chapters and block.get("continues_previous"):
             chapter = chapters[-1]
-            chapter["overview"] = f"{chapter['overview']}；{block['summary']}"
+            # 近乎重复的续块摘要不再拼接（治 blk-7/blk-8 那种冗余“；”缝）
+            if not _summaries_too_similar(chapter["overview"], block["summary"]):
+                chapter["overview"] = f"{chapter['overview']}；{block['summary']}"
+            chapter["key_points"] = list(dict.fromkeys(chapter.get("key_points", []) + block.get("key_points", [])))
+            chapter["anchors"] = list(dict.fromkeys(chapter.get("anchors", []) + block.get("anchors", [])))
             chapter["end_ref"] = block["end_ref"]
             chapter["refs"] = list(dict.fromkeys(chapter["refs"] + block["refs"]))
         else:
@@ -1662,6 +1710,8 @@ def _reduce_blocks_to_chapters(
                 {
                     "title": block["title"],
                     "overview": block["summary"],
+                    "key_points": list(block.get("key_points", [])),
+                    "anchors": list(block.get("anchors", [])),
                     "start_ref": block["start_ref"],
                     "end_ref": block["end_ref"],
                     "refs": list(block["refs"]),

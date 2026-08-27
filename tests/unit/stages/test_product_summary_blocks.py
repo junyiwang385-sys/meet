@@ -330,5 +330,58 @@ class ThinkAndBudgetTests(unittest.TestCase):
         self.assertEqual(patched[0]["content"].count("/no_think"), 1)
 
 
+class Level1ExtractTests(unittest.TestCase):
+    def setUp(self):
+        self.segments = [
+            _seg(0, 0, 3000, "speaker_1", "老师总结一下销售三原则的第一二三点内容。"),
+            _seg(1, 3100, 6000, "speaker_1", "还举了微波炉的例子说明宣传与实际。"),
+        ]
+        self.ref_map, _ = _build_compact_ref_map(self.segments)
+        self.speaker_map, _ = _build_compact_speaker_map([s["speaker_id"] for s in self.segments])
+        self.segment_by_id = {s["segment_id"]: s for s in self.segments}
+
+    def _content(self, **overrides):
+        payload = {"title": "销售三原则", "summary": LONG, "continues_previous": False, "key_refs": ["r0"]}
+        payload.update(overrides)
+        return json.dumps(payload, ensure_ascii=False)
+
+    def test_key_points_anchors_deduped_and_capped(self):
+        content = self._content(
+            key_points=["好", "好", "物有所值", "创造需求", "四", "五", "六", "七"],
+            anchors=["微波炉", "微波炉", "三原则"],
+        )
+        result = _validate_block_summary(
+            content, "stop", False, self.segments, ref_map=self.ref_map, speaker_map=self.speaker_map
+        )
+        self.assertEqual(len(result["key_points"]), 6)          # 去重后7条→封顶6
+        self.assertEqual(result["key_points"][:3], ["好", "物有所值", "创造需求"])
+        self.assertEqual(result["anchors"], ["微波炉", "三原则"])  # 去重
+
+    def test_missing_key_points_anchors_default_empty(self):
+        result = _validate_block_summary(
+            self._content(), "stop", False, self.segments, ref_map=self.ref_map, speaker_map=self.speaker_map
+        )
+        self.assertEqual(result["key_points"], [])
+        self.assertEqual(result["anchors"], [])
+
+    def test_near_identical_continues_not_double_concatenated(self):
+        base = "讨论了当前市场饱和导致客户分流的问题指出需寻找差异化策略以应对竞争强调明确目标人群"
+        blocks = [
+            {"block_id": "b1", "segment_ids": ["seg-000000"], "title": "饱和",
+             "summary": base + "甲", "continues_previous": False, "refs": ["seg-000000"],
+             "action_candidates": [], "start_ref": "seg-000000", "end_ref": "seg-000000",
+             "key_points": ["市场饱和"], "anchors": ["石头饼"]},
+            {"block_id": "b2", "segment_ids": ["seg-000001"], "title": "饱和续",
+             "summary": base + "乙", "continues_previous": True, "refs": ["seg-000001"],
+             "action_candidates": [], "start_ref": "seg-000001", "end_ref": "seg-000001",
+             "key_points": ["客户分流"], "anchors": ["石头饼"]},
+        ]
+        chapters, _ = _reduce_blocks_to_chapters(blocks, self.segment_by_id)
+        self.assertEqual(len(chapters), 1)
+        self.assertNotIn("；", chapters[0]["overview"])            # 近重复不拼接
+        self.assertEqual(chapters[0]["key_points"], ["市场饱和", "客户分流"])  # 合并
+        self.assertEqual(chapters[0]["anchors"], ["石头饼"])       # 去重
+
+
 if __name__ == "__main__":
     unittest.main()
