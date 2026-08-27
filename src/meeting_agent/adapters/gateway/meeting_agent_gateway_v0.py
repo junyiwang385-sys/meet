@@ -59,6 +59,7 @@ from .meeting_result_adapter import (
     draft_review_summary,
     normalize_harness_result,
 )
+from .formal_export import FORMAT_FILES, build_formal_exports
 
 
 # ---------------------------------------------------------------------------
@@ -83,7 +84,7 @@ GATEWAY_CAPABILITIES = {
     "board_record": False,
     "partial_result": True,
     "draft": True,
-    "finalize": False,
+    "finalize": True,
     "audio_delete": False,
     "settings": True,
     "storage_management": True,
@@ -504,6 +505,9 @@ def gateway_info(config: GatewayConfig) -> dict[str, Any]:
             "GET /api/meetings/{meeting_id}/result",
             "GET /api/meetings/{meeting_id}/draft",
             "PUT /api/meetings/{meeting_id}/draft",
+            "POST /api/meetings/{meeting_id}/finalize",
+            "GET /api/meetings/{meeting_id}/exports",
+            "GET /api/meetings/{meeting_id}/exports/{format}",
             "PUT /api/meetings/{meeting_id}/audio",
             "POST /api/meetings/{meeting_id}/cancel",
             "POST /api/meetings/{meeting_id}/retry",
@@ -1774,6 +1778,139 @@ class GatewayRequestHandler(BaseHTTPRequestHandler):
             },
         )
 
+    def finalize_product_meeting(self, meeting_id: str) -> None:
+        """方案 A：从用户编辑后的 draft 渲染正式版（HTML/TXT/JSON），落盘并置 finalized。"""
+        payload = read_json_body(self)
+        formats = payload.get("formats")
+        if not isinstance(formats, list) or not all(fmt in ("html", "txt", "json") for fmt in formats):
+            formats = ["html", "txt", "json"]
+        expected_revision = payload.get("draft_revision")
+
+        record = self.product_record(meeting_id)
+        record = self.refresh_product_record(record)
+        detail = record["detail"]
+        if detail["state"] == "finalized":
+            send_json(self, 200, self._finalize_response(record))  # 幂等：已确认直接回现有导出
+            return
+        if detail["state"] != "review_ready" or not detail["capabilities"].get("can_finalize"):
+            raise GatewayError(409, "INVALID_MEETING_STATE", "当前会议不可确认纪要", phase=detail.get("phase"))
+
+        draft = self.load_product_draft(record)
+        content = draft.get("content")
+        if not isinstance(content, dict):
+            content = {}
+        revision = int(draft.get("revision", 0) or 0)
+        if (
+            isinstance(expected_revision, int)
+            and not isinstance(expected_revision, bool)
+            and expected_revision != revision
+        ):
+            raise GatewayError(
+                409,
+                "DRAFT_REVISION_CONFLICT",
+                "草稿已更新，请重新载入后确认",
+                details={"expected_revision": expected_revision, "current_revision": revision},
+            )
+
+        finalized_at = utc_now()
+        bundle = build_formal_exports(
+            content,
+            meeting_id=meeting_id,
+            revision=revision,
+            finalized_at=finalized_at,
+            formats=formats,
+        )
+        exports_dir = self.meeting_library.directory_for(record) / "exports"
+        exports_dir.mkdir(parents=True, exist_ok=True)
+        for name, info in bundle["files"].items():
+            (exports_dir / name).write_text(info["text"], encoding="utf-8")
+
+        detail["state"] = "finalized"
+        detail["phase"] = "ready"
+        detail["raw_stage"] = "finalized"
+        detail["error"] = None
+        detail["availability"]["formal_version"] = True
+        for fmt in ("html", "txt", "json"):
+            if fmt in bundle["formats"]:
+                detail["file_health"][f"formal_{fmt}"] = "available"
+        detail["review"]["dirty"] = False
+        detail["capabilities"].update(
+            {"can_finalize": False, "can_save_draft": False, "can_edit": False, "can_cancel": False}
+        )
+        saved = self.meeting_library.save(record)
+        send_json(self, 200, self._finalize_response(saved))
+
+    def _export_items(self, record: dict[str, Any]) -> list[dict[str, Any]]:
+        meeting_id = record["detail"]["meeting_id"]
+        exports_dir = self.meeting_library.directory_for(record) / "exports"
+        manifest = read_local_json(exports_dir / "manifest.json")
+        finalized_at = manifest.get("finalized_at") if isinstance(manifest, dict) else None
+        items: list[dict[str, Any]] = []
+        for fmt in ("html", "txt", "json"):
+            name, _media_type = FORMAT_FILES[fmt]
+            path = exports_dir / name
+            if path.is_file():
+                items.append(
+                    {
+                        "format": fmt,
+                        "state": "ready",
+                        "file_name": name,
+                        "size_bytes": path.stat().st_size,
+                        "created_at": finalized_at,
+                        "content_url": f"/api/meetings/{meeting_id}/exports/{fmt}",
+                        "error": None,
+                    }
+                )
+            else:
+                items.append(
+                    {
+                        "format": fmt,
+                        "state": "queued",
+                        "file_name": None,
+                        "size_bytes": None,
+                        "created_at": None,
+                        "content_url": None,
+                        "error": None,
+                    }
+                )
+        return items
+
+    def _finalize_response(self, record: dict[str, Any]) -> dict[str, Any]:
+        detail = record["detail"]
+        return {
+            "meeting_id": detail["meeting_id"],
+            "state": detail["state"],
+            "phase": detail.get("phase") or "ready",
+            "draft_revision": detail.get("review", {}).get("draft_revision", 0),
+            "exports": self._export_items(record),
+        }
+
+    def product_exports_response(self, meeting_id: str) -> None:
+        record = self.product_record(meeting_id)
+        record = self.refresh_product_record(record)
+        detail = record["detail"]
+        send_json(
+            self,
+            200,
+            {"meeting_id": meeting_id, "state": detail["state"], "items": self._export_items(record)},
+        )
+
+    def serve_product_export(self, meeting_id: str, fmt: str) -> None:
+        if fmt not in FORMAT_FILES:
+            raise GatewayError(404, "export_not_found", "unknown export format")
+        record = self.product_record(meeting_id)
+        name, media_type = FORMAT_FILES[fmt]
+        path = self.meeting_library.directory_for(record) / "exports" / name
+        if not path.is_file():
+            raise GatewayError(404, "export_not_found", "export not generated")
+        data = path.read_bytes()
+        self.send_response(200)
+        self.send_header("Content-Type", media_type)
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Content-Disposition", f'attachment; filename="{name}"')
+        self.end_headers()
+        self.wfile.write(data)
+
     def settings_response(self) -> dict[str, Any]:
         return public_settings(self.gateway_settings)
 
@@ -2241,6 +2378,18 @@ class GatewayRequestHandler(BaseHTTPRequestHandler):
             send_json(self, 200, self.load_product_draft(record))
             return
 
+        export_download_match = re.fullmatch(r"/api/meetings/([^/]+)/exports/([^/]+)", path)
+        if export_download_match is not None:
+            meeting_id = validate_meeting_id(unquote(export_download_match.group(1)))
+            self.serve_product_export(meeting_id, unquote(export_download_match.group(2)))
+            return
+
+        exports_match = re.fullmatch(r"/api/meetings/([^/]+)/exports", path)
+        if exports_match is not None:
+            meeting_id = validate_meeting_id(unquote(exports_match.group(1)))
+            self.product_exports_response(meeting_id)
+            return
+
         result_match = re.fullmatch(r"/api/meetings/([^/]+)/result", path)
         if result_match is not None:
             params = parse_qs(urlsplit(self.path).query)
@@ -2411,6 +2560,12 @@ class GatewayRequestHandler(BaseHTTPRequestHandler):
                     "scanned_at": utc_now(),
                 },
             )
+            return
+
+        finalize_match = re.fullmatch(r"/api/meetings/([^/]+)/finalize", path)
+        if finalize_match is not None:
+            meeting_id = validate_meeting_id(unquote(finalize_match.group(1)))
+            self.finalize_product_meeting(meeting_id)
             return
 
         cancel_match = re.fullmatch(r"/api/meetings/([^/]+)/cancel", path)
