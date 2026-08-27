@@ -17,6 +17,27 @@ def display_speaker_label(speaker_id: str | None) -> str:
     return speaker_id
 
 
+def _carry_over_unknown_labels(segments: list[dict[str, Any]]) -> list[str]:
+    """展示用：unknown 段顺延归并到相邻已知说话人（先向前顺延，开头的再向后回填）。
+
+    只影响前端/展示的 speaker 标签，不改动 canonical 段落与 refs。
+    """
+    labels = [str(seg.get("speaker_id") or "unknown") for seg in segments]
+    last_known: str | None = None
+    for i, label in enumerate(labels):
+        if label != "unknown":
+            last_known = label
+        elif last_known is not None:
+            labels[i] = last_known
+    next_known: str | None = None
+    for i in range(len(labels) - 1, -1, -1):
+        if labels[i] != "unknown":
+            next_known = labels[i]
+        elif next_known is not None:
+            labels[i] = next_known
+    return labels
+
+
 def _range_from_refs(
     refs: list[str], segment_by_id: dict[str, dict[str, Any]]
 ) -> tuple[int, int]:
@@ -73,16 +94,18 @@ def build_frontend_result(
                 "refs": item["refs"],
             }
         )
+    nonempty_segments = [segment for segment in segments if segment.get("text")]
+    carried_labels = _carry_over_unknown_labels(nonempty_segments)
     transcription = [
         {
             "segment_id": segment["segment_id"],
             "start_ms": segment["start_ms"],
             "end_ms": segment["end_ms"],
-            "speaker_id": segment["speaker_id"],
+            "speaker_id": carried,
+            "raw_speaker_id": segment["speaker_id"],
             "text": segment["text"],
         }
-        for segment in segments
-        if segment.get("text")
+        for segment, carried in zip(nonempty_segments, carried_labels)
     ]
     return {
         "meeting_id": meeting["meeting_id"],

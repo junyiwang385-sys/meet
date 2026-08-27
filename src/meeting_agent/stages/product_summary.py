@@ -34,6 +34,11 @@ PRODUCT_SUMMARY_VERSION = "product-summary.v25"
 MIN_BLOCK_SUMMARY_CHARS = 60
 MIN_OVERVIEW_CHARS = 120
 
+# 发言人总结：只给"实质发言"的 speaker 出总结（总字数门槛），跳过 unknown 与琐碎发言；
+# refs 由代码从该 speaker 自己的段落指派，每人最多这么多条。
+SPEAKER_MIN_CHARS = 80
+SPEAKER_REFS_PER_SPEAKER = 2
+
 # 重试轮把上次输出作为 assistant 轮回显给模型时的字符上限（防止撑爆上下文）
 MAX_RETRY_ECHO_CHARS = 600
 
@@ -156,7 +161,6 @@ SPEAKER_BATCH_SHAPE = {
         {
             "speaker_id": "sp1",
             "overview": "该发言人的会议贡献总结",
-            "refs": ["r1"],
         }
     ]
 }
@@ -494,11 +498,19 @@ def _overview_from_source_messages(
 
 def _build_speaker_documents(
     segments: list[dict[str, Any]],
+    *,
+    min_chars: int = SPEAKER_MIN_CHARS,
 ) -> list[dict[str, Any]]:
-    """Group non-empty transcript segments by speaker in first-appearance order."""
+    """按 speaker 分组非空段；跳过 unknown，并过滤实质发言不足的 speaker。
+
+    发言人总结是 best-effort 增强，不给 unknown 和只说了几句话的人硬出总结
+    （避免 diarization 噪声与"该发言人主要进行了简短确认"式填充）。
+    """
     documents: dict[str, dict[str, Any]] = {}
     for segment in segments:
         speaker_id = str(segment["speaker_id"])
+        if speaker_id == "unknown":
+            continue
         document = documents.setdefault(
             speaker_id,
             {
@@ -508,7 +520,11 @@ def _build_speaker_documents(
             },
         )
         document["segments"].append(segment)
-    return list(documents.values())
+    return [
+        document
+        for document in documents.values()
+        if sum(len(str(s.get("text") or "")) for s in document["segments"]) >= min_chars
+    ]
 
 
 def _speaker_batch_messages(
@@ -534,17 +550,14 @@ def _speaker_batch_messages(
     prompt_shape = _compactize_payload(SPEAKER_BATCH_SHAPE, ref_map, speaker_map)
     prompt = (
         "任务：\n"
-        "下面的会议发言已经按 speaker_id 分开。请分别概括每个发言人在所提供内容中的实质贡献。\n"
-        "这不是章节总结，也不是全文摘要；每个 speaker 最多输出一条发言人总结。\n\n"
+        "下面的会议发言已经按 speaker_id 分开。请为每个发言人概括其在所提供内容中的实质贡献。\n"
+        "这不是章节总结，也不是全文摘要；每个 speaker 最多一条 overview。\n\n"
         "规则：\n"
         "- 只依据对应 speaker 文档中出现的原文，概括该发言人明确表达的事实、观点、方案、决定或行动。\n"
-        "- overview 使用简洁的连续表述，不要拆成发言人要点列表。\n"
-        "- speaker_id 必须来自本次输入；refs 必须全部属于对应 speaker，并且直接支持这条总结。\n"
-        "- 不要推测姓名、身份、职位、职责或发言之外的意图。\n"
-        "- 本批次输入中的每个 speaker_id 都必须输出一条 speakers 项，不能因为内容较短而省略。\n"
-        "- 即使内容主要是简短回应、确认或礼貌表达，也要基于实际原文给出简短、客观的总结；不得虚构事实。\n"
-        "- 本批次不为空时不得返回空的 speakers 数组。\n"
-        "- 不要输出 speaker_key_points、发言人要点或输出结构之外的字段。\n\n"
+        "- overview 使用简洁的连续表述，不要拆成要点列表。\n"
+        "- speaker_id 必须来自本次输入；不要推测姓名、身份、职位或发言之外的意图。\n"
+        "- 只输出 speaker_id 和 overview 两个字段，不要输出 refs 或其它字段（引用由程序指派）。\n"
+        "- 若某 speaker 实质内容确实很少，可省略该条，不必勉强凑写。\n\n"
         f"本次允许输出的 speaker_id：{json.dumps(speaker_ids, ensure_ascii=False)}\n"
         "输出结构：\n"
         f"{json.dumps(prompt_shape, ensure_ascii=False, indent=2)}\n\n"
@@ -712,48 +725,36 @@ def _validate_speaker_batch(
         speaker_map, _ = _build_compact_speaker_map(
             [document["speaker_id"] for document in documents]
         )
-    compact_ref_map = {compact: canonical for canonical, compact in ref_map.items()}
     compact_speaker_map = {compact: canonical for canonical, compact in speaker_map.items()}
-    raw = _expand_payload(raw, compact_ref_map, compact_speaker_map)
+    raw = _expand_payload(raw, {}, compact_speaker_map)
     raw_speakers = raw.get("speakers", [])
     if not isinstance(raw_speakers, list):
         raise SummaryValidationError("speakers must be an array")
-    segment_by_id = {
-        segment["segment_id"]: segment
-        for document in documents
-        for segment in document["segments"]
-    }
-    allowed_speakers = {document["speaker_id"] for document in documents}
-    results = []
-    seen_speakers = set()
-    for index, item in enumerate(raw_speakers):
+    # 模型只提供 overview 文本；refs 由代码从该 speaker 自己的段落指派，杜绝编造证据。
+    overview_by_speaker: dict[str, str] = {}
+    for item in raw_speakers:
         if not isinstance(item, dict):
-            raise SummaryValidationError(f"speakers[{index}] must be an object")
+            continue
         speaker_id = str(item.get("speaker_id") or "")
         overview = clean_text(item.get("overview"))
-        refs = item.get("refs")
-        if speaker_id not in allowed_speakers or overview is None or not isinstance(refs, list):
+        if speaker_id and overview is not None and speaker_id not in overview_by_speaker:
+            overview_by_speaker[speaker_id] = overview
+    results = []
+    for document in documents:
+        speaker_id = document["speaker_id"]
+        overview = overview_by_speaker.get(speaker_id)
+        if overview is None:
+            # best-effort：模型没给这条就跳过，绝不因缺 speaker 而使整条 pipeline 失败。
             continue
-        valid_refs = []
-        for ref in dict.fromkeys(str(ref) for ref in refs):
-            segment = segment_by_id.get(ref)
-            if segment is not None and segment["speaker_id"] == speaker_id and segment.get("text"):
-                valid_refs.append(ref)
-        if not valid_refs or speaker_id in seen_speakers:
+        own = sorted(
+            (s for s in document["segments"] if s.get("text")),
+            key=lambda s: len(str(s["text"])),
+            reverse=True,
+        )
+        refs = [s["segment_id"] for s in own[:SPEAKER_REFS_PER_SPEAKER]]
+        if not refs:
             continue
-        seen_speakers.add(speaker_id)
-        results.append(
-            {
-                "speaker_id": speaker_id,
-                "overview": overview,
-                "refs": valid_refs,
-            }
-        )
-    missing_speakers = sorted(allowed_speakers - seen_speakers)
-    if missing_speakers:
-        raise SummaryValidationError(
-            "missing speaker summaries: " + ", ".join(missing_speakers)
-        )
+        results.append({"speaker_id": speaker_id, "overview": overview, "refs": refs})
     return results
 
 
