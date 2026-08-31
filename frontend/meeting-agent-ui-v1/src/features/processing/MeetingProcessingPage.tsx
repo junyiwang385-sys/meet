@@ -24,12 +24,13 @@ function isPolling(detail: MeetingDetail | undefined): boolean {
 }
 
 function isKnownSpeaker(id: string | null | undefined): boolean {
-  return Boolean(id) && id !== 'unknown';
+  const normalized = id?.trim().toLowerCase();
+  return Boolean(normalized) && normalized !== 'unknown';
 }
 
-// unknown 段顺延归并到相邻已知说话人（先向前顺延，开头的再向后回填），只影响展示。
+// unknown 段顺延归并到相邻已知说话人；无法归并时仅显示为未识别，不改原始结果。
 function carryOverUnknownSpeakers(ids: string[]): string[] {
-  const carried = [...ids];
+  const carried = ids.map((id) => (isKnownSpeaker(id) ? id.trim() : 'unknown'));
   let last: string | null = null;
   for (let i = 0; i < carried.length; i += 1) {
     if (isKnownSpeaker(carried[i])) last = carried[i];
@@ -47,10 +48,15 @@ function transcriptRows(result: MeetingResultV1) {
   const speakers = new Map(result.speakers?.map((speaker) => [speaker.speaker_id, speaker.display_name]));
   const segments = result.transcript?.segments ?? [];
   const carried = carryOverUnknownSpeakers(segments.map((segment) => segment.speaker_id));
-  return segments.map((segment, index) => ({
-    ...segment,
-    speaker: speakers.get(carried[index]) ?? carried[index],
-  }));
+  return segments.map((segment, index) => {
+    const speakerId = carried[index] ?? segment.speaker_id;
+    return {
+      ...segment,
+      speaker: isKnownSpeaker(speakerId)
+        ? speakers.get(speakerId) ?? speakerId
+        : '未识别',
+    };
+  });
 }
 
 function milestoneClass(done: boolean, current: boolean): string {

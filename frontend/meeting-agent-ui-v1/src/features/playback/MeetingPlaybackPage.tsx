@@ -78,6 +78,36 @@ function canReadDraft(detail: MeetingDetail | undefined): boolean {
   return Boolean(detail && ['review_ready', 'finalizing', 'finalized'].includes(detail.state));
 }
 
+function isKnownSpeaker(id: string | null | undefined): boolean {
+  const normalized = id?.trim().toLowerCase();
+  return Boolean(normalized) && normalized !== 'unknown';
+}
+
+// 仅为全文回放计算展示标签，不改写原始 speaker_id。
+function carryOverUnknownSpeakers(ids: string[]): string[] {
+  const carried = ids.map((id) => (isKnownSpeaker(id) ? id.trim() : 'unknown'));
+  let last: string | null = null;
+  for (let i = 0; i < carried.length; i += 1) {
+    if (isKnownSpeaker(carried[i])) last = carried[i];
+    else if (last !== null) carried[i] = last;
+  }
+  let next: string | null = null;
+  for (let i = carried.length - 1; i >= 0; i -= 1) {
+    if (isKnownSpeaker(carried[i])) next = carried[i];
+    else if (next !== null) carried[i] = next;
+  }
+  return carried;
+}
+
+function playbackSpeakerName(
+  speakerNames: Map<string, string>,
+  speakerId: string,
+): string {
+  return isKnownSpeaker(speakerId)
+    ? speakerNames.get(speakerId) ?? speakerId
+    : '未识别';
+}
+
 function audioStateLabel(detail: MeetingDetail): string {
   if (detail.audio.state === 'deleted') return '原始音频已删除';
   if (detail.audio.state === 'missing') return '原始音频缺失';
@@ -144,7 +174,7 @@ export function MeetingPlaybackPage() {
   const segments = useMemo(() => {
     if (!result?.transcript) return [];
     const edits = new Map(draftContent?.transcript_edits.map((edit) => [edit.segment_id, edit]) ?? []);
-    return result.transcript.segments.map((segment) => {
+    const applied = result.transcript.segments.map((segment) => {
       const edit = edits.get(segment.segment_id);
       return {
         ...segment,
@@ -152,13 +182,20 @@ export function MeetingPlaybackPage() {
         speaker_id: edit?.speaker_id ?? segment.speaker_id,
       };
     });
+    const displaySpeakerIds = carryOverUnknownSpeakers(
+      applied.map((segment) => segment.speaker_id),
+    );
+    return applied.map((segment, index) => ({
+      ...segment,
+      display_speaker_id: displaySpeakerIds[index] ?? segment.speaker_id,
+    }));
   }, [draftContent?.transcript_edits, result]);
 
   const visibleSegments = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('zh-CN');
     if (!needle) return segments;
     return segments.filter((segment) => {
-      const speaker = speakerNames.get(segment.speaker_id) ?? segment.speaker_id;
+      const speaker = playbackSpeakerName(speakerNames, segment.display_speaker_id);
       return segment.text.toLocaleLowerCase('zh-CN').includes(needle)
         || speaker.toLocaleLowerCase('zh-CN').includes(needle);
     });
@@ -409,7 +446,7 @@ export function MeetingPlaybackPage() {
                   onDoubleClick={() => handleTurnDoubleClick(segment.start_ms, segment.segment_id)}
                 >
                   <div className="playback-turn-header">
-                    <span className="playback-speaker">{speakerNames.get(segment.speaker_id) ?? segment.speaker_id}:</span>
+                    <span className="playback-speaker">{playbackSpeakerName(speakerNames, segment.display_speaker_id)}:</span>
                     <button className="playback-turn-time" type="button" onClick={() => seekTo(segment.start_ms, segment.segment_id)}>{formatTimestamp(segment.start_ms)}</button>
                   </div>
                   <p className="playback-turn-copy"><HighlightedText text={segment.text} query={query} /></p>

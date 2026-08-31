@@ -3,6 +3,7 @@ import type {
   MeetingResultV1,
   ResultAvailability,
   Speaker,
+  SpeakerSummary,
   TranscriptSegment,
 } from '../api/types';
 
@@ -182,6 +183,29 @@ const speakers: Speaker[] = [
     segment_count: 2,
     duration_ms: 39000,
     user_renamed: false,
+  },
+];
+
+const speakerSummaries: SpeakerSummary[] = [
+  {
+    speaker_id: 'spk-001',
+    summary: '说明会议目标、端侧处理链路和本轮需要验证的范围。',
+    action_item_ids: ['action-001', 'action-003'],
+  },
+  {
+    speaker_id: 'spk-002',
+    summary: '介绍 PC、Gateway 与开发板之间的任务创建、音频传输和结果回传流程。',
+    action_item_ids: ['action-002'],
+  },
+  {
+    speaker_id: 'spk-003',
+    summary: '补充转写完成后的前端展示顺序，优先开放全文和发言人。',
+    action_item_ids: [],
+  },
+  {
+    speaker_id: 'spk-004',
+    summary: '强调章节、决策和待办都要保留能够回到原文的证据。',
+    action_item_ids: ['action-004'],
   },
 ];
 
@@ -582,6 +606,7 @@ function resultFor(
     availability,
     transcript: { complete, segment_count: transcript.length, segments: transcript },
     speakers,
+    speaker_summaries: availability.minutes ? speakerSummaries : null,
     minutes: availability.minutes
       ? {
           overview: '本次会议围绕端侧会议助手的通信链路、会议库交互和后续实现顺序展开，明确先完成本地处理流程的可视化，再开展内容质量验证。',

@@ -5,6 +5,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { meetingApi } from '../../api';
 import { formatDuration, formatFileSize } from '../../api/meeting-api';
 import type {
+  ActionItem,
   ExportFormat,
   MeetingDetail,
   MeetingDraft,
@@ -107,6 +108,49 @@ function speakerName(
   return content.speaker_names[speakerId]
     ?? result.speakers?.find((speaker) => speaker.speaker_id === speakerId)?.display_name
     ?? speakerId;
+}
+
+function isKnownSpeaker(id: string | null | undefined): boolean {
+  const normalized = id?.trim().toLowerCase();
+  return Boolean(normalized) && normalized !== 'unknown';
+}
+
+// 仅为全文展示计算说话人标签，不改写 canonical speaker_id 或用户编辑内容。
+function carryOverUnknownSpeakers(ids: string[]): string[] {
+  const carried = ids.map((id) => (isKnownSpeaker(id) ? id.trim() : 'unknown'));
+  let last: string | null = null;
+  for (let i = 0; i < carried.length; i += 1) {
+    if (isKnownSpeaker(carried[i])) last = carried[i];
+    else if (last !== null) carried[i] = last;
+  }
+  let next: string | null = null;
+  for (let i = carried.length - 1; i >= 0; i -= 1) {
+    if (isKnownSpeaker(carried[i])) next = carried[i];
+    else if (next !== null) carried[i] = next;
+  }
+  return carried;
+}
+
+function transcriptSpeakerName(
+  content: MeetingDraftContent,
+  result: MeetingResultV1,
+  speakerId: string,
+): string {
+  return isKnownSpeaker(speakerId)
+    ? speakerName(content, result, speakerId)
+    : '未识别';
+}
+
+function speakerActionItems(
+  content: MeetingDraftContent,
+  result: MeetingResultV1,
+  speakerId: string,
+): ActionItem[] {
+  const summary = result.speaker_summaries?.find((item) => item.speaker_id === speakerId);
+  const actionIds = new Set(summary?.action_item_ids ?? []);
+
+  // 只展示后端明确关联的待办，不根据文本负责人或发言内容推断归属。
+  return content.action_items.filter((action) => actionIds.has(action.action_id));
 }
 
 function WorkspaceIcon({ view }: { view: ReviewView }) {
@@ -396,7 +440,7 @@ export function MeetingReviewPage() {
   const appliedSegments = useMemo(() => {
     if (!result?.transcript || !content) return [];
     const edits = new Map(content.transcript_edits.map((edit) => [edit.segment_id, edit]));
-    return result.transcript.segments.map((segment) => {
+    const applied = result.transcript.segments.map((segment) => {
       const edit = edits.get(segment.segment_id);
       return {
         ...segment,
@@ -405,6 +449,13 @@ export function MeetingReviewPage() {
         user_edited: Boolean(edit) || segment.user_edited,
       };
     });
+    const displaySpeakerIds = carryOverUnknownSpeakers(
+      applied.map((segment) => segment.speaker_id),
+    );
+    return applied.map((segment, index) => ({
+      ...segment,
+      display_speaker_id: displaySpeakerIds[index] ?? segment.speaker_id,
+    }));
   }, [content, result]);
 
   const visibleSegments = useMemo(() => {
@@ -412,7 +463,7 @@ export function MeetingReviewPage() {
     const query = transcriptSearch.trim().toLocaleLowerCase('zh-CN');
     if (!query) return appliedSegments;
     return appliedSegments.filter((segment) => {
-      const name = speakerName(content, result, segment.speaker_id);
+      const name = transcriptSpeakerName(content, result, segment.display_speaker_id);
       return segment.text.toLocaleLowerCase('zh-CN').includes(query)
         || name.toLocaleLowerCase('zh-CN').includes(query);
     });
@@ -424,6 +475,9 @@ export function MeetingReviewPage() {
   const selectedSegment = appliedSegments.find(
     (segment) => segment.segment_id === selectedSegmentId,
   ) ?? null;
+  const displaySpeakerBySegmentId = new Map(
+    appliedSegments.map((segment) => [segment.segment_id, segment.display_speaker_id]),
+  );
   const durationMs = result?.duration_ms ?? detail?.audio.duration_ms ?? 0;
   const audioProgress = durationMs > 0
     ? Math.min(100, Math.max(0, (currentAudioMs / durationMs) * 100))
@@ -619,11 +673,12 @@ export function MeetingReviewPage() {
     && detail.capabilities.can_delete_audio
     && !audioDeleted;
   const evidenceQuote = selectedEvidence?.quote ?? selectedSegment?.text ?? '选择证据或全文时间点';
-  const evidenceSpeaker = selectedEvidence
-    ? speakerName(content, result, selectedEvidence.speaker_id)
-    : selectedSegment
-      ? speakerName(content, result, selectedSegment.speaker_id)
-      : '—';
+  const evidenceSpeakerId = selectedEvidence
+    ? displaySpeakerBySegmentId.get(selectedEvidence.segment_id) ?? selectedEvidence.speaker_id
+    : selectedSegment?.display_speaker_id;
+  const evidenceSpeaker = evidenceSpeakerId
+    ? transcriptSpeakerName(content, result, evidenceSpeakerId)
+    : '—';
   const evidenceTime = selectedEvidence?.start_ms ?? selectedSegment?.start_ms ?? currentAudioMs;
   const saveState = detail.state === 'finalizing'
     ? '正在生成正式版本'
@@ -853,7 +908,7 @@ export function MeetingReviewPage() {
                     {visibleSegments.length ? visibleSegments.map((segment) => (
                       <article className={selectedSegmentId === segment.segment_id ? 'review-turn review-turn-selected' : 'review-turn'} id={`review-${segment.segment_id}`} key={segment.segment_id}>
                         <div className="review-turn-header">
-                          <span className="review-speaker">{speakerName(content, result, segment.speaker_id)}:</span>
+                          <span className="review-speaker">{transcriptSpeakerName(content, result, segment.display_speaker_id)}:</span>
                           <button className="review-turn-time" type="button" onClick={() => selectSegment(segment)}>{formatTimestamp(segment.start_ms)}</button>
                         </div>
                         {transcriptEditing ? (
@@ -918,18 +973,72 @@ export function MeetingReviewPage() {
 
             {activeView === 'speakers' ? (
               <section className="review-view-panel">
-                <div className="review-panel-toolbar"><div><div className="review-panel-title">发言人</div><div className="review-panel-sub">名称同步到全文和证据</div></div></div>
+                <div className="review-panel-toolbar">
+                  <div>
+                    <div className="review-panel-title">发言人总结</div>
+                    <div className="review-panel-sub">统计、摘要和关联待办</div>
+                  </div>
+                </div>
                 <div className="review-speaker-list">
-                  {(result.speakers ?? []).map((speaker, index) => (
-                    <article className="review-speaker-row" key={speaker.speaker_id}>
-                      <span className="review-speaker-avatar">{String(index + 1).padStart(2, '0')}</span>
-                      <div>
-                        <div className="review-speaker-name">{speakerName(content, result, speaker.speaker_id)}</div>
-                        <div className="review-speaker-meta">{speaker.segment_count} 个片段 · {formatDuration(speaker.duration_ms)}</div>
-                      </div>
-                      {!readOnly ? <button className="review-rename-button" type="button" onClick={() => openRename(speaker.speaker_id)}>重命名</button> : null}
-                    </article>
-                  ))}
+                  {(result.speakers ?? []).map((speaker, index) => {
+                    const summary = result.speaker_summaries?.find((item) => item.speaker_id === speaker.speaker_id);
+                    const actionItems = speakerActionItems(content, result, speaker.speaker_id);
+                    const summaryText = summary?.summary?.trim() ?? '';
+
+                    return (
+                      <article className="review-speaker-row" key={speaker.speaker_id}>
+                        <div className="review-speaker-head">
+                          <span className="review-speaker-avatar">{String(index + 1).padStart(2, '0')}</span>
+                          <div className="review-speaker-identity">
+                            <div className="review-speaker-name">{transcriptSpeakerName(content, result, speaker.speaker_id)}</div>
+                            <div className="review-speaker-meta">
+                              <span>{speaker.segment_count} 条发言</span>
+                              <span>{formatDuration(speaker.duration_ms)}</span>
+                            </div>
+                          </div>
+                          {!readOnly ? <button className="review-rename-button" type="button" onClick={() => openRename(speaker.speaker_id)}>重命名</button> : null}
+                        </div>
+
+                        <div className="review-speaker-details">
+                          <section className="review-speaker-section">
+                            <div className="review-speaker-section-label">发言摘要</div>
+                            <p className={summaryText ? 'review-speaker-summary' : 'review-speaker-summary review-speaker-summary-empty'}>
+                              {summaryText || '摘要暂未生成'}
+                            </p>
+                          </section>
+
+                          <section className="review-speaker-section">
+                            <div className="review-speaker-section-head">
+                              <div className="review-speaker-section-label">关联待办</div>
+                              <span className="review-speaker-section-count">{actionItems.length}</span>
+                            </div>
+                            {actionItems.length ? (
+                              <ul className="review-speaker-action-list">
+                                {actionItems.map((action) => (
+                                  <li className="review-speaker-action" key={action.action_id}>
+                                    <span className="review-speaker-action-dot" />
+                                    <div>
+                                      <div className="review-speaker-action-text">{action.text}</div>
+                                      <div className="review-speaker-action-meta">
+                                        <span className={action.review_status === 'pending' ? 'review-status-pending' : ''}>{reviewStatusLabel(action.review_status)}</span>
+                                        {action.due_date ? <span>截止时间：{action.due_date}</span> : null}
+                                        {action.evidence_ids.map((evidenceId) => (
+                                          <button className="review-evidence-link" type="button" key={evidenceId} onClick={() => selectEvidence(evidenceId)}>证据</button>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  </li>
+                                ))}
+                              </ul>
+                            ) : (
+                              <p className="review-speaker-empty">暂无关联待办</p>
+                            )}
+                          </section>
+                        </div>
+                      </article>
+                    );
+                  })}
+                  {(result.speakers ?? []).length === 0 ? <div className="review-empty-view">暂无发言人信息</div> : null}
                 </div>
               </section>
             ) : null}

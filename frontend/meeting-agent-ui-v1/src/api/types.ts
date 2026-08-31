@@ -191,6 +191,13 @@ export interface Speaker {
   user_renamed: boolean;
 }
 
+// 后端尚未返回时保持可选；摘要内容与 speaker 统计分开，便于未来扩展核对和证据字段。
+export interface SpeakerSummary {
+  speaker_id: string;
+  summary: string | null;
+  action_item_ids: string[];
+}
+
 export interface Evidence {
   evidence_id: string;
   segment_id: string;
@@ -257,6 +264,7 @@ export interface MeetingResultV1 {
     segments: TranscriptSegment[];
   } | null;
   speakers: Speaker[] | null;
+  speaker_summaries?: SpeakerSummary[] | null;
   minutes: MeetingMinutes | null;
   chapters: MeetingChapter[] | null;
   decisions: Decision[] | null;
