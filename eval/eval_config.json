@@ -1,0 +1,14 @@
+{
+  "note": "简历级评测:质量指标(金标准)+过程指标(run_report日志)合并。金标准需人工标。缺项跳过。",
+  "cases": [
+    {
+      "meeting": "R002S05C01(化妆品会,质量维度)",
+      "minutes": "C:/Users/Admin/Desktop/meet实验结果/纪要成品/enrich_full_s05.json",
+      "keypoints_golden": "eval/golden/R002S05C01.keypoints.json"
+    },
+    {
+      "meeting": "mtg_9c61(销售会,过程维度)",
+      "run_report": "C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin/14757027-0b45-4cc1-9b7b-5080bb205ebc/scratchpad/pc_run_report.json"
+    }
+  ]
+}

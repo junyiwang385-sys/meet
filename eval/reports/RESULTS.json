@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "meeting": "R002S05C01(化妆品会,质量维度)",
+      "kp_recall": 0.9,
+      "kp_missed": [
+        "kp7"
+      ]
+    },
+    {
+      "meeting": "mtg_9c61(销售会,过程维度)",
+      "flags": [
+        "overview 偏短：259 字 < 目标 300",
+        "overview 走了有损章节归并（未接地原文）",
+        "speaker 假边界多：5/8 块由换人开启（过切嫌疑）"
+      ],
+      "block_count": 8,
+      "chapter_count": 4,
+      "block_summary_avg_chars": 160.1,
+      "retry_count": 0,
+      "prompt_tokens": 0,
+      "total_elapsed_s": null
+    }
+  ],
+  "aggregate": {
+    "kp_recall": {
+      "mean": 0.9,
+      "std": 0.0,
+      "n": 1
+    }
+  },
+  "n_meetings": 2
+}
