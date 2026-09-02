@@ -323,36 +323,111 @@ _LEXICON_SCHEMA = {
 }
 
 
+def _dedup_terms(terms: Any) -> list[str]:
+    seen: list[str] = []
+    for term in terms or []:
+        word = str(term).strip()
+        if word and word not in seen:
+            seen.append(word)
+    return seen
+
+
+# 抽取式 prompt：让 4B 从给定文本"挑出"专名（抽取任务，它擅长），而非凭领域"想"
+# （生成任务，弱模型会给话题词而非易错专名——物业会实测翻车过）。
+_EXTRACT_SYSTEM = (
+    "你是会议专名抽取器。从给定文本中【挑出】其中真实出现的专有名词——"
+    "产品名、项目名、专业术语、机构名、人名等，尤其是那些容易被语音识别听错写错、"
+    "需要在纪要里保持正确的词。只抽取文本里确实出现的词，不要臆造、不要输出普通词组或话题词。"
+    '以JSON输出 {"terms":[...]}。'
+)
+
+
+def extract_lexicon_from_materials(
+    materials: str,
+    config: PostProcessConfig,
+    llm_call: LlmCall,
+) -> list[str]:
+    """主源：从会议材料（PPT/议程/参会名单/历史纪要）抽取专名。
+
+    材料是人写的，专名写法正确、权威——这是纠错词表的首选来源。4B 只做抽取。
+    """
+    if not materials.strip():
+        return []
+    result = llm_call(
+        [{"role": "system", "content": _EXTRACT_SYSTEM},
+         {"role": "user", "content": "会议材料：\n" + materials.strip()[:4000]}],
+        _LEXICON_SCHEMA,
+        max_tokens=config.lexicon_max_tokens,
+    )
+    return _dedup_terms(result.get("terms"))
+
+
+def discover_lexicon_from_transcript(
+    segments: list[dict[str, Any]],
+    config: PostProcessConfig,
+    llm_call: LlmCall,
+) -> list[str]:
+    """备源：无材料时，从转写抽"疑似专名候选"。
+
+    ⚠️ 转写可能含 ASR 错字，抽出的候选写法未必正确——仅作候选，需人工/材料确认
+    正确写法后才可作为纠错词表。返回的每个词标注为候选（调用方负责确认）。
+    """
+    text = "".join(str(s.get("text") or "") for s in segments)
+    if not text.strip():
+        return []
+    terms: list[str] = []
+    # 分块抽取（避免超窗），汇总去重
+    step = 3000
+    for i in range(0, len(text), step):
+        chunk = text[i : i + step]
+        result = llm_call(
+            [{"role": "system", "content": _EXTRACT_SYSTEM},
+             {"role": "user", "content": "会议转写片段：\n" + chunk}],
+            _LEXICON_SCHEMA,
+            max_tokens=config.lexicon_max_tokens,
+        )
+        terms.extend(result.get("terms") or [])
+    return _dedup_terms(terms)
+
+
+def build_lexicon(
+    config: PostProcessConfig,
+    llm_call: LlmCall,
+    *,
+    materials: str = "",
+    segments: list[dict[str, Any]] | None = None,
+    manual_terms: tuple[str, ...] = (),
+) -> dict[str, Any]:
+    """构建纠错词表：主源（材料抽取）优先，无材料降级备源（转写抽候选），
+    再并入人工补齐词（manual_terms）。
+
+    返回 {terms, source, needs_confirmation}：
+    - 主源/人工来的 terms 视为可信；备源来的标 needs_confirmation=True（写法待确认）。
+    """
+    if materials.strip():
+        terms = extract_lexicon_from_materials(materials, config, llm_call)
+        source = "materials"
+        needs_confirm = False
+    elif segments:
+        terms = discover_lexicon_from_transcript(segments, config, llm_call)
+        source = "transcript_candidates"
+        needs_confirm = True  # 转写候选写法可能是错的，需确认
+    else:
+        terms, source, needs_confirm = [], "none", False
+    # 并入人工补齐（权威，去重）
+    merged = _dedup_terms(list(terms) + list(manual_terms))
+    return {"terms": merged, "source": source, "needs_confirmation": needs_confirm}
+
+
+# 兼容旧接口：generate_lexicon 保留名，改为走 build_lexicon（不再凭空生成）。
 def generate_lexicon(
     domain: str,
     materials: str,
     config: PostProcessConfig,
     llm_call: LlmCall,
 ) -> list[str]:
-    """给定会议领域（+可选材料/PPT 文本），由 LLM 自拟候选专有名词词表。
-
-    产出的是"这个领域里可能被 ASR 同音写错、值得校对的专名"，供 ② 使用。
-    """
-    system = (
-        "你是会议领域专名整理器。给定会议领域和可选材料，列出该领域中"
-        "容易被语音识别写错、且值得在纪要中保持正确的专有名词（产品名/术语/"
-        "机构名/人名等），只输出词，不要解释。以JSON输出 {\"terms\":[...]}。"
-    )
-    user = f"会议领域：{domain}\n"
-    if materials.strip():
-        user += "可参考材料：\n" + materials.strip()
-    result = llm_call(
-        [{"role": "system", "content": system}, {"role": "user", "content": user}],
-        _LEXICON_SCHEMA,
-        max_tokens=config.lexicon_max_tokens,
-    )
-    terms = result.get("terms") or []
-    seen: list[str] = []
-    for term in terms:
-        word = str(term).strip()
-        if word and word not in seen:
-            seen.append(word)
-    return seen
+    """[已改为抽取式] 从材料抽取专名（domain 仅作日志/兼容，不再用于凭空生成）。"""
+    return build_lexicon(config, llm_call, materials=materials)["terms"]
 
 
 # ---- 编排 -------------------------------------------------------------------
