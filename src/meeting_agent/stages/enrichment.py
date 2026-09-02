@@ -220,15 +220,161 @@ def extract_quotes(
     return cands[:max_quotes]
 
 
+# ---- 关键决策（结构化：问题→方案[谁提]→依据） -----------------------------
+
+_DECISIONS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "decisions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "decision": {"type": "string"},
+                    "problem": {"type": "string"},
+                    "options": {"type": "array", "items": {"type": "string"}},
+                    "rationale": {"type": "string"},
+                    "turn_ids": {"type": "array", "items": {"type": "integer"}},
+                },
+                "required": ["decision"],
+            },
+        }
+    },
+    "required": ["decisions"],
+}
+
+
+def extract_decisions(
+    segments: list[dict[str, Any]], llm_call: LlmCall, *, block_segs: int = 50
+) -> list[dict[str, Any]]:
+    """结构化关键决策：不只一句结论，还带 问题背景 / 讨论方案 / 决策依据（对标飞书）。
+
+    只提取会上真正作出的决定；普通建议/讨论不升级为决定。分块抽取后合并。
+    """
+    sys = (
+        "你是会议决策整理器。从会议转写中找出真正作出的关键决策，每条给出：\n"
+        "- decision: 最终决定（一句话）；\n"
+        "- problem: 该决策针对的问题/背景；\n"
+        "- options: 讨论过的方案/选项（数组，可为空）；\n"
+        "- rationale: 决策依据/理由。\n"
+        "严格：只提取明确作出的决定，普通建议、设想、还在讨论没定的，不算决策，不要臆造。"
+        "turn_ids 填涉及行号。以JSON输出 "
+        '{"decisions":[{"decision":"","problem":"","options":[],"rationale":"","turn_ids":[]}]}。'
+    )
+    out: list[dict[str, Any]] = []
+    for i in range(0, len(segments), block_segs):
+        blk = segments[i : i + block_segs]
+        tl, _ = _numbered_timeline(blk, i + 1)
+        res = llm_call(
+            [{"role": "system", "content": sys}, {"role": "user", "content": "转写：\n" + tl}],
+            _DECISIONS_SCHEMA,
+            max_tokens=900,
+        )
+        for d in res.get("decisions") or []:
+            dec = str(d.get("decision") or "").strip()
+            if dec:
+                out.append({
+                    "decision": dec,
+                    "problem": str(d.get("problem") or "").strip(),
+                    "options": _dedup([str(o) for o in (d.get("options") or [])]),
+                    "rationale": str(d.get("rationale") or "").strip(),
+                    "turn_ids": d.get("turn_ids") or [],
+                })
+    return out
+
+
+# ---- 层级化全文摘要（分组大纲，对标飞书三层缩进） ---------------------------
+
+_OUTLINE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "purpose": {"type": "string"},
+        "groups": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "theme": {"type": "string"},
+                    "sections": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "heading": {"type": "string"},
+                                "points": {"type": "array", "items": {"type": "string"}},
+                            },
+                            "required": ["heading", "points"],
+                        },
+                    },
+                },
+                "required": ["theme", "sections"],
+            },
+        },
+    },
+    "required": ["purpose", "groups"],
+}
+
+
+def build_outline_summary(
+    chapter_summaries: list[str], llm_call: LlmCall
+) -> dict[str, Any]:
+    """把各章节摘要归并成【两层层级大纲】：会议目的 + 大类(theme) → 分组(heading+要点)。
+
+    对标飞书的"三层缩进总结"（如 复盘/规划/统一要求 → 部门/议题 → 条目）：
+    先把章节聚合成 2-4 个大类主线，大类下再分组，避免"一章一组"的平铺。
+    归纳去重，不等比缝合。输入是已压缩的章节摘要（reduce 侧，短），不喂原始转写。
+    """
+    if not chapter_summaries:
+        return {"purpose": "", "groups": []}
+    joined = "\n".join(f"- {s}" for s in chapter_summaries if s.strip())
+    sys = (
+        "你是会议纪要归纳器。给你各章节摘要，归并成一份两层层级大纲：\n"
+        "- purpose: 必填，一句话点明会议整体目的（不能为空）。\n"
+        "- groups: 先把内容聚合成 2-4 个高层大类(theme)——例如按 上月复盘/下月规划/统一要求，"
+        "或按 业务经营/法务合规/市场营销 等主线归类；每个大类下再分若干 section(heading+要点points)。\n"
+        "要做真正的归纳聚合：合并同类章节、跨章去重，不要把每个章节各自当成一个分组平铺。"
+        "只依据输入内容，不臆造。以JSON输出 "
+        '{"purpose":"","groups":[{"theme":"大类","sections":[{"heading":"","points":[""]}]}]}。'
+    )
+    res = llm_call(
+        [{"role": "system", "content": sys}, {"role": "user", "content": "各章节摘要：\n" + joined}],
+        _OUTLINE_SCHEMA,
+        max_tokens=1300,
+    )
+    groups = []
+    for g in res.get("groups") or []:
+        theme = str(g.get("theme") or "").strip()
+        if not theme:
+            continue
+        secs = [
+            {"heading": str(s.get("heading") or "").strip(),
+             "points": _dedup([str(p) for p in (s.get("points") or [])])}
+            for s in (g.get("sections") or [])
+            if str(s.get("heading") or "").strip()
+        ]
+        groups.append({"theme": theme, "sections": secs})
+    return {"purpose": str(res.get("purpose") or "").strip(), "groups": groups}
+
+
 # ---- 编排 -------------------------------------------------------------------
 
 
 def enrich(
-    segments: list[dict[str, Any]], llm_call: LlmCall
+    segments: list[dict[str, Any]],
+    llm_call: LlmCall,
+    *,
+    chapter_summaries: list[str] | None = None,
 ) -> dict[str, Any]:
-    """一次性产出三类丰富内容，供并入最终纪要。"""
-    return {
+    """一次性产出丰富内容，供并入最终纪要。
+
+    chapter_summaries 提供时额外产出层级化大纲摘要（否则跳过，避免重复喂原文）。
+    """
+    result = {
         "keywords": extract_keywords(segments, llm_call),
         "qa": extract_qa(segments, llm_call),
         "quotes": extract_quotes(segments, llm_call),
+        "decisions": extract_decisions(segments, llm_call),
     }
+    if chapter_summaries:
+        result["outline_summary"] = build_outline_summary(chapter_summaries, llm_call)
+    return result
