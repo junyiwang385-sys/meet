@@ -20,6 +20,10 @@ from ..llm.chunking import BudgetPolicy, estimate_text_tokens
 
 SEGMENTATION_VERSION = "topic-segmentation.v2"
 
+# 句向量后端的类型：给一批文本，返回等长的向量列表（每个向量是 float 列表）。
+# 保持模块本身不依赖任何具体 embedding 库，由调用方注入（如 bge / sentence-transformers）。
+EmbedFn = Any
+
 
 @dataclass(frozen=True)
 class SegmentationConfig:
@@ -74,20 +78,50 @@ def _window_text(segments: list[dict[str, Any]], start: int, end: int) -> str:
 def _cohesion_curve(
     segments: list[dict[str, Any]],
     config: SegmentationConfig,
+    embed_fn: "EmbedFn | None" = None,
 ) -> list[float | None]:
-    """每个相邻位置的词汇内聚度（前窗 vs 后窗的字符 bigram 余弦）。
+    """每个相邻位置的词汇内聚度（前窗 vs 后窗的余弦）。
 
     curve[i] 是"在 segment i 之前断开处"的内聚度；窗口文本不足时为 None（信息不够，不判谷）。
+
+    默认用字符 bigram 余弦（CPU、无模型，A 层原设计）。传入 embed_fn 时改用
+    句向量余弦（语义更准，能抓字符 bigram 抓不到的话题漂移）——语义信号是可选后端，
+    合并/尺寸/谷深度等其余机制完全不变。注意句向量余弦基线更高，需配套调
+    cohesion_depth_threshold（谷深度是相对量，仍适用）。
     """
     n = len(segments)
     window = config.cohesion_window_segments
     curve: list[float | None] = [None] * n
+    if embed_fn is not None:
+        # 句向量后端：先对每段编码，窗口取均值向量算余弦。
+        vectors = embed_fn([str(seg.get("text") or "") for seg in segments])
+        for i in range(1, n):
+            before = _mean_unit(vectors[max(0, i - window) : i])
+            after = _mean_unit(vectors[i : min(n, i + window)])
+            if before is not None and after is not None:
+                curve[i] = float(sum(x * y for x, y in zip(before, after)))
+        return curve
     for i in range(1, n):
         before = _window_text(segments, max(0, i - window), i)
         after = _window_text(segments, i, min(n, i + window))
         if len(before) >= config.cohesion_min_chars and len(after) >= config.cohesion_min_chars:
             curve[i] = _cosine(_char_bigrams(before), _char_bigrams(after))
     return curve
+
+
+def _mean_unit(vectors: list[list[float]]) -> list[float] | None:
+    """一组向量的均值并归一化为单位向量；空则 None。"""
+    if not vectors:
+        return None
+    dim = len(vectors[0])
+    acc = [0.0] * dim
+    for vec in vectors:
+        for k in range(dim):
+            acc[k] += vec[k]
+    norm = math.sqrt(sum(v * v for v in acc))
+    if norm == 0:
+        return None
+    return [v / norm for v in acc]
 
 
 def _nearest_defined(curve: list[float | None], index: int, step: int) -> float | None:
@@ -225,11 +259,14 @@ def segment_blocks(
     segments: list[dict[str, Any]],
     policy: BudgetPolicy,
     config: SegmentationConfig | None = None,
+    embed_fn: "EmbedFn | None" = None,
 ) -> dict[str, Any]:
     """把非空 transcript 段切成候选章节块（确定性）。
 
     返回 {version, blocks, coverage_complete, boundary_reason_counts, ...}，
     其中每个 block 覆盖一段连续 segment，作为 B 层逐块摘要的输入单元。
+
+    embed_fn 可选：传入则内聚度用句向量余弦（语义更准），否则用字符 bigram（默认，CPU 无模型）。
     """
     config = config or SegmentationConfig()
     nonempty = [item for item in segments if str(item.get("text") or "").strip()]
@@ -249,7 +286,7 @@ def segment_blocks(
         }
 
     # 1. 先算全局内聚度曲线，再逐相邻对打分（cohesion 用低谷深度，非绝对阈值）。
-    curve = _cohesion_curve(nonempty, config)
+    curve = _cohesion_curve(nonempty, config, embed_fn)
     boundary_reasons: dict[int, list[str]] = {}
     for index in range(1, len(nonempty)):
         score, reasons = _boundary_signals(nonempty, index, config, curve)
@@ -292,6 +329,24 @@ def segment_blocks(
         budgeted.extend(
             _split_over_cap(seg_slice, reasons, policy, config, size_cap, "size_split")
         )
+
+    # 4.5 尺寸切分可能甩出过短尾巴（递归切大块时产生），它们在 step3 合并之后才出现、
+    #     没人回收。这里再跑一次"过短块并入相邻"，回收 size_split 碎片。
+    recovered: list[tuple[list[dict[str, Any]], list[str]]] = []
+    for seg_slice, reasons in budgeted:
+        chars = sum(len(str(item.get("text") or "")) for item in seg_slice)
+        if recovered and chars < config.min_block_chars:
+            prev_slice, prev_reasons = recovered[-1]
+            recovered[-1] = (prev_slice + seg_slice, prev_reasons)
+        else:
+            recovered.append((seg_slice, list(reasons)))
+    if len(recovered) >= 2:
+        first_slice, first_reasons = recovered[0]
+        if sum(len(str(item.get("text") or "")) for item in first_slice) < config.min_block_chars:
+            second_slice, _ = recovered[1]
+            recovered[1] = (first_slice + second_slice, first_reasons)
+            recovered.pop(0)
+    budgeted = recovered
 
     blocks = [
         _make_block(number, seg_slice, reasons)

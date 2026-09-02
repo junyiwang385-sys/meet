@@ -38,7 +38,8 @@ from ..stages.product_summary import ProductSummaryConfig, run_product_summary_s
 from ..stages.compat_export import write_compat_bundle
 from ..contracts.identity import RunIdentity
 from ..observability.runlog import RunLogContext
-from ..stages.transcript import prepare_transcript
+from ..stages.transcript import prepare_transcript, render_timeline
+from ..stages.postprocess import PostProcessConfig, dedup_overlaps
 from ..stages.validation import SummaryValidationError, empty_summary
 
 
@@ -433,9 +434,24 @@ def run_pipeline(args: Any) -> int:
             canonical_path,
             paths.timeline,
         )
+        # 转写后处理（前置于摘要，无损）：确定性重叠去重合并——切片带 pad 会让相邻
+        # chunk 头尾重复（时间戳重叠区被转两遍），这里用时间戳+最长公共子串确定性去掉，
+        # 净化下游分章/摘要/证据链。纯 CPU、无模型、失败不影响主流程。
+        # 专名纠错/顺滑见 postprocess.py，需词表+LLM，暂不在主链路自动启用。
+        postprocess_stats: dict[str, Any] = {}
+        try:
+            postprocess_stats = dedup_overlaps(segments, PostProcessConfig())
+            if postprocess_stats.get("segments_fixed"):
+                # 去重改了文本 → 重渲染 timeline、重写 canonical，使下游一致。
+                timeline = render_timeline(segments)
+                atomic_write_json(canonical_path, segments)
+                atomic_write_text(paths.timeline, timeline)
+        except Exception as exc:  # noqa: BLE001 —— 后处理绝不阻断主流程
+            postprocess_stats = {"error": f"{type(exc).__name__}: {exc}"}
         transcript_stage = {
             "status": "succeeded",
             "elapsed_seconds": round(time.time() - transcript_started, 3),
+            "post_process": postprocess_stats,
         }
         result["meeting"]["duration_ms"] = int(round(float(segment_summary["audio_duration_seconds"]) * 1000))
         result["transcript"] = {
