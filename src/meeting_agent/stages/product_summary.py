@@ -28,6 +28,7 @@ from .validation import (
     validate_summary_object,
 )
 from ._requests import (
+    _RequestRunner,
     PRODUCT_SUMMARY_VERSION,
     _KIND_OUTPUT_TOKENS,
     _THINK_KINDS,
@@ -158,13 +159,8 @@ def run_product_summary_stage(
         "block_count": len(blocks),
         "use_single_request": use_single_request,
     }
-    request_records: list[dict[str, Any]] = []
     # 保留每次传输和业务校验尝试；request_records 继续只表示最终通过校验的请求，
     # 以兼容现有 meeting_result.runtime.llm 契约。
-    request_attempts: list[dict[str, Any]] = []
-    reused_count = 0
-    validation_failed_count = 0
-    retry_count = 0
     split_count = 0
     # session 可由调用方注入（pipeline 持有、跨 stage 复用同一活着的 server）；
     # 注入时本 stage 不负责 close（谁开谁关），未注入则维持"自己开自己关"。
@@ -186,229 +182,12 @@ def run_product_summary_stage(
         current.start()
         return current
 
-    def run_request(
-        *,
-        messages: list[dict[str, str]],
-        request_dir: pathlib.Path,
-        request_id: str,
-        request_kind: str,
-        phase: str,
-        estimate: int,
-        validator: Callable[[str, Any, bool], Any],
-        quality_builder: Callable[[Any], dict[str, Any]] | None = None,
-    ) -> Any:
-        nonlocal reused_count, validation_failed_count, retry_count
-        fingerprint = _request_fingerprint(
-            request_kind=request_kind,
-            messages=messages,
-            config=config,
-            model_identity=model_identity(),
-        )
-        if config.resume:
-            reused = _load_reusable_request(request_dir, fingerprint, validator)
-            if reused is not None:
-                reused_count += 1
-                _emit_run_log(
-                    run_log,
-                    "request_reused",
-                    stage=phase,
-                    message="复用已校验的 LLM 请求产物",
-                    request={
-                        "request_id": request_id,
-                        "request_kind": request_kind,
-                        "attempt": 0,
-                        "estimated_prompt_tokens": estimate,
-                    },
-                    details={"request_dir": request_dir.name},
-                )
-                return reused
-        think = _kind_uses_think(request_kind)
-        kind_max_tokens = _kind_output_tokens(request_kind, config)
-        request_messages = messages
-        result = None
-        validated = None
-        for attempt in range(2):
-            attempt_dir = request_dir if attempt == 0 else request_dir / f"attempt-{attempt + 1}"
-            attempt_request_id = request_id if attempt == 0 else f"{request_id}-attempt-{attempt + 1}"
-            try:
-                result = ensure_session().request(
-                    _apply_think_directive(request_messages, think),
-                    attempt_dir,
-                    max_tokens=kind_max_tokens,
-                    phase=phase,
-                    request_id=attempt_request_id,
-                    request_kind=request_kind,
-                    attempt=attempt + 1,
-                    estimated_prompt_tokens=estimate,
-                    run_log=run_log,
-                )
-            except LlmRunError as exc:
-                request_attempts.append({
-                    "request_id": attempt_request_id,
-                    "request_kind": request_kind,
-                    "attempt": attempt + 1,
-                    "estimated_prompt_tokens": estimate,
-                    "status": "request_failed",
-                    "error_code": "request_failed",
-                    "error_message": str(exc)[:600],
-                })
-                raise
-            attempt_record = {
-                **_request_record(result, estimate),
-                "request_kind": request_kind,
-                "attempt": attempt + 1,
-                "status": "response_received",
-            }
-            request_attempts.append(attempt_record)
-            try:
-                validated = validator(
-                    result["content"],
-                    result["finish_reason"],
-                    bool(result["context_truncated"]),
-                )
-                attempt_record["status"] = "validated"
-                _emit_run_log(
-                    run_log,
-                    "validation_succeeded",
-                    stage=phase,
-                    message="LLM 业务校验通过",
-                    request={
-                        **_request_record(result, estimate),
-                        "request_kind": request_kind,
-                        "attempt": attempt + 1,
-                    },
-                )
-                break
-            except SummaryValidationError as exc:
-                message = str(exc)
-                failure_cause = (
-                    "finish_reason_length"
-                    if "finish_reason" in message and "length" in message
-                    else "context_truncated"
-                    if "input was truncated" in message
-                    else "invalid_json"
-                    if "not valid JSON" in message
-                    else "missing_speaker_summaries"
-                    if "missing speaker summaries" in message
-                    else "validation_failed"
-                )
-                validation_failed_count += 1
-                attempt_record["status"] = "validation_failed"
-                attempt_record["error_code"] = "validation_failed"
-                attempt_record["cause"] = failure_cause
-                _emit_run_log(
-                    run_log,
-                    "validation_failed",
-                    stage=phase,
-                    level="error",
-                    message="LLM 业务校验失败",
-                    request={
-                        **_request_record(result, estimate),
-                        "request_kind": request_kind,
-                        "attempt": attempt + 1,
-                    },
-                    error={
-                        "stage": phase,
-                        "code": "validation_failed",
-                        "message": message,
-                        "cause": failure_cause,
-                        "request_id": attempt_request_id,
-                        "request_kind": request_kind,
-                        "attempt": attempt + 1,
-                        "finish_reason": result.get("finish_reason"),
-                        "context_truncated": result.get("context_truncated"),
-                        "usage": result.get("usage"),
-                        "request_elapsed_seconds": result.get("request_elapsed_seconds"),
-                    },
-                )
-                retry_json = "LLM content is not valid JSON" in message
-                retry_missing_speakers = "missing speaker summaries" in message
-                retry_output_length = (
-                    request_kind == "speaker-batch"
-                    and "finish_reason" in message
-                    and "length" in message
-                )
-                retry_context_truncated = "input was truncated" in message
-                retry_too_short = "too short" in message
-                if attempt != 0 or not (
-                    retry_json
-                    or retry_missing_speakers
-                    or retry_output_length
-                    or retry_context_truncated
-                    or retry_too_short
-                ):
-                    raise
-                if retry_too_short:
-                    correction = (
-                        "上一条摘要过短。请重新完整输出 JSON，把 summary/overview 写得更充实，"
-                        "覆盖背景或问题、关键事实或方案、结论及影响，约 150 个汉字以上；"
-                        "只依据输入内容，不要解释、不要额外字段、不要输出 markdown。"
-                    )
-                elif retry_output_length:
-                    correction = (
-                        "上一条响应达到输出长度上限。请重新完整输出 JSON，严格只保留 speakers 字段；"
-                        "每个 speaker 只输出一条 overview，overview 控制在 40 个汉字以内，"
-                        "refs 每条最多 3 个，只使用输入中对应 speaker 的 refs；"
-                        "不要解释、不要输出额外字段、不要输出 markdown，必须在本次响应内闭合 JSON。"
-                    )
-                elif retry_context_truncated:
-                    correction = (
-                        "上一条请求的输入上下文被截断。请只根据本次完整输入输出 JSON，"
-                        "每个 speaker 一条简短 overview，refs 每条最多 3 个，不要解释或额外字段。"
-                    )
-                elif retry_missing_speakers:
-                    correction = (
-                        "上一条输出遗漏了一个或多个 speaker 的总结。请重新完整输出当前请求的 JSON，"
-                        "本批次输入中的每个 speaker_id 都必须各输出一条 speakers 项，"
-                        "即使内容是简短回应或确认，也要给出基于原文的简短客观总结，"
-                        "并为每条总结提供属于该 speaker 的 refs；不要省略任何 speaker。"
-                    )
-                else:
-                    correction = (
-                        "上一条输出不是可解析的 JSON。请重新完整输出当前请求的 JSON，"
-                        "不要输出解释，不要截断，不要在字符串中放入未转义的换行或制表符；"
-                        "每个章节最多输出 3 个 key_refs。"
-                    )
-                correction = (
-                    f"{correction}\n"
-                    f"校验反馈（程序自动判定，含实测数值）：{message}\n"
-                    "上一条 assistant 内容就是你上次的输出，请在它的问题基础上直接改正，"
-                    "不要重复同样的结果。"
-                )
-                retry_count += 1
-                request_messages, echo = _build_retry_messages(
-                    messages, result.get("content"), correction
-                )
-                _emit_run_log(
-                    run_log,
-                    "retry_requested",
-                    stage=phase,
-                    message="LLM 请求将进行受控重试",
-                    request={
-                        "request_id": attempt_request_id,
-                        "request_kind": request_kind,
-                        "attempt": attempt + 1,
-                        "finish_reason": result.get("finish_reason"),
-                        "context_truncated": result.get("context_truncated"),
-                    },
-                    details={
-                        "cause": failure_cause,
-                        "feedback": message[:200],
-                        "echoed_previous_chars": len(echo),
-                    },
-                )
-        assert result is not None
-        assert validated is not None
-        quality = quality_builder(validated) if quality_builder is not None else {"status": "pass"}
-        _save_reusable_request(
-            request_dir,
-            fingerprint=fingerprint,
-            request_kind=request_kind,
-            validated=validated,
-            quality=quality,
-        )
-        request_records.append(_request_record(result, estimate))
-        return validated
+    runner = _RequestRunner(
+        config=config,
+        run_log=run_log,
+        ensure_session=ensure_session,
+        model_identity=model_identity,
+    )
 
     def result_payload(
         summary: dict[str, Any],
@@ -424,13 +203,13 @@ def run_product_summary_stage(
             "http_response_count": session.http_response_count if session is not None else 0,
             "response_parse_success_count": session.response_parse_success_count if session is not None else 0,
             "successful_response_count": session.successful_response_count if session is not None else 0,
-            "validated_request_count": len(request_records),
-            "validation_failed_count": validation_failed_count,
-            "retry_count": retry_count,
+            "validated_request_count": len(runner.request_records),
+            "validation_failed_count": runner.validation_failed_count,
+            "retry_count": runner.retry_count,
             "split_count": split_count,
-            "reused_request_count": reused_count,
-            "requests": request_records,
-            "request_attempts": request_attempts,
+            "reused_request_count": runner.reused_count,
+            "requests": runner.request_records,
+            "request_attempts": runner.request_attempts,
             "server_ready_seconds": session.ready_seconds if session is not None else None,
             "resolved_model_files": cached_files,
             "elapsed_seconds": round(time.time() - started, 3),
@@ -448,7 +227,7 @@ def run_product_summary_stage(
                 )
                 return summary
 
-            summary = run_request(
+            summary = runner.run(
                 messages=full_messages,
                 request_dir=out_dir / "requests" / "full",
                 request_id="full",
@@ -460,7 +239,7 @@ def run_product_summary_stage(
             )
             summary, quality = validate_summary_object(summary, segments)
             quality["checks"].update({"finish_reason": True, "context_not_truncated": True})
-            if reused_count:
+            if runner.reused_count:
                 quality["warnings"].append("reused validated LLM artifact")
             plan["policy"] = "single_request_all_features"
             atomic_write_json(out_dir / "plan.json", plan)
@@ -500,7 +279,7 @@ def run_product_summary_stage(
                     profile=config.profile,
                 )
 
-            block_result = run_request(
+            block_result = runner.run(
                 messages=messages,
                 request_dir=request_dir,
                 request_id=block_id,
@@ -581,7 +360,7 @@ def run_product_summary_stage(
             )
             return {"title": title, "overview": overview}
 
-        overview_result = run_request(
+        overview_result = runner.run(
             messages=summary_messages,
             request_dir=out_dir / "requests" / "full_summary",
             request_id="full-summary",
@@ -599,7 +378,7 @@ def run_product_summary_stage(
             action_estimate = estimate_message_tokens(action_messages, budget)
             if action_estimate > budget.input_token_budget:
                 raise ChunkingError("action candidates exceed action-review input budget")
-            action_items = run_request(
+            action_items = runner.run(
                 messages=action_messages,
                 request_dir=out_dir / "requests" / "action_review",
                 request_id="action-review",
@@ -644,7 +423,7 @@ def run_product_summary_stage(
             )
             speaker_estimate = estimate_message_tokens(speaker_messages, budget)
             try:
-                batch_result = run_request(
+                batch_result = runner.run(
                     messages=speaker_messages,
                     request_dir=request_dir,
                     request_id=request_id,
@@ -774,7 +553,7 @@ def run_product_summary_stage(
                 f"(<{MIN_BLOCK_SUMMARY_CHARS} chars); flagged for manual review"
             )
             quality["weak_chapters"] = weak_chapters
-        if reused_count:
+        if runner.reused_count:
             quality["warnings"].append("reused validated LLM artifacts")
         plan.update(
             {
@@ -798,8 +577,8 @@ def run_product_summary_stage(
         return result_payload(summary, quality, plan["policy"])
     finally:
         if session is not None:
-            session.validation_failed_count = validation_failed_count
-            session.retry_count = retry_count
+            session.validation_failed_count = runner.validation_failed_count
+            session.retry_count = runner.retry_count
             session.split_count = split_count
             if owns_session:
                 session.close()
