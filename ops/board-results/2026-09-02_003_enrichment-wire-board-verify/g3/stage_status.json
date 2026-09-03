@@ -1,0 +1,419 @@
+{
+  "status": "succeeded",
+  "stages": {
+    "segmentation": {
+      "status": "succeeded",
+      "return_code": 0,
+      "elapsed_seconds": 149.094,
+      "started_at": "2026-09-03T07:01:59Z",
+      "finished_at": "2026-09-03T07:04:28Z",
+      "command": [
+        "/userdata/miniforge3/envs/3dspeaker/bin/python",
+        "/userdata/meeting_agent/scripts/board_3dspeaker_segment_prepare_absorb_unknown.py",
+        "--source-audio",
+        "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S03C01/01_segments/input_mono16k.wav",
+        "--out-dir",
+        "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/01_segments",
+        "--3dspeaker-dir",
+        "/userdata/3D-Speaker",
+        "--python",
+        "/userdata/miniforge3/envs/3dspeaker/bin/python",
+        "--pad",
+        "1.0",
+        "--absorb-unknown-max",
+        "2.0",
+        "--max-known-segment",
+        "30.0",
+        "--max-unknown-segment",
+        "20.0",
+        "--overwrite"
+      ],
+      "log": "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/logs/01_segmentation.log"
+    },
+    "batch_asr": {
+      "status": "succeeded",
+      "return_code": 0,
+      "elapsed_seconds": 83.014,
+      "started_at": "2026-09-03T07:04:28Z",
+      "finished_at": "2026-09-03T07:05:51Z",
+      "command": [
+        "/userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python",
+        "/userdata/meeting_agent/scripts/board_segment_asr_batch.py",
+        "--wav-dir",
+        "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/01_segments/cut_audio/wav_segments",
+        "--manifest",
+        "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/01_segments/cut_audio/cut_segments.csv",
+        "--out-dir",
+        "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/02_batch_asr",
+        "--asr-dir",
+        "/userdata/meeting_agent/runtime/asr/qwen3_asr_gcc10/rknn_Qwen3_ASR_batch_demo",
+        "--asr-model-dir",
+        "/userdata/meeting_agent/models/asr/qwen3-asr-0.6b-rknn",
+        "--encoder-core",
+        "0xff",
+        "--llm-core",
+        "0xff",
+        "--overwrite"
+      ],
+      "log": "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g3/harness/logs/02_batch_asr.log"
+    },
+    "transcript_prepare": {
+      "status": "succeeded",
+      "elapsed_seconds": 0.025,
+      "post_process": {
+        "segments_fixed": 5,
+        "chars_removed": 38
+      },
+      "finished_at": "2026-09-03T07:05:51Z"
+    },
+    "llm_summary": {
+      "status": "succeeded",
+      "elapsed_seconds": 152.389,
+      "policy": "deterministic_blocks_map_reduce",
+      "request_count": 12,
+      "transport_request_count": 12,
+      "http_response_count": 12,
+      "response_parse_success_count": 12,
+      "successful_response_count": 12,
+      "validated_request_count": 12,
+      "validation_failed_count": 0,
+      "retry_count": 0,
+      "split_count": 0,
+      "reused_request_count": 0,
+      "request_attempts": [
+        {
+          "request_id": "blk-000001",
+          "estimated_prompt_tokens": 2172,
+          "usage": {
+            "completion_tokens": 269,
+            "prompt_tokens": 1497,
+            "total_tokens": 1766
+          },
+          "timings": {
+            "prompt_n": 1497,
+            "prompt_ms": 1720.574,
+            "prompt_per_token_ms": 1.1493480293921177,
+            "prompt_per_second": 870.0584804838386,
+            "predicted_n": 269,
+            "predicted_ms": 3381.6,
+            "predicted_per_token_ms": 12.571003717472118,
+            "predicted_per_second": 79.54814289093919
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.248,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000002",
+          "estimated_prompt_tokens": 2591,
+          "usage": {
+            "completion_tokens": 250,
+            "prompt_tokens": 1910,
+            "total_tokens": 2160
+          },
+          "timings": {
+            "prompt_n": 1910,
+            "prompt_ms": 1412.387,
+            "prompt_per_token_ms": 0.7394696335078533,
+            "prompt_per_second": 1352.320575026533,
+            "predicted_n": 250,
+            "predicted_ms": 3188.241,
+            "predicted_per_token_ms": 12.752964,
+            "predicted_per_second": 78.4131437993552
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.687,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000003",
+          "estimated_prompt_tokens": 2206,
+          "usage": {
+            "completion_tokens": 313,
+            "prompt_tokens": 1487,
+            "total_tokens": 1800
+          },
+          "timings": {
+            "prompt_n": 1487,
+            "prompt_ms": 949.788,
+            "prompt_per_token_ms": 0.6387276395427034,
+            "prompt_per_second": 1565.6125366923986,
+            "predicted_n": 313,
+            "predicted_ms": 3937.839,
+            "predicted_per_token_ms": 12.580955271565495,
+            "predicted_per_second": 79.48522019310592
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.964,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000004",
+          "estimated_prompt_tokens": 3028,
+          "usage": {
+            "completion_tokens": 275,
+            "prompt_tokens": 2241,
+            "total_tokens": 2516
+          },
+          "timings": {
+            "prompt_n": 2241,
+            "prompt_ms": 1865.593,
+            "prompt_per_token_ms": 0.8324823739402053,
+            "prompt_per_second": 1201.2266341050806,
+            "predicted_n": 275,
+            "predicted_ms": 3555.854,
+            "predicted_per_token_ms": 12.930378181818181,
+            "predicted_per_second": 77.33725850386433
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.458,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000005",
+          "estimated_prompt_tokens": 4033,
+          "usage": {
+            "completion_tokens": 303,
+            "prompt_tokens": 3209,
+            "total_tokens": 3512
+          },
+          "timings": {
+            "prompt_n": 3209,
+            "prompt_ms": 3098.997,
+            "prompt_per_token_ms": 0.9657204736678092,
+            "prompt_per_second": 1035.4963234878899,
+            "predicted_n": 303,
+            "predicted_ms": 4052.421,
+            "predicted_per_token_ms": 13.374326732673266,
+            "predicted_per_second": 74.77011889929501
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 7.239,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000006",
+          "estimated_prompt_tokens": 2705,
+          "usage": {
+            "completion_tokens": 304,
+            "prompt_tokens": 1964,
+            "total_tokens": 2268
+          },
+          "timings": {
+            "prompt_n": 1964,
+            "prompt_ms": 1532.667,
+            "prompt_per_token_ms": 0.7803803462321792,
+            "prompt_per_second": 1281.4264285718948,
+            "predicted_n": 304,
+            "predicted_ms": 3891.62,
+            "predicted_per_token_ms": 12.801381578947368,
+            "predicted_per_second": 78.11656842137721
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.508,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000007",
+          "estimated_prompt_tokens": 3915,
+          "usage": {
+            "completion_tokens": 294,
+            "prompt_tokens": 3081,
+            "total_tokens": 3375
+          },
+          "timings": {
+            "prompt_n": 3081,
+            "prompt_ms": 2912.94,
+            "prompt_per_token_ms": 0.9454527750730283,
+            "prompt_per_second": 1057.6942882448661,
+            "predicted_n": 294,
+            "predicted_ms": 3910.592,
+            "predicted_per_token_ms": 13.301333333333334,
+            "predicted_per_second": 75.18043303929431
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 6.904,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000008",
+          "estimated_prompt_tokens": 2459,
+          "usage": {
+            "completion_tokens": 240,
+            "prompt_tokens": 1708,
+            "total_tokens": 1948
+          },
+          "timings": {
+            "prompt_n": 1708,
+            "prompt_ms": 1236.862,
+            "prompt_per_token_ms": 0.7241580796252928,
+            "prompt_per_second": 1380.9139580648448,
+            "predicted_n": 240,
+            "predicted_ms": 3033.091,
+            "predicted_per_token_ms": 12.637879166666666,
+            "predicted_per_second": 79.12720060163049
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.305,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000009",
+          "estimated_prompt_tokens": 3008,
+          "usage": {
+            "completion_tokens": 291,
+            "prompt_tokens": 2296,
+            "total_tokens": 2587
+          },
+          "timings": {
+            "prompt_n": 2296,
+            "prompt_ms": 1878.536,
+            "prompt_per_token_ms": 0.8181777003484321,
+            "prompt_per_second": 1222.228373584536,
+            "predicted_n": 291,
+            "predicted_ms": 3765.581,
+            "predicted_per_token_ms": 12.94014089347079,
+            "predicted_per_second": 77.27891127557739
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.681,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "full-summary",
+          "estimated_prompt_tokens": 13626,
+          "usage": {
+            "completion_tokens": 165,
+            "prompt_tokens": 11924,
+            "total_tokens": 12089
+          },
+          "timings": {
+            "prompt_n": 11924,
+            "prompt_ms": 22497.061,
+            "prompt_per_token_ms": 1.8867042099966456,
+            "prompt_per_second": 530.0247885712715,
+            "predicted_n": 165,
+            "predicted_ms": 2865.576,
+            "predicted_per_token_ms": 17.367127272727274,
+            "predicted_per_second": 57.58004673405975
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 25.432,
+          "request_kind": "full-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "action-review",
+          "estimated_prompt_tokens": 2146,
+          "usage": {
+            "completion_tokens": 989,
+            "prompt_tokens": 1092,
+            "total_tokens": 2081
+          },
+          "timings": {
+            "prompt_n": 1092,
+            "prompt_ms": 899.752,
+            "prompt_per_token_ms": 0.8239487179487179,
+            "prompt_per_second": 1213.6677662289164,
+            "predicted_n": 989,
+            "predicted_ms": 12450.503,
+            "predicted_per_token_ms": 12.588981799797777,
+            "predicted_per_second": 79.43454172092486
+          },
+          "thinking_characters": 1326,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 13.425,
+          "request_kind": "action-review",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "speaker-batch-000001",
+          "estimated_prompt_tokens": 7276,
+          "usage": {
+            "completion_tokens": 294,
+            "prompt_tokens": 6348,
+            "total_tokens": 6642
+          },
+          "timings": {
+            "prompt_n": 6348,
+            "prompt_ms": 8825.635,
+            "prompt_per_token_ms": 1.3903016698172652,
+            "prompt_per_second": 719.2683585940275,
+            "predicted_n": 294,
+            "predicted_ms": 4323.935,
+            "predicted_per_token_ms": 14.707261904761905,
+            "predicted_per_second": 67.99362155074023
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 13.237,
+          "request_kind": "speaker-batch",
+          "attempt": 1,
+          "status": "validated"
+        }
+      ],
+      "server_ready_seconds": 15.026,
+      "finished_at": "2026-09-03T07:08:24Z"
+    },
+    "enrichment": {
+      "status": "succeeded",
+      "elapsed_seconds": 118.393,
+      "llm_calls": 18,
+      "keywords": 18,
+      "qa": 45,
+      "quotes": 3,
+      "decisions": 27,
+      "has_outline": true,
+      "finished_at": "2026-09-03T07:10:22Z"
+    },
+    "compat_export": {
+      "status": "succeeded",
+      "elapsed_seconds": 0.029,
+      "mapping_version": "meeting-compat.v1",
+      "finished_at": "2026-09-03T07:10:22Z"
+    }
+  },
+  "current_stage": "compat_export"
+}
