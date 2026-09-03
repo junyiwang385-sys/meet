@@ -89,7 +89,13 @@ def run(config: dict) -> dict:
                 row["leak"] = mem.get("memory_leak_suspected")
                 srv = rr.get("server", {}) or {}
                 row["server_ready_s"] = srv.get("ready_seconds")
+                row["loaded_once"] = srv.get("loaded_once")
                 row["duration_s"] = (rr.get("identity", {}) or {}).get("source_audio_seconds")
+                sd = rr.get("stages_detail", {}) or {}
+                enr_stage = sd.get("enrichment", {}) or {}
+                row["enr_status"] = enr_stage.get("status")
+                row["enr_error"] = enr_stage.get("error")
+                row["timing_status"] = (rr.get("timing", {}) or {}).get("status")
             except Exception as exc:  # noqa: BLE001
                 row["run_report_error"] = str(exc)
         rows.append(row)
@@ -136,15 +142,22 @@ def render_md(result: dict, config: dict) -> str:
     L.append("")
     L.append("## 逐场·内容丰富 + 性能（全部来自结构化日志，自动汇总，无手填）")
     L.append("")
-    L.append("| 会议 | 时长(s) | enrichment(kw/qa/quote/dec/outline) | 金句保真 | 总耗时(s) | 摘要(s) | enrich(s) | server就绪(s) | 板端峰值(MB) | server RSS峰值(MB) | 疑似泄漏 |")
-    L.append("|---|---|---|---|---|---|---|---|---|---|---|")
+    L.append("| 会议 | 时长(s) | run状态 | enrich stage | enrichment(kw/qa/quote/dec/outline) | 金句保真 | 总耗时(s) | 摘要(s) | enrich(s) | 只加载一次 | server就绪(s) | 板端峰值(MB) | RSS峰值(MB) | 疑似泄漏 |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for r in result["cases"]:
         L.append(
-            f"| {r['meeting']} | {r.get('duration_s','-')} | {r.get('enr','-')} | "
+            f"| {r['meeting']} | {r.get('duration_s','-')} | {r.get('timing_status','-')} | {r.get('enr_status','-')} | {r.get('enr','-')} | "
             f"{r.get('enr_verbatim','-')} | {r.get('total_elapsed_s','-')} | {r.get('llm_summary_s','-')} | "
-            f"{r.get('enrichment_s','-')} | {r.get('server_ready_s','-')} | {r.get('board_peak_mb','-')} | "
+            f"{r.get('enrichment_s','-')} | {r.get('loaded_once','-')} | {r.get('server_ready_s','-')} | {r.get('board_peak_mb','-')} | "
             f"{r.get('server_rss_peak_mb','-')} | {r.get('leak','-')} |"
         )
+    # enrichment 失败时把 error 摊开列出（来自 run_report.stages_detail，无需回传 stage_status）
+    errs = [(r["meeting"], r.get("enr_error")) for r in result["cases"] if r.get("enr_error")]
+    if errs:
+        L.append("")
+        L.append("**enrichment 失败原因**：")
+        for meeting, err in errs:
+            L.append(f"- {meeting}: {err}")
     L.append("")
     L.append("## 自动优化红旗（来自 run_report）")
     L.append("")

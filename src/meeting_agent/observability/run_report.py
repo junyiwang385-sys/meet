@@ -33,6 +33,13 @@ def _load(path: pathlib.Path) -> Any:
         return None
 
 
+def _short_err(err: Any) -> Any:
+    if err is None:
+        return None
+    text = err if isinstance(err, str) else json.dumps(err, ensure_ascii=False)
+    return text[:300]
+
+
 def _stats(values: list[float]) -> dict[str, Any]:
     values = [v for v in values if v is not None]
     if not values:
@@ -109,6 +116,15 @@ def build_run_report(root: pathlib.Path) -> dict[str, Any]:
         "stage_seconds": {
             name: info.get("elapsed_seconds") for name, info in stages.items()
         },
+    }
+    # 各 stage 的 status/error 进结构化日志（失败原因也在此，无需另回传 stage_status.json）
+    report["stages_detail"] = {
+        name: {
+            "status": (info or {}).get("status"),
+            "reason": (info or {}).get("reason"),
+            "error": _short_err((info or {}).get("error")),
+        }
+        for name, info in stages.items()
     }
 
     # A 层分段
@@ -240,10 +256,16 @@ def build_run_report(root: pathlib.Path) -> dict[str, Any]:
     # ready_seconds 有单值 + 只有一个 rkllm_server.log 即证"只加载一次"。
     llm_rt = (meeting_result.get("runtime") or {}).get("llm") or {}
     server_log = llm_dir / "rkllm_server.log"
+    llm_cmd = llm_dir / "llm_cmd.json"
+    # 「只加载一次」的格式无关证据：单个 rkllm_server.log + 单个 llm_cmd.json + ready_seconds 单值。
+    # start() 幂等且写 llm_cmd.json 仅在真正 spawn 时发生；摘要+enrichment 共用同一 session/out_dir，
+    # 若 enrichment 另起 server 会产生第二处 spawn 证据。强证可回传 memory_samples.jsonl 数 llm_server_start 相位。
     report["server"] = {
         "ready_seconds": llm_rt.get("server_ready_seconds"),
         "log_present": server_log.is_file(),
         "log_size_bytes": server_log.stat().st_size if server_log.is_file() else None,
+        "llm_cmd_present": llm_cmd.is_file(),
+        "loaded_once": bool(server_log.is_file() and llm_cmd.is_file() and llm_rt.get("server_ready_seconds") is not None),
     }
 
     report["flags"] = _optimization_flags(report)

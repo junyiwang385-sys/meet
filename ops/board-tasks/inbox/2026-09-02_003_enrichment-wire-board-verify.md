@@ -13,6 +13,7 @@
 - `stages/enrichment.py`：新增 `run_enrichment_stage` + `make_session_llm_call`（把 `session.request` 包成 enrichment 的 LlmCall，自动加 `/no_think`、失败返 `{}` 不抛）。
 - `harness/pipeline.py`：pipeline 持有 `summary_session`，摘要→enrichment 复用同一 server，`finally` 统一 close；enrichment 为独立 stage，**失败不阻断主流程**，写 `enrichment.json` + `result["enrichment"]`。
 - `harness/main.py`：新增 `--enrichment`/`--no-enrichment`（**默认开**）。
+- `observability/run_report.py`：结构化日志自足化——新增 enrichment 五类计数/金句保真、内存峰值/泄漏、server（含 `loaded_once`）、各 stage status+error 段。**板端需覆盖到新版才有这些段**（见下"全量覆盖"）。
 - **不涉及**：diar/ASR 板端脚本、模型、老 `prompts/*_zh.txt`（死层，勿动）。
 
 ## 前置检查（中转机先确认）
@@ -37,15 +38,20 @@ ls -l output/enrich_verify/g*/harness/run_report.json output/enrich_verify/g*/ha
 
 ```powershell
 git pull
-scp -r .\src\meeting_agent <board>:/userdata/meeting_agent1/mainline_v2/src/meeting_agent
-# 板端跑完后，只回传"小体积结构化日志"（run_report.json 已自带 enrichment/内存/server）：
+# 【全量覆盖板端包】先删后拷、拷到父目录 src\ ——避免 scp -r 目标已存在时嵌套成 .../meeting_agent/meeting_agent，
+# 也清掉旧版已删除的残留文件，保证板端跑的就是本次 HEAD（含新 run_report.py）。
+ssh <board> "rm -rf /userdata/meeting_agent1/mainline_v2/src/meeting_agent"
+scp -r .\src\meeting_agent <board>:/userdata/meeting_agent1/mainline_v2/src/
+
+# 板端跑完后，只回传小体积结构化日志（run_report.json 已自带 enrichment/内存/server/各 stage status+error）：
+$R = "ops\board-results\2026-09-02_003_enrichment-wire-board-verify"
 foreach ($i in 1..5) {
-  New-Item -Force -ItemType Directory ops\board-results\2026-09-02_003_enrichment-wire-board-verify\g$i | Out-Null
-  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/run_report.json ops\board-results\...\g$i\
-  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/03_llm_summary/enrichment.json ops\board-results\...\g$i\
+  New-Item -Force -ItemType Directory "$R\g$i" | Out-Null
+  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/run_report.json "$R\g$i\"
+  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/03_llm_summary/enrichment.json "$R\g$i\"
 }
 # 自动汇总（零手填）——run_eval 读 5 个 run_report.json 直接出表
-$env:PYTHONPATH="src"; python eval\run_eval.py --config eval\eval_config_board003.json --out ops\board-results\2026-09-02_003_enrichment-wire-board-verify\RESULTS.md
+$env:PYTHONPATH = "src"; python eval\run_eval.py --config eval\eval_config_board003.json --out "$R\RESULTS.md"
 ```
 
 ## 期望产物
@@ -58,13 +64,14 @@ $env:PYTHONPATH="src"; python eval\run_eval.py --config eval\eval_config_board00
 - 提交 **5 组 `run_report.json` + `enrichment.json`**（都小）到 `ops/board-results/2026-09-02_003.../gN/`。
 - 跑 `run_eval.py` **自动生成 `RESULTS.md`**（汇总表：时长/耗时/摘要vs enrich 耗时/五类计数/金句保真/内存峰值/泄漏/红旗，全部来自结构化日志）。
 - 人只在 `result.md` 里补**两句话**：总体结论 + 异常观察（见该文件）。
+- **若 RESULTS.md 内存列为空**（板端采样器键名与预期不同）：回传任一组 `run_report.json` 里的 `memory.raw_keys`，据此修 `run_report` 的键映射后重跑 `run_eval`（板端不用重跑）。
 - **不要**回传：音频、完整 worker.log、完整模型原始输出、绝对路径、完整 harness 目录。
 
 ## 判定标准（本轮通过条件）
 
-1. **5 组都跑通到 compat_export**，`enrichment` stage = succeeded（个别 failed 但主流程未中断也可接受——必须贴 error 说明原因）。
-2. `enrichment.json` 五类内容**跨会稳定非空**（重点看 decisions/outline_summary 在不同题材会上是否都产得出）。
-3. 每组 `rkllm_server.log` **只启一次**——证明 enrichment 复用了 server、没二次加载模型（本轮核心目标）。
+1. **5 组 `timing.status=succeeded`**（跑通到 compat_export）、`stages_detail.enrichment.status=succeeded`；个别 enrichment failed 但主流程未中断也可接受——run_report 已带 error，RESULTS.md 会自动摊出，无需人工找。
+2. RESULTS.md 的 enrichment 列 **kw/qa/quote/dec/outline 跨会稳定非空**（重点 decisions/outline 在不同题材会上是否都产得出）。
+3. 每组 `run_report.server.loaded_once=true`（单个 `rkllm_server.log` + 单个 `llm_cmd.json` + `ready_seconds` 单值）——证明 enrichment 复用了 server、没二次加载模型（**本轮核心目标**）。如需强证，回传该组 `runtime/memory_samples.jsonl` 数 `llm_server_start` 相位应=1。
 4. 得到 **5 个耗时/内存数据点**（按时长对齐），作为板端 4B 首批实机数据。
 
 > 说明：本轮为随机抽样的中等长度会议，验证接线正确性 + server 单次加载 + 跨会产出稳定性 + 首批性能点；**1–2h 长会卖点仍未覆盖**，留待后续单独任务。
