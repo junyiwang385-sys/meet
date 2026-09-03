@@ -66,6 +66,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--ready-timeout", type=int, default=300)
     parser.add_argument("--request-timeout", type=int, default=1200)
     parser.add_argument("--sample-interval", type=float, default=0.2)
+    parser.add_argument(
+        "--enrichment",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="摘要后复用同一 server 产出关键词/问答/金句/决策/层级大纲（--no-enrichment 关闭）",
+    )
     args = parser.parse_args(argv)
 
     if args.ctx <= 0 or args.predict <= 0 or args.max_tokens <= 0:

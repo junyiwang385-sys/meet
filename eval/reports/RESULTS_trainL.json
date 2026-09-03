@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "meeting": "20200708_L_R002S03C01(销售培训)",
+      "kp_recall": 0.9,
+      "kp_missed": [
+        "kp6"
+      ]
+    },
+    {
+      "meeting": "20200706_L_R001S08C01(法律培训)",
+      "kp_recall": 0.818,
+      "kp_missed": [
+        "kp10",
+        "kp11"
+      ]
+    },
+    {
+      "meeting": "20200707_L_R001S08C01(动漫策划)",
+      "kp_recall": 0.9,
+      "kp_missed": [
+        "kp1"
+      ]
+    }
+  ],
+  "aggregate": {
+    "kp_recall": {
+      "mean": 0.873,
+      "std": 0.039,
+      "n": 3
+    }
+  },
+  "n_meetings": 3
+}

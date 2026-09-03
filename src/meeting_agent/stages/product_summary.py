@@ -1443,6 +1443,7 @@ def run_product_summary_stage(
     out_dir: pathlib.Path,
     sampler: Any | None,
     run_log: Any | None = None,
+    session: RkllmServerSession | None = None,
 ) -> dict[str, Any]:
     started = time.time()
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -1480,8 +1481,10 @@ def run_product_summary_stage(
     validation_failed_count = 0
     retry_count = 0
     split_count = 0
-    session: RkllmServerSession | None = None
-    cached_files: dict[str, Any] | None = None
+    # session 可由调用方注入（pipeline 持有、跨 stage 复用同一活着的 server）；
+    # 注入时本 stage 不负责 close（谁开谁关），未注入则维持"自己开自己关"。
+    owns_session = session is None
+    cached_files: dict[str, Any] | None = session.files if session is not None else None
 
     def build_session() -> RkllmServerSession:
         nonlocal session, cached_files
@@ -2113,4 +2116,5 @@ def run_product_summary_stage(
             session.validation_failed_count = validation_failed_count
             session.retry_count = retry_count
             session.split_count = split_count
-            session.close()
+            if owns_session:
+                session.close()

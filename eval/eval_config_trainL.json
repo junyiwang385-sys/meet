@@ -1,0 +1,20 @@
+{
+  "note": "train_L 三场会评测(TextGrid转写→方案1分章+4B加厚纪要+enrichment)。金标准=半开卷人工关键点。",
+  "cases": [
+    {
+      "meeting": "20200708_L_R002S03C01(销售培训)",
+      "minutes": "C:/Users/Admin/Desktop/meet实验结果/纪要成品/eval_20200708_L_R002S03C01.json",
+      "keypoints_golden": "C:/Users/Admin/meet/eval/golden/R002S03C01.keypoints.json"
+    },
+    {
+      "meeting": "20200706_L_R001S08C01(法律培训)",
+      "minutes": "C:/Users/Admin/Desktop/meet实验结果/纪要成品/eval_20200706_L_R001S08C01.json",
+      "keypoints_golden": "C:/Users/Admin/meet/eval/golden/R001S08C01_law.keypoints.json"
+    },
+    {
+      "meeting": "20200707_L_R001S08C01(动漫策划)",
+      "minutes": "C:/Users/Admin/Desktop/meet实验结果/纪要成品/eval_20200707_L_R001S08C01.json",
+      "keypoints_golden": "C:/Users/Admin/meet/eval/golden/R001S08C01_anime.keypoints.json"
+    }
+  ]
+}

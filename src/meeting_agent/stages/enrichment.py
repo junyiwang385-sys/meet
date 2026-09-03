@@ -378,3 +378,113 @@ def enrich(
     if chapter_summaries:
         result["outline_summary"] = build_outline_summary(chapter_summaries, llm_call)
     return result
+
+
+# ---- Stage 封装（复用摘要 stage 的活着 session，不另起 server） ---------------
+
+import json as _json
+import pathlib as _pathlib
+import time as _time
+
+
+def _loads_tolerant(text: str) -> dict[str, Any]:
+    """把 4B/板端输出的 JSON 文本尽量解析成 dict；失败返回 {}（下游按空处理）。"""
+    s = (text or "").strip()
+    if not s:
+        return {}
+    try:
+        value = _json.loads(s)
+        return value if isinstance(value, dict) else {}
+    except Exception:  # noqa: BLE001
+        # 兜底：截取第一个平衡的 {...}
+        start = s.find("{")
+        if start < 0:
+            return {}
+        depth = 0
+        for i in range(start, len(s)):
+            if s[i] == "{":
+                depth += 1
+            elif s[i] == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        value = _json.loads(s[start : i + 1])
+                        return value if isinstance(value, dict) else {}
+                    except Exception:  # noqa: BLE001
+                        return {}
+        return {}
+
+
+def _no_think(messages: list[dict[str, str]]) -> list[dict[str, str]]:
+    """给最后一条 user 追加 Qwen3 的 /no_think 软开关（enrichment 全是抽取，不需思考、省输出预算）。"""
+    patched = [dict(m) for m in messages]
+    for m in reversed(patched):
+        if m.get("role") == "user":
+            content = str(m.get("content") or "")
+            if "/no_think" not in content:
+                m["content"] = content + "\n/no_think"
+            break
+    return patched
+
+
+def make_session_llm_call(
+    session: Any,
+    out_dir: "_pathlib.Path",
+    run_log: Any | None = None,
+    *,
+    max_predict: int = 1400,
+) -> tuple[LlmCall, dict[str, int]]:
+    """把 RkllmServerSession（或鸭子对齐的 OllamaSession）.request 包成 enrichment 要的 LlmCall。
+
+    复用调用方已 start 的活着 server；请求失败/解析失败返回 {}，绝不抛出（enrichment 是增强，不阻断主流程）。
+    """
+    counter = {"n": 0}
+
+    def _call(messages: list[dict[str, str]], schema: dict[str, Any], *, max_tokens: int) -> dict[str, Any]:
+        counter["n"] += 1
+        request_dir = out_dir / "requests" / f"enrich-{counter['n']:04d}"
+        try:
+            result = session.request(
+                _no_think(messages),
+                request_dir,
+                max_tokens=min(max_tokens, max_predict),
+                phase="enrichment",
+                request_id=f"enrich-{counter['n']:04d}",
+                request_kind="enrichment",
+                attempt=1,
+                run_log=run_log,
+            )
+        except Exception:  # noqa: BLE001
+            return {}
+        return _loads_tolerant(str(result.get("content") or ""))
+
+    return _call, counter
+
+
+def run_enrichment_stage(
+    *,
+    session: Any,
+    segments: list[dict[str, Any]],
+    out_dir: "_pathlib.Path",
+    chapter_summaries: list[str] | None = None,
+    run_log: Any | None = None,
+    max_predict: int = 1400,
+) -> dict[str, Any]:
+    """在摘要之后、复用同一活着 server，产出关键词/问答/金句/决策/层级大纲。
+
+    返回 {"enrichment": {...}, "stats": {...}}；调用方负责写 enrichment.json 与并入结果。
+    """
+    started = _time.time()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    llm_call, counter = make_session_llm_call(session, out_dir, run_log, max_predict=max_predict)
+    result = enrich(segments, llm_call, chapter_summaries=chapter_summaries)
+    stats = {
+        "llm_calls": counter["n"],
+        "keywords": len(result.get("keywords") or []),
+        "qa": len(result.get("qa") or []),
+        "quotes": len(result.get("quotes") or []),
+        "decisions": len(result.get("decisions") or []),
+        "has_outline": bool(result.get("outline_summary")),
+        "elapsed_seconds": round(_time.time() - started, 3),
+    }
+    return {"enrichment": result, "stats": stats}

@@ -33,8 +33,9 @@ from ..storage.artifacts import (
 )
 from ..llm.chunking import ChunkingError
 from ..stages.display import build_frontend_result, render_meeting_display
-from ..llm.llm import LlmConfig, LlmRunError, load_board_helpers
+from ..llm.llm import LlmConfig, LlmRunError, RkllmServerSession, load_board_helpers
 from ..stages.product_summary import ProductSummaryConfig, run_product_summary_stage
+from ..stages.enrichment import run_enrichment_stage
 from ..stages.compat_export import write_compat_bundle
 from ..contracts.identity import RunIdentity
 from ..observability.runlog import RunLogContext
@@ -307,6 +308,7 @@ def run_pipeline(args: Any) -> int:
     atomic_write_json(paths.meeting_result, result)
 
     sampler = None
+    summary_session: RkllmServerSession | None = None
     exit_code = 1
     summary_published = False
     compat_export_published = False
@@ -496,6 +498,9 @@ def run_pipeline(args: Any) -> int:
                 ready_timeout=args.ready_timeout,
                 request_timeout=args.request_timeout,
             )
+            # pipeline 持有 server session：摘要与 enrichment 复用同一活着的 server，
+            # 避免二次加载模型（板端最贵一步）。谁开谁关——这里创建，finally 统一 close。
+            summary_session = RkllmServerSession(llm_config, paths.llm, sampler)
             try:
                 llm_run = run_product_summary_stage(
                     config=ProductSummaryConfig(
@@ -511,6 +516,7 @@ def run_pipeline(args: Any) -> int:
                     out_dir=paths.llm,
                     sampler=sampler,
                     run_log=run_log,
+                    session=summary_session,
                 )
             except SummaryValidationError as exc:
                 error = PipelineStageError(
@@ -583,6 +589,44 @@ def run_pipeline(args: Any) -> int:
             mark_stage_done("llm_summary", llm_stage, state, result, paths, run_log, started=llm_started)
             run_log.artifact_written("llm_validation", paths.llm / "validation.json", stage="llm_summary")
             run_log.artifact_written("llm_plan", paths.llm / "plan.json", stage="llm_summary")
+
+        # 内容丰富（enrichment）：复用摘要 stage 已 start 的同一 server，产出
+        # 关键词/问答/金句/决策/层级大纲。增强性质，失败不阻断主流程。
+        if getattr(args, "enrichment", False) and summary_session is not None:
+            enrich_started = mark_stage_running("enrichment", state, paths, run_log)
+            try:
+                chapter_summaries = [
+                    str(chapter.get("overview") or "")
+                    for chapter in (summary.get("chapters") or [])
+                    if chapter.get("overview")
+                ]
+                enrich_run = run_enrichment_stage(
+                    session=summary_session,
+                    segments=segments,
+                    out_dir=paths.llm,
+                    chapter_summaries=chapter_summaries,
+                    run_log=run_log,
+                    max_predict=args.max_tokens,
+                )
+                atomic_write_json(paths.llm / "enrichment.json", enrich_run["enrichment"])
+                result["enrichment"] = enrich_run["enrichment"]
+                enrich_stage = {
+                    "status": "succeeded",
+                    "elapsed_seconds": round(time.time() - enrich_started, 3),
+                    **enrich_run["stats"],
+                }
+                mark_stage_done("enrichment", enrich_stage, state, result, paths, run_log, started=enrich_started)
+                run_log.artifact_written("enrichment", paths.llm / "enrichment.json", stage="enrichment")
+            except Exception as exc:  # noqa: BLE001 —— enrichment 是增强，绝不阻断主流程
+                enrich_stage = {
+                    "status": "failed",
+                    "elapsed_seconds": round(time.time() - enrich_started, 3),
+                    "error": f"{type(exc).__name__}: {exc}",
+                }
+                mark_stage_done(
+                    "enrichment", enrich_stage, state, result, paths, run_log,
+                    started=enrich_started, status="failed", reason="enrichment_error",
+                )
 
         result["summary"] = summary
         result["quality"] = quality
@@ -667,6 +711,13 @@ def run_pipeline(args: Any) -> int:
         state["error"] = error
         exit_code = 1
     finally:
+        # pipeline 持有的 server session 在此统一关闭（写出 server_status.json，
+        # 供下方指标合并读取）；摘要 stage 注入模式下不自行 close。
+        if summary_session is not None:
+            try:
+                summary_session.close()
+            except Exception:  # noqa: BLE001
+                pass
         if sampler is not None:
             sampler.set_phase("cleanup")
             sampler.stop()
