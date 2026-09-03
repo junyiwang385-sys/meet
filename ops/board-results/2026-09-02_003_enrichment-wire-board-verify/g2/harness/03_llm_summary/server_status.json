@@ -1,0 +1,14 @@
+{
+  "ready_seconds": 15.028,
+  "elapsed_seconds": 230.342,
+  "return_code": 0,
+  "request_count": 26,
+  "transport_request_count": 26,
+  "http_response_count": 26,
+  "response_parse_success_count": 26,
+  "validation_failed_count": 1,
+  "retry_count": 1,
+  "split_count": 0,
+  "successful_response_count": 26,
+  "context_truncated": false
+}

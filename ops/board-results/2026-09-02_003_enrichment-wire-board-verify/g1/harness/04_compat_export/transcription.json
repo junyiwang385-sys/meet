@@ -1,0 +1,4171 @@
+{
+  "TaskId": "mtg_3d8c1ede1bc20e3e",
+  "Transcription": {
+    "AudioInfo": {
+      "Duration": 1862276,
+      "SourceAudio": "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S04C01/01_segments/input_mono16k.wav"
+    },
+    "Paragraphs": [
+      {
+        "ParagraphId": "seg-000002",
+        "SpeakerId": "speaker_5",
+        "Words": [
+          {
+            "Id": 1,
+            "SentenceId": 1,
+            "Start": 36680,
+            "End": 41200,
+            "Text": "零零二，我是院长。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000004",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 2,
+            "SentenceId": 2,
+            "Start": 41640,
+            "End": 45515,
+            "Text": "五，幺二六。我是服务员的啊！你好三我儿宝。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000005",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 3,
+            "SentenceId": 3,
+            "Start": 43515,
+            "End": 47015,
+            "Text": "我是服务员，零二三。我是保卫科。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000006",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 4,
+            "SentenceId": 4,
+            "Start": 45015,
+            "End": 49265,
+            "Text": "零二三，我是招生办。零二四，我是后。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000007",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 5,
+            "SentenceId": 5,
+            "Start": 47265,
+            "End": 50765,
+            "Text": "慢，零二四。我是后勤部。然后我……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000008",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 6,
+            "SentenceId": 6,
+            "Start": 48765,
+            "End": 53015,
+            "Text": "我是教务主任。嗯行。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000009",
+        "SpeakerId": "speaker_5",
+        "Words": [
+          {
+            "Id": 7,
+            "SentenceId": 7,
+            "Start": 51015,
+            "End": 61310,
+            "Text": "嗯，行。咱们今天把各部门儿叫过来开个咱上半年的总结会议。呃，接下来由咱们这个副院长来主持一下这会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000011",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 8,
+            "SentenceId": 8,
+            "Start": 63230,
+            "End": 68530,
+            "Text": "好，现在会议开始了啊。这个上半年因为这个疫"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000012",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 9,
+            "SentenceId": 9,
+            "Start": 68530,
+            "End": 73230,
+            "Text": "穷的，原不闹腾。学生都是在家上午课。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000013",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 10,
+            "SentenceId": 10,
+            "Start": 73230,
+            "End": 76050,
+            "Text": "各个老师也都。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000014",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 11,
+            "SentenceId": 11,
+            "Start": 76050,
+            "End": 90690,
+            "Text": "提议说网课的效率不是很好，这个教育主任什么建议或者什么方案。呃，咱们由于上半年啊都是那个在家上的那个网课。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000015",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 12,
+            "SentenceId": 12,
+            "Start": 90690,
+            "End": 93480,
+            "Text": "然后老师，好多。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000016",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 13,
+            "SentenceId": 13,
+            "Start": 93480,
+            "End": 106860,
+            "Text": "我就是实验什么的，我都进行不下去了。咱们下半年的话肯定是不能说再像上一年一样了。我们毕竟马上就要开学，然后也要新招生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000017",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 14,
+            "SentenceId": 14,
+            "Start": 106860,
+            "End": 110350,
+            "Text": "呃，现在的话。可能老师就……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000018",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 15,
+            "SentenceId": 15,
+            "Start": 110350,
+            "End": 121560,
+            "Text": "这块是不缺的，然后老师的水平都比较高。学生咱们就是呃和张文旦商量一下我们三。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000019",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 16,
+            "SentenceId": 16,
+            "Start": 121560,
+            "End": 124680,
+            "Text": "下一个季度，要招新生。咱们政府的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000020",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 17,
+            "SentenceId": 17,
+            "Start": 124680,
+            "End": 128950,
+            "Text": "什么样的？呃，比较是一层嘛。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000021",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 18,
+            "SentenceId": 18,
+            "Start": 128950,
+            "End": 131790,
+            "Text": "咱们这好多人，就是好吃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000022",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 19,
+            "SentenceId": 19,
+            "Start": 131790,
+            "End": 140250,
+            "Text": "这个好像就会最难了。可能要听一个什么样的标准，就是我需要跟焦作饭商量一下：自己可以不问下？着人办！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000023",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 20,
+            "SentenceId": 20,
+            "Start": 140250,
+            "End": 156775,
+            "Text": "这个什么？这个问题先走。这个先说老师上课的问题，老师这方面：上课的问题、考试安排的是什么样的？是以期末考试还是下半年返校来考试呢？是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000024",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 21,
+            "SentenceId": 21,
+            "Start": 154775,
+            "End": 158220,
+            "Text": "考试是以网络方式为那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000025",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 22,
+            "SentenceId": 22,
+            "Start": 158220,
+            "End": 164370,
+            "Text": "标准上，咱们就是对于一些，就是还有一些比较特别重要的时候。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000026",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 23,
+            "SentenceId": 23,
+            "Start": 164370,
+            "End": 168200,
+            "Text": "就是比如说，高数。下专业课吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000027",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 24,
+            "SentenceId": 24,
+            "Start": 168200,
+            "End": 172100,
+            "Text": "不，主要是像一些高速、一些呃……一些就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000028",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 25,
+            "SentenceId": 25,
+            "Start": 172100,
+            "End": 182510,
+            "Text": "是，比较呃重要的一些科目。咱们是需要那个返校以后的那间考试，因为你像在高考五百。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000029",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 26,
+            "SentenceId": 26,
+            "Start": 182510,
+            "End": 189450,
+            "Text": "实现很多条件，提高。很多呃学生可以在网大查阅资料了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000030",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 27,
+            "SentenceId": 27,
+            "Start": 189450,
+            "End": 193325,
+            "Text": "那英语的四六级是怎考？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000031",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 28,
+            "SentenceId": 28,
+            "Start": 191325,
+            "End": 199390,
+            "Text": "手机是很好，因为手机按照现在不按怎么说吧？它是可以开已经。可以开始就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000032",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 29,
+            "SentenceId": 29,
+            "Start": 199390,
+            "End": 200880,
+            "Text": "好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000033",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 30,
+            "SentenceId": 30,
+            "Start": 200880,
+            "End": 212255,
+            "Text": "行，这说到学生点儿问题。这是闹疫情？那咱们闹疫情的财务账是怎么弄的呢？是学生的费用怎么退呢？还是目前……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000034",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 31,
+            "SentenceId": 31,
+            "Start": 210255,
+            "End": 216005,
+            "Text": "咱们学校所收的呃，住宿费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000035",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 32,
+            "SentenceId": 32,
+            "Start": 212505,
+            "End": 216700,
+            "Text": "要所收的呃住宿费，还有学费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000036",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 33,
+            "SentenceId": 33,
+            "Start": 216700,
+            "End": 218160,
+            "Text": "收费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000037",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 34,
+            "SentenceId": 34,
+            "Start": 218160,
+            "End": 229825,
+            "Text": "嗯，目前只有这个住宿费返还了一半。因为我们交的这一年度，它是从上个、上上的去年的那个上半年就开始交了，交的是年。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000038",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 35,
+            "SentenceId": 35,
+            "Start": 227825,
+            "End": 231010,
+            "Text": "那个上半程就开始交，交的是一一一巡天。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000039",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 36,
+            "SentenceId": 36,
+            "Start": 230510,
+            "End": 235885,
+            "Text": "一学年的，咱们只是把这半、这一个学期的住宿费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000040",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 37,
+            "SentenceId": 37,
+            "Start": 233885,
+            "End": 236470,
+            "Text": "记得，猪肚饭。退款了？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000041",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 38,
+            "SentenceId": 38,
+            "Start": 236470,
+            "End": 239550,
+            "Text": "嗯，还有就是因为咱们疫情期间嘛。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000042",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 39,
+            "SentenceId": 39,
+            "Start": 239550,
+            "End": 244060,
+            "Text": "呃，没有学，在学校里。没有用到水和电。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000043",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 40,
+            "SentenceId": 40,
+            "Start": 244060,
+            "End": 246940,
+            "Text": "咱们在这方面省了很大的成本。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000044",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 41,
+            "SentenceId": 41,
+            "Start": 246940,
+            "End": 251270,
+            "Text": "那在学校疫情期间的上半年，学校。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000045",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 42,
+            "SentenceId": 42,
+            "Start": 251270,
+            "End": 252230,
+            "Text": "开销大。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000046",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 43,
+            "SentenceId": 43,
+            "Start": 252230,
+            "End": 260445,
+            "Text": "学校的开销主要就是老师们的薪资，还有设备的维修。设备。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000047",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 44,
+            "SentenceId": 44,
+            "Start": 258445,
+            "End": 261850,
+            "Text": "设备维修，设备维修吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000048",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 45,
+            "SentenceId": 45,
+            "Start": 261850,
+            "End": 266420,
+            "Text": "比如说，空调这个更新换代。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000049",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 46,
+            "SentenceId": 46,
+            "Start": 266420,
+            "End": 269320,
+            "Text": "还有咱们这个体育馆内的一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000050",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 47,
+            "SentenceId": 47,
+            "Start": 269320,
+            "End": 280170,
+            "Text": "嗯，设备的更新。还有就是：职工们、教职工们的福利哦！先。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000051",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 48,
+            "SentenceId": 48,
+            "Start": 280170,
+            "End": 287795,
+            "Text": "对，这上半年疫情也没开学。安保部门是怎么安排的呢？裁员了还是怎么着啊！安保部这边儿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000052",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 49,
+            "SentenceId": 49,
+            "Start": 285795,
+            "End": 293825,
+            "Text": "还是怎么了？他保护这边，确实是裁员啊！裁了一部分人。因为这个裁员的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000053",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 50,
+            "SentenceId": 50,
+            "Start": 291825,
+            "End": 296075,
+            "Text": "这个，裁员的人都在家歇着吗？嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000054",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 51,
+            "SentenceId": 51,
+            "Start": 294075,
+            "End": 316940,
+            "Text": "嗯，对。裁员、裁员的人就是我们裁掉的这些人，我们是他们再往后干什么？我们是不清楚了。就是还在职的这些人哦！我们是要求他们每天来学校这个值班啊。但是值班同时我们要做好那个消毒杀菌的工作呃：消除防疫。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000055",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 52,
+            "SentenceId": 52,
+            "Start": 315820,
+            "End": 320520,
+            "Text": "这咱们本校的场地，外人租用吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000056",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 53,
+            "SentenceId": 53,
+            "Start": 319240,
+            "End": 347860,
+            "Text": "嗯，在这个疫情期间是没有的。呃，这个是马上临近夏季呢？夏季的话，嗯，这个疫情也逐渐趋于平稳。在咱们学校那个篮球场的话也会有大大小、大大小小大概二十场比赛吧。然后做一个比赛的时候在一个比赛的同时我们是除了参赛队员和教练，我们是不允许有观众入场因为。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000057",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 54,
+            "SentenceId": 54,
+            "Start": 347860,
+            "End": 348990,
+            "Text": "这个还是防止。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000058",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 55,
+            "SentenceId": 55,
+            "Start": 348990,
+            "End": 353870,
+            "Text": "大人们，注意：观众入场一定要做好消毒还有防护。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000059",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 56,
+            "SentenceId": 56,
+            "Start": 353260,
+            "End": 359090,
+            "Text": "对，我我们这儿就是呃不不只允许一小部分人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000060",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 57,
+            "SentenceId": 57,
+            "Start": 359090,
+            "End": 359970,
+            "Text": "真，真的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000061",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 58,
+            "SentenceId": 58,
+            "Start": 359970,
+            "End": 362870,
+            "Text": "啊，然后。对对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000062",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 59,
+            "SentenceId": 59,
+            "Start": 361210,
+            "End": 370210,
+            "Text": "分机进场。对，对，分机进场然后大概就是三隔、隔三个人做一个就隔三个座位做一个人嘛。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000063",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 60,
+            "SentenceId": 60,
+            "Start": 369670,
+            "End": 373710,
+            "Text": "行，你地方会不会控的太大了？隔三个座位。咱们体育。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000064",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 61,
+            "SentenceId": 61,
+            "Start": 373710,
+            "End": 377750,
+            "Text": "厂能做多少人？平常大概能做两千人左右吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000065",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 62,
+            "SentenceId": 62,
+            "Start": 376700,
+            "End": 380070,
+            "Text": "有吗？两千人左右，他们来多少人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000066",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 63,
+            "SentenceId": 63,
+            "Start": 380070,
+            "End": 380710,
+            "Text": "一百个人吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000067",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 64,
+            "SentenceId": 64,
+            "Start": 380710,
+            "End": 383800,
+            "Text": "嗯，对。来几百个人？就是一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000068",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 65,
+            "SentenceId": 65,
+            "Start": 382280,
+            "End": 385250,
+            "Text": "就是那些，像咱们学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000069",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 66,
+            "SentenceId": 66,
+            "Start": 385250,
+            "End": 390360,
+            "Text": "都会反映，就是他们担心打贸易战了。这个问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000070",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 67,
+            "SentenceId": 67,
+            "Start": 390360,
+            "End": 399160,
+            "Text": "你下夏季放暑假的时候，不会有篮球场被占的情况呀。学生们都在家啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000071",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 68,
+            "SentenceId": 68,
+            "Start": 397160,
+            "End": 403620,
+            "Text": "这个让安保部门到时候做好，不让外教学生进入本校就行了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000072",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 69,
+            "SentenceId": 69,
+            "Start": 402030,
+            "End": 406350,
+            "Text": "对，这叫“”。这个好东西啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000073",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 70,
+            "SentenceId": 70,
+            "Start": 406350,
+            "End": 411770,
+            "Text": "因为，就是咱们开学嘛。都是……呀！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000074",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 71,
+            "SentenceId": 71,
+            "Start": 411770,
+            "End": 419890,
+            "Text": "不好准备。开学，开学的话是每个人要去做那个面试者啊！咱们是要给……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000075",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 72,
+            "SentenceId": 72,
+            "Start": 419890,
+            "End": 425400,
+            "Text": "那个安保部门，还有这个后勤部的预算呀。还有这个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000076",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 73,
+            "SentenceId": 73,
+            "Start": 425400,
+            "End": 428525,
+            "Text": "呃，食堂的、食堂的这个教职工们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000077",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 74,
+            "SentenceId": 74,
+            "Start": 426525,
+            "End": 429450,
+            "Text": "的，时常的这个教师们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000078",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 75,
+            "SentenceId": 75,
+            "Start": 429450,
+            "End": 433250,
+            "Text": "对，小偷税。不知道是只商户？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000079",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 76,
+            "SentenceId": 76,
+            "Start": 433250,
+            "End": 439375,
+            "Text": "对于，对于上学这个这十年毕业毕业生们。他们反需要拿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000080",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 77,
+            "SentenceId": 77,
+            "Start": 437375,
+            "End": 440125,
+            "Text": "那个他要拿毕业证。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000081",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 78,
+            "SentenceId": 78,
+            "Start": 438125,
+            "End": 440530,
+            "Text": "那个，他要拿毕业证。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000082",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 79,
+            "SentenceId": 79,
+            "Start": 440530,
+            "End": 441300,
+            "Text": "翻译成中文。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000083",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 80,
+            "SentenceId": 80,
+            "Start": 441300,
+            "End": 450700,
+            "Text": "就是，只要是进去到学生，我们都要去对他们进行这个监视者的测定。然后隔离一段时间。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000084",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 81,
+            "SentenceId": 81,
+            "Start": 450700,
+            "End": 462150,
+            "Text": "然后我们教主任就是对学生进行了调查，就是关于就是在一层比较现在还是比较严重的那种不明声管道的。就以这经常要打井儿啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000085",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 82,
+            "SentenceId": 82,
+            "Start": 462150,
+            "End": 465000,
+            "Text": "能够反掉的，等到说安保。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000086",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 83,
+            "SentenceId": 83,
+            "Start": 465000,
+            "End": 475130,
+            "Text": "和那个，或者说对学生的服务以及呃对学生的一些维护。然后不反着咱们就是要通过游戏的方式把。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000087",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 84,
+            "SentenceId": 84,
+            "Start": 475130,
+            "End": 489160,
+            "Text": "那你们那边教务处管的有没有登记表格之类的？哪个班是武汉呢，或者是被隔离的，或者是现在。咱们已经因为咱。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000088",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 85,
+            "SentenceId": 85,
+            "Start": 487830,
+            "End": 495700,
+            "Text": "咱们已经了，因为咱们学校就是在疫情期间。就是每天都需要十天打卡，然后等到就是三年。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000089",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 86,
+            "SentenceId": 86,
+            "Start": 495700,
+            "End": 502380,
+            "Text": "我们要是想返校的话，需要提前一周就到位。暑期还要进行打卡吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000090",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 87,
+            "SentenceId": 87,
+            "Start": 502380,
+            "End": 505700,
+            "Text": "需要打卡，打卡方式：一种类型。就是通过。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000091",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 88,
+            "SentenceId": 88,
+            "Start": 505700,
+            "End": 515010,
+            "Text": "咱们需要自己累，多打几次。单一次的话大概就十十多亿了嘛？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000092",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 89,
+            "SentenceId": 89,
+            "Start": 515010,
+            "End": 517830,
+            "Text": "每天都要打卡吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000093",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 90,
+            "SentenceId": 90,
+            "Start": 517830,
+            "End": 524000,
+            "Text": "一下自己要去的地方，嗯去哪儿些地方接触了。我、我接觸了那。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000094",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 91,
+            "SentenceId": 91,
+            "Start": 524000,
+            "End": 526930,
+            "Text": "呃，这个……现在变化特别大。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000095",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 92,
+            "SentenceId": 92,
+            "Start": 526930,
+            "End": 533710,
+            "Text": "哦，这个问题到时候给下边的辅导员或者同学代表班长。他们都会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000096",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 93,
+            "SentenceId": 93,
+            "Start": 533710,
+            "End": 536670,
+            "Text": "对，然后这周就爆表了。然后每天上报。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000097",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 94,
+            "SentenceId": 94,
+            "Start": 536670,
+            "End": 540990,
+            "Text": "嗯，你看一下。哪个英雄需要处理的？你注意一点啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000098",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 95,
+            "SentenceId": 95,
+            "Start": 540990,
+            "End": 545250,
+            "Text": "然后还有上半年这个食堂问题，是怎么说的？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000100",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 96,
+            "SentenceId": 96,
+            "Start": 545820,
+            "End": 566105,
+            "Text": "嗯，因为这个疫情呃我们学校不是没有开学吗？呃，这个食堂这些教职工租的这些地方就空闲下来了。因为，嗯没有人在学校嘛。但是这个卫生啊需要隔一段儿时间去打扫一下，因为要去消毒。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000101",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 97,
+            "SentenceId": 97,
+            "Start": 564105,
+            "End": 567750,
+            "Text": "扫一下，因为是消毒这项吗？呃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000103",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 98,
+            "SentenceId": 98,
+            "Start": 568000,
+            "End": 598000,
+            "Text": "消毒。去的话，有人去的话肯定是需要消毒的。就是对呃对是有学校学校里有时候呃要安排人去嗯检检查一下嘛啊所以就需要去咱们那个食堂里面哦食堂里面需要的人不太多但是但是一段时间就需要去打扫一下因为咱们疫情期间学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000104",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 99,
+            "SentenceId": 99,
+            "Start": 598000,
+            "End": 614370,
+            "Text": "都不在学校，呃食堂开设的比较那个窗口比较少。嗯对但是有有老师需要去就餐但但是开设的窗口比较少所以咱们学校呃上半年这个食堂的收入。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000105",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 100,
+            "SentenceId": 100,
+            "Start": 614310,
+            "End": 617350,
+            "Text": "有，裁员啊！客观。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000106",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 101,
+            "SentenceId": 101,
+            "Start": 616630,
+            "End": 621490,
+            "Text": "对，有就只开设了三个窗口。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000107",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 102,
+            "SentenceId": 102,
+            "Start": 620780,
+            "End": 624180,
+            "Text": "咱们这个食堂是以什么形式？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000108",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 103,
+            "SentenceId": 103,
+            "Start": 624180,
+            "End": 627720,
+            "Text": "人，你是属于他。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000109",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 104,
+            "SentenceId": 104,
+            "Start": 627720,
+            "End": 634110,
+            "Text": "外面承包，外包的吗？对外面承包了咱们。承包咱们食堂那个窗口。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000110",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 105,
+            "SentenceId": 105,
+            "Start": 634110,
+            "End": 635480,
+            "Text": "那。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000111",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 106,
+            "SentenceId": 106,
+            "Start": 635480,
+            "End": 647610,
+            "Text": "我想问一下：，这承包的这些客户他们是住在学校有专门的宿舍吗？还是他们住在学校外面每天都要进出学校。一"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000113",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 107,
+            "SentenceId": 107,
+            "Start": 647630,
+            "End": 662210,
+            "Text": "因为呃疫情期间不是每天都需要，呃老师们过来过来学校的。就是有一些事情安排的时候嗯就需要来一趟所以，咱们老师是不在学校住的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000114",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 108,
+            "SentenceId": 108,
+            "Start": 660920,
+            "End": 673965,
+            "Text": "有没有学校住的？食堂都是平房。有，没有那种就是在本地的但是也没有自己的房子也不在外边儿住就属于一城来叫他都会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000115",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 109,
+            "SentenceId": 109,
+            "Start": 671965,
+            "End": 674490,
+            "Text": "一般在小船多呗。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000116",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 110,
+            "SentenceId": 110,
+            "Start": 674490,
+            "End": 677480,
+            "Text": "这个，咱们开始。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000117",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 111,
+            "SentenceId": 111,
+            "Start": 677480,
+            "End": 685250,
+            "Text": "都跟老师协商过，呃可以有自愿、自愿想要住在教职工宿舍的也有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000118",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 112,
+            "SentenceId": 112,
+            "Start": 685250,
+            "End": 686130,
+            "Text": "也有咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000119",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 113,
+            "SentenceId": 113,
+            "Start": 686130,
+            "End": 691140,
+            "Text": "那他这个教职工宿舍的费用跟学生宿舍的费用。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000120",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 114,
+            "SentenceId": 114,
+            "Start": 691140,
+            "End": 696600,
+            "Text": "大一大，你像教职工的话呃他们的课业负担。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000121",
+        "SpeakerId": "speaker_5",
+        "Words": [
+          {
+            "Id": 115,
+            "SentenceId": 115,
+            "Start": 696600,
+            "End": 699790,
+            "Text": "哦，上半年咱学校。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000122",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 116,
+            "SentenceId": 116,
+            "Start": 699790,
+            "End": 706420,
+            "Text": "嗯，先说个今天早退了。这一块儿已经退出去了。这一块刚才财务部那边说已经撤。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000123",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 117,
+            "SentenceId": 117,
+            "Start": 706420,
+            "End": 709180,
+            "Text": "对呀，一半儿就直接到一半儿去那个出租房。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000124",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 118,
+            "SentenceId": 118,
+            "Start": 708460,
+            "End": 711820,
+            "Text": "书费。退到一半，书费是不用退的也得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000125",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 119,
+            "SentenceId": 119,
+            "Start": 711820,
+            "End": 719120,
+            "Text": "就是逻辑的啊，那种有学费的话也是。补学费也是一样一个在线上他们课是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000126",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 120,
+            "SentenceId": 120,
+            "Start": 719120,
+            "End": 725740,
+            "Text": "没有少，那个住宿费退一半。对，住宿费用一半是因为他一年住这这些年这一半年。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000127",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 121,
+            "SentenceId": 121,
+            "Start": 720995,
+            "End": 724495,
+            "Text": "对，一块。对不住我了，因为是一块是为他也是这。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000128",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 122,
+            "SentenceId": 122,
+            "Start": 725740,
+            "End": 729500,
+            "Text": "这个，这半个。嗯，我有一个那个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000129",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 123,
+            "SentenceId": 123,
+            "Start": 729500,
+            "End": 732270,
+            "Text": "那学生在这一块有反馈吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000130",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 124,
+            "SentenceId": 124,
+            "Start": 732100,
+            "End": 738260,
+            "Text": "有反面啊！一开始的时候，他们最开始的时候是他们要求的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000131",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 125,
+            "SentenceId": 125,
+            "Start": 737840,
+            "End": 740780,
+            "Text": "要求要全退。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000132",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 126,
+            "SentenceId": 126,
+            "Start": 740780,
+            "End": 756200,
+            "Text": "嗯，对。最后我们也就是呃这没什么合情合理的所以一个相互爱帮助的教育是出来的关于这个我也得说：还有就是嗯老师们的心资问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000133",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 127,
+            "SentenceId": 127,
+            "Start": 756200,
+            "End": 761100,
+            "Text": "由于，由于这个这半年咱们没有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000135",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 128,
+            "SentenceId": 128,
+            "Start": 761640,
+            "End": 764600,
+            "Text": "那个，不用设备。不用这个，不用教室。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000137",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 129,
+            "SentenceId": 129,
+            "Start": 765140,
+            "End": 775920,
+            "Text": "设备，所以水电省下来很多的经费。咱们可以在嗯用这些经费人加那个增加一些教学质量。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000138",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 130,
+            "SentenceId": 130,
+            "Start": 775920,
+            "End": 777900,
+            "Text": "嗯，不是叫甄子长啊。就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000139",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 131,
+            "SentenceId": 131,
+            "Start": 777900,
+            "End": 780970,
+            "Text": "这没什么，啊或者说是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000140",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 132,
+            "SentenceId": 132,
+            "Start": 780970,
+            "End": 800970,
+            "Text": "环境上的一些改变，改变。对但是你像现在咱们的老师他们的任务分为两个一个是授课啊一个是做自己的项目嗯这个方面的话就是项目方面呢是就我们能够也是尽量进行帮助然后在薪资方面吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000141",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 133,
+            "SentenceId": 133,
+            "Start": 800970,
+            "End": 819910,
+            "Text": "就是，晚上教呃晚上教课。老师可能会更加辛苦一些，因为常用电脑。所以说咱们学校的话，呃财务部是可以，就是按就是因为省下来这笔钱可以进行给老师一些嗯帮助吧？就相当于是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000142",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 134,
+            "SentenceId": 134,
+            "Start": 819910,
+            "End": 822830,
+            "Text": "呃，铁皮。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000143",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 135,
+            "SentenceId": 135,
+            "Start": 822830,
+            "End": 824330,
+            "Text": "直接知道，对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000144",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 136,
+            "SentenceId": 136,
+            "Start": 824330,
+            "End": 827200,
+            "Text": "有没有，就是属于那种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000145",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 137,
+            "SentenceId": 137,
+            "Start": 827200,
+            "End": 837250,
+            "Text": "之类的，给老师发一些东西。这个是什么？学校的饭局吗？传统的老方对因为咱们学校是唠所以说这有……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000146",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 138,
+            "SentenceId": 138,
+            "Start": 837250,
+            "End": 840790,
+            "Text": "没有，这个经费。这个后勤部一般都会送一些什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000147",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 139,
+            "SentenceId": 139,
+            "Start": 840790,
+            "End": 842610,
+            "Text": "嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000148",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 140,
+            "SentenceId": 140,
+            "Start": 842610,
+            "End": 858100,
+            "Text": "嗯，就是像过节的话就会送一些应应节的一些产品就比如月饼啊或者送一些粽子啊然后过年的话会送一些呃油啊这些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000149",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 141,
+            "SentenceId": 141,
+            "Start": 849500,
+            "End": 852270,
+            "Text": "月饼啊，或者一些粽子啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000150",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 142,
+            "SentenceId": 142,
+            "Start": 858100,
+            "End": 861100,
+            "Text": "这些还有饮料啊什么，然后那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000151",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 143,
+            "SentenceId": 143,
+            "Start": 861100,
+            "End": 863950,
+            "Text": "呃，教师教职工们都拿回家嘛。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000153",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 144,
+            "SentenceId": 144,
+            "Start": 864010,
+            "End": 866770,
+            "Text": "你像平时的话，可能教师在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000154",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 145,
+            "SentenceId": 145,
+            "Start": 866770,
+            "End": 870130,
+            "Text": "需要就餐的，呃餐点的话也是必须得有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000155",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 146,
+            "SentenceId": 146,
+            "Start": 870130,
+            "End": 876570,
+            "Text": "那这个学校就餐是属于，充卡里边儿还是直接用微信？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000156",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 147,
+            "SentenceId": 147,
+            "Start": 876570,
+            "End": 882700,
+            "Text": "现金的话不太好吗？我觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000157",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 148,
+            "SentenceId": 148,
+            "Start": 882700,
+            "End": 885460,
+            "Text": "现在年轻人比较少了，是吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000158",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 149,
+            "SentenceId": 149,
+            "Start": 885460,
+            "End": 897310,
+            "Text": "大部分都是一个方法，一直是用一卡通。因为老师也会配备嗯自己的卡。对，咱学校是属于呃两个方法一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000159",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 150,
+            "SentenceId": 150,
+            "Start": 897310,
+            "End": 900360,
+            "Text": "这就是一卡不，教职工和学生都有的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000160",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 151,
+            "SentenceId": 151,
+            "Start": 900360,
+            "End": 900810,
+            "Text": "不行。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000161",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 152,
+            "SentenceId": 152,
+            "Start": 900810,
+            "End": 907420,
+            "Text": "然后就是这个，哎呀妈！这个学校。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000162",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 153,
+            "SentenceId": 153,
+            "Start": 907420,
+            "End": 909480,
+            "Text": "是独立的，一个吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000163",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 154,
+            "SentenceId": 154,
+            "Start": 909480,
+            "End": 939480,
+            "Text": "咱们宿舍这方面的话，其实嗯其实是环境是比较好的。呃配备着配都是独立卫生间然后安装着空调啊这一段时间是完善了一下因为设备不是半年都宿舍空闲下来嘛？嗯这如果下半年要要如果下半年要开学的话我建议咱们这边儿是检查一下那些设。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000164",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 155,
+            "SentenceId": 155,
+            "Start": 939480,
+            "End": 947240,
+            "Text": "设备是否有损坏，或者呃放的那些腐坏了电路啊什么。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000165",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 156,
+            "SentenceId": 156,
+            "Start": 947240,
+            "End": 948470,
+            "Text": "需要去做检查一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000166",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 157,
+            "SentenceId": 157,
+            "Start": 948470,
+            "End": 951890,
+            "Text": "然后就是，行。那你直接到时候给财务部报一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000168",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 158,
+            "SentenceId": 158,
+            "Start": 951960,
+            "End": 956200,
+            "Text": "就说到这个下半年，因为上半年一直没有开学。然后"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000169",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 159,
+            "SentenceId": 159,
+            "Start": 956200,
+            "End": 958810,
+            "Text": "下半年，咱们要迎来新的那个招生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000170",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 160,
+            "SentenceId": 160,
+            "Start": 958810,
+            "End": 977235,
+            "Text": "然后因为明天现在也高考了嘛，呃九月份会有新的同学啊来我们的学校。然后我现在就觉得是我们应该去财务那里抽一部分钱，然后把大部分放在招生宣传和招生咨询上面。宣传一下我们学校。行这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000171",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 161,
+            "SentenceId": 161,
+            "Start": 975235,
+            "End": 982485,
+            "Text": "嗯，行。这个你到时候一个方案就是咱报一下或者现在有什么想法也可以说一说呀？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000172",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 162,
+            "SentenceId": 162,
+            "Start": 980485,
+            "End": 1009220,
+            "Text": "也可以说一下。想法就是先，嗯首先咱们那个宣传海报上一定要：咱们学校的首先是咱们的硬件、硬件设施。因为现在很多其实很多学校并不是说都配有空调。对。咱们学校既然有这个硬件的话就可以先说出来然后就咱们学校的教育，然后各种呃各种细节安全，然后绿化，然后食堂，然后……咱们呢？嗯，这些。首先，咱们学生反映。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000173",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 163,
+            "SentenceId": 163,
+            "Start": 1005345,
+            "End": 1008095,
+            "Text": "咱们呢，对对对这些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000174",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 164,
+            "SentenceId": 164,
+            "Start": 1009220,
+            "End": 1012350,
+            "Text": "作业，你自己各种什么条件吧？都是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000175",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 165,
+            "SentenceId": 165,
+            "Start": 1012350,
+            "End": 1019050,
+            "Text": "比较好的反映。那么有的男生，他比较关心宿舍会不会停电问题或者是能。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000176",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 166,
+            "SentenceId": 166,
+            "Start": 1019050,
+            "End": 1021820,
+            "Text": "是否使用像电饭煲之类的东西？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000177",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 167,
+            "SentenceId": 167,
+            "Start": 1021820,
+            "End": 1027945,
+            "Text": "这个其实为了安全，还是不建议说在它上这些大功率的电器。对不对？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000178",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 168,
+            "SentenceId": 168,
+            "Start": 1025945,
+            "End": 1031695,
+            "Text": "一些大功率的电器，对不建议使用。为了避免发生一些火。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000179",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 169,
+            "SentenceId": 169,
+            "Start": 1027445,
+            "End": 1032445,
+            "Text": "灾啥的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000180",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 170,
+            "SentenceId": 170,
+            "Start": 1030445,
+            "End": 1033945,
+            "Text": "发生一些火灾啥的。对，是啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000181",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 171,
+            "SentenceId": 171,
+            "Start": 1031945,
+            "End": 1041445,
+            "Text": "那啥呢？对，行。那每栋楼从上面都会放灭火器吗？对你有灭火器嘛？这个每栋楼。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000182",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 172,
+            "SentenceId": 172,
+            "Start": 1037195,
+            "End": 1039945,
+            "Text": "消防，对。你也不用我提醒了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000183",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 173,
+            "SentenceId": 173,
+            "Start": 1039445,
+            "End": 1042195,
+            "Text": "对，这个每栋楼。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000184",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 174,
+            "SentenceId": 174,
+            "Start": 1040195,
+            "End": 1046695,
+            "Text": "每幢楼层都会放置三个嗯灭火器地点。走到新的一"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000185",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 175,
+            "SentenceId": 175,
+            "Start": 1044695,
+            "End": 1051195,
+            "Text": "灭火器地点。等到新的一批学生开学之后，然后安宝那边会培训那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000186",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 176,
+            "SentenceId": 176,
+            "Start": 1049195,
+            "End": 1053445,
+            "Text": "会去那个消防演练。对，安保这边有技术。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000187",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 177,
+            "SentenceId": 177,
+            "Start": 1051445,
+            "End": 1057945,
+            "Text": "对，安保这边要进行消防演练。先看那还能不能使用？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000188",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 178,
+            "SentenceId": 178,
+            "Start": 1055945,
+            "End": 1060945,
+            "Text": "那我们合作，就是安排学生出行。呃，消防演习这。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000189",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 179,
+            "SentenceId": 179,
+            "Start": 1058945,
+            "End": 1070920,
+            "Text": "这个也让教导主任到时候去推广一下咱们学校之类的社团活动啊！也可以拉学生的兴趣或者什么学生部门儿啊组织一下这方面额活动。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000191",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 180,
+            "SentenceId": 180,
+            "Start": 1071150,
+            "End": 1080970,
+            "Text": "那就是，就需要咱们就是进行宣传了。因为每年都会在开学的，就是做完新生以后呢？因为这期完。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000192",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 181,
+            "SentenceId": 181,
+            "Start": 1080970,
+            "End": 1085180,
+            "Text": "我们举办一些活动，来介绍我们的社团以及学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000193",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 182,
+            "SentenceId": 182,
+            "Start": 1085180,
+            "End": 1087940,
+            "Text": "呃，素质。然后咱们可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000194",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 183,
+            "SentenceId": 183,
+            "Start": 1087940,
+            "End": 1099590,
+            "Text": "有很多选择吧，可以进行什么志愿者活动。还有进行就是科科协活动，就是相当于创新创业之类的。他们需要对于这方面有一个很大的。嗯是选。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000195",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 184,
+            "SentenceId": 184,
+            "Start": 1099590,
+            "End": 1108780,
+            "Text": "当然，这些可以把它放在咱们学校的官网上面。对，只有想报考的学生他们：点开网站就能直接获得全面的了解、直观的理解咱们学校。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000197",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 185,
+            "SentenceId": 185,
+            "Start": 1108920,
+            "End": 1113250,
+            "Text": "行，那宣传这方面、财务这边和经济需要。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000198",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 186,
+            "SentenceId": 186,
+            "Start": 1113250,
+            "End": 1117810,
+            "Text": "啊！不是晚餐，是中午。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000199",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 187,
+            "SentenceId": 187,
+            "Start": 1117810,
+            "End": 1120650,
+            "Text": "经济预算，这东西。他有经济预算。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000200",
+        "SpeakerId": "speaker_6",
+        "Words": [
+          {
+            "Id": 188,
+            "SentenceId": 188,
+            "Start": 1120490,
+            "End": 1123340,
+            "Text": "就是需要各部门。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000201",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 189,
+            "SentenceId": 189,
+            "Start": 1123340,
+            "End": 1126660,
+            "Text": "嗯，没有一个计划。大概知道多少钱？我给。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000202",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 190,
+            "SentenceId": 190,
+            "Start": 1126660,
+            "End": 1131820,
+            "Text": "哦，主要是招生办这边。他这边调我这块做出来的具体的计划。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000203",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 191,
+            "SentenceId": 191,
+            "Start": 1130400,
+            "End": 1133200,
+            "Text": "就是会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000204",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 192,
+            "SentenceId": 192,
+            "Start": 1133200,
+            "End": 1134690,
+            "Text": "是啊，财务这边。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000205",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 193,
+            "SentenceId": 193,
+            "Start": 1134690,
+            "End": 1137610,
+            "Text": "这不算。等他给你报，报呗？对然后我。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000206",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 194,
+            "SentenceId": 194,
+            "Start": 1136690,
+            "End": 1139540,
+            "Text": "们这边收费的话也是像你们今天。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000207",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 195,
+            "SentenceId": 195,
+            "Start": 1139540,
+            "End": 1140610,
+            "Text": "那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000208",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 196,
+            "SentenceId": 196,
+            "Start": 1140610,
+            "End": 1143530,
+            "Text": "像，后勤这边儿的话就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000209",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 197,
+            "SentenceId": 197,
+            "Start": 1143530,
+            "End": 1147400,
+            "Text": "是需要，嗯？需要重新检修一下吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000210",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 198,
+            "SentenceId": 198,
+            "Start": 1147400,
+            "End": 1155900,
+            "Text": "他那个校长，屁家里头都塞的宿舍热水忽冷忽热的那种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000212",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 199,
+            "SentenceId": 199,
+            "Start": 1156090,
+            "End": 1164025,
+            "Text": "这个是呃，宿舍水压的问题。嗯，你这个需要二次加压。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000213",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 200,
+            "SentenceId": 200,
+            "Start": 1162025,
+            "End": 1165310,
+            "Text": "吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000214",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 201,
+            "SentenceId": 201,
+            "Start": 1164790,
+            "End": 1173300,
+            "Text": "嗯，这个、这个是宿舍肯定会出现的问题。这个不是咱们硬件设施的问问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000215",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 202,
+            "SentenceId": 202,
+            "Start": 1173210,
+            "End": 1182055,
+            "Text": "那会不会在顶楼的学生，给他们安点太阳能之类的东西？如果顶楼供水它不足的话。这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000216",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 203,
+            "SentenceId": 203,
+            "Start": 1180055,
+            "End": 1191055,
+            "Text": "供水它不足的话，这个问题其实呃发生的时间少就。如果太多就是太多、太多人使用的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000217",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 204,
+            "SentenceId": 204,
+            "Start": 1189055,
+            "End": 1191805,
+            "Text": "那是高峰期的时候，会出现。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000218",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 205,
+            "SentenceId": 205,
+            "Start": 1189805,
+            "End": 1194055,
+            "Text": "高峰期的时候会出现。因为这个问题是比较少的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000219",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 206,
+            "SentenceId": 206,
+            "Start": 1192055,
+            "End": 1194970,
+            "Text": "高峰期的时候，可以就。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000220",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 207,
+            "SentenceId": 207,
+            "Start": 1194970,
+            "End": 1198900,
+            "Text": "就是在楼顶上安装一个，为了让学生们使用就更加方便。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000221",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 208,
+            "SentenceId": 208,
+            "Start": 1198900,
+            "End": 1211110,
+            "Text": "行，这个宣传主要还有校园环境吧？咱得用航拍仪航拍一下。这个安保部门儿：，这个还有跟后勤部门儿：，这个怎么处理校园环境啊？这什么地步！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000222",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 209,
+            "SentenceId": 209,
+            "Start": 1211110,
+            "End": 1214270,
+            "Text": "大方向之类的，或者什么。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000223",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 210,
+            "SentenceId": 210,
+            "Start": 1214270,
+            "End": 1231980,
+            "Text": "嗯，安保这边儿就是一个是会就定期的对这个校园内的一些设施检查。航拍这边的话，就是咱们有那个专门的无人机，呃，无人机去拍摄要有一个看地哦啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000224",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 211,
+            "SentenceId": 211,
+            "Start": 1231980,
+            "End": 1235810,
+            "Text": "那许多，许多咨询。咱们学校的学生现在就开始问：因为今年。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000225",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 212,
+            "SentenceId": 212,
+            "Start": 1235810,
+            "End": 1241170,
+            "Text": "疫情原因，然后咱们开学之后这些新生会不会有军训这个问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000226",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 213,
+            "SentenceId": 213,
+            "Start": 1241170,
+            "End": 1242350,
+            "Text": "反问，是不是应该。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000227",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 214,
+            "SentenceId": 214,
+            "Start": 1242350,
+            "End": 1248475,
+            "Text": "我问一下，军训有吗？军事方面肯定是要军训的。这个是重点儿啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000228",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 215,
+            "SentenceId": 215,
+            "Start": 1246475,
+            "End": 1251475,
+            "Text": "那，这人员聚集不会太大吗？我们可以考虑。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000229",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 216,
+            "SentenceId": 216,
+            "Start": 1249475,
+            "End": 1258320,
+            "Text": "一下军训的时间。可以开学之后放在这个学期末，或者……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000231",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 217,
+            "SentenceId": 217,
+            "Start": 1258700,
+            "End": 1261500,
+            "Text": "是，就将军训的王猛退。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000232",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 218,
+            "SentenceId": 218,
+            "Start": 1261500,
+            "End": 1263490,
+            "Text": "对呀。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000233",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 219,
+            "SentenceId": 219,
+            "Start": 1263490,
+            "End": 1267365,
+            "Text": "可以直，是吧？就是没有取消。但是是可以直。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000234",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 220,
+            "SentenceId": 220,
+            "Start": 1265365,
+            "End": 1268600,
+            "Text": "但是，推迟。因为是军训这个事国家规定。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000235",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 221,
+            "SentenceId": 221,
+            "Start": 1268600,
+            "End": 1271230,
+            "Text": "是，必须要参加。好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000236",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 222,
+            "SentenceId": 222,
+            "Start": 1271230,
+            "End": 1283355,
+            "Text": "那招生办这方面，如果要军训的话有什么新颖的活动之类的？可以吸引学生。他们毕竟有的学生呢比较恐惧军训吧！你像学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000237",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 223,
+            "SentenceId": 223,
+            "Start": 1281355,
+            "End": 1289660,
+            "Text": "句型是吧？你像学生，像我反映就是，在军训的时候他们教我们给买西瓜。呃这个行为的话就会特别受。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000238",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 224,
+            "SentenceId": 224,
+            "Start": 1289660,
+            "End": 1292800,
+            "Text": "我觉得，呃喜爱。然后。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000239",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 225,
+            "SentenceId": 225,
+            "Start": 1292800,
+            "End": 1295925,
+            "Text": "如果学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000240",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 226,
+            "SentenceId": 226,
+            "Start": 1293925,
+            "End": 1305675,
+            "Text": "对这方面有反馈，肯定会跟那些教官提前都说好。就是也不要说是为了军训而军训，应该在训练的过程中。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000241",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 227,
+            "SentenceId": 227,
+            "Start": 1303675,
+            "End": 1310175,
+            "Text": "增加一个。就是本来大家都是刚来嘛，在军训过程当中。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000242",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 228,
+            "SentenceId": 228,
+            "Start": 1308175,
+            "End": 1315425,
+            "Text": "对，然后关系更融洽一点。多认识一些朋友、熟悉这个班级、熟悉这个大环境。小王同样也是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000243",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 229,
+            "SentenceId": 229,
+            "Start": 1313425,
+            "End": 1317080,
+            "Text": "对，小白同样也是军训的目的了。就是为了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000244",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 230,
+            "SentenceId": 230,
+            "Start": 1317080,
+            "End": 1323600,
+            "Text": "就是锻炼什么意志。这个方面的话，咱们是必须要做到最好了，因为对于……对于。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000245",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 231,
+            "SentenceId": 231,
+            "Start": 1323600,
+            "End": 1327020,
+            "Text": "学生来说，咱们一个综合素质。其实……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000246",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 232,
+            "SentenceId": 232,
+            "Start": 1327020,
+            "End": 1331940,
+            "Text": "居然学车。对于那些刁人呢，咱们也是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000247",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 233,
+            "SentenceId": 233,
+            "Start": 1331940,
+            "End": 1338550,
+            "Text": "需要管理的，这就需要咱们招生办的话。可能政策不一样了，就是对于一些条件咱比较有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000249",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 234,
+            "SentenceId": 234,
+            "Start": 1338830,
+            "End": 1346950,
+            "Text": "不一定。那你这个教授这高教官，是从学校、军校里头招呢？还是从……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000250",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 235,
+            "SentenceId": 235,
+            "Start": 1346950,
+            "End": 1352070,
+            "Text": "咱们学校的话，咱们学校的国防生呢话是现在也基本上没有了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000251",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 236,
+            "SentenceId": 236,
+            "Start": 1352070,
+            "End": 1354830,
+            "Text": "所以说，感觉教官只能是去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000252",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 237,
+            "SentenceId": 237,
+            "Start": 1354830,
+            "End": 1355820,
+            "Text": "就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000253",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 238,
+            "SentenceId": 238,
+            "Start": 1355820,
+            "End": 1358945,
+            "Text": "城市里的那个外币吧，就是你像。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000254",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 239,
+            "SentenceId": 239,
+            "Start": 1356945,
+            "End": 1365795,
+            "Text": "卖票嘛，就是你像消防、消防队的他们的队员也会，就是作为教官来参加这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000255",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 240,
+            "SentenceId": 240,
+            "Start": 1363795,
+            "End": 1369600,
+            "Text": "嗯，也可以招一些这个当届的退伍兵。啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000256",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 241,
+            "SentenceId": 241,
+            "Start": 1369280,
+            "End": 1372405,
+            "Text": "有经验的。对，对我比较。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000257",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 242,
+            "SentenceId": 242,
+            "Start": 1370405,
+            "End": 1376675,
+            "Text": "对，退伍兵的话也。他们也有着也愿意吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000258",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 243,
+            "SentenceId": 243,
+            "Start": 1374675,
+            "End": 1383515,
+            "Text": "呢，对你像网上反馈很好的那些什么“帅一些小哥哥”做教班的话。他也是评价不错啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000259",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 244,
+            "SentenceId": 244,
+            "Start": 1381515,
+            "End": 1389010,
+            "Text": "他也是退伍兵。那如果退伍兵会不会，如果年龄比较大的话？比方说像三十多岁有不同。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000260",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 245,
+            "SentenceId": 245,
+            "Start": 1389010,
+            "End": 1394360,
+            "Text": "咱们主要招收的还是青年教官，因为他需要有非常我们学校的一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000261",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 246,
+            "SentenceId": 246,
+            "Start": 1394360,
+            "End": 1401985,
+            "Text": "那他青年教官会不会没有经验呢？相对于老兵来说，经验较少。主要招的是这种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000262",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 247,
+            "SentenceId": 247,
+            "Start": 1399985,
+            "End": 1419590,
+            "Text": "当，就是当届的退伍兵啊。就比如说他是士官或者什么？呃，当届的退伍回来的一些士兵都符合要求又，就是岁数也没有那么大，就是也也能比较有经验一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000263",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 248,
+            "SentenceId": 248,
+            "Start": 1419590,
+            "End": 1439590,
+            "Text": "我现在需要这个招生办最终确定，这个最后招收、最终招中的人数。还要提前向他们查询他们的身高体重或者穿衣服的呃尺寸号码。我需要提前在他们开始前就向往这个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000264",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 249,
+            "SentenceId": 249,
+            "Start": 1439590,
+            "End": 1457950,
+            "Text": "服装生产厂家。制定，定的方案吗？这个到时候你和那个客户、或者一个厂长一起商量一下吧。对不对？好名单之后我们再上那个服装生产厂家。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000265",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 250,
+            "SentenceId": 250,
+            "Start": 1457950,
+            "End": 1474030,
+            "Text": "也可以看看招的是什么军官，海军啊、空军呀。一般这陆军系列的比较多，对。也可以整点新颖的：，一些海军空军。因为海兵和空军呢一合一个。这个的话是他们嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000266",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 251,
+            "SentenceId": 251,
+            "Start": 1474030,
+            "End": 1479040,
+            "Text": "主要还是因为，因为他们这个财务可能就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000267",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 252,
+            "SentenceId": 252,
+            "Start": 1479040,
+            "End": 1482915,
+            "Text": "步兵的这个，步兵的训练方式可能更。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000268",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 253,
+            "SentenceId": 253,
+            "Start": 1480915,
+            "End": 1485915,
+            "Text": "适合于咱们这些学生。空间。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000269",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 254,
+            "SentenceId": 254,
+            "Start": 1483915,
+            "End": 1487910,
+            "Text": "学生。那你们对军训这方面有什么方案呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000270",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 255,
+            "SentenceId": 255,
+            "Start": 1487910,
+            "End": 1496030,
+            "Text": "我建议，我建议咱们可以呃。为了提升他们的军训质量呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000271",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 256,
+            "SentenceId": 256,
+            "Start": 1496030,
+            "End": 1513940,
+            "Text": "兴趣吧，呃坚坚持一天下来挺累的。可以晚上的时候嗯一两个小时吧适当让他们教官和学生一块儿对玩一下一个小游戏啊或者呃叫他们唱歌啊就可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000272",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 257,
+            "SentenceId": 257,
+            "Start": 1513940,
+            "End": 1519960,
+            "Text": "还有，可以让军训完以后给他们举行一个表演赛。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000273",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 258,
+            "SentenceId": 258,
+            "Start": 1519960,
+            "End": 1523240,
+            "Text": "对，分出来好了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000274",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 259,
+            "SentenceId": 259,
+            "Start": 1521640,
+            "End": 1524500,
+            "Text": "哎，好的。军训会了？对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000275",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 260,
+            "SentenceId": 260,
+            "Start": 1523590,
+            "End": 1534080,
+            "Text": "对，属于军训会演。让他们这样打打击他们的积极性，然后促进他们就是想好好的表演，在给咱们有一个奖项。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000276",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 261,
+            "SentenceId": 261,
+            "Start": 1534080,
+            "End": 1540480,
+            "Text": "这方面，就是你们稍微操心。还有就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000277",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 262,
+            "SentenceId": 262,
+            "Start": 1540480,
+            "End": 1547780,
+            "Text": "学生，咱们学校比较热门的这专业是什么呀？叫什么。学生报得比较多的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000278",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 263,
+            "SentenceId": 263,
+            "Start": 1547760,
+            "End": 1550550,
+            "Text": "它都是计算机了，因为现在周一是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000279",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 264,
+            "SentenceId": 264,
+            "Start": 1550550,
+            "End": 1555260,
+            "Text": "比较好，机赛机这些的比较好。不过还有软件。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000280",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 265,
+            "SentenceId": 265,
+            "Start": 1555260,
+            "End": 1564650,
+            "Text": "那它会不会？如果计算机人报的太多的话，他以后反而不好找工作。就是特别没有市场了嘛！因为现在讲大形势。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000281",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 266,
+            "SentenceId": 266,
+            "Start": 1564650,
+            "End": 1567590,
+            "Text": "就是这样的，因为影视这个不单是吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000282",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 267,
+            "SentenceId": 267,
+            "Start": 1567590,
+            "End": 1572140,
+            "Text": "对，因为，在高科技方面，他们国家下力也是比较大的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000283",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 268,
+            "SentenceId": 268,
+            "Start": 1572140,
+            "End": 1572760,
+            "Text": "对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000284",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 269,
+            "SentenceId": 269,
+            "Start": 1572760,
+            "End": 1581345,
+            "Text": "说这方面，咱们这儿考证是要考。考证属于是毕业以后让他们自己考的还是学校安排呢？他们三。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000285",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 270,
+            "SentenceId": 270,
+            "Start": 1579345,
+            "End": 1583595,
+            "Text": "还是学校安排呢？咱们在学校，自己的话也是有要求。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000286",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 271,
+            "SentenceId": 271,
+            "Start": 1581595,
+            "End": 1584345,
+            "Text": "学校都会提供。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000287",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 272,
+            "SentenceId": 272,
+            "Start": 1582345,
+            "End": 1586300,
+            "Text": "机会，然后学生自愿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000288",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 273,
+            "SentenceId": 273,
+            "Start": 1586300,
+            "End": 1588520,
+            "Text": "但是，咱们也会。就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000289",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 274,
+            "SentenceId": 274,
+            "Start": 1588520,
+            "End": 1594115,
+            "Text": "像他们毕业以后，咱们也会做一定的要求。像咱。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000290",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 275,
+            "SentenceId": 275,
+            "Start": 1592115,
+            "End": 1609030,
+            "Text": "像咱们学校的话，嗯后勤这边可以呃有安排很多那个计算机啊、计算机设备的教室。呃这方面是咱们学校的优势嘛？所以报咱们学校这个专业的就比较多。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000291",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 276,
+            "SentenceId": 276,
+            "Start": 1608630,
+            "End": 1612960,
+            "Text": "那这个计算机老师会不会人手配备一台笔记本？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000292",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 277,
+            "SentenceId": 277,
+            "Start": 1612850,
+            "End": 1620970,
+            "Text": "这个电脑的话，是大家需要免费要提供。因为咱们实验室里也有用。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000293",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 278,
+            "SentenceId": 278,
+            "Start": 1620780,
+            "End": 1623860,
+            "Text": "咱们都在实验室里面配备着。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000294",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 279,
+            "SentenceId": 279,
+            "Start": 1623860,
+            "End": 1632770,
+            "Text": "教师用的专用的呃，设备。对因为做项目需要的条件不是特别好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000295",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 280,
+            "SentenceId": 280,
+            "Start": 1632770,
+            "End": 1639180,
+            "Text": "那上一季度，这边财务也报表了说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000296",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 281,
+            "SentenceId": 281,
+            "Start": 1639180,
+            "End": 1641970,
+            "Text": "没有什么，开车。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000297",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 282,
+            "SentenceId": 282,
+            "Start": 1641970,
+            "End": 1650150,
+            "Text": "下一季度，咱们可以把这些省下的开销用来学生。那咱们学校用摄影校服吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000298",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 283,
+            "SentenceId": 283,
+            "Start": 1649280,
+            "End": 1653170,
+            "Text": "像普通话，大学去。但是比较少是吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000299",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 284,
+            "SentenceId": 284,
+            "Start": 1652540,
+            "End": 1655790,
+            "Text": "不需要，因为你像在对学生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000300",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 285,
+            "SentenceId": 285,
+            "Start": 1655790,
+            "End": 1656690,
+            "Text": "我看的是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000301",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 286,
+            "SentenceId": 286,
+            "Start": 1656690,
+            "End": 1660210,
+            "Text": "那会有戏服之类的吗？，戏服的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000302",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 287,
+            "SentenceId": 287,
+            "Start": 1660210,
+            "End": 1664160,
+            "Text": "只是会在特殊场合，就是运动会啊和三一四。但是"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000303",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 288,
+            "SentenceId": 288,
+            "Start": 1664160,
+            "End": 1669200,
+            "Text": "其实我觉得，衣服像学校。其实有准备就行到那天的时候。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000304",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 289,
+            "SentenceId": 289,
+            "Start": 1669200,
+            "End": 1671780,
+            "Text": "发下去就行，不用说在每个人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000305",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 290,
+            "SentenceId": 290,
+            "Start": 1671780,
+            "End": 1674890,
+            "Text": "定一套，没有必要。不所有人都有厂。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000306",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 291,
+            "SentenceId": 291,
+            "Start": 1672900,
+            "End": 1681500,
+            "Text": "准备，准备一些就可以了。而且这个对这个人是长远的，一直都可以备用。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000307",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 292,
+            "SentenceId": 292,
+            "Start": 1675840,
+            "End": 1678890,
+            "Text": "对，一些费用。这个也是成。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000308",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 293,
+            "SentenceId": 293,
+            "Start": 1681500,
+            "End": 1682580,
+            "Text": "那咱们学校。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000309",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 294,
+            "SentenceId": 294,
+            "Start": 1682580,
+            "End": 1689080,
+            "Text": "如果举办运动会的话，是在本校举行呢？还是就比如说迎新生运动会。咱们本科操。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000310",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 295,
+            "SentenceId": 295,
+            "Start": 1689080,
+            "End": 1695070,
+            "Text": "是，因为其中反对党的呃嗯被动会反对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000311",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 296,
+            "SentenceId": 296,
+            "Start": 1695070,
+            "End": 1697870,
+            "Text": "在本校办也比较好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000312",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 297,
+            "SentenceId": 297,
+            "Start": 1697010,
+            "End": 1699840,
+            "Text": "毕竟安全。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000313",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 298,
+            "SentenceId": 298,
+            "Start": 1699200,
+            "End": 1702240,
+            "Text": "行了，这个安保不做。你是有什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000314",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 299,
+            "SentenceId": 299,
+            "Start": 1701740,
+            "End": 1731740,
+            "Text": "安排？安保就呢，一个是保证这个：因为运动会呃难免会出现一些学生中暑。嗯，这个也会及时的向这财务部门申报去购置一些这个清凉解暑物品；再一个就是，准备一些药品防止这些学生的就是运运动拉伤啊或者是碰撞呀之类的，就是产生这一系列不必要的受伤。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000315",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 300,
+            "SentenceId": 300,
+            "Start": 1731200,
+            "End": 1740860,
+            "Text": "那这方面让教务主任去给下边的导员说一声吧，让他们采购一些西瓜之类的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000316",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 301,
+            "SentenceId": 301,
+            "Start": 1731740,
+            "End": 1733200,
+            "Text": "那这方面。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000317",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 302,
+            "SentenceId": 302,
+            "Start": 1740860,
+            "End": 1746320,
+            "Text": "这个不需要不清楚，爸爸妈妈。因为我们时常都会听习惯似的写。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000318",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 303,
+            "SentenceId": 303,
+            "Start": 1746320,
+            "End": 1750030,
+            "Text": "嗯，然后最好再找几个男同学去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000319",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 304,
+            "SentenceId": 304,
+            "Start": 1749900,
+            "End": 1762740,
+            "Text": "现在，然后财务。现在呃不是，现在交付部有一个问题就是：咱们的软件需要更新了。软件也需要更新啊！对像一个软件的话，它现在最新的软件都是花。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000320",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 305,
+            "SentenceId": 305,
+            "Start": 1757025,
+            "End": 1760525,
+            "Text": "软件需要更新了。对，你像一个软件的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000321",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 306,
+            "SentenceId": 306,
+            "Start": 1762740,
+            "End": 1772120,
+            "Text": "上风险了，然后这就需要向财务进行报款。因为感觉一个实验室不大一个小的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000322",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 307,
+            "SentenceId": 307,
+            "Start": 1772120,
+            "End": 1776840,
+            "Text": "可以，那你你定一个表格。然后价格不要定的很高。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000323",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 308,
+            "SentenceId": 308,
+            "Start": 1776440,
+            "End": 1779510,
+            "Text": "哦，因为价格的话，这不是咱们需要。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000324",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 309,
+            "SentenceId": 309,
+            "Start": 1779510,
+            "End": 1785280,
+            "Text": "是咱们，就是你可以直接向公司进行购买。想。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000325",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 310,
+            "SentenceId": 310,
+            "Start": 1785280,
+            "End": 1789905,
+            "Text": "那其他人还有什么意见吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000326",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 311,
+            "SentenceId": 311,
+            "Start": 1787905,
+            "End": 1791405,
+            "Text": "安保就那么用了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000327",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 312,
+            "SentenceId": 312,
+            "Start": 1789405,
+            "End": 1794250,
+            "Text": "嗯，不我就那没有了。招生办这边儿没有就筹备一下新学期的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000328",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 313,
+            "SentenceId": 313,
+            "Start": 1794250,
+            "End": 1796290,
+            "Text": "宣传海报，招生。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000329",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 314,
+            "SentenceId": 314,
+            "Start": 1796290,
+            "End": 1799220,
+            "Text": "行，那你做一个报表。到时候报给财务了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000330",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 315,
+            "SentenceId": 315,
+            "Start": 1799220,
+            "End": 1801410,
+            "Text": "好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000331",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 316,
+            "SentenceId": 316,
+            "Start": 1801410,
+            "End": 1806210,
+            "Text": "后勤这边儿工作，呃就没有了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000332",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 317,
+            "SentenceId": 317,
+            "Start": 1806210,
+            "End": 1811090,
+            "Text": "行，叫主人也没法。没有下一个操作。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000333",
+        "SpeakerId": "speaker_5",
+        "Words": [
+          {
+            "Id": 318,
+            "SentenceId": 318,
+            "Start": 1811090,
+            "End": 1815820,
+            "Text": "行，那明天这场会议我先看到这儿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000334",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 319,
+            "SentenceId": 319,
+            "Start": 1815820,
+            "End": 1835820,
+            "Text": "嗯，下去之后这个呃副院长这边把所有部门的控制和监督好安排好行吧？需要什么问题啊对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000336",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 320,
+            "SentenceId": 320,
+            "Start": 1855820,
+            "End": 1862276,
+            "Text": "不行，行不行？"
+          }
+        ]
+      }
+    ]
+  }
+}

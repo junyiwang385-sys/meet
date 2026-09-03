@@ -1,0 +1,3170 @@
+{
+  "TaskId": "mtg_8b7f7f52dad0ab2c",
+  "Transcription": {
+    "AudioInfo": {
+      "Duration": 2040388,
+      "SourceAudio": "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200709_L_R002S08C01/01_segments/input_mono16k.wav"
+    },
+    "Paragraphs": [
+      {
+        "ParagraphId": "seg-000002",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 1,
+            "SentenceId": 1,
+            "Start": 34340,
+            "End": 39960,
+            "Text": "零零二我是总经理，零二六是销售部。零二二我是法务。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000003",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 2,
+            "SentenceId": 2,
+            "Start": 39960,
+            "End": 41960,
+            "Text": "人家有事，忙不。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000004",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 3,
+            "SentenceId": 3,
+            "Start": 41960,
+            "End": 45835,
+            "Text": "二三五，零二四总监。零幺四人事部。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000005",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 4,
+            "SentenceId": 4,
+            "Start": 43835,
+            "End": 47040,
+            "Text": "五加零幺四，人是股。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000006",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 5,
+            "SentenceId": 5,
+            "Start": 47040,
+            "End": 48350,
+            "Text": "嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000007",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 6,
+            "SentenceId": 6,
+            "Start": 48350,
+            "End": 54390,
+            "Text": "挺好的。今天咱们主要就是商讨一下这个行业活动，然后咱……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000008",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 7,
+            "SentenceId": 7,
+            "Start": 54390,
+            "End": 55230,
+            "Text": "嗯，工业这边。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000009",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 8,
+            "SentenceId": 8,
+            "Start": 55230,
+            "End": 85230,
+            "Text": "对，由于我们上半嗯这一年已经忙忙碌碌、辛辛苦苦的不过了。最后在这个快要结束这一年工作的情况下，我们上面考虑了一下要给大家放一个十五天的这个长假。好好好同意！同意同意同意那现在我们就把大家召过来就是想询问一下因为这个假期嘛是为我们大家考虑的就是想问一下大家的意见：是想怎么度过这个假期？是想我们公司。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000010",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 9,
+            "SentenceId": 9,
+            "Start": 70445,
+            "End": 74215,
+            "Text": "长假。好，好好同意！同意同意同意那现在我们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000011",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 10,
+            "SentenceId": 10,
+            "Start": 85230,
+            "End": 88380,
+            "Text": "自组织一个团建，团建。还是说？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000012",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 11,
+            "SentenceId": 11,
+            "Start": 86390,
+            "End": 89515,
+            "Text": "环境，还是说？嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000013",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 12,
+            "SentenceId": 12,
+            "Start": 87515,
+            "End": 93490,
+            "Text": "肯定团建呀，团建啊！出去玩儿啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000014",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 13,
+            "SentenceId": 13,
+            "Start": 91620,
+            "End": 95830,
+            "Text": "部门。哎，这两个部门有没有什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000015",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 14,
+            "SentenceId": 14,
+            "Start": 95830,
+            "End": 107750,
+            "Text": "别的意见。哎呀，我其实有一个大家嗯没有说到的我个人想到的一个建议：我们可以去敬老院做一。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000016",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 15,
+            "SentenceId": 15,
+            "Start": 107750,
+            "End": 113540,
+            "Text": "接爱心服务，做十五天的敬老院。爱心服务我觉得我不能接受。对我也不能介受。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000017",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 16,
+            "SentenceId": 16,
+            "Start": 111540,
+            "End": 116930,
+            "Text": "我不能接受。对，我也不能接受。我觉得我的工作压力挺大的，我想出去放松放松。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000019",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 17,
+            "SentenceId": 17,
+            "Start": 117450,
+            "End": 120990,
+            "Text": "其实，我们可以换一个角度来思考这个问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000020",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 18,
+            "SentenceId": 18,
+            "Start": 120990,
+            "End": 127360,
+            "Text": "嗯，敬老院那些老人他们其实非常的孤独。孩子们都忙于工作。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000021",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 19,
+            "SentenceId": 19,
+            "Start": 127360,
+            "End": 130350,
+            "Text": "其实我们个人来讲的话，可能我。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000022",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 20,
+            "SentenceId": 20,
+            "Start": 130350,
+            "End": 132970,
+            "Text": "我们对自己的老人，也在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000023",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 21,
+            "SentenceId": 21,
+            "Start": 132970,
+            "End": 136210,
+            "Text": "这一方面，有一些书籍。我们就把……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000024",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 22,
+            "SentenceId": 22,
+            "Start": 136210,
+            "End": 139900,
+            "Text": "他当成是对我们自己祖辈或者父辈。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000025",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 23,
+            "SentenceId": 23,
+            "Start": 139900,
+            "End": 149140,
+            "Text": "的一个孝顺，来做的话。我们换一种思维去做一些爱心的活动去做善事。因为我们因为我们的公司。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000026",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 24,
+            "SentenceId": 24,
+            "Start": 147140,
+            "End": 177140,
+            "Text": "因为我们，因为我们公司其实像这些福利活动啊。这个爱心捐助我们每年都有定期在做。所以我觉得为期一个十五期的一个长假对于我们员工来说其实是一个很好的调节的一个时间。所以我仅代表我们各部门儿：，我们这个部门意见是——其实我打算大家好好出去报送一下。因为团建是公司报销总部报销咱们公司也不是在咱的这个运营费里面。所以我又大胆一点说：“其实我想每个大家去北极玩。”这是我的想法。去哪里？去哪里？北京一极。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000027",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 25,
+            "SentenceId": 25,
+            "Start": 174390,
+            "End": 177515,
+            "Text": "是我的想法。去哪里？去哪里呀！被击毙。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000028",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 26,
+            "SentenceId": 26,
+            "Start": 176760,
+            "End": 181385,
+            "Text": "北极，是不是有点让人接受不了啊？那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000029",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 27,
+            "SentenceId": 27,
+            "Start": 177140,
+            "End": 178060,
+            "Text": "飞机。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000030",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 28,
+            "SentenceId": 28,
+            "Start": 179385,
+            "End": 199520,
+            "Text": "因为什么？因为我们常规的旅行啊，就国内、国外。其实我们个人都可以去。但是就这个氛围而言，这个……这个——这个资金问题而言，其实我比较想去北极这种地方。因为是公司报销嘛！其实我个人压力可能会小一点。所以平时去不到的地方对会想法可能会大打一些只是我的想法。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000031",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 29,
+            "SentenceId": 29,
+            "Start": 193095,
+            "End": 195845,
+            "Text": "小一点，所以平时去不到的地方。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000032",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 30,
+            "SentenceId": 30,
+            "Start": 199520,
+            "End": 204370,
+            "Text": "之所以提出去敬老院呢，是因为我看过一个报道：一个呃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000033",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 31,
+            "SentenceId": 31,
+            "Start": 204370,
+            "End": 207130,
+            "Text": "就是非常非常有钱的人，嗯他。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000034",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 32,
+            "SentenceId": 32,
+            "Start": 207130,
+            "End": 211020,
+            "Text": "去敬老院，做了呃一个星期的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000035",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 33,
+            "SentenceId": 33,
+            "Start": 211020,
+            "End": 216750,
+            "Text": "服务。他说：“我做，我这一辈子从来没有做过的事情。”平常都是依赖。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000036",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 34,
+            "SentenceId": 34,
+            "Start": 216750,
+            "End": 219580,
+            "Text": "伸手，换来张口的。因为他家。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000037",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 35,
+            "SentenceId": 35,
+            "Start": 219580,
+            "End": 229930,
+            "Text": "家里有佣人，单位呢也有秘书。所以它基本上没有自己洗过衣服、没有自自己去做过一顿饭。当它去问一些敬老院的老人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000038",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 36,
+            "SentenceId": 36,
+            "Start": 229930,
+            "End": 232660,
+            "Text": "服务去刷他们的那些裤子啊，帮他们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000039",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 37,
+            "SentenceId": 37,
+            "Start": 232660,
+            "End": 252875,
+            "Text": "洗，洗头帮他们剪指甲的时候。他真的体验到了不一样的人生：当他与病患为伍的时候；他感觉到了自己健康的珍贵；当她以老人为伍的时候……他真的感觉到了青春的可贵。所以其实我觉得这一次我们去呃有这么十五天的时间我想。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000040",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 38,
+            "SentenceId": 38,
+            "Start": 250875,
+            "End": 279875,
+            "Text": "我想，我想针对你刚刚说的这个就提问一下。就是你你想我们公司这些人呃就像你说的那些情况我们现在年轻人对这个父母啊孝顺这方面有一些纰漏他怎么可能会想要去这个敬老院？去给别人家的这个爷爷奶奶去洗裤子啊或者换洗什么衣服啊！这一方面肯定是会做到那个照顾不周的，所以嗯并。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000041",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 39,
+            "SentenceId": 39,
+            "Start": 277875,
+            "End": 303130,
+            "Text": "周的，所以呃，并不需要他们。嗯，其实一人有有一天的时间或者有一个小时跟老人的一个聊天。嗯，坐在他的对面促膝交谈、嗯去看着老人的脸握着老人的手就听他说话。其实这也是对年轻人包括对老年人这是一个非常珍贵的一个经历但是我觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000042",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 40,
+            "SentenceId": 40,
+            "Start": 301230,
+            "End": 331230,
+            "Text": "一个经历，但是我觉得其实赡养老人是我们每个人必经的一个阶段。我们可以提前实践，但我觉得没有必要拿十五天这个假期去换一下这样。然后可能我们公司是一个比较年轻的公司，大家年龄段儿可能比较偏年轻，但是也有这些年长的他们上有父母下有孩子，他们平时就是在做这些日常的事情。如果我们在这个长假的时期以这种公益之种来绑架个人，他们去做他们日复一日都在做的一个事情我"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000043",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 41,
+            "SentenceId": 41,
+            "Start": 331230,
+            "End": 333720,
+            "Text": "觉得对这部分员工其实是不太公平的。其实。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000044",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 42,
+            "SentenceId": 42,
+            "Start": 332230,
+            "End": 341500,
+            "Text": "其实是不太公平。其实我觉得，并没有一个员工据我了解，日不一日去做这个孝顺老人工作；相反，正是老人在照顾着他们的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000045",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 43,
+            "SentenceId": 43,
+            "Start": 341500,
+            "End": 344300,
+            "Text": "日常生活，帮他们带孩子、给他们做饭。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000046",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 44,
+            "SentenceId": 44,
+            "Start": 344300,
+            "End": 355230,
+            "Text": "他们洗衣服，做家务。而他们只是坐享其成根本就没有过孝顺老人或者陪伴老人的这样子样的机会或者说从来没有为自己创造过的这样的一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000047",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 45,
+            "SentenceId": 45,
+            "Start": 353940,
+            "End": 357260,
+            "Text": "那为什么十五天大家？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000048",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 46,
+            "SentenceId": 46,
+            "Start": 355380,
+            "End": 365075,
+            "Text": "那为什么十五天在家陪自己的这些爷爷奶奶，然后去那些陪、去那些根本就没有照顾自己的人呢？这个就很奇怪了。我觉得其实……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000049",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 47,
+            "SentenceId": 47,
+            "Start": 363075,
+            "End": 365825,
+            "Text": "奇怪了，我觉着其实。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000050",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 48,
+            "SentenceId": 48,
+            "Start": 363825,
+            "End": 377075,
+            "Text": "我我觉得其实，其实可以在敬老院待一天。然后选择意的是：待一天或者待呃三到五天这样的时间，然后回家去照顾自己的家人。我想觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000051",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 49,
+            "SentenceId": 49,
+            "Start": 375075,
+            "End": 397920,
+            "Text": "我想这个问题，我想说一下啊。就是首先我们要明确一下：我们是想搞一个团建，是想促进一下我们公司各部门员工和主管之间的这个关系，让这个也可以放松一下我们一年的这个工作情况，放松一下身心。那如果去这个养老院是不是没有这个效果？而且平时我本来。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000052",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 50,
+            "SentenceId": 50,
+            "Start": 397920,
+            "End": 403740,
+            "Text": "都很忙碌，大家都是想出去放松一下。去那里就是又是义务打扫，又是干什么？我觉得……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000053",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 51,
+            "SentenceId": 51,
+            "Start": 403740,
+            "End": 422020,
+            "Text": "呃，像你刚刚提出来这个是去养老院。这个想法儿是挺好的对那个啊尊老爱幼嘛然后但是我觉得我们可以在平时就是想要做一些爱心活动的时候可以去一个养老院进行一个这样的活动的我如果是大家都。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000054",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 52,
+            "SentenceId": 52,
+            "Start": 422020,
+            "End": 424470,
+            "Text": "反对，或者说大家都不愿意有以这么。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000055",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 53,
+            "SentenceId": 53,
+            "Start": 424470,
+            "End": 438700,
+            "Text": "长的时间去做一个爱心服务工作的话，那你刚才说到了有一个机会我们可以去做。那么我们就可以选择一个周末或者周六的时间出去：——志愿者给老人们包一顿饺子去对我想。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000056",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 54,
+            "SentenceId": 54,
+            "Start": 437040,
+            "End": 443745,
+            "Text": "我想的是，我们可以以后通过某一个重阳节或者一些呃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000057",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 55,
+            "SentenceId": 55,
+            "Start": 441745,
+            "End": 460730,
+            "Text": "对，咱们可以通过其他的时候去这个做一些爱心活动。咱们这次主要的目的是为了让员工出去放松一下，去缓解一下工作上的压力工公司的主要目的，是我们之间的团建，团建问题所以就是个团建问"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000058",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 56,
+            "SentenceId": 56,
+            "Start": 458730,
+            "End": 467670,
+            "Text": "题。我们部门是想去北极这边，然后我想看各部门是否同意我这个提议呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000059",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 57,
+            "SentenceId": 57,
+            "Start": 466540,
+            "End": 489965,
+            "Text": "嗯，我觉得我赞同北极去看北极光。对，去看北极观鹅绒绕，对吧？北极是不是太极端了那儿会不会太冷或者是有人冻伤啊等等要也要考虑一些安全问题呀哦！冻伤或者一些如果身体不舒服之类的东西他会不会就是没有及时就医对因为我们不买"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000060",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 58,
+            "SentenceId": 58,
+            "Start": 487965,
+            "End": 499210,
+            "Text": "及时就医。对，因为我们部门属于一个呃很庞大的一个公司，像一些老的员工他是不是得考虑一下是否可以去做一些这些极限运动？嗯因为……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000061",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 59,
+            "SentenceId": 59,
+            "Start": 499180,
+            "End": 529180,
+            "Text": "北极它不光是大家想的那个，比如说科考的那片儿地方比较荒无人迹的。但是它——北极其实也有点形成这种旅游的趋势了。然后在比较边缘的地方虽然说是比较冷，但是它的设施都是比较完备的。然后而且那边比较特色：北极的北极熊呀、北极光呀还有那个……比如说那个什么呃那个狗拉雪橇这一类我觉得是在你在其他任何一个地方都不能享享有的。而且你像北极这种地方就是你一辈子去一次已经是一件很"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000062",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 60,
+            "SentenceId": 60,
+            "Start": 529180,
+            "End": 546450,
+            "Text": "幸福的事情嘛，所以我想趁这次机会大家一起去对一起去。而且就是说团建吧，大家团结在一起然后在这种比较极端这种与世隔绝的地方我觉得大家就是唯一存在的话可能对于我们这些团结呀这类的都有很大的帮助。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000063",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 61,
+            "SentenceId": 61,
+            "Start": 545720,
+            "End": 569485,
+            "Text": "别的方面，我同意是区别。因为我觉得北极方面如果人去的话就算他属于年轻人或者是中年人这方面。如果是年轻人去的话它如果……嗯？解决这个问题吗？而且年轻人如果去的话有生命危险没有回来的吧啊这个不可能因为我们是在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000064",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 62,
+            "SentenceId": 62,
+            "Start": 567485,
+            "End": 575280,
+            "Text": "这个可能，因为我们是在那个旅游区。我们不是探险类的，我们而以旅游为主对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000065",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 63,
+            "SentenceId": 63,
+            "Start": 571000,
+            "End": 578110,
+            "Text": "不是探险类的，我们而是以旅游为主。对安全是有保障的放心哎你这边不？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000066",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 64,
+            "SentenceId": 64,
+            "Start": 576110,
+            "End": 582750,
+            "Text": "同意，有没有什么别的想要去举行的一个？我比较想去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000067",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 65,
+            "SentenceId": 65,
+            "Start": 580750,
+            "End": 602885,
+            "Text": "如果真要去玩的话，他们会不会想去看一些大草原之类的？像一些：他们骑过马吗？骑过呀！这个部门儿是没去过啊。大多数人骑过吗？咱们公司的地理位置是属于汉族啊，属于平原啊。但是去内蒙古。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000068",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 66,
+            "SentenceId": 66,
+            "Start": 593395,
+            "End": 596895,
+            "Text": "这个部门儿，骑过。没骑过但是好多人骑过吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000069",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 67,
+            "SentenceId": 67,
+            "Start": 600885,
+            "End": 613385,
+            "Text": "但是去内蒙古，会不会有点儿单一啊？大草原。就是我们最想到的就是篝火、环境骑马然后这些吃喝之类的。但是如果说你在草原上待半个月回来的话，我觉得咱们不光回来。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000070",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 68,
+            "SentenceId": 68,
+            "Start": 608385,
+            "End": 620135,
+            "Text": "就是如果说你在草原上待了半个月回来的话，我觉得咱们不光回来是黑了一圈儿也会被蚊子咬得肿了一圈。那咱北极呢？北极你每天都有新的梦。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000071",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 69,
+            "SentenceId": 69,
+            "Start": 616635,
+            "End": 619385,
+            "Text": "北极呢？，北极你每次。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000072",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 70,
+            "SentenceId": 70,
+            "Start": 618135,
+            "End": 622385,
+            "Text": "飞机，你每天都有新的冒险呀？不是这是每天都有新。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000073",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 71,
+            "SentenceId": 71,
+            "Start": 620385,
+            "End": 632885,
+            "Text": "不是，这是每天都有新的这个。看雪吗？会不会有雪盲症啊！就算没有危险，这个雪盲是很少会有人患有。我……我如果说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000074",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 72,
+            "SentenceId": 72,
+            "Start": 630885,
+            "End": 633635,
+            "Text": "我……如果说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000075",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 73,
+            "SentenceId": 73,
+            "Start": 631635,
+            "End": 635885,
+            "Text": "雪崩带眼镜儿。北极不会雪崩。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000077",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 74,
+            "SentenceId": 74,
+            "Start": 634635,
+            "End": 638885,
+            "Text": "咱们不是去爬雪山，所以没有雪。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000078",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 75,
+            "SentenceId": 75,
+            "Start": 636885,
+            "End": 644885,
+            "Text": "啊，这个北极去的话是主要考虑一下那个呃服装啊这一方面。对呀主要是咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000079",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 76,
+            "SentenceId": 76,
+            "Start": 642885,
+            "End": 649385,
+            "Text": "对呀，主要是咱们。咱们公司会出这部分资金嘛？我觉得去如果。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000080",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 77,
+            "SentenceId": 77,
+            "Start": 647385,
+            "End": 668450,
+            "Text": "是去北京的话，其实每个部门员工都要考虑一套衣服。嗯，这方面对这一方面是需要一部分很大一部分经费的。我们把这个经费都用在买服装上面。我们别的呃吃啊住啊，这一方面就这个公司预算应该是有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000081",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 78,
+            "SentenceId": 78,
+            "Start": 654885,
+            "End": 657635,
+            "Text": "这一方面，对。这。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000082",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 79,
+            "SentenceId": 79,
+            "Start": 666450,
+            "End": 669230,
+            "Text": "这个公司的预算应该是有一个上限的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000083",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 80,
+            "SentenceId": 80,
+            "Start": 669230,
+            "End": 669800,
+            "Text": "对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000084",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 81,
+            "SentenceId": 81,
+            "Start": 669800,
+            "End": 674460,
+            "Text": "这方面，我们西边去北京的话是不是超了？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000086",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 82,
+            "SentenceId": 82,
+            "Start": 674530,
+            "End": 677655,
+            "Text": "而且，北极。你们了解那个？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000087",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 83,
+            "SentenceId": 83,
+            "Start": 675655,
+            "End": 680970,
+            "Text": "而且北京，你们了解那个旅游景点吗？因为都没有去过。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000088",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 84,
+            "SentenceId": 84,
+            "Start": 680270,
+            "End": 708300,
+            "Text": "呃，我记得北欧有一个小镇。它算是属于北极圈划分范围之内，是最北方一个行业叫什么库里？然后那个地方他就是人是比较少的但是它的旅游业发展是比较好的。他也属于北极范围大家不是每次一说北极想就那个冰盖之上这个可能会有一点麻烦但咱们去一个北欧小镇靠近北极圈的地方这个还是比较可行的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000090",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 85,
+            "SentenceId": 85,
+            "Start": 708550,
+            "End": 733990,
+            "Text": "像刚才我说的去内蒙古之类的，骑马、篝火。还有像一些烤全羊之类的只有这方面想的但是人们想到北极狗拉雪橇其中一点还有一种滑雪项目还可以观光北极熊它还有更多的项目啊他不会在两三天就摆这些项目就会惨了"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000091",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 86,
+            "SentenceId": 86,
+            "Start": 732370,
+            "End": 744980,
+            "Text": "就会。景点，景点！因为北极的它这个气候原因，这个景点跟咱们这些靠中间的这些地方的景点的是肯定是很不一样的，而且是独有的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000093",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 87,
+            "SentenceId": 87,
+            "Start": 745630,
+            "End": 764200,
+            "Text": "行，那、那为什么不去哈尔滨呢？相对于来说较安全一些。去北极的话肯定需要，肯定需要就是和一些那个航空公司合作。主要是想也想要去出去感受一下儿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000095",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 88,
+            "SentenceId": 88,
+            "Start": 764510,
+            "End": 769180,
+            "Text": "如果我们去北极的话，有没有考虑点签证的难度？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000097",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 89,
+            "SentenceId": 89,
+            "Start": 769760,
+            "End": 778660,
+            "Text": "主要出国都要考虑到签证问题。凡是咱们团建也是，也会往国外飞。咱们毕竟是一个旅游旅行签嘛！我觉得这个还是比较好签的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000099",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 90,
+            "SentenceId": 90,
+            "Start": 779940,
+            "End": 784940,
+            "Text": "但是我了解到的是，北极的话签证的难度是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000100",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 91,
+            "SentenceId": 91,
+            "Start": 784930,
+            "End": 791055,
+            "Text": "欧洲小国靠近北极的位置，不是北极冰盖之上。那"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000101",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 92,
+            "SentenceId": 92,
+            "Start": 789055,
+            "End": 806805,
+            "Text": "如果不是是在北极范围内的这个小小城小城镇，嗯？是否是可以说看到你刚刚说的那种啊：北极熊啊或者就是想要去北极参观的那个特点是不是有这个呃？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000102",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 93,
+            "SentenceId": 93,
+            "Start": 804805,
+            "End": 824780,
+            "Text": "呃，还是我们以这个欧洲小镇为主。但是因为它靠近北极冰盖儿，我们可以用几天的时间做这个轮渡，靠近这个地方游览一两天。我们不可能在那里长住，但是我们可以去那边参观一下因为这是在别的城市、别的国家都永远不可能享受到的一种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000103",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 94,
+            "SentenceId": 94,
+            "Start": 824660,
+            "End": 828380,
+            "Text": "别的部门还有没有别的一点？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000104",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 95,
+            "SentenceId": 95,
+            "Start": 828380,
+            "End": 848380,
+            "Text": "我觉得还是在国内比较好，因为十五天时间。十五天团建时间，我觉得没必要就是说呃就是在交通上花太多的时间，在国内的话交通也相对嗯、相对嗯，时间相对较短也比较安全玩得时间还长一点对你这样玩的时？间我会把过多的时间浪费在"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000105",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 96,
+            "SentenceId": 96,
+            "Start": 848380,
+            "End": 849090,
+            "Text": "啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000106",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 97,
+            "SentenceId": 97,
+            "Start": 849090,
+            "End": 867535,
+            "Text": "那个路上，而且有的人可能坐飞机会。对。坐飞机的时候可能会觉得呃不舒服我觉得你如果去北极的话你除了坐飞机还有别的什么没有？什么那个只能做北极啊！对呀，你这样没有考虑到每个人的身体状况比如说你说那些五十多岁的人他。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000107",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 98,
+            "SentenceId": 98,
+            "Start": 865535,
+            "End": 868300,
+            "Text": "他心脏不好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000108",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 99,
+            "SentenceId": 99,
+            "Start": 868300,
+            "End": 872240,
+            "Text": "他受不了，呀！你不能因为我觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000109",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 100,
+            "SentenceId": 100,
+            "Start": 872240,
+            "End": 882495,
+            "Text": "国内比较好。你说你三四天、五六天，玩完一个地区；咱们可以在换因为国内毕竟呃就是嗯景点啊……哦！经典。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000110",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 101,
+            "SentenceId": 101,
+            "Start": 880495,
+            "End": 894370,
+            "Text": "景点，嗯。景点比较多吧？可以选取一个省份来进行游玩，并不一定是一个城市。这样游玩地方多啊！而且国内相对于较为安全的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000112",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 102,
+            "SentenceId": 102,
+            "Start": 894620,
+            "End": 901180,
+            "Text": "比较方便，是确实如果去北极的话需要考虑一些很多因素嗯像。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000113",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 103,
+            "SentenceId": 103,
+            "Start": 899880,
+            "End": 902650,
+            "Text": "嗯，相关的经费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000114",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 104,
+            "SentenceId": 104,
+            "Start": 901680,
+            "End": 911280,
+            "Text": "对，经费是一方面。然后还有这个人员安全，还有一些真正玩的一些……对真正的用户呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000115",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 105,
+            "SentenceId": 105,
+            "Start": 911280,
+            "End": 931170,
+            "Text": "其实挺占时间的。对，如果在一个礼拜之内把就是在北极的项目都完成了，我们还要再花更多的那个嗯资金在我们去别的地址的选择上。我觉得这个……嗯，都花费在这个交通上。我觉得这个资金其实有点没有被充分利用了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000116",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 106,
+            "SentenceId": 106,
+            "Start": 931170,
+            "End": 945300,
+            "Text": "那有没有说像国内有一一个某一个地区，就是我们大家都想去的但是平常都不会去的一个地方？比较有特色的一点。偏远一点儿是吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000117",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 107,
+            "SentenceId": 107,
+            "Start": 944620,
+            "End": 947790,
+            "Text": "是这些沿海省份，然后。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000118",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 108,
+            "SentenceId": 108,
+            "Start": 947790,
+            "End": 953640,
+            "Text": "这些呃，山有雪的地方。对森林覆盖率比较大的地方，我们可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000119",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 109,
+            "SentenceId": 109,
+            "Start": 953640,
+            "End": 970845,
+            "Text": "去西南边，因为我比较想去那种人比较少的地方。因为到处都是人人人人人压力特别大，就想想去一个比较空旷的一个地方，然后实践一种完全的生活自主的感觉。这种郊外对类似于这样但是比较有特点一点的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000120",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 110,
+            "SentenceId": 110,
+            "Start": 963595,
+            "End": 967095,
+            "Text": "自主的感觉，那种郊外对类似于。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000121",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 111,
+            "SentenceId": 111,
+            "Start": 968845,
+            "End": 974940,
+            "Text": "大草原人少。往北的话，我们可以去东北长白山哦。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000122",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 112,
+            "SentenceId": 112,
+            "Start": 969595,
+            "End": 972345,
+            "Text": "大草原人少。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000123",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 113,
+            "SentenceId": 113,
+            "Start": 974940,
+            "End": 979270,
+            "Text": "对了，我不知道大家对三八有没有了解。那儿现在在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000124",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 114,
+            "SentenceId": 114,
+            "Start": 979270,
+            "End": 982395,
+            "Text": "非常好，你可以说一下吗？那那边。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000125",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 115,
+            "SentenceId": 115,
+            "Start": 980395,
+            "End": 984645,
+            "Text": "试一下吧。嗯，那那边其实最开始的……一开始是一片。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000126",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 116,
+            "SentenceId": 116,
+            "Start": 982645,
+            "End": 991395,
+            "Text": "沙漠，一片荒漠。后来经过咱们的这个三拜人的就是塞罕坝奇迹大家都听说过啊！只入枣林。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000127",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 117,
+            "SentenceId": 117,
+            "Start": 986395,
+            "End": 989895,
+            "Text": "后来经过，咱们三拜人的就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000128",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 118,
+            "SentenceId": 118,
+            "Start": 989395,
+            "End": 992740,
+            "Text": "奇迹大家都听说过。对，植树造林嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000129",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 119,
+            "SentenceId": 119,
+            "Start": 992240,
+            "End": 1022240,
+            "Text": "呃，我知道一个故事。呃，一个年轻人也就是二十多岁的样子哦不到三十岁他说他是零三代因为现在都说什么富二代呀官二代啊对他非常站在舞台上非常自豪的说我是零三代我爷爷从我爷爷开始就是植树造林嘛就是让那那个那一片沙漠有一抹绿色那是他爷爷的愿望他爷爷就在那儿然后到了他爸爸这一代呢又继续的植树造林直到。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000130",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 120,
+            "SentenceId": 120,
+            "Start": 1022240,
+            "End": 1031590,
+            "Text": "他大学毕业之后，同样又回到了三环外。他非常自豪的说：“请你们到我们这里来。”要感受一下绿色。而且他们呃集体。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000131",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 121,
+            "SentenceId": 121,
+            "Start": 1031190,
+            "End": 1033960,
+            "Text": "集体在那儿做一，三代人的一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000132",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 122,
+            "SentenceId": 122,
+            "Start": 1032700,
+            "End": 1048920,
+            "Text": "对，呃，您现在他们整个的……嗯，就是当时的那些。现在还还在岗位上的这些工作人员，他们集体地朗诵了一首诗词献给在场的所有的嘉宾。最后诚诚实的邀请——呃所有的人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000133",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 123,
+            "SentenceId": 123,
+            "Start": 1048920,
+            "End": 1054340,
+            "Text": "到三亚玩去，感受一下他们那里的美。那是人造不是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000134",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 124,
+            "SentenceId": 124,
+            "Start": 1054340,
+            "End": 1061150,
+            "Text": "人工的，那个时候就感到了人的力量的伟大。而且传承了三八炮更多。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000135",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 125,
+            "SentenceId": 125,
+            "Start": 1059150,
+            "End": 1066910,
+            "Text": "传承的，就是三海坝更多的是一种精神的传递。但它作为一个旅游景点来说，我觉得优势好像不是那么……对方面可。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000136",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 126,
+            "SentenceId": 126,
+            "Start": 1065240,
+            "End": 1095240,
+            "Text": "是环境不是那么。这方面可以去一下西湖啊，去一下杭州的西湖是吗？对呀，《苏堤白堤》啊这方面因为《苏堤白堤》，不是有一年四季特色嘛它讲究一种春来花晚、苏堤流满烟，这方面的特色。因为咱们这个公司如果是要按照各个不同的季节去还有像什么夏季也有红衣绿扇映清波这种这种传统的还有就像如果是九月都快入秋的时候还有秋天。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000137",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 127,
+            "SentenceId": 127,
+            "Start": 1095240,
+            "End": 1109030,
+            "Text": "一色湖光，万顷秋之类的这种美如画的这种形象。还有咱们团建肯定不可能冬天但是冬天也有它冬天特色比方说白地痕青花墨之类的这都是属于山水画。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000138",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 128,
+            "SentenceId": 128,
+            "Start": 1107030,
+            "End": 1120635,
+            "Text": "这都是说的这些，其实都是一种意境。等你到了实景的话，你会发现：其实跟咱们现在达摩克利宫没有什么区别。所以我想去一种比较有特色的地方——真的！你要去西湖的话……就如果这么说的话，我觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000139",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 129,
+            "SentenceId": 129,
+            "Start": 1118635,
+            "End": 1138750,
+            "Text": "其实，如果这么说的话，我就觉得偏激了。呃，为什么？呃，苏轼会写西湖的时候说：“浓妆淡抹总相宜”，他一定跟达摩院公园是有别的。呃，只有身临其境的时候，你才能够感受到：为什么古人会那么说；为什么文人骚客会那么想、那么写。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000140",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 130,
+            "SentenceId": 130,
+            "Start": 1138590,
+            "End": 1152215,
+            "Text": "因为西湖，一个是一个比较热门的一个地方。会不会有人去过呀？或者说咱们去的时候呢有很多的人呀！对这个是需要考虑进去的。这个问题可能其实比较、比较直接的一个问题啊如果说……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000141",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 131,
+            "SentenceId": 131,
+            "Start": 1145715,
+            "End": 1148465,
+            "Text": "很多的人呀，对这个是需要考虑进去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000142",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 132,
+            "SentenceId": 132,
+            "Start": 1150215,
+            "End": 1163265,
+            "Text": "比较直接的一个问题：如果说想去人少的地方的话，我们就可以去大草原。或者我们去西南边陲那边儿就更少了而且风景也优美我觉得去草原是一个很好的选择因为那晚上。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000143",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 133,
+            "SentenceId": 133,
+            "Start": 1161265,
+            "End": 1164470,
+            "Text": "原来是一个很好的选择，因为它晚上大家可以一起篝火晚会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000144",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 134,
+            "SentenceId": 134,
+            "Start": 1163950,
+            "End": 1170800,
+            "Text": "我们公司团建嘛，对。本来就是公司团建然后去观摩一次吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000145",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 135,
+            "SentenceId": 135,
+            "Start": 1170800,
+            "End": 1171410,
+            "Text": "之间的感情。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000146",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 136,
+            "SentenceId": 136,
+            "Start": 1171410,
+            "End": 1187285,
+            "Text": "还有就是属于这种选地，如果要选人少的地方。我感觉：如果人多的地方肯定是好玩儿人们去；这是其一。其次，人少地方那肯定荒凉。荒凉就是他们觉得这地方没有什么意思才去人少的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000147",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 137,
+            "SentenceId": 137,
+            "Start": 1185285,
+            "End": 1194950,
+            "Text": "没有什么意思。其实，人少的地方是安静的、空旷的：是我们可以站在大草原上感受那种天地我的那种意象。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000149",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 138,
+            "SentenceId": 138,
+            "Start": 1195590,
+            "End": 1200215,
+            "Text": "所以咱们要选冷门的还是热门？我觉得。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000150",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 139,
+            "SentenceId": 139,
+            "Start": 1198215,
+            "End": 1202280,
+            "Text": "任务。我觉得，既然是出去放松了我们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000151",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 140,
+            "SentenceId": 140,
+            "Start": 1202280,
+            "End": 1207030,
+            "Text": "就选择那种人比较少，然后景。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000152",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 141,
+            "SentenceId": 141,
+            "Start": 1207030,
+            "End": 1212680,
+            "Text": "比较好的，绿色比较多的。人少、比较白的是一个什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000153",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 142,
+            "SentenceId": 142,
+            "Start": 1208700,
+            "End": 1213670,
+            "Text": "比较多的，人少不外白。他是一个文的一个地方面。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000154",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 143,
+            "SentenceId": 143,
+            "Start": 1211960,
+            "End": 1223795,
+            "Text": "对，这方面我比较赞同。就是去一些安静舒适的环境，因为在公司的这方面压力比较大嘛，所以人们需要静下心来去感受一下大自然的魅力。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000155",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 144,
+            "SentenceId": 144,
+            "Start": 1221795,
+            "End": 1224870,
+            "Text": "来去感受一下大草原的美景。因为我觉得躺在草地上，"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000156",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 145,
+            "SentenceId": 145,
+            "Start": 1222870,
+            "End": 1225640,
+            "Text": "属心境的感觉。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000157",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 146,
+            "SentenceId": 146,
+            "Start": 1224890,
+            "End": 1235440,
+            "Text": "那为什么咱们不，不不买一个度假别墅，在里面躺十五天呢？也很休闲，也很放松。环境也很不错呀！我们就要感受不一样有特色。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000158",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 147,
+            "SentenceId": 147,
+            "Start": 1234520,
+            "End": 1239230,
+            "Text": "的那个，我们要要在大自然中去感受啊。都加车就是大。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000159",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 148,
+            "SentenceId": 148,
+            "Start": 1238760,
+            "End": 1255600,
+            "Text": "就是大自然，它是自带草坪的呀。所以我还是想去那种比较，就是比较有特色的地方，比如说什么、什么庐山瀑布那种大瀑布，《黄河入海》那种大瀑布。你在其他地方都是绝对看不到的，就类似于这样的也不枉此行吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000160",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 149,
+            "SentenceId": 149,
+            "Start": 1255280,
+            "End": 1260680,
+            "Text": "去瀑布这方面的话，就需要人员爬山和解决住宿问题。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000162",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 150,
+            "SentenceId": 150,
+            "Start": 1261120,
+            "End": 1268480,
+            "Text": "就是有没有某个景点，就在那个山脚底下。但是周围风景特别好，就类似于孙诺这种的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000163",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 151,
+            "SentenceId": 151,
+            "Start": 1267650,
+            "End": 1270840,
+            "Text": "我们在那里。去云山、蓬莱城。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000164",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 152,
+            "SentenceId": 152,
+            "Start": 1270840,
+            "End": 1278390,
+            "Text": "岭侧成峰，庐山。对，刚刚提出来这个“庐山瀑布”，我觉得……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000165",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 153,
+            "SentenceId": 153,
+            "Start": 1278390,
+            "End": 1296650,
+            "Text": "去看瀑布是一个不错的选择。我们可以选择，呃住宿问题的话：因为刚刚不是说到可以篝火晚会吗？我想可以在这个山脚啊或者哪里搭建一些帐篷，然后我们员工可以在一块儿晚上的时候举行一下这个晚会。其实。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000166",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 154,
+            "SentenceId": 154,
+            "Start": 1295140,
+            "End": 1321180,
+            "Text": "我们可以选择一个，就是既然有十五天的长假嘛，我们可以选择一个路线：，就是比较这些景点、比较近的、比较有特色的大家都比较能够接受的呃风景宜人的啊气候比较舒爽的然后风景比较优美的有山有水的地方纵错线连一条线今天去哪明天去买。然后我们嗯给大家做一个汇报。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000167",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 155,
+            "SentenceId": 155,
+            "Start": 1320340,
+            "End": 1324600,
+            "Text": "对，那你有没有这方面的推荐？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000168",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 156,
+            "SentenceId": 156,
+            "Start": 1324600,
+            "End": 1327040,
+            "Text": "比如说，我们可以去云。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000169",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 157,
+            "SentenceId": 157,
+            "Start": 1327040,
+            "End": 1335880,
+            "Text": "云南大理丽江啊，还还有重庆三塔寺。比如说西藏版纳这一条线因为云南云南省。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000170",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 158,
+            "SentenceId": 158,
+            "Start": 1335880,
+            "End": 1342230,
+            "Text": "比较板块比较大嘛，景点较分散。我们可以用十五天时间把云南游一遍。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000171",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 159,
+            "SentenceId": 159,
+            "Start": 1342230,
+            "End": 1349730,
+            "Text": "考虑如果是这样的话，每一天都安排的特别满。呃都在干不是因为我们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000172",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 160,
+            "SentenceId": 160,
+            "Start": 1349730,
+            "End": 1351080,
+            "Text": "你比如说，我们去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000173",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 161,
+            "SentenceId": 161,
+            "Start": 1351080,
+            "End": 1358470,
+            "Text": "呃，石林让大家去感受大自然的鬼斧神工啊！我们在那儿呃游玩一天子。那么我们下一站呢？可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000174",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 162,
+            "SentenceId": 162,
+            "Start": 1358470,
+            "End": 1362510,
+            "Text": "去洱海，那么在洱海就是自由的一个活动。大家可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000175",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 163,
+            "SentenceId": 163,
+            "Start": 1362510,
+            "End": 1392510,
+            "Text": "在海上可以去驾船，呃我们可以在海边漫步这些。呃活动或者说我们在嗯丽江古城的时候，我们白天可以组织一些集体活动晚上可以自由的去游古城去买一些银器啊或者买一些具有民族风的一些骨啊还有还有他们那些民族的服装我们可以穿上而且价格也不贵一套就是那种那种裙子哈就是呃她们呃女孩子穿着非常显腰身儿的那一那样的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000176",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 164,
+            "SentenceId": 164,
+            "Start": 1392510,
+            "End": 1411370,
+            "Text": "火裙，一套也就八十块钱。嗯，而且呃我上次去那儿买了一个上衣，就是一个中袖的夏天穿的，呃非常料子也非常的呃舒服就二十块钱，让大家可以在晚上的夜市的时候可以嗯自己呢去选择呃自.己"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000177",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 165,
+            "SentenceId": 165,
+            "Start": 1411370,
+            "End": 1414900,
+            "Text": "去夜市啊，或者说去呃广场啊、去玩儿。白天。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000178",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 166,
+            "SentenceId": 166,
+            "Start": 1414900,
+            "End": 1418130,
+            "Text": "的话，我们可以安排集体的时间。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000179",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 167,
+            "SentenceId": 167,
+            "Start": 1417910,
+            "End": 1424790,
+            "Text": "那这个根据这个提议，大家有没有想法？不赞同或者不赞同的吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000180",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 168,
+            "SentenceId": 168,
+            "Start": 1424790,
+            "End": 1425820,
+            "Text": "那边风景好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000181",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 169,
+            "SentenceId": 169,
+            "Start": 1425820,
+            "End": 1438250,
+            "Text": "可能就是个人旅游的话，是一种享受。但是咱们作为团队一大堆人就可能把这种宁静给冲散了，就可能享受不到这种它这个旅游景点本来应该给人的体验嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000182",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 170,
+            "SentenceId": 170,
+            "Start": 1438250,
+            "End": 1440680,
+            "Text": "景点的区域是比较大的，比如说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000183",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 171,
+            "SentenceId": 171,
+            "Start": 1440680,
+            "End": 1470680,
+            "Text": "古道，我们可以骑着马。当然他们有一个提供牵马的人呃我们就是每一个人都可以：骑马在长坂古道上走走一圈也就是半个小时的时间然后呃我们也可以彼此拍照或者他可以给我拿着我们的手机让我们好好好的坐好抓稳了他给我们拍照嗯，在长坂古道上，给我们每一个人留影。其实还有我们可以就是自己做船或者自己开船那种七二船，我们三个人一。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000184",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 172,
+            "SentenceId": 172,
+            "Start": 1470680,
+            "End": 1478700,
+            "Text": "三个人一组，一起出去玩。其实，在大海之中，我们就不会发现：我们这么多人，我们这么多人也不过就是沧海。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000186",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 173,
+            "SentenceId": 173,
+            "Start": 1479290,
+            "End": 1509290,
+            "Text": "其实我感觉旅游景点要选的话，肯定要分为两种：第一种就属于能让人静心一种环境；还有一种就是属于游玩设施。就是可以既可以拍照也可以满足大多数人的需求。比方说像中年人他们可能喜静喜欢那种骑骑马看看风景之类的或者喜欢那种游玩散步向那种谈心之类的这种问题如果是年轻人的话公司因为毕竟刚才说了嘛是比较年"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000187",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 174,
+            "SentenceId": 174,
+            "Start": 1509290,
+            "End": 1517665,
+            "Text": "年轻的一个公司，然后它年轻人如果居多的话也可以要有一些刺激性的项目。要选择这样的一个景点就是：选择像。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000188",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 175,
+            "SentenceId": 175,
+            "Start": 1515665,
+            "End": 1518690,
+            "Text": "这样的一个景点，就是选择性比较多的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000189",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 176,
+            "SentenceId": 176,
+            "Start": 1518080,
+            "End": 1521560,
+            "Text": "多的，选择性比较多的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000190",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 177,
+            "SentenceId": 177,
+            "Start": 1520650,
+            "End": 1523450,
+            "Text": "就不那么单一了。像刚"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000191",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 178,
+            "SentenceId": 178,
+            "Start": 1521810,
+            "End": 1538790,
+            "Text": "那么单一的，像刚刚说的呃。考虑一下儿把各个景点联合到一一起，我们可以进行一个一系列的游戏玩。这样的话是不是这个啊？可以照顾到各个层次的这个不同人想要玩这个安静一点儿呢或者刺激一点呢。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000192",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 179,
+            "SentenceId": 179,
+            "Start": 1537740,
+            "End": 1560600,
+            "Text": "对，咱们可以选择一个省份进进行游玩而不是一个城市。进行游玩这样的话游玩的景点较多嘛它可以：一个省份分好多城市咱可以进行把每一个城市好玩的地方咱可以综合一下然后哪些排除掉那些留下来这样的话进行制定一个路线而且经费不是很高的一种路线。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000193",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 180,
+            "SentenceId": 180,
+            "Start": 1559550,
+            "End": 1567365,
+            "Text": "俺刚刚提到了云南，这边儿。你这边还有没有说想要去的城市？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000194",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 181,
+            "SentenceId": 181,
+            "Start": 1565365,
+            "End": 1589115,
+            "Text": "其实刚刚那边提到云南，其实我这个部门儿其实作为这个部长，我有点心动因为云南的话，那边是有刺激性项目的对如果是要安静的话你看像那里会有会生产一些水、水会产生一些水果比方说像一些中年人他们喜欢耕作一些植物啊或者种一些东西啊或者是采摘一些东西。种植园的感觉？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000195",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 182,
+            "SentenceId": 182,
+            "Start": 1578115,
+            "End": 1580865,
+            "Text": "会，山山水水。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000196",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 183,
+            "SentenceId": 183,
+            "Start": 1587115,
+            "End": 1590615,
+            "Text": "或者采摘一些东西，种植园的感觉。对，还有一种……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000198",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 184,
+            "SentenceId": 184,
+            "Start": 1589365,
+            "End": 1613115,
+            "Text": "对，还有一种。那还有像那种浅、浅式的鱼塘也可以进行互动，就属于看捞、捞鱼嘛？比一下捞鱼然后租一个山庄进行咱们可以自己烹饪一下食物，这也是一种游玩方式。然后继续在云南这个省份找一些刺激性的项目，比如说像一些刚才的快艇啊之类的都可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000199",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 185,
+            "SentenceId": 185,
+            "Start": 1611115,
+            "End": 1617730,
+            "Text": "可以组织一些想要去玩刺激项目的年轻人。可以去游玩儿，可以去新疆旅游。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000200",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 186,
+            "SentenceId": 186,
+            "Start": 1617730,
+            "End": 1620680,
+            "Text": "那玩，年轻人会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000201",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 187,
+            "SentenceId": 187,
+            "Start": 1620680,
+            "End": 1623650,
+            "Text": "这边有没有什么想法？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000203",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 188,
+            "SentenceId": 188,
+            "Start": 1625730,
+            "End": 1631105,
+            "Text": "那就是呃，赞同刚刚说的云南这边。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000204",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 189,
+            "SentenceId": 189,
+            "Start": 1629105,
+            "End": 1632720,
+            "Text": "南那边儿。我我也在那儿。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000206",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 190,
+            "SentenceId": 190,
+            "Start": 1634130,
+            "End": 1663505,
+            "Text": "那咱们去云南要怎么去呢？大家就是坐飞机，直接把这个时间节约到过去。还是说趁此机会——毕竟云南离咱人还比较远啊！嗯……对呀。我想：咱们是做、我像：“直”“。”—过飞机的好处是他节省时间；当然他就比如说咱们两点一线，咱们会把中间所有地方就忽略。所以我觉得咱们要是直接到昆明。那如果？对呀——云南的风景也顺便看了这样会不会也是一个选择呢？其实我们在火车上是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000207",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 191,
+            "SentenceId": 191,
+            "Start": 1653255,
+            "End": 1656005,
+            "Text": "咱们要是飞机直接到昆明，如果。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000208",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 192,
+            "SentenceId": 192,
+            "Start": 1661505,
+            "End": 1667825,
+            "Text": "那会不会也是？因为我们在火车上是看不到那种风景，没有没有什么风景会在。享受这种快感有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000209",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 193,
+            "SentenceId": 193,
+            "Start": 1665825,
+            "End": 1695825,
+            "Text": "什么风景会在？享受这种快感。有人为什么说大家现在节奏都比较快，天天快来快去的什么高速那个高铁一直在提速。大家坐飞机就是因为咱们十五天并不是那么的赶时间，并不是要出差那样。但是大家没有必要把时间浪费在……这不叫浪费！你其实火车怎么叫浪费呢？对而且火车每到一个城市的话比如说一个大站的话它会停半个小时，你完全可以八小时下来来周边转一转都是可以的所以我想咱们把旅途的这段时程、时间也利用起来。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000210",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 194,
+            "SentenceId": 194,
+            "Start": 1678575,
+            "End": 1681800,
+            "Text": "但是大家没有必要把时间浪费在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000211",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 195,
+            "SentenceId": 195,
+            "Start": 1695160,
+            "End": 1699925,
+            "Text": "也利用起来。我们这个，或者说或者说咱们去。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000212",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 196,
+            "SentenceId": 196,
+            "Start": 1695825,
+            "End": 1697010,
+            "Text": "其实这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000213",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 197,
+            "SentenceId": 197,
+            "Start": 1697925,
+            "End": 1727670,
+            "Text": "或者说，或者说咱们去的时候可以采用就是坐绿皮火车的方式。回来的车都是高铁这个我感觉还有飞机都可以选择。这是我我个人建议就是咱们去的时候是以这个绿皮火车的方式来回去。对，比较轻松一点了。生活快的时候？嗯，对。我们可以在时候我们可以做飞机。大家都已经玩够了、玩累了呃不愿意在在火车上再耗费精力时间了咱们就可以坐飞机回来。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000214",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 198,
+            "SentenceId": 198,
+            "Start": 1713160,
+            "End": 1716030,
+            "Text": "开始就是放松心情吧。有新鲜感，对比较新一点啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000215",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 199,
+            "SentenceId": 199,
+            "Start": 1719855,
+            "End": 1722780,
+            "Text": "已经玩够了，玩累啦。呃不愿意再。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000216",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 200,
+            "SentenceId": 200,
+            "Start": 1726220,
+            "End": 1749480,
+            "Text": "我想体让大家感受一下，因为现在绿皮火车也比较少嘛。就是从咱这儿往云南坐，也就是好像是两天到三天的时间就你完全可以就享受一下那种感觉。就你在最后一节车轨你看那个铁轨也是特别有、特美有一种事情让大家对，让大家节奏慢一些让你知道在路上然后这种场景怎么样？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000217",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 201,
+            "SentenceId": 201,
+            "Start": 1743310,
+            "End": 1746090,
+            "Text": "事情，然后让大家对让大家节奏慢一点。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000218",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 202,
+            "SentenceId": 202,
+            "Start": 1748390,
+            "End": 1751400,
+            "Text": "那时间，是要考虑买卧铺吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000219",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 203,
+            "SentenceId": 203,
+            "Start": 1750060,
+            "End": 1753185,
+            "Text": "那肯定是握手，一定是要拍。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000220",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 204,
+            "SentenceId": 204,
+            "Start": 1751185,
+            "End": 1754020,
+            "Text": "那肯定，肯定是。我也是二拍。不可能是！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000221",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 205,
+            "SentenceId": 205,
+            "Start": 1752280,
+            "End": 1758360,
+            "Text": "不需要，让沿途的风景。让咱们的工作人员尽收眼底的这种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000222",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 206,
+            "SentenceId": 206,
+            "Start": 1756360,
+            "End": 1774410,
+            "Text": "对，你能看到那些、那些不同地方的那些瓦房平顶的还有那个斜顶的。然后那个山区，然后不同的山脉那种走向，还有那些地方特色。就是大家一想每个地方都是建筑是一样的，但是其实地方的特色你如比如说北方呢平房南方尖房都都不一样。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000223",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 207,
+            "SentenceId": 207,
+            "Start": 1772810,
+            "End": 1779740,
+            "Text": "南方间房的简单的介绍，在火车上会给您播报。我们会将进入哪个省，哪个城市对火车都。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000224",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 208,
+            "SentenceId": 208,
+            "Start": 1777890,
+            "End": 1780900,
+            "Text": "哪个省，哪个城市？对火车的规划。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000225",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 209,
+            "SentenceId": 209,
+            "Start": 1780900,
+            "End": 1781970,
+            "Text": "历史。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000226",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 210,
+            "SentenceId": 210,
+            "Start": 1781970,
+            "End": 1784730,
+            "Text": "所所有的一切，包括特色小吃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000227",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 211,
+            "SentenceId": 211,
+            "Start": 1784160,
+            "End": 1791350,
+            "Text": "对，火车都会、都会播报。所以我想让咱们的旅途过程也能成为咱们整个旅途比较享受的一部分。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000228",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 212,
+            "SentenceId": 212,
+            "Start": 1790470,
+            "End": 1801330,
+            "Text": "因为在公司竞争压力比较大嘛，而且生活节奏特别快。比方说晚上如果加班的话回到家会没有时间放松每天的人就是绷紧一根弦子。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000229",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 213,
+            "SentenceId": 213,
+            "Start": 1799750,
+            "End": 1806250,
+            "Text": "在工作。大家总是在匆匆忙忙的赶时间，然后如果是出去乘火车的话可以放。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000230",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 214,
+            "SentenceId": 214,
+            "Start": 1804960,
+            "End": 1808050,
+            "Text": "火车的话，我得放松一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000231",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 215,
+            "SentenceId": 215,
+            "Start": 1807500,
+            "End": 1818345,
+            "Text": "对，这样可以考虑的。这样的话我们都可以在一块儿的话比较方便一些。然后呃平这，在车上的时候还可以谈耐心啊什么之类的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000232",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 216,
+            "SentenceId": 216,
+            "Start": 1811785,
+            "End": 1815285,
+            "Text": "在一块儿的话，也比较方便。对然后呃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000233",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 217,
+            "SentenceId": 217,
+            "Start": 1816345,
+            "End": 1825250,
+            "Text": "有时候还可以谈耐性。有一辆慢车，它就是旅游专线。呃，包括在沙河这样的小城市，就是县级市，它都会停，它都会停。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000234",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 218,
+            "SentenceId": 218,
+            "Start": 1825250,
+            "End": 1829720,
+            "Text": "好，呃我们可以建议你坐这个车。这个车是最慢的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000235",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 219,
+            "SentenceId": 219,
+            "Start": 1829720,
+            "End": 1834960,
+            "Text": "看，这个、这个要沟通了。看可行不可行？毕竟咱们的旅游时间可能是……嗯这。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000236",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 220,
+            "SentenceId": 220,
+            "Start": 1834960,
+            "End": 1837630,
+            "Text": "对，可能怕。他看不到。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000237",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 221,
+            "SentenceId": 221,
+            "Start": 1837630,
+            "End": 1840600,
+            "Text": "从沙河到北京市，它都需要。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000238",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 222,
+            "SentenceId": 222,
+            "Start": 1840600,
+            "End": 1842200,
+            "Text": "五个多小时。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000239",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 223,
+            "SentenceId": 223,
+            "Start": 1842200,
+            "End": 1852410,
+            "Text": "这个我们也考虑一下，在车上待好多天啊。这个人有没有对，有没有不舒服啊或者什么？嗯，那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000240",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 224,
+            "SentenceId": 224,
+            "Start": 1852180,
+            "End": 1857290,
+            "Text": "这个考虑的也，这个可以就是咱们可以租用两名医护人员。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000241",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 225,
+            "SentenceId": 225,
+            "Start": 1856810,
+            "End": 1863525,
+            "Text": "对，随行的医护人员。就我们去一些比较偏的地方的时候，可以出行有人受伤。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000242",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 226,
+            "SentenceId": 226,
+            "Start": 1857710,
+            "End": 1860900,
+            "Text": "对，随行的医护人员。就我们这些比较。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000243",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 227,
+            "SentenceId": 227,
+            "Start": 1861525,
+            "End": 1865775,
+            "Text": "的时候，可以出行。有人受伤，可以及时医治一下。对一些小的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000244",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 228,
+            "SentenceId": 228,
+            "Start": 1863775,
+            "End": 1870540,
+            "Text": "伤，可以自行处理就不用每到一个地方都要去找医院了，其实比较麻烦的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000246",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 229,
+            "SentenceId": 229,
+            "Start": 1870980,
+            "End": 1873920,
+            "Text": "这是一方面。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000247",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 230,
+            "SentenceId": 230,
+            "Start": 1873920,
+            "End": 1874540,
+            "Text": "那我们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000248",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 231,
+            "SentenceId": 231,
+            "Start": 1874540,
+            "End": 1891520,
+            "Text": "呃，出行的话必备的一些常用的药品：比如说感冒的呀，或者是消炎的呀、止血的呀。包括烫贴啊这一类的东西我们要带着嗯还有一些……呃，防蚊的驱虫呢？这这些青蛙油这一类的——呃风油精的这这些东西我们不要多备。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000250",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 232,
+            "SentenceId": 232,
+            "Start": 1892340,
+            "End": 1901465,
+            "Text": "呃，这个过程。对，这个可能都是要考虑一下的呀。然后个人或者有些人那个就像……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000251",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 233,
+            "SentenceId": 233,
+            "Start": 1895715,
+            "End": 1899215,
+            "Text": "都是要考虑一下那。然后个人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000252",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 234,
+            "SentenceId": 234,
+            "Start": 1899465,
+            "End": 1917215,
+            "Text": "有些人，那个就像医生、护士带的那……那个那个急救箱嘛。我们要一个急救箱。我们要带一个所有东西在里面呃不管我们同行的人员中谁嗯滑伤了或或者这个需要的话直接对直给个哪个可以？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000253",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 235,
+            "SentenceId": 235,
+            "Start": 1912215,
+            "End": 1915715,
+            "Text": "这个需要的，我们都有准备。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000254",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 236,
+            "SentenceId": 236,
+            "Start": 1915215,
+            "End": 1928160,
+            "Text": "对，直接去那个哪里。然后员工个人身体问题，比如说他可能就是心脏有些不好、甚至有一些不好。咱们都要提前把这个征集出来吧？有这个遇到的一些情况，我们能规避就规避掉。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000255",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 237,
+            "SentenceId": 237,
+            "Start": 1926520,
+            "End": 1930395,
+            "Text": "对，这个、这个事情各部门包括这个商家。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000256",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 238,
+            "SentenceId": 238,
+            "Start": 1928395,
+            "End": 1950080,
+            "Text": "这个事情各部门包括，这个上下、上中下部的安排。呃，就是五岁以以上的或者五十岁以下的人我们都统统安排在下户；然后今年人可以住中部或者上户。所以嗯这样要提前安排别最后我们没有安排的话，呃年轻人住下户了老年人要要往上面爬，就是很不……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000257",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 239,
+            "SentenceId": 239,
+            "Start": 1948990,
+            "End": 1969120,
+            "Text": "如果咱们自己人的话，其实你车票不管怎么定。你到时候可以自行换铺。大家毕竟一个公司，我觉得是其实比较好说话的。我们前期如果按人按铺买可能就是工作量比较大。我们就直接就是考虑一人一票先把这个地方咱们暂住，咱们再后期分一下。前期分的话可能工作量有点儿大。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000258",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 240,
+            "SentenceId": 240,
+            "Start": 1969120,
+            "End": 1989120,
+            "Text": "嗯，这个可以。行，嗯，咱们讨论了这么多，呃，嗯，咱们准备这个去的地方，我们要做一个具体的这个行程的一个计划和流。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000259",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 241,
+            "SentenceId": 241,
+            "Start": 1989120,
+            "End": 1992670,
+            "Text": "咱们去那边。那个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000260",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 242,
+            "SentenceId": 242,
+            "Start": 1992670,
+            "End": 2011180,
+            "Text": "整个流程，一定要总监这边。一定要最主要的就是注意安全问题。对。安全问题一定不要不知道嗯其他这边我这边没有麻烦您你们还有问题吗？没有什么呀没问题了没什么问题那咱们分场。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000261",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 243,
+            "SentenceId": 243,
+            "Start": 2011180,
+            "End": 2031180,
+            "Text": "我就先到此为止。"
+          }
+        ]
+      }
+    ]
+  }
+}

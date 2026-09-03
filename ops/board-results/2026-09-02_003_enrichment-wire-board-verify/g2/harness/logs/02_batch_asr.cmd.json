@@ -1,0 +1,19 @@
+[
+  "/userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python",
+  "/userdata/meeting_agent/scripts/board_segment_asr_batch.py",
+  "--wav-dir",
+  "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/01_segments/cut_audio/wav_segments",
+  "--manifest",
+  "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/01_segments/cut_audio/cut_segments.csv",
+  "--out-dir",
+  "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/02_batch_asr",
+  "--asr-dir",
+  "/userdata/meeting_agent/runtime/asr/qwen3_asr_gcc10/rknn_Qwen3_ASR_batch_demo",
+  "--asr-model-dir",
+  "/userdata/meeting_agent/models/asr/qwen3-asr-0.6b-rknn",
+  "--encoder-core",
+  "0xff",
+  "--llm-core",
+  "0xff",
+  "--overwrite"
+]

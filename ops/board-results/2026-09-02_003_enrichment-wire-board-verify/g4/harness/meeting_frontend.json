@@ -1,0 +1,2145 @@
+{
+  "meeting_id": "mtg_8b7f7f52dad0ab2c",
+  "title": "长假团建活动方案讨论",
+  "duration_ms": 2040388,
+  "context_policy": "deterministic_blocks_map_reduce",
+  "full_summary": "会议围绕长假团建活动展开讨论，最终决定为员工安排十五天长假，并选择人少、风景优美的地点进行团建。讨论中，北极旅游因独特体验和安全保障被提议，但最终倾向于国内目的地，如内蒙古、东北长白山等地。同时考虑了火车旅行的慢节奏和风景，以及医疗保障和药品准备等细节，确保活动安全与舒适。",
+  "chapters": [
+    {
+      "id": 1,
+      "start_ms": 34340,
+      "end_ms": 219580,
+      "title": "长假活动讨论",
+      "summary": "会议决定为员工安排十五天长假，并讨论是否组织团建或敬老院公益活动。建议去北极进行团建，认为敬老院活动有社会价值，同时考虑公司报销政策影响活动选择。",
+      "start_ref": "seg-000002",
+      "end_ref": "seg-000036",
+      "refs": [
+        "seg-000009",
+        "seg-000026"
+      ]
+    },
+    {
+      "id": 2,
+      "start_ms": 219580,
+      "end_ms": 669800,
+      "title": "团建活动讨论",
+      "summary": "会议讨论了团建活动的方案，认为去敬老院做公益不如去北极旅游有意义。北极旅游有独特体验，如北极光、北极熊等，且安全有保障，适合团队建设。部分员工希望去内蒙古看草原，但北极旅游需要考虑服装和预算问题，公司应根据预算和活动意义进行决策。",
+      "start_ref": "seg-000037",
+      "end_ref": "seg-000083",
+      "refs": [
+        "seg-000038",
+        "seg-000058",
+        "seg-000061"
+      ]
+    },
+    {
+      "id": 3,
+      "start_ms": 669800,
+      "end_ms": 972345,
+      "title": "北极旅游与国内团建方案讨论",
+      "summary": "会议讨论了北极旅游的可行性，包括北极圈内的小镇和北极熊等独特体验。同时提到哈尔滨作为替代方案，认为相对安全。还考虑了签证问题，认为欧洲小国靠近北极的旅游可能更可行。建议国内团建，因为时间短、安全且景点多，并提议去内蒙古或东北长白山等人少、有特色的地区。",
+      "start_ref": "seg-000084",
+      "end_ref": "seg-000122",
+      "refs": [
+        "seg-000088",
+        "seg-000090",
+        "seg-000116"
+      ]
+    },
+    {
+      "id": 4,
+      "start_ms": 974940,
+      "end_ms": 1194950,
+      "title": "三八奇迹与西湖旅游景点讨论",
+      "summary": "会议讨论了塞罕坝奇迹的植树造林历史及其精神传承，同时提到西湖作为旅游景点具有四季特色和文化意境。建议去大草原或西南边陲作为人少、风景优美的团建地点，并认为西湖虽美但人多可能不适合团建。强调人少地方的安静与空旷感，适合感受自然意象。",
+      "start_ref": "seg-000123",
+      "end_ref": "seg-000147",
+      "refs": [
+        "seg-000126",
+        "seg-000132",
+        "seg-000142"
+      ]
+    },
+    {
+      "id": 5,
+      "start_ms": 1195590,
+      "end_ms": 1438250,
+      "title": "团建地点与行程规划讨论",
+      "summary": "会议决定选择人少、风景优美的地方进行团建，建议去大草原或有特色景点如庐山瀑布、云南大理丽江等地。计划安排十五天行程，涵盖多个有特色的景点，并考虑安排篝火晚会和自由活动，如驾船、夜市等。",
+      "start_ref": "seg-000149",
+      "end_ref": "seg-000181",
+      "refs": [
+        "seg-000151",
+        "seg-000169"
+      ]
+    },
+    {
+      "id": 6,
+      "start_ms": 1438250,
+      "end_ms": 1758360,
+      "title": "云南旅游方案与交通方式讨论",
+      "summary": "会议决定选择云南作为旅游目的地，兼顾安静与刺激性项目，并建议采用绿皮火车方式前往，享受慢节奏和风景。同时考虑在云南进行一系列游戏和活动，满足不同游客需求，并结合多个城市景点制定经济且丰富的路线。",
+      "start_ref": "seg-000182",
+      "end_ref": "seg-000221",
+      "refs": [
+        "seg-000193",
+        "seg-000204",
+        "seg-000215"
+      ]
+    },
+    {
+      "id": 7,
+      "start_ms": 1756360,
+      "end_ms": 1874540,
+      "title": "火车旅行与医疗保障讨论",
+      "summary": "会议讨论火车旅行的舒适性与风景，建议在火车上提供旅游信息播报，并安排随行医护人员保障旅途安全。同时考虑慢车作为旅游专线，方便停靠小城市，以提升旅途体验。",
+      "start_ref": "seg-000222",
+      "end_ref": "seg-000247",
+      "refs": [
+        "seg-000222",
+        "seg-000233"
+      ]
+    },
+    {
+      "id": 8,
+      "start_ms": 1874540,
+      "end_ms": 2031180,
+      "title": "出行药品与安全安排讨论",
+      "summary": "会议讨论出行必备药品和安全安排，决定携带感冒药、消炎药等常用药品，并准备急救箱。同时需收集员工健康信息，安排不同年龄段人员住宿位置，并建议一人一票购票方式，制定详细行程计划。",
+      "start_ref": "seg-000248",
+      "end_ref": "seg-000261",
+      "refs": [
+        "seg-000248",
+        "seg-000252",
+        "seg-000256"
+      ]
+    }
+  ],
+  "speaker_summaries": [
+    {
+      "speaker_id": "speaker_0",
+      "summary": "sp0支持公司组织团建活动，认为应选择安全且有特色的旅游目的地，如哈尔滨或内蒙古，并建议通过火车或飞机前往，同时考虑员工健康和安全问题。",
+      "refs": [
+        "seg-000213",
+        "seg-000136"
+      ]
+    },
+    {
+      "speaker_id": "speaker_3",
+      "summary": "sp3提出公司应安排十五天长假，并建议通过团建活动促进员工关系，同时讨论了假期活动的具体方案，包括是否去养老院、北极或国内特色景点等，并考虑了经费、安全和员工身体状况等因素。",
+      "refs": [
+        "seg-000009",
+        "seg-000040"
+      ]
+    },
+    {
+      "speaker_id": "speaker_2",
+      "summary": "sp2提出公司应利用十五天长假组织员工前往北极进行团建，并建议选择北欧小镇作为旅游目的地，同时提议在北极进行团建以促进团队凝聚力。",
+      "refs": [
+        "seg-000026",
+        "seg-000209"
+      ]
+    },
+    {
+      "speaker_id": "speaker_1",
+      "summary": "sp5主张将十五天长假用于敬老院服务，强调孝顺老人的重要性，并建议选择人少、风景优美的地方如大草原或西南边陲进行团建，同时提出考虑安全和预算问题。",
+      "refs": [
+        "seg-000183",
+        "seg-000175"
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "id": 1,
+      "task": "确定长假活动方案",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 55230,
+      "end_ms": 85230,
+      "refs": [
+        "seg-000009"
+      ]
+    },
+    {
+      "id": 2,
+      "task": "准备药品和急救箱",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 1874540,
+      "end_ms": 1917215,
+      "refs": [
+        "seg-000248",
+        "seg-000252"
+      ]
+    },
+    {
+      "id": 3,
+      "task": "收集员工健康信息",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 1915215,
+      "end_ms": 1928160,
+      "refs": [
+        "seg-000254"
+      ]
+    },
+    {
+      "id": 4,
+      "task": "制定行程计划",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 1969120,
+      "end_ms": 1989120,
+      "refs": [
+        "seg-000258"
+      ]
+    }
+  ],
+  "transcription": [
+    {
+      "segment_id": "seg-000002",
+      "start_ms": 34340,
+      "end_ms": 39960,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "零零二我是总经理，零二六是销售部。零二二我是法务。"
+    },
+    {
+      "segment_id": "seg-000003",
+      "start_ms": 39960,
+      "end_ms": 41960,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "人家有事，忙不。"
+    },
+    {
+      "segment_id": "seg-000004",
+      "start_ms": 41960,
+      "end_ms": 45835,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "二三五，零二四总监。零幺四人事部。"
+    },
+    {
+      "segment_id": "seg-000005",
+      "start_ms": 43835,
+      "end_ms": 47040,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "五加零幺四，人是股。"
+    },
+    {
+      "segment_id": "seg-000006",
+      "start_ms": 47040,
+      "end_ms": 48350,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "嗯。"
+    },
+    {
+      "segment_id": "seg-000007",
+      "start_ms": 48350,
+      "end_ms": 54390,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "挺好的。今天咱们主要就是商讨一下这个行业活动，然后咱……"
+    },
+    {
+      "segment_id": "seg-000008",
+      "start_ms": 54390,
+      "end_ms": 55230,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，工业这边。"
+    },
+    {
+      "segment_id": "seg-000009",
+      "start_ms": 55230,
+      "end_ms": 85230,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "对，由于我们上半嗯这一年已经忙忙碌碌、辛辛苦苦的不过了。最后在这个快要结束这一年工作的情况下，我们上面考虑了一下要给大家放一个十五天的这个长假。好好好同意！同意同意同意那现在我们就把大家召过来就是想询问一下因为这个假期嘛是为我们大家考虑的就是想问一下大家的意见：是想怎么度过这个假期？是想我们公司。"
+    },
+    {
+      "segment_id": "seg-000010",
+      "start_ms": 70445,
+      "end_ms": 74215,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "长假。好，好好同意！同意同意同意那现在我们。"
+    },
+    {
+      "segment_id": "seg-000011",
+      "start_ms": 85230,
+      "end_ms": 88380,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "自组织一个团建，团建。还是说？"
+    },
+    {
+      "segment_id": "seg-000012",
+      "start_ms": 86390,
+      "end_ms": 89515,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "环境，还是说？嗯。"
+    },
+    {
+      "segment_id": "seg-000013",
+      "start_ms": 87515,
+      "end_ms": 93490,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "肯定团建呀，团建啊！出去玩儿啊。"
+    },
+    {
+      "segment_id": "seg-000014",
+      "start_ms": 91620,
+      "end_ms": 95830,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "部门。哎，这两个部门有没有什么？"
+    },
+    {
+      "segment_id": "seg-000015",
+      "start_ms": 95830,
+      "end_ms": 107750,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "别的意见。哎呀，我其实有一个大家嗯没有说到的我个人想到的一个建议：我们可以去敬老院做一。"
+    },
+    {
+      "segment_id": "seg-000016",
+      "start_ms": 107750,
+      "end_ms": 113540,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "接爱心服务，做十五天的敬老院。爱心服务我觉得我不能接受。对我也不能介受。"
+    },
+    {
+      "segment_id": "seg-000017",
+      "start_ms": 111540,
+      "end_ms": 116930,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "我不能接受。对，我也不能接受。我觉得我的工作压力挺大的，我想出去放松放松。"
+    },
+    {
+      "segment_id": "seg-000019",
+      "start_ms": 117450,
+      "end_ms": 120990,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "其实，我们可以换一个角度来思考这个问题。"
+    },
+    {
+      "segment_id": "seg-000020",
+      "start_ms": 120990,
+      "end_ms": 127360,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，敬老院那些老人他们其实非常的孤独。孩子们都忙于工作。"
+    },
+    {
+      "segment_id": "seg-000021",
+      "start_ms": 127360,
+      "end_ms": 130350,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "其实我们个人来讲的话，可能我。"
+    },
+    {
+      "segment_id": "seg-000022",
+      "start_ms": 130350,
+      "end_ms": 132970,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "我们对自己的老人，也在。"
+    },
+    {
+      "segment_id": "seg-000023",
+      "start_ms": 132970,
+      "end_ms": 136210,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "这一方面，有一些书籍。我们就把……"
+    },
+    {
+      "segment_id": "seg-000024",
+      "start_ms": 136210,
+      "end_ms": 139900,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "他当成是对我们自己祖辈或者父辈。"
+    },
+    {
+      "segment_id": "seg-000025",
+      "start_ms": 139900,
+      "end_ms": 149140,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "的一个孝顺，来做的话。我们换一种思维去做一些爱心的活动去做善事。因为我们因为我们的公司。"
+    },
+    {
+      "segment_id": "seg-000026",
+      "start_ms": 147140,
+      "end_ms": 177140,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "因为我们，因为我们公司其实像这些福利活动啊。这个爱心捐助我们每年都有定期在做。所以我觉得为期一个十五期的一个长假对于我们员工来说其实是一个很好的调节的一个时间。所以我仅代表我们各部门儿：，我们这个部门意见是——其实我打算大家好好出去报送一下。因为团建是公司报销总部报销咱们公司也不是在咱的这个运营费里面。所以我又大胆一点说：“其实我想每个大家去北极玩。”这是我的想法。去哪里？去哪里？北京一极。"
+    },
+    {
+      "segment_id": "seg-000027",
+      "start_ms": 174390,
+      "end_ms": 177515,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "是我的想法。去哪里？去哪里呀！被击毙。"
+    },
+    {
+      "segment_id": "seg-000028",
+      "start_ms": 176760,
+      "end_ms": 181385,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "北极，是不是有点让人接受不了啊？那个。"
+    },
+    {
+      "segment_id": "seg-000029",
+      "start_ms": 177140,
+      "end_ms": 178060,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "飞机。"
+    },
+    {
+      "segment_id": "seg-000030",
+      "start_ms": 179385,
+      "end_ms": 199520,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "因为什么？因为我们常规的旅行啊，就国内、国外。其实我们个人都可以去。但是就这个氛围而言，这个……这个——这个资金问题而言，其实我比较想去北极这种地方。因为是公司报销嘛！其实我个人压力可能会小一点。所以平时去不到的地方对会想法可能会大打一些只是我的想法。"
+    },
+    {
+      "segment_id": "seg-000031",
+      "start_ms": 193095,
+      "end_ms": 195845,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "小一点，所以平时去不到的地方。"
+    },
+    {
+      "segment_id": "seg-000032",
+      "start_ms": 199520,
+      "end_ms": 204370,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "之所以提出去敬老院呢，是因为我看过一个报道：一个呃。"
+    },
+    {
+      "segment_id": "seg-000033",
+      "start_ms": 204370,
+      "end_ms": 207130,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "就是非常非常有钱的人，嗯他。"
+    },
+    {
+      "segment_id": "seg-000034",
+      "start_ms": 207130,
+      "end_ms": 211020,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "去敬老院，做了呃一个星期的。"
+    },
+    {
+      "segment_id": "seg-000035",
+      "start_ms": 211020,
+      "end_ms": 216750,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "服务。他说：“我做，我这一辈子从来没有做过的事情。”平常都是依赖。"
+    },
+    {
+      "segment_id": "seg-000036",
+      "start_ms": 216750,
+      "end_ms": 219580,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "伸手，换来张口的。因为他家。"
+    },
+    {
+      "segment_id": "seg-000037",
+      "start_ms": 219580,
+      "end_ms": 229930,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "家里有佣人，单位呢也有秘书。所以它基本上没有自己洗过衣服、没有自自己去做过一顿饭。当它去问一些敬老院的老人。"
+    },
+    {
+      "segment_id": "seg-000038",
+      "start_ms": 229930,
+      "end_ms": 232660,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "服务去刷他们的那些裤子啊，帮他们。"
+    },
+    {
+      "segment_id": "seg-000039",
+      "start_ms": 232660,
+      "end_ms": 252875,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "洗，洗头帮他们剪指甲的时候。他真的体验到了不一样的人生：当他与病患为伍的时候；他感觉到了自己健康的珍贵；当她以老人为伍的时候……他真的感觉到了青春的可贵。所以其实我觉得这一次我们去呃有这么十五天的时间我想。"
+    },
+    {
+      "segment_id": "seg-000040",
+      "start_ms": 250875,
+      "end_ms": 279875,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "我想，我想针对你刚刚说的这个就提问一下。就是你你想我们公司这些人呃就像你说的那些情况我们现在年轻人对这个父母啊孝顺这方面有一些纰漏他怎么可能会想要去这个敬老院？去给别人家的这个爷爷奶奶去洗裤子啊或者换洗什么衣服啊！这一方面肯定是会做到那个照顾不周的，所以嗯并。"
+    },
+    {
+      "segment_id": "seg-000041",
+      "start_ms": 277875,
+      "end_ms": 303130,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "周的，所以呃，并不需要他们。嗯，其实一人有有一天的时间或者有一个小时跟老人的一个聊天。嗯，坐在他的对面促膝交谈、嗯去看着老人的脸握着老人的手就听他说话。其实这也是对年轻人包括对老年人这是一个非常珍贵的一个经历但是我觉得。"
+    },
+    {
+      "segment_id": "seg-000042",
+      "start_ms": 301230,
+      "end_ms": 331230,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "一个经历，但是我觉得其实赡养老人是我们每个人必经的一个阶段。我们可以提前实践，但我觉得没有必要拿十五天这个假期去换一下这样。然后可能我们公司是一个比较年轻的公司，大家年龄段儿可能比较偏年轻，但是也有这些年长的他们上有父母下有孩子，他们平时就是在做这些日常的事情。如果我们在这个长假的时期以这种公益之种来绑架个人，他们去做他们日复一日都在做的一个事情我"
+    },
+    {
+      "segment_id": "seg-000043",
+      "start_ms": 331230,
+      "end_ms": 333720,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "觉得对这部分员工其实是不太公平的。其实。"
+    },
+    {
+      "segment_id": "seg-000044",
+      "start_ms": 332230,
+      "end_ms": 341500,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "其实是不太公平。其实我觉得，并没有一个员工据我了解，日不一日去做这个孝顺老人工作；相反，正是老人在照顾着他们的。"
+    },
+    {
+      "segment_id": "seg-000045",
+      "start_ms": 341500,
+      "end_ms": 344300,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "日常生活，帮他们带孩子、给他们做饭。"
+    },
+    {
+      "segment_id": "seg-000046",
+      "start_ms": 344300,
+      "end_ms": 355230,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "他们洗衣服，做家务。而他们只是坐享其成根本就没有过孝顺老人或者陪伴老人的这样子样的机会或者说从来没有为自己创造过的这样的一个。"
+    },
+    {
+      "segment_id": "seg-000047",
+      "start_ms": 353940,
+      "end_ms": 357260,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那为什么十五天大家？"
+    },
+    {
+      "segment_id": "seg-000048",
+      "start_ms": 355380,
+      "end_ms": 365075,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "那为什么十五天在家陪自己的这些爷爷奶奶，然后去那些陪、去那些根本就没有照顾自己的人呢？这个就很奇怪了。我觉得其实……"
+    },
+    {
+      "segment_id": "seg-000049",
+      "start_ms": 363075,
+      "end_ms": 365825,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "奇怪了，我觉着其实。"
+    },
+    {
+      "segment_id": "seg-000050",
+      "start_ms": 363825,
+      "end_ms": 377075,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我我觉得其实，其实可以在敬老院待一天。然后选择意的是：待一天或者待呃三到五天这样的时间，然后回家去照顾自己的家人。我想觉得。"
+    },
+    {
+      "segment_id": "seg-000051",
+      "start_ms": 375075,
+      "end_ms": 397920,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "我想这个问题，我想说一下啊。就是首先我们要明确一下：我们是想搞一个团建，是想促进一下我们公司各部门员工和主管之间的这个关系，让这个也可以放松一下我们一年的这个工作情况，放松一下身心。那如果去这个养老院是不是没有这个效果？而且平时我本来。"
+    },
+    {
+      "segment_id": "seg-000052",
+      "start_ms": 397920,
+      "end_ms": 403740,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "都很忙碌，大家都是想出去放松一下。去那里就是又是义务打扫，又是干什么？我觉得……"
+    },
+    {
+      "segment_id": "seg-000053",
+      "start_ms": 403740,
+      "end_ms": 422020,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "呃，像你刚刚提出来这个是去养老院。这个想法儿是挺好的对那个啊尊老爱幼嘛然后但是我觉得我们可以在平时就是想要做一些爱心活动的时候可以去一个养老院进行一个这样的活动的我如果是大家都。"
+    },
+    {
+      "segment_id": "seg-000054",
+      "start_ms": 422020,
+      "end_ms": 424470,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "反对，或者说大家都不愿意有以这么。"
+    },
+    {
+      "segment_id": "seg-000055",
+      "start_ms": 424470,
+      "end_ms": 438700,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "长的时间去做一个爱心服务工作的话，那你刚才说到了有一个机会我们可以去做。那么我们就可以选择一个周末或者周六的时间出去：——志愿者给老人们包一顿饺子去对我想。"
+    },
+    {
+      "segment_id": "seg-000056",
+      "start_ms": 437040,
+      "end_ms": 443745,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "我想的是，我们可以以后通过某一个重阳节或者一些呃。"
+    },
+    {
+      "segment_id": "seg-000057",
+      "start_ms": 441745,
+      "end_ms": 460730,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对，咱们可以通过其他的时候去这个做一些爱心活动。咱们这次主要的目的是为了让员工出去放松一下，去缓解一下工作上的压力工公司的主要目的，是我们之间的团建，团建问题所以就是个团建问"
+    },
+    {
+      "segment_id": "seg-000058",
+      "start_ms": 458730,
+      "end_ms": 467670,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "题。我们部门是想去北极这边，然后我想看各部门是否同意我这个提议呢？"
+    },
+    {
+      "segment_id": "seg-000059",
+      "start_ms": 466540,
+      "end_ms": 489965,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "嗯，我觉得我赞同北极去看北极光。对，去看北极观鹅绒绕，对吧？北极是不是太极端了那儿会不会太冷或者是有人冻伤啊等等要也要考虑一些安全问题呀哦！冻伤或者一些如果身体不舒服之类的东西他会不会就是没有及时就医对因为我们不买"
+    },
+    {
+      "segment_id": "seg-000060",
+      "start_ms": 487965,
+      "end_ms": 499210,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "及时就医。对，因为我们部门属于一个呃很庞大的一个公司，像一些老的员工他是不是得考虑一下是否可以去做一些这些极限运动？嗯因为……"
+    },
+    {
+      "segment_id": "seg-000061",
+      "start_ms": 499180,
+      "end_ms": 529180,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "北极它不光是大家想的那个，比如说科考的那片儿地方比较荒无人迹的。但是它——北极其实也有点形成这种旅游的趋势了。然后在比较边缘的地方虽然说是比较冷，但是它的设施都是比较完备的。然后而且那边比较特色：北极的北极熊呀、北极光呀还有那个……比如说那个什么呃那个狗拉雪橇这一类我觉得是在你在其他任何一个地方都不能享享有的。而且你像北极这种地方就是你一辈子去一次已经是一件很"
+    },
+    {
+      "segment_id": "seg-000062",
+      "start_ms": 529180,
+      "end_ms": 546450,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "幸福的事情嘛，所以我想趁这次机会大家一起去对一起去。而且就是说团建吧，大家团结在一起然后在这种比较极端这种与世隔绝的地方我觉得大家就是唯一存在的话可能对于我们这些团结呀这类的都有很大的帮助。"
+    },
+    {
+      "segment_id": "seg-000063",
+      "start_ms": 545720,
+      "end_ms": 569485,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "别的方面，我同意是区别。因为我觉得北极方面如果人去的话就算他属于年轻人或者是中年人这方面。如果是年轻人去的话它如果……嗯？解决这个问题吗？而且年轻人如果去的话有生命危险没有回来的吧啊这个不可能因为我们是在。"
+    },
+    {
+      "segment_id": "seg-000064",
+      "start_ms": 567485,
+      "end_ms": 575280,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这个可能，因为我们是在那个旅游区。我们不是探险类的，我们而以旅游为主对。"
+    },
+    {
+      "segment_id": "seg-000065",
+      "start_ms": 571000,
+      "end_ms": 578110,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "不是探险类的，我们而是以旅游为主。对安全是有保障的放心哎你这边不？"
+    },
+    {
+      "segment_id": "seg-000066",
+      "start_ms": 576110,
+      "end_ms": 582750,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "同意，有没有什么别的想要去举行的一个？我比较想去。"
+    },
+    {
+      "segment_id": "seg-000067",
+      "start_ms": 580750,
+      "end_ms": 602885,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "如果真要去玩的话，他们会不会想去看一些大草原之类的？像一些：他们骑过马吗？骑过呀！这个部门儿是没去过啊。大多数人骑过吗？咱们公司的地理位置是属于汉族啊，属于平原啊。但是去内蒙古。"
+    },
+    {
+      "segment_id": "seg-000068",
+      "start_ms": 593395,
+      "end_ms": 596895,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这个部门儿，骑过。没骑过但是好多人骑过吗？"
+    },
+    {
+      "segment_id": "seg-000069",
+      "start_ms": 600885,
+      "end_ms": 613385,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "但是去内蒙古，会不会有点儿单一啊？大草原。就是我们最想到的就是篝火、环境骑马然后这些吃喝之类的。但是如果说你在草原上待半个月回来的话，我觉得咱们不光回来。"
+    },
+    {
+      "segment_id": "seg-000070",
+      "start_ms": 608385,
+      "end_ms": 620135,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "就是如果说你在草原上待了半个月回来的话，我觉得咱们不光回来是黑了一圈儿也会被蚊子咬得肿了一圈。那咱北极呢？北极你每天都有新的梦。"
+    },
+    {
+      "segment_id": "seg-000071",
+      "start_ms": 616635,
+      "end_ms": 619385,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "北极呢？，北极你每次。"
+    },
+    {
+      "segment_id": "seg-000072",
+      "start_ms": 618135,
+      "end_ms": 622385,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "飞机，你每天都有新的冒险呀？不是这是每天都有新。"
+    },
+    {
+      "segment_id": "seg-000073",
+      "start_ms": 620385,
+      "end_ms": 632885,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "不是，这是每天都有新的这个。看雪吗？会不会有雪盲症啊！就算没有危险，这个雪盲是很少会有人患有。我……我如果说。"
+    },
+    {
+      "segment_id": "seg-000074",
+      "start_ms": 630885,
+      "end_ms": 633635,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我……如果说。"
+    },
+    {
+      "segment_id": "seg-000075",
+      "start_ms": 631635,
+      "end_ms": 635885,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "雪崩带眼镜儿。北极不会雪崩。"
+    },
+    {
+      "segment_id": "seg-000077",
+      "start_ms": 634635,
+      "end_ms": 638885,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "咱们不是去爬雪山，所以没有雪。"
+    },
+    {
+      "segment_id": "seg-000078",
+      "start_ms": 636885,
+      "end_ms": 644885,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "啊，这个北极去的话是主要考虑一下那个呃服装啊这一方面。对呀主要是咱们。"
+    },
+    {
+      "segment_id": "seg-000079",
+      "start_ms": 642885,
+      "end_ms": 649385,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对呀，主要是咱们。咱们公司会出这部分资金嘛？我觉得去如果。"
+    },
+    {
+      "segment_id": "seg-000080",
+      "start_ms": 647385,
+      "end_ms": 668450,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "是去北京的话，其实每个部门员工都要考虑一套衣服。嗯，这方面对这一方面是需要一部分很大一部分经费的。我们把这个经费都用在买服装上面。我们别的呃吃啊住啊，这一方面就这个公司预算应该是有。"
+    },
+    {
+      "segment_id": "seg-000081",
+      "start_ms": 654885,
+      "end_ms": 657635,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这一方面，对。这。"
+    },
+    {
+      "segment_id": "seg-000082",
+      "start_ms": 666450,
+      "end_ms": 669230,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "这个公司的预算应该是有一个上限的。"
+    },
+    {
+      "segment_id": "seg-000083",
+      "start_ms": 669230,
+      "end_ms": 669800,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "对。"
+    },
+    {
+      "segment_id": "seg-000084",
+      "start_ms": 669800,
+      "end_ms": 674460,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这方面，我们西边去北京的话是不是超了？"
+    },
+    {
+      "segment_id": "seg-000086",
+      "start_ms": 674530,
+      "end_ms": 677655,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "而且，北极。你们了解那个？"
+    },
+    {
+      "segment_id": "seg-000087",
+      "start_ms": 675655,
+      "end_ms": 680970,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "而且北京，你们了解那个旅游景点吗？因为都没有去过。"
+    },
+    {
+      "segment_id": "seg-000088",
+      "start_ms": 680270,
+      "end_ms": 708300,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "呃，我记得北欧有一个小镇。它算是属于北极圈划分范围之内，是最北方一个行业叫什么库里？然后那个地方他就是人是比较少的但是它的旅游业发展是比较好的。他也属于北极范围大家不是每次一说北极想就那个冰盖之上这个可能会有一点麻烦但咱们去一个北欧小镇靠近北极圈的地方这个还是比较可行的。"
+    },
+    {
+      "segment_id": "seg-000090",
+      "start_ms": 708550,
+      "end_ms": 733990,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "像刚才我说的去内蒙古之类的，骑马、篝火。还有像一些烤全羊之类的只有这方面想的但是人们想到北极狗拉雪橇其中一点还有一种滑雪项目还可以观光北极熊它还有更多的项目啊他不会在两三天就摆这些项目就会惨了"
+    },
+    {
+      "segment_id": "seg-000091",
+      "start_ms": 732370,
+      "end_ms": 744980,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "就会。景点，景点！因为北极的它这个气候原因，这个景点跟咱们这些靠中间的这些地方的景点的是肯定是很不一样的，而且是独有的。"
+    },
+    {
+      "segment_id": "seg-000093",
+      "start_ms": 745630,
+      "end_ms": 764200,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "行，那、那为什么不去哈尔滨呢？相对于来说较安全一些。去北极的话肯定需要，肯定需要就是和一些那个航空公司合作。主要是想也想要去出去感受一下儿。"
+    },
+    {
+      "segment_id": "seg-000095",
+      "start_ms": 764510,
+      "end_ms": 769180,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "如果我们去北极的话，有没有考虑点签证的难度？"
+    },
+    {
+      "segment_id": "seg-000097",
+      "start_ms": 769760,
+      "end_ms": 778660,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "主要出国都要考虑到签证问题。凡是咱们团建也是，也会往国外飞。咱们毕竟是一个旅游旅行签嘛！我觉得这个还是比较好签的。"
+    },
+    {
+      "segment_id": "seg-000099",
+      "start_ms": 779940,
+      "end_ms": 784940,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "但是我了解到的是，北极的话签证的难度是。"
+    },
+    {
+      "segment_id": "seg-000100",
+      "start_ms": 784930,
+      "end_ms": 791055,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "欧洲小国靠近北极的位置，不是北极冰盖之上。那"
+    },
+    {
+      "segment_id": "seg-000101",
+      "start_ms": 789055,
+      "end_ms": 806805,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "如果不是是在北极范围内的这个小小城小城镇，嗯？是否是可以说看到你刚刚说的那种啊：北极熊啊或者就是想要去北极参观的那个特点是不是有这个呃？"
+    },
+    {
+      "segment_id": "seg-000102",
+      "start_ms": 804805,
+      "end_ms": 824780,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "呃，还是我们以这个欧洲小镇为主。但是因为它靠近北极冰盖儿，我们可以用几天的时间做这个轮渡，靠近这个地方游览一两天。我们不可能在那里长住，但是我们可以去那边参观一下因为这是在别的城市、别的国家都永远不可能享受到的一种。"
+    },
+    {
+      "segment_id": "seg-000103",
+      "start_ms": 824660,
+      "end_ms": 828380,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "别的部门还有没有别的一点？"
+    },
+    {
+      "segment_id": "seg-000104",
+      "start_ms": 828380,
+      "end_ms": 848380,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "我觉得还是在国内比较好，因为十五天时间。十五天团建时间，我觉得没必要就是说呃就是在交通上花太多的时间，在国内的话交通也相对嗯、相对嗯，时间相对较短也比较安全玩得时间还长一点对你这样玩的时？间我会把过多的时间浪费在"
+    },
+    {
+      "segment_id": "seg-000105",
+      "start_ms": 848380,
+      "end_ms": 849090,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "啊！"
+    },
+    {
+      "segment_id": "seg-000106",
+      "start_ms": 849090,
+      "end_ms": 867535,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那个路上，而且有的人可能坐飞机会。对。坐飞机的时候可能会觉得呃不舒服我觉得你如果去北极的话你除了坐飞机还有别的什么没有？什么那个只能做北极啊！对呀，你这样没有考虑到每个人的身体状况比如说你说那些五十多岁的人他。"
+    },
+    {
+      "segment_id": "seg-000107",
+      "start_ms": 865535,
+      "end_ms": 868300,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "他心脏不好。"
+    },
+    {
+      "segment_id": "seg-000108",
+      "start_ms": 868300,
+      "end_ms": 872240,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "他受不了，呀！你不能因为我觉得。"
+    },
+    {
+      "segment_id": "seg-000109",
+      "start_ms": 872240,
+      "end_ms": 882495,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "国内比较好。你说你三四天、五六天，玩完一个地区；咱们可以在换因为国内毕竟呃就是嗯景点啊……哦！经典。"
+    },
+    {
+      "segment_id": "seg-000110",
+      "start_ms": 880495,
+      "end_ms": 894370,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "景点，嗯。景点比较多吧？可以选取一个省份来进行游玩，并不一定是一个城市。这样游玩地方多啊！而且国内相对于较为安全的。"
+    },
+    {
+      "segment_id": "seg-000112",
+      "start_ms": 894620,
+      "end_ms": 901180,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "比较方便，是确实如果去北极的话需要考虑一些很多因素嗯像。"
+    },
+    {
+      "segment_id": "seg-000113",
+      "start_ms": 899880,
+      "end_ms": 902650,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "嗯，相关的经费。"
+    },
+    {
+      "segment_id": "seg-000114",
+      "start_ms": 901680,
+      "end_ms": 911280,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "对，经费是一方面。然后还有这个人员安全，还有一些真正玩的一些……对真正的用户呢？"
+    },
+    {
+      "segment_id": "seg-000115",
+      "start_ms": 911280,
+      "end_ms": 931170,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "其实挺占时间的。对，如果在一个礼拜之内把就是在北极的项目都完成了，我们还要再花更多的那个嗯资金在我们去别的地址的选择上。我觉得这个……嗯，都花费在这个交通上。我觉得这个资金其实有点没有被充分利用了。"
+    },
+    {
+      "segment_id": "seg-000116",
+      "start_ms": 931170,
+      "end_ms": 945300,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那有没有说像国内有一一个某一个地区，就是我们大家都想去的但是平常都不会去的一个地方？比较有特色的一点。偏远一点儿是吧？"
+    },
+    {
+      "segment_id": "seg-000117",
+      "start_ms": 944620,
+      "end_ms": 947790,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "是这些沿海省份，然后。"
+    },
+    {
+      "segment_id": "seg-000118",
+      "start_ms": 947790,
+      "end_ms": 953640,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "这些呃，山有雪的地方。对森林覆盖率比较大的地方，我们可以。"
+    },
+    {
+      "segment_id": "seg-000119",
+      "start_ms": 953640,
+      "end_ms": 970845,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "去西南边，因为我比较想去那种人比较少的地方。因为到处都是人人人人人压力特别大，就想想去一个比较空旷的一个地方，然后实践一种完全的生活自主的感觉。这种郊外对类似于这样但是比较有特点一点的。"
+    },
+    {
+      "segment_id": "seg-000120",
+      "start_ms": 963595,
+      "end_ms": 967095,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "自主的感觉，那种郊外对类似于。"
+    },
+    {
+      "segment_id": "seg-000121",
+      "start_ms": 968845,
+      "end_ms": 974940,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "大草原人少。往北的话，我们可以去东北长白山哦。"
+    },
+    {
+      "segment_id": "seg-000122",
+      "start_ms": 969595,
+      "end_ms": 972345,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "大草原人少。"
+    },
+    {
+      "segment_id": "seg-000123",
+      "start_ms": 974940,
+      "end_ms": 979270,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "对了，我不知道大家对三八有没有了解。那儿现在在。"
+    },
+    {
+      "segment_id": "seg-000124",
+      "start_ms": 979270,
+      "end_ms": 982395,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "非常好，你可以说一下吗？那那边。"
+    },
+    {
+      "segment_id": "seg-000125",
+      "start_ms": 980395,
+      "end_ms": 984645,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "试一下吧。嗯，那那边其实最开始的……一开始是一片。"
+    },
+    {
+      "segment_id": "seg-000126",
+      "start_ms": 982645,
+      "end_ms": 991395,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "沙漠，一片荒漠。后来经过咱们的这个三拜人的就是塞罕坝奇迹大家都听说过啊！只入枣林。"
+    },
+    {
+      "segment_id": "seg-000127",
+      "start_ms": 986395,
+      "end_ms": 989895,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "后来经过，咱们三拜人的就是。"
+    },
+    {
+      "segment_id": "seg-000128",
+      "start_ms": 989395,
+      "end_ms": 992740,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "奇迹大家都听说过。对，植树造林嗯。"
+    },
+    {
+      "segment_id": "seg-000129",
+      "start_ms": 992240,
+      "end_ms": 1022240,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "呃，我知道一个故事。呃，一个年轻人也就是二十多岁的样子哦不到三十岁他说他是零三代因为现在都说什么富二代呀官二代啊对他非常站在舞台上非常自豪的说我是零三代我爷爷从我爷爷开始就是植树造林嘛就是让那那个那一片沙漠有一抹绿色那是他爷爷的愿望他爷爷就在那儿然后到了他爸爸这一代呢又继续的植树造林直到。"
+    },
+    {
+      "segment_id": "seg-000130",
+      "start_ms": 1022240,
+      "end_ms": 1031590,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "他大学毕业之后，同样又回到了三环外。他非常自豪的说：“请你们到我们这里来。”要感受一下绿色。而且他们呃集体。"
+    },
+    {
+      "segment_id": "seg-000131",
+      "start_ms": 1031190,
+      "end_ms": 1033960,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "集体在那儿做一，三代人的一个。"
+    },
+    {
+      "segment_id": "seg-000132",
+      "start_ms": 1032700,
+      "end_ms": 1048920,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "对，呃，您现在他们整个的……嗯，就是当时的那些。现在还还在岗位上的这些工作人员，他们集体地朗诵了一首诗词献给在场的所有的嘉宾。最后诚诚实的邀请——呃所有的人。"
+    },
+    {
+      "segment_id": "seg-000133",
+      "start_ms": 1048920,
+      "end_ms": 1054340,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "到三亚玩去，感受一下他们那里的美。那是人造不是。"
+    },
+    {
+      "segment_id": "seg-000134",
+      "start_ms": 1054340,
+      "end_ms": 1061150,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "人工的，那个时候就感到了人的力量的伟大。而且传承了三八炮更多。"
+    },
+    {
+      "segment_id": "seg-000135",
+      "start_ms": 1059150,
+      "end_ms": 1066910,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "传承的，就是三海坝更多的是一种精神的传递。但它作为一个旅游景点来说，我觉得优势好像不是那么……对方面可。"
+    },
+    {
+      "segment_id": "seg-000136",
+      "start_ms": 1065240,
+      "end_ms": 1095240,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "是环境不是那么。这方面可以去一下西湖啊，去一下杭州的西湖是吗？对呀，《苏堤白堤》啊这方面因为《苏堤白堤》，不是有一年四季特色嘛它讲究一种春来花晚、苏堤流满烟，这方面的特色。因为咱们这个公司如果是要按照各个不同的季节去还有像什么夏季也有红衣绿扇映清波这种这种传统的还有就像如果是九月都快入秋的时候还有秋天。"
+    },
+    {
+      "segment_id": "seg-000137",
+      "start_ms": 1095240,
+      "end_ms": 1109030,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "一色湖光，万顷秋之类的这种美如画的这种形象。还有咱们团建肯定不可能冬天但是冬天也有它冬天特色比方说白地痕青花墨之类的这都是属于山水画。"
+    },
+    {
+      "segment_id": "seg-000138",
+      "start_ms": 1107030,
+      "end_ms": 1120635,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这都是说的这些，其实都是一种意境。等你到了实景的话，你会发现：其实跟咱们现在达摩克利宫没有什么区别。所以我想去一种比较有特色的地方——真的！你要去西湖的话……就如果这么说的话，我觉得。"
+    },
+    {
+      "segment_id": "seg-000139",
+      "start_ms": 1118635,
+      "end_ms": 1138750,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "其实，如果这么说的话，我就觉得偏激了。呃，为什么？呃，苏轼会写西湖的时候说：“浓妆淡抹总相宜”，他一定跟达摩院公园是有别的。呃，只有身临其境的时候，你才能够感受到：为什么古人会那么说；为什么文人骚客会那么想、那么写。"
+    },
+    {
+      "segment_id": "seg-000140",
+      "start_ms": 1138590,
+      "end_ms": 1152215,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "因为西湖，一个是一个比较热门的一个地方。会不会有人去过呀？或者说咱们去的时候呢有很多的人呀！对这个是需要考虑进去的。这个问题可能其实比较、比较直接的一个问题啊如果说……"
+    },
+    {
+      "segment_id": "seg-000141",
+      "start_ms": 1145715,
+      "end_ms": 1148465,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "很多的人呀，对这个是需要考虑进去。"
+    },
+    {
+      "segment_id": "seg-000142",
+      "start_ms": 1150215,
+      "end_ms": 1163265,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "比较直接的一个问题：如果说想去人少的地方的话，我们就可以去大草原。或者我们去西南边陲那边儿就更少了而且风景也优美我觉得去草原是一个很好的选择因为那晚上。"
+    },
+    {
+      "segment_id": "seg-000143",
+      "start_ms": 1161265,
+      "end_ms": 1164470,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "原来是一个很好的选择，因为它晚上大家可以一起篝火晚会。"
+    },
+    {
+      "segment_id": "seg-000144",
+      "start_ms": 1163950,
+      "end_ms": 1170800,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我们公司团建嘛，对。本来就是公司团建然后去观摩一次吧？"
+    },
+    {
+      "segment_id": "seg-000145",
+      "start_ms": 1170800,
+      "end_ms": 1171410,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "之间的感情。"
+    },
+    {
+      "segment_id": "seg-000146",
+      "start_ms": 1171410,
+      "end_ms": 1187285,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "还有就是属于这种选地，如果要选人少的地方。我感觉：如果人多的地方肯定是好玩儿人们去；这是其一。其次，人少地方那肯定荒凉。荒凉就是他们觉得这地方没有什么意思才去人少的。"
+    },
+    {
+      "segment_id": "seg-000147",
+      "start_ms": 1185285,
+      "end_ms": 1194950,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "没有什么意思。其实，人少的地方是安静的、空旷的：是我们可以站在大草原上感受那种天地我的那种意象。"
+    },
+    {
+      "segment_id": "seg-000149",
+      "start_ms": 1195590,
+      "end_ms": 1200215,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "所以咱们要选冷门的还是热门？我觉得。"
+    },
+    {
+      "segment_id": "seg-000150",
+      "start_ms": 1198215,
+      "end_ms": 1202280,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "任务。我觉得，既然是出去放松了我们。"
+    },
+    {
+      "segment_id": "seg-000151",
+      "start_ms": 1202280,
+      "end_ms": 1207030,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "就选择那种人比较少，然后景。"
+    },
+    {
+      "segment_id": "seg-000152",
+      "start_ms": 1207030,
+      "end_ms": 1212680,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "比较好的，绿色比较多的。人少、比较白的是一个什么？"
+    },
+    {
+      "segment_id": "seg-000153",
+      "start_ms": 1208700,
+      "end_ms": 1213670,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "比较多的，人少不外白。他是一个文的一个地方面。"
+    },
+    {
+      "segment_id": "seg-000154",
+      "start_ms": 1211960,
+      "end_ms": 1223795,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对，这方面我比较赞同。就是去一些安静舒适的环境，因为在公司的这方面压力比较大嘛，所以人们需要静下心来去感受一下大自然的魅力。"
+    },
+    {
+      "segment_id": "seg-000155",
+      "start_ms": 1221795,
+      "end_ms": 1224870,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "来去感受一下大草原的美景。因为我觉得躺在草地上，"
+    },
+    {
+      "segment_id": "seg-000156",
+      "start_ms": 1222870,
+      "end_ms": 1225640,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "属心境的感觉。"
+    },
+    {
+      "segment_id": "seg-000157",
+      "start_ms": 1224890,
+      "end_ms": 1235440,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "那为什么咱们不，不不买一个度假别墅，在里面躺十五天呢？也很休闲，也很放松。环境也很不错呀！我们就要感受不一样有特色。"
+    },
+    {
+      "segment_id": "seg-000158",
+      "start_ms": 1234520,
+      "end_ms": 1239230,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "的那个，我们要要在大自然中去感受啊。都加车就是大。"
+    },
+    {
+      "segment_id": "seg-000159",
+      "start_ms": 1238760,
+      "end_ms": 1255600,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "就是大自然，它是自带草坪的呀。所以我还是想去那种比较，就是比较有特色的地方，比如说什么、什么庐山瀑布那种大瀑布，《黄河入海》那种大瀑布。你在其他地方都是绝对看不到的，就类似于这样的也不枉此行吧？"
+    },
+    {
+      "segment_id": "seg-000160",
+      "start_ms": 1255280,
+      "end_ms": 1260680,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "去瀑布这方面的话，就需要人员爬山和解决住宿问题。"
+    },
+    {
+      "segment_id": "seg-000162",
+      "start_ms": 1261120,
+      "end_ms": 1268480,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "就是有没有某个景点，就在那个山脚底下。但是周围风景特别好，就类似于孙诺这种的。"
+    },
+    {
+      "segment_id": "seg-000163",
+      "start_ms": 1267650,
+      "end_ms": 1270840,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我们在那里。去云山、蓬莱城。"
+    },
+    {
+      "segment_id": "seg-000164",
+      "start_ms": 1270840,
+      "end_ms": 1278390,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "岭侧成峰，庐山。对，刚刚提出来这个“庐山瀑布”，我觉得……"
+    },
+    {
+      "segment_id": "seg-000165",
+      "start_ms": 1278390,
+      "end_ms": 1296650,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "去看瀑布是一个不错的选择。我们可以选择，呃住宿问题的话：因为刚刚不是说到可以篝火晚会吗？我想可以在这个山脚啊或者哪里搭建一些帐篷，然后我们员工可以在一块儿晚上的时候举行一下这个晚会。其实。"
+    },
+    {
+      "segment_id": "seg-000166",
+      "start_ms": 1295140,
+      "end_ms": 1321180,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我们可以选择一个，就是既然有十五天的长假嘛，我们可以选择一个路线：，就是比较这些景点、比较近的、比较有特色的大家都比较能够接受的呃风景宜人的啊气候比较舒爽的然后风景比较优美的有山有水的地方纵错线连一条线今天去哪明天去买。然后我们嗯给大家做一个汇报。"
+    },
+    {
+      "segment_id": "seg-000167",
+      "start_ms": 1320340,
+      "end_ms": 1324600,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "对，那你有没有这方面的推荐？"
+    },
+    {
+      "segment_id": "seg-000168",
+      "start_ms": 1324600,
+      "end_ms": 1327040,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "比如说，我们可以去云。"
+    },
+    {
+      "segment_id": "seg-000169",
+      "start_ms": 1327040,
+      "end_ms": 1335880,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "云南大理丽江啊，还还有重庆三塔寺。比如说西藏版纳这一条线因为云南云南省。"
+    },
+    {
+      "segment_id": "seg-000170",
+      "start_ms": 1335880,
+      "end_ms": 1342230,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "比较板块比较大嘛，景点较分散。我们可以用十五天时间把云南游一遍。"
+    },
+    {
+      "segment_id": "seg-000171",
+      "start_ms": 1342230,
+      "end_ms": 1349730,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "考虑如果是这样的话，每一天都安排的特别满。呃都在干不是因为我们。"
+    },
+    {
+      "segment_id": "seg-000172",
+      "start_ms": 1349730,
+      "end_ms": 1351080,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "你比如说，我们去。"
+    },
+    {
+      "segment_id": "seg-000173",
+      "start_ms": 1351080,
+      "end_ms": 1358470,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "呃，石林让大家去感受大自然的鬼斧神工啊！我们在那儿呃游玩一天子。那么我们下一站呢？可以。"
+    },
+    {
+      "segment_id": "seg-000174",
+      "start_ms": 1358470,
+      "end_ms": 1362510,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "去洱海，那么在洱海就是自由的一个活动。大家可以。"
+    },
+    {
+      "segment_id": "seg-000175",
+      "start_ms": 1362510,
+      "end_ms": 1392510,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "在海上可以去驾船，呃我们可以在海边漫步这些。呃活动或者说我们在嗯丽江古城的时候，我们白天可以组织一些集体活动晚上可以自由的去游古城去买一些银器啊或者买一些具有民族风的一些骨啊还有还有他们那些民族的服装我们可以穿上而且价格也不贵一套就是那种那种裙子哈就是呃她们呃女孩子穿着非常显腰身儿的那一那样的。"
+    },
+    {
+      "segment_id": "seg-000176",
+      "start_ms": 1392510,
+      "end_ms": 1411370,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "火裙，一套也就八十块钱。嗯，而且呃我上次去那儿买了一个上衣，就是一个中袖的夏天穿的，呃非常料子也非常的呃舒服就二十块钱，让大家可以在晚上的夜市的时候可以嗯自己呢去选择呃自.己"
+    },
+    {
+      "segment_id": "seg-000177",
+      "start_ms": 1411370,
+      "end_ms": 1414900,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "去夜市啊，或者说去呃广场啊、去玩儿。白天。"
+    },
+    {
+      "segment_id": "seg-000178",
+      "start_ms": 1414900,
+      "end_ms": 1418130,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "的话，我们可以安排集体的时间。"
+    },
+    {
+      "segment_id": "seg-000179",
+      "start_ms": 1417910,
+      "end_ms": 1424790,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那这个根据这个提议，大家有没有想法？不赞同或者不赞同的吗？"
+    },
+    {
+      "segment_id": "seg-000180",
+      "start_ms": 1424790,
+      "end_ms": 1425820,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "那边风景好。"
+    },
+    {
+      "segment_id": "seg-000181",
+      "start_ms": 1425820,
+      "end_ms": 1438250,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "可能就是个人旅游的话，是一种享受。但是咱们作为团队一大堆人就可能把这种宁静给冲散了，就可能享受不到这种它这个旅游景点本来应该给人的体验嗯。"
+    },
+    {
+      "segment_id": "seg-000182",
+      "start_ms": 1438250,
+      "end_ms": 1440680,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "景点的区域是比较大的，比如说。"
+    },
+    {
+      "segment_id": "seg-000183",
+      "start_ms": 1440680,
+      "end_ms": 1470680,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "古道，我们可以骑着马。当然他们有一个提供牵马的人呃我们就是每一个人都可以：骑马在长坂古道上走走一圈也就是半个小时的时间然后呃我们也可以彼此拍照或者他可以给我拿着我们的手机让我们好好好的坐好抓稳了他给我们拍照嗯，在长坂古道上，给我们每一个人留影。其实还有我们可以就是自己做船或者自己开船那种七二船，我们三个人一。"
+    },
+    {
+      "segment_id": "seg-000184",
+      "start_ms": 1470680,
+      "end_ms": 1478700,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "三个人一组，一起出去玩。其实，在大海之中，我们就不会发现：我们这么多人，我们这么多人也不过就是沧海。"
+    },
+    {
+      "segment_id": "seg-000186",
+      "start_ms": 1479290,
+      "end_ms": 1509290,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "其实我感觉旅游景点要选的话，肯定要分为两种：第一种就属于能让人静心一种环境；还有一种就是属于游玩设施。就是可以既可以拍照也可以满足大多数人的需求。比方说像中年人他们可能喜静喜欢那种骑骑马看看风景之类的或者喜欢那种游玩散步向那种谈心之类的这种问题如果是年轻人的话公司因为毕竟刚才说了嘛是比较年"
+    },
+    {
+      "segment_id": "seg-000187",
+      "start_ms": 1509290,
+      "end_ms": 1517665,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "年轻的一个公司，然后它年轻人如果居多的话也可以要有一些刺激性的项目。要选择这样的一个景点就是：选择像。"
+    },
+    {
+      "segment_id": "seg-000188",
+      "start_ms": 1515665,
+      "end_ms": 1518690,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这样的一个景点，就是选择性比较多的。"
+    },
+    {
+      "segment_id": "seg-000189",
+      "start_ms": 1518080,
+      "end_ms": 1521560,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "多的，选择性比较多的。"
+    },
+    {
+      "segment_id": "seg-000190",
+      "start_ms": 1520650,
+      "end_ms": 1523450,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "就不那么单一了。像刚"
+    },
+    {
+      "segment_id": "seg-000191",
+      "start_ms": 1521810,
+      "end_ms": 1538790,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那么单一的，像刚刚说的呃。考虑一下儿把各个景点联合到一一起，我们可以进行一个一系列的游戏玩。这样的话是不是这个啊？可以照顾到各个层次的这个不同人想要玩这个安静一点儿呢或者刺激一点呢。"
+    },
+    {
+      "segment_id": "seg-000192",
+      "start_ms": 1537740,
+      "end_ms": 1560600,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对，咱们可以选择一个省份进进行游玩而不是一个城市。进行游玩这样的话游玩的景点较多嘛它可以：一个省份分好多城市咱可以进行把每一个城市好玩的地方咱可以综合一下然后哪些排除掉那些留下来这样的话进行制定一个路线而且经费不是很高的一种路线。"
+    },
+    {
+      "segment_id": "seg-000193",
+      "start_ms": 1559550,
+      "end_ms": 1567365,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "俺刚刚提到了云南，这边儿。你这边还有没有说想要去的城市？"
+    },
+    {
+      "segment_id": "seg-000194",
+      "start_ms": 1565365,
+      "end_ms": 1589115,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "其实刚刚那边提到云南，其实我这个部门儿其实作为这个部长，我有点心动因为云南的话，那边是有刺激性项目的对如果是要安静的话你看像那里会有会生产一些水、水会产生一些水果比方说像一些中年人他们喜欢耕作一些植物啊或者种一些东西啊或者是采摘一些东西。种植园的感觉？"
+    },
+    {
+      "segment_id": "seg-000195",
+      "start_ms": 1578115,
+      "end_ms": 1580865,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "会，山山水水。"
+    },
+    {
+      "segment_id": "seg-000196",
+      "start_ms": 1587115,
+      "end_ms": 1590615,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "或者采摘一些东西，种植园的感觉。对，还有一种……"
+    },
+    {
+      "segment_id": "seg-000198",
+      "start_ms": 1589365,
+      "end_ms": 1613115,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对，还有一种。那还有像那种浅、浅式的鱼塘也可以进行互动，就属于看捞、捞鱼嘛？比一下捞鱼然后租一个山庄进行咱们可以自己烹饪一下食物，这也是一种游玩方式。然后继续在云南这个省份找一些刺激性的项目，比如说像一些刚才的快艇啊之类的都可以。"
+    },
+    {
+      "segment_id": "seg-000199",
+      "start_ms": 1611115,
+      "end_ms": 1617730,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "可以组织一些想要去玩刺激项目的年轻人。可以去游玩儿，可以去新疆旅游。"
+    },
+    {
+      "segment_id": "seg-000200",
+      "start_ms": 1617730,
+      "end_ms": 1620680,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "那玩，年轻人会。"
+    },
+    {
+      "segment_id": "seg-000201",
+      "start_ms": 1620680,
+      "end_ms": 1623650,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这边有没有什么想法？"
+    },
+    {
+      "segment_id": "seg-000203",
+      "start_ms": 1625730,
+      "end_ms": 1631105,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那就是呃，赞同刚刚说的云南这边。"
+    },
+    {
+      "segment_id": "seg-000204",
+      "start_ms": 1629105,
+      "end_ms": 1632720,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "南那边儿。我我也在那儿。"
+    },
+    {
+      "segment_id": "seg-000206",
+      "start_ms": 1634130,
+      "end_ms": 1663505,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "那咱们去云南要怎么去呢？大家就是坐飞机，直接把这个时间节约到过去。还是说趁此机会——毕竟云南离咱人还比较远啊！嗯……对呀。我想：咱们是做、我像：“直”“。”—过飞机的好处是他节省时间；当然他就比如说咱们两点一线，咱们会把中间所有地方就忽略。所以我觉得咱们要是直接到昆明。那如果？对呀——云南的风景也顺便看了这样会不会也是一个选择呢？其实我们在火车上是……"
+    },
+    {
+      "segment_id": "seg-000207",
+      "start_ms": 1653255,
+      "end_ms": 1656005,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "咱们要是飞机直接到昆明，如果。"
+    },
+    {
+      "segment_id": "seg-000208",
+      "start_ms": 1661505,
+      "end_ms": 1667825,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "那会不会也是？因为我们在火车上是看不到那种风景，没有没有什么风景会在。享受这种快感有。"
+    },
+    {
+      "segment_id": "seg-000209",
+      "start_ms": 1665825,
+      "end_ms": 1695825,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "什么风景会在？享受这种快感。有人为什么说大家现在节奏都比较快，天天快来快去的什么高速那个高铁一直在提速。大家坐飞机就是因为咱们十五天并不是那么的赶时间，并不是要出差那样。但是大家没有必要把时间浪费在……这不叫浪费！你其实火车怎么叫浪费呢？对而且火车每到一个城市的话比如说一个大站的话它会停半个小时，你完全可以八小时下来来周边转一转都是可以的所以我想咱们把旅途的这段时程、时间也利用起来。"
+    },
+    {
+      "segment_id": "seg-000210",
+      "start_ms": 1678575,
+      "end_ms": 1681800,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "但是大家没有必要把时间浪费在。"
+    },
+    {
+      "segment_id": "seg-000211",
+      "start_ms": 1695160,
+      "end_ms": 1699925,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "也利用起来。我们这个，或者说或者说咱们去。"
+    },
+    {
+      "segment_id": "seg-000212",
+      "start_ms": 1695825,
+      "end_ms": 1697010,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "其实这个。"
+    },
+    {
+      "segment_id": "seg-000213",
+      "start_ms": 1697925,
+      "end_ms": 1727670,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "或者说，或者说咱们去的时候可以采用就是坐绿皮火车的方式。回来的车都是高铁这个我感觉还有飞机都可以选择。这是我我个人建议就是咱们去的时候是以这个绿皮火车的方式来回去。对，比较轻松一点了。生活快的时候？嗯，对。我们可以在时候我们可以做飞机。大家都已经玩够了、玩累了呃不愿意在在火车上再耗费精力时间了咱们就可以坐飞机回来。"
+    },
+    {
+      "segment_id": "seg-000214",
+      "start_ms": 1713160,
+      "end_ms": 1716030,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "开始就是放松心情吧。有新鲜感，对比较新一点啊！"
+    },
+    {
+      "segment_id": "seg-000215",
+      "start_ms": 1719855,
+      "end_ms": 1722780,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "已经玩够了，玩累啦。呃不愿意再。"
+    },
+    {
+      "segment_id": "seg-000216",
+      "start_ms": 1726220,
+      "end_ms": 1749480,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "我想体让大家感受一下，因为现在绿皮火车也比较少嘛。就是从咱这儿往云南坐，也就是好像是两天到三天的时间就你完全可以就享受一下那种感觉。就你在最后一节车轨你看那个铁轨也是特别有、特美有一种事情让大家对，让大家节奏慢一些让你知道在路上然后这种场景怎么样？"
+    },
+    {
+      "segment_id": "seg-000217",
+      "start_ms": 1743310,
+      "end_ms": 1746090,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "事情，然后让大家对让大家节奏慢一点。"
+    },
+    {
+      "segment_id": "seg-000218",
+      "start_ms": 1748390,
+      "end_ms": 1751400,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "那时间，是要考虑买卧铺吗？"
+    },
+    {
+      "segment_id": "seg-000219",
+      "start_ms": 1750060,
+      "end_ms": 1753185,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "那肯定是握手，一定是要拍。"
+    },
+    {
+      "segment_id": "seg-000220",
+      "start_ms": 1751185,
+      "end_ms": 1754020,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "那肯定，肯定是。我也是二拍。不可能是！"
+    },
+    {
+      "segment_id": "seg-000221",
+      "start_ms": 1752280,
+      "end_ms": 1758360,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "不需要，让沿途的风景。让咱们的工作人员尽收眼底的这种。"
+    },
+    {
+      "segment_id": "seg-000222",
+      "start_ms": 1756360,
+      "end_ms": 1774410,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，你能看到那些、那些不同地方的那些瓦房平顶的还有那个斜顶的。然后那个山区，然后不同的山脉那种走向，还有那些地方特色。就是大家一想每个地方都是建筑是一样的，但是其实地方的特色你如比如说北方呢平房南方尖房都都不一样。"
+    },
+    {
+      "segment_id": "seg-000223",
+      "start_ms": 1772810,
+      "end_ms": 1779740,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "南方间房的简单的介绍，在火车上会给您播报。我们会将进入哪个省，哪个城市对火车都。"
+    },
+    {
+      "segment_id": "seg-000224",
+      "start_ms": 1777890,
+      "end_ms": 1780900,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "哪个省，哪个城市？对火车的规划。"
+    },
+    {
+      "segment_id": "seg-000225",
+      "start_ms": 1780900,
+      "end_ms": 1781970,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "历史。"
+    },
+    {
+      "segment_id": "seg-000226",
+      "start_ms": 1781970,
+      "end_ms": 1784730,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "所所有的一切，包括特色小吃。"
+    },
+    {
+      "segment_id": "seg-000227",
+      "start_ms": 1784160,
+      "end_ms": 1791350,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，火车都会、都会播报。所以我想让咱们的旅途过程也能成为咱们整个旅途比较享受的一部分。"
+    },
+    {
+      "segment_id": "seg-000228",
+      "start_ms": 1790470,
+      "end_ms": 1801330,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "因为在公司竞争压力比较大嘛，而且生活节奏特别快。比方说晚上如果加班的话回到家会没有时间放松每天的人就是绷紧一根弦子。"
+    },
+    {
+      "segment_id": "seg-000229",
+      "start_ms": 1799750,
+      "end_ms": 1806250,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "在工作。大家总是在匆匆忙忙的赶时间，然后如果是出去乘火车的话可以放。"
+    },
+    {
+      "segment_id": "seg-000230",
+      "start_ms": 1804960,
+      "end_ms": 1808050,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "火车的话，我得放松一下。"
+    },
+    {
+      "segment_id": "seg-000231",
+      "start_ms": 1807500,
+      "end_ms": 1818345,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "对，这样可以考虑的。这样的话我们都可以在一块儿的话比较方便一些。然后呃平这，在车上的时候还可以谈耐心啊什么之类的。"
+    },
+    {
+      "segment_id": "seg-000232",
+      "start_ms": 1811785,
+      "end_ms": 1815285,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "在一块儿的话，也比较方便。对然后呃。"
+    },
+    {
+      "segment_id": "seg-000233",
+      "start_ms": 1816345,
+      "end_ms": 1825250,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "有时候还可以谈耐性。有一辆慢车，它就是旅游专线。呃，包括在沙河这样的小城市，就是县级市，它都会停，它都会停。"
+    },
+    {
+      "segment_id": "seg-000234",
+      "start_ms": 1825250,
+      "end_ms": 1829720,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "好，呃我们可以建议你坐这个车。这个车是最慢的。"
+    },
+    {
+      "segment_id": "seg-000235",
+      "start_ms": 1829720,
+      "end_ms": 1834960,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "看，这个、这个要沟通了。看可行不可行？毕竟咱们的旅游时间可能是……嗯这。"
+    },
+    {
+      "segment_id": "seg-000236",
+      "start_ms": 1834960,
+      "end_ms": 1837630,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "对，可能怕。他看不到。"
+    },
+    {
+      "segment_id": "seg-000237",
+      "start_ms": 1837630,
+      "end_ms": 1840600,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "从沙河到北京市，它都需要。"
+    },
+    {
+      "segment_id": "seg-000238",
+      "start_ms": 1840600,
+      "end_ms": 1842200,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "五个多小时。"
+    },
+    {
+      "segment_id": "seg-000239",
+      "start_ms": 1842200,
+      "end_ms": 1852410,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这个我们也考虑一下，在车上待好多天啊。这个人有没有对，有没有不舒服啊或者什么？嗯，那个。"
+    },
+    {
+      "segment_id": "seg-000240",
+      "start_ms": 1852180,
+      "end_ms": 1857290,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "这个考虑的也，这个可以就是咱们可以租用两名医护人员。"
+    },
+    {
+      "segment_id": "seg-000241",
+      "start_ms": 1856810,
+      "end_ms": 1863525,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，随行的医护人员。就我们去一些比较偏的地方的时候，可以出行有人受伤。"
+    },
+    {
+      "segment_id": "seg-000242",
+      "start_ms": 1857710,
+      "end_ms": 1860900,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "对，随行的医护人员。就我们这些比较。"
+    },
+    {
+      "segment_id": "seg-000243",
+      "start_ms": 1861525,
+      "end_ms": 1865775,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "的时候，可以出行。有人受伤，可以及时医治一下。对一些小的。"
+    },
+    {
+      "segment_id": "seg-000244",
+      "start_ms": 1863775,
+      "end_ms": 1870540,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "伤，可以自行处理就不用每到一个地方都要去找医院了，其实比较麻烦的。"
+    },
+    {
+      "segment_id": "seg-000246",
+      "start_ms": 1870980,
+      "end_ms": 1873920,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这是一方面。"
+    },
+    {
+      "segment_id": "seg-000247",
+      "start_ms": 1873920,
+      "end_ms": 1874540,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "那我们。"
+    },
+    {
+      "segment_id": "seg-000248",
+      "start_ms": 1874540,
+      "end_ms": 1891520,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "呃，出行的话必备的一些常用的药品：比如说感冒的呀，或者是消炎的呀、止血的呀。包括烫贴啊这一类的东西我们要带着嗯还有一些……呃，防蚊的驱虫呢？这这些青蛙油这一类的——呃风油精的这这些东西我们不要多备。"
+    },
+    {
+      "segment_id": "seg-000250",
+      "start_ms": 1892340,
+      "end_ms": 1901465,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "呃，这个过程。对，这个可能都是要考虑一下的呀。然后个人或者有些人那个就像……"
+    },
+    {
+      "segment_id": "seg-000251",
+      "start_ms": 1895715,
+      "end_ms": 1899215,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "都是要考虑一下那。然后个人。"
+    },
+    {
+      "segment_id": "seg-000252",
+      "start_ms": 1899465,
+      "end_ms": 1917215,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "有些人，那个就像医生、护士带的那……那个那个急救箱嘛。我们要一个急救箱。我们要带一个所有东西在里面呃不管我们同行的人员中谁嗯滑伤了或或者这个需要的话直接对直给个哪个可以？"
+    },
+    {
+      "segment_id": "seg-000253",
+      "start_ms": 1912215,
+      "end_ms": 1915715,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这个需要的，我们都有准备。"
+    },
+    {
+      "segment_id": "seg-000254",
+      "start_ms": 1915215,
+      "end_ms": 1928160,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，直接去那个哪里。然后员工个人身体问题，比如说他可能就是心脏有些不好、甚至有一些不好。咱们都要提前把这个征集出来吧？有这个遇到的一些情况，我们能规避就规避掉。"
+    },
+    {
+      "segment_id": "seg-000255",
+      "start_ms": 1926520,
+      "end_ms": 1930395,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "对，这个、这个事情各部门包括这个商家。"
+    },
+    {
+      "segment_id": "seg-000256",
+      "start_ms": 1928395,
+      "end_ms": 1950080,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "这个事情各部门包括，这个上下、上中下部的安排。呃，就是五岁以以上的或者五十岁以下的人我们都统统安排在下户；然后今年人可以住中部或者上户。所以嗯这样要提前安排别最后我们没有安排的话，呃年轻人住下户了老年人要要往上面爬，就是很不……"
+    },
+    {
+      "segment_id": "seg-000257",
+      "start_ms": 1948990,
+      "end_ms": 1969120,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "如果咱们自己人的话，其实你车票不管怎么定。你到时候可以自行换铺。大家毕竟一个公司，我觉得是其实比较好说话的。我们前期如果按人按铺买可能就是工作量比较大。我们就直接就是考虑一人一票先把这个地方咱们暂住，咱们再后期分一下。前期分的话可能工作量有点儿大。"
+    },
+    {
+      "segment_id": "seg-000258",
+      "start_ms": 1969120,
+      "end_ms": 1989120,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，这个可以。行，嗯，咱们讨论了这么多，呃，嗯，咱们准备这个去的地方，我们要做一个具体的这个行程的一个计划和流。"
+    },
+    {
+      "segment_id": "seg-000259",
+      "start_ms": 1989120,
+      "end_ms": 1992670,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "咱们去那边。那个……"
+    },
+    {
+      "segment_id": "seg-000260",
+      "start_ms": 1992670,
+      "end_ms": 2011180,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "整个流程，一定要总监这边。一定要最主要的就是注意安全问题。对。安全问题一定不要不知道嗯其他这边我这边没有麻烦您你们还有问题吗？没有什么呀没问题了没什么问题那咱们分场。"
+    },
+    {
+      "segment_id": "seg-000261",
+      "start_ms": 2011180,
+      "end_ms": 2031180,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "我就先到此为止。"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "TaskId": "mtg_56d709ee2a8e4dab",
+  "MeetingAssistance": {
+    "Keywords": [],
+    "KeySentences": [],
+    "Actions": [
+      {
+        "Id": 1,
+        "SentenceId": 49,
+        "Start": 279580,
+        "End": 292850,
+        "Text": "制定保安培训计划"
+      },
+      {
+        "Id": 2,
+        "SentenceId": 86,
+        "Start": 711750,
+        "End": 722250,
+        "Text": "明确待办"
+      },
+      {
+        "Id": 3,
+        "SentenceId": 146,
+        "Start": 1130520,
+        "End": 1150520,
+        "Text": "制定规章制度"
+      },
+      {
+        "Id": 4,
+        "SentenceId": 140,
+        "Start": 1068630,
+        "End": 1076880,
+        "Text": "增加垃圾桶和绿化标识"
+      },
+      {
+        "Id": 5,
+        "SentenceId": 180,
+        "Start": 1396260,
+        "End": 1426260,
+        "Text": "采购垃圾桶"
+      },
+      {
+        "Id": 6,
+        "SentenceId": 185,
+        "Start": 1458890,
+        "End": 1464430,
+        "Text": "联系垃圾站"
+      }
+    ]
+  }
+}

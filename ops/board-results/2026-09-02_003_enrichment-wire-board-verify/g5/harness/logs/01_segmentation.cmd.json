@@ -1,0 +1,21 @@
+[
+  "/userdata/miniforge3/envs/3dspeaker/bin/python",
+  "/userdata/meeting_agent/scripts/board_3dspeaker_segment_prepare_absorb_unknown.py",
+  "--source-audio",
+  "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200709_L_R002S04C01/01_segments/input_mono16k.wav",
+  "--out-dir",
+  "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g5/harness/01_segments",
+  "--3dspeaker-dir",
+  "/userdata/3D-Speaker",
+  "--python",
+  "/userdata/miniforge3/envs/3dspeaker/bin/python",
+  "--pad",
+  "1.0",
+  "--absorb-unknown-max",
+  "2.0",
+  "--max-known-segment",
+  "30.0",
+  "--max-unknown-segment",
+  "20.0",
+  "--overwrite"
+]
