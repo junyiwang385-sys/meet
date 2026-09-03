@@ -21,44 +21,44 @@
 - [ ] 板端 SSH 连通（地址已确认）
 - [ ] 从音频库**随机抽 5 段非敏感会议**（g1–g5，长度不限，记录各自时长）；1–2h 长会卖点留待后续单独任务
 
+## 板端步骤（`/userdata/meeting_agent`，≤3 条，无感叹号）
+
+先把随机抽的 5 段文件名填进 `A`，循环跑并**在板端就地生成结构化日志 `run_report.json`**（纯标准库，板端可跑）：
+
+```bash
+cd /userdata/meeting_agent && A="a1.wav a2.wav a3.wav a4.wav a5.wav"; i=0; for f in $A; do i=$((i+1)); PYTHONPATH=/userdata/meeting_agent1/mainline_v2/src python -m meeting_agent.harness.main --source-audio input/$f --out-dir output/enrich_verify/g$i/harness --overwrite; done
+for i in 1 2 3 4 5; do PYTHONPATH=/userdata/meeting_agent1/mainline_v2/src python -m meeting_agent.observability.run_report output/enrich_verify/g$i/harness; done
+ls -l output/enrich_verify/g*/harness/run_report.json output/enrich_verify/g*/harness/03_llm_summary/enrichment.json
+```
+
+（enrichment 默认开；如需关闭对照加 `--no-enrichment`。）
+
 ## 中转机步骤（`D:\Meeting_Agent_mainline`，PowerShell）
 
 ```powershell
 git pull
 scp -r .\src\meeting_agent <board>:/userdata/meeting_agent1/mainline_v2/src/meeting_agent
-# 板端跑完后逐组回传（只回小体积文本，见"回传要求"）：
-scp -r <board>:/userdata/.../enrich_verify <本地>\enrich_verify
-$env:PYTHONPATH="src"; python -m meeting_agent.observability.run_report <本地>\enrich_verify\g1\harness
+# 板端跑完后，只回传"小体积结构化日志"（run_report.json 已自带 enrichment/内存/server）：
+foreach ($i in 1..5) {
+  New-Item -Force -ItemType Directory ops\board-results\2026-09-02_003_enrichment-wire-board-verify\g$i | Out-Null
+  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/run_report.json ops\board-results\...\g$i\
+  scp <board>:/userdata/meeting_agent/output/enrich_verify/g$i/harness/03_llm_summary/enrichment.json ops\board-results\...\g$i\
+}
+# 自动汇总（零手填）——run_eval 读 5 个 run_report.json 直接出表
+$env:PYTHONPATH="src"; python eval\run_eval.py --config eval\eval_config_board003.json --out ops\board-results\2026-09-02_003_enrichment-wire-board-verify\RESULTS.md
 ```
 
-## 板端步骤（`/userdata/meeting_agent`，≤3 条，无感叹号）
+## 期望产物
 
-先把随机抽的 5 段文件名填进 `A`，循环跑（各 `--overwrite`）：
+- **板端**：每组 `output/enrich_verify/gN/harness/run_report.json`（自带时长/时延/各 stage 耗时/enrichment 五类计数/内存峰值/server 就绪/红旗）+ `03_llm_summary/enrichment.json`。
+- **仓库**：`ops/board-results/2026-09-02_003.../gN/{run_report.json,enrichment.json}` + 自动生成的 `RESULTS.md`。
 
-```bash
-cd /userdata/meeting_agent && A="a1.wav a2.wav a3.wav a4.wav a5.wav"; i=0; for f in $A; do i=$((i+1)); PYTHONPATH=/userdata/meeting_agent1/mainline_v2/src python -m meeting_agent.harness.main --source-audio input/$f --out-dir output/enrich_verify/g$i/harness --overwrite; done
-for i in 1 2 3 4 5; do echo "== g$i =="; grep -c rkllm3-server output/enrich_verify/g$i/harness/03_llm_summary/rkllm_server.log; done
-ls -l output/enrich_verify/g*/harness/03_llm_summary/enrichment.json
-```
+## 回传要求（中转机 → 仓库）—— 不手填，直接吃结构化日志
 
-（enrichment 默认开；如需关闭对照加 `--no-enrichment`。）
-
-## 期望产物（板端路径，每组 g1–g5）
-
-```text
-output/enrich_verify/gN/harness/03_llm_summary/enrichment.json        ← 本轮新产物
-output/enrich_verify/gN/harness/meeting_result.json                    ← runtime.stages 含 enrichment + duration_ms
-output/enrich_verify/gN/harness/stage_status.json                      ← enrichment stage = succeeded
-output/enrich_verify/gN/harness/runtime/memory_summary.json            ← 峰值内存
-output/enrich_verify/gN/harness/03_llm_summary/rkllm_server.log        ← 确认 server 只启一次
-```
-
-## 回传要求（中转机 → 仓库）
-
-- 写入 `ops/board-results/2026-09-02_003_enrichment-wire-board-verify/result.md`（**已备好骨架，逐组回填**），含：
-  - **汇总表**（5 组一行一组）：时长 / 是否跑通 / enrichment stage / 五类计数 / server 启动次数 / 总耗时 / llm_summary 耗时 / enrichment 耗时 / 峰值内存；
-  - **每组**：`stage_status.json` 里 `enrichment` 的 status（failed 也贴 error）、`enrichment.json` 本体（小，可全回）、`rkllm_server.log` 的 ready 行、`meeting_result.json` 的 `duration_ms` + 各 stage `elapsed_seconds`、`memory_summary.json` 峰值、`run_report.json` 的 flags + block/章数。
-- **不要**回传：音频、完整 worker.log、完整模型原始输出、绝对路径。
+- 提交 **5 组 `run_report.json` + `enrichment.json`**（都小）到 `ops/board-results/2026-09-02_003.../gN/`。
+- 跑 `run_eval.py` **自动生成 `RESULTS.md`**（汇总表：时长/耗时/摘要vs enrich 耗时/五类计数/金句保真/内存峰值/泄漏/红旗，全部来自结构化日志）。
+- 人只在 `result.md` 里补**两句话**：总体结论 + 异常观察（见该文件）。
+- **不要**回传：音频、完整 worker.log、完整模型原始输出、绝对路径、完整 harness 目录。
 
 ## 判定标准（本轮通过条件）
 

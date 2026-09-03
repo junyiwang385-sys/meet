@@ -75,6 +75,21 @@ def run(config: dict) -> dict:
                 row["prompt_tokens"] = econ.get("total_prompt_tokens")
                 tm = rr.get("timing", {})
                 row["total_elapsed_s"] = tm.get("total_seconds")
+                stage_s = tm.get("stage_seconds", {}) or {}
+                row["llm_summary_s"] = stage_s.get("llm_summary")
+                row["enrichment_s"] = stage_s.get("enrichment")
+                # enrichment 内容计数（直接来自结构化日志，不手数）
+                enr = rr.get("enrichment", {}) or {}
+                row["enr"] = f"{enr.get('keywords','-')}/{enr.get('qa','-')}/{enr.get('quotes','-')}/{enr.get('decisions','-')}/{'Y' if enr.get('has_outline') else 'N'}"
+                row["enr_verbatim"] = enr.get("quotes_verbatim")
+                # 内存 / server
+                mem = rr.get("memory", {}) or {}
+                row["board_peak_mb"] = mem.get("board_used_peak_mb")
+                row["server_rss_peak_mb"] = mem.get("server_rss_peak_mb")
+                row["leak"] = mem.get("memory_leak_suspected")
+                srv = rr.get("server", {}) or {}
+                row["server_ready_s"] = srv.get("ready_seconds")
+                row["duration_s"] = (rr.get("identity", {}) or {}).get("source_audio_seconds")
             except Exception as exc:  # noqa: BLE001
                 row["run_report_error"] = str(exc)
         rows.append(row)
@@ -118,6 +133,18 @@ def render_md(result: dict, config: dict) -> str:
         bc = f"{r.get('block_count','-')}→{r.get('chapter_count','-')}"
         L.append(f"| {r['meeting']} | {bc} | {r.get('block_summary_avg_chars','-')} | "
                  f"{r.get('retry_count','-')} | {r.get('prompt_tokens','-')} | {r.get('total_elapsed_s','-')} |")
+    L.append("")
+    L.append("## 逐场·内容丰富 + 性能（全部来自结构化日志，自动汇总，无手填）")
+    L.append("")
+    L.append("| 会议 | 时长(s) | enrichment(kw/qa/quote/dec/outline) | 金句保真 | 总耗时(s) | 摘要(s) | enrich(s) | server就绪(s) | 板端峰值(MB) | server RSS峰值(MB) | 疑似泄漏 |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|")
+    for r in result["cases"]:
+        L.append(
+            f"| {r['meeting']} | {r.get('duration_s','-')} | {r.get('enr','-')} | "
+            f"{r.get('enr_verbatim','-')} | {r.get('total_elapsed_s','-')} | {r.get('llm_summary_s','-')} | "
+            f"{r.get('enrichment_s','-')} | {r.get('server_ready_s','-')} | {r.get('board_peak_mb','-')} | "
+            f"{r.get('server_rss_peak_mb','-')} | {r.get('leak','-')} |"
+        )
     L.append("")
     L.append("## 自动优化红旗（来自 run_report）")
     L.append("")

@@ -206,6 +206,46 @@ def build_run_report(root: pathlib.Path) -> dict[str, Any]:
         "weak_chapters": quality.get("weak_chapters"),
     }
 
+    # 内容丰富（enrichment）：直接读 enrichment.json，不靠人工数
+    enrichment = _load(llm_dir / "enrichment.json") or {}
+    quotes = enrichment.get("quotes") or []
+    report["enrichment"] = {
+        "present": bool(enrichment),
+        "keywords": len(enrichment.get("keywords") or []),
+        "qa": len(enrichment.get("qa") or []),
+        "quotes": len(quotes),
+        "quotes_verbatim": sum(1 for q in quotes if isinstance(q, dict) and q.get("verbatim")),
+        "decisions": len(enrichment.get("decisions") or []),
+        "has_outline": bool(enrichment.get("outline_summary")),
+    }
+
+    # 内存峰值 + 泄漏判定：读 runtime/memory_summary.json（键名跨采样器可能不同，多候选 + 存原始键）
+    mem = _load(root / "runtime" / "memory_summary.json") or {}
+
+    def _mm(*names: str) -> Any:
+        for name in names:
+            if isinstance(mem, dict) and name in mem:
+                return mem[name]
+        return None
+
+    report["memory"] = {
+        "board_used_peak_mb": _mm("board_used_peak_mb", "peak_board_used_mb", "board_peak_mb"),
+        "server_rss_peak_mb": _mm("server_rss_peak_mb", "peak_server_rss_mb"),
+        "mem_available_min_mb": _mm("mem_available_min_mb", "min_mem_available_mb"),
+        "memory_leak_suspected": _mm("memory_leak_suspected"),
+        "raw_keys": sorted(mem.keys()) if isinstance(mem, dict) else None,
+    }
+
+    # server 启动：本设计每次运行仅一个 rkllm server（pipeline 持有、摘要+enrichment 复用）；
+    # ready_seconds 有单值 + 只有一个 rkllm_server.log 即证"只加载一次"。
+    llm_rt = (meeting_result.get("runtime") or {}).get("llm") or {}
+    server_log = llm_dir / "rkllm_server.log"
+    report["server"] = {
+        "ready_seconds": llm_rt.get("server_ready_seconds"),
+        "log_present": server_log.is_file(),
+        "log_size_bytes": server_log.stat().st_size if server_log.is_file() else None,
+    }
+
     report["flags"] = _optimization_flags(report)
     return report
 
@@ -249,6 +289,12 @@ def _optimization_flags(report: dict[str, Any]) -> list[str]:
 
     if reduce["empty_schema_fields"]:
         flags.append(f"空 schema 字段：{', '.join(reduce['empty_schema_fields'])}（未抽取）")
+
+    enr = report.get("enrichment") or {}
+    if enr.get("present") and not enr.get("has_outline"):
+        flags.append("enrichment 缺 outline_summary（层级大纲未产出）")
+    if (report.get("memory") or {}).get("memory_leak_suspected"):
+        flags.append("疑似内存泄漏（memory_summary 判定）")
 
     return flags
 
@@ -306,6 +352,15 @@ def render_markdown(report: dict[str, Any]) -> str:
         "",
         "## ✅ 质量",
         f"- {report['quality']['status']}，warnings={report['quality']['warnings']}",
+        "",
+        "## ✨ 内容丰富（enrichment）",
+        f"- {json.dumps(report.get('enrichment'), ensure_ascii=False)}",
+        "",
+        "## 🧠 内存",
+        f"- {json.dumps(report.get('memory'), ensure_ascii=False)}",
+        "",
+        "## 🖥 server",
+        f"- {json.dumps(report.get('server'), ensure_ascii=False)}",
     ]
     return "\n".join(lines) + "\n"
 
