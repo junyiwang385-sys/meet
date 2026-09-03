@@ -18,7 +18,7 @@
 
 - [ ] `D:\Meeting_Agent_mainline` 已 `git pull` 到本次 push 的 `feature/transcript-postprocess`
 - [ ] 板端 SSH 连通（地址已确认）
-- [ ] 备好 **3 段非敏感音频**：短 ~5–10min、中 ~30min、长 ~60–90min（长的没有可只跑前两组，长会作为卖点尽量补）
+- [ ] 备好 **1 段非敏感音频，~40min**（本轮就跑这一组；1–2h 长会卖点留待后续单独任务）
 
 ## 中转机步骤（`D:\Meeting_Agent_mainline`，PowerShell）
 
@@ -30,9 +30,9 @@ scp -r <board>:/userdata/.../enrich_verify <本地>\enrich_verify
 $env:PYTHONPATH="src"; python -m meeting_agent.observability.run_report <本地>\enrich_verify\g1\harness
 ```
 
-## 板端步骤（`/userdata/meeting_agent`，每组 ≤3 条，无感叹号）
+## 板端步骤（`/userdata/meeting_agent`，≤3 条，无感叹号）
 
-对每段音频跑一组（g1 短 / g2 中 / g3 长），只改 `--source-audio` 和 `--out-dir`：
+只跑 1 组（~40min 音频）：
 
 ```bash
 cd /userdata/meeting_agent && PYTHONPATH=/userdata/meeting_agent1/mainline_v2/src python -m meeting_agent.harness.main --source-audio input/<音频>.wav --out-dir output/enrich_verify/g1/harness --overwrite
@@ -42,19 +42,19 @@ grep -c "rkllm3-server" output/enrich_verify/g1/harness/03_llm_summary/rkllm_ser
 
 （enrichment 默认开；如需关闭对照加 `--no-enrichment`。）
 
-## 期望产物（板端路径，每组）
+## 期望产物（板端路径）
 
 ```text
-output/enrich_verify/gN/harness/03_llm_summary/enrichment.json        ← 本轮新产物
-output/enrich_verify/gN/harness/meeting_result.json                    ← runtime.stages 含 enrichment
-output/enrich_verify/gN/harness/stage_status.json                      ← enrichment stage = succeeded
-output/enrich_verify/gN/harness/runtime/memory_summary.json            ← 峰值内存
-output/enrich_verify/gN/harness/03_llm_summary/rkllm_server.log        ← 确认 server 只启一次
+output/enrich_verify/g1/harness/03_llm_summary/enrichment.json        ← 本轮新产物
+output/enrich_verify/g1/harness/meeting_result.json                    ← runtime.stages 含 enrichment
+output/enrich_verify/g1/harness/stage_status.json                      ← enrichment stage = succeeded
+output/enrich_verify/g1/harness/runtime/memory_summary.json            ← 峰值内存
+output/enrich_verify/g1/harness/03_llm_summary/rkllm_server.log        ← 确认 server 只启一次
 ```
 
 ## 回传要求（中转机 → 仓库）
 
-- 写入 `ops/board-results/2026-09-02_003_enrichment-wire-board-verify/result.md`，**每组一节**，含：
+- 写入 `ops/board-results/2026-09-02_003_enrichment-wire-board-verify/result.md`，含：
   - **是否跑通到导出**（exit code）+ `stage_status.json` 里 `enrichment` 的 status；
   - **enrichment.json** 本体（小，可全回）——看 keywords/qa/quotes/decisions/outline_summary 是否有内容、金句是否 `verbatim=true`；
   - **server 只加载一次的证据**：`rkllm_server.log` 只有一次 ready / 一个 startup（贴该行）；
@@ -65,10 +65,12 @@ output/enrich_verify/gN/harness/03_llm_summary/rkllm_server.log        ← 确�
 
 ## 判定标准（本轮通过条件）
 
-1. 3 组（或短+中 2 组）**都跑通到 compat_export**，`enrichment` stage = succeeded（或 failed 但主流程未中断——failed 也要贴 error）。
-2. `enrichment.json` 五类内容**非空**（长会尤其看 decisions/outline 是否还稳）。
-3. `rkllm_server.log` **只启一次**——证明 enrichment 复用了 server、没二次加载模型。
-4. 记录三组的耗时/内存曲线（短/中/长），供简历"板端性能"用。
+1. 这 1 组（~40min）**跑通到 compat_export**，`enrichment` stage = succeeded（或 failed 但主流程未中断——failed 也要贴 error）。
+2. `enrichment.json` 五类内容**非空**（重点看 decisions/outline_summary 在 40min 会上稳不稳）。
+3. `rkllm_server.log` **只启一次**——证明 enrichment 复用了 server、没二次加载模型（本轮核心目标）。
+4. 记录这一组的耗时（llm_summary vs enrichment 分开）+ 峰值内存，作为板端 4B 首个实机数据点。
+
+> 说明：40min 属中等长度，可验证接线正确性 + server 单次加载 + 出首个耗时/内存点；**1–2h 长会卖点仍未覆盖**，留待后续单独任务。
 
 ## 安全约束
 
