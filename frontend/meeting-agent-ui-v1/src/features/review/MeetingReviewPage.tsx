@@ -102,6 +102,11 @@ function speakerName(
     ?? speakerId;
 }
 
+// 聚类未归属的说话人（unknown）：原文里不展示头衔、发言人页不列出，但有内容的转写文本保留。
+function isUnknownSpeaker(speakerId: string | null | undefined): boolean {
+  return !speakerId || speakerId.toLowerCase().startsWith('unknown');
+}
+
 // 发言人头像/名字用色：按 speaker_id 稳定散列到一组配色（与原配色的紫为首）。
 const SPEAKER_PALETTE = ['#6558d9', '#2e716a', '#9a6a2f', '#a95259', '#3f6fb0', '#7a4fb0'];
 function speakerColor(speakerId: string): string {
@@ -430,6 +435,8 @@ export function MeetingReviewPage() {
     const rows: ReaderRow[] = [];
     let prev: string | null | undefined;
     for (const segment of visibleSegments) {
+      // unknown 且无文本的段（静音/未识别占位）不进阅读流
+      if (isUnknownSpeaker(segment.speaker_id) && !segment.text.trim()) continue;
       const cid = segment.chapter_id;
       if (cid !== prev) {
         rows.push({
@@ -953,14 +960,22 @@ export function MeetingReviewPage() {
                           </div>
                         ) : (
                           <article
-                            className={selectedSegmentId === row.segment.segment_id ? 'review-turn review-turn-selected' : 'review-turn'}
+                            className={[
+                              'review-turn',
+                              selectedSegmentId === row.segment.segment_id ? 'review-turn-selected' : '',
+                              isUnknownSpeaker(row.segment.speaker_id) ? 'review-turn-unknown' : '',
+                            ].filter(Boolean).join(' ')}
                             id={`review-${row.segment.segment_id}`}
                             key={row.segment.segment_id}
                             style={{ ['--spk' as string]: speakerColor(row.segment.speaker_id) } as CSSProperties}
                           >
                             <div className="review-turn-header">
-                              <span className="review-turn-avatar">{speakerName(content, result, row.segment.speaker_id).slice(0, 1)}</span>
-                              <span className="review-speaker">{speakerName(content, result, row.segment.speaker_id)}</span>
+                              {!isUnknownSpeaker(row.segment.speaker_id) ? (
+                                <>
+                                  <span className="review-turn-avatar">{speakerName(content, result, row.segment.speaker_id).slice(0, 1)}</span>
+                                  <span className="review-speaker">{speakerName(content, result, row.segment.speaker_id)}</span>
+                                </>
+                              ) : null}
                               <button className="review-turn-time" type="button" onClick={() => selectSegment(row.segment)}>{formatTimestamp(row.segment.start_ms)}</button>
                             </div>
                             {transcriptEditing ? (
@@ -1029,7 +1044,7 @@ export function MeetingReviewPage() {
               <section className="review-view-panel">
                 <div className="review-panel-toolbar"><div><div className="review-panel-title">发言人</div><div className="review-panel-sub">名称同步到全文和证据</div></div></div>
                 <div className="review-speaker-list">
-                  {(result.speakers ?? []).map((speaker) => (
+                  {(result.speakers ?? []).filter((speaker) => !isUnknownSpeaker(speaker.speaker_id)).map((speaker) => (
                     <article className="review-speaker-row" key={speaker.speaker_id} style={{ ['--spk' as string]: speakerColor(speaker.speaker_id) } as CSSProperties}>
                       <span className="review-speaker-avatar">{speakerName(content, result, speaker.speaker_id).slice(0, 1)}</span>
                       <div>

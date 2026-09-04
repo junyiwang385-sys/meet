@@ -593,6 +593,11 @@
   color: var(--color-accent);
 }
 
+/* unknown（未归属说话人）行：无头像/名字，时间对齐正文缩进列 */
+.review-turn-unknown .review-turn-time {
+  margin-left: 30px;
+}
+
 .review-turn-copy {
   margin: 3px 0 0 30px;
   color: var(--color-ink-soft);
