@@ -1,0 +1,47 @@
+{
+  "mapping_version": "meeting-compat.v1",
+  "task_id": "mtg_3d8c1ede1bc20e3e",
+  "source_summary": {
+    "path": ".meeting_publication.staging/meeting_summary.json",
+    "size_bytes": 9407,
+    "sha256": "fc68c7dff535282dbff84851132b53f0df8ae22e0db6ee3ed7d61b7954d35c35"
+  },
+  "source_segments": {
+    "path": "03_llm_summary/canonical_segments.json",
+    "size_bytes": 121283,
+    "sha256": "6952940e411c378904c343dc8b52a7bd815c586636eb0a4c0d1c0ddf0fa82880"
+  },
+  "source_summary_content_hash": "0df2acb015206397101d0bcce61519d266cf41f7b0727bf4a61129a79fe47bcd",
+  "files": {
+    "transcription.json": {
+      "path": "transcription.json",
+      "size_bytes": 112553,
+      "sha256": "7c83ebb45b8e5e75cb87bc651d4a5ff9c96da6489e97658296b5e3ebb770a2e5"
+    },
+    "auto_chapters.json": {
+      "path": "auto_chapters.json",
+      "size_bytes": 4067,
+      "sha256": "4809509927b8fd134e9f71a7648ca0aee487ab5a7225aa57c3ba2ff97e982d92"
+    },
+    "summarization.json": {
+      "path": "summarization.json",
+      "size_bytes": 2430,
+      "sha256": "76f99a64dff16be0d0ef67c4b1f6dae0784e51f2e509a71e891f3d826742d58e"
+    },
+    "meeting_assistance.json": {
+      "path": "meeting_assistance.json",
+      "size_bytes": 430,
+      "sha256": "2beeff1f0c26a1ea5f2a5f6e146a4e2ee5b4aeab89f56ee5b2b3852e1b21b659"
+    },
+    "task_result.json": {
+      "path": "task_result.json",
+      "size_bytes": 376,
+      "sha256": "f3be584eb259af5a6a4851e6adf6b15673a206fe76ea58548adbd0fefc7526fd"
+    }
+  },
+  "limitations": [
+    "Paragraphs use one canonical ASR segment per Words entry; word-level timestamps are unavailable.",
+    "SpeakerName falls back to the anonymous SpeakerId.",
+    "The internal evidence-linked meeting_summary.json remains the source of truth."
+  ]
+}

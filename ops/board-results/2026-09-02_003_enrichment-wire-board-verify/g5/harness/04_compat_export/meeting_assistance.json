@@ -1,0 +1,44 @@
+{
+  "TaskId": "mtg_c01e913f873d1bca",
+  "MeetingAssistance": {
+    "Keywords": [],
+    "KeySentences": [],
+    "Actions": [
+      {
+        "Id": 1,
+        "SentenceId": 86,
+        "Start": 925000,
+        "End": 951980,
+        "Text": "引进海外产品"
+      },
+      {
+        "Id": 2,
+        "SentenceId": 81,
+        "Start": 841255,
+        "End": 871255,
+        "Text": "培训店员"
+      },
+      {
+        "Id": 3,
+        "SentenceId": 119,
+        "Start": 1502220,
+        "End": 1514460,
+        "Text": "明确待办"
+      },
+      {
+        "Id": 4,
+        "SentenceId": 134,
+        "Start": 1678400,
+        "End": 1701110,
+        "Text": "制定销量任务计划"
+      },
+      {
+        "Id": 5,
+        "SentenceId": 140,
+        "Start": 1722680,
+        "End": 1745960,
+        "Text": "加强夜间巡逻"
+      }
+    ]
+  }
+}

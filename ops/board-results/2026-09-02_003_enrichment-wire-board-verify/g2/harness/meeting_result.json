@@ -1,0 +1,4464 @@
+{
+  "schema_version": "meeting-result.v2",
+  "harness_version": "2.0.0",
+  "status": "ok",
+  "run_id": "mtg_cd7cbb71be0305ba",
+  "meeting": {
+    "meeting_id": "mtg_cd7cbb71be0305ba",
+    "source_audio": "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200708_L_R002S05C01/01_segments/input_mono16k.wav",
+    "source_audio_sha256": "cd7cbb71be0305ba4502504d652ca7f7c16b6b3eaf1f48e5780c1cf318021c14",
+    "source_audio_size_bytes": 63688012,
+    "duration_ms": 1990249
+  },
+  "transcript": {
+    "source_artifact": "02_batch_asr/segment_transcripts.json",
+    "timeline_artifact": "timeline.txt",
+    "segment_count": 186,
+    "nonempty_segment_count": 171,
+    "empty_segment_count": 15,
+    "speaker_ids": [
+      "speaker_0",
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "unknown"
+    ],
+    "start_ms": 0,
+    "end_ms": 1990249,
+    "duration_ms": 1990249,
+    "text_characters": 8778,
+    "segments": [
+      {
+        "segment_id": "seg-000000",
+        "index": 0,
+        "start_ms": 0,
+        "end_ms": 20000,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0000_unknown_0.000_20.000",
+        "source_audio_name": "seg_0000_unknown_0.000_20.000.wav"
+      },
+      {
+        "segment_id": "seg-000001",
+        "index": 1,
+        "start_ms": 20000,
+        "end_ms": 35280,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0001_unknown_20.000_35.280",
+        "source_audio_name": "seg_0001_unknown_20.000_35.280.wav"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 2,
+        "start_ms": 35280,
+        "end_ms": 39155,
+        "speaker_id": "speaker_3",
+        "text": "零零二，我是董事长。零二六，我是。",
+        "status": "ok",
+        "source_job_id": "seg_0002_3_35.280_39.155",
+        "source_audio_name": "seg_0002_3_35.280_39.155.wav"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 3,
+        "start_ms": 37155,
+        "end_ms": 40900,
+        "speaker_id": "speaker_1",
+        "text": "售后。零二五是。",
+        "status": "ok",
+        "source_job_id": "seg_0003_1_37.155_40.900",
+        "source_audio_name": "seg_0003_1_37.155_40.900.wav"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 4,
+        "start_ms": 40900,
+        "end_ms": 45520,
+        "speaker_id": "unknown",
+        "text": "零幺九，搜索。三五是财务部。",
+        "status": "ok",
+        "source_job_id": "seg_0004_unknown_40.900_45.520",
+        "source_audio_name": "seg_0004_unknown_40.900_45.520.wav"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 5,
+        "start_ms": 45520,
+        "end_ms": 48290,
+        "speaker_id": "speaker_0",
+        "text": "零二四，我是经理。",
+        "status": "ok",
+        "source_job_id": "seg_0005_0_45.520_48.290",
+        "source_audio_name": "seg_0005_0_45.520_48.290.wav"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 6,
+        "start_ms": 48290,
+        "end_ms": 48950,
+        "speaker_id": "unknown",
+        "text": "四点八。",
+        "status": "ok",
+        "source_job_id": "seg_0006_unknown_48.290_48.950",
+        "source_audio_name": "seg_0006_unknown_48.290_48.950.wav"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 7,
+        "start_ms": 48950,
+        "end_ms": 64800,
+        "speaker_id": "speaker_3",
+        "text": "行，咱们今天会部门的主管嗯叫过来开一个。咱们这个呃公司的上半年的总结会，总结一下咱们上半年的一个工作。",
+        "status": "ok",
+        "source_job_id": "seg_0007_3_48.950_64.800",
+        "source_audio_name": "seg_0007_3_48.950_64.800.wav"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 8,
+        "start_ms": 64800,
+        "end_ms": 67300,
+        "speaker_id": "unknown",
+        "text": "然后，咱从咱们这个。",
+        "status": "ok",
+        "source_job_id": "seg_0008_unknown_64.800_67.300",
+        "source_audio_name": "seg_0008_unknown_64.800_67.300.wav"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 9,
+        "start_ms": 67300,
+        "end_ms": 72330,
+        "speaker_id": "speaker_3",
+        "text": "嗯，这场会议由咱们这个经理这边主持。",
+        "status": "ok",
+        "source_job_id": "seg_0009_3_67.300_72.330",
+        "source_audio_name": "seg_0009_3_67.300_72.330.wav"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 10,
+        "start_ms": 72330,
+        "end_ms": 73430,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0010_unknown_72.330_73.430",
+        "source_audio_name": "seg_0010_unknown_72.330_73.430.wav"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 11,
+        "start_ms": 73430,
+        "end_ms": 103430,
+        "speaker_id": "speaker_0",
+        "text": "行，嗯我首先想说一下儿：咱们上半年。呃由于这个现在这个咱们化妆品这个目前行业状况来看，嗯化妆的人属于多数谁出门都会嗯会用到这些护肤品啊、化妆产品面膜……这些不分男女也不分老少了现在，呃小的到年纪大一点儿的都会用到这个产品那咱们现在这个呃前台这边儿有。",
+        "status": "ok",
+        "source_job_id": "seg_0011_0_73.430_103.430",
+        "source_audio_name": "seg_0011_0_73.430_103.430.wav"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 12,
+        "start_ms": 103430,
+        "end_ms": 126210,
+        "speaker_id": "speaker_0",
+        "text": "说到反映到这个情况，说我们这个上半年呃顾客反映的：我们这个柜台柜姐这边有的对一些看起来不是、不是太想买产品的这个。顾客不是太嗯态度不是太好？想问问咱们那边儿怎么处理的呀售后这边。我们这边。",
+        "status": "ok",
+        "source_job_id": "seg_0012_0_103.430_126.210",
+        "source_audio_name": "seg_0012_0_103.430_126.210.wav"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 13,
+        "start_ms": 124470,
+        "end_ms": 154265,
+        "speaker_id": "speaker_1",
+        "text": "售后这边，我们这边儿售后处理的就是：如果态度还是持以这种对顾客如果不买的话还不积极的这种性格。就不会推荐，就不会让他继续在这个岗位待着了。我们会从人事部重新招一批这种推销员。一定要抓住人的心理因为现在女性嘛不只女性都很爱美，你得这种化妆品啊质量之类的。",
+        "status": "ok",
+        "source_job_id": "seg_0013_1_124.470_154.265",
+        "source_audio_name": "seg_0013_1_124.470_154.265.wav"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 14,
+        "start_ms": 152265,
+        "end_ms": 164990,
+        "speaker_id": "speaker_3",
+        "text": "对，目前咱们售后部部门现在有什么问题吗？这个售后服务的问题。给咱们进行说：咱那个产品一质……对质量不行啊还是怎么行？",
+        "status": "ok",
+        "source_job_id": "seg_0014_3_152.265_164.990",
+        "source_audio_name": "seg_0014_3_152.265_164.990.wav"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 15,
+        "start_ms": 160910,
+        "end_ms": 163840,
+        "speaker_id": "speaker_1",
+        "text": "咱这个产品，一对质量不行。",
+        "status": "ok",
+        "source_job_id": "seg_0015_1_160.910_163.840",
+        "source_audio_name": "seg_0015_1_160.910_163.840.wav"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 16,
+        "start_ms": 164990,
+        "end_ms": 165570,
+        "speaker_id": "unknown",
+        "text": "像我。",
+        "status": "ok",
+        "source_job_id": "seg_0016_unknown_164.990_165.570",
+        "source_audio_name": "seg_0016_unknown_164.990_165.570.wav"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 17,
+        "start_ms": 165570,
+        "end_ms": 179540,
+        "speaker_id": "speaker_1",
+        "text": "嗯，这会儿这方面倒没有什么反馈。因为咱们产品的质量一直保持在特别的、特别的优秀，而且咱们属于有专属厂家供应，并且和很多大牌子都有合作。",
+        "status": "ok",
+        "source_job_id": "seg_0017_1_165.570_179.540",
+        "source_audio_name": "seg_0017_1_165.570_179.540.wav"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 18,
+        "start_ms": 179540,
+        "end_ms": 179810,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0018_unknown_179.540_179.810",
+        "source_audio_name": "seg_0018_unknown_179.540_179.810.wav"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 19,
+        "start_ms": 179810,
+        "end_ms": 187785,
+        "speaker_id": "speaker_3",
+        "text": "目前咱这个，反可以。咱这个产品一那个质量也一块儿没有问题对但是。",
+        "status": "ok",
+        "source_job_id": "seg_0019_3_179.810_187.785",
+        "source_audio_name": "seg_0019_3_179.810_187.785.wav"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 20,
+        "start_ms": 185785,
+        "end_ms": 191900,
+        "speaker_id": "speaker_1",
+        "text": "哎，不是没有。对但是就是有顾客反映：就是质量比较好，但是就是价格有点高。",
+        "status": "ok",
+        "source_job_id": "seg_0020_1_185.785_191.900",
+        "source_audio_name": "seg_0020_1_185.785_191.900.wav"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 21,
+        "start_ms": 191900,
+        "end_ms": 192020,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0021_unknown_191.900_192.020",
+        "source_audio_name": "seg_0021_unknown_191.900_192.020.wav"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 22,
+        "start_ms": 192020,
+        "end_ms": 200060,
+        "speaker_id": "speaker_3",
+        "text": "这个，嗯，咱们这个上半年咱这个销售这边是个什么样的情况呢？",
+        "status": "ok",
+        "source_job_id": "seg_0022_3_192.020_200.060",
+        "source_audio_name": "seg_0022_3_192.020_200.060.wav"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 23,
+        "start_ms": 200060,
+        "end_ms": 212940,
+        "speaker_id": "unknown",
+        "text": "上半年的销售情况还是不错的。嗯，虽然比去年呃下半年的销售额一度下滑，但是是因为疫情的影响：，那个商街大都不怎么开门儿，或者说人们都不怎么出门了。",
+        "status": "ok",
+        "source_job_id": "seg_0023_unknown_200.060_212.940",
+        "source_audio_name": "seg_0023_unknown_200.060_212.940.wav"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 24,
+        "start_ms": 212940,
+        "end_ms": 220760,
+        "speaker_id": "speaker_2",
+        "text": "但是，即使是在疫情期间，依然保持这样业绩还是相当不错的。嗯，销售这边我们不单单是针对。",
+        "status": "ok",
+        "source_job_id": "seg_0024_2_212.940_220.760",
+        "source_audio_name": "seg_0024_2_212.940_220.760.wav"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 25,
+        "start_ms": 220760,
+        "end_ms": 223690,
+        "speaker_id": "unknown",
+        "text": "女性，因为我们的呃化妆品。",
+        "status": "ok",
+        "source_job_id": "seg_0025_unknown_220.760_223.690",
+        "source_audio_name": "seg_0025_unknown_220.760_223.690.wav"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 26,
+        "start_ms": 223690,
+        "end_ms": 232680,
+        "speaker_id": "speaker_2",
+        "text": "呃，也针对嗯男士嘛。所以我们的小夫妻像就是：男士女士包括小孩子的一些护肤……嗯。",
+        "status": "ok",
+        "source_job_id": "seg_0026_2_223.690_232.680",
+        "source_audio_name": "seg_0026_2_223.690_232.680.wav"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 27,
+        "start_ms": 232680,
+        "end_ms": 235400,
+        "speaker_id": "unknown",
+        "text": "嗯，就是非常有保健作用的这种。",
+        "status": "ok",
+        "source_job_id": "seg_0027_unknown_232.680_235.400",
+        "source_audio_name": "seg_0027_unknown_232.680_235.400.wav"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 28,
+        "start_ms": 235400,
+        "end_ms": 265400,
+        "speaker_id": "speaker_2",
+        "text": "呃，物品包括老人的这、这、这这些都有。所以我们也根据不同的需求——嗯，不同的人员的不同的需求我们制定了不同的销售策略：针对男士女士还有这个老年人小孩子的……我们有不同柜台然后人们在指定的柜台可以买到自己所需要的这样的话可以节约时间也可以对我们的销售人员一一个。",
+        "status": "ok",
+        "source_job_id": "seg_0028_2_235.400_265.400",
+        "source_audio_name": "seg_0028_2_235.400_265.400.wav"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 29,
+        "start_ms": 265400,
+        "end_ms": 276620,
+        "speaker_id": "speaker_2",
+        "text": "减压吧，它就是针对小孩子的。我们就可以这样去做去推销小孩子的：对宝妈、对这些嗯或者说家里有没有小孩子的爷爷奶奶。",
+        "status": "ok",
+        "source_job_id": "seg_0029_2_265.400_276.620",
+        "source_audio_name": "seg_0029_2_265.400_276.620.wav"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 30,
+        "start_ms": 276620,
+        "end_ms": 283720,
+        "speaker_id": "unknown",
+        "text": "他们都会为了孩子的健康去买我们定的。其实价格并不是最主要问题，大家现在。",
+        "status": "ok",
+        "source_job_id": "seg_0030_unknown_276.620_283.720",
+        "source_audio_name": "seg_0030_unknown_276.620_283.720.wav"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 31,
+        "start_ms": 283720,
+        "end_ms": 291350,
+        "speaker_id": "speaker_2",
+        "text": "也很明白，所谓价廉物美的东西根本已经不存在了。我们卖的不是便宜的，我们卖的是健康的而且是。",
+        "status": "ok",
+        "source_job_id": "seg_0031_2_283.720_291.350",
+        "source_audio_name": "seg_0031_2_283.720_291.350.wav"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 32,
+        "start_ms": 291350,
+        "end_ms": 292110,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0032_unknown_291.350_292.110",
+        "source_audio_name": "seg_0032_unknown_291.350_292.110.wav"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 33,
+        "start_ms": 292110,
+        "end_ms": 302630,
+        "speaker_id": "speaker_3",
+        "text": "嗯，行。那刚才呃这个说到这个，嗯针对咱这个孕妇这一块儿产品研发这一块儿，这个有什么？",
+        "status": "ok",
+        "source_job_id": "seg_0033_3_292.110_302.630",
+        "source_audio_name": "seg_0033_3_292.110_302.630.wav"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 34,
+        "start_ms": 302630,
+        "end_ms": 307690,
+        "speaker_id": "unknown",
+        "text": "新的产品。嗯，啊！",
+        "status": "ok",
+        "source_job_id": "seg_0034_unknown_302.630_307.690",
+        "source_audio_name": "seg_0034_unknown_302.630_307.690.wav"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 35,
+        "start_ms": 307690,
+        "end_ms": 337690,
+        "speaker_id": "speaker_5",
+        "text": "呃，因为咱们这个根据销售部那边的销量来说，其实咱们各方面的那个都挺好的。但是你像这种有针对性的研发我们涉及到一个简单的一个医疗问题，就是对它不能就是因为这个人群比较特殊嘛？对。就是他肯定是不能有一点那个过敏的反应或者里面有一些不良的那些药物在里面。所以，我们研呃研发部这边针对这样的一个产品的话，我们是最起码走的是一个那个呃全部的一个无。",
+        "status": "ok",
+        "source_job_id": "seg_0035_5_307.690_337.690",
+        "source_audio_name": "seg_0035_5_307.690_337.690.wav"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 36,
+        "start_ms": 337690,
+        "end_ms": 360650,
+        "speaker_id": "speaker_5",
+        "text": "无公害的一个东西，最里面的所有的添加剂全都是无公害的。没有特别有明显的化学添加剂。因为所有的不管是护肤品还是保养品，它再怎么说是那个，都是那种自然类型的啊！都是什么？它里面也会有一定的添加剂。但是我们如果想要它有效用又不要那个后期有特别严重的过敏反应，我们会把这个剂量适当的调整一下。",
+        "status": "ok",
+        "source_job_id": "seg_0036_5_337.690_360.650",
+        "source_audio_name": "seg_0036_5_337.690_360.650.wav"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 37,
+        "start_ms": 358650,
+        "end_ms": 363520,
+        "speaker_id": "speaker_3",
+        "text": "这个还有，这个……这个研发成本是不是比较高呢？",
+        "status": "ok",
+        "source_job_id": "seg_0037_3_358.650_363.520",
+        "source_audio_name": "seg_0037_3_358.650_363.520.wav"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 38,
+        "start_ms": 362550,
+        "end_ms": 392550,
+        "speaker_id": "speaker_5",
+        "text": "呃，这个研发成本是高的。因为为什么那个国内外所有做这一方面的那个厂家比较少？是因为它研发成本在这儿放着你运行的时间比较长就比如说我们最近买的这个专利就是上面也是人家国外一家公司的一个成果。我们直接把这个专利买过来，我们再进行研发。这个也是花费了我们很大一个资金但是就目前而言它的那个回本成本来说是比较慢的因为你针对性的人群它毕竟属于少数所以说我们回本比较慢然后要是你进",
+        "status": "ok",
+        "source_job_id": "seg_0038_5_362.550_392.550",
+        "source_audio_name": "seg_0038_5_362.550_392.550.wav"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 39,
+        "start_ms": 392550,
+        "end_ms": 394580,
+        "speaker_id": "speaker_5",
+        "text": "这一块。",
+        "status": "ok",
+        "source_job_id": "seg_0039_5_392.550_394.580",
+        "source_audio_name": "seg_0039_5_392.550_394.580.wav"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 40,
+        "start_ms": 393670,
+        "end_ms": 409420,
+        "speaker_id": "speaker_3",
+        "text": "一块儿嗯，看能不能咱们市场这块可以针对一下这个。呃高端人群的这一块人家虽然已经怀孕啊但是对这个化妆这一块还是比较在意的针对性一些高端的人群。",
+        "status": "ok",
+        "source_job_id": "seg_0040_3_393.670_409.420",
+        "source_audio_name": "seg_0040_3_393.670_409.420.wav"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 41,
+        "start_ms": 404510,
+        "end_ms": 407710,
+        "speaker_id": "speaker_5",
+        "text": "这一块儿还是比较在意的，针对一些。",
+        "status": "ok",
+        "source_job_id": "seg_0041_5_404.510_407.710",
+        "source_audio_name": "seg_0041_5_404.510_407.710.wav"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 42,
+        "start_ms": 409420,
+        "end_ms": 418740,
+        "speaker_id": "unknown",
+        "text": "这个呃，所谓就是所呃所有这些有钱人嗯讲究的吧？就是追求具有品质的人。他并不是太……",
+        "status": "ok",
+        "source_job_id": "seg_0042_unknown_409.420_418.740",
+        "source_audio_name": "seg_0042_unknown_409.420_418.740.wav"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 43,
+        "start_ms": 418740,
+        "end_ms": 437585,
+        "speaker_id": "speaker_2",
+        "text": "注重价格的，所以呃如果你很便宜一个东西它反而不敢买对吧？嗯。但是我们既然就是投入了大的精力多的金钱去研发一个新款的产品的话，嗯在价格方方面自然是要高一些的这个我们是在推销的时候会有说明因为咱那个成。",
+        "status": "ok",
+        "source_job_id": "seg_0043_2_418.740_437.585",
+        "source_audio_name": "seg_0043_2_418.740_437.585.wav"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 44,
+        "start_ms": 435585,
+        "end_ms": 439835,
+        "speaker_id": "speaker_3",
+        "text": "因为咱这个成本就很大。对对对，呃我们。",
+        "status": "ok",
+        "source_job_id": "seg_0044_3_435.585_439.835",
+        "source_audio_name": "seg_0044_3_435.585_439.835.wav"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 45,
+        "start_ms": 437835,
+        "end_ms": 447040,
+        "speaker_id": "speaker_2",
+        "text": "就是嗯高端的，呃针对高端人士的做高端的产品。当然价格也不同派低，价格低了他们没。",
+        "status": "ok",
+        "source_job_id": "seg_0045_2_437.835_447.040",
+        "source_audio_name": "seg_0045_2_437.835_447.040.wav"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 46,
+        "start_ms": 446520,
+        "end_ms": 451145,
+        "speaker_id": "speaker_3",
+        "text": "这个市场目前你有有过了解吗？",
+        "status": "ok",
+        "source_job_id": "seg_0046_3_446.520_451.145",
+        "source_audio_name": "seg_0046_3_446.520_451.145.wav"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 47,
+        "start_ms": 449145,
+        "end_ms": 479145,
+        "speaker_id": "speaker_2",
+        "text": "嗯，有一些了解。比如说一些白领儿啊或者一些呃做生意的这这这些就是实体对他们都可以嗯包括就是单位的一个高管啊这这些他们都可以的我们也就是针对了呃这一些人群也做一个呃市场的调研然后呃感觉他们对呃化妆品的需求还有就是特殊人群呃他",
+        "status": "ok",
+        "source_job_id": "seg_0047_2_449.145_479.145",
+        "source_audio_name": "seg_0047_2_449.145_479.145.wav"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 48,
+        "start_ms": 479145,
+        "end_ms": 488940,
+        "speaker_id": "speaker_2",
+        "text": "它们这些，经济嗯需求量还是有的。只要我们质量——我们最主最主要的不是说是价格是质量，只要我们的质量有保证就可以。",
+        "status": "ok",
+        "source_job_id": "seg_0048_2_479.145_488.940",
+        "source_audio_name": "seg_0048_2_479.145_488.940.wav"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 49,
+        "start_ms": 488940,
+        "end_ms": 491140,
+        "speaker_id": "unknown",
+        "text": "行。",
+        "status": "ok",
+        "source_job_id": "seg_0049_unknown_488.940_491.140",
+        "source_audio_name": "seg_0049_unknown_488.940_491.140.wav"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 50,
+        "start_ms": 491140,
+        "end_ms": 509580,
+        "speaker_id": "speaker_3",
+        "text": "好的。呃，刚才咱们这个、这个销售这边说了这这些问题。目前咱们在售后处理上面的，刚才你也说了有些问题。嗯，目前咱们售后这边啊，处理了及时吗？处理这些问?",
+        "status": "ok",
+        "source_job_id": "seg_0050_3_491.140_509.580",
+        "source_audio_name": "seg_0050_3_491.140_509.580.wav"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 51,
+        "start_ms": 508740,
+        "end_ms": 538740,
+        "speaker_id": "speaker_1",
+        "text": "题，注意：这些问题很及时。因为要保证产品的多样化，还有消费的那个不同的人群，还有一些要了解顾客本质之类的这方面的问题。还有比方说像我们公司如果推出一些新产品或者新概念的话，它可能大众会有不同的观点，他可能会对这个新产品要一定的了解需要我们多做一些沟通之类的工作让顾客感觉到我们的服务或者物超所值。",
+        "status": "ok",
+        "source_job_id": "seg_0051_1_508.740_538.740",
+        "source_audio_name": "seg_0051_1_508.740_538.740.wav"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 52,
+        "start_ms": 538740,
+        "end_ms": 557480,
+        "speaker_id": "speaker_1",
+        "text": "还有一个，就是要解决这个新客源的问题。就比方说随着人们，这个生活条件逐渐的提高，很多女性就开始追求就是专业的、特别专业的那种美容服务。然后这方面也可以和我们这一方面都配合。",
+        "status": "ok",
+        "source_job_id": "seg_0052_1_538.740_557.480",
+        "source_audio_name": "seg_0052_1_538.740_557.480.wav"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 53,
+        "start_ms": 556840,
+        "end_ms": 570130,
+        "speaker_id": "speaker_3",
+        "text": "行刚才，嗯刚才这个售后也说了咱们这个呃法务部门上半年咱有三起这个侵权这个案件对这一块儿。这个处理结果是什么样的呢？",
+        "status": "ok",
+        "source_job_id": "seg_0053_3_556.840_570.130",
+        "source_audio_name": "seg_0053_3_556.840_570.130.wav"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 54,
+        "start_ms": 569450,
+        "end_ms": 599450,
+        "speaker_id": "speaker_4",
+        "text": "一样的。上半年，咱们就是有一家是打着咱们的商标嗯卖着他们的产品然后侵犯咱们的这个那个商标权我已经向法院起诉并且他们已经撤销所有上市的产品，并且对咱们给予赔偿还有一起就是他打着咱们就是咱们的公司的名字叫完美达它",
+        "status": "ok",
+        "source_job_id": "seg_0054_4_569.450_599.450",
+        "source_audio_name": "seg_0054_4_569.450_599.450.wav"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 55,
+        "start_ms": 599450,
+        "end_ms": 622230,
+        "speaker_id": "speaker_4",
+        "text": "他们公司的名字叫大完美，达完美。就是也是仿仿造咱们公司的产品呃销量只是价格低这个跟咱们抢市场然后这个这个由于是他们也有他们的公司然后只能说是现在正在跟他跟法院一直在追查这个事情追查这事儿。",
+        "status": "ok",
+        "source_job_id": "seg_0055_4_599.450_622.230",
+        "source_audio_name": "seg_0055_4_599.450_622.230.wav"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 56,
+        "start_ms": 621610,
+        "end_ms": 625830,
+        "speaker_id": "speaker_3",
+        "text": "啥这个事情？他这有有点，这个怎么说来着。",
+        "status": "ok",
+        "source_job_id": "seg_0056_3_621.610_625.830",
+        "source_audio_name": "seg_0056_3_621.610_625.830.wav"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 57,
+        "start_ms": 624620,
+        "end_ms": 628520,
+        "speaker_id": "speaker_4",
+        "text": "怎么说呢？是吧，就是侵犯咱们的这个商标权。",
+        "status": "ok",
+        "source_job_id": "seg_0057_4_624.620_628.520",
+        "source_audio_name": "seg_0057_4_624.620_628.520.wav"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 58,
+        "start_ms": 628480,
+        "end_ms": 640000,
+        "speaker_id": "speaker_3",
+        "text": "相当于就是，咱是李逵。他是李鬼那种对嗯这一块儿咱们发布玩一定要加大这方面的这个。",
+        "status": "ok",
+        "source_job_id": "seg_0058_3_628.480_640.000",
+        "source_audio_name": "seg_0058_3_628.480_640.000.wav"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 59,
+        "start_ms": 633240,
+        "end_ms": 636050,
+        "speaker_id": "speaker_4",
+        "text": "他是李逵的，对这一块。",
+        "status": "ok",
+        "source_job_id": "seg_0059_4_633.240_636.050",
+        "source_audio_name": "seg_0059_4_633.240_636.050.wav"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 60,
+        "start_ms": 640000,
+        "end_ms": 646750,
+        "speaker_id": "unknown",
+        "text": "呃，这个嗯投入啊对它进行一下起诉。",
+        "status": "ok",
+        "source_job_id": "seg_0060_unknown_640.000_646.750",
+        "source_audio_name": "seg_0060_unknown_640.000_646.750.wav"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 61,
+        "start_ms": 646750,
+        "end_ms": 658850,
+        "speaker_id": "speaker_3",
+        "text": "嗯，还有就是咱最后一场那个跟一个公司咱们合作这一块儿。公司吧？咱这个说：咱那个呃前台上面的一些问题就。",
+        "status": "ok",
+        "source_job_id": "seg_0061_3_646.750_658.850",
+        "source_audio_name": "seg_0061_3_646.750_658.850.wav"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 62,
+        "start_ms": 658850,
+        "end_ms": 659160,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0062_unknown_658.850_659.160",
+        "source_audio_name": "seg_0062_unknown_658.850_659.160.wav"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 63,
+        "start_ms": 659160,
+        "end_ms": 662560,
+        "speaker_id": "speaker_4",
+        "text": "怎么处理的？咱们公司钱在上面了。嗯，对。",
+        "status": "ok",
+        "source_job_id": "seg_0063_4_659.160_662.560",
+        "source_audio_name": "seg_0063_4_659.160_662.560.wav"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 64,
+        "start_ms": 662150,
+        "end_ms": 668750,
+        "speaker_id": "speaker_3",
+        "text": "一个公司说：“咱们违约了之类的。”这具体我也不太了解，这一块儿总经理是怎么回。",
+        "status": "ok",
+        "source_job_id": "seg_0064_3_662.150_668.750",
+        "source_audio_name": "seg_0064_3_662.150_668.750.wav"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 65,
+        "start_ms": 668750,
+        "end_ms": 668840,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0065_unknown_668.750_668.840",
+        "source_audio_name": "seg_0065_unknown_668.750_668.840.wav"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 66,
+        "start_ms": 668840,
+        "end_ms": 698840,
+        "speaker_id": "speaker_4",
+        "text": "啊，就是咱们违约的事情。就是嗯，他们向咱们订批定制了一批呃商品，由于咱们生产可能出现了一些问题或者呃延误吧？那咱们是推迟了几天送货然后他们可能就是抓住这个小尾巴不放认为咱们违约了，然后这个问题吧我们确实是我们也确实有责任嗯现在就在跟他们的公司协商这个赔偿款的问题。",
+        "status": "ok",
+        "source_job_id": "seg_0066_4_668.840_698.840",
+        "source_audio_name": "seg_0066_4_668.840_698.840.wav"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 67,
+        "start_ms": 697715,
+        "end_ms": 702715,
+        "speaker_id": "speaker_3",
+        "text": "大概，这一块进度怎么样了？这个。",
+        "status": "ok",
+        "source_job_id": "seg_0067_3_697.715_702.715",
+        "source_audio_name": "seg_0067_3_697.715_702.715.wav"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 68,
+        "start_ms": 698840,
+        "end_ms": 717260,
+        "speaker_id": "speaker_4",
+        "text": "目前还没有协商出来结果。因为他们都想要多要一些赔偿款，但是我们觉得没有这个赔失几年，所以我们觉的没有必要给太多现在正在处于一个协商状态协。",
+        "status": "ok",
+        "source_job_id": "seg_0068_4_698.840_717.260",
+        "source_audio_name": "seg_0068_4_698.840_717.260.wav"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 70,
+        "start_ms": 717280,
+        "end_ms": 724870,
+        "speaker_id": "speaker_3",
+        "text": "嗯，还有咱下个不玩。上半年一个财务状况。",
+        "status": "ok",
+        "source_job_id": "seg_0070_3_717.280_724.870",
+        "source_audio_name": "seg_0070_3_717.280_724.870.wav"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 71,
+        "start_ms": 724870,
+        "end_ms": 744870,
+        "speaker_id": "unknown",
+        "text": "在上半年，因为受疫情影响。其实出来去实体店和专柜购买化妆品的顾客比较少。但是线下像我们的官网和各种嗯可以提供这个商品的这些平台呃成交量还是不错的然后在这期间咱们比去年同期呃其。",
+        "status": "ok",
+        "source_job_id": "seg_0071_unknown_724.870_744.870",
+        "source_audio_name": "seg_0071_unknown_724.870_744.870.wav"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 72,
+        "start_ms": 744870,
+        "end_ms": 764870,
+        "speaker_id": "unknown",
+        "text": "销售额还在升，还还在增长。然后呃下降。然后就是下半年咱们做的一个计划表也是嗯比去年同期也是要呃有增长的这个这个期望。然后为了促进咱们这个。",
+        "status": "ok",
+        "source_job_id": "seg_0072_unknown_744.870_764.870",
+        "source_audio_name": "seg_0072_unknown_744.870_764.870.wav"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 73,
+        "start_ms": 764870,
+        "end_ms": 784870,
+        "speaker_id": "unknown",
+        "text": "呃，销咱们这个化妆品竞市场竞争力更好的发展。我我是作为财务这边儿其实有一个更好的想法：下半年咱们因为化妆品这个行业利润其实是比较高的。为了增强咱们公司的市场竞争力首先一是提高咱们的。",
+        "status": "ok",
+        "source_job_id": "seg_0073_unknown_764.870_784.870",
+        "source_audio_name": "seg_0073_unknown_764.870_784.870.wav"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 74,
+        "start_ms": 784870,
+        "end_ms": 785490,
+        "speaker_id": "unknown",
+        "text": "哦。",
+        "status": "ok",
+        "source_job_id": "seg_0074_unknown_784.870_785.490",
+        "source_audio_name": "seg_0074_unknown_784.870_785.490.wav"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 75,
+        "start_ms": 785490,
+        "end_ms": 791600,
+        "speaker_id": "speaker_3",
+        "text": "你说一下上半年咱这个财务状况这一块是个什么样的情况？",
+        "status": "ok",
+        "source_job_id": "seg_0075_3_785.490_791.600",
+        "source_audio_name": "seg_0075_3_785.490_791.600.wav"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 76,
+        "start_ms": 791600,
+        "end_ms": 811410,
+        "speaker_id": "unknown",
+        "text": "上半年财务，财务情况就是嗯主营业务收入是大概在八十万元然后净利润是在七十万元反正比去年都都有同期的增长。",
+        "status": "ok",
+        "source_job_id": "seg_0076_unknown_791.600_811.410",
+        "source_audio_name": "seg_0076_unknown_791.600_811.410.wav"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 77,
+        "start_ms": 811410,
+        "end_ms": 817770,
+        "speaker_id": "speaker_3",
+        "text": "嗯，总经理说一下咱们。嗯下半年的一个战略计划这一块儿。",
+        "status": "ok",
+        "source_job_id": "seg_0077_3_811.410_817.770",
+        "source_audio_name": "seg_0077_3_811.410_817.770.wav"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 78,
+        "start_ms": 817550,
+        "end_ms": 847550,
+        "speaker_id": "speaker_0",
+        "text": "嗯，对。我们刚刚汇报了上半年的这个情况嘛？呃因为现在我们呃，这个比较流行的一个一个宣传方式、一个手法就是网络宣传，有一些产生了一些非常有竞争力的这些产品就一些不知名的一些产品突然之间就通过各种网络手段啊在网上就是有有有一定的影响力对我们的一些对对我们的一些类。",
+        "status": "ok",
+        "source_job_id": "seg_0078_0_817.550_847.550",
+        "source_audio_name": "seg_0078_0_817.550_847.550.wav"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 79,
+        "start_ms": 847550,
+        "end_ms": 869830,
+        "speaker_id": "speaker_0",
+        "text": "类似产品产生了一些压力。呃，这个方——这个我就是对我们下半年这个制定计划是有一定影响的。想问一下各部门对这方面有什么见解？可以有什么策划方案改善一下我们这个类似产品然后怎么提升一下这个销售量我觉得……",
+        "status": "ok",
+        "source_job_id": "seg_0079_0_847.550_869.830",
+        "source_audio_name": "seg_0079_0_847.550_869.830.wav"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 80,
+        "start_ms": 869830,
+        "end_ms": 889830,
+        "speaker_id": "unknown",
+        "text": "咱们公司也可以去学习一下网络这种，通过带货。因为咱们现在主要就是线上啊，就是专、专柜然后还有咱们的官网我觉得可以通过网络代货。然后我们也是像他们那样，就是做一下那种网红产品。",
+        "status": "ok",
+        "source_job_id": "seg_0080_unknown_869.830_889.830",
+        "source_audio_name": "seg_0080_unknown_869.830_889.830.wav"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 81,
+        "start_ms": 889830,
+        "end_ms": 894660,
+        "speaker_id": "unknown",
+        "text": "我觉得这样，对就是扩大我们的销售。",
+        "status": "ok",
+        "source_job_id": "seg_0081_unknown_889.830_894.660",
+        "source_audio_name": "seg_0081_unknown_889.830_894.660.wav"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 82,
+        "start_ms": 894660,
+        "end_ms": 916490,
+        "speaker_id": "speaker_0",
+        "text": "就是你的意思是，也是通过一些网贷然后网红直播网络网络带货。对。然后通过这样的方式，然后学习人家这样的方式，也是在网上嗯产生一点影响力。别的有什么？别的意见吗？",
+        "status": "ok",
+        "source_job_id": "seg_0082_0_894.660_916.490",
+        "source_audio_name": "seg_0082_0_894.660_916.490.wav"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 83,
+        "start_ms": 915850,
+        "end_ms": 932165,
+        "speaker_id": "speaker_1",
+        "text": "这个需要让客户要了解他们的化妆品了，因为很多现在大多数人都知道。女生可能相对了解吧？比方说……对你的意思是：比方说——除了这些不化妆的。",
+        "status": "ok",
+        "source_job_id": "seg_0083_1_915.850_932.165",
+        "source_audio_name": "seg_0083_1_915.850_932.165.wav"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 84,
+        "start_ms": 927540,
+        "end_ms": 940820,
+        "speaker_id": "speaker_0",
+        "text": "比方说，对你的意思是：比方说除了这些不化妆的呃，这些化妆的人之外，不化妆的那些我们是不是也得考虑进去？让他们了解我们的产品。",
+        "status": "ok",
+        "source_job_id": "seg_0084_0_927.540_940.820",
+        "source_audio_name": "seg_0084_0_927.540_940.820.wav"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 85,
+        "start_ms": 939250,
+        "end_ms": 969250,
+        "speaker_id": "speaker_1",
+        "text": "有的女生，大部分女生吧都能分得清口红色号。这方面可能男生他分不清。可能你需要做进一步的推广：像在官网上列举一些PPT和课程讲解，让他们真正的了解这种化妆品。还有就是敷面膜、敷多长时间？过多会对皮肤造成酸性的损伤或者碱性的损伤。这些也要明确地告诉他们因为有些人用化妆品使用过当以后他会。",
+        "status": "ok",
+        "source_job_id": "seg_0085_1_939.250_969.250",
+        "source_audio_name": "seg_0085_1_939.250_969.250.wav"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 86,
+        "start_ms": 969250,
+        "end_ms": 999250,
+        "speaker_id": "speaker_1",
+        "text": "面临着起痘之类过敏的危害，他们就觉得是化妆品本身的质量问题。咱们可以在这方面着手：就像比方说要，在比较就是用化妆品那些过敏的那种顾客像这几年用面膜之类的脸上会发红、发痒、起痘痘之类的还有脱皮的现象，咱们可以告诉他们：“就是使用这些化妆品前”，“使用哪三个技巧。”",
+        "status": "ok",
+        "source_job_id": "seg_0086_1_969.250_999.250",
+        "source_audio_name": "seg_0086_1_969.250_999.250.wav"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 87,
+        "start_ms": 999250,
+        "end_ms": 1005180,
+        "speaker_id": "speaker_1",
+        "text": "对，使用哪三个技巧可以避免这些东西？而且也起到美肤的效果。",
+        "status": "ok",
+        "source_job_id": "seg_0087_1_999.250_1005.180",
+        "source_audio_name": "seg_0087_1_999.250_1005.180.wav"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 88,
+        "start_ms": 1003500,
+        "end_ms": 1012920,
+        "speaker_id": "speaker_0",
+        "text": "可以呃，用之前先在耳朵后面涂一点啊。看看有没有什么敏感效果？是这样吗对也可以。",
+        "status": "ok",
+        "source_job_id": "seg_0088_0_1003.500_1012.920",
+        "source_audio_name": "seg_0088_0_1003.500_1012.920.wav"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 89,
+        "start_ms": 1010920,
+        "end_ms": 1035595,
+        "speaker_id": "speaker_1",
+        "text": "是这样吗？对，也可以使用那种敷面膜之前的像护肤之类的三种疗程。也可以咱们公司具体的讲解一下或制化妆讲堂。对化妆品课堂让他们真正的使会使用化妆品或者是使用一些小技巧怎么样配合我们的化妆品进行美白啊补水之类的这方面会有更好的功效。你刚刚发。",
+        "status": "ok",
+        "source_job_id": "seg_0089_1_1010.920_1035.595",
+        "source_audio_name": "seg_0089_1_1010.920_1035.595.wav"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 90,
+        "start_ms": 1018970,
+        "end_ms": 1022095,
+        "speaker_id": "speaker_5",
+        "text": "化妆，化妆讲堂。",
+        "status": "ok",
+        "source_job_id": "seg_0090_5_1018.970_1022.095",
+        "source_audio_name": "seg_0090_5_1018.970_1022.095.wav"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 91,
+        "start_ms": 1033595,
+        "end_ms": 1047595,
+        "speaker_id": "speaker_0",
+        "text": "更好的功效。你刚刚反映了这个问题，我想了一下：是不是可以考虑？因为女生其实会化妆、懂这些的多一点；但是男性相对来说就懂得比较少。对他们可能了解。",
+        "status": "ok",
+        "source_job_id": "seg_0091_0_1033.595_1047.595",
+        "source_audio_name": "seg_0091_0_1033.595_1047.595.wav"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 92,
+        "start_ms": 1045595,
+        "end_ms": 1050595,
+        "speaker_id": "speaker_1",
+        "text": "比较少，是不是了解不了女朋友的想法？就这方面。对，是不是可以跟。",
+        "status": "ok",
+        "source_job_id": "seg_0092_1_1045.595_1050.595",
+        "source_audio_name": "seg_0092_1_1045.595_1050.595.wav"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 93,
+        "start_ms": 1048595,
+        "end_ms": 1061095,
+        "speaker_id": "speaker_0",
+        "text": "根据呃这个男性的这个心理想法？然后制定研发一些男性的化妆品。针对男性的化妆品。你方说就是。",
+        "status": "ok",
+        "source_job_id": "seg_0093_0_1048.595_1061.095",
+        "source_audio_name": "seg_0093_0_1048.595_1061.095.wav"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 94,
+        "start_ms": 1059095,
+        "end_ms": 1074200,
+        "speaker_id": "speaker_4",
+        "text": "比方说，就是嗯呃素颜霜呀。就是不用任何的打理，就是一抹就可以出门了，很方便。就是你要是想要让他们在什么什么口红啊？",
+        "status": "ok",
+        "source_job_id": "seg_0094_4_1059.095_1074.200",
+        "source_audio_name": "seg_0094_4_1059.095_1074.200.wav"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 95,
+        "start_ms": 1074200,
+        "end_ms": 1074520,
+        "speaker_id": "unknown",
+        "text": "嗯。",
+        "status": "ok",
+        "source_job_id": "seg_0095_unknown_1074.200_1074.520",
+        "source_audio_name": "seg_0095_unknown_1074.200_1074.520.wav"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 96,
+        "start_ms": 1074520,
+        "end_ms": 1077645,
+        "speaker_id": "speaker_0",
+        "text": "男生应该都。",
+        "status": "ok",
+        "source_job_id": "seg_0096_0_1074.520_1077.645",
+        "source_audio_name": "seg_0096_0_1074.520_1077.645.wav"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 97,
+        "start_ms": 1075645,
+        "end_ms": 1081100,
+        "speaker_id": "speaker_4",
+        "text": "首先是他们，肯定不会这么做；其次他们也不会。",
+        "status": "ok",
+        "source_job_id": "seg_0097_4_1075.645_1081.100",
+        "source_audio_name": "seg_0097_4_1075.645_1081.100.wav"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 98,
+        "start_ms": 1081100,
+        "end_ms": 1083470,
+        "speaker_id": "unknown",
+        "text": "男生可能会比较注重护肤，是吗？",
+        "status": "ok",
+        "source_job_id": "seg_0098_unknown_1081.100_1083.470",
+        "source_audio_name": "seg_0098_unknown_1081.100_1083.470.wav"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 99,
+        "start_ms": 1083470,
+        "end_ms": 1090290,
+        "speaker_id": "speaker_5",
+        "text": "化妆品这一方面，咱们可以相对来说比重低一点。但是护肤这方面，可男士护肤可以相。",
+        "status": "ok",
+        "source_job_id": "seg_0099_5_1083.470_1090.290",
+        "source_audio_name": "seg_0099_5_1083.470_1090.290.wav"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 100,
+        "start_ms": 1090290,
+        "end_ms": 1091260,
+        "speaker_id": "unknown",
+        "text": "会听到一点。",
+        "status": "ok",
+        "source_job_id": "seg_0100_unknown_1090.290_1091.260",
+        "source_audio_name": "seg_0100_unknown_1090.290_1091.260.wav"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 101,
+        "start_ms": 1091260,
+        "end_ms": 1094320,
+        "speaker_id": "speaker_4",
+        "text": "比如说，界面主的研发呀。",
+        "status": "ok",
+        "source_job_id": "seg_0101_4_1091.260_1094.320",
+        "source_audio_name": "seg_0101_4_1091.260_1094.320.wav"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 102,
+        "start_ms": 1094320,
+        "end_ms": 1097610,
+        "speaker_id": "unknown",
+        "text": "或者说是那种面膜呀，就是这个。",
+        "status": "ok",
+        "source_job_id": "seg_0102_unknown_1094.320_1097.610",
+        "source_audio_name": "seg_0102_unknown_1094.320_1097.610.wav"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 103,
+        "start_ms": 1097610,
+        "end_ms": 1101260,
+        "speaker_id": "speaker_4",
+        "text": "呃，专注于做一些男士的面膜。",
+        "status": "ok",
+        "source_job_id": "seg_0103_4_1097.610_1101.260",
+        "source_audio_name": "seg_0103_4_1097.610_1101.260.wav"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 104,
+        "start_ms": 1101260,
+        "end_ms": 1102210,
+        "speaker_id": "unknown",
+        "text": "的这个地面。",
+        "status": "ok",
+        "source_job_id": "seg_0104_unknown_1101.260_1102.210",
+        "source_audio_name": "seg_0104_unknown_1101.260_1102.210.wav"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 105,
+        "start_ms": 1102210,
+        "end_ms": 1105150,
+        "speaker_id": "speaker_3",
+        "text": "销售对你这边怎么看呢？",
+        "status": "ok",
+        "source_job_id": "seg_0105_3_1102.210_1105.150",
+        "source_audio_name": "seg_0105_3_1102.210_1105.150.wav"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 106,
+        "start_ms": 1105150,
+        "end_ms": 1125150,
+        "speaker_id": "unknown",
+        "text": "嗯，刚刚既然说了通过网络的话，我就在想：我们已有的客户是不是有人在做直播？或者说呃调查一下我们现在正在用我们的服务的这这些客户。如果如果这些客那个……这这些人中间有人本身就是网红。",
+        "status": "ok",
+        "source_job_id": "seg_0106_unknown_1105.150_1125.150",
+        "source_audio_name": "seg_0106_unknown_1105.150_1125.150.wav"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 107,
+        "start_ms": 1125150,
+        "end_ms": 1129920,
+        "speaker_id": "unknown",
+        "text": "他就可以做，而且。他做了，他做了之后呢？",
+        "status": "ok",
+        "source_job_id": "seg_0107_unknown_1125.150_1129.920",
+        "source_audio_name": "seg_0107_unknown_1125.150_1129.920.wav"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 108,
+        "start_ms": 1129920,
+        "end_ms": 1132880,
+        "speaker_id": "speaker_2",
+        "text": "嗯，因为他本身对这个就比较了解的。",
+        "status": "ok",
+        "source_job_id": "seg_0108_2_1129.920_1132.880",
+        "source_audio_name": "seg_0108_2_1129.920_1132.880.wav"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 109,
+        "start_ms": 1132880,
+        "end_ms": 1139900,
+        "speaker_id": "unknown",
+        "text": "不用我们去，再给他一些培训啊或者一些宣传啊。然后他做了之后呢？我们。",
+        "status": "ok",
+        "source_job_id": "seg_0109_unknown_1132.880_1139.900",
+        "source_audio_name": "seg_0109_unknown_1132.880_1139.900.wav"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 110,
+        "start_ms": 1139900,
+        "end_ms": 1147760,
+        "speaker_id": "speaker_2",
+        "text": "他，因为他要买的不可能就买那一次。呃以后再买的话，就根据他网络的那个直播。",
+        "status": "ok",
+        "source_job_id": "seg_0110_2_1139.900_1147.760",
+        "source_audio_name": "seg_0110_2_1139.900_1147.760.wav"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 111,
+        "start_ms": 1147760,
+        "end_ms": 1151100,
+        "speaker_id": "unknown",
+        "text": "效果，我们可以给它一定折扣的优惠。",
+        "status": "ok",
+        "source_job_id": "seg_0111_unknown_1147.760_1151.100",
+        "source_audio_name": "seg_0111_unknown_1147.760_1151.100.wav"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 112,
+        "start_ms": 1151100,
+        "end_ms": 1160975,
+        "speaker_id": "speaker_0",
+        "text": "对呀，这样的话呃可以增加我们的那个网上的一些宣传力度。通过这个网上的流量正在用的意。",
+        "status": "ok",
+        "source_job_id": "seg_0112_0_1151.100_1160.975",
+        "source_audio_name": "seg_0112_0_1151.100_1160.975.wav"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 113,
+        "start_ms": 1158975,
+        "end_ms": 1183475,
+        "speaker_id": "speaker_2",
+        "text": "他本身就正在用，他一直在用。因为他这样的话他自己说话也很有底气呃也可以影响到大家首先影响了周边的人因为他的身边的闺蜜啊说哎呀她不是在做广告它确实就在用这个而且效果也蛮好的它可以对比他自己的照片来看然后让身边的人都就可以让别人更相信对对对更有力度，对这是。",
+        "status": "ok",
+        "source_job_id": "seg_0113_2_1158.975_1183.475",
+        "source_audio_name": "seg_0113_2_1158.975_1183.475.wav"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 114,
+        "start_ms": 1179225,
+        "end_ms": 1191725,
+        "speaker_id": "speaker_0",
+        "text": "可以让别人更相信，对对对更有力度。对这是一个很好的提议：也为我们找这个特意去找一些网红省一下一些预算。对对成。",
+        "status": "ok",
+        "source_job_id": "seg_0114_0_1179.225_1191.725",
+        "source_audio_name": "seg_0114_0_1179.225_1191.725.wav"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 115,
+        "start_ms": 1189725,
+        "end_ms": 1193180,
+        "speaker_id": "speaker_2",
+        "text": "对，对。成本也低一点。",
+        "status": "ok",
+        "source_job_id": "seg_0115_2_1189.725_1193.180",
+        "source_audio_name": "seg_0115_2_1189.725_1193.180.wav"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 116,
+        "start_ms": 1193180,
+        "end_ms": 1213180,
+        "speaker_id": "unknown",
+        "text": "我觉得其实也可以让咱们专柜的那些会歌、会姐，因为他们都是经过训练的。他们有一定的话妆技术。可以就是说嗯比如说：，就是一个月吧抽取一两名那种幸运的呃就比如在咱们店里购买商品的这些呃顾客，在店里给他们。",
+        "status": "ok",
+        "source_job_id": "seg_0116_unknown_1193.180_1213.180",
+        "source_audio_name": "seg_0116_unknown_1193.180_1213.180.wav"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 117,
+        "start_ms": 1213180,
+        "end_ms": 1214260,
+        "speaker_id": "unknown",
+        "text": "那个，那种直播。",
+        "status": "ok",
+        "source_job_id": "seg_0117_unknown_1213.180_1214.260",
+        "source_audio_name": "seg_0117_unknown_1213.180_1214.260.wav"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 118,
+        "start_ms": 1214260,
+        "end_ms": 1217260,
+        "speaker_id": "speaker_0",
+        "text": "化给顾客化妆，让他感受到咱。",
+        "status": "ok",
+        "source_job_id": "seg_0118_0_1214.260_1217.260",
+        "source_audio_name": "seg_0118_0_1214.260_1217.260.wav"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 119,
+        "start_ms": 1217260,
+        "end_ms": 1222680,
+        "speaker_id": "unknown",
+        "text": "化妆品，咱们彩妆或者咱们这些护肤品的的优点。",
+        "status": "ok",
+        "source_job_id": "seg_0119_unknown_1217.260_1222.680",
+        "source_audio_name": "seg_0119_unknown_1217.260_1222.680.wav"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 120,
+        "start_ms": 1222680,
+        "end_ms": 1252680,
+        "speaker_id": "speaker_0",
+        "text": "这个可以列入考虑范围内。在咱们专柜的话，可以让顾客免费体验：这个化妆的妆效、护肤品……这个有什么疗效？这个都可以让顾客在呃我们的化妆台前面都可以上试用这是一个好的提议但是嗯有考虑一些这样的情况吗就是如果就有一些顾客就。",
+        "status": "ok",
+        "source_job_id": "seg_0120_0_1222.680_1252.680",
+        "source_audio_name": "seg_0120_0_1222.680_1252.680.wav"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 121,
+        "start_ms": 1252680,
+        "end_ms": 1263620,
+        "speaker_id": "speaker_0",
+        "text": "是属于那种，呃不是很有、不是很有礼貌的。他在我们这个前面乱用、乱涂，造成一些我们的损失。这。",
+        "status": "ok",
+        "source_job_id": "seg_0121_0_1252.680_1263.620",
+        "source_audio_name": "seg_0121_0_1252.680_1263.620.wav"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 122,
+        "start_ms": 1263620,
+        "end_ms": 1281470,
+        "speaker_id": "unknown",
+        "text": "这是怎么考虑呢？造成损失。一方面，咱们就是专柜的这些服务人员要要把态度摆好，然后就是先心平气和地去跟他说这件事情，然后最后的时候，咱们可以就比如说赠送一些口。",
+        "status": "ok",
+        "source_job_id": "seg_0122_unknown_1263.620_1281.470",
+        "source_audio_name": "seg_0122_unknown_1263.620_1281.470.wav"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 123,
+        "start_ms": 1281470,
+        "end_ms": 1284270,
+        "speaker_id": "speaker_2",
+        "text": "活啊，粉底液那种小样。",
+        "status": "ok",
+        "source_job_id": "seg_0123_2_1281.470_1284.270",
+        "source_audio_name": "seg_0123_2_1281.470_1284.270.wav"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 124,
+        "start_ms": 1284270,
+        "end_ms": 1289780,
+        "speaker_id": "unknown",
+        "text": "随机赠品，然后让他们就是看到我们，就是很、很专业的服务态度。",
+        "status": "ok",
+        "source_job_id": "seg_0124_unknown_1284.270_1289.780",
+        "source_audio_name": "seg_0124_unknown_1284.270_1289.780.wav"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 125,
+        "start_ms": 1289780,
+        "end_ms": 1319780,
+        "speaker_id": "speaker_1",
+        "text": "还有一种方法，就是可以。就是比方说：如果有那种故意找事儿的顾客是吧？会影响咱们的正常营业。咱们就可以这时候就需要正一个好的销售一个心理他首先需要安抚一下那个就是闹动情绪的人顾客的那个心里然后并且因为他闹动情绪的时候别人肯定也会被他带动思绪这时候就需要销售人员进行讲解就比方说有人说每天早上用清水",
+        "status": "ok",
+        "source_job_id": "seg_0125_1_1289.780_1319.780",
+        "source_audio_name": "seg_0125_1_1289.780_1319.780.wav"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 126,
+        "start_ms": 1319780,
+        "end_ms": 1328340,
+        "speaker_id": "speaker_1",
+        "text": "洗脸，你就会皮肤变得特别好看。什么之类的美白不需要这些护肤品。所以就说：“无知者无罪。”",
+        "status": "ok",
+        "source_job_id": "seg_0126_1_1319.780_1328.340",
+        "source_audio_name": "seg_0126_1_1319.780_1328.340.wav"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 127,
+        "start_ms": 1327470,
+        "end_ms": 1330420,
+        "speaker_id": "speaker_6",
+        "text": "所以，就需要跟他讲解这些东西。",
+        "status": "ok",
+        "source_job_id": "seg_0127_6_1327.470_1330.420",
+        "source_audio_name": "seg_0127_6_1327.470_1330.420.wav"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 128,
+        "start_ms": 1330420,
+        "end_ms": 1332560,
+        "speaker_id": "unknown",
+        "text": "就是不要说什么，是已经化解无解的我。",
+        "status": "ok",
+        "source_job_id": "seg_0128_unknown_1330.420_1332.560",
+        "source_audio_name": "seg_0128_unknown_1330.420_1332.560.wav"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 129,
+        "start_ms": 1332560,
+        "end_ms": 1360310,
+        "speaker_id": "speaker_6",
+        "text": "不好，就只能说：这个肯定不可能。每个人用的都像那些海报、电视上那种明星一样的这种效果一定要给他们讲解清楚。而且也要说就是客观地看待护肤品这件事情，就是它的作用，它的能力在哪？咱们给他讲解清楚以后，因为那个寡不敌众嘛！他如果在了解咱们这个产品以后，大多人听的那些没有找事的这些顾客，他们听听听了咱们的讲解，他会觉得说得非常有道理。所以那个、那个顾客的情绪也……",
+        "status": "ok",
+        "source_job_id": "seg_0129_6_1332.560_1360.310",
+        "source_audio_name": "seg_0129_6_1332.560_1360.310.wav"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 130,
+        "start_ms": 1360310,
+        "end_ms": 1367090,
+        "speaker_id": "unknown",
+        "text": "可能是，就是跟着咱们他们大部分人的情绪跟着平缓下来。这样的话就需要嗯对。",
+        "status": "ok",
+        "source_job_id": "seg_0130_unknown_1360.310_1367.090",
+        "source_audio_name": "seg_0130_unknown_1360.310_1367.090.wav"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 131,
+        "start_ms": 1367090,
+        "end_ms": 1369940,
+        "speaker_id": "speaker_0",
+        "text": "那个前面的专员的柜台，柜台的专员。",
+        "status": "ok",
+        "source_job_id": "seg_0131_0_1367.090_1369.940",
+        "source_audio_name": "seg_0131_0_1367.090_1369.940.wav"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 132,
+        "start_ms": 1369940,
+        "end_ms": 1371620,
+        "speaker_id": "unknown",
+        "text": "进行一下。",
+        "status": "ok",
+        "source_job_id": "seg_0132_unknown_1369.940_1371.620",
+        "source_audio_name": "seg_0132_unknown_1369.940_1371.620.wav"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 133,
+        "start_ms": 1371620,
+        "end_ms": 1385920,
+        "speaker_id": "speaker_6",
+        "text": "对，而且要跟他们说：“你不是磨了我们化妆品。”就相当于“你好看”，因为他这个化妆品它不可能改变人的基因问题。所以这个化妆品只是一种护肤。要了解也要告诉他们一些危害。",
+        "status": "ok",
+        "source_job_id": "seg_0133_6_1371.620_1385.920",
+        "source_audio_name": "seg_0133_6_1371.620_1385.920.wav"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 134,
+        "start_ms": 1385920,
+        "end_ms": 1391920,
+        "speaker_id": "unknown",
+        "text": "对。呃，刚刚我们讨论的这个问题。",
+        "status": "ok",
+        "source_job_id": "seg_0134_unknown_1385.920_1391.920",
+        "source_audio_name": "seg_0134_unknown_1385.920_1391.920.wav"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 135,
+        "start_ms": 1391920,
+        "end_ms": 1395250,
+        "speaker_id": "speaker_0",
+        "text": "问题，这些建议都会考虑进去。",
+        "status": "ok",
+        "source_job_id": "seg_0135_0_1391.920_1395.250",
+        "source_audio_name": "seg_0135_0_1391.920_1395.250.wav"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 136,
+        "start_ms": 1395250,
+        "end_ms": 1396540,
+        "speaker_id": "unknown",
+        "text": "嗯。",
+        "status": "ok",
+        "source_job_id": "seg_0136_unknown_1395.250_1396.540",
+        "source_audio_name": "seg_0136_unknown_1395.250_1396.540.wav"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 137,
+        "start_ms": 1396540,
+        "end_ms": 1401750,
+        "speaker_id": "speaker_6",
+        "text": "我们刚刚说的是这个，可以采用网络的方式。",
+        "status": "ok",
+        "source_job_id": "seg_0137_6_1396.540_1401.750",
+        "source_audio_name": "seg_0137_6_1396.540_1401.750.wav"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 138,
+        "start_ms": 1401750,
+        "end_ms": 1403600,
+        "speaker_id": "unknown",
+        "text": "进行一下我们产品的。",
+        "status": "ok",
+        "source_job_id": "seg_0138_unknown_1401.750_1403.600",
+        "source_audio_name": "seg_0138_unknown_1401.750_1403.600.wav"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 139,
+        "start_ms": 1403600,
+        "end_ms": 1406500,
+        "speaker_id": "speaker_0",
+        "text": "那我们首先要考虑一下。",
+        "status": "ok",
+        "source_job_id": "seg_0139_0_1403.600_1406.500",
+        "source_audio_name": "seg_0139_0_1403.600_1406.500.wav"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 140,
+        "start_ms": 1406500,
+        "end_ms": 1426500,
+        "speaker_id": "unknown",
+        "text": "什么？我们这个化妆品现在竞争这么激烈，我们要从最根本的上面发现这个问题才可以去解决。大家有什么看法？然后有一个意见就是：呃，化妆品主要是呢，一个是主要的是女性明星，然后更尤其是年轻的女星。",
+        "status": "ok",
+        "source_job_id": "seg_0140_unknown_1406.500_1426.500",
+        "source_audio_name": "seg_0140_unknown_1406.500_1426.500.wav"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 141,
+        "start_ms": 1426500,
+        "end_ms": 1438090,
+        "speaker_id": "unknown",
+        "text": "然后就是包装的问题。比如说，现在网上其实有很多的货的产品是：不过它们产品可能也错吧？但是他们的包装是非常对的。我马上就吸引了一个人。",
+        "status": "ok",
+        "source_job_id": "seg_0141_unknown_1426.500_1438.090",
+        "source_audio_name": "seg_0141_unknown_1426.500_1438.090.wav"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 142,
+        "start_ms": 1438090,
+        "end_ms": 1441040,
+        "speaker_id": "speaker_1",
+        "text": "对，我最女生的一块。",
+        "status": "ok",
+        "source_job_id": "seg_0142_1_1438.090_1441.040",
+        "source_audio_name": "seg_0142_1_1438.090_1441.040.wav"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 143,
+        "start_ms": 1441040,
+        "end_ms": 1461040,
+        "speaker_id": "unknown",
+        "text": "就是他们有的时候，就是买的这个包装。咱们产品如果说你那个暂时无法给你的话呢？我可以给您一点包装研发这边有人对包装有什么想法我们……我们那边想的是：如果我们研发一个产品的用户和咱上他们的个喜马拉雅手袋、它们的那个面包。",
+        "status": "ok",
+        "source_job_id": "seg_0143_unknown_1441.040_1461.040",
+        "source_audio_name": "seg_0143_unknown_1441.040_1461.040.wav"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 144,
+        "start_ms": 1461040,
+        "end_ms": 1461370,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0144_unknown_1461.040_1461.370",
+        "source_audio_name": "seg_0144_unknown_1461.040_1461.370.wav"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 145,
+        "start_ms": 1461370,
+        "end_ms": 1464300,
+        "speaker_id": "speaker_5",
+        "text": "面膜，他们的包装上面就是画了一个山脉。",
+        "status": "ok",
+        "source_job_id": "seg_0145_5_1461.370_1464.300",
+        "source_audio_name": "seg_0145_5_1461.370_1464.300.wav"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 146,
+        "start_ms": 1464300,
+        "end_ms": 1470180,
+        "speaker_id": "unknown",
+        "text": "加上那几个盘龙小人物，他是一个比较贴切的。然后我们研发部也也是面临很大的一个就是：当我们把我们……",
+        "status": "ok",
+        "source_job_id": "seg_0146_unknown_1464.300_1470.180",
+        "source_audio_name": "seg_0146_unknown_1464.300_1470.180.wav"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 147,
+        "start_ms": 1470180,
+        "end_ms": 1473130,
+        "speaker_id": "speaker_5",
+        "text": "这个，那个产品研发出来。但它有自己特色。",
+        "status": "ok",
+        "source_job_id": "seg_0147_5_1470.180_1473.130",
+        "source_audio_name": "seg_0147_5_1470.180_1473.130.wav"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 148,
+        "start_ms": 1473130,
+        "end_ms": 1493130,
+        "speaker_id": "unknown",
+        "text": "的时候，我们并没有特别好的向那些消费者展现出来。比如说：我们里面添加什么精华？你像陈有为的精华……但是我你在包装方面却很难做一个这样的事情。所以我在讲那个在包上面可能得有一种就是设计不把他们设一种类似的那种可爱小蜗牛的那种形状放上去比较直观，也比较典型然后再说后期保。",
+        "status": "ok",
+        "source_job_id": "seg_0148_unknown_1473.130_1493.130",
+        "source_audio_name": "seg_0148_unknown_1473.130_1493.130.wav"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 149,
+        "start_ms": 1493130,
+        "end_ms": 1493970,
+        "speaker_id": "unknown",
+        "text": "好，孙凡的导演。",
+        "status": "ok",
+        "source_job_id": "seg_0149_unknown_1493.130_1493.970",
+        "source_audio_name": "seg_0149_unknown_1493.130_1493.970.wav"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 150,
+        "start_ms": 1493970,
+        "end_ms": 1496790,
+        "speaker_id": "speaker_5",
+        "text": "你把我们直接点出来，因为我研发部产品一直在。",
+        "status": "ok",
+        "source_job_id": "seg_0150_5_1493.970_1496.790",
+        "source_audio_name": "seg_0150_5_1493.970_1496.790.wav"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 151,
+        "start_ms": 1496790,
+        "end_ms": 1514570,
+        "speaker_id": "unknown",
+        "text": "更新换代，但是大家对我们的认知呢还是比较有限的。所以说你要想销量好，就要像我们把我们这些特点都体现出来：，我们要很直白的人文表现。他可能没有很长时间去听你讲一大段的讲座。比如说里面有什么产品技术的那个他们没时间做。我们要在他们对我们第一印象上重点提直观人。",
+        "status": "ok",
+        "source_job_id": "seg_0151_unknown_1496.790_1514.570",
+        "source_audio_name": "seg_0151_unknown_1496.790_1514.570.wav"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 152,
+        "start_ms": 1514570,
+        "end_ms": 1520770,
+        "speaker_id": "speaker_5",
+        "text": "对，明显点、直观一点。把我们研发这个核心那个特点，直观的表现它在这个软件包装上面。这样的话。",
+        "status": "ok",
+        "source_job_id": "seg_0152_5_1514.570_1520.770",
+        "source_audio_name": "seg_0152_5_1514.570_1520.770.wav"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 153,
+        "start_ms": 1520770,
+        "end_ms": 1540770,
+        "speaker_id": "unknown",
+        "text": "可能对我们研发部也是一个很大的机遇。这个，这有帮助的对吧？嗯，谢谢啊！非常感谢您的意见，在包装上写一句话：“从这个产品的角度。”市场这边有没有什么调查？",
+        "status": "ok",
+        "source_job_id": "seg_0153_unknown_1520.770_1540.770",
+        "source_audio_name": "seg_0153_unknown_1520.770_1540.770.wav"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 154,
+        "start_ms": 1540770,
+        "end_ms": 1560770,
+        "speaker_id": "unknown",
+        "text": "嗯，这个什么样的年龄段的人人群是喜欢什么样的类型？一个呃。比如说：你看看那个《奇葩说》，因为我觉得他们看的，《比如》“青江欲水”那、那……那一妹子。",
+        "status": "ok",
+        "source_job_id": "seg_0154_unknown_1540.770_1560.770",
+        "source_audio_name": "seg_0154_unknown_1540.770_1560.770.wav"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 155,
+        "start_ms": 1560770,
+        "end_ms": 1580770,
+        "speaker_id": "unknown",
+        "text": "嗯，知道。年轻的人不一样心的、不年轻的那样子儿的话那种类型比较吸引他们而年轻人通常也看外国人觉得这些好可爱却很好玩可能他们会以兴趣首先是内心都吸引他然后我们再从一个孩子那个。",
+        "status": "ok",
+        "source_job_id": "seg_0155_unknown_1560.770_1580.770",
+        "source_audio_name": "seg_0155_unknown_1560.770_1580.770.wav"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 156,
+        "start_ms": 1580770,
+        "end_ms": 1588970,
+        "speaker_id": "unknown",
+        "text": "请注意到：这个上面，做出来调查之后。我们后一。",
+        "status": "ok",
+        "source_job_id": "seg_0156_unknown_1580.770_1588.970",
+        "source_audio_name": "seg_0156_unknown_1580.770_1588.970.wav"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 157,
+        "start_ms": 1588970,
+        "end_ms": 1591750,
+        "speaker_id": "speaker_0",
+        "text": "会对我们化妆品的包装上进行一些改。",
+        "status": "ok",
+        "source_job_id": "seg_0157_0_1588.970_1591.750",
+        "source_audio_name": "seg_0157_0_1588.970_1591.750.wav"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 158,
+        "start_ms": 1591750,
+        "end_ms": 1611750,
+        "speaker_id": "unknown",
+        "text": "也可以和一些动漫，嗯包括老鼠啊或者熊大、熊二这些动漫人物的一些联合。应该会对我们的产品促销有一些帮助。现在我们这个市场上化妆品的太多了，化妆品这些品牌太多了，我们……",
+        "status": "ok",
+        "source_job_id": "seg_0158_unknown_1591.750_1611.750",
+        "source_audio_name": "seg_0158_unknown_1591.750_1611.750.wav"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 159,
+        "start_ms": 1611750,
+        "end_ms": 1620690,
+        "speaker_id": "unknown",
+        "text": "是不是可以考虑一下？现在这个竞争对手，他们都有一些什么优势。",
+        "status": "ok",
+        "source_job_id": "seg_0159_unknown_1611.750_1620.690",
+        "source_audio_name": "seg_0159_unknown_1611.750_1620.690.wav"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 160,
+        "start_ms": 1620690,
+        "end_ms": 1623815,
+        "speaker_id": "speaker_0",
+        "text": "相对于我们公司来说，这句话。",
+        "status": "ok",
+        "source_job_id": "seg_0160_0_1620.690_1623.815",
+        "source_audio_name": "seg_0160_0_1620.690_1623.815.wav"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 161,
+        "start_ms": 1621815,
+        "end_ms": 1625030,
+        "speaker_id": "speaker_3",
+        "text": "那对于我们公司来说，这一块儿咱们公司的优势。",
+        "status": "ok",
+        "source_job_id": "seg_0161_3_1621.815_1625.030",
+        "source_audio_name": "seg_0161_3_1621.815_1625.030.wav"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 162,
+        "start_ms": 1625030,
+        "end_ms": 1633390,
+        "speaker_id": "unknown",
+        "text": "哎呀，我这。",
+        "status": "ok",
+        "source_job_id": "seg_0162_unknown_1625.030_1633.390",
+        "source_audio_name": "seg_0162_unknown_1625.030_1633.390.wav"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 163,
+        "start_ms": 1633390,
+        "end_ms": 1659640,
+        "speaker_id": "speaker_6",
+        "text": "这块儿，也是我们这边服务做的非常好。我们这边售后做得非常的完美，因为我们这边售后是受过专业培训的。就是专门做过一个培训机构：，专业的了解这方面化妆品真正的了解它产品包含什么元素、什么样的化学物质进行深入了解可能别的机构只会了解女生喜欢什么样字号、什么样的口红……反正叫后的一个。",
+        "status": "ok",
+        "source_job_id": "seg_0163_6_1633.390_1659.640",
+        "source_audio_name": "seg_0163_6_1633.390_1659.640.wav"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 164,
+        "start_ms": 1659640,
+        "end_ms": 1676770,
+        "speaker_id": "unknown",
+        "text": "嗯，可以提升的优势就是像类似别的品牌的话。你买、买过之之后，如果后面发生一些什么质量上的问题，比如说眼影突然有一块碎了或者口红中间断开了，它是不会负这个后期的责任。但是我们——我们公司……",
+        "status": "ok",
+        "source_job_id": "seg_0164_unknown_1659.640_1676.770",
+        "source_audio_name": "seg_0164_unknown_1659.640_1676.770.wav"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 165,
+        "start_ms": 1676770,
+        "end_ms": 1680970,
+        "speaker_id": "speaker_0",
+        "text": "就是可以考虑一下，对这个一定时间内，这个产品有什么质量问题。",
+        "status": "ok",
+        "source_job_id": "seg_0165_0_1676.770_1680.970",
+        "source_audio_name": "seg_0165_0_1676.770_1680.970.wav"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 166,
+        "start_ms": 1680970,
+        "end_ms": 1683190,
+        "speaker_id": "unknown",
+        "text": "之后可以考虑退换。",
+        "status": "ok",
+        "source_job_id": "seg_0166_unknown_1680.970_1683.190",
+        "source_audio_name": "seg_0166_unknown_1680.970_1683.190.wav"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 167,
+        "start_ms": 1683190,
+        "end_ms": 1685950,
+        "speaker_id": "speaker_6",
+        "text": "兑换新的。这个可以先了解顾客的答复。",
+        "status": "ok",
+        "source_job_id": "seg_0167_6_1683.190_1685.950",
+        "source_audio_name": "seg_0167_6_1683.190_1685.950.wav"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 168,
+        "start_ms": 1685950,
+        "end_ms": 1689990,
+        "speaker_id": "unknown",
+        "text": "当时的情况，就是他是怎么样处理的。如果是平白无故睡着的话。",
+        "status": "ok",
+        "source_job_id": "seg_0168_unknown_1685.950_1689.990",
+        "source_audio_name": "seg_0168_unknown_1685.950_1689.990.wav"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 169,
+        "start_ms": 1689990,
+        "end_ms": 1697420,
+        "speaker_id": "speaker_6",
+        "text": "这方面我们会会做这个质量上的，就是给他们进行赔偿。比如说如果买了一个眼影，但是眼影它如果就是融化了。",
+        "status": "ok",
+        "source_job_id": "seg_0169_6_1689.990_1697.420",
+        "source_audio_name": "seg_0169_6_1689.990_1697.420.wav"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 170,
+        "start_ms": 1697420,
+        "end_ms": 1704750,
+        "speaker_id": "unknown",
+        "text": "那个眼影，离开了它就会。咱们就可以进行二次防护或者啊之类的东西。因为这种情况的不要发生最好。因为。",
+        "status": "ok",
+        "source_job_id": "seg_0170_unknown_1697.420_1704.750",
+        "source_audio_name": "seg_0170_unknown_1697.420_1704.750.wav"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 171,
+        "start_ms": 1704750,
+        "end_ms": 1707610,
+        "speaker_id": "speaker_6",
+        "text": "质量问题吗？那化妆品如果质量出现问题的话。",
+        "status": "ok",
+        "source_job_id": "seg_0171_6_1704.750_1707.610",
+        "source_audio_name": "seg_0171_6_1704.750_1707.610.wav"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 172,
+        "start_ms": 1707610,
+        "end_ms": 1727610,
+        "speaker_id": "unknown",
+        "text": "以后会减少，就是库存量。是没有看是客力还是时间问题？如果说我们这个眼影卖了有两三年了，只出现了一起两次那可能跟个人的保存有问题；但如果我们这个销量只在一年之内已经有四五千或者十几次的话，我们可以反思自己的质量。这个话要听清楚一点：库存量啊！",
+        "status": "ok",
+        "source_job_id": "seg_0172_unknown_1707.610_1727.610",
+        "source_audio_name": "seg_0172_unknown_1707.610_1727.610.wav"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 173,
+        "start_ms": 1727610,
+        "end_ms": 1747610,
+        "speaker_id": "unknown",
+        "text": "四，但是还在于：不知道是什么原因。小计划比如说咱们的这些就是不定期的一些活动、不定期的关注一些知识二部分也会有一些会员制比如说你是消费之后就可以可以成为会员然后。",
+        "status": "ok",
+        "source_job_id": "seg_0173_unknown_1727.610_1747.610",
+        "source_audio_name": "seg_0173_unknown_1727.610_1747.610.wav"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 174,
+        "start_ms": 1747610,
+        "end_ms": 1767610,
+        "speaker_id": "unknown",
+        "text": "以后购买商品的时候，可以享受优惠。或者之后三九十三次那个消费返现一点：咱们每次消费之后五百元这个折扣点都不可保留他们账单然后累积消费次数后两天会返还一定比例的现金。那这样子鼓励大家消费吧？就是百分之五十好最后一个也就是说咱。",
+        "status": "ok",
+        "source_job_id": "seg_0174_unknown_1747.610_1767.610",
+        "source_audio_name": "seg_0174_unknown_1747.610_1767.610.wav"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 175,
+        "start_ms": 1767610,
+        "end_ms": 1787610,
+        "speaker_id": "unknown",
+        "text": "那您在每个节日，让一些呃，这让为这些咱们客户提供些免费的维护保养服务。那些特殊的节日行？嗯……这个法律顾问这边儿、财务这边儿，咱们公司有什么优先啊！法律顾问商委。",
+        "status": "ok",
+        "source_job_id": "seg_0175_unknown_1767.610_1787.610",
+        "source_audio_name": "seg_0175_unknown_1767.610_1787.610.wav"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 176,
+        "start_ms": 1787610,
+        "end_ms": 1807610,
+        "speaker_id": "unknown",
+        "text": "咱们这些护肤产品，嗯获得的那些专利、一些成分、一些成分的那个专利。咱们这边是不是有一些准确保证？啊！",
+        "status": "ok",
+        "source_job_id": "seg_0176_unknown_1787.610_1807.610",
+        "source_audio_name": "seg_0176_unknown_1787.610_1807.610.wav"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 177,
+        "start_ms": 1807610,
+        "end_ms": 1827610,
+        "speaker_id": "unknown",
+        "text": "别的，这个谁的厂家吧？不不好。对了，咱们呢是：市场那边儿、市场这边儿，咱们的化妆品有什么样类似的优势？然后我们那个消费者看都……",
+        "status": "ok",
+        "source_job_id": "seg_0177_unknown_1807.610_1827.610",
+        "source_audio_name": "seg_0177_unknown_1807.610_1827.610.wav"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 178,
+        "start_ms": 1827610,
+        "end_ms": 1847610,
+        "speaker_id": "unknown",
+        "text": "结果，关键点：而且他不关注速度。他的客户没毛病。他们专业追求的就是那个精准量而打造的流量产品。是我们这边呀属于嗯人流是我们的最大的优势这个回头客老顾客还有还有就是呃",
+        "status": "ok",
+        "source_job_id": "seg_0178_unknown_1827.610_1847.610",
+        "source_audio_name": "seg_0178_unknown_1827.610_1847.610.wav"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 179,
+        "start_ms": 1847610,
+        "end_ms": 1867610,
+        "speaker_id": "unknown",
+        "text": "那你看，我们客户那边我们的宣传也跟你们的很像。这边收到市场的回回馈之后会哎再做了解嗯行啊呃咱们这个月或者八月份这一个一天看法见前然后呢明天这场对现。",
+        "status": "ok",
+        "source_job_id": "seg_0179_unknown_1847.610_1867.610",
+        "source_audio_name": "seg_0179_unknown_1847.610_1867.610.wav"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 180,
+        "start_ms": 1867610,
+        "end_ms": 1887610,
+        "speaker_id": "unknown",
+        "text": "看到，下期以后。嗯，各位玩的都一样不一样不同啊！下半场争取到场次的人数对吧？看看他打不咋回。",
+        "status": "ok",
+        "source_job_id": "seg_0180_unknown_1867.610_1887.610",
+        "source_audio_name": "seg_0180_unknown_1867.610_1887.610.wav"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 181,
+        "start_ms": 1887610,
+        "end_ms": 1907610,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0181_unknown_1887.610_1907.610",
+        "source_audio_name": "seg_0181_unknown_1887.610_1907.610.wav"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 182,
+        "start_ms": 1907610,
+        "end_ms": 1927610,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0182_unknown_1907.610_1927.610",
+        "source_audio_name": "seg_0182_unknown_1907.610_1927.610.wav"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 183,
+        "start_ms": 1927610,
+        "end_ms": 1947610,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0183_unknown_1927.610_1947.610",
+        "source_audio_name": "seg_0183_unknown_1927.610_1947.610.wav"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 184,
+        "start_ms": 1947610,
+        "end_ms": 1967610,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0184_unknown_1947.610_1967.610",
+        "source_audio_name": "seg_0184_unknown_1947.610_1967.610.wav"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 185,
+        "start_ms": 1967610,
+        "end_ms": 1987610,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0185_unknown_1967.610_1987.610",
+        "source_audio_name": "seg_0185_unknown_1967.610_1987.610.wav"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 186,
+        "start_ms": 1987610,
+        "end_ms": 1990249,
+        "speaker_id": "unknown",
+        "text": "",
+        "status": "transcript_empty",
+        "source_job_id": "seg_0186_unknown_1987.610_1990.249",
+        "source_audio_name": "seg_0186_unknown_1987.610_1990.249.wav"
+      }
+    ]
+  },
+  "summary": {
+    "title": "化妆品公司上半年总结与市场策略优化会议",
+    "overview": {
+      "text": "本次会议围绕公司上半年工作总结、售后问题、孕妇专用护肤品研发、产品定价与市场策略、财务状况及推广策略展开讨论。会议指出，上半年销售情况良好，但受疫情影响有所下滑，但整体仍保持稳定增长。售后处理及时且注重顾客体验，同时针对产品质量和价格问题进行优化。针对孕妇专用护肤品的研发，公司计划推出高端产品，虽研发成本高但市场定位明确。此外，会议还讨论了通过网红和专柜人员提升线上推广与服务体验，优化包装设计及会员制度等策略，以增强市场竞争力。",
+      "refs": [
+        "seg-000003",
+        "seg-000017",
+        "seg-000035",
+        "seg-000038",
+        "seg-000043",
+        "seg-000045",
+        "seg-000053",
+        "seg-000066",
+        "seg-000076",
+        "seg-000083",
+        "seg-000085",
+        "seg-000106",
+        "seg-000113",
+        "seg-000120",
+        "seg-000143",
+        "seg-000153",
+        "seg-000163",
+        "seg-000174",
+        "seg-000179"
+      ]
+    },
+    "chapters": [
+      {
+        "title": "上半年工作总结与售后问题讨论",
+        "overview": "上半年销售情况良好，尽管受疫情影响有所下滑。售后服务存在态度问题，需重新培训员工。产品质量良好，但价格偏高引发顾客反馈。产品覆盖范围广，涵盖不同人群需求。销售策略针对不同群体制定，提高效率。公司与大品牌合作，产品有专属厂家供应。",
+        "speaker_ids": [
+          "speaker_1"
+        ],
+        "start_ms": 35280,
+        "end_ms": 283720,
+        "start_ref": "seg-000002",
+        "end_ref": "seg-000030",
+        "refs": [
+          "seg-000003",
+          "seg-000017"
+        ]
+      },
+      {
+        "title": "孕妇专用护肤品研发与市场定位",
+        "overview": "为孕妇群体研发无公害护肤品，确保安全性与有效性，研发成本高且回本周期长，需精准定位高端市场。借鉴国外专利技术提升产品竞争力。",
+        "speaker_ids": [
+          "speaker_5"
+        ],
+        "start_ms": 283720,
+        "end_ms": 407710,
+        "start_ref": "seg-000031",
+        "end_ref": "seg-000041",
+        "refs": [
+          "seg-000035",
+          "seg-000038"
+        ]
+      },
+      {
+        "title": "产品定价与市场策略讨论",
+        "overview": "本块讨论了产品定价与市场策略，强调高端定位和质量保证，目标市场为白领和企业高管。售后处理需及时，同时加强新客源开发，防止商标侵权，加大保护力度。",
+        "speaker_ids": [
+          "speaker_2",
+          "speaker_3"
+        ],
+        "start_ms": 409420,
+        "end_ms": 636050,
+        "start_ref": "seg-000042",
+        "end_ref": "seg-000059",
+        "refs": [
+          "seg-000043",
+          "seg-000045",
+          "seg-000053"
+        ]
+      },
+      {
+        "title": "财务状况与市场策略讨论",
+        "overview": "本块讨论了上半年财务状况及下半年市场策略，指出线上销售额增长，需协商与某公司的违约赔偿问题，并计划通过网络宣传和网红产品提升市场竞争力。",
+        "speaker_ids": [
+          "speaker_4",
+          "unknown"
+        ],
+        "start_ms": 640000,
+        "end_ms": 916490,
+        "start_ref": "seg-000060",
+        "end_ref": "seg-000082",
+        "refs": [
+          "seg-000066",
+          "seg-000076"
+        ]
+      },
+      {
+        "title": "化妆品使用与推广策略讨论",
+        "overview": "本块讨论了化妆品使用与推广策略，指出需让客户了解产品特性，通过官网PPT和课程讲解推广知识，并明确面膜使用时间及对皮肤的影响。同时应制定针对男性的化妆品研发策略，并开展化妆品课堂提升使用技巧。",
+        "speaker_ids": [
+          "speaker_1"
+        ],
+        "start_ms": 915850,
+        "end_ms": 1105150,
+        "start_ref": "seg-000083",
+        "end_ref": "seg-000105",
+        "refs": [
+          "seg-000083",
+          "seg-000085"
+        ]
+      },
+      {
+        "title": "利用网红和专柜人员提升线上推广与服务体验",
+        "overview": "本块讨论利用现有客户中的网红进行直播推广，提升网络宣传效果，并通过专柜人员进行化妆指导，增强顾客对产品的认知和信任。同时针对可能造成损失的顾客，采取安抚和赠送小样等方式处理，并讲解护肤品的实际效果，避免误解和纠纷。",
+        "speaker_ids": [
+          "speaker_0",
+          "speaker_2",
+          "unknown"
+        ],
+        "start_ms": 1105150,
+        "end_ms": 1371620,
+        "start_ref": "seg-000106",
+        "end_ref": "seg-000132",
+        "refs": [
+          "seg-000106",
+          "seg-000113",
+          "seg-000120"
+        ]
+      },
+      {
+        "title": "优化化妆品包装与售后保障",
+        "overview": "本块讨论优化化妆品包装设计，建议加入可爱元素如小蜗牛形状，并考虑与动漫人物合作提升吸引力。同时明确售后保障措施，如退换货政策，并强调产品质量问题的处理机制。需进行市场调查以了解目标人群偏好。",
+        "speaker_ids": [
+          "speaker_6",
+          "unknown"
+        ],
+        "start_ms": 1371620,
+        "end_ms": 1727610,
+        "start_ref": "seg-000133",
+        "end_ref": "seg-000172",
+        "refs": [
+          "seg-000143",
+          "seg-000153",
+          "seg-000163"
+        ]
+      },
+      {
+        "title": "优化会员制度与消费激励方案",
+        "overview": "本块提出建立会员制度并实施消费返现机制，计划在节日提供免费维护保养服务，并讨论护肤产品专利及市场优势。重点在于提升客户粘性与满意度。",
+        "speaker_ids": [
+          "unknown"
+        ],
+        "start_ms": 1727610,
+        "end_ms": 1887610,
+        "start_ref": "seg-000173",
+        "end_ref": "seg-000180",
+        "refs": [
+          "seg-000174",
+          "seg-000179"
+        ]
+      }
+    ],
+    "speakers": [
+      {
+        "speaker_id": "speaker_1",
+        "overview": "sp3强调了售后服务的重要性，指出产品质量优秀但价格偏高，建议通过官网PPT讲解、护肤课程等方式提高消费者对产品的了解，并提出解决故意找事顾客的方案。",
+        "refs": [
+          "seg-000051",
+          "seg-000125"
+        ]
+      },
+      {
+        "speaker_id": "speaker_0",
+        "overview": "sp0讨论了化妆品行业现状，提出通过网络宣传和直播带货提升销售，并建议针对男性开发化妆品、提供免费体验服务以及改进产品包装。",
+        "refs": [
+          "seg-000078",
+          "seg-000011"
+        ]
+      },
+      {
+        "speaker_id": "speaker_2",
+        "overview": "sp2介绍了公司针对不同人群制定销售策略，包括男士、女士、儿童和老年人，并强调产品质量优先于价格，通过实际使用效果提升消费者信任。",
+        "refs": [
+          "seg-000028",
+          "seg-000113"
+        ]
+      },
+      {
+        "speaker_id": "speaker_5",
+        "overview": "sp5讨论了研发成本高、产品需无公害且针对特定人群，提出通过化妆讲堂、护肤课程等方式提高消费者对产品的了解，并强调产品包装需直观展示核心特点。",
+        "refs": [
+          "seg-000038",
+          "seg-000035"
+        ]
+      },
+      {
+        "speaker_id": "speaker_4",
+        "overview": "sp4提到公司面临商标侵权和违约问题，指出需处理侵权行为并协商赔偿，同时建议开发男士面膜等产品以提升市场竞争力。",
+        "refs": [
+          "seg-000066",
+          "seg-000054"
+        ]
+      },
+      {
+        "speaker_id": "speaker_6",
+        "overview": "sp6强调了售后培训的重要性，提出通过网络方式向顾客讲解产品功效，避免误解，并说明化妆品无法改变基因，仅起护肤作用，需告知消费者相关危害。",
+        "refs": [
+          "seg-000129",
+          "seg-000163"
+        ]
+      }
+    ],
+    "key_points": [],
+    "decisions": [],
+    "action_items": [
+      {
+        "task": "加强商标保护",
+        "owner": null,
+        "deadline": null,
+        "refs": [
+          "seg-000053"
+        ]
+      },
+      {
+        "task": "协商赔偿款",
+        "owner": "speaker_4",
+        "deadline": null,
+        "refs": [
+          "seg-000066"
+        ]
+      },
+      {
+        "task": "制定市场策略",
+        "owner": null,
+        "deadline": null,
+        "refs": [
+          "seg-000078"
+        ]
+      },
+      {
+        "task": "开展化妆品课堂",
+        "owner": null,
+        "deadline": null,
+        "refs": [
+          "seg-000089"
+        ]
+      },
+      {
+        "task": "明确包装设计",
+        "owner": null,
+        "deadline": null,
+        "refs": [
+          "seg-000143"
+        ]
+      },
+      {
+        "task": "市场调查",
+        "owner": null,
+        "deadline": null,
+        "refs": [
+          "seg-000153"
+        ]
+      }
+    ],
+    "open_questions": [],
+    "risks": [],
+    "keywords": []
+  },
+  "quality": {
+    "status": "pass",
+    "checks": {
+      "json_parse": true,
+      "schema": true,
+      "refs": true,
+      "times": true,
+      "speakers": true,
+      "no_placeholder_text": true,
+      "full_meeting_coverage": true,
+      "deterministic_blocks": true,
+      "speaker_batches_processed": true,
+      "overview_source": "source_timeline",
+      "chapter_quality_gate": true
+    },
+    "counts": {
+      "repairs": 0,
+      "invalid_refs": 0,
+      "dropped_items": 0
+    },
+    "repairs": [],
+    "warnings": []
+  },
+  "runtime": {
+    "started_at": "2026-09-03T06:54:04Z",
+    "finished_at": "2026-09-03T07:01:58Z",
+    "total_elapsed_seconds": 474.316,
+    "context_policy": "deterministic_blocks_map_reduce",
+    "stages": {
+      "segmentation": {
+        "status": "succeeded",
+        "return_code": 0,
+        "elapsed_seconds": 167.091,
+        "started_at": "2026-09-03T06:54:04Z",
+        "finished_at": "2026-09-03T06:56:51Z",
+        "command": [
+          "/userdata/miniforge3/envs/3dspeaker/bin/python",
+          "/userdata/meeting_agent/scripts/board_3dspeaker_segment_prepare_absorb_unknown.py",
+          "--source-audio",
+          "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200708_L_R002S05C01/01_segments/input_mono16k.wav",
+          "--out-dir",
+          "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/01_segments",
+          "--3dspeaker-dir",
+          "/userdata/3D-Speaker",
+          "--python",
+          "/userdata/miniforge3/envs/3dspeaker/bin/python",
+          "--pad",
+          "1.0",
+          "--absorb-unknown-max",
+          "2.0",
+          "--max-known-segment",
+          "30.0",
+          "--max-unknown-segment",
+          "20.0",
+          "--overwrite"
+        ],
+        "log": "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/logs/01_segmentation.log"
+      },
+      "batch_asr": {
+        "status": "succeeded",
+        "return_code": 0,
+        "elapsed_seconds": 73.66,
+        "started_at": "2026-09-03T06:56:51Z",
+        "finished_at": "2026-09-03T06:58:04Z",
+        "command": [
+          "/userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python",
+          "/userdata/meeting_agent/scripts/board_segment_asr_batch.py",
+          "--wav-dir",
+          "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/01_segments/cut_audio/wav_segments",
+          "--manifest",
+          "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/01_segments/cut_audio/cut_segments.csv",
+          "--out-dir",
+          "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/02_batch_asr",
+          "--asr-dir",
+          "/userdata/meeting_agent/runtime/asr/qwen3_asr_gcc10/rknn_Qwen3_ASR_batch_demo",
+          "--asr-model-dir",
+          "/userdata/meeting_agent/models/asr/qwen3-asr-0.6b-rknn",
+          "--encoder-core",
+          "0xff",
+          "--llm-core",
+          "0xff",
+          "--overwrite"
+        ],
+        "log": "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness/logs/02_batch_asr.log"
+      },
+      "transcript_prepare": {
+        "status": "succeeded",
+        "elapsed_seconds": 0.025,
+        "post_process": {
+          "segments_fixed": 8,
+          "chars_removed": 64
+        },
+        "finished_at": "2026-09-03T06:58:05Z"
+      },
+      "llm_summary": {
+        "status": "succeeded",
+        "elapsed_seconds": 138.673,
+        "policy": "deterministic_blocks_map_reduce",
+        "request_count": 12,
+        "transport_request_count": 12,
+        "http_response_count": 12,
+        "response_parse_success_count": 12,
+        "successful_response_count": 12,
+        "validated_request_count": 11,
+        "validation_failed_count": 1,
+        "retry_count": 1,
+        "split_count": 0,
+        "reused_request_count": 0,
+        "request_attempts": [
+          {
+            "request_id": "blk-000001",
+            "estimated_prompt_tokens": 2879,
+            "usage": {
+              "completion_tokens": 283,
+              "prompt_tokens": 2077,
+              "total_tokens": 2360
+            },
+            "timings": {
+              "prompt_n": 2077,
+              "prompt_ms": 2348.004,
+              "prompt_per_token_ms": 1.1304785748675974,
+              "prompt_per_second": 884.5811165568713,
+              "predicted_n": 283,
+              "predicted_ms": 3633.151,
+              "predicted_per_token_ms": 12.837989399293285,
+              "predicted_per_second": 77.89381724018628
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 6.124,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000002",
+            "estimated_prompt_tokens": 2345,
+            "usage": {
+              "completion_tokens": 241,
+              "prompt_tokens": 1550,
+              "total_tokens": 1791
+            },
+            "timings": {
+              "prompt_n": 1550,
+              "prompt_ms": 961.807,
+              "prompt_per_token_ms": 0.6205206451612904,
+              "prompt_per_second": 1611.5499263365725,
+              "predicted_n": 241,
+              "predicted_ms": 3033.878,
+              "predicted_per_token_ms": 12.588705394190873,
+              "predicted_per_second": 79.43628583614765
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 4.072,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000003",
+            "estimated_prompt_tokens": 2728,
+            "usage": {
+              "completion_tokens": 301,
+              "prompt_tokens": 1919,
+              "total_tokens": 2220
+            },
+            "timings": {
+              "prompt_n": 1919,
+              "prompt_ms": 1404.793,
+              "prompt_per_token_ms": 0.7320442939030745,
+              "prompt_per_second": 1366.0375585584497,
+              "predicted_n": 301,
+              "predicted_ms": 3846.559,
+              "predicted_per_token_ms": 12.779265780730897,
+              "predicted_per_second": 78.25175695992183
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 5.287,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validation_failed",
+            "error_code": "validation_failed",
+            "cause": "invalid_json"
+          },
+          {
+            "request_id": "blk-000003-attempt-2",
+            "estimated_prompt_tokens": 2728,
+            "usage": {
+              "completion_tokens": 301,
+              "prompt_tokens": 2327,
+              "total_tokens": 2628
+            },
+            "timings": {
+              "prompt_n": 2327,
+              "prompt_ms": 671.195,
+              "prompt_per_token_ms": 0.2884379028792437,
+              "prompt_per_second": 3466.950737118125,
+              "predicted_n": 301,
+              "predicted_ms": 3898.165,
+              "predicted_per_token_ms": 12.950714285714286,
+              "predicted_per_second": 77.21581821190226
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 4.665,
+            "request_kind": "block-summary",
+            "attempt": 2,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000004",
+            "estimated_prompt_tokens": 2870,
+            "usage": {
+              "completion_tokens": 307,
+              "prompt_tokens": 2019,
+              "total_tokens": 2326
+            },
+            "timings": {
+              "prompt_n": 2019,
+              "prompt_ms": 1557.744,
+              "prompt_per_token_ms": 0.7715423476968796,
+              "prompt_per_second": 1296.1051366591687,
+              "predicted_n": 307,
+              "predicted_ms": 3945.424,
+              "predicted_per_token_ms": 12.851543973941368,
+              "predicted_per_second": 77.81166232070368
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 5.56,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000005",
+            "estimated_prompt_tokens": 2797,
+            "usage": {
+              "completion_tokens": 279,
+              "prompt_tokens": 2001,
+              "total_tokens": 2280
+            },
+            "timings": {
+              "prompt_n": 2001,
+              "prompt_ms": 1545.761,
+              "prompt_per_token_ms": 0.7724942528735632,
+              "prompt_per_second": 1294.5080125582158,
+              "predicted_n": 279,
+              "predicted_ms": 3565.824,
+              "predicted_per_token_ms": 12.7807311827957,
+              "predicted_per_second": 78.24278483738962
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 5.159,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000006",
+            "estimated_prompt_tokens": 3212,
+            "usage": {
+              "completion_tokens": 328,
+              "prompt_tokens": 2361,
+              "total_tokens": 2689
+            },
+            "timings": {
+              "prompt_n": 2361,
+              "prompt_ms": 2023.821,
+              "prompt_per_token_ms": 0.8571880559085133,
+              "prompt_per_second": 1166.6051493684472,
+              "predicted_n": 328,
+              "predicted_ms": 4261.491,
+              "predicted_per_token_ms": 12.992350609756098,
+              "predicted_per_second": 76.9683662361366
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 6.366,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000007",
+            "estimated_prompt_tokens": 3895,
+            "usage": {
+              "completion_tokens": 325,
+              "prompt_tokens": 2919,
+              "total_tokens": 3244
+            },
+            "timings": {
+              "prompt_n": 2919,
+              "prompt_ms": 2729.751,
+              "prompt_per_token_ms": 0.9351664953751285,
+              "prompt_per_second": 1069.3283013725427,
+              "predicted_n": 325,
+              "predicted_ms": 4308.786,
+              "predicted_per_token_ms": 13.257803076923077,
+              "predicted_per_second": 75.42727812427908
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 7.091,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "blk-000008",
+            "estimated_prompt_tokens": 2219,
+            "usage": {
+              "completion_tokens": 267,
+              "prompt_tokens": 1485,
+              "total_tokens": 1752
+            },
+            "timings": {
+              "prompt_n": 1485,
+              "prompt_ms": 949.714,
+              "prompt_per_token_ms": 0.6395380471380472,
+              "prompt_per_second": 1563.62862925049,
+              "predicted_n": 267,
+              "predicted_ms": 3350.91,
+              "predicted_per_token_ms": 12.550224719101124,
+              "predicted_per_second": 79.6798481606489
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 4.336,
+            "request_kind": "block-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "full-summary",
+            "estimated_prompt_tokens": 11933,
+            "usage": {
+              "completion_tokens": 156,
+              "prompt_tokens": 9772,
+              "total_tokens": 9928
+            },
+            "timings": {
+              "prompt_n": 9772,
+              "prompt_ms": 16631.808,
+              "prompt_per_token_ms": 1.7019860826852231,
+              "prompt_per_second": 587.548870213028,
+              "predicted_n": 156,
+              "predicted_ms": 2548.889,
+              "predicted_per_token_ms": 16.339032051282054,
+              "predicted_per_second": 61.20313595452764
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 19.249,
+            "request_kind": "full-summary",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "action-review",
+            "estimated_prompt_tokens": 2711,
+            "usage": {
+              "completion_tokens": 638,
+              "prompt_tokens": 1392,
+              "total_tokens": 2030
+            },
+            "timings": {
+              "prompt_n": 1392,
+              "prompt_ms": 1188.6,
+              "prompt_per_token_ms": 0.8538793103448276,
+              "prompt_per_second": 1171.125694093892,
+              "predicted_n": 638,
+              "predicted_ms": 8064.847,
+              "predicted_per_token_ms": 12.640826018808777,
+              "predicted_per_second": 79.10875432602751
+            },
+            "thinking_characters": 714,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 9.287,
+            "request_kind": "action-review",
+            "attempt": 1,
+            "status": "validated"
+          },
+          {
+            "request_id": "speaker-batch-000001",
+            "estimated_prompt_tokens": 7660,
+            "usage": {
+              "completion_tokens": 349,
+              "prompt_tokens": 6193,
+              "total_tokens": 6542
+            },
+            "timings": {
+              "prompt_n": 6193,
+              "prompt_ms": 8556.408,
+              "prompt_per_token_ms": 1.381625706442758,
+              "prompt_per_second": 723.7850275489435,
+              "predicted_n": 349,
+              "predicted_ms": 5126.507,
+              "predicted_per_token_ms": 14.689131805157592,
+              "predicted_per_second": 68.077542857154
+            },
+            "thinking_characters": 0,
+            "context_truncated": false,
+            "finish_reason": "stop",
+            "request_elapsed_seconds": 13.74,
+            "request_kind": "speaker-batch",
+            "attempt": 1,
+            "status": "validated"
+          }
+        ],
+        "server_ready_seconds": 15.028,
+        "finished_at": "2026-09-03T07:00:23Z"
+      },
+      "enrichment": {
+        "status": "succeeded",
+        "elapsed_seconds": 94.361,
+        "llm_calls": 14,
+        "keywords": 18,
+        "qa": 15,
+        "quotes": 3,
+        "decisions": 18,
+        "has_outline": true,
+        "finished_at": "2026-09-03T07:01:58Z"
+      },
+      "compat_export": {
+        "status": "succeeded",
+        "elapsed_seconds": 0.019,
+        "mapping_version": "meeting-compat.v1",
+        "finished_at": "2026-09-03T07:01:58Z"
+      }
+    },
+    "llm": {
+      "request_count": 26,
+      "transport_request_count": 26,
+      "http_response_count": 26,
+      "response_parse_success_count": 26,
+      "successful_response_count": 26,
+      "validated_request_count": 11,
+      "validation_failed_count": 1,
+      "retry_count": 1,
+      "split_count": 0,
+      "reused_request_count": 0,
+      "ctx": 16384,
+      "predict": 3072,
+      "max_tokens": 3072,
+      "input_safety_tokens": 512,
+      "request_attempts": [
+        {
+          "request_id": "blk-000001",
+          "estimated_prompt_tokens": 2879,
+          "usage": {
+            "completion_tokens": 283,
+            "prompt_tokens": 2077,
+            "total_tokens": 2360
+          },
+          "timings": {
+            "prompt_n": 2077,
+            "prompt_ms": 2348.004,
+            "prompt_per_token_ms": 1.1304785748675974,
+            "prompt_per_second": 884.5811165568713,
+            "predicted_n": 283,
+            "predicted_ms": 3633.151,
+            "predicted_per_token_ms": 12.837989399293285,
+            "predicted_per_second": 77.89381724018628
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 6.124,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000002",
+          "estimated_prompt_tokens": 2345,
+          "usage": {
+            "completion_tokens": 241,
+            "prompt_tokens": 1550,
+            "total_tokens": 1791
+          },
+          "timings": {
+            "prompt_n": 1550,
+            "prompt_ms": 961.807,
+            "prompt_per_token_ms": 0.6205206451612904,
+            "prompt_per_second": 1611.5499263365725,
+            "predicted_n": 241,
+            "predicted_ms": 3033.878,
+            "predicted_per_token_ms": 12.588705394190873,
+            "predicted_per_second": 79.43628583614765
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.072,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000003",
+          "estimated_prompt_tokens": 2728,
+          "usage": {
+            "completion_tokens": 301,
+            "prompt_tokens": 1919,
+            "total_tokens": 2220
+          },
+          "timings": {
+            "prompt_n": 1919,
+            "prompt_ms": 1404.793,
+            "prompt_per_token_ms": 0.7320442939030745,
+            "prompt_per_second": 1366.0375585584497,
+            "predicted_n": 301,
+            "predicted_ms": 3846.559,
+            "predicted_per_token_ms": 12.779265780730897,
+            "predicted_per_second": 78.25175695992183
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.287,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validation_failed",
+          "error_code": "validation_failed",
+          "cause": "invalid_json"
+        },
+        {
+          "request_id": "blk-000003-attempt-2",
+          "estimated_prompt_tokens": 2728,
+          "usage": {
+            "completion_tokens": 301,
+            "prompt_tokens": 2327,
+            "total_tokens": 2628
+          },
+          "timings": {
+            "prompt_n": 2327,
+            "prompt_ms": 671.195,
+            "prompt_per_token_ms": 0.2884379028792437,
+            "prompt_per_second": 3466.950737118125,
+            "predicted_n": 301,
+            "predicted_ms": 3898.165,
+            "predicted_per_token_ms": 12.950714285714286,
+            "predicted_per_second": 77.21581821190226
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.665,
+          "request_kind": "block-summary",
+          "attempt": 2,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000004",
+          "estimated_prompt_tokens": 2870,
+          "usage": {
+            "completion_tokens": 307,
+            "prompt_tokens": 2019,
+            "total_tokens": 2326
+          },
+          "timings": {
+            "prompt_n": 2019,
+            "prompt_ms": 1557.744,
+            "prompt_per_token_ms": 0.7715423476968796,
+            "prompt_per_second": 1296.1051366591687,
+            "predicted_n": 307,
+            "predicted_ms": 3945.424,
+            "predicted_per_token_ms": 12.851543973941368,
+            "predicted_per_second": 77.81166232070368
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.56,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000005",
+          "estimated_prompt_tokens": 2797,
+          "usage": {
+            "completion_tokens": 279,
+            "prompt_tokens": 2001,
+            "total_tokens": 2280
+          },
+          "timings": {
+            "prompt_n": 2001,
+            "prompt_ms": 1545.761,
+            "prompt_per_token_ms": 0.7724942528735632,
+            "prompt_per_second": 1294.5080125582158,
+            "predicted_n": 279,
+            "predicted_ms": 3565.824,
+            "predicted_per_token_ms": 12.7807311827957,
+            "predicted_per_second": 78.24278483738962
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.159,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000006",
+          "estimated_prompt_tokens": 3212,
+          "usage": {
+            "completion_tokens": 328,
+            "prompt_tokens": 2361,
+            "total_tokens": 2689
+          },
+          "timings": {
+            "prompt_n": 2361,
+            "prompt_ms": 2023.821,
+            "prompt_per_token_ms": 0.8571880559085133,
+            "prompt_per_second": 1166.6051493684472,
+            "predicted_n": 328,
+            "predicted_ms": 4261.491,
+            "predicted_per_token_ms": 12.992350609756098,
+            "predicted_per_second": 76.9683662361366
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 6.366,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000007",
+          "estimated_prompt_tokens": 3895,
+          "usage": {
+            "completion_tokens": 325,
+            "prompt_tokens": 2919,
+            "total_tokens": 3244
+          },
+          "timings": {
+            "prompt_n": 2919,
+            "prompt_ms": 2729.751,
+            "prompt_per_token_ms": 0.9351664953751285,
+            "prompt_per_second": 1069.3283013725427,
+            "predicted_n": 325,
+            "predicted_ms": 4308.786,
+            "predicted_per_token_ms": 13.257803076923077,
+            "predicted_per_second": 75.42727812427908
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 7.091,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "blk-000008",
+          "estimated_prompt_tokens": 2219,
+          "usage": {
+            "completion_tokens": 267,
+            "prompt_tokens": 1485,
+            "total_tokens": 1752
+          },
+          "timings": {
+            "prompt_n": 1485,
+            "prompt_ms": 949.714,
+            "prompt_per_token_ms": 0.6395380471380472,
+            "prompt_per_second": 1563.62862925049,
+            "predicted_n": 267,
+            "predicted_ms": 3350.91,
+            "predicted_per_token_ms": 12.550224719101124,
+            "predicted_per_second": 79.6798481606489
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.336,
+          "request_kind": "block-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "full-summary",
+          "estimated_prompt_tokens": 11933,
+          "usage": {
+            "completion_tokens": 156,
+            "prompt_tokens": 9772,
+            "total_tokens": 9928
+          },
+          "timings": {
+            "prompt_n": 9772,
+            "prompt_ms": 16631.808,
+            "prompt_per_token_ms": 1.7019860826852231,
+            "prompt_per_second": 587.548870213028,
+            "predicted_n": 156,
+            "predicted_ms": 2548.889,
+            "predicted_per_token_ms": 16.339032051282054,
+            "predicted_per_second": 61.20313595452764
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 19.249,
+          "request_kind": "full-summary",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "action-review",
+          "estimated_prompt_tokens": 2711,
+          "usage": {
+            "completion_tokens": 638,
+            "prompt_tokens": 1392,
+            "total_tokens": 2030
+          },
+          "timings": {
+            "prompt_n": 1392,
+            "prompt_ms": 1188.6,
+            "prompt_per_token_ms": 0.8538793103448276,
+            "prompt_per_second": 1171.125694093892,
+            "predicted_n": 638,
+            "predicted_ms": 8064.847,
+            "predicted_per_token_ms": 12.640826018808777,
+            "predicted_per_second": 79.10875432602751
+          },
+          "thinking_characters": 714,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 9.287,
+          "request_kind": "action-review",
+          "attempt": 1,
+          "status": "validated"
+        },
+        {
+          "request_id": "speaker-batch-000001",
+          "estimated_prompt_tokens": 7660,
+          "usage": {
+            "completion_tokens": 349,
+            "prompt_tokens": 6193,
+            "total_tokens": 6542
+          },
+          "timings": {
+            "prompt_n": 6193,
+            "prompt_ms": 8556.408,
+            "prompt_per_token_ms": 1.381625706442758,
+            "prompt_per_second": 723.7850275489435,
+            "predicted_n": 349,
+            "predicted_ms": 5126.507,
+            "predicted_per_token_ms": 14.689131805157592,
+            "predicted_per_second": 68.077542857154
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 13.74,
+          "request_kind": "speaker-batch",
+          "attempt": 1,
+          "status": "validated"
+        }
+      ],
+      "server_ready_seconds": 15.028,
+      "requests": [
+        {
+          "request_id": "blk-000001",
+          "estimated_prompt_tokens": 2879,
+          "usage": {
+            "completion_tokens": 283,
+            "prompt_tokens": 2077,
+            "total_tokens": 2360
+          },
+          "timings": {
+            "prompt_n": 2077,
+            "prompt_ms": 2348.004,
+            "prompt_per_token_ms": 1.1304785748675974,
+            "prompt_per_second": 884.5811165568713,
+            "predicted_n": 283,
+            "predicted_ms": 3633.151,
+            "predicted_per_token_ms": 12.837989399293285,
+            "predicted_per_second": 77.89381724018628
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 6.124
+        },
+        {
+          "request_id": "blk-000002",
+          "estimated_prompt_tokens": 2345,
+          "usage": {
+            "completion_tokens": 241,
+            "prompt_tokens": 1550,
+            "total_tokens": 1791
+          },
+          "timings": {
+            "prompt_n": 1550,
+            "prompt_ms": 961.807,
+            "prompt_per_token_ms": 0.6205206451612904,
+            "prompt_per_second": 1611.5499263365725,
+            "predicted_n": 241,
+            "predicted_ms": 3033.878,
+            "predicted_per_token_ms": 12.588705394190873,
+            "predicted_per_second": 79.43628583614765
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.072
+        },
+        {
+          "request_id": "blk-000003-attempt-2",
+          "estimated_prompt_tokens": 2728,
+          "usage": {
+            "completion_tokens": 301,
+            "prompt_tokens": 2327,
+            "total_tokens": 2628
+          },
+          "timings": {
+            "prompt_n": 2327,
+            "prompt_ms": 671.195,
+            "prompt_per_token_ms": 0.2884379028792437,
+            "prompt_per_second": 3466.950737118125,
+            "predicted_n": 301,
+            "predicted_ms": 3898.165,
+            "predicted_per_token_ms": 12.950714285714286,
+            "predicted_per_second": 77.21581821190226
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.665
+        },
+        {
+          "request_id": "blk-000004",
+          "estimated_prompt_tokens": 2870,
+          "usage": {
+            "completion_tokens": 307,
+            "prompt_tokens": 2019,
+            "total_tokens": 2326
+          },
+          "timings": {
+            "prompt_n": 2019,
+            "prompt_ms": 1557.744,
+            "prompt_per_token_ms": 0.7715423476968796,
+            "prompt_per_second": 1296.1051366591687,
+            "predicted_n": 307,
+            "predicted_ms": 3945.424,
+            "predicted_per_token_ms": 12.851543973941368,
+            "predicted_per_second": 77.81166232070368
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.56
+        },
+        {
+          "request_id": "blk-000005",
+          "estimated_prompt_tokens": 2797,
+          "usage": {
+            "completion_tokens": 279,
+            "prompt_tokens": 2001,
+            "total_tokens": 2280
+          },
+          "timings": {
+            "prompt_n": 2001,
+            "prompt_ms": 1545.761,
+            "prompt_per_token_ms": 0.7724942528735632,
+            "prompt_per_second": 1294.5080125582158,
+            "predicted_n": 279,
+            "predicted_ms": 3565.824,
+            "predicted_per_token_ms": 12.7807311827957,
+            "predicted_per_second": 78.24278483738962
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 5.159
+        },
+        {
+          "request_id": "blk-000006",
+          "estimated_prompt_tokens": 3212,
+          "usage": {
+            "completion_tokens": 328,
+            "prompt_tokens": 2361,
+            "total_tokens": 2689
+          },
+          "timings": {
+            "prompt_n": 2361,
+            "prompt_ms": 2023.821,
+            "prompt_per_token_ms": 0.8571880559085133,
+            "prompt_per_second": 1166.6051493684472,
+            "predicted_n": 328,
+            "predicted_ms": 4261.491,
+            "predicted_per_token_ms": 12.992350609756098,
+            "predicted_per_second": 76.9683662361366
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 6.366
+        },
+        {
+          "request_id": "blk-000007",
+          "estimated_prompt_tokens": 3895,
+          "usage": {
+            "completion_tokens": 325,
+            "prompt_tokens": 2919,
+            "total_tokens": 3244
+          },
+          "timings": {
+            "prompt_n": 2919,
+            "prompt_ms": 2729.751,
+            "prompt_per_token_ms": 0.9351664953751285,
+            "prompt_per_second": 1069.3283013725427,
+            "predicted_n": 325,
+            "predicted_ms": 4308.786,
+            "predicted_per_token_ms": 13.257803076923077,
+            "predicted_per_second": 75.42727812427908
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 7.091
+        },
+        {
+          "request_id": "blk-000008",
+          "estimated_prompt_tokens": 2219,
+          "usage": {
+            "completion_tokens": 267,
+            "prompt_tokens": 1485,
+            "total_tokens": 1752
+          },
+          "timings": {
+            "prompt_n": 1485,
+            "prompt_ms": 949.714,
+            "prompt_per_token_ms": 0.6395380471380472,
+            "prompt_per_second": 1563.62862925049,
+            "predicted_n": 267,
+            "predicted_ms": 3350.91,
+            "predicted_per_token_ms": 12.550224719101124,
+            "predicted_per_second": 79.6798481606489
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 4.336
+        },
+        {
+          "request_id": "full-summary",
+          "estimated_prompt_tokens": 11933,
+          "usage": {
+            "completion_tokens": 156,
+            "prompt_tokens": 9772,
+            "total_tokens": 9928
+          },
+          "timings": {
+            "prompt_n": 9772,
+            "prompt_ms": 16631.808,
+            "prompt_per_token_ms": 1.7019860826852231,
+            "prompt_per_second": 587.548870213028,
+            "predicted_n": 156,
+            "predicted_ms": 2548.889,
+            "predicted_per_token_ms": 16.339032051282054,
+            "predicted_per_second": 61.20313595452764
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 19.249
+        },
+        {
+          "request_id": "action-review",
+          "estimated_prompt_tokens": 2711,
+          "usage": {
+            "completion_tokens": 638,
+            "prompt_tokens": 1392,
+            "total_tokens": 2030
+          },
+          "timings": {
+            "prompt_n": 1392,
+            "prompt_ms": 1188.6,
+            "prompt_per_token_ms": 0.8538793103448276,
+            "prompt_per_second": 1171.125694093892,
+            "predicted_n": 638,
+            "predicted_ms": 8064.847,
+            "predicted_per_token_ms": 12.640826018808777,
+            "predicted_per_second": 79.10875432602751
+          },
+          "thinking_characters": 714,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 9.287
+        },
+        {
+          "request_id": "speaker-batch-000001",
+          "estimated_prompt_tokens": 7660,
+          "usage": {
+            "completion_tokens": 349,
+            "prompt_tokens": 6193,
+            "total_tokens": 6542
+          },
+          "timings": {
+            "prompt_n": 6193,
+            "prompt_ms": 8556.408,
+            "prompt_per_token_ms": 1.381625706442758,
+            "prompt_per_second": 723.7850275489435,
+            "predicted_n": 349,
+            "predicted_ms": 5126.507,
+            "predicted_per_token_ms": 14.689131805157592,
+            "predicted_per_second": 68.077542857154
+          },
+          "thinking_characters": 0,
+          "context_truncated": false,
+          "finish_reason": "stop",
+          "request_elapsed_seconds": 13.74
+        }
+      ],
+      "resolved_model_files": {
+        "model": "/userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k/Qwen3-4B-ctx16384.rknn",
+        "weight": "/userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k/Qwen3-4B-ctx16384.weight",
+        "vocab": "/userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k/Qwen3-4B.tokenizer.gguf",
+        "embed": "/userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k/Qwen3-4B.embed.bin"
+      },
+      "plan": {
+        "version": "product-summary.v25",
+        "input_token_budget": 12800,
+        "full_estimated_prompt_tokens": 12546,
+        "full_request_fits": true,
+        "block_count": 8,
+        "use_single_request": false,
+        "overview_source": "source_timeline",
+        "overview_estimated_prompt_tokens": 11933,
+        "policy": "deterministic_blocks_map_reduce",
+        "chapter_count": 8,
+        "weak_chapter_count": 0,
+        "segmentation": {
+          "version": "topic-segmentation.v2",
+          "blocks": [
+            {
+              "block_id": "blk-000001",
+              "segment_ids": [
+                "seg-000002",
+                "seg-000003",
+                "seg-000004",
+                "seg-000005",
+                "seg-000006",
+                "seg-000007",
+                "seg-000008",
+                "seg-000009",
+                "seg-000011",
+                "seg-000012",
+                "seg-000013",
+                "seg-000014",
+                "seg-000015",
+                "seg-000016",
+                "seg-000017",
+                "seg-000019",
+                "seg-000020",
+                "seg-000022",
+                "seg-000023",
+                "seg-000024",
+                "seg-000025",
+                "seg-000026",
+                "seg-000027",
+                "seg-000028",
+                "seg-000029",
+                "seg-000030"
+              ],
+              "start_ms": 35280,
+              "end_ms": 283720,
+              "speaker_ids": [
+                "speaker_0",
+                "speaker_1",
+                "speaker_2",
+                "speaker_3",
+                "unknown"
+              ],
+              "text_chars": 1119,
+              "segment_count": 26,
+              "opened_by": [
+                "start"
+              ]
+            },
+            {
+              "block_id": "blk-000002",
+              "segment_ids": [
+                "seg-000031",
+                "seg-000033",
+                "seg-000034",
+                "seg-000035",
+                "seg-000036",
+                "seg-000037",
+                "seg-000038",
+                "seg-000039",
+                "seg-000040",
+                "seg-000041"
+              ],
+              "start_ms": 283720,
+              "end_ms": 407710,
+              "speaker_ids": [
+                "speaker_2",
+                "speaker_3",
+                "speaker_5",
+                "unknown"
+              ],
+              "text_chars": 705,
+              "segment_count": 10,
+              "opened_by": [
+                "cohesion"
+              ]
+            },
+            {
+              "block_id": "blk-000003",
+              "segment_ids": [
+                "seg-000042",
+                "seg-000043",
+                "seg-000044",
+                "seg-000045",
+                "seg-000046",
+                "seg-000047",
+                "seg-000048",
+                "seg-000049",
+                "seg-000050",
+                "seg-000051",
+                "seg-000052",
+                "seg-000053",
+                "seg-000054",
+                "seg-000055",
+                "seg-000056",
+                "seg-000057",
+                "seg-000058",
+                "seg-000059"
+              ],
+              "start_ms": 409420,
+              "end_ms": 636050,
+              "speaker_ids": [
+                "speaker_1",
+                "speaker_2",
+                "speaker_3",
+                "speaker_4",
+                "unknown"
+              ],
+              "text_chars": 1038,
+              "segment_count": 18,
+              "opened_by": [
+                "gap",
+                "cohesion"
+              ]
+            },
+            {
+              "block_id": "blk-000004",
+              "segment_ids": [
+                "seg-000060",
+                "seg-000061",
+                "seg-000063",
+                "seg-000064",
+                "seg-000066",
+                "seg-000067",
+                "seg-000068",
+                "seg-000070",
+                "seg-000071",
+                "seg-000072",
+                "seg-000073",
+                "seg-000074",
+                "seg-000075",
+                "seg-000076",
+                "seg-000077",
+                "seg-000078",
+                "seg-000079",
+                "seg-000080",
+                "seg-000081",
+                "seg-000082"
+              ],
+              "start_ms": 640000,
+              "end_ms": 916490,
+              "speaker_ids": [
+                "speaker_0",
+                "speaker_3",
+                "speaker_4",
+                "unknown"
+              ],
+              "text_chars": 1132,
+              "segment_count": 20,
+              "opened_by": [
+                "gap"
+              ]
+            },
+            {
+              "block_id": "blk-000005",
+              "segment_ids": [
+                "seg-000083",
+                "seg-000084",
+                "seg-000085",
+                "seg-000086",
+                "seg-000087",
+                "seg-000088",
+                "seg-000089",
+                "seg-000090",
+                "seg-000091",
+                "seg-000092",
+                "seg-000093",
+                "seg-000094",
+                "seg-000095",
+                "seg-000096",
+                "seg-000097",
+                "seg-000098",
+                "seg-000099",
+                "seg-000100",
+                "seg-000101",
+                "seg-000102",
+                "seg-000103",
+                "seg-000104",
+                "seg-000105"
+              ],
+              "start_ms": 915850,
+              "end_ms": 1105150,
+              "speaker_ids": [
+                "speaker_0",
+                "speaker_1",
+                "speaker_3",
+                "speaker_4",
+                "speaker_5",
+                "unknown"
+              ],
+              "text_chars": 951,
+              "segment_count": 23,
+              "opened_by": [
+                "speaker",
+                "cohesion"
+              ]
+            },
+            {
+              "block_id": "blk-000006",
+              "segment_ids": [
+                "seg-000106",
+                "seg-000107",
+                "seg-000108",
+                "seg-000109",
+                "seg-000110",
+                "seg-000111",
+                "seg-000112",
+                "seg-000113",
+                "seg-000114",
+                "seg-000115",
+                "seg-000116",
+                "seg-000117",
+                "seg-000118",
+                "seg-000119",
+                "seg-000120",
+                "seg-000121",
+                "seg-000122",
+                "seg-000123",
+                "seg-000124",
+                "seg-000125",
+                "seg-000126",
+                "seg-000127",
+                "seg-000128",
+                "seg-000129",
+                "seg-000130",
+                "seg-000131",
+                "seg-000132"
+              ],
+              "start_ms": 1105150,
+              "end_ms": 1371620,
+              "speaker_ids": [
+                "speaker_0",
+                "speaker_1",
+                "speaker_2",
+                "speaker_6",
+                "unknown"
+              ],
+              "text_chars": 1329,
+              "segment_count": 27,
+              "opened_by": [
+                "size_split"
+              ]
+            },
+            {
+              "block_id": "blk-000007",
+              "segment_ids": [
+                "seg-000133",
+                "seg-000134",
+                "seg-000135",
+                "seg-000136",
+                "seg-000137",
+                "seg-000138",
+                "seg-000139",
+                "seg-000140",
+                "seg-000141",
+                "seg-000142",
+                "seg-000143",
+                "seg-000145",
+                "seg-000146",
+                "seg-000147",
+                "seg-000148",
+                "seg-000149",
+                "seg-000150",
+                "seg-000151",
+                "seg-000152",
+                "seg-000153",
+                "seg-000154",
+                "seg-000155",
+                "seg-000156",
+                "seg-000157",
+                "seg-000158",
+                "seg-000159",
+                "seg-000160",
+                "seg-000161",
+                "seg-000162",
+                "seg-000163",
+                "seg-000164",
+                "seg-000165",
+                "seg-000166",
+                "seg-000167",
+                "seg-000168",
+                "seg-000169",
+                "seg-000170",
+                "seg-000171",
+                "seg-000172"
+              ],
+              "start_ms": 1371620,
+              "end_ms": 1727610,
+              "speaker_ids": [
+                "speaker_0",
+                "speaker_1",
+                "speaker_3",
+                "speaker_5",
+                "speaker_6",
+                "unknown"
+              ],
+              "text_chars": 1850,
+              "segment_count": 39,
+              "opened_by": [
+                "size_split"
+              ]
+            },
+            {
+              "block_id": "blk-000008",
+              "segment_ids": [
+                "seg-000173",
+                "seg-000174",
+                "seg-000175",
+                "seg-000176",
+                "seg-000177",
+                "seg-000178",
+                "seg-000179",
+                "seg-000180"
+              ],
+              "start_ms": 1727610,
+              "end_ms": 1887610,
+              "speaker_ids": [
+                "unknown"
+              ],
+              "text_chars": 590,
+              "segment_count": 8,
+              "opened_by": [
+                "cohesion"
+              ]
+            }
+          ],
+          "nonempty_segment_count": 171,
+          "block_count": 8,
+          "coverage_complete": true,
+          "boundary_reason_counts": {
+            "start": 1,
+            "cohesion": 4,
+            "gap": 2,
+            "speaker": 1,
+            "size_split": 2
+          },
+          "max_block_tokens": 12288,
+          "config": {
+            "vad_gap_ms": 1500,
+            "cohesion_window_segments": 3,
+            "cohesion_depth_threshold": 0.3,
+            "depth_window_segments": 4,
+            "speaker_weight": 0.25,
+            "cohesion_weight": 1.0,
+            "boundary_score_threshold": 1.0,
+            "min_block_chars": 400,
+            "target_block_tokens": 1800
+          }
+        },
+        "action_candidate_count": 8,
+        "speaker_count": 7,
+        "speaker_batch_count": 1,
+        "speaker_batches": [
+          {
+            "request_id": "speaker-batch-000001",
+            "speaker_ids": [
+              "speaker_0",
+              "speaker_1",
+              "speaker_3",
+              "speaker_2",
+              "speaker_5",
+              "speaker_4",
+              "speaker_6"
+            ],
+            "segment_count": 105,
+            "estimated_prompt_tokens": 7660,
+            "split_depth": 0,
+            "truncated_speaker_ids": []
+          }
+        ],
+        "speaker_truncations": []
+      }
+    },
+    "memory": {
+      "samples": 2347,
+      "baseline_board_used_mb": 880.875,
+      "board_used_peak_mb": 2652.688,
+      "board_used_peak_delta_mb": 1771.812,
+      "mem_available_min_mb": 5261.66,
+      "phase_board_used_peak_mb": {
+        "startup": 880.875,
+        "segmentation": 2652.688,
+        "batch_asr": 1339.27,
+        "transcript_prepare": 905.703,
+        "llm_server_start": 1135.621,
+        "llm_block_summary": 1317.844,
+        "llm_full_summary": 1352.027,
+        "llm_action_review": 1353.82,
+        "llm_speaker_batch": 1353.988,
+        "enrichment": 1356.695,
+        "llm_cleanup": 976.93
+      },
+      "process_peaks": {
+        "segmentation": {
+          "rss_peak_mb": 15.242,
+          "hwm_peak_mb": 16.266,
+          "vmsize_peak_mb": 21.586
+        },
+        "batch_asr": {
+          "rss_peak_mb": 13.727,
+          "hwm_peak_mb": 14.242,
+          "vmsize_peak_mb": 21.605
+        },
+        "rkllm_server": {
+          "rss_peak_mb": 276.918,
+          "hwm_peak_mb": 277.203,
+          "vmsize_peak_mb": 675.18
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "run_manifest": {
+      "path": "run_manifest.json",
+      "size_bytes": 7082,
+      "sha256": "3b3dcc405b4ea3a7f22475dbdeeccd13fa373589f8d76e478e78146a0c67e431"
+    },
+    "run_events": {
+      "path": "run_events.jsonl",
+      "size_bytes": 63030,
+      "sha256": "6c06950d9325288c61eed67d740fade4ae4f7def0a69b2a795b9aa7b4ccbd171"
+    },
+    "run_metrics": {
+      "path": "run_metrics.json",
+      "size_bytes": 31088,
+      "sha256": "fd271919fc889c8d64de03cd7a4d28edf09ae0e7bc80c1b949a38342a31d847a"
+    },
+    "stage_status": {
+      "path": "stage_status.json",
+      "size_bytes": 14433,
+      "sha256": "c52b5010bdf047809cc786f506c6a244ea926f5e915c3f1e5ad8962a7a8eebe1"
+    },
+    "segment_summary": {
+      "path": "01_segments/board_3dspeaker_segment_summary.json",
+      "size_bytes": 8126,
+      "sha256": "7fd866cbab8dbb97dc431909094f1434309c384cbb4fffd7d59f8682a5c18ebb"
+    },
+    "batch_asr_summary": {
+      "path": "02_batch_asr/batch_asr_summary.json",
+      "size_bytes": 1396,
+      "sha256": "e123ed5f4d12029dfe7844eadac96626a00ffef35118432363892d8f0a7fb235"
+    },
+    "segment_transcripts": {
+      "path": "02_batch_asr/segment_transcripts.json",
+      "size_bytes": 154620,
+      "sha256": "e31a35a8a223aa5c1b1fc60a8863970f92db511f84d9d9cb700938035fe564c5"
+    },
+    "timeline": {
+      "path": "timeline.txt",
+      "size_bytes": 32743,
+      "sha256": "909cd1874e0961ea7dfb4afda6756e52deae74f349dfcb8065a37dd3f0d1e9f4"
+    },
+    "canonical_segments": {
+      "path": "03_llm_summary/canonical_segments.json",
+      "size_bytes": 79836,
+      "sha256": "5d818d142bd2e2c65c3ea837e4a6324bee99c4a8432d7953fb31b59320c4f3ec"
+    },
+    "llm_plan": {
+      "path": "03_llm_summary/plan.json",
+      "size_bytes": 8772,
+      "sha256": "c92109b3aec7abb4b548422ae51358180ab970bc0a22cdba2df4713c20f939b1"
+    },
+    "llm_server_status": {
+      "path": "03_llm_summary/server_status.json",
+      "size_bytes": 340,
+      "sha256": "a963a850bd79e04982ea1dae1ec12c09cc570d4b062c151350da7a50ca7ffd3b"
+    },
+    "validation": {
+      "path": "03_llm_summary/validation.json",
+      "size_bytes": 479,
+      "sha256": "c1cf24c69d49bafa6ea5da4a2ba87f03f0b9fef5834f80f8d7a8414a0563090f"
+    },
+    "compat_manifest": {
+      "path": "04_compat_export/manifest.json",
+      "size_bytes": 1762,
+      "sha256": "5dd06b5e77ab8086da4552095d8a6248676bf6d9c039485864c6b29a63f7f4ef"
+    },
+    "compat_task_result": {
+      "path": "04_compat_export/task_result.json",
+      "size_bytes": 376,
+      "sha256": "efd87b433bf10c02496b87fe0d8bbf9bfa879b4e41ccb414c292def1c0cbb56b"
+    },
+    "meeting_summary": {
+      "path": "meeting_summary.json",
+      "size_bytes": 8936,
+      "sha256": "7cb1d939681a4c6f9232ba1d75df7a230c2ecab37257d7bc8fbd76a6b666a2b0"
+    },
+    "meeting_frontend": {
+      "path": "meeting_frontend.json",
+      "size_bytes": 66204,
+      "sha256": "cac5f070113916a499e84fdd808fe6fc0341b721ff436244370b9bcd1949dd2f"
+    },
+    "meeting_display": {
+      "path": "meeting_display.txt",
+      "size_bytes": 38208,
+      "sha256": "ce306e3bf7cd54dc5095dbde7b5ad16c1bebd63b417a19d9c1b6c58b76e047b9"
+    }
+  },
+  "errors": [],
+  "output_dir": "/userdata/meeting_agent/output/enrich_verify_cc9d83e_rerun_20260903_144528/g2/harness",
+  "enrichment": {
+    "keywords": [
+      "无罪",
+      "讲解",
+      "护肤品",
+      "客观看待",
+      "顾客情绪",
+      "专员",
+      "化妆品",
+      "包装",
+      "研发",
+      "设计",
+      "直观",
+      "市场",
+      "竞争对手",
+      "售后",
+      "质量",
+      "库存",
+      "会员制",
+      "消费返现"
+    ],
+    "qa": [
+      {
+        "question": "售后服务这边，我们这边儿售后处理的就是：如果态度还是持以这种对顾客如果不买的话还不积极的这种性格。就不会推荐，就不会让他继续在这个岗位待着了。我们会从人事部重新招一批这种推销员。是不是这样？",
+        "answer": "售后处理的方式是：如果员工对顾客不买产品仍不积极，将不再推荐其继续任职，并从人事部重新招聘推销员。",
+        "turn_ids": [
+          13,
+          14
+        ]
+      },
+      {
+        "question": "目前咱们售后部部门现在有什么问题吗？这个售后服务的问题。给咱们进行说：咱那个产品一质……对质量不行啊还是怎么行？",
+        "answer": "目前售后服务的问题主要集中在产品质量上，但实际产品质量良好，且有专属厂家供应，并与大品牌合作。",
+        "turn_ids": [
+          15,
+          18
+        ]
+      },
+      {
+        "question": "这个，嗯，咱们这个上半年咱这个销售这边是个什么样的情况呢？",
+        "answer": "上半年销售情况不错，虽然因疫情导致商街关闭和人们不出门，但依然保持良好业绩。",
+        "turn_ids": [
+          23,
+          24
+        ]
+      },
+      {
+        "question": "这个研发成本是不是比较高呢？",
+        "answer": "研发成本较高，因为针对特殊人群的产品研发需要长时间和大量资金投入，且回本周期较长。",
+        "turn_ids": [
+          38,
+          39
+        ]
+      },
+      {
+        "question": "这个市场目前你有有过了解吗？",
+        "answer": "嗯，有一些了解。比如说一些白领儿啊或者一些做生意的这些就是实体对他们都可以包括就是单位的一个高管啊这些他们都可以的我们也就是针对了这一些人群也做一个市场的调研然后感觉他们对化妆品的需求还有就是特殊人群他",
+        "turn_ids": [
+          47,
+          48
+        ]
+      },
+      {
+        "question": "目前咱们在售后处理上面的，刚才你也说了有些问题。嗯，目前咱们售后这边啊，处理了及时吗？处理这些问?",
+        "answer": "注意：这些问题很及时。因为要保证产品的多样化，还有消费的那个不同的人群，还有一些要了解顾客本质之类的这方面的问题。还有比如说像我们公司如果推出一些新产品或者新概念的话，它可能大众会有不同的观点，他可能会对这个新产品要一定的了解需要我们多做一些沟通之类的工作让顾客感觉到我们的服务或者物超所值。",
+        "turn_ids": [
+          51,
+          52
+        ]
+      },
+      {
+        "question": "这个事情？他这有有点，这个怎么说来着。",
+        "answer": "怎么说呢？是吧，就是侵犯咱们的这个商标权。",
+        "turn_ids": [
+          57,
+          58
+        ]
+      },
+      {
+        "question": "大概，这一块进度怎么样了？",
+        "answer": "目前还没有协商出来结果。因为他们都想要多要一些赔偿款，但是我们觉得没有这个赔失几年，所以我们觉得没有必要给太多现在正在处于一个协商状态协。",
+        "turn_ids": [
+          68,
+          69
+        ]
+      },
+      {
+        "question": "上半年咱这个财务状况这一块是个什么样的情况？",
+        "answer": "上半年财务，财务情况就是嗯主营业务收入是大概在八十万元然后净利润是在七十万元反正比去年都都有同期的增长。",
+        "turn_ids": [
+          75,
+          76
+        ]
+      },
+      {
+        "question": "销售对你这边怎么看？",
+        "answer": "可以通过网络的方式，比如让已有的客户进行直播，或者调查现有客户中是否有网红，如果有的话，他们可以作为推广渠道，并且可以给予一定的折扣优惠来增加网上宣传力度。",
+        "turn_ids": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115
+        ]
+      },
+      {
+        "question": "是不是可以考虑？因为女生其实会化妆、懂这些的多一点；但是男性相对来说就懂得比较少。",
+        "answer": "可以针对男性开发化妆品，比如素颜霜等方便使用的产品，以满足男性对化妆品的需求，并提升产品的市场覆盖率。",
+        "turn_ids": [
+          91,
+          92,
+          93,
+          94,
+          95
+        ]
+      },
+      {
+        "question": "是不是可以跟？根据呃这个男性的这个心理想法？然后制定研发一些男性的化妆品。",
+        "answer": "可以根据男性心理需求，研发专门针对男性的化妆品，如素颜霜等，以满足男性对化妆品的需求，并提升产品的市场覆盖率。",
+        "turn_ids": [
+          93,
+          94,
+          95
+        ]
+      },
+      {
+        "question": "如何处理顾客在专柜乱用、乱涂造成损失的问题？",
+        "answer": "一方面，专柜服务人员要保持良好态度，先心平气和地与顾客沟通，最后可赠送口红、粉底液等小样，让顾客感受到专业服务态度。",
+        "turn_ids": [
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      {
+        "question": "如何应对故意找事的顾客？",
+        "answer": "可以先安抚顾客情绪，讲解护肤品的作用和原理，比如每天用清水洗脸能改善皮肤状况，让顾客理解护肤品的效果，并通过讲解使顾客情绪平复。",
+        "turn_ids": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130
+        ]
+      },
+      {
+        "question": "如何处理化妆品包装问题？",
+        "answer": "包装设计应更直观，比如加入可爱小蜗牛形状，突出产品特点，让顾客一目了然，同时通过包装设计提升产品吸引力。",
+        "turn_ids": [
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "quote": "也很明白，所谓价廉物美的东西根本已经不存在了。我们卖的不是便宜的，我们卖的是健康的而且是。",
+        "comment": "这句话点明了公司产品的核心价值，强调健康而非价格，体现了公司的市场定位和品牌理念。",
+        "ref": "seg-000031",
+        "verbatim": true
+      },
+      {
+        "quote": "它们这些，经济嗯需求量还是有的。只要我们质量——我们最主最主要的不是说是价格是质量，只要我们的质量有保证就可以。",
+        "comment": "这句话强调了质量在消费者心中的重要性，说明公司在产品品质上的坚持和对顾客的信任。",
+        "ref": "seg-000048",
+        "verbatim": true
+      },
+      {
+        "quote": "也很明白，所谓价廉物美的东西根本已经不存在了。我们卖的不是便宜的，我们卖的是健康的而且是。",
+        "comment": "这句话再次强调了产品的核心价值，体现了公司对健康、安全的重视，以及对消费者需求的精准把握。",
+        "ref": "seg-000031",
+        "verbatim": true
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "售后部门对态度不积极的员工进行重新培训或更换，从人事部重新招聘推销员。",
+        "problem": "售后部门存在部分员工对不购买产品的顾客态度不积极的问题。",
+        "options": [
+          "对态度不积极的员工进行重新培训",
+          "从人事部重新招聘推销员"
+        ],
+        "rationale": "为了确保销售服务质量，需要对态度不积极的员工进行调整，以提升客户体验和销售效果。",
+        "turn_ids": [
+          13,
+          14
+        ]
+      },
+      {
+        "decision": "针对孕妇群体研发无公害、无过敏成分的化妆品产品。",
+        "problem": "目前产品在孕妇群体中缺乏针对性研发，需确保产品安全性和有效性。",
+        "options": [
+          "研发无公害产品",
+          "与国外专利合作"
+        ],
+        "rationale": "为了满足特定人群需求，确保产品安全性和有效性，需进行针对性研发。",
+        "turn_ids": [
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      {
+        "decision": "针对高端人群（如孕妇、白领、高管）推出高端化妆品产品。",
+        "problem": "当前产品价格偏高，但市场对高端人群的化妆品需求存在。",
+        "options": [
+          "针对高端人群推出高端产品",
+          "进行市场调研"
+        ],
+        "rationale": "为了满足高端人群需求，需推出价格较高但质量有保障的产品。",
+        "turn_ids": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          47,
+          48,
+          49
+        ]
+      },
+      {
+        "decision": "加大商标侵权案件的处理力度",
+        "problem": "存在侵犯公司商标权的行为，需采取法律手段保护商标权益。",
+        "options": [],
+        "rationale": "公司已起诉侵权方并取得部分赔偿，但仍有侵权行为存在，需进一步加强法律维权。",
+        "turn_ids": [
+          54,
+          55,
+          56,
+          59,
+          61
+        ]
+      },
+      {
+        "decision": "加强新客源开发，特别是专业美容服务领域",
+        "problem": "需要拓展新的客户群体以提升市场份额。",
+        "options": [],
+        "rationale": "随着生活水平提高，女性对专业美容服务需求增加，可借此拓展客户群。",
+        "turn_ids": [
+          53
+        ]
+      },
+      {
+        "decision": "加强与合作公司的协商，解决违约问题",
+        "problem": "与合作公司存在合同纠纷，需协商赔偿问题。",
+        "options": [],
+        "rationale": "因送货延迟导致对方认为违约，双方正在协商赔偿事宜。",
+        "turn_ids": [
+          65,
+          67,
+          69
+        ]
+      },
+      {
+        "decision": "提升化妆品市场竞争力，通过网络宣传和网红产品策略",
+        "problem": "需增强公司在化妆品市场的竞争力。",
+        "options": [],
+        "rationale": "通过网络带货、网红产品等方式提升销售和品牌影响力。",
+        "turn_ids": [
+          79,
+          80,
+          82,
+          84,
+          85,
+          86,
+          89,
+          91,
+          93,
+          94
+        ]
+      },
+      {
+        "decision": "开展化妆品使用知识普及活动，如化妆讲堂",
+        "problem": "消费者对化妆品使用方法和注意事项了解不足。",
+        "options": [],
+        "rationale": "通过教育消费者正确使用化妆品，减少过敏等问题。",
+        "turn_ids": [
+          85,
+          86,
+          89,
+          90,
+          91,
+          92,
+          93
+        ]
+      },
+      {
+        "decision": "开发针对男性的化妆品产品",
+        "problem": "男性对化妆品了解较少，需拓展男性市场。",
+        "options": [],
+        "rationale": "男性护肤需求未被充分满足，可开发适合男性的产品。",
+        "turn_ids": [
+          93,
+          94,
+          97,
+          98,
+          99
+        ]
+      },
+      {
+        "decision": "通过网络渠道利用现有客户资源，寻找网红进行直播推广。",
+        "problem": "如何提升线上销售和品牌宣传效果。",
+        "options": [
+          "调查现有客户是否为网红",
+          "直接联系网红进行直播"
+        ],
+        "rationale": "通过现有客户资源寻找网红可以降低成本并提高宣传效果，且网红本身对产品有了解，无需额外培训。",
+        "turn_ids": [
+          105,
+          106,
+          "110",
+          "111",
+          "112",
+          "114"
+        ]
+      },
+      {
+        "decision": "在专柜中让顾客免费体验化妆和护肤品，提升产品认知度。",
+        "problem": "如何提高顾客对产品的信任度和使用体验。",
+        "options": [
+          "让顾客免费试用化妆和护肤品",
+          "在专柜提供化妆服务"
+        ],
+        "rationale": "通过免费体验和化妆服务可以让顾客更直观地了解产品效果，增强信任感。",
+        "turn_ids": [
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130
+        ]
+      },
+      {
+        "decision": "优化产品包装设计，使其更具吸引力和辨识度。",
+        "problem": "如何提升产品的市场竞争力和消费者吸引力。",
+        "options": [
+          "设计具有山脉图案的面膜包装",
+          "采用可爱小蜗牛形状的包装"
+        ],
+        "rationale": "包装设计直接影响消费者的第一印象，通过独特设计可以提升产品辨识度和吸引力。",
+        "turn_ids": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149
+        ]
+      },
+      {
+        "decision": "在化妆品包装上突出研发核心特点，并加入‘从这个产品的角度’的标语。",
+        "problem": "需要提升产品销量，需通过直观方式传达产品特点。",
+        "options": [
+          "在包装上直接写‘从这个产品的角度’"
+        ],
+        "rationale": "通过直观、简洁的方式传达产品核心特点，便于消费者快速理解，提高第一印象和购买意愿。",
+        "turn_ids": [
+          153,
+          154
+        ]
+      },
+      {
+        "decision": "考虑与动漫人物合作进行产品促销。",
+        "problem": "市场上化妆品品牌众多，需寻找差异化营销方式。",
+        "options": [
+          "与老鼠、熊大、熊二等动漫人物合作"
+        ],
+        "rationale": "通过动漫联名提升产品吸引力，增强消费者兴趣和购买意愿。",
+        "turn_ids": [
+          158
+        ]
+      },
+      {
+        "decision": "建立完善的售后服务体系，包括专业培训和质量保障。",
+        "problem": "需提升客户对产品质量和服务的信任度。",
+        "options": [
+          "售后人员接受专业培训",
+          "提供质量保证和退换服务"
+        ],
+        "rationale": "通过专业培训和质量保障提升客户满意度，增强品牌信任度。",
+        "turn_ids": [
+          163,
+          164
+        ]
+      },
+      {
+        "decision": "制定会员制度，鼓励消费并提供返现优惠。",
+        "problem": "需提高客户复购率和消费频率。",
+        "options": [
+          "消费后成为会员",
+          "消费返现50%"
+        ],
+        "rationale": "通过会员制度和返现机制激励客户消费，提升品牌忠诚度。",
+        "turn_ids": [
+          174
+        ]
+      },
+      {
+        "decision": "在节日提供免费维护保养服务。",
+        "problem": "需增强客户对品牌的认同感和忠诚度。",
+        "options": [
+          "节日提供免费维护保养服务"
+        ],
+        "rationale": "通过节日活动提升客户体验，增强品牌亲和力。",
+        "turn_ids": [
+          175
+        ]
+      },
+      {
+        "decision": "对产品质量进行定期检查，确保产品安全。",
+        "problem": "需避免因质量问题导致的客户投诉和库存问题。",
+        "options": [
+          "定期检查产品质量",
+          "建立质量反馈机制"
+        ],
+        "rationale": "通过质量检查和反馈机制确保产品安全，减少客户投诉和库存积压。",
+        "turn_ids": [
+          172,
+          173
+        ]
+      }
+    ],
+    "outline_summary": {
+      "purpose": "会议旨在总结上半年经营情况，明确下半年市场策略，并制定产品优化、销售提升及客户服务改进方案。",
+      "groups": [
+        {
+          "theme": "业务经营与市场策略",
+          "sections": [
+            {
+              "heading": "销售与市场分析",
+              "points": [
+                "上半年销售情况良好，尽管受疫情影响有所下滑。",
+                "产品覆盖范围广，涵盖不同人群需求。",
+                "销售策略针对不同群体制定，提高效率。",
+                "公司与大品牌合作，产品有专属厂家供应。"
+              ]
+            },
+            {
+              "heading": "市场定位与产品开发",
+              "points": [
+                "为孕妇群体研发无公害护肤品，确保安全性与有效性。",
+                "借鉴国外专利技术提升产品竞争力。",
+                "目标市场为白领和企业高管，强调高端定位和质量保证。"
+              ]
+            },
+            {
+              "heading": "市场推广与客户开发",
+              "points": [
+                "通过官网PPT和课程讲解推广产品知识。",
+                "制定针对男性的化妆品研发策略。",
+                "开展化妆品课堂提升使用技巧。",
+                "利用现有客户中的网红进行直播推广，提升网络宣传效果。"
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "客户服务与售后管理",
+          "sections": [
+            {
+              "heading": "售后服务优化",
+              "points": [
+                "售后服务存在态度问题，需重新培训员工。",
+                "售后处理需及时，同时加强新客源开发。",
+                "明确售后保障措施，如退换货政策。",
+                "强调产品质量问题的处理机制。"
+              ]
+            },
+            {
+              "heading": "客户关系与信任建立",
+              "points": [
+                "通过专柜人员进行化妆指导，增强顾客对产品的认知和信任。",
+                "针对可能造成损失的顾客，采取安抚和赠送小样等方式处理。",
+                "讲解护肤品的实际效果，避免误解和纠纷。"
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "产品优化与包装设计",
+          "sections": [
+            {
+              "heading": "产品包装与设计",
+              "points": [
+                "优化化妆品包装设计，建议加入可爱元素如小蜗牛形状。",
+                "考虑与动漫人物合作提升吸引力。",
+                "进行市场调查以了解目标人群偏好。"
+              ]
+            },
+            {
+              "heading": "产品定价与市场策略",
+              "points": [
+                "产品价格偏高引发顾客反馈，需精准定位高端市场。",
+                "下半年计划通过网络宣传和网红产品提升市场竞争力。",
+                "需协商与某公司的违约赔偿问题。"
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "内部管理与客户粘性提升",
+          "sections": [
+            {
+              "heading": "内部管理与运营",
+              "points": [
+                "线上销售额增长，需协调与某公司的违约赔偿问题。",
+                "建立会员制度并实施消费返现机制。",
+                "计划在节日提供免费维护保养服务。"
+              ]
+            },
+            {
+              "heading": "品牌保护与知识产权",
+              "points": [
+                "防止商标侵权，加大保护力度。",
+                "讨论护肤产品专利及市场优势。"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

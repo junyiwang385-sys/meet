@@ -1,0 +1,51 @@
+{
+  "TaskId": "mtg_cd7cbb71be0305ba",
+  "MeetingAssistance": {
+    "Keywords": [],
+    "KeySentences": [],
+    "Actions": [
+      {
+        "Id": 1,
+        "SentenceId": 48,
+        "Start": 556840,
+        "End": 570130,
+        "Text": "加强商标保护"
+      },
+      {
+        "Id": 2,
+        "SentenceId": 59,
+        "Start": 668840,
+        "End": 698840,
+        "Text": "协商赔偿款"
+      },
+      {
+        "Id": 3,
+        "SentenceId": 70,
+        "Start": 817550,
+        "End": 847550,
+        "Text": "制定市场策略"
+      },
+      {
+        "Id": 4,
+        "SentenceId": 81,
+        "Start": 1010920,
+        "End": 1035595,
+        "Text": "开展化妆品课堂"
+      },
+      {
+        "Id": 5,
+        "SentenceId": 135,
+        "Start": 1441040,
+        "End": 1461040,
+        "Text": "明确包装设计"
+      },
+      {
+        "Id": 6,
+        "SentenceId": 144,
+        "Start": 1520770,
+        "End": 1540770,
+        "Text": "市场调查"
+      }
+    ]
+  }
+}

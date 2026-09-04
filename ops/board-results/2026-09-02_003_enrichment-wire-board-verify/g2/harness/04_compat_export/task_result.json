@@ -1,0 +1,15 @@
+{
+  "Code": "0",
+  "Data": {
+    "TaskId": "mtg_cd7cbb71be0305ba",
+    "TaskStatus": "COMPLETED",
+    "Result": {
+      "Transcription": "transcription.json",
+      "AutoChapters": "auto_chapters.json",
+      "Summarization": "summarization.json",
+      "MeetingAssistance": "meeting_assistance.json"
+    }
+  },
+  "Message": "success",
+  "RequestId": "mtg_cd7cbb71be0305ba"
+}

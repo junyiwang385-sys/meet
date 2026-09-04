@@ -1,0 +1,23 @@
+{
+  "TaskId": "mtg_3d8c1ede1bc20e3e",
+  "MeetingAssistance": {
+    "Keywords": [],
+    "KeySentences": [],
+    "Actions": [
+      {
+        "Id": 1,
+        "SentenceId": 154,
+        "Start": 909480,
+        "End": 939480,
+        "Text": "检查宿舍设备"
+      },
+      {
+        "Id": 2,
+        "SentenceId": 160,
+        "Start": 958810,
+        "End": 977235,
+        "Text": "财务部资金分配"
+      }
+    ]
+  }
+}

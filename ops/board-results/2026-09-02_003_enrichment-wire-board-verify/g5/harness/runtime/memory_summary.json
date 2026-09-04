@@ -1,0 +1,37 @@
+{
+  "samples": 2596,
+  "baseline_board_used_mb": 891.07,
+  "board_used_peak_mb": 2710.133,
+  "board_used_peak_delta_mb": 1819.062,
+  "mem_available_min_mb": 5204.215,
+  "phase_board_used_peak_mb": {
+    "startup": 891.07,
+    "segmentation": 2710.133,
+    "batch_asr": 1321.062,
+    "transcript_prepare": 884.852,
+    "llm_server_start": 1118.488,
+    "llm_block_summary": 1295.285,
+    "llm_full_summary": 1328.98,
+    "llm_action_review": 1330.07,
+    "llm_speaker_batch": 1330.895,
+    "enrichment": 1334.715,
+    "llm_cleanup": 957.766
+  },
+  "process_peaks": {
+    "segmentation": {
+      "rss_peak_mb": 15.41,
+      "hwm_peak_mb": 16.902,
+      "vmsize_peak_mb": 22.797
+    },
+    "batch_asr": {
+      "rss_peak_mb": 12.395,
+      "hwm_peak_mb": 12.395,
+      "vmsize_peak_mb": 20.418
+    },
+    "rkllm_server": {
+      "rss_peak_mb": 272.844,
+      "hwm_peak_mb": 273.18,
+      "vmsize_peak_mb": 671.691
+    }
+  }
+}

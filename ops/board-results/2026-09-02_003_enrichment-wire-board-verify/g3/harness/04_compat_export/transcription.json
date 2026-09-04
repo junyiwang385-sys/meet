@@ -1,0 +1,3287 @@
+{
+  "TaskId": "mtg_56d709ee2a8e4dab",
+  "Transcription": {
+    "AudioInfo": {
+      "Duration": 2127048,
+      "SourceAudio": "/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S03C01/01_segments/input_mono16k.wav"
+    },
+    "Paragraphs": [
+      {
+        "ParagraphId": "seg-000002",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 1,
+            "SentenceId": 1,
+            "Start": 30610,
+            "End": 33830,
+            "Text": "零二，我是董事长。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000003",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 2,
+            "SentenceId": 2,
+            "Start": 33830,
+            "End": 35300,
+            "Text": "我是总经理。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000004",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 3,
+            "SentenceId": 3,
+            "Start": 35300,
+            "End": 39175,
+            "Text": "零二三，我是设备工程部。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000005",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 4,
+            "SentenceId": 4,
+            "Start": 37175,
+            "End": 40560,
+            "Text": "一二三，我是保洁部。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000006",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 5,
+            "SentenceId": 5,
+            "Start": 40560,
+            "End": 46380,
+            "Text": "二次我是财务。幺五，我客服好的今天我们这次。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000007",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 6,
+            "SentenceId": 6,
+            "Start": 46380,
+            "End": 49160,
+            "Text": "嗯，公司开一次会议。你接一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000008",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 7,
+            "SentenceId": 7,
+            "Start": 49160,
+            "End": 54510,
+            "Text": "呃，上个月。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000009",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 8,
+            "SentenceId": 8,
+            "Start": 54510,
+            "End": 60970,
+            "Text": "上个季，上季度的投资情况还有未来。这？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000011",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 9,
+            "SentenceId": 9,
+            "Start": 61460,
+            "End": 64330,
+            "Text": "嗯，计划。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000012",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 10,
+            "SentenceId": 10,
+            "Start": 64330,
+            "End": 65330,
+            "Text": "首先。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000013",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 11,
+            "SentenceId": 11,
+            "Start": 65330,
+            "End": 69740,
+            "Text": "我问一下，完不？上个月、上个季度咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000014",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 12,
+            "SentenceId": 12,
+            "Start": 69740,
+            "End": 86940,
+            "Text": "小区内没有什么异常。上小，上上一季度，小区里头有一位居民是一号楼的一个男的丢失了钥匙，在过了已经找回来了在车房里面。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000015",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 13,
+            "SentenceId": 13,
+            "Start": 86940,
+            "End": 89780,
+            "Text": "什么外来人是？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000016",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 14,
+            "SentenceId": 14,
+            "Start": 89780,
+            "End": 108700,
+            "Text": "嗯，明白了。也是那也就是说咱们小区的这个门禁卡方面还是需要有带改进对？这个是靠那个小区的那个哎已经是像我们不住了住了。嗯而且这个是门禁卡需要改进还需要最好是问一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000017",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 15,
+            "SentenceId": 15,
+            "Start": 108700,
+            "End": 120300,
+            "Text": "对，这这个设备、设备这边会改进下一步的。这个一个是弱电系统，还有一个就是这个防止一卡一卡多进嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000018",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 16,
+            "SentenceId": 16,
+            "Start": 119570,
+            "End": 126020,
+            "Text": "现在咱们小区，就、咱们小区，就以当时刷卡式。那有没有可能改成？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000019",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 17,
+            "SentenceId": 17,
+            "Start": 126020,
+            "End": 134450,
+            "Text": "人脸识别啊什么的，大家有什么建议吗？人脸识别我建议还是不要走。因为如果用户的话，他就……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000020",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 18,
+            "SentenceId": 18,
+            "Start": 134450,
+            "End": 137780,
+            "Text": "对，因为别人比较方便。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000021",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 19,
+            "SentenceId": 19,
+            "Start": 137780,
+            "End": 138460,
+            "Text": "财务。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000022",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 20,
+            "SentenceId": 20,
+            "Start": 138460,
+            "End": 144585,
+            "Text": "我这边儿觉得，呃这个设备是需要很大那个经费的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000023",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 21,
+            "SentenceId": 21,
+            "Start": 142585,
+            "End": 145335,
+            "Text": "哇，这个是……这个经费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000024",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 22,
+            "SentenceId": 22,
+            "Start": 143335,
+            "End": 148250,
+            "Text": "是要那个全体的业主他们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000025",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 23,
+            "SentenceId": 23,
+            "Start": 148250,
+            "End": 148530,
+            "Text": "嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000026",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 24,
+            "SentenceId": 24,
+            "Start": 148530,
+            "End": 152405,
+            "Text": "这个也要看这业主愿不愿意。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000027",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 25,
+            "SentenceId": 25,
+            "Start": 150405,
+            "End": 155270,
+            "Text": "就业务员不愿意了，对啊。所以我觉得哎！你们当初的话那个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000028",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 26,
+            "SentenceId": 26,
+            "Start": 155270,
+            "End": 163430,
+            "Text": "有业主向这里，明明是咱们物业费越收越多了。我觉得人脸识别这个其实不太可能啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000029",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 27,
+            "SentenceId": 27,
+            "Start": 163430,
+            "End": 178555,
+            "Text": "比如说，业主在家，在小区里是可以。那业主的朋友或者业主的父母，谁要是想进来？想来家里这不太方便啊！对信息量太大然后人员太……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000030",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 28,
+            "SentenceId": 28,
+            "Start": 173555,
+            "End": 176305,
+            "Text": "方便。咱们要录入的信息量太大了，信息量太……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000031",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 29,
+            "SentenceId": 29,
+            "Start": 176555,
+            "End": 180970,
+            "Text": "大，然后人员太杂。第二个就会很烦人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000032",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 30,
+            "SentenceId": 30,
+            "Start": 180970,
+            "End": 182530,
+            "Text": "处理这个外交人员。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000033",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 31,
+            "SentenceId": 31,
+            "Start": 182530,
+            "End": 195310,
+            "Text": "这个需要，这个保安这一块去登记了吧。保安部这一块儿需要：对这种有卡的人就让他出示门禁卡；没有卡的人就登机。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000034",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 32,
+            "SentenceId": 32,
+            "Start": 195310,
+            "End": 204540,
+            "Text": "但是也有业主不用了，他忘了带的呢。但有业主都是监督户嘛？他就清起来看清楚然后带走就是保安那块儿啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000035",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 33,
+            "SentenceId": 33,
+            "Start": 204540,
+            "End": 209220,
+            "Text": "没有兴趣。嗯，这个可以登记啊！登记以后……这个其实可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000036",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 34,
+            "SentenceId": 34,
+            "Start": 209220,
+            "End": 219290,
+            "Text": "就是，你给环市说：“有那个变化。”问“变化”，可以让业主积极去环视。对呀，“家人们”都把人从变换了过来。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000037",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 35,
+            "SentenceId": 35,
+            "Start": 219290,
+            "End": 226260,
+            "Text": "我这边，我这边建议我们可以多安几个监控。这样的话就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000038",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 36,
+            "SentenceId": 36,
+            "Start": 226260,
+            "End": 229070,
+            "Text": "呃，防止东西丢失了的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000039",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 37,
+            "SentenceId": 37,
+            "Start": 229070,
+            "End": 231990,
+            "Text": "可以，呃通过监控来寻找一看。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000041",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 38,
+            "SentenceId": 38,
+            "Start": 232230,
+            "End": 235220,
+            "Text": "那咱们，咱们小区的监控。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000042",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 39,
+            "SentenceId": 39,
+            "Start": 235220,
+            "End": 239510,
+            "Text": "有一个死角。嗯，监控死角然后盲区嘛？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000043",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 40,
+            "SentenceId": 40,
+            "Start": 239510,
+            "End": 242800,
+            "Text": "这个盲区还是有点挺大的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000044",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 41,
+            "SentenceId": 41,
+            "Start": 242800,
+            "End": 248480,
+            "Text": "像一些公园里头，好多地方都会有盲区。还有一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000045",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 42,
+            "SentenceId": 42,
+            "Start": 248480,
+            "End": 253120,
+            "Text": "小区的楼的侧面呀，那个通道。它会有一些什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000047",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 43,
+            "SentenceId": 43,
+            "Start": 253550,
+            "End": 256770,
+            "Text": "那这个，反正不。可以像……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000048",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 44,
+            "SentenceId": 44,
+            "Start": 256770,
+            "End": 261310,
+            "Text": "他不，深沉一下。深深一个抱紧嗯把盲区都补上。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000049",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 45,
+            "SentenceId": 45,
+            "Start": 261310,
+            "End": 264110,
+            "Text": "而且可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000050",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 46,
+            "SentenceId": 46,
+            "Start": 264110,
+            "End": 273850,
+            "Text": "做一个居民的二类市场，它很远。对像我客户的话是都会介绍很多图书哦！刚才所说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000051",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 47,
+            "SentenceId": 47,
+            "Start": 273850,
+            "End": 279580,
+            "Text": "保安的话，他有些保安素质不是特别高。就是对于业主看亲戚来了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000052",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 48,
+            "SentenceId": 48,
+            "Start": 275725,
+            "End": 278475,
+            "Text": "不是特别高，就是对于业主。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000053",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 49,
+            "SentenceId": 49,
+            "Start": 279580,
+            "End": 292850,
+            "Text": "他态度不是特别好。这个，反正就是：该怎么做？我觉得还是要培训一下这些必要的那些呃礼仪呀这些还有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000054",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 50,
+            "SentenceId": 50,
+            "Start": 292850,
+            "End": 302420,
+            "Text": "一些就是呃外来人员没有卡或者怎么进入，我觉得应该加强一下培训。嗯面对这些问题应该怎么处理？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000055",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 51,
+            "SentenceId": 51,
+            "Start": 302420,
+            "End": 322420,
+            "Text": "嗯，可以在门口或者还是安检摄像头。如果保安进行次较低的一点东西的话，可以直接将相对于处罚、罚金等这种扣车箱英文公司私下他就可以有所改进比如重新进到一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000056",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 52,
+            "SentenceId": 52,
+            "Start": 322420,
+            "End": 342420,
+            "Text": "保安。按说，会不会出现一些问题？就是他的背后公司啊心情更好了对业主不着急的。比如说什么呢就像他一下被业者牵起来以后都是态度特别好然后导致监控拍下来以后后台系统。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000057",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 53,
+            "SentenceId": 53,
+            "Start": 342420,
+            "End": 350510,
+            "Text": "刷完以后，他的感觉这个月工资少了。他心情会特别好啊！对业主的态度也会更好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000058",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 54,
+            "SentenceId": 54,
+            "Start": 350510,
+            "End": 355240,
+            "Text": "变得差点了。这这个的话，如果遇到这种情况就开除吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000060",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 55,
+            "SentenceId": 55,
+            "Start": 355530,
+            "End": 359460,
+            "Text": "知道吧？那公司刚才总经理，嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000061",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 56,
+            "SentenceId": 56,
+            "Start": 358410,
+            "End": 361540,
+            "Text": "嗯，你这块儿？咱们这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000062",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 57,
+            "SentenceId": 57,
+            "Start": 361540,
+            "End": 377520,
+            "Text": "嗯，彭公司这边制定那些是什么样的这个规章呢？关于那个态度问题。如果态度问题首先是第一次是口头警告第二次罚款第三次就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000063",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 58,
+            "SentenceId": 58,
+            "Start": 377520,
+            "End": 380410,
+            "Text": "对，咱这个一定要做好。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000064",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 59,
+            "SentenceId": 59,
+            "Start": 380410,
+            "End": 395600,
+            "Text": "还有就是家长，家长平时的教育。还有培训对嗯？那这个设备工程部咱们小区现在哪些部位呃上季度有哪些需要维修。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000065",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 60,
+            "SentenceId": 60,
+            "Start": 395600,
+            "End": 398560,
+            "Text": "像没收购的，还有这季度。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000066",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 61,
+            "SentenceId": 61,
+            "Start": 398560,
+            "End": 403660,
+            "Text": "今年汛期吗？夏季，有什么需要整改的地方。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000067",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 62,
+            "SentenceId": 62,
+            "Start": 403660,
+            "End": 422660,
+            "Text": "需要维修的设备。上个季度的话，主要是对这、这个楼体的这个保温层，还有对这个墙皮的脱落进行了维修。嗯？刷漆是吗？对对，刷漆然后补一下这个墙体。嗯。然后对这个保温层的话有的地方剥落了，然后该涂的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000068",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 63,
+            "SentenceId": 63,
+            "Start": 422660,
+            "End": 431440,
+            "Text": "不一，不对。那只有月柱进场结束了，就是唐三、裴航二加一还有黄藏都是那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000069",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 64,
+            "SentenceId": 64,
+            "Start": 431440,
+            "End": 461440,
+            "Text": "及时处理好。对，这个咱们：，咱们往后会及时的去这个维修。然后汛期的话，咱们应对措施就是呃多因为之前咱们的这嗯有一些这个水抽水泵是没有开的没有开启来，咱们这个这个泵，就是只派了一些专门儿、专门的人去看守那个泵啊！接下来就汛期。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000070",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 65,
+            "SentenceId": 65,
+            "Start": 461440,
+            "End": 491440,
+            "Text": "的话应该，这个雇一些这个专业的相关的工作人员去。就是对这个泵进行检修然后下雨的话自行那个开泵去抽水排水嗯呃还有就是这个咱们小区的井盖儿也会啊有一些这个破损哦然后维修的话之前之前咱们用的是那种老式的井盖。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000071",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 66,
+            "SentenceId": 66,
+            "Start": 491440,
+            "End": 521440,
+            "Text": "嗯，比较的难、比较不方便。呃，咱们现在要采用那种倾倾斜的这种井盖儿一个是方便这个我们去打开它维修和检查再一个就是他结实比之前老式会更结实一些啊还有就是这个刚才说到摄像头了呃这个摄像头也要更新了就更新换代把它换成那种高清"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000072",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 67,
+            "SentenceId": 67,
+            "Start": 521440,
+            "End": 551440,
+            "Text": "嗯，然后一个是这个方面。咱们去看这个监控：如果真的有盗窃了的话，就是方便看到大家、方便看到这个人的人的轮廓还有脸。呃，在一个就是这个绿化绿道带，绿化部分啊！这个绿化部分的话，就是有一一部分绿化是遭到这个一些那个文人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000073",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 68,
+            "SentenceId": 68,
+            "Start": 551440,
+            "End": 558590,
+            "Text": "蚊虫啊，这个蚂蚁啊之类的。捕食就是它会……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000074",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 69,
+            "SentenceId": 69,
+            "Start": 558590,
+            "End": 577250,
+            "Text": "你这个绿化方面，一会儿咱们可以问那个环保部。啊！咱们现在就是解决一下疫情的、这个汛情期间呀？嗯。就是防汛期间该是夏季环境措施对吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000075",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 70,
+            "SentenceId": 70,
+            "Start": 577250,
+            "End": 580010,
+            "Text": "措施，驾驭力比较大。咱们应该……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000076",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 71,
+            "SentenceId": 71,
+            "Start": 580010,
+            "End": 584360,
+            "Text": "各部门有没有什么建议？比如说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000077",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 72,
+            "SentenceId": 72,
+            "Start": 584360,
+            "End": 587190,
+            "Text": "呃，停车场。咱们的地下停车场。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000078",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 73,
+            "SentenceId": 73,
+            "Start": 587190,
+            "End": 593390,
+            "Text": "非常容易近视。怎么？如何防止，一下手头的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000079",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 74,
+            "SentenceId": 74,
+            "Start": 593390,
+            "End": 623390,
+            "Text": "这个就呃，就需要这个加一个、加几个这个抽水泵吧。然后在对对嗯再一个就是，在于我们如果看这个天气的话，天气预报：如果预报接下来几天有雨的话，我们这个地下停车场最最底下那个最低的一层和二层是可以不进行开放的？如果真的被淹的话，这个损失也是要"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000080",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 75,
+            "SentenceId": 75,
+            "Start": 623390,
+            "End": 635410,
+            "Text": "这个承担的嘛，但是。这个就要考虑到跟业主协商看他们的车到底需要停那什么不啊？它咱们业主如果说在咱……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000081",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 76,
+            "SentenceId": 76,
+            "Start": 635410,
+            "End": 645240,
+            "Text": "小车，车位的停车场。开车要听到地下停车场，不会往外停呀？呃，安保部对这方面有什么想法吗？就是一下停车场我觉着如果"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000082",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 77,
+            "SentenceId": 77,
+            "Start": 645240,
+            "End": 649530,
+            "Text": "如果是真要设计的话，最好设计一个。可以设置一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000083",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 78,
+            "SentenceId": 78,
+            "Start": 649530,
+            "End": 654890,
+            "Text": "或者一个地上停车场，或者给它安一个车棚之类的东西。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000084",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 79,
+            "SentenceId": 79,
+            "Start": 654890,
+            "End": 658300,
+            "Text": "因为相对于防水层来说的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000085",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 80,
+            "SentenceId": 80,
+            "Start": 658300,
+            "End": 669950,
+            "Text": "车走，造价更低。我觉得呃……我觉得可以更新、更新一下那个排水系统，这样更便利一点。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000086",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 81,
+            "SentenceId": 81,
+            "Start": 669950,
+            "End": 673280,
+            "Text": "那咱们，呃，工程部。咱们是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000087",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 82,
+            "SentenceId": 82,
+            "Start": 673280,
+            "End": 674830,
+            "Text": "呃，其实啥的都是这种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000088",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 83,
+            "SentenceId": 83,
+            "Start": 674830,
+            "End": 683930,
+            "Text": "现在还是版本，那个系统一直一直都很好。对但是如果真的下暴雨、下就是那种特大暴雨的时候。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000090",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 84,
+            "SentenceId": 84,
+            "Start": 698820,
+            "End": 707050,
+            "Text": "嗯，如果就是下这种大暴雨或者特大暴雨的时候，就是咱们会排不急这些水。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000091",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 85,
+            "SentenceId": 85,
+            "Start": 707050,
+            "End": 711750,
+            "Text": "这个，但是它不反应。然后就是说咱们下一个月的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000092",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 86,
+            "SentenceId": 86,
+            "Start": 711750,
+            "End": 722250,
+            "Text": "嗯，有技术。那咱们……呃，十个工种不可以当条路申请报表儿？可以加装几个抽水泵啊！对不对还有就是保洁部小。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000093",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 87,
+            "SentenceId": 87,
+            "Start": 718125,
+            "End": 720970,
+            "Text": "加装几个抽水泵。嗯，对。还有就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000094",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 88,
+            "SentenceId": 88,
+            "Start": 722250,
+            "End": 742250,
+            "Text": "呃，经常去清理这个。像你积水把咱们主要手头不就是清洁和安保吧？然后咱们人走的话也不需要说是在招一些特别的人员，比如咱们一下安保工作我们吸收比较充分了反P V嗯一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000095",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 89,
+            "SentenceId": 89,
+            "Start": 742250,
+            "End": 761110,
+            "Text": "呃，咱们一个小区嘛。就是说，咱们可以把一部分的安保人员和清洁人员都是安排下来去干清扫的一个那个处理嗯是啥子呢？这个保洁部这边觉得那个排水系统因为。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000096",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 90,
+            "SentenceId": 90,
+            "Start": 761110,
+            "End": 770660,
+            "Text": "一天汛期，然后水量特别大排不出去。咱们小区这个绿化就会受到影响。然后就是比如说草花园里那些草啊这些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000097",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 91,
+            "SentenceId": 91,
+            "Start": 770660,
+            "End": 773730,
+            "Text": "率值就是嗯，受到的伤。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000098",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 92,
+            "SentenceId": 92,
+            "Start": 773730,
+            "End": 776540,
+            "Text": "它非常大，然后希望把这个小区就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000099",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 93,
+            "SentenceId": 93,
+            "Start": 776540,
+            "End": 793930,
+            "Text": "地面上这个排水系统做的再更好一些，更完善一些。嗯，比如说积水的话呢？就是还有反映的是咱们小区的绿化，就是可能做不是很到位。哦好你这个会呃找那个修理人员专门儿在进。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000100",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 94,
+            "SentenceId": 94,
+            "Start": 793930,
+            "End": 823930,
+            "Text": "行一下，修改。然后保洁这边有什么问题呢？就是：一是咱们小区的这个各种设施比如说垃圾桶、长凳有的都受到你就已经是不能再用了对需要更新。然后这个是需要向财务部门跟财务部门沟通一下。然后那些绿化标识也需要采购一下因为要贴在一些醒目的地方对吧，然后还有第二个呢就是社区现在小区里有很多然后"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000101",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 95,
+            "SentenceId": 95,
+            "Start": 823930,
+            "End": 841990,
+            "Text": "居民开始养宠物，然后对宠物这些他们在小区里就是遛狗啦。那些时候会产生一些垃圾、那些排泄物、那些宠物的有的……有的居民素质很高会处理但有的就并不会说随手把他们宠物产生的这垃圾扔掉。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000102",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 96,
+            "SentenceId": 96,
+            "Start": 840430,
+            "End": 843300,
+            "Text": "垃圾。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000103",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 97,
+            "SentenceId": 97,
+            "Start": 842820,
+            "End": 846900,
+            "Text": "对，就只有我们保洁人员来进行啊。但是就是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000104",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 98,
+            "SentenceId": 98,
+            "Start": 846900,
+            "End": 851960,
+            "Text": "这样处理就会很困难。所以有别的，有没有一个特别的想法呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000105",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 99,
+            "SentenceId": 99,
+            "Start": 851960,
+            "End": 854800,
+            "Text": "说：“家装垃圾袋。”"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000106",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 100,
+            "SentenceId": 100,
+            "Start": 854800,
+            "End": 868370,
+            "Text": "就要和安保一起。不，安保也完不了工作啊！他不可能就是每天盯着业主们去遛狗等等呃……这事儿从现在开始咱们小区问一下先监。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000107",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 101,
+            "SentenceId": 101,
+            "Start": 868370,
+            "End": 871190,
+            "Text": "嗯，我觉得我有一个提议：就是可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000108",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 102,
+            "SentenceId": 102,
+            "Start": 871110,
+            "End": 879050,
+            "Text": "呃，我们小区可以制定一个计划：就是。呃有人发现这样的行为后然后举报的时候，可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000109",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 103,
+            "SentenceId": 103,
+            "Start": 879050,
+            "End": 882750,
+            "Text": "呃，进行奖励。然后对那个人进行惩罚。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000110",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 104,
+            "SentenceId": 104,
+            "Start": 882750,
+            "End": 885530,
+            "Text": "然后这样可能会增加一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000111",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 105,
+            "SentenceId": 105,
+            "Start": 885530,
+            "End": 886730,
+            "Text": "自己都想吃着。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000112",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 106,
+            "SentenceId": 106,
+            "Start": 886730,
+            "End": 892320,
+            "Text": "对，这是自己的小区。所以环境方面真的需要每个人都注意一下。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000113",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 107,
+            "SentenceId": 107,
+            "Start": 892320,
+            "End": 904520,
+            "Text": "所以，这方面可以：咱们给它开放一个专门遛狗的场所。呃……小区内怎么可能？还有那么多空余的场地呢！嗯，有专门儿的遛狗就像公园啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000114",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 108,
+            "SentenceId": 108,
+            "Start": 904520,
+            "End": 912390,
+            "Text": "给他改一下，就有没有这种情况？就是业主他并不是没有素质。不过他忘了带一些清理垃圾的一些东西。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000115",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 109,
+            "SentenceId": 109,
+            "Start": 912390,
+            "End": 913540,
+            "Text": "没有这种情况。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000116",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 110,
+            "SentenceId": 110,
+            "Start": 913540,
+            "End": 922980,
+            "Text": "那种情况，我觉得可以就是去跟保洁人员及时的说。然后及时清理不会到时候时间变得很长会很麻烦。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000117",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 111,
+            "SentenceId": 111,
+            "Start": 922980,
+            "End": 928350,
+            "Text": "再加一些，就是关于在旁边有一些。关于什么鲨鱼？然后一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000118",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 112,
+            "SentenceId": 112,
+            "Start": 928350,
+            "End": 932930,
+            "Text": "对沙土，我觉得可以在旁边备一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000119",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 113,
+            "SentenceId": 113,
+            "Start": 932930,
+            "End": 945080,
+            "Text": "不是，埋起来吗？直接就埋起来嘛。就是，就是放到呃上面啊！然后它能传导嗯……这是个和保洁的是在。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000120",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 114,
+            "SentenceId": 114,
+            "Start": 945080,
+            "End": 951710,
+            "Text": "垃圾嘛，我们先放一些垃圾袋啊什么的。对呀还有一些备用的然后就是比如说可以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000121",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 115,
+            "SentenceId": 115,
+            "Start": 951710,
+            "End": 968540,
+            "Text": "不用说，在上楼去拿工具，这是需要和保洁啊、财务部进行一下商量。嗯还有就是怕业主在遛狗的时候如果狗再跑的话怎么样？什么样是也听不明白呀！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000122",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 116,
+            "SentenceId": 116,
+            "Start": 968540,
+            "End": 976405,
+            "Text": "所以，我……所以就需要呃制定一下我们小区的那个。对嗯是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000123",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 117,
+            "SentenceId": 117,
+            "Start": 974405,
+            "End": 977570,
+            "Text": "对。那你们有什么想法吗？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000124",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 118,
+            "SentenceId": 118,
+            "Start": 977570,
+            "End": 981190,
+            "Text": "可以在草原上，用标语标志。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000125",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 119,
+            "SentenceId": 119,
+            "Start": 981190,
+            "End": 983590,
+            "Text": "人进大转变，他可能是没有。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000126",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 120,
+            "SentenceId": 120,
+            "Start": 983590,
+            "End": 986520,
+            "Text": "目标监控，违者罚款。如果他看到。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000127",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 121,
+            "SentenceId": 121,
+            "Start": 986520,
+            "End": 991600,
+            "Text": "好的，还要看一些事的话。咱们不可能像业主团似的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000128",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 122,
+            "SentenceId": 122,
+            "Start": 991600,
+            "End": 994520,
+            "Text": "咱们不可能像业主一块儿玩。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000129",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 123,
+            "SentenceId": 123,
+            "Start": 994520,
+            "End": 995220,
+            "Text": "啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000130",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 124,
+            "SentenceId": 124,
+            "Start": 995220,
+            "End": 999845,
+            "Text": "但是，标语是什么样做的啊？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000131",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 125,
+            "SentenceId": 125,
+            "Start": 997845,
+            "End": 1000595,
+            "Text": "标语是什么要做的？啊，标语是一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000132",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 126,
+            "SentenceId": 126,
+            "Start": 998595,
+            "End": 1003590,
+            "Text": "可以，可以收多加收他们的那个物业费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000133",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 127,
+            "SentenceId": 127,
+            "Start": 1003170,
+            "End": 1007045,
+            "Text": "那你觉得叶名会怎么样？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000134",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 128,
+            "SentenceId": 128,
+            "Start": 1005045,
+            "End": 1011325,
+            "Text": "如果他要那样做，有人举报的话，他没有办法不做。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000135",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 129,
+            "SentenceId": 129,
+            "Start": 1009325,
+            "End": 1012825,
+            "Text": "他没有办法，对。通过举报的话，咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000136",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 130,
+            "SentenceId": 130,
+            "Start": 1010825,
+            "End": 1021490,
+            "Text": "咱们是服务服务类的公司。咱们不可能要强制业主去做一些什么事儿。如果说业主举报啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000137",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 131,
+            "SentenceId": 131,
+            "Start": 1021490,
+            "End": 1025120,
+            "Text": "向我们投诉，就是很不合理。直接这样回复领导们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000138",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 132,
+            "SentenceId": 132,
+            "Start": 1025120,
+            "End": 1028270,
+            "Text": "可以在垃圾桶旁边住。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000139",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 133,
+            "SentenceId": 133,
+            "Start": 1028270,
+            "End": 1048270,
+            "Text": "私行塑料袋，让业主和、和内容黑色的塑料带。让业主自己处理以后放在垃圾桶旁边，并且在草坪旁边或者或道旁边多加一些垃圾桶方便一点。如果他们挂在公共的话这样的话也会乱扔啊！但是这个好看景人的话，业主他自己也可以处理这些东西。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000140",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 134,
+            "SentenceId": 134,
+            "Start": 1048270,
+            "End": 1049210,
+            "Text": "对吧？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000141",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 135,
+            "SentenceId": 135,
+            "Start": 1049210,
+            "End": 1052000,
+            "Text": "这边觉得是可以多加一些垃圾桶。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000142",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 136,
+            "SentenceId": 136,
+            "Start": 1052000,
+            "End": 1053500,
+            "Text": "然后就是专门，就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000143",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 137,
+            "SentenceId": 137,
+            "Start": 1053500,
+            "End": 1056540,
+            "Text": "我今天没用到。这这个刚才，嗯……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000144",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 138,
+            "SentenceId": 138,
+            "Start": 1056540,
+            "End": 1065620,
+            "Text": "这个有人投诉吗？呃，是有人投诉的。就是一讲想个业主房都是都是都。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000145",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 139,
+            "SentenceId": 139,
+            "Start": 1065620,
+            "End": 1068630,
+            "Text": "高有的，也会有一些人就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000146",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 140,
+            "SentenceId": 140,
+            "Start": 1068630,
+            "End": 1076880,
+            "Text": "自己的宠物在草坪上，就是进行打个便房的。也没有进行处理到给它们嗯……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000147",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 141,
+            "SentenceId": 141,
+            "Start": 1076880,
+            "End": 1079790,
+            "Text": "就是在草原上。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000148",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 142,
+            "SentenceId": 142,
+            "Start": 1079790,
+            "End": 1086200,
+            "Text": "然后就是，来散步的业主发生了很大波动。因为毕竟很上心那种人。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000149",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 143,
+            "SentenceId": 143,
+            "Start": 1086200,
+            "End": 1090520,
+            "Text": "到期了，因为咱们保洁人员不干。就是说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000150",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 144,
+            "SentenceId": 144,
+            "Start": 1090520,
+            "End": 1110520,
+            "Text": "明天都是呃，请一遍草坪，嗯……草皮。因为这个东西吧比较难清理。但是说：“那您都总能应对的。”对呀，从这突出啊！不是我们就是进行上门，就是进行调低温度，就是把呃把这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000151",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 145,
+            "SentenceId": 145,
+            "Start": 1110520,
+            "End": 1130520,
+            "Text": "就是举报以后，我们是先通过查监控。然后对，就是进行这种行为的业主，就是有个了解。然后咱们就是可以通过给他打电话，然后请他注意一些这些方面。但是具体的话像……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000152",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 146,
+            "SentenceId": 146,
+            "Start": 1130520,
+            "End": 1150520,
+            "Text": "毕竟我们是服务行业，然后呃业主怎么做？我们也没法。那种回答一点最需要每个小区就是有一个基本的规章制度。然后这基本规章制度的话实行是需要那个咱们全小区的人一起执行吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000153",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 147,
+            "SentenceId": 147,
+            "Start": 1150520,
+            "End": 1159420,
+            "Text": "我觉得的话，就是可以由整个总经理制定一份，就是关于呃给所有业主进行一个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000154",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 148,
+            "SentenceId": 148,
+            "Start": 1159420,
+            "End": 1162180,
+            "Text": "是C书吧，没什么意思。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000155",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 149,
+            "SentenceId": 149,
+            "Start": 1162180,
+            "End": 1177210,
+            "Text": "最后看，昨天这个呃走不下来了。怎么样一点啊？嗯……我觉得与业主协商不是一件很好的方案，主要还是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000156",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 150,
+            "SentenceId": 150,
+            "Start": 1177210,
+            "End": 1207210,
+            "Text": "但是呃，从从经费方面考虑的话因为我们小区里的各种事项都需要经费什么安装摄像头然后绿化或者地下车库嗯水的问题积水的问题还有垃圾桶都需要经费所以呃如果我们什么都做的太好的话我们其实经费上有很大压力。所以还是需要和小区呃"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000157",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 151,
+            "SentenceId": 151,
+            "Start": 1207210,
+            "End": 1209240,
+            "Text": "这些雇主协商。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000158",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 152,
+            "SentenceId": 152,
+            "Start": 1209240,
+            "End": 1211400,
+            "Text": "这个可以通过。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000159",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 153,
+            "SentenceId": 153,
+            "Start": 1211400,
+            "End": 1214240,
+            "Text": "咱们毕竟是一个小区。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000160",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 154,
+            "SentenceId": 154,
+            "Start": 1214240,
+            "End": 1234240,
+            "Text": "服务公司吧。咱们可以跟建房房地产公司，这些甲方人员去谈，让他们来承包这个社区的那些住户们呗对？不用你不想啊！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000161",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 155,
+            "SentenceId": 155,
+            "Start": 1234240,
+            "End": 1236930,
+            "Text": "有甲方来看，你那我的物业费。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000162",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 156,
+            "SentenceId": 156,
+            "Start": 1236930,
+            "End": 1241860,
+            "Text": "物业费只是一部分，像什么电梯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000163",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 157,
+            "SentenceId": 157,
+            "Start": 1241860,
+            "End": 1261860,
+            "Text": "停车场的那些什么的需要物业费以外，别的咱们不需要收。不爱收物业费吗？受不了！所以这些新增的东西，早晚可以由甲方房地产公司来为咱们提供。但但是房产公司不是和咱们业主组。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000164",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 158,
+            "SentenceId": 158,
+            "Start": 1261860,
+            "End": 1265470,
+            "Text": "嗯，哎呀！这反季节啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000165",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 159,
+            "SentenceId": 159,
+            "Start": 1265470,
+            "End": 1274370,
+            "Text": "看，你可以去售房部询问一下。一般都会管一家售后：如果是建行，在三到五美欧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000166",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 160,
+            "SentenceId": 160,
+            "Start": 1274370,
+            "End": 1290520,
+            "Text": "我这个话题先说一段吧。咱们小区，有就是宠物不人的情况啊？有一个狗不分人的情况。注意没有？这都有有一些狗已经改呀，都是已经被那个……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000167",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 161,
+            "SentenceId": 161,
+            "Start": 1290520,
+            "End": 1293400,
+            "Text": "呃，大尺寸。什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000168",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 162,
+            "SentenceId": 162,
+            "Start": 1293400,
+            "End": 1313400,
+            "Text": "那因为已经，就是最后的解决的话，就是进行协商。然后大金泉呢？呃，就是进行了赔偿。这个方面的话是需要咱们注意一下。那安保部还有没有？就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000169",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 163,
+            "SentenceId": 163,
+            "Start": 1313400,
+            "End": 1321150,
+            "Text": "其他的情况，除了就是上一季度只是丢了一起自行车嘛。只是丢了一次自行车了没有？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000170",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 164,
+            "SentenceId": 164,
+            "Start": 1321150,
+            "End": 1325320,
+            "Text": "没有，还有就是社区的函数。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000171",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 165,
+            "SentenceId": 165,
+            "Start": 1325320,
+            "End": 1332910,
+            "Text": "搭别人车，开放别人的气儿。这个问题：这种问题？那你觉得怎么样呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000172",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 166,
+            "SentenceId": 166,
+            "Start": 1332910,
+            "End": 1336550,
+            "Text": "这个问题，我感觉只能起到咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000173",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 167,
+            "SentenceId": 167,
+            "Start": 1336550,
+            "End": 1339320,
+            "Text": "那是公主做的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000174",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 168,
+            "SentenceId": 168,
+            "Start": 1339320,
+            "End": 1342350,
+            "Text": "通过家长给孩子教育。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000175",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 169,
+            "SentenceId": 169,
+            "Start": 1342350,
+            "End": 1344860,
+            "Text": "客户这边的话，就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000176",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 170,
+            "SentenceId": 170,
+            "Start": 1344860,
+            "End": 1347680,
+            "Text": "建议就是，加监控。然后"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000178",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 171,
+            "SentenceId": 171,
+            "Start": 1347810,
+            "End": 1351685,
+            "Text": "就是，比如说因为业主他们的承担力大了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000179",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 172,
+            "SentenceId": 172,
+            "Start": 1349685,
+            "End": 1352530,
+            "Text": "没意思，他们的车胎被扎了。咋的？就是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000180",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 173,
+            "SentenceId": 173,
+            "Start": 1352530,
+            "End": 1358790,
+            "Text": "到投诉之后，他为了避免什么的还要赔偿。对一些调查。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000181",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 174,
+            "SentenceId": 174,
+            "Start": 1358790,
+            "End": 1361915,
+            "Text": "然后，这一步呢？这个做根的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000182",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 175,
+            "SentenceId": 175,
+            "Start": 1359915,
+            "End": 1363060,
+            "Text": "这一部分，进行划分的话。我们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000183",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 176,
+            "SentenceId": 176,
+            "Start": 1363060,
+            "End": 1365860,
+            "Text": "口就是可以，比如说：就是安排。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000184",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 177,
+            "SentenceId": 177,
+            "Start": 1365860,
+            "End": 1368670,
+            "Text": "来进行写照。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000185",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 178,
+            "SentenceId": 178,
+            "Start": 1368670,
+            "End": 1388670,
+            "Text": "还有一些，就是小孩子吃完东西去社区里头那个属于一个休闲场所吧。一个就是玩啊、遛弯的地方儿房内房间里面跟一些垃圾之类的东西这些东西。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000186",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 179,
+            "SentenceId": 179,
+            "Start": 1388670,
+            "End": 1396260,
+            "Text": "有时候没有及时处理，还有个。这个的话可能不着急的慌可以住。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000187",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 180,
+            "SentenceId": 180,
+            "Start": 1396260,
+            "End": 1426260,
+            "Text": "对，保证接到客户这边的反馈之后会马上处理。然后现在就是因为现在都实行垃圾分类，所以咱们小区现在就简单的那种垃圾桶不行。然后也需要采购一些那种专门、专门儿的那些垃圾桶啊进行回收。然后希望这个也就是咱们小区的物业就是可以通知到居民让他们进行垃圾分类因为有的比如说电池啊这些有害的它都是要回收的如果只是把垃圾扔随便扔到垃圾桶里，然后"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000188",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 181,
+            "SentenceId": 181,
+            "Start": 1426260,
+            "End": 1440970,
+            "Text": "我们保洁人员，处理起来也非常麻烦。就是很有难度，因为每天小区这么多居民产生的垃圾不是说随便分一下类就能分清楚的。希望这个能能够给小区的居民都通知到对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000189",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 182,
+            "SentenceId": 182,
+            "Start": 1440970,
+            "End": 1455540,
+            "Text": "肯定不都的话，就是咱们客厨余垃圾是必须要分出来的。然后这种话都是需要咱们——就是与外面，就是咱们清洁部哦？需要租一辆车，然后把垃圾……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000190",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 183,
+            "SentenceId": 183,
+            "Start": 1455540,
+            "End": 1458460,
+            "Text": "就是不是粗说话，这个就不用说了。这个呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000191",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 184,
+            "SentenceId": 184,
+            "Start": 1458460,
+            "End": 1458890,
+            "Text": "哎呀！"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000192",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 185,
+            "SentenceId": 185,
+            "Start": 1458890,
+            "End": 1464430,
+            "Text": "联系一下当地的垃圾站，可以让他们帮助咱们进行垃圾分类。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000193",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 186,
+            "SentenceId": 186,
+            "Start": 1464430,
+            "End": 1484430,
+            "Text": "那需要短命期啊，呃然后就及时的进行联系。然后就是尽量多每天来几趟，因为毕竟一个很大的小区它的产生还是特别多。还有就是经理这边要负责市场里。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000194",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 187,
+            "SentenceId": 187,
+            "Start": 1484430,
+            "End": 1504430,
+            "Text": "与政府通知保持联系，及时通知到居民并下发的条例。嗯，请不要发大雷音给他们第二个处了现在最主要的就是防火对咱们小区有没有这个漏雨的情况？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000195",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 188,
+            "SentenceId": 188,
+            "Start": 1504430,
+            "End": 1524430,
+            "Text": "小区的路里情况比较少，但是呢这边儿收到的比较少。对然后即使我下次会打定什么呃价格不对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000196",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 189,
+            "SentenceId": 189,
+            "Start": 1524430,
+            "End": 1544430,
+            "Text": "然后，房宇的话也可以。就是咱们毕竟有停车棚嘛？有很多居民说自己的停车位啊什么的，有时候停不进去之类的。这方面需要改进一下：停车场面积太小了，居住人口太多。反正只要一跑。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000197",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 190,
+            "SentenceId": 190,
+            "Start": 1544430,
+            "End": 1552070,
+            "Text": "的话，其实挺大的。支付可以百分之两的部分就是刚才也可以比如说放一些车。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000198",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 191,
+            "SentenceId": 191,
+            "Start": 1552070,
+            "End": 1555820,
+            "Text": "这样的话不行，那样的话你太乱了。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000199",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 192,
+            "SentenceId": 192,
+            "Start": 1555820,
+            "End": 1559980,
+            "Text": "如果你要停自行车，或者停车的话，你就会觉得停车场太乱。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000200",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 193,
+            "SentenceId": 193,
+            "Start": 1559980,
+            "End": 1570000,
+            "Text": "如果它影响了汽车去停车场的路线的时候，就是。那名车他：如果乱放的话，把。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000201",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 194,
+            "SentenceId": 194,
+            "Start": 1569610,
+            "End": 1576780,
+            "Text": "怎么办？而而且后期，后期如果你要机动车变多了，那你自行车的话。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000202",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 195,
+            "SentenceId": 195,
+            "Start": 1576780,
+            "End": 1591600,
+            "Text": "只能需要财务是去考察一下，然后定一下。呃，你需要购买材料还有资金就是推荐一下这个经理的职务但是上一个季度咱们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000203",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 196,
+            "SentenceId": 196,
+            "Start": 1591600,
+            "End": 1595180,
+            "Text": "经费主要用在哪些地方？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000205",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 197,
+            "SentenceId": 197,
+            "Start": 1595490,
+            "End": 1620435,
+            "Text": "嗯，上个季度的话就是。就是有有很多呃需要、需要改进的地方嘛。比如说新加了垃圾桶什么的，呃安装摄像头儿箱头坏了的地方又重新呃安装了一下。还有就是一些呃那个客户投诉的赔偿损失。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000206",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 198,
+            "SentenceId": 198,
+            "Start": 1618435,
+            "End": 1620970,
+            "Text": "不是，是。然后一天上一次。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000207",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 199,
+            "SentenceId": 199,
+            "Start": 1620970,
+            "End": 1640970,
+            "Text": "嗯，客户就是对咱们的月度进行包奖。都说咱们在，就是消毒还有安全方面呃有些地方是做的特别好的，就是像反正还会考一些小福利了，就是发放口罩以及消灭什么的就是财务哦。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000208",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 200,
+            "SentenceId": 200,
+            "Start": 1640970,
+            "End": 1642970,
+            "Text": "呃。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000209",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 201,
+            "SentenceId": 201,
+            "Start": 1642970,
+            "End": 1645740,
+            "Text": "上次，就是上个月。就是……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000210",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 202,
+            "SentenceId": 202,
+            "Start": 1645740,
+            "End": 1665630,
+            "Text": "它的财务记得划分了一个重要的部分。那上次就主要咱们不知道之后有什么举报啊，什么投诉啊？呃对你就上个季度表那个电梯里嗯电梯里。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000211",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 203,
+            "SentenceId": 203,
+            "Start": 1665630,
+            "End": 1668400,
+            "Text": "是，按键不好用了。然后。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000212",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 204,
+            "SentenceId": 204,
+            "Start": 1668400,
+            "End": 1671050,
+            "Text": "刷卡，有的。有的住户说。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000213",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 205,
+            "SentenceId": 205,
+            "Start": 1671050,
+            "End": 1673860,
+            "Text": "刷卡，呃不灵敏了。所以。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000214",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 206,
+            "SentenceId": 206,
+            "Start": 1673860,
+            "End": 1680020,
+            "Text": "嗯，改进了一下电梯里的那个设备。那是怎么改进的？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000215",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 207,
+            "SentenceId": 207,
+            "Start": 1680020,
+            "End": 1686145,
+            "Text": "对，我这边就就是一个是及时更新换代。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000216",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 208,
+            "SentenceId": 208,
+            "Start": 1684145,
+            "End": 1689895,
+            "Text": "换那，就直接的更新了嘛。它看这有这个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000217",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 209,
+            "SentenceId": 209,
+            "Start": 1687895,
+            "End": 1716420,
+            "Text": "看，这个这个时候就要看是呃业主的卡不灵敏还是咱们的设备不灵敏。如果是这一栋楼的人都都反映说：“这个不太好用”，那我们就要去检查我们的设备是不是我们的设备出现了问题？如果就单单是一户居民的话，我们可以考虑：嗯让这个居民、具体一个居民够就是让他去换那个电梯卡对。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000218",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 210,
+            "SentenceId": 210,
+            "Start": 1716420,
+            "End": 1736420,
+            "Text": "一部分我们客户的话，就会和设备呃管理那一块儿就是把我们的意见呢给他然后他就进行检查。对对。还有问：咱们的楼上啊？下楼垃圾都混水了嘛！高容知物是他们呀。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000220",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 211,
+            "SentenceId": 211,
+            "Start": 1736430,
+            "End": 1740970,
+            "Text": "就一定要多加这个安全标识。对，这可……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000221",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 212,
+            "SentenceId": 212,
+            "Start": 1740970,
+            "End": 1760970,
+            "Text": "都有一种感觉，就是差点没达到。但是幸好我们有今天的这个英雄，就造成人员伤害的啊！这种情况下我们要做到责任划分。咱们就是要做到告知的义务，就是呃如果发生抛物的人造成了什么损害的话他需要。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000222",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 213,
+            "SentenceId": 213,
+            "Start": 1760970,
+            "End": 1780970,
+            "Text": "不知道什么责任，这个包吃不饱。就是如果真的是伤人的话，那也是由咱们管嗯呃自己处理当做一个提醒啊？呃，那咱们小区周边。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000223",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 214,
+            "SentenceId": 214,
+            "Start": 1780970,
+            "End": 1784290,
+            "Text": "新盖的楼房在施工。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000224",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 215,
+            "SentenceId": 215,
+            "Start": 1784290,
+            "End": 1787370,
+            "Text": "他们有没有打扰到我们？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000225",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 216,
+            "SentenceId": 216,
+            "Start": 1787370,
+            "End": 1807370,
+            "Text": "物业，有没有业主说的那个举报这个问题？呃这方面的话是有进行这个投诉的但是特别少因为咱们他们只是擦个边然后他们的。呃我们小区的话就设备上的话就是反正隔音是做的比较不错的嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000226",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 217,
+            "SentenceId": 217,
+            "Start": 1807370,
+            "End": 1817120,
+            "Text": "这个也是跟设备进行，呃那个对机以后他们就是对咱们的隔音进行了调查。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000227",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 218,
+            "SentenceId": 218,
+            "Start": 1817120,
+            "End": 1844280,
+            "Text": "如果，如果这个就是临近这个施工地段的话我们也会加加装一些临时的这个隔音板。嗯？哪个楼层都得装吗？呃，就是邻近这个施工地段的小区我们会实地考察一下它这个噪音是不是影响了居民的正常生活。如果对这个居民的正常生活有影响的话而且对我们就会加装一层这种隔音板。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000228",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 219,
+            "SentenceId": 219,
+            "Start": 1844280,
+            "End": 1864280,
+            "Text": "也可以去和工地调节一下，如果条件不好的话。咱们可以有更更多的选择呢？克制也是大概不行的工程型。可小区绿化呢就是。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000229",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 220,
+            "SentenceId": 220,
+            "Start": 1864280,
+            "End": 1871340,
+            "Text": "都是什么品种的花呀、草啊？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000230",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 221,
+            "SentenceId": 221,
+            "Start": 1871340,
+            "End": 1874150,
+            "Text": "草就属于普通的那种。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000231",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 222,
+            "SentenceId": 222,
+            "Start": 1874150,
+            "End": 1878280,
+            "Text": "草，就属于那种正常的绿化草坪一样的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000232",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 223,
+            "SentenceId": 223,
+            "Start": 1878280,
+            "End": 1891720,
+            "Text": "花儿可以养些米安，这些东西对一养殖啊。花儿可以种一些牡丹呀、像什么的一些东西也可以找一部分种一些玫瑰。不过就怕有些人进行采摘。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000233",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 224,
+            "SentenceId": 224,
+            "Start": 1891720,
+            "End": 1909850,
+            "Text": "咱们财务当初就是考虑到成本问题，都是。你要稍微简单的草稿和做到那么精致。然后是那咱们现在跑M大概是一天巡逻几次？平常都几点开始巡逻？还有你们设置几个一个点。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000234",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 225,
+            "SentenceId": 225,
+            "Start": 1909850,
+            "End": 1920970,
+            "Text": "对，小区。每栋楼都有三个点位嗯大门有一个点位嗯然后公园和街道的住宅有若干个点位嗯"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000235",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 226,
+            "SentenceId": 226,
+            "Start": 1919670,
+            "End": 1922650,
+            "Text": "嗯，它的后期。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000236",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 227,
+            "SentenceId": 227,
+            "Start": 1922650,
+            "End": 1932720,
+            "Text": "他会去：，晴天三次。下午时候三次。上班时间呢？就是从八点到中午的十二点。然后进行换班儿分为上午班和中午班呀会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000237",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 228,
+            "SentenceId": 228,
+            "Start": 1932720,
+            "End": 1935710,
+            "Text": "下午了，还有打算。那夜间是那个问题呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000238",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 229,
+            "SentenceId": 229,
+            "Start": 1934420,
+            "End": 1941680,
+            "Text": "嗯，夜间巡逻的问题。保安我会让他们进行巡逻和督促的，因为有的保安会反正。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000239",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 230,
+            "SentenceId": 230,
+            "Start": 1941680,
+            "End": 1950130,
+            "Text": "那不穷。嗯，但如果犯一种情况：那你……那你是？你不是——先是通报批评了然后进行罚款的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000240",
+        "SpeakerId": "speaker_1",
+        "Words": [
+          {
+            "Id": 231,
+            "SentenceId": 231,
+            "Start": 1950130,
+            "End": 1952920,
+            "Text": "如果还是不改进的话，可以开始。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000241",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 232,
+            "SentenceId": 232,
+            "Start": 1952580,
+            "End": 1956260,
+            "Text": "还有，那就是这个设备检修。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000242",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 233,
+            "SentenceId": 233,
+            "Start": 1956260,
+            "End": 1959180,
+            "Text": "大概是多久检查一次？比如主要。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000243",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 234,
+            "SentenceId": 234,
+            "Start": 1959180,
+            "End": 1972840,
+            "Text": "那问题是在哪些？税费减税的话，就是咱们通常一个季度减税一次。对对因为如果你减税太频繁的话没有那个必要了其实嗯嗯一个季度就足够的。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000244",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 235,
+            "SentenceId": 235,
+            "Start": 1972840,
+            "End": 1975500,
+            "Text": "大概哪些，那些设备是什么？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000245",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 236,
+            "SentenceId": 236,
+            "Start": 1975500,
+            "End": 1978600,
+            "Text": "主要出现问题了。然后，出……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000246",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 237,
+            "SentenceId": 237,
+            "Start": 1978600,
+            "End": 1982310,
+            "Text": "管道啊，然后是什么？陈亚能啊。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000247",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 238,
+            "SentenceId": 238,
+            "Start": 1982310,
+            "End": 1985435,
+            "Text": "这些东西，现在小区业主们。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000248",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 239,
+            "SentenceId": 239,
+            "Start": 1983435,
+            "End": 1989790,
+            "Text": "呢，他们大多数是太阳能还是电能？现在这个夏季吧。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000249",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 240,
+            "SentenceId": 240,
+            "Start": 1989790,
+            "End": 1994790,
+            "Text": "可能是更加省，省这个节省支支出。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000250",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 241,
+            "SentenceId": 241,
+            "Start": 1994790,
+            "End": 1997750,
+            "Text": "咱们小区现在是，说太阳能。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000251",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 242,
+            "SentenceId": 242,
+            "Start": 1997750,
+            "End": 1999510,
+            "Text": "老多了，还是那个。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000252",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 243,
+            "SentenceId": 243,
+            "Start": 1999510,
+            "End": 2003385,
+            "Text": "电视不稀有，因为看的能文比较多。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000253",
+        "SpeakerId": "speaker_4",
+        "Words": [
+          {
+            "Id": 244,
+            "SentenceId": 244,
+            "Start": 2001385,
+            "End": 2009070,
+            "Text": "那用太阳能的，有没有这种漏水的情况呢？就比如说上水不及时关闭造成大量的……"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000254",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 245,
+            "SentenceId": 245,
+            "Start": 2009070,
+            "End": 2010920,
+            "Text": "呃，不是影响到小区。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000255",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 246,
+            "SentenceId": 246,
+            "Start": 2010920,
+            "End": 2040920,
+            "Text": "哦，这个我们会就比如说这一栋楼的这个他们。我会就是及时地去看哪是哪一个居民？那一户居民呢他没有关啊我们就会去这提醒他，就去跟那个居民联系然后呃至于这个对影响到其他小区居民的话它会有积水，我们也会及时地去排排水嗯"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000256",
+        "SpeakerId": "speaker_3",
+        "Words": [
+          {
+            "Id": 247,
+            "SentenceId": 247,
+            "Start": 2040920,
+            "End": 2041290,
+            "Text": "嗯。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000257",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 248,
+            "SentenceId": 248,
+            "Start": 2041290,
+            "End": 2052300,
+            "Text": "那保安部这边有什么问题吗？保安部这边没有什么问题。嗯，这个保洁部呢除了让财务不采购一些。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000258",
+        "SpeakerId": "speaker_2",
+        "Words": [
+          {
+            "Id": 249,
+            "SentenceId": 249,
+            "Start": 2052300,
+            "End": 2055290,
+            "Text": "那些，呃标识比如说通知然后。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000259",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 250,
+            "SentenceId": 250,
+            "Start": 2055290,
+            "End": 2060070,
+            "Text": "提示，别的之外也没有什么。财务部呢？"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000260",
+        "SpeakerId": "speaker_0",
+        "Words": [
+          {
+            "Id": 251,
+            "SentenceId": 251,
+            "Start": 2060070,
+            "End": 2063080,
+            "Text": "嗯，财务部的工作刚刚已经会。"
+          }
+        ]
+      },
+      {
+        "ParagraphId": "seg-000261",
+        "SpeakerId": "unknown",
+        "Words": [
+          {
+            "Id": 252,
+            "SentenceId": 252,
+            "Start": 2063080,
+            "End": 2083080,
+            "Text": "不知道吧？嗯，客户。客服已经和客户的这些个协调好对接工作了。行我这边也是那咱们今天的会告诉您呢。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1434 @@
+{
+  "meeting_id": "mtg_c01e913f873d1bca",
+  "title": "商场运营与安全管理优化会议",
+  "duration_ms": 1862035,
+  "context_policy": "deterministic_blocks_map_reduce",
+  "full_summary": "本次会议围绕商场运营、服务规范、食品安全、促销策略及安保措施展开讨论。会议首先回顾了上月各部门的业绩及问题，重点强调了食材新鲜度和食品安全的四层把关机制。随后，针对餐饮部服务流程，提出加强员工培训，避免与顾客争执，并制定文明用语培训计划。超市部门分析了夏季销售情况，提出增加日化类商品销售、优化水果促销策略及顾客服务措施。服装部讨论了引进海外品牌、优化陈列及促销活动。安保部门强调加强夜间巡逻、消防设备检查及小广告管理。餐饮部提出改善员工餐食质量，制定每周食谱并确保卫生安全。会议最后明确了后续工作重点，包括提升服务质量、优化运营流程及加强安全管理。",
+  "chapters": [
+    {
+      "id": 1,
+      "start_ms": 33610,
+      "end_ms": 299050,
+      "title": "会议要点与摘要",
+      "summary": "会议明确各部门职责，每月召开总结会讨论各部门情况。加强食材新鲜度和食品安全管理，制定四层把关机制确保食品安全。规范服务行业员工行为，避免与顾客争执。员工工资与商场收益挂钩，奖金有浮动。",
+      "start_ref": "seg-000002",
+      "end_ref": "seg-000039",
+      "refs": [
+        "seg-000003",
+        "seg-000007"
+      ]
+    },
+    {
+      "id": 2,
+      "start_ms": 299050,
+      "end_ms": 390630,
+      "title": "服务规范与矛盾处理",
+      "summary": "本块重点明确每月需进行文明用语培训，确保十字礼貌用语掌握。服务员与顾客发生争执时需及时劝离并由主管处理，同时每日需检查熟食销售情况，避免滞销食品浪费。矛盾处理需从自身找原因，避免归责于顾客，并要求服务员对顾客道歉以缓和矛盾。",
+      "start_ref": "seg-000040",
+      "end_ref": "seg-000049",
+      "refs": [
+        "seg-000040",
+        "seg-000045"
+      ]
+    },
+    {
+      "id": 3,
+      "start_ms": 390630,
+      "end_ms": 570550,
+      "title": "熟食销售与超市部门销售分析",
+      "summary": "本块重点明确控制熟食生产量以匹配销量，每日统计销量指导次日制作，并确保熟食在七点半前清仓。超市部门销售因夏季增长，生鲜畅销而火锅底料冷淡，夏季消费增加导致日化类和冷饮销售上升，同时加强食物保质期检查以保障安全。",
+      "start_ref": "seg-000050",
+      "end_ref": "seg-000063",
+      "refs": [
+        "seg-000050",
+        "seg-000053"
+      ]
+    },
+    {
+      "id": 4,
+      "start_ms": 570440,
+      "end_ms": 779350,
+      "title": "促销策略与顾客服务优化",
+      "summary": "本块重点通过促销活动促进夏季畅销商品销售，并优化顾客服务流程，包括引导首次到店顾客、为特殊人群提供服务、处理退货问题及应对极端顾客行为。",
+      "start_ref": "seg-000064",
+      "end_ref": "seg-000078",
+      "refs": [
+        "seg-000064",
+        "seg-000065",
+        "seg-000074"
+      ]
+    },
+    {
+      "id": 5,
+      "start_ms": 779380,
+      "end_ms": 1145910,
+      "title": "海外产品引进与市场调整",
+      "summary": "本块重点明确引进海外名贵服装并设立专门区域，通过模特展示和海报宣传提升顾客认知，同时根据市场变动及时调整店内服装陈列与设计，并针对淡季服装开展限时促销活动。",
+      "start_ref": "seg-000080",
+      "end_ref": "seg-000103",
+      "refs": [
+        "seg-000088",
+        "seg-000093",
+        "seg-000102"
+      ]
+    },
+    {
+      "id": 6,
+      "start_ms": 1145800,
+      "end_ms": 1491430,
+      "title": "安保与服务优化措施",
+      "summary": "本块重点加强安保人员培训与服务优化，提升保安积极性和归属感，改进停车管理，优化顾客沟通方式，并改善保安宿舍及生活条件，同时加强周边小广告和小摊位的管理。",
+      "start_ref": "seg-000104",
+      "end_ref": "seg-000120",
+      "refs": [
+        "seg-000104",
+        "seg-000105"
+      ]
+    },
+    {
+      "id": 7,
+      "start_ms": 1491430,
+      "end_ms": 1641715,
+      "title": "餐饮与卫生管理优化",
+      "summary": "本块重点明确餐饮供应需提前协调各部门，确保主食种类和分量合理，并强调卫生检查与避免浪费。同时提出增设水果试吃摊位以提升顾客体验。",
+      "start_ref": "seg-000121",
+      "end_ref": "seg-000136",
+      "refs": [
+        "seg-000124",
+        "seg-000131",
+        "seg-000135"
+      ]
+    },
+    {
+      "id": 8,
+      "start_ms": 1649280,
+      "end_ms": 1857590,
+      "title": "商场运营与安全管理优化",
+      "summary": "本块重点提出联合服装与日化部门进行消费券促销，促进消费；根据市场调研改进服装款式并制定销量任务计划；加强夜间巡逻和小广告管理，确保贵重物品安全；定期检查消防器材，保障安全通道畅通；设立区域监督者，定期抽查执行情况；加强人员管理，提升服务态度与工作积极性。",
+      "start_ref": "seg-000137",
+      "end_ref": "seg-000158",
+      "refs": [
+        "seg-000137",
+        "seg-000140",
+        "seg-000147"
+      ]
+    }
+  ],
+  "speaker_summaries": [
+    {
+      "speaker_id": "speaker_5",
+      "summary": "sp5作为董事长，强调了食品安全和卫生检查的重要性，并提到下月将进行国外品牌广告宣传、服装上架下架安排及消防器材定期检查等事项。",
+      "refs": [
+        "seg-000153",
+        "seg-000131"
+      ]
+    },
+    {
+      "speaker_id": "speaker_1",
+      "summary": "sp3讨论了安保部门的职责，包括安全管理和人员培训，强调保安需具备消防知识、沟通技巧及应急处理能力。还提到停车管理、小广告清理、夜间巡逻及员工生活条件改善等具体措施。",
+      "refs": [
+        "seg-000114",
+        "seg-000106"
+      ]
+    },
+    {
+      "speaker_id": "speaker_3",
+      "summary": "sp4主持了会议，讨论了餐饮部、超市、服装部等部门的问题与建议，包括服务员与顾客的矛盾处理、商品退货流程、特殊顾客管理、季节性服装滞销及安保管理等方面。",
+      "refs": [
+        "seg-000113",
+        "seg-000099"
+      ]
+    },
+    {
+      "speaker_id": "speaker_2",
+      "summary": "sp2分析了超市部门的销售情况，指出夏季水果蔬菜畅销，但火锅底料处于冷淡期，同时提到日化类商品因夏季活动增多而销量上升。此外，sp2还讨论了促销策略、顾客服务、商品退换流程以及下月计划中的联合促销活动。",
+      "refs": [
+        "seg-000058",
+        "seg-000135"
+      ]
+    },
+    {
+      "speaker_id": "speaker_0",
+      "summary": "sp0介绍了服装部的工作重点，包括店内陈列、会员维护、员工培训、海外产品引进及市场调研。还提到根据市场趋势调整服装款式和销售策略，并通过促销活动提升销量。",
+      "refs": [
+        "seg-000083",
+        "seg-000096"
+      ]
+    },
+    {
+      "speaker_id": "speaker_4",
+      "summary": "sp7强调了食品安全的重要性，提出从采购到厨师的四层把关机制，确保食材安全；同时提到服务行业需注意顾客与员工的沟通问题，避免争执，并通过培训和制度保障顾客体验。此外，还讨论了主食供应、熟食保鲜、促销活动及员工管理等方面的具体措施。",
+      "refs": [
+        "seg-000126",
+        "seg-000045"
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "id": 1,
+      "task": "引进海外产品",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 925000,
+      "end_ms": 951980,
+      "refs": [
+        "seg-000088"
+      ]
+    },
+    {
+      "id": 2,
+      "task": "培训店员",
+      "owner": "speaker_0",
+      "deadline": null,
+      "start_ms": 841255,
+      "end_ms": 871255,
+      "refs": [
+        "seg-000083"
+      ]
+    },
+    {
+      "id": 3,
+      "task": "明确待办",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 1502220,
+      "end_ms": 1514460,
+      "refs": [
+        "seg-000124"
+      ]
+    },
+    {
+      "id": 4,
+      "task": "制定销量任务计划",
+      "owner": null,
+      "deadline": null,
+      "start_ms": 1678400,
+      "end_ms": 1701110,
+      "refs": [
+        "seg-000140"
+      ]
+    },
+    {
+      "id": 5,
+      "task": "加强夜间巡逻",
+      "owner": "speaker_1",
+      "deadline": null,
+      "start_ms": 1722680,
+      "end_ms": 1745960,
+      "refs": [
+        "seg-000147"
+      ]
+    }
+  ],
+  "transcription": [
+    {
+      "segment_id": "seg-000002",
+      "start_ms": 33610,
+      "end_ms": 38235,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "零零二，我是董事长。幺二六，我是安保。"
+    },
+    {
+      "segment_id": "seg-000003",
+      "start_ms": 36235,
+      "end_ms": 39735,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "不是的，零二六我是安保部。零二八经"
+    },
+    {
+      "segment_id": "seg-000004",
+      "start_ms": 37735,
+      "end_ms": 41070,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "我是安保部，零二八经理。"
+    },
+    {
+      "segment_id": "seg-000005",
+      "start_ms": 41070,
+      "end_ms": 41340,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "就。"
+    },
+    {
+      "segment_id": "seg-000006",
+      "start_ms": 41340,
+      "end_ms": 45215,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "成衣部，零二三超市部；零二四服装部。"
+    },
+    {
+      "segment_id": "seg-000007",
+      "start_ms": 43215,
+      "end_ms": 45930,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "是部，零二四服装部。"
+    },
+    {
+      "segment_id": "seg-000008",
+      "start_ms": 45930,
+      "end_ms": 50380,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "咱们各部门提前开公司。嗯。"
+    },
+    {
+      "segment_id": "seg-000009",
+      "start_ms": 50380,
+      "end_ms": 53400,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "月末总结会。"
+    },
+    {
+      "segment_id": "seg-000010",
+      "start_ms": 53400,
+      "end_ms": 70250,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "每个月都要开会，今年也不例外。嗯，咱们总经理这边进行一个这个呃啊总结吧会议的。"
+    },
+    {
+      "segment_id": "seg-000011",
+      "start_ms": 70250,
+      "end_ms": 88330,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "行吧。嗯，我经过那个董事长的话然后，然后就是咱们总结一下上个月、上个月各部门呃各部门有具体有什么情况什么问题或者说有什么建议可以记下来从这个财务开始嘛？"
+    },
+    {
+      "segment_id": "seg-000012",
+      "start_ms": 88330,
+      "end_ms": 108020,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "呃，我们这个这个月业绩呢跟上个月基本持平。嗯，然后我们想在呃下就是说：我们这、你这个月呢主要就是对员工的一些深度的一些提醒和要求啊！"
+    },
+    {
+      "segment_id": "seg-000013",
+      "start_ms": 108020,
+      "end_ms": 111060,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "就是因为到了夏天了，嗯。这……"
+    },
+    {
+      "segment_id": "seg-000014",
+      "start_ms": 111060,
+      "end_ms": 117950,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "这些食材的新鲜程度，我们要再加强一些。我们提出了几点。"
+    },
+    {
+      "segment_id": "seg-000015",
+      "start_ms": 117950,
+      "end_ms": 123430,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "就是从采购人员，这样开始。呃严格把关、把控。"
+    },
+    {
+      "segment_id": "seg-000016",
+      "start_ms": 123430,
+      "end_ms": 128730,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "食材的新鲜，就是不新鲜的食材。呃，不合格的这个食。"
+    },
+    {
+      "segment_id": "seg-000017",
+      "start_ms": 128730,
+      "end_ms": 133930,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "嗯，采购人员不进。然后呃，采购人。"
+    },
+    {
+      "segment_id": "seg-000018",
+      "start_ms": 133930,
+      "end_ms": 136720,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "里面进来这些东西，呃要有负责。"
+    },
+    {
+      "segment_id": "seg-000019",
+      "start_ms": 136720,
+      "end_ms": 139890,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "人来接收这些，也就是说这个。"
+    },
+    {
+      "segment_id": "seg-000020",
+      "start_ms": 139890,
+      "end_ms": 145240,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "负责人如果看到不新鲜的或者不合格的食材，他不收。"
+    },
+    {
+      "segment_id": "seg-000021",
+      "start_ms": 145240,
+      "end_ms": 154740,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "然后到了厨师那儿，发现有不新鲜的或者嗯不太好的这这些食材。无论是肉类、鱼类还是菜类。"
+    },
+    {
+      "segment_id": "seg-000022",
+      "start_ms": 154740,
+      "end_ms": 158530,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "不做。然后等到了，我们卖的这。"
+    },
+    {
+      "segment_id": "seg-000023",
+      "start_ms": 158530,
+      "end_ms": 161330,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "一些呃，如果发现了嗯。"
+    },
+    {
+      "segment_id": "seg-000024",
+      "start_ms": 161330,
+      "end_ms": 174260,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "一些不新鲜的，呃不太好的就是不合格的卫生不合格或者说是。呃这新店程度不好的他们不卖。也就是说四层把关我们层层把关保证。"
+    },
+    {
+      "segment_id": "seg-000025",
+      "start_ms": 174260,
+      "end_ms": 204260,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "无论是我们内部的员工在这就餐，还是来商场呃购物的这些顾客他们进餐。保证了他们的进餐的安全这一点我说：嗯因为病从口入嘛所以吃的东西一定要注意食品安全一定要注意对啊所以我们是采取了四层的把关就是要严格控制食材的安全、食材的卫生让每一个呃就餐的员工"
+    },
+    {
+      "segment_id": "seg-000026",
+      "start_ms": 189135,
+      "end_ms": 192635,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "但食品安全一定要注意。"
+    },
+    {
+      "segment_id": "seg-000027",
+      "start_ms": 204260,
+      "end_ms": 206870,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "和就餐的顾客都能够安全。"
+    },
+    {
+      "segment_id": "seg-000028",
+      "start_ms": 206870,
+      "end_ms": 210750,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "放心。这是我们呃，上个月的。"
+    },
+    {
+      "segment_id": "seg-000029",
+      "start_ms": 210750,
+      "end_ms": 225875,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "就是在那个餐饮部嘛，服务过程中有没有说？这个就是服务员。服务员都是对客人有什么出现，就是呃有小情绪的这种情况啊！"
+    },
+    {
+      "segment_id": "seg-000030",
+      "start_ms": 223875,
+      "end_ms": 245860,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "什么情况？啊，这个因为我们做服务行业的。什么人都能去得到：素质高的、素质低的对吧？但是我们对员工的呃教育是不准不允许和顾客发生争执嗯因为呃虽然我们并不信奉就是说不愧上帝呃但是我们说不。"
+    },
+    {
+      "segment_id": "seg-000031",
+      "start_ms": 245860,
+      "end_ms": 249140,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "课是我们的经济来源。我们可以这样说：因为我如果……"
+    },
+    {
+      "segment_id": "seg-000032",
+      "start_ms": 249140,
+      "end_ms": 257920,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "如果我们呃，太过强调说顾客上帝他们会有一种抵触的心理。我们说：“顾客是我们的经济来源。”如果没有顾客的话，我们做……"
+    },
+    {
+      "segment_id": "seg-000033",
+      "start_ms": 257920,
+      "end_ms": 260040,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "东西没有人买，我们是赔。"
+    },
+    {
+      "segment_id": "seg-000034",
+      "start_ms": 260040,
+      "end_ms": 270480,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "明显的，我们就这个工资是跟我们的收益挂挂钩的。不是说我们上了一天班儿，我们做出来东西了啊！不管卖不卖不出去商场就应该给我们发工资过。"
+    },
+    {
+      "segment_id": "seg-000035",
+      "start_ms": 270480,
+      "end_ms": 272650,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "我们这个。"
+    },
+    {
+      "segment_id": "seg-000036",
+      "start_ms": 272650,
+      "end_ms": 283730,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "工资，我们的是给他们的定的就是基本工资是呃有一个基数。那么奖金是有浮动的：如果我们的收益没有达到的话，我们奖金不。"
+    },
+    {
+      "segment_id": "seg-000037",
+      "start_ms": 283730,
+      "end_ms": 286630,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "受影响，所以每一个人都会。"
+    },
+    {
+      "segment_id": "seg-000038",
+      "start_ms": 286630,
+      "end_ms": 296310,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "对自己有一个严格的要求，不会说跟顾客吵架呀。他们不会他们会收敛自己这样这一点呢？其实我们呃对。"
+    },
+    {
+      "segment_id": "seg-000039",
+      "start_ms": 296310,
+      "end_ms": 299050,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "呃，员工呢进行了就是。"
+    },
+    {
+      "segment_id": "seg-000040",
+      "start_ms": 299050,
+      "end_ms": 317475,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "物的一些标准，一些要求。比如说他们会对嗯：“顾客说您好，请对不起。”就是这这些文明用语十个字的培训，就是谢谢啊！这一月要每个月都要做知道吗？对对对每每个月我们都都兼职一遍。"
+    },
+    {
+      "segment_id": "seg-000041",
+      "start_ms": 310975,
+      "end_ms": 314475,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "谢谢。这，实际上每个月都要做，你知道吗？"
+    },
+    {
+      "segment_id": "seg-000042",
+      "start_ms": 315475,
+      "end_ms": 325725,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "虽然不要，不要觉得这个是小事。嗯，虽然讲过一遍了，但是还要每个月都要不断的加强的。"
+    },
+    {
+      "segment_id": "seg-000043",
+      "start_ms": 323725,
+      "end_ms": 337240,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "加强这个。因为在这个餐饮部，用这个服务员用餐过程中啊，就是客人用餐过程中很容易发生矛盾。如果说，就是服务员和那个客人真的就是发生了口角的争执，会怎么处理？"
+    },
+    {
+      "segment_id": "seg-000044",
+      "start_ms": 337240,
+      "end_ms": 338540,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，如果说。"
+    },
+    {
+      "segment_id": "seg-000045",
+      "start_ms": 338540,
+      "end_ms": 367610,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "呃，有的服务员就是您。其实一般如果说这种情况，其实一般都是客人挑起来的。但是我们不能去单纯的归责于客人，我们要从自己身上找原因。嗯，如果真的发生这样事情，我们会先劝离这个工作人员由主主管或者说其他的代班儿的来处理这件事情然后我们会对这个工作人员呃首先进行一个安抚然后让他自己认识到自己的错误。"
+    },
+    {
+      "segment_id": "seg-000046",
+      "start_ms": 367610,
+      "end_ms": 372910,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "让他去给客人道歉。我们是这样来处理的：哦，"
+    },
+    {
+      "segment_id": "seg-000047",
+      "start_ms": 372910,
+      "end_ms": 375720,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "如果说，避免矛盾的激化。"
+    },
+    {
+      "segment_id": "seg-000048",
+      "start_ms": 373840,
+      "end_ms": 389160,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "如果说，就是在那个每一天餐饮部门肯定会有一个生食熟食会有一个每天的。每天就是新做出来的比如说那些熟食如果当天嗯卖不出去或者说销售部不滞销了会怎么处理这个东西？"
+    },
+    {
+      "segment_id": "seg-000049",
+      "start_ms": 389160,
+      "end_ms": 390630,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "一般情况下，就是这些。"
+    },
+    {
+      "segment_id": "seg-000050",
+      "start_ms": 390630,
+      "end_ms": 400750,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "熟食，嗯它有这个保鲜的呃这个程度。那么我们会在首首先我们会控制这个熟食的这个量不生产的量。"
+    },
+    {
+      "segment_id": "seg-000051",
+      "start_ms": 400750,
+      "end_ms": 403470,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "就是做多少，卖多少。因为我们对。"
+    },
+    {
+      "segment_id": "seg-000052",
+      "start_ms": 403470,
+      "end_ms": 406370,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "呃，每天的这个预算啊。"
+    },
+    {
+      "segment_id": "seg-000053",
+      "start_ms": 406370,
+      "end_ms": 413030,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "说每天的销量都会有一个统计，这个统计呢就让我们对明天的就是制作的数据。"
+    },
+    {
+      "segment_id": "seg-000054",
+      "start_ms": 413030,
+      "end_ms": 434410,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "父母会有一定的，就是一个预计。呃不会说剩太多，而且是在晚上七点半之前我们会出清以六折或者是甚至五折的这个嗯打打折这种优惠把它呃都卖出去而不会把它放到楼栋里面第二天再卖就影响口感也影响。"
+    },
+    {
+      "segment_id": "seg-000055",
+      "start_ms": 434410,
+      "end_ms": 435630,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "嗯。"
+    },
+    {
+      "segment_id": "seg-000056",
+      "start_ms": 435630,
+      "end_ms": 439505,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "好，呃下一个超市。嗯，超市。"
+    },
+    {
+      "segment_id": "seg-000057",
+      "start_ms": 437505,
+      "end_ms": 467505,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "部门这个……呃，这个月跟上个月相比来说。嗯，就是销售经济经那个经济有所轻微的增长。现在因为夏天到了然后，超市部门在对于比如说水果蔬菜生、嗯生鲜这些方面的话。嗯，嗯，就是比较畅销但是，有一个处于冷淡期的就是属于火锅底料，因为现。"
+    },
+    {
+      "segment_id": "seg-000058",
+      "start_ms": 467505,
+      "end_ms": 497505,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "现在夏天到了嘛，然后大家更多的是选择去外面烧烤或者在家里自行进行烧烤。像火锅这种比较炎热，大家想到就会有有所排斥的东西处于一个冷淡期。比如说冷饮现在的饮料我们也是处在一个畅销各种啤酒、各种嗯解暑的果汁，然后也是处在畅销的一个呃一个阶段。然后现在比较夏天比较炎热嘛，然后我们超市部门一层，我们超市部门就是工作范围也比较大，各种蔬菜海鲜。"
+    },
+    {
+      "segment_id": "seg-000059",
+      "start_ms": 497505,
+      "end_ms": 527505,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "然后水果它们的进货，嗯。然后我们也会就是说呃，嗯会进行它的保质期的查看我们的服务人员会增加对食物是否过期这个项目的检查比往常的时间、比往长的期间——就是……嗯嗯—察看的像察看的次数要更加多一些；然后为了保证这些食物的安全，然后呢在日化这一方面呢因为。"
+    },
+    {
+      "segment_id": "seg-000060",
+      "start_ms": 527505,
+      "end_ms": 557505,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "夏天就是人们出门活动比冬天相对来说一般要多吧，大家都比较爱。出门活动然后日化这些大部分都是消耗品，消耗品就是在生活中是必备的所以这消耗品的那个销售有所增加这是我们那个超市呃这个月经济增长的一个大部分原因。大部分原因就日化类对日化类和那些冷饮然后和那些嗯水果水。"
+    },
+    {
+      "segment_id": "seg-000061",
+      "start_ms": 549085,
+      "end_ms": 552820,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "然后，大部分原因就是日化类。"
+    },
+    {
+      "segment_id": "seg-000062",
+      "start_ms": 557505,
+      "end_ms": 564480,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，因为这些夏天是呃需要畅销。然后大家也都嗯你需要的一些东西这边儿的。"
+    },
+    {
+      "segment_id": "seg-000063",
+      "start_ms": 562790,
+      "end_ms": 570550,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "咱夏天这些水果目前嗯。这个促销形式。"
+    },
+    {
+      "segment_id": "seg-000064",
+      "start_ms": 570440,
+      "end_ms": 600440,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "促，因为现在夏天比较畅销。比如说呃桃呀嗯那个西瓜呀这些如果我们滞留的话其实这些食品的保质期也会不是特别好所以我们也采取了一系列的那个促销活动。比如说当我们的呃顾客购买了一定量的这个水果之后我们可以采采取赠送一点点然后让我们顾客看到我们的诚意然后比如说我们也可以交叉，交叉着来那个交那个交叉着来那个赠送食。"
+    },
+    {
+      "segment_id": "seg-000065",
+      "start_ms": 600440,
+      "end_ms": 615160,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "比如我们顾客购买了，购买了西瓜。我们可以赠送一两颗桃子。他们尝到桃子觉觉得味道鲜美之后可能也会下回过来的时候不可能也会购买桃子对回购桃子这类的商品。"
+    },
+    {
+      "segment_id": "seg-000066",
+      "start_ms": 615160,
+      "end_ms": 617010,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "嗯。"
+    },
+    {
+      "segment_id": "seg-000067",
+      "start_ms": 617010,
+      "end_ms": 634740,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "嗯，这边的话就是。比如说那个顾客有可能是第一次来咱们这个超市，就是他会找不到会那个不知道那个所有的所购买商品的区域或者说就是不不了解这个需要所买的商品到底是什么样子的对。"
+    },
+    {
+      "segment_id": "seg-000068",
+      "start_ms": 633340,
+      "end_ms": 646740,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对，我们一层的服务人员会进行引导。就看到顾客进来，会首先询问：“客户你想需要什么？”然后如果顾客说的句“”，我们一定会引领顾客过去。“。”然后让顾客自行。"
+    },
+    {
+      "segment_id": "seg-000069",
+      "start_ms": 646740,
+      "end_ms": 647790,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "购买。"
+    },
+    {
+      "segment_id": "seg-000070",
+      "start_ms": 647790,
+      "end_ms": 657500,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "然后就是，超市对待这个老弱病残这一类的特殊人群会有没有没有什么特殊的照顾之类的。老人。"
+    },
+    {
+      "segment_id": "seg-000071",
+      "start_ms": 657500,
+      "end_ms": 672900,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "病残对于他们，在一般情况下来说的话，嗯。对老弱病残比如说像这些小孩子的来我们超市一层的话，一般情况下他们要就是想：比如说呃……"
+    },
+    {
+      "segment_id": "seg-000072",
+      "start_ms": 672900,
+      "end_ms": 675480,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "unknown",
+      "text": "嗯。"
+    },
+    {
+      "segment_id": "seg-000073",
+      "start_ms": 675480,
+      "end_ms": 681620,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "比如说，我们应该是有专业的呃店员进行一些引导。"
+    },
+    {
+      "segment_id": "seg-000074",
+      "start_ms": 680560,
+      "end_ms": 706470,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "对于老人来，店里进行购买我们会选择这些专业的人员进行陪同。不会说让老人说一个人推着那么重的车或者一个人提着那么大的篮子难以行走方不方便？然后对于小孩儿的话比如说我们有糖果区如果小孩哭闹的话其实适当的给一颗糖果也也是无碍的因为我们这么大一个超市，不会说因为一颗糖果跟顾客发生口角、发生争执。这也是为了安抚顾客的心理。"
+    },
+    {
+      "segment_id": "seg-000075",
+      "start_ms": 706130,
+      "end_ms": 713900,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "呃，顾客就是在超市购买要商品。就是不满意，要退货的时候应该？就是具体的话有。"
+    },
+    {
+      "segment_id": "seg-000076",
+      "start_ms": 713630,
+      "end_ms": 740660,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "如果是因为商品的质量问题的话，我们就比如说：商品就是保质期过了或者不新鲜。买买回去的时候就已经有问题。我们会及时给顾客那个退换。如果说因是因为顾客的后期处理、后期管理的方式嗯对我们这个商品———就是才造成了呃无法使用的现象？这个我们可能……嗯会就是简单的协调一下，然后。"
+    },
+    {
+      "segment_id": "seg-000077",
+      "start_ms": 739330,
+      "end_ms": 754500,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "然后就是，呃比如说，就是有一些、有一些特殊的顾客吧。他比如说，就是性格比较那个极端。就是如果对于……就是被顾客辱骂或者殴打的话这种情况会怎么处理？"
+    },
+    {
+      "segment_id": "seg-000078",
+      "start_ms": 753330,
+      "end_ms": 779350,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "置？你说我们的服务人员被这种顾客。首先，我们公——我们既然是服务业，我们首先就是要先嗯：先换一批工作人员，然后先把那个就是比如说受到伤害的工作人员先安抚他的情绪，然后再去调解我们这个顾客。然后让我们顾客就是先冷静下来，然后跟我们顾客，然后他有什么方面的困扰？我们就进行解决。"
+    },
+    {
+      "segment_id": "seg-000080",
+      "start_ms": 779380,
+      "end_ms": 783255,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "好，那下面的话就是服装部。"
+    },
+    {
+      "segment_id": "seg-000081",
+      "start_ms": 781255,
+      "end_ms": 811255,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "门的话。这边首先是工作方面：是根据上面的要求把店内的一些摆设还有新款做一些最好的展示；安排一些人手……嗯对这个公司的促销活动进行一些销售，还会定期及时的做好竞争对手最新促销活动和款式变动的搜集，第一时间反映到公司的总部——嗯，做好会员。"
+    },
+    {
+      "segment_id": "seg-000082",
+      "start_ms": 811255,
+      "end_ms": 841255,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "员的基本资料整理及跟踪，维护老老顾客。时常保持与老顾客的联系，也会对一些老顾客进行一些优惠嗯了解顾客对产品的需求和最新动向。呃这个是根据这个会员或者老顾客对我们店店铺服装店铺的一些反馈来来进行一些改变的，嗯还会在销售销售技能方面我们服装部因为需要。"
+    },
+    {
+      "segment_id": "seg-000083",
+      "start_ms": 841255,
+      "end_ms": 871255,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "呃，一直向这个顾客介绍、介绍我们这个衣服。所以店员，店员必须要有一些一个好的一个心理嗯我们会定期对店员进行一些培训必须在推荐的时候要有一些自信说我们的衣服它就是质量十分保证的它的款式也是最近新颖的我们一定要对自己的这个衣服有一定的信心然后才能让顾客对我们服装有一些嗯"
+    },
+    {
+      "segment_id": "seg-000084",
+      "start_ms": 871255,
+      "end_ms": 901255,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "信赖感。其次呢，还会嗯对顾客的这个身材或者他的爱好进行一些合适的推荐，呃，还会进行一些首饰的配合向顾客介绍我们衣服的款式版型不会让顾客感到很尴尬。这个方面我们还会在衣，在顾客啊试衣服的时候进行一些调整啊帮助一下顾客这是我们哦对这个我们店员的一些要求我们会定期"
+    },
+    {
+      "segment_id": "seg-000085",
+      "start_ms": 901255,
+      "end_ms": 910460,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "做一些集中的培训，还会把这个嗯正确的说出我们衣服的一些优点优势。目前刚刚。"
+    },
+    {
+      "segment_id": "seg-000086",
+      "start_ms": 908460,
+      "end_ms": 920890,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "目前咱刚说了这么多，嗯。下下个月咱们准备这个有国外的一些大牌广告。"
+    },
+    {
+      "segment_id": "seg-000087",
+      "start_ms": 920890,
+      "end_ms": 925000,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，咱们这边准备定一些。这一块有什么想法？"
+    },
+    {
+      "segment_id": "seg-000088",
+      "start_ms": 925000,
+      "end_ms": 951980,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "嗯，这边和国外合作的话，我们首先会呃在店内空出、留出一些一个区域是我们海外专产品区。啊！可以明确的告诉顾客：我们这个是刚引进的一些海外的一些名贵的一些服装。嗯？可以方便顾客选购的时候，嗯一些更多的选择。"
+    },
+    {
+      "segment_id": "seg-000089",
+      "start_ms": 951980,
+      "end_ms": 957690,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "这一块有什么？有什么怎么给人家。"
+    },
+    {
+      "segment_id": "seg-000090",
+      "start_ms": 957690,
+      "end_ms": 961740,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "首先，我们先会让。引进人家产品。"
+    },
+    {
+      "segment_id": "seg-000091",
+      "start_ms": 959740,
+      "end_ms": 962650,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "先会让引进人家产品，引进人家。"
+    },
+    {
+      "segment_id": "seg-000092",
+      "start_ms": 962650,
+      "end_ms": 971140,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "这些衣服，您看。那咱要有刚才你说专门的地方这块儿，咱们准备去怎么去推广一下？"
+    },
+    {
+      "segment_id": "seg-000093",
+      "start_ms": 971140,
+      "end_ms": 986400,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "首先，我们是先会让我们店员对这个海外产品有足够的了解：它的版型、它的品牌。首先是要有一个足够的了解，然后再对顾客进行介绍的时候就比较。"
+    },
+    {
+      "segment_id": "seg-000094",
+      "start_ms": 986400,
+      "end_ms": 990810,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "人家，很多品牌基本上都。"
+    },
+    {
+      "segment_id": "seg-000095",
+      "start_ms": 990810,
+      "end_ms": 1020810,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "大一些。对，我们要对这个呃他这个服装换一个图片。方便向顾客介绍和推荐我们的这个新引进的衣服。然后其次我们是嗯会可以请一些这个模特或者嗯海或者啊一些专业人员然后进行一些我们衣服的展示怎么穿搭啊！"
+    },
+    {
+      "segment_id": "seg-000096",
+      "start_ms": 1020810,
+      "end_ms": 1050810,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "会对一些顾客进行一些这个，怎么搭配、怎么穿好看方面上的引导。让顾客看到我们这个衣服是嗯十分十分可以物美价廉的然后进行一些也可以进行一些海报的宣传啊放在我们那个店铺店铺呃前面。然后让顾客看到的时候就会嗯不会呃是因为因为顾客买衣服的话他首先会考虑这个是不是他喜欢的。"
+    },
+    {
+      "segment_id": "seg-000097",
+      "start_ms": 1050810,
+      "end_ms": 1064050,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "类型，啊！如果有这个嗯……如果有这个穿出来的样式。这个模特的这个模板是很好的对一个顾客进行一些意见上的引导。"
+    },
+    {
+      "segment_id": "seg-000099",
+      "start_ms": 1065890,
+      "end_ms": 1083170,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这边的话，就是那个咱们这个商场服装吧。它肯定会有一个，就是比如说提前，就是提前有一个应季、这个当前季度提前的一些衣服也也会有那个当季淡季对反季的衣服的滞销等……嗯等等啥子？"
+    },
+    {
+      "segment_id": "seg-000100",
+      "start_ms": 1081600,
+      "end_ms": 1085570,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "就是，服装的上架和下架这一块。"
+    },
+    {
+      "segment_id": "seg-000102",
+      "start_ms": 1085920,
+      "end_ms": 1115920,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "这个我们都是随时，随时跟踪市场的一些变动。进行一些店内服装的一些改动嗯现在流行这款衣服的话我们会在上我们会在上个月月底进行一些对上个月的一些总结然后对下个月嗯进行怎么样的设计店铺内的设计会有一些改动对一些啊顾客顾客的一些市场调研。"
+    },
+    {
+      "segment_id": "seg-000103",
+      "start_ms": 1115920,
+      "end_ms": 1145910,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "我们反映一下最近需要什么样的衣服。对于这些淡季，淡季的衣服的话，我们呃反季衣服是会进行一些限时的优惠活动。对一些嗯需要……促销活动啊？"
+    },
+    {
+      "segment_id": "seg-000104",
+      "start_ms": 1145800,
+      "end_ms": 1148630,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "好，那下一个安保部。"
+    },
+    {
+      "segment_id": "seg-000105",
+      "start_ms": 1148190,
+      "end_ms": 1178190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "门，我们这边主要就是以市场安全和人身安全为主要目的。而且要：要保安嘛工作？要让他们了解这些消防知识是怎么样简单的处理，而且有简单又有效。还有就是现在就是属于这种安保工作，在工作当中我们毕竟是工作好几年了吗他们在工作当中习惯性都是用经验去解决问题受这方面的干扰它们没有。"
+    },
+    {
+      "segment_id": "seg-000106",
+      "start_ms": 1178190,
+      "end_ms": 1208190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "我从客观的实际问题上面出发，还有就是对于判断的这种思维啊都是属于用自己经历过的一些事情或者一些自己的处理方法来处理而不是按照这种规定。所以我们这个近期会进行开会处理。还有就是首先就是内容上创新，我感觉这方面我我需要积极配合因为有时候让保安那种队长之类的指挥会顾客较多临场发挥的或者紧张之类的这方面就需。"
+    },
+    {
+      "segment_id": "seg-000107",
+      "start_ms": 1208190,
+      "end_ms": 1238190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "叫我们，领导下去指导一下。这样的话也可以调动他们的积极性还有他们的自信心。然后我们这方面困难就属于是如果保安队员这些工作人员他们受伤或者生病之类的东西我们会——我们这个公司会派人去探望一下。这样的话增加他们这种受到困难的时候他们知道会有人帮助他们而且是属。"
+    },
+    {
+      "segment_id": "seg-000108",
+      "start_ms": 1238190,
+      "end_ms": 1268190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "有一种朋友的关系，然后再去给他们。如果是没有结婚的话会送去一些饭菜照顾他的饮食这样的话会让他们对我们在工作当中产生一些积极性而不是为为了工作而去工作，而不是为了赚钱什么负责自己的部门因为这样的话他的心里也会松懈嘛他感觉到他不属于这一部分要让他融入进来还有就是思想上创新就比方说教育思想上给那些保安。"
+    },
+    {
+      "segment_id": "seg-000109",
+      "start_ms": 1268190,
+      "end_ms": 1298190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "就是引导他们这些改观问题，怎么样处理事物。不要用自己的经验去处理。要让他们客观的了解咱们商场这些规章制度，怎么样处理？还有一些就是属于停车问题的方面：停车问题的方面我们会采取，就是合理的收费；还有就是处理一些不知道停车会收费乱停车这一方面我们會联系交警配合我们的工作先是用，就是反正都是肯定用合理。"
+    },
+    {
+      "segment_id": "seg-000110",
+      "start_ms": 1298190,
+      "end_ms": 1328190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "你的语气去和这些顾客去交流，如果这方面交流行不通的话。顾客执意要这么做我们就会采取一些就是法律手段就像交警贴条属于上金金钱上面的扣除还有我们这个工作一定要有创新就是有些时候他们这些说教直接就是指出来顾客哪哪儿做的不对不如变成向顾客谈心。"
+    },
+    {
+      "segment_id": "seg-000111",
+      "start_ms": 1328190,
+      "end_ms": 1358190,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "坐下来交流一下。如果顾客有紧急事务的话，需要处理的话一定要语速表演的就是说得够快然后话说得够准确让顾客感觉到咱们是用心在服务他们还有就是属于保安全队队员就是属于需要他们的共同努力吧因为他们毕竟是受过我们这个部门军事化管理的而且还训练过他们这心理方面和一些体能方面肯定不会招一些体能较差的保安如果是以坏。"
+    },
+    {
+      "segment_id": "seg-000112",
+      "start_ms": 1358190,
+      "end_ms": 1387900,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "方面小市场发生搏斗抢劫之类的方面，保安能及时处理到这些问题。别的问题就是可以改善一下，保安就是宿舍的、生活条件方面的问题因为宿舍有些简陋就比方说没有什么他们是属于四人间没有什么独立卫生间之类的洗浴室还有上就是生理上面的问题就是有时候会出现热温度对或者是停水之类的东西。"
+    },
+    {
+      "segment_id": "seg-000113",
+      "start_ms": 1387210,
+      "end_ms": 1405370,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这句话对于商场，就是：就是商场。就是周边门口或者说，就是有那些，就是发散发小广告的或者说，就是有一些，就是那个小推车之类的、那些，就是小摊子、小摊位之间的这个这段话咱们应该按方位是怎么管理吧？首先。"
+    },
+    {
+      "segment_id": "seg-000114",
+      "start_ms": 1403760,
+      "end_ms": 1433760,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "管理的。首先是进行协商，因为我们这边是有地域之间的合同，比方说地皮这块儿地皮就是属于我们的，你不可以在这儿进行先和他进行合理的语气进行交流；如果它还是不听的话我们就需要采取一些强硬的手段，比方说，就是直接制止他或者是向一些当地部门报道。进行对我们这个地域使用的赔偿还有乱贴小广告之类的这方面问题我们保安会。"
+    },
+    {
+      "segment_id": "seg-000115",
+      "start_ms": 1433760,
+      "end_ms": 1445340,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "及时做到清理，需要就是配合一下后勤工作人员。怎么样？学习一下：怎么样处理掉这些小广告不会留污渍而且不会损坏这些公务，这些方面嗯。"
+    },
+    {
+      "segment_id": "seg-000117",
+      "start_ms": 1445940,
+      "end_ms": 1457590,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这边的话，就是上句：上个月各部门也都说了。上个月具体什么问题？然后咱们的话，就是各部们再说一下，就是对于下个月有什么期望会达到什么要求。然后这个……"
+    },
+    {
+      "segment_id": "seg-000118",
+      "start_ms": 1457590,
+      "end_ms": 1468540,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "unknown",
+      "text": "我们，下一个月呢？因为天气比较热吧。我们主动的去呃上一些嗯就是精美的小凉菜。"
+    },
+    {
+      "segment_id": "seg-000119",
+      "start_ms": 1468540,
+      "end_ms": 1471430,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "这样，销量会比那个。"
+    },
+    {
+      "segment_id": "seg-000120",
+      "start_ms": 1471430,
+      "end_ms": 1491430,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "会比较好，然后呢？嗯，就是对员工餐队这一方面会。增加一些花色，因为员工如果说吃的太单调的话呃，因为这个饮食也是很重要的一个环节哦！我们准备制定一个食谱啊，每周都会有变化。"
+    },
+    {
+      "segment_id": "seg-000121",
+      "start_ms": 1491430,
+      "end_ms": 1496820,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "呃，一周七天。每天中午都吃什么？因为中午基本上都是都在……嗯。"
+    },
+    {
+      "segment_id": "seg-000122",
+      "start_ms": 1496820,
+      "end_ms": 1499600,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "很难解决。如果我们本身有，"
+    },
+    {
+      "segment_id": "seg-000123",
+      "start_ms": 1499600,
+      "end_ms": 1502220,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "餐饮如果说，我们的餐饮做得过。"
+    },
+    {
+      "segment_id": "seg-000124",
+      "start_ms": 1502220,
+      "end_ms": 1514460,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "好，员工还去外面点外卖的话，那就是我们最大的失败了。所以我们要增加一些花色呃然后就是主食这一类呢嗯需要跟各个部门做一个协调大家提前。"
+    },
+    {
+      "segment_id": "seg-000125",
+      "start_ms": 1514460,
+      "end_ms": 1518290,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "说：“我吃馒头，还是吃烧饼？还是吃米饭？”啊！提提前。"
+    },
+    {
+      "segment_id": "seg-000126",
+      "start_ms": 1518290,
+      "end_ms": 1545330,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "说：“因为如果我们扔的米饭太多，大家伙儿都会选择吃烧饼、吃馒头了。”这个也是一个很尴尬的一个问题。呃，因为毕竟是吃的东西嘛，我们……我们一直嗯，说的就是不过夜。但是如果说嗯当天的馒头我们都扔了的话也也是挺可惜的一件事情所以这一点需要各个部门的配合我们在主食这一方面呢会提前就是早早上会告诉我们或者说"
+    },
+    {
+      "segment_id": "seg-000127",
+      "start_ms": 1545330,
+      "end_ms": 1547790,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "头一天晚上，我跟我说明天呃有。"
+    },
+    {
+      "segment_id": "seg-000128",
+      "start_ms": 1547790,
+      "end_ms": 1575200,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "你们部门是都吃什么，然后几份儿？呃，你们最好是详细告诉我们：几分米饭或者几分馒头或者几分烧饼。这这个样子的我们是论分儿的嗯但是肯定够每个人的根据大众的食食量是够的嗯然后这个菜呢我们会每个心机嗯不同的变换呢花色保证了大家的营养啊当当然啦卫生，嗯这一方面大。"
+    },
+    {
+      "segment_id": "seg-000129",
+      "start_ms": 1575200,
+      "end_ms": 1581300,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "unknown",
+      "text": "大家要是百分之百的放心，因为我们是有呃从法官的。然后就是。"
+    },
+    {
+      "segment_id": "seg-000130",
+      "start_ms": 1581300,
+      "end_ms": 1593900,
+      "speaker_id": "speaker_4",
+      "raw_speaker_id": "speaker_4",
+      "text": "在呃，对外销售这一块儿我们嗯主抓的依然是快餐。呃因为，在商场嘛它不是去饭店了哈做这大吃大喝了都是要一个快捷对。"
+    },
+    {
+      "segment_id": "seg-000131",
+      "start_ms": 1592520,
+      "end_ms": 1606680,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "对，快捷方便。还要注意一下卫生。啊！这个是重点。对每个月咱们都要进行一个这个检查这一块儿嗯专门抽掉一。"
+    },
+    {
+      "segment_id": "seg-000132",
+      "start_ms": 1606680,
+      "end_ms": 1611040,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "一批人对你们进行这个环境卫生的检查，还有。"
+    },
+    {
+      "segment_id": "seg-000133",
+      "start_ms": 1611040,
+      "end_ms": 1616990,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "一些，嗯上级部门儿也会对咱们进行检查。所以卫生方面一定要注意。"
+    },
+    {
+      "segment_id": "seg-000134",
+      "start_ms": 1616990,
+      "end_ms": 1619280,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，超市部门。"
+    },
+    {
+      "segment_id": "seg-000135",
+      "start_ms": 1619280,
+      "end_ms": 1649280,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "然后再对于下个月的计划来说，想要就是比这个月还要再增加一些。所以呢，其实在水果这方面我们是有销售的，因为它——我们跟果农也有这些合作。然后所以呢我就想：，我们可以在我们的商品一、我们的水果这边设立一些试吃的那个摊位对？然后比如说我们的水、我们的橙子、我们的那个水蜜桃、我们的西瓜可以榨汁分给大家品尝如果大家觉得美味就可能会更"
+    },
+    {
+      "segment_id": "seg-000136",
+      "start_ms": 1638965,
+      "end_ms": 1641715,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "摊位，是吃摊位。对然后。"
+    },
+    {
+      "segment_id": "seg-000137",
+      "start_ms": 1649280,
+      "end_ms": 1678190,
+      "speaker_id": "speaker_2",
+      "raw_speaker_id": "speaker_2",
+      "text": "这是在水货部分，然后在日化部门呢？我觉得是可以跟楼上的就是我们上层的那个服装那里进行联合。他们那里要是进行了消费，我们可以赠送比如说赠送二十块钱的购物券；是在一层日化部分消费。然后顾客在下面只要只要达到这个，比如说使用三十元，然后可以使用这个消费券，然后就在那个日化部门消费。这样呢就是可以促进对促进消费嗯是啊下个。"
+    },
+    {
+      "segment_id": "seg-000138",
+      "start_ms": 1674125,
+      "end_ms": 1677625,
+      "speaker_id": "speaker_3",
+      "raw_speaker_id": "speaker_3",
+      "text": "这样，的就是可以低对促进消费。"
+    },
+    {
+      "segment_id": "seg-000140",
+      "start_ms": 1678400,
+      "end_ms": 1701110,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "行服装这一方面的话，就是根据一下市场调研进行一些呃各个年龄阶段的人喜欢什么样的衣服。进行一些改进：服装上进行一些款式的改进；然后也会制给员工们制定一个明确的目标——我们下个月的这个销量任务计划。然后调动了一下员工的积极性。还有就……"
+    },
+    {
+      "segment_id": "seg-000141",
+      "start_ms": 1699580,
+      "end_ms": 1703040,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "是下个月，怎么样？大盆要进。"
+    },
+    {
+      "segment_id": "seg-000142",
+      "start_ms": 1703040,
+      "end_ms": 1711170,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "然后咱们这个，呃，商场这一块要做好充足的准备。嗯，还有就是。"
+    },
+    {
+      "segment_id": "seg-000143",
+      "start_ms": 1711170,
+      "end_ms": 1714040,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "这个宣传一定要做到位。"
+    },
+    {
+      "segment_id": "seg-000145",
+      "start_ms": 1714220,
+      "end_ms": 1719070,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "speaker_0",
+      "text": "这一块，这一块我会负责安排下去。"
+    },
+    {
+      "segment_id": "seg-000146",
+      "start_ms": 1719070,
+      "end_ms": 1722680,
+      "speaker_id": "speaker_0",
+      "raw_speaker_id": "unknown",
+      "text": "然后怎么？第三个。"
+    },
+    {
+      "segment_id": "seg-000147",
+      "start_ms": 1722680,
+      "end_ms": 1745960,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "安保部门儿的话，主要就是防止一下乱贴小广告。还有夜间巡逻这两项：，夜间巡逻的话，我们现在是夜间只巡逻两次；介于咱们商场有一些贵重物品。因为防止要让它丢失嘛？所以我们夜间巡逻会增强一下人手。还有就是属于小广告这些东西的危机如果看到的话直接让保安及时制止。"
+    },
+    {
+      "segment_id": "seg-000148",
+      "start_ms": 1745960,
+      "end_ms": 1761510,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "对，咱们要这个。保安这一块儿，要加大这个夜间这个巡逻；然后就是，跟我们这个消防这这块嗯一定要追。"
+    },
+    {
+      "segment_id": "seg-000149",
+      "start_ms": 1761510,
+      "end_ms": 1764600,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "一下，这个消防器材要定期的检查。"
+    },
+    {
+      "segment_id": "seg-000150",
+      "start_ms": 1764600,
+      "end_ms": 1769380,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "啊，然后刚才这些还有这个嗯设备。"
+    },
+    {
+      "segment_id": "seg-000151",
+      "start_ms": 1769380,
+      "end_ms": 1772210,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "有，几乎设备。也要做点。"
+    },
+    {
+      "segment_id": "seg-000152",
+      "start_ms": 1772210,
+      "end_ms": 1780220,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "一些维修，嗯还有安全通道不能堆放杂物之类的这些问题。这一块儿让"
+    },
+    {
+      "segment_id": "seg-000153",
+      "start_ms": 1780220,
+      "end_ms": 1798690,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "做那个，这个每个月都要有。这个一：这个嗯监督者专门儿每个每一个区域要有监督者，并有一个实施者；是监督者要对它进行一个那个检查这一块而且。"
+    },
+    {
+      "segment_id": "seg-000154",
+      "start_ms": 1797390,
+      "end_ms": 1803590,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "speaker_1",
+      "text": "那块，而且我会不定期进行对调研抽查。"
+    },
+    {
+      "segment_id": "seg-000155",
+      "start_ms": 1803590,
+      "end_ms": 1811340,
+      "speaker_id": "speaker_1",
+      "raw_speaker_id": "unknown",
+      "text": "嗯，还有就是咱们这个。过会儿下个月。"
+    },
+    {
+      "segment_id": "seg-000156",
+      "start_ms": 1811340,
+      "end_ms": 1817590,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "speaker_5",
+      "text": "要加大对这个人员上面的一个管理，上面的投入。"
+    },
+    {
+      "segment_id": "seg-000157",
+      "start_ms": 1817590,
+      "end_ms": 1837590,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "因为目前咱们这个，嗯上半年工作已经结束了。进入到下半年的一个工作，所以呢要加大对人员那个管理力度啊！争取让咱们每个人员在这个服务这个态度上都更进一步。"
+    },
+    {
+      "segment_id": "seg-000158",
+      "start_ms": 1837590,
+      "end_ms": 1857590,
+      "speaker_id": "speaker_5",
+      "raw_speaker_id": "unknown",
+      "text": "行吧，那咱本场会议就先到此结束。"
+    }
+  ]
+}

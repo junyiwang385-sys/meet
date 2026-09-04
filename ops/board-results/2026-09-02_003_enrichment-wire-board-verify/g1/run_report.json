@@ -1,0 +1,221 @@
+{
+  "identity": {
+    "run_id": "mtg_3d8c1ede1bc20e3e",
+    "harness_version": "2.0.0",
+    "product_summary_version": "product-summary.v25",
+    "segmentation_version": "topic-segmentation.v2",
+    "source_audio_seconds": 1862.3
+  },
+  "config": {
+    "ctx": 16384,
+    "predict": 3072,
+    "max_tokens": 3072,
+    "input_safety_tokens": 512,
+    "input_chars_per_token": 1.3,
+    "temperature": 0.0,
+    "resume": false
+  },
+  "timing": {
+    "status": "succeeded",
+    "total_seconds": 513.623,
+    "stage_seconds": {
+      "segmentation": 159.836,
+      "batch_asr": 90.377,
+      "transcript_prepare": 0.052,
+      "llm_summary": 142.806,
+      "enrichment": 119.951,
+      "compat_export": 0.057
+    }
+  },
+  "stages_detail": {
+    "segmentation": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    },
+    "batch_asr": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    },
+    "transcript_prepare": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    },
+    "llm_summary": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    },
+    "enrichment": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    },
+    "compat_export": {
+      "status": "succeeded",
+      "reason": null,
+      "error": null
+    }
+  },
+  "segmentation": {
+    "policy": "deterministic_blocks_map_reduce",
+    "block_count": 9,
+    "chapter_count": 9,
+    "boundary_reason_counts": {
+      "start": 1,
+      "cohesion": 7,
+      "gap": 1,
+      "speaker": 2
+    },
+    "blocks_opened_by_speaker": 2,
+    "block_text_chars": {
+      "count": 9,
+      "min": 674,
+      "avg": 915.1,
+      "max": 1322
+    },
+    "block_segment_count": {
+      "count": 9,
+      "min": 22,
+      "avg": 35.6,
+      "max": 59
+    },
+    "config": {
+      "vad_gap_ms": 1500,
+      "cohesion_window_segments": 3,
+      "cohesion_depth_threshold": 0.3,
+      "depth_window_segments": 4,
+      "speaker_weight": 0.25,
+      "cohesion_weight": 1.0,
+      "boundary_score_threshold": 1.0,
+      "min_block_chars": 400,
+      "target_block_tokens": 1800
+    }
+  },
+  "blocks": {
+    "count": 9,
+    "summary_chars": {
+      "count": 9,
+      "min": 71,
+      "avg": 98.1,
+      "max": 133
+    },
+    "continues_previous_count": 0,
+    "retried_block_ids": []
+  },
+  "reduce": {
+    "overview_source": "chapter_summaries",
+    "overview_chars": 245,
+    "chapter_summary_chars": {
+      "count": 9,
+      "min": 71,
+      "avg": 98.1,
+      "max": 133
+    },
+    "speaker_count": 7,
+    "action_candidates": 7,
+    "action_items_final": 2,
+    "empty_schema_fields": [
+      "key_points",
+      "decisions",
+      "open_questions",
+      "risks",
+      "keywords"
+    ]
+  },
+  "llm_economics": {
+    "counts": {
+      "request_count": 33,
+      "transport_request_count": 33,
+      "validation_failed_count": 0,
+      "retry_count": 0,
+      "split_count": 0,
+      "reused_request_count": 0
+    },
+    "total_prompt_tokens": 61724,
+    "total_completion_tokens": 10671,
+    "finish_reasons": {
+      "stop": 33
+    },
+    "thinking_chars_by_kind": {
+      "block-summary": {
+        "count": 9,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      },
+      "action-review": {
+        "count": 1,
+        "min": 656,
+        "avg": 656,
+        "max": 656
+      },
+      "other": {
+        "count": 21,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      },
+      "full-summary": {
+        "count": 1,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      },
+      "speaker-batch": {
+        "count": 1,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      }
+    },
+    "chars_per_token_actual": 1.525,
+    "chars_per_token_configured": 1.3
+  },
+  "quality": {
+    "status": "pass",
+    "warnings": [],
+    "weak_chapters": null
+  },
+  "enrichment": {
+    "present": true,
+    "keywords": 18,
+    "qa": 45,
+    "quotes": 3,
+    "quotes_verbatim": 3,
+    "decisions": 30,
+    "has_outline": true
+  },
+  "memory": {
+    "board_used_peak_mb": 2738.914,
+    "server_rss_peak_mb": null,
+    "mem_available_min_mb": 5175.434,
+    "memory_leak_suspected": null,
+    "raw_keys": [
+      "baseline_board_used_mb",
+      "board_used_peak_delta_mb",
+      "board_used_peak_mb",
+      "mem_available_min_mb",
+      "phase_board_used_peak_mb",
+      "process_peaks",
+      "samples"
+    ]
+  },
+  "server": {
+    "ready_seconds": 15.028,
+    "log_present": true,
+    "log_size_bytes": 338201,
+    "llm_cmd_present": true,
+    "loaded_once": true
+  },
+  "flags": [
+    "块摘要偏短：均 98.1 字 < 目标 120",
+    "overview 偏短：245 字 < 目标 300",
+    "overview 走了有损章节归并（未接地原文）",
+    "合并率低：9 块仅并到 9 章（continues_previous 合并偏保守）",
+    "chars_per_token 需校准：实测 1.525 vs 配置 1.3（预算估算偏差）",
+    "空 schema 字段：key_points, decisions, open_questions, risks, keywords（未抽取）"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "TaskId": "mtg_8b7f7f52dad0ab2c",
+  "MeetingAssistance": {
+    "Keywords": [],
+    "KeySentences": [],
+    "Actions": [
+      {
+        "Id": 1,
+        "SentenceId": 8,
+        "Start": 55230,
+        "End": 85230,
+        "Text": "确定长假活动方案"
+      },
+      {
+        "Id": 2,
+        "SentenceId": 231,
+        "Start": 1874540,
+        "End": 1917215,
+        "Text": "准备药品和急救箱"
+      },
+      {
+        "Id": 3,
+        "SentenceId": 236,
+        "Start": 1915215,
+        "End": 1928160,
+        "Text": "收集员工健康信息"
+      },
+      {
+        "Id": 4,
+        "SentenceId": 240,
+        "Start": 1969120,
+        "End": 1989120,
+        "Text": "制定行程计划"
+      }
+    ]
+  }
+}
