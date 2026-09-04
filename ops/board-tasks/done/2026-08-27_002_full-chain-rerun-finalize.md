@@ -81,9 +81,9 @@ ls -l output/full_v2_rerun/harness output/full_v2_rerun/harness/03_llm_summary
 
 ## 执行状态（中转机执行后填写，并把本文件移入 `done/`）
 
-- **executed_at**：
-- **使用板端地址**：
-- **A 全链路**：⬜ 跑通到导出 / ⬜ 仍失败（阶段：）
-- **B finalize**：⬜ 四项通过 / ⬜ 部分（说明：）
+- **executed_at**： 2026-09-04
+- **使用板端地址**： 10.10.22.36:18082
+- **A 全链路**： PASS (completed through export)
+- **B finalize**： PASS (all four checks)
 - **结果目录**：`ops/board-results/2026-08-27_002_full-chain-rerun-finalize/`
-- **状态**：⬜ pending / ⬜ done / ⬜ blocked
+- **状态**： done

@@ -1,0 +1,28 @@
+{
+  "schema_version": "formal-manifest.v1",
+  "meeting_id": "meeting-7f5efe8498fd",
+  "revision": 1,
+  "finalized_at": "2026-09-04T06:30:20.074602Z",
+  "formats": [
+    "html",
+    "txt",
+    "json"
+  ],
+  "files": [
+    {
+      "format": "html",
+      "name": "formal_minutes.html",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "format": "txt",
+      "name": "formal_minutes.txt",
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "format": "json",
+      "name": "formal_result.json",
+      "media_type": "application/json; charset=utf-8"
+    }
+  ]
+}

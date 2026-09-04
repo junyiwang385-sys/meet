@@ -1,0 +1,151 @@
+{
+  "identity": {
+    "run_id": "mtg_9c6133819814365e",
+    "harness_version": "2.0.0",
+    "product_summary_version": "product-summary.v25",
+    "segmentation_version": "topic-segmentation.v2",
+    "source_audio_seconds": 1941.0
+  },
+  "config": {
+    "ctx": 16384,
+    "predict": 3072,
+    "max_tokens": 3072,
+    "input_safety_tokens": 512,
+    "input_chars_per_token": 1.3,
+    "temperature": 0.0,
+    "resume": false
+  },
+  "timing": {
+    "status": "succeeded",
+    "total_seconds": 440.573,
+    "stage_seconds": {
+      "segmentation": 216.844,
+      "batch_asr": 78.259,
+      "transcript_prepare": 0.019,
+      "llm_summary": 145.212,
+      "compat_export": 0.025
+    }
+  },
+  "segmentation": {
+    "policy": "deterministic_blocks_map_reduce",
+    "block_count": 8,
+    "chapter_count": 8,
+    "boundary_reason_counts": {
+      "start": 1,
+      "speaker": 5,
+      "cohesion": 5,
+      "gap": 3
+    },
+    "blocks_opened_by_speaker": 5,
+    "block_text_chars": {
+      "count": 8,
+      "min": 818,
+      "avg": 1190,
+      "max": 1624
+    },
+    "block_segment_count": {
+      "count": 8,
+      "min": 10,
+      "avg": 20.8,
+      "max": 36
+    },
+    "config": {
+      "vad_gap_ms": 1500,
+      "cohesion_window_segments": 3,
+      "cohesion_depth_threshold": 0.3,
+      "depth_window_segments": 4,
+      "speaker_weight": 0.25,
+      "cohesion_weight": 1.0,
+      "boundary_score_threshold": 1.0,
+      "min_block_chars": 400,
+      "target_block_tokens": 1800
+    }
+  },
+  "blocks": {
+    "count": 8,
+    "summary_chars": {
+      "count": 8,
+      "min": 64,
+      "avg": 98.6,
+      "max": 135
+    },
+    "continues_previous_count": 0,
+    "retried_block_ids": []
+  },
+  "reduce": {
+    "overview_source": "source_timeline",
+    "overview_chars": 243,
+    "chapter_summary_chars": {
+      "count": 8,
+      "min": 64,
+      "avg": 98.6,
+      "max": 135
+    },
+    "speaker_count": 6,
+    "action_candidates": 2,
+    "action_items_final": 1,
+    "empty_schema_fields": [
+      "key_points",
+      "decisions",
+      "open_questions",
+      "risks",
+      "keywords"
+    ]
+  },
+  "llm_economics": {
+    "counts": {
+      "request_count": 11,
+      "transport_request_count": 11,
+      "validation_failed_count": 0,
+      "retry_count": 0,
+      "split_count": 0,
+      "reused_request_count": 0
+    },
+    "total_prompt_tokens": 37667,
+    "total_completion_tokens": 3513,
+    "finish_reasons": {
+      "stop": 11
+    },
+    "thinking_chars_by_kind": {
+      "block-summary": {
+        "count": 8,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      },
+      "action-review": {
+        "count": 1,
+        "min": 1129,
+        "avg": 1129,
+        "max": 1129
+      },
+      "full-summary": {
+        "count": 1,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      },
+      "speaker-batch": {
+        "count": 1,
+        "min": 0,
+        "avg": 0,
+        "max": 0
+      }
+    },
+    "chars_per_token_actual": 1.551,
+    "chars_per_token_configured": 1.3
+  },
+  "quality": {
+    "status": "pass",
+    "warnings": [],
+    "weak_chapters": null
+  },
+  "flags": [
+    "块摘要偏短：均 98.6 字 < 目标 120",
+    "overview 偏短：243 字 < 目标 300",
+    "合并率低：8 块仅并到 8 章（continues_previous 合并偏保守）",
+    "speaker 假边界多：5/8 块由换人开启（过切嫌疑）",
+    "chars_per_token 需校准：实测 1.551 vs 配置 1.3（预算估算偏差）",
+    "空 schema 字段：key_points, decisions, open_questions, risks, keywords（未抽取）"
+  ]
+}
