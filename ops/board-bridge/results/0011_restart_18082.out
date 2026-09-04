@@ -1,0 +1,21 @@
+# cmd file : 0011_restart_18082.txt
+# started  : 2026-09-04T16:46:25
+# exit code: 0
+
+===== STDOUT =====
+== OLD_PYTHONPATH(回滚用) ==
+PYTHONPATH=/userdata/meeting_agent1/mainline_cc9d83e/src
+== kill 9502 ==
+== start(venv+新快照) ==
+started_bg_pid=64022
+== health ==
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-04T08:46:36.205135Z"}
+== new proc ==
+linaro     64022   64011  1 16:46 ?        00:00:00 /userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python /userdata/meeting_agent1/scripts/start_board_agent1_mainline_20260826.py
+== service.log尾部 ==
+board-agent-api listening on 0.0.0.0:18082 protocol=board-agent.v1
+[2026-09-04T08:46:36.205385Z] 127.0.0.1 "GET /v1/health HTTP/1.1" 200 -
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:00000246554A8290
+
