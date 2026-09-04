@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { meetingApi } from '../../api';
 import { formatDuration, formatFileSize } from '../../api/meeting-api';
@@ -44,11 +44,14 @@ interface FinalizeVariables {
 
 const viewLabels: Record<ReviewView, string> = {
   minutes: '会议纪要',
-  transcript: '全文转写',
+  transcript: '原文',
   chapters: '章节',
   speakers: '发言人',
   structured: '决策与待办',
 };
+
+// 工作区 tab 顺序：章节已融入「原文」视图的左侧速览，不再单列 tab。
+const workspaceTabs: ReviewView[] = ['minutes', 'transcript', 'speakers', 'structured'];
 
 const exportLabels: Record<ExportFormat, string> = {
   html: 'HTML',
@@ -62,16 +65,6 @@ function clone<T>(value: T): T {
 
 function getErrorMessage(error: unknown, fallback: string): string {
   return error instanceof Error && error.message ? error.message : fallback;
-}
-
-function formatMeetingDay(value: string): string {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return '—';
-  return date.toLocaleDateString('zh-CN', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-  });
 }
 
 function formatTimestamp(milliseconds: number | null): string {
@@ -107,6 +100,14 @@ function speakerName(
   return content.speaker_names[speakerId]
     ?? result.speakers?.find((speaker) => speaker.speaker_id === speakerId)?.display_name
     ?? speakerId;
+}
+
+// 发言人头像/名字用色：按 speaker_id 稳定散列到一组配色（与原配色的紫为首）。
+const SPEAKER_PALETTE = ['#6558d9', '#2e716a', '#9a6a2f', '#a95259', '#3f6fb0', '#7a4fb0'];
+function speakerColor(speakerId: string): string {
+  let hash = 0;
+  for (let i = 0; i < speakerId.length; i += 1) hash = (hash * 31 + speakerId.charCodeAt(i)) >>> 0;
+  return SPEAKER_PALETTE[hash % SPEAKER_PALETTE.length];
 }
 
 function WorkspaceIcon({ view }: { view: ReviewView }) {
@@ -178,6 +179,8 @@ export function MeetingReviewPage() {
   const [selectedSegmentId, setSelectedSegmentId] = useState<string | null>(null);
   const [currentAudioMs, setCurrentAudioMs] = useState(0);
   const [pendingScrollId, setPendingScrollId] = useState<string | null>(null);
+  const [activeChapterId, setActiveChapterId] = useState<string | null>(null);
+  const [expandedChapterId, setExpandedChapterId] = useState<string | null>(null);
   const [renameSpeakerId, setRenameSpeakerId] = useState<string | null>(null);
   const [renameValue, setRenameValue] = useState('');
   const [finalizeDialogOpen, setFinalizeDialogOpen] = useState(false);
@@ -418,6 +421,49 @@ export function MeetingReviewPage() {
     });
   }, [appliedSegments, content, result, transcriptSearch]);
 
+  // 融合视图：把「全文转写」按 chapter_id 分组，章节切换处插入一条锚点头，供左侧速览定位/滚动侦测。
+  type ReaderRow =
+    | { kind: 'chapter'; id: string; title: string }
+    | { kind: 'turn'; segment: TranscriptSegment };
+  const readerRows = useMemo<ReaderRow[]>(() => {
+    const titleById = new Map((content?.chapters ?? []).map((chapter) => [chapter.chapter_id, chapter.title]));
+    const rows: ReaderRow[] = [];
+    let prev: string | null | undefined;
+    for (const segment of visibleSegments) {
+      const cid = segment.chapter_id;
+      if (cid !== prev) {
+        rows.push({
+          kind: 'chapter',
+          id: cid ?? '__none__',
+          title: cid ? (titleById.get(cid) ?? '未命名章节') : '未分章',
+        });
+        prev = cid;
+      }
+      rows.push({ kind: 'turn', segment });
+    }
+    return rows;
+  }, [visibleSegments, content]);
+
+  // 滚动侦测：右侧原文滚动时，左侧章节速览自动高亮当前章节。
+  useEffect(() => {
+    if (activeView !== 'transcript') return;
+    const scroller = document.querySelector<HTMLElement>('.review-transcript');
+    const heads = Array.from(document.querySelectorAll<HTMLElement>('.review-seg-head'));
+    if (!scroller || !heads.length) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveChapterId(entry.target.getAttribute('data-chapter'));
+          }
+        });
+      },
+      { root: scroller, rootMargin: '0px 0px -72% 0px', threshold: 0 },
+    );
+    heads.forEach((head) => observer.observe(head));
+    return () => observer.disconnect();
+  }, [activeView, readerRows]);
+
   const selectedEvidence = result?.evidence?.find(
     (evidence) => evidence.evidence_id === selectedEvidenceId,
   ) ?? null;
@@ -472,6 +518,20 @@ export function MeetingReviewPage() {
       selectSegment(segment);
       setPendingScrollId(segment.segment_id);
     }
+  }
+
+  // 左侧章节速览点击：展开本条完整概述（其余收起）+ 高亮 + 原地滚动定位右侧原文（不切换 tab）。
+  function locateChapter(chapterId: string) {
+    setActiveChapterId(chapterId);
+    setExpandedChapterId((prev) => (prev === chapterId ? null : chapterId));
+    window.requestAnimationFrame(() => {
+      const head = document.getElementById(`review-chap-${chapterId}`);
+      if (!head) return;
+      head.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      head.classList.remove('review-seg-head-flash');
+      void head.offsetWidth;
+      head.classList.add('review-seg-head-flash');
+    });
   }
 
   function updateTranscript(segment: TranscriptSegment, text: string) {
@@ -625,18 +685,6 @@ export function MeetingReviewPage() {
       ? speakerName(content, result, selectedSegment.speaker_id)
       : '—';
   const evidenceTime = selectedEvidence?.start_ms ?? selectedSegment?.start_ms ?? currentAudioMs;
-  const saveState = detail.state === 'finalizing'
-    ? '正在生成正式版本'
-    : detail.state === 'finalized'
-      ? '正式版本已生成'
-      : saveMutation.isPending
-        ? '正在保存'
-        : dirty
-          ? '有未保存更改'
-          : draftRevision > 0
-            ? `草稿修订 ${draftRevision}`
-            : '所有更改已保存';
-
   return (
     <>
       <div className="review-workspace">
@@ -654,7 +702,7 @@ export function MeetingReviewPage() {
           </div>
           <div className="review-workspace-label">会议内容</div>
           <nav className="review-workspace-nav" aria-label="会议工作区">
-            {(Object.keys(viewLabels) as ReviewView[]).map((view) => (
+            {workspaceTabs.map((view) => (
               <button
                 className={activeView === view ? 'review-workspace-tab review-workspace-tab-active' : 'review-workspace-tab'}
                 type="button"
@@ -737,20 +785,7 @@ export function MeetingReviewPage() {
             </div>
           </header>
 
-          <div className="review-content">
-            <header className="review-page-head">
-              <div>
-                <div className="review-eyebrow">{viewLabels[activeView]}</div>
-                <h1>{content.title}</h1>
-                <div className="review-page-context">
-                  <span>{meetingStateLabel(detail)}</span>
-                  <span>{detail.source_label}</span>
-                  <span className="mono">{formatMeetingDay(detail.meeting_date)} · {formatTimestamp(durationMs)}</span>
-                </div>
-              </div>
-              <div className={dirty ? 'review-save-state review-save-state-dirty' : 'review-save-state'}>{saveState}</div>
-            </header>
-
+          <div className={activeView === 'transcript' ? 'review-content review-content-wide' : 'review-content'}>
             {activeView === 'minutes' ? (
               <section className="review-view-panel">
                 {content.minutes ? (
@@ -826,17 +861,79 @@ export function MeetingReviewPage() {
                     </div>
                   </article>
                 ) : <div className="review-empty-view">会议纪要尚未生成</div>}
+
+                {result.enrichment ? (
+                  <div className="review-enrich">
+                    {result.enrichment.keywords.length ? (
+                      <section className="review-enrich-sec">
+                        <div className="review-enrich-label">关键词</div>
+                        <div className="review-enrich-kw">
+                          {result.enrichment.keywords.map((keyword) => (
+                            <span key={keyword}>{keyword}</span>
+                          ))}
+                        </div>
+                      </section>
+                    ) : null}
+                    {result.enrichment.quotes.length ? (
+                      <section className="review-enrich-sec">
+                        <div className="review-enrich-label">金句时刻</div>
+                        <div className="review-enrich-quotes">
+                          {result.enrichment.quotes.map((item, index) => (
+                            <blockquote className="review-quote" key={`quote-${index}`}>
+                              <p className="review-quote-text">{item.quote}</p>
+                              <p className="review-quote-comment">
+                                {item.speaker_id ? `${speakerName(content, result, item.speaker_id)} · ` : ''}{item.comment}
+                              </p>
+                            </blockquote>
+                          ))}
+                        </div>
+                      </section>
+                    ) : null}
+                    {result.enrichment.qa.length ? (
+                      <section className="review-enrich-sec">
+                        <div className="review-enrich-label">问答回顾</div>
+                        <div className="review-enrich-qa">
+                          {result.enrichment.qa.map((item, index) => (
+                            <div className="review-qa" key={`qa-${index}`}>
+                              <p className="review-qa-q">{item.question}</p>
+                              <p className="review-qa-a">{item.answer}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </section>
+                    ) : null}
+                  </div>
+                ) : null}
               </section>
             ) : null}
 
             {activeView === 'transcript' ? (
-              <section className="review-view-panel">
-                <div className="review-panel-toolbar">
-                  <div>
-                    <div className="review-panel-title">全文转写</div>
-                    <div className="review-panel-sub">{visibleSegments.length} / {appliedSegments.length} 个片段</div>
+              <section className="review-view-panel review-reader">
+                <aside className="review-reader-nav">
+                  <div className="review-reader-nav-head">章节速览<span className="review-reader-nav-count">{content.chapters.length} 章</span></div>
+                  <div className="review-reader-nav-list" role="list">
+                    {content.chapters.map((chapter) => (
+                      <button
+                        key={chapter.chapter_id}
+                        type="button"
+                        className={[
+                          'review-nav-item',
+                          activeChapterId === chapter.chapter_id ? 'review-nav-item-active' : '',
+                          expandedChapterId === chapter.chapter_id ? 'review-nav-item-expanded' : '',
+                        ].filter(Boolean).join(' ')}
+                        onClick={() => locateChapter(chapter.chapter_id)}
+                      >
+                        <span className="review-nav-time">{formatTimestamp(chapter.start_ms)}</span>
+                        <span className="review-nav-body">
+                          <span className="review-nav-title">{chapter.title}</span>
+                          <span className="review-nav-summary">{chapter.summary}</span>
+                        </span>
+                      </button>
+                    ))}
                   </div>
-                  <div className="review-toolbar-actions">
+                </aside>
+                <div className="review-reader-main">
+                  <div className="review-panel-toolbar review-reader-toolbar">
                     <label className="review-search-box">
                       <SearchIcon />
                       <input value={transcriptSearch} type="search" placeholder="搜索全文" onChange={(event) => setTranscriptSearch(event.target.value)} />
@@ -847,22 +944,34 @@ export function MeetingReviewPage() {
                       </button>
                     ) : null}
                   </div>
-                </div>
-                <div className="review-transcript">
-                  <div className="review-turn-list">
-                    {visibleSegments.length ? visibleSegments.map((segment) => (
-                      <article className={selectedSegmentId === segment.segment_id ? 'review-turn review-turn-selected' : 'review-turn'} id={`review-${segment.segment_id}`} key={segment.segment_id}>
-                        <div className="review-turn-header">
-                          <span className="review-speaker">{speakerName(content, result, segment.speaker_id)}:</span>
-                          <button className="review-turn-time" type="button" onClick={() => selectSegment(segment)}>{formatTimestamp(segment.start_ms)}</button>
-                        </div>
-                        {transcriptEditing ? (
-                          <textarea className="review-turn-input" value={segment.text} onChange={(event) => updateTranscript(segment, event.target.value)} />
+                  <div className="review-transcript">
+                    <div className="review-turn-list">
+                      {readerRows.length ? readerRows.map((row) => (
+                        row.kind === 'chapter' ? (
+                          <div className="review-seg-head" id={`review-chap-${row.id}`} data-chapter={row.id} key={`chap-${row.id}`}>
+                            <span className="review-seg-head-title">{row.title}</span>
+                          </div>
                         ) : (
-                          <p className="review-turn-copy"><HighlightedText text={segment.text} query={transcriptSearch} /></p>
-                        )}
-                      </article>
-                    )) : <div className="review-empty-view">未找到匹配内容</div>}
+                          <article
+                            className={selectedSegmentId === row.segment.segment_id ? 'review-turn review-turn-selected' : 'review-turn'}
+                            id={`review-${row.segment.segment_id}`}
+                            key={row.segment.segment_id}
+                            style={{ ['--spk' as string]: speakerColor(row.segment.speaker_id) } as CSSProperties}
+                          >
+                            <div className="review-turn-header">
+                              <span className="review-turn-avatar">{speakerName(content, result, row.segment.speaker_id).slice(0, 1)}</span>
+                              <span className="review-speaker">{speakerName(content, result, row.segment.speaker_id)}</span>
+                              <button className="review-turn-time" type="button" onClick={() => selectSegment(row.segment)}>{formatTimestamp(row.segment.start_ms)}</button>
+                            </div>
+                            {transcriptEditing ? (
+                              <textarea className="review-turn-input" value={row.segment.text} onChange={(event) => updateTranscript(row.segment, event.target.value)} />
+                            ) : (
+                              <p className="review-turn-copy"><HighlightedText text={row.segment.text} query={transcriptSearch} /></p>
+                            )}
+                          </article>
+                        )
+                      )) : <div className="review-empty-view">未找到匹配内容</div>}
+                    </div>
                   </div>
                 </div>
               </section>
@@ -920,12 +1029,13 @@ export function MeetingReviewPage() {
               <section className="review-view-panel">
                 <div className="review-panel-toolbar"><div><div className="review-panel-title">发言人</div><div className="review-panel-sub">名称同步到全文和证据</div></div></div>
                 <div className="review-speaker-list">
-                  {(result.speakers ?? []).map((speaker, index) => (
-                    <article className="review-speaker-row" key={speaker.speaker_id}>
-                      <span className="review-speaker-avatar">{String(index + 1).padStart(2, '0')}</span>
+                  {(result.speakers ?? []).map((speaker) => (
+                    <article className="review-speaker-row" key={speaker.speaker_id} style={{ ['--spk' as string]: speakerColor(speaker.speaker_id) } as CSSProperties}>
+                      <span className="review-speaker-avatar">{speakerName(content, result, speaker.speaker_id).slice(0, 1)}</span>
                       <div>
                         <div className="review-speaker-name">{speakerName(content, result, speaker.speaker_id)}</div>
                         <div className="review-speaker-meta">{speaker.segment_count} 个片段 · {formatDuration(speaker.duration_ms)}</div>
+                        {speaker.summary ? <p className="review-speaker-summary">{speaker.summary}</p> : null}
                       </div>
                       {!readOnly ? <button className="review-rename-button" type="button" onClick={() => openRename(speaker.speaker_id)}>重命名</button> : null}
                     </article>

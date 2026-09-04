@@ -189,6 +189,26 @@ export interface Speaker {
   segment_count: number;
   duration_ms: number;
   user_renamed: boolean;
+  summary?: string | null;
+}
+
+// 内容丰富（对标飞书/阿里）：关键词、金句时刻、问答回顾。由后端 enrichment 阶段产出。
+export interface EnrichmentQuote {
+  quote: string;
+  comment: string;
+  speaker_id?: string | null;
+  segment_id?: string | null;
+}
+
+export interface EnrichmentQA {
+  question: string;
+  answer: string;
+}
+
+export interface Enrichment {
+  keywords: string[];
+  quotes: EnrichmentQuote[];
+  qa: EnrichmentQA[];
 }
 
 export interface Evidence {
@@ -261,6 +281,7 @@ export interface MeetingResultV1 {
   chapters: MeetingChapter[] | null;
   decisions: Decision[] | null;
   action_items: ActionItem[] | null;
+  enrichment?: Enrichment | null;
   evidence: Evidence[] | null;
   diagnostics: MeetingDiagnostics | Record<string, unknown> | null;
 }

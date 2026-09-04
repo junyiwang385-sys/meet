@@ -1,10 +1,12 @@
 import type {
+  Enrichment,
   MeetingDetail,
   MeetingResultV1,
   ResultAvailability,
   Speaker,
   TranscriptSegment,
 } from '../api/types';
+import { realMeetingResult } from './real-meeting';
 
 export const fullAvailability: ResultAvailability = {
   transcript: true,
@@ -161,6 +163,7 @@ const speakers: Speaker[] = [
     segment_count: 3,
     duration_ms: 50000,
     user_renamed: false,
+    summary: '主持并推进议程，提出本次评审的目标与验收口径，多次收敛发散讨论并明确下一步负责人。',
   },
   {
     speaker_id: 'spk-002',
@@ -168,6 +171,7 @@ const speakers: Speaker[] = [
     segment_count: 3,
     duration_ms: 56000,
     user_renamed: false,
+    summary: '负责方案主陈述，说明技术选型与取舍依据，回应了性能与兼容性方面的主要质疑。',
   },
   {
     speaker_id: 'spk-003',
@@ -175,6 +179,7 @@ const speakers: Speaker[] = [
     segment_count: 1,
     duration_ms: 20000,
     user_renamed: false,
+    summary: '从测试角度提出回归覆盖与验收标准的补充要求。',
   },
   {
     speaker_id: 'spk-004',
@@ -182,8 +187,24 @@ const speakers: Speaker[] = [
     segment_count: 2,
     duration_ms: 39000,
     user_renamed: false,
+    summary: '关注上线节奏与资源排期，提议分阶段灰度并确认了时间窗口。',
   },
 ];
+
+// 内容丰富（对标飞书/阿里）：关键词 + 金句时刻 + 问答回顾。
+const enrichment: Enrichment = {
+  keywords: ['通信链路', '会议库交互', '本地处理流程', '内容质量验证', '灰度上线', '回归覆盖', '接口契约', '状态回传'],
+  quotes: [
+    { quote: '先把本地处理流程跑通、可视化，再谈内容质量验证。', comment: '明确了实现顺序：链路优先、质量其次。', speaker_id: 'spk-001', segment_id: 'seg-000001' },
+    { quote: '技术选型要能解释取舍，不能只看单点性能。', comment: '强调选型依据的完整性。', speaker_id: 'spk-002', segment_id: 'seg-000004' },
+    { quote: '上线按阶段灰度，先小流量验证再放量。', comment: '给出了稳妥的上线策略。', speaker_id: 'spk-004', segment_id: 'seg-000010' },
+  ],
+  qa: [
+    { question: '本地处理流程要先做到什么程度？', answer: '先完成可视化，覆盖任务创建、音频传输、状态查询与结果回传。' },
+    { question: '内容质量如何验证？', answer: '在链路跑通后，用关键点召回等指标对生成结果做对照评测。' },
+    { question: '上线节奏怎么安排？', answer: '分阶段灰度，先小流量验证再逐步放量，时间窗口已确认。' },
+  ],
+};
 
 function baseDetail(overrides: Partial<MeetingDetail>): MeetingDetail {
   const now = '2026-08-19T03:20:00Z';
@@ -241,6 +262,15 @@ function baseDetail(overrides: Partial<MeetingDetail>): MeetingDetail {
 }
 
 export const fixtureDetails: MeetingDetail[] = [
+  baseDetail({
+    meeting_id: 'meeting-real-001',
+    title: '学校运营与教学安排调整会议（真实板端数据）',
+    meeting_date: '2026-09-02T02:00:00Z',
+    created_at: '2026-09-02T02:00:00Z',
+    updated_at: '2026-09-02T02:00:00Z',
+    audio: { state: 'available', duration_ms: 1862276, size_bytes: 138000000, playable: true, deleted_at: null },
+    review: { pending_count: 22, reviewed_count: 0, dirty: false, draft_revision: 0 },
+  }),
   baseDetail({
     meeting_id: 'meeting-review-001',
     title: '研发方案评审',
@@ -582,6 +612,7 @@ function resultFor(
     availability,
     transcript: { complete, segment_count: transcript.length, segments: transcript },
     speakers,
+    enrichment: availability.minutes ? enrichment : null,
     minutes: availability.minutes
       ? {
           overview: '本次会议围绕端侧会议助手的通信链路、会议库交互和后续实现顺序展开，明确先完成本地处理流程的可视化，再开展内容质量验证。',
@@ -783,6 +814,7 @@ function resultFor(
 }
 
 export const fixtureResults: Record<string, MeetingResultV1> = {
+  'meeting-real-001': realMeetingResult,
   'meeting-review-001': resultFor('meeting-review-001', fullAvailability, true),
   'meeting-processing-001': resultFor('meeting-processing-001', partialAvailability, true),
   'meeting-failed-001': resultFor('meeting-failed-001', partialAvailability, true),
