@@ -55,7 +55,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--predict", type=int, default=3072)
     parser.add_argument("--max-tokens", type=int, default=3072)
     parser.add_argument("--input-safety-tokens", type=int, default=512)
-    parser.add_argument("--input-chars-per-token", type=float, default=1.3)
+    parser.add_argument("--input-chars-per-token", type=float, default=1.55)
     parser.add_argument("--input-fixed-overhead-tokens", type=int, default=128)
     parser.add_argument("--chunk-overlap-segments", type=int, default=1)
     parser.add_argument("--temperature", type=float, default=0.0)

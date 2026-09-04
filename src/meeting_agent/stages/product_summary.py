@@ -33,6 +33,16 @@ PRODUCT_SUMMARY_VERSION = "product-summary.v25"
 
 # D 层长度门（软约束，触发一次受控重试而不是硬失败）
 MIN_BLOCK_SUMMARY_CHARS = 60
+
+# 4B 会把 SHAPE 里的占位 task 原样 echo 出来（如"明确待办"），这些不是真待办，需过滤。
+_ACTION_PLACEHOLDERS = {
+    "明确待办", "明确待办事项", "确认后的待办", "待办事项", "待办",
+    "未明确", "无", "暂无", "无待办",
+}
+
+
+def _is_placeholder_task(task: str | None) -> bool:
+    return not task or task.strip().strip("。.！!，, ") in _ACTION_PLACEHOLDERS
 MIN_OVERVIEW_CHARS = 120
 
 # 发言人总结：只给"实质发言"的 speaker 出总结（总字数门槛），跳过 unknown 与琐碎发言；
@@ -1063,7 +1073,11 @@ def _validate_actions(
         {**_empty_long_summary(), "action_items": raw.get("action_items", [])},
         segments,
     )
-    return summary["action_items"]
+    # 过滤 4B echo 出来的占位待办（如"确认后的待办"/"明确待办"）
+    return [
+        item for item in summary["action_items"]
+        if not _is_placeholder_task(item.get("task") if isinstance(item, dict) else None)
+    ]
 
 
 def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:
@@ -1248,7 +1262,7 @@ def _block_summary_messages(
         "- 结论前置：先说本块最重要的结论，再补背景与展开；不要写成“会议讨论了X、强调了Y”的流水账。\n"
         "- 只依据本块 Timeline，不得引入块外信息，不得改写 anchors 的原意。\n"
         "其它字段：\n"
-        "- continues_previous：本块是否在延续上一块的同一话题（同一问题、对象或结论方向）。没有上一块时填 false。\n"
+        "- continues_previous：只要本块仍在讲上一块的同一件事/同一对象/同一议题（如上一块提出问题、本块继续讨论或给结论），就填 true；只有确实转到不相关的新议题才填 false；没有上一块时填 false。\n"
         "- key_refs 最多 3 个，必须来自本块，用于代表本块核心内容。\n"
         "- action_candidates 只提取本块中明确要求执行、确认执行或明确分配的待办；没有则返回 []。\n"
         "- owner 只有原文明确支持时才填对应 speaker_id，否则 null；deadline 只有原文明确出现才填，否则 null。\n\n"
@@ -1311,7 +1325,7 @@ def _validate_block_summary(
                 continue
             task = clean_text(item.get("task"))
             refs = item.get("refs")
-            if task is None or not isinstance(refs, list):
+            if _is_placeholder_task(task) or not isinstance(refs, list):
                 continue
             action_refs = list(dict.fromkeys(
                 str(ref)

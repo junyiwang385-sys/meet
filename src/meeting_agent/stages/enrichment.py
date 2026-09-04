@@ -106,28 +106,58 @@ def _numbered_timeline(segments: list[dict[str, Any]], start: int) -> tuple[str,
     return "\n".join(lines), ids
 
 
-def extract_qa(
-    segments: list[dict[str, Any]], llm_call: LlmCall, *, block_segs: int = 40
-) -> list[dict[str, Any]]:
-    """提取"提问→回答"对（书面化）。分块抽取后合并；turn_ids 便于锚回原文。
+_QA_MARKS = ("吗", "怎么", "如何", "什么", "是否", "有没有", "为什么", "哪", "呢", "?", "？")
+_QA_FILLER = set("嗯呃啊哦额那这就是的了吧呗吧呀啦哈")
 
-    只保留真正的疑问（有人提出问题、另一方回答），过滤开场白/陈述被误当问题；
-    问题句改写成凝练的书面问句（以"？"结尾）。
+
+def _is_question(q: str) -> bool:
+    return bool(q) and any(w in q for w in _QA_MARKS)
+
+
+def _valid_answer(a: str) -> bool:
+    """答案质量门：过滤过短、纯语气词开头、结巴/ASR 噪声、以疑问收尾（多半是没说完）。"""
+    if len(a) < 6:
+        return False
+    if a.rstrip("。.！!").endswith(("？", "?")):
+        return False  # 以问号结尾 → 是半句/反问，不是回答
+    core = a.strip("，。、,. ")
+    j = 0
+    while j < len(core) and core[j] in _QA_FILLER:
+        j += 1
+    if len(core) - j < 5:  # 去掉开头语气词后实质内容太少
+        return False
+    for k in range(len(core) - 1):  # 同一 2 字片段重复≥3 次 → 结巴/识别噪声
+        gram = core[k : k + 2]
+        if gram.strip() and core.count(gram) >= 3:
+            return False
+    return True
+
+
+def _norm_q(q: str) -> str:
+    return "".join(ch for ch in q if ch.isalnum())[:20]
+
+
+def extract_qa(
+    segments: list[dict[str, Any]], llm_call: LlmCall, *, block_segs: int = 40, max_qa: int = 12
+) -> list[dict[str, Any]]:
+    """提取"提问→回答"对（书面化）。分块抽取→质量门过滤→按问题去重→全局限量。
+
+    只保留真正的疑问（有人提出、另一方直接回答），过滤开场白/陈述/半句/噪声/答非所问。
     """
     sys = (
-        "你是会议问答提炼器。从会议转写中找出真正的\"提问—回答\"对：必须是有人"
-        "明确提出了一个问题、另一方作了回答。把问题改写成一句凝练的书面问句（以问号结尾），"
-        "把回答整理成一句通顺的书面话。\n"
+        "你是会议问答提炼器。从会议转写里找出真实发生的\"提问→回答\"对。\n"
         "严格要求：\n"
-        "- 只提取真实发生的问答，不臆造；\n"
-        "- 开场白、致辞、纯陈述、过渡语不是问题，不要当作问答；\n"
-        "- 问题要是一个具体、可回答的问句，不是半句话或口头禅。\n"
+        "- 必须是有人明确提出一个具体问题，且另一方随后作出直接回应；\n"
+        "- answer 必须是对该问题的直接回答（取回答者的话，整理成一句通顺书面话）；"
+        "找不到清晰且对得上的回答，就不要输出这一条；\n"
+        "- 问题与答案必须语义相关，答非所问的一律不要；\n"
+        "- 不要输出开场白/致辞/纯陈述/过渡语，不要输出未说完的半句、口头禅或识别噪声。\n"
         "turn_ids 填该问答涉及的行号（整数）。以JSON输出 "
         '{"qa":[{"question":"具体问句？","answer":"","turn_ids":[]}]}。'
     )
-    # 不用 few-shot：弱 4B 会直接 echo 示例答案（实测污染）。只靠强化 system 约束 +
-    # 下面的疑问词过滤把控质量。
+    # 不用 few-shot：弱 4B 会 echo 示例。靠强 system 约束 + 下面的质量门/去重/限量把控。
     out: list[dict[str, Any]] = []
+    seen: set[str] = set()
     for i in range(0, len(segments), block_segs):
         blk = segments[i : i + block_segs]
         tl, _ = _numbered_timeline(blk, i + 1)
@@ -140,9 +170,15 @@ def extract_qa(
         for pair in res.get("qa") or []:
             q = str(pair.get("question") or "").strip()
             a = str(pair.get("answer") or "").strip()
-            # 过滤：问题必须像个问句（含疑问标记），否则多半是开场白/陈述误判
-            if q and a and (("？" in q) or ("?" in q) or any(w in q for w in ("吗", "怎么", "如何", "什么", "是否", "有没有", "为什么", "哪"))):
-                out.append({"question": q, "answer": a, "turn_ids": pair.get("turn_ids") or []})
+            if not _is_question(q) or not _valid_answer(a):
+                continue
+            key = _norm_q(q)
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            out.append({"question": q, "answer": a, "turn_ids": pair.get("turn_ids") or []})
+            if len(out) >= max_qa:
+                return out
     return out
 
 
