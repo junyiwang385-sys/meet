@@ -1,0 +1,1 @@
+echo bridge-ok host=%COMPUTERNAME% && ssh -o BatchMode=yes -o ConnectTimeout=8 linaro@10.10.22.36 "echo board-reachable; uname -a; ls -d /userdata/meeting_agent1/mainline_b92550a/src/meeting_agent 2>/dev/null && echo snapshot-present || echo snapshot-absent"
