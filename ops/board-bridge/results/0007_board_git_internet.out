@@ -1,0 +1,19 @@
+# cmd file : 0007_board_git_internet.txt
+# started  : 2026-09-04T16:37:57
+# exit code: 0
+
+===== STDOUT =====
+== git ==
+/usr/bin/git
+git version 2.39.5
+== 能否到GitHub ==
+d187109985718c9900b7d74912756cae8f03dc62	HEAD
+== 旧快照cc9d83e是否完好 ==
+cc9d83e_size=5539
+cc9d83e_nulls=0
+== 板端是否已有本仓库git检出 ==
+/userdata/asr/whisper.cpp/.git
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000019E724F3E00
+
