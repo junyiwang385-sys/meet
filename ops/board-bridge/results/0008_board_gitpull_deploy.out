@@ -1,0 +1,17 @@
+# cmd file : 0008_board_gitpull_deploy.txt
+# started  : 2026-09-04T16:39:39
+# exit code: 0
+
+===== STDOUT =====
+正克隆到 '_srcpull'...
+正在更新文件:  40% (2/5)
+正在更新文件:  60% (3/5)
+正在更新文件:  80% (4/5)
+正在更新文件: 100% (5/5)
+正在更新文件: 100% (5/5), 完成.
+deployed_size=5424
+deployed_nulls=0
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000002D37198AB50
+
