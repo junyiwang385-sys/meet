@@ -1,0 +1,17 @@
+# cmd file : 0015_test_exp_to_board18082.txt
+# started  : 2026-09-04T17:04:35
+# exit code: 0
+
+===== STDOUT =====
+True
+== ʵ���ֱ�����18082 HTTP == 
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-04T09:04:46.740420Z"} 
+== ����Ͽ�18082������ַ+����ǽ == 
+LISTEN 0      0            0.0.0.0:18082      0.0.0.0:*    users:(("python",pid=64022,fd=3))
+--iptables--
+no-iptables-or-need-sudo
+== done ==
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001F96EDBED30
+
