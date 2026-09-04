@@ -1,0 +1,13 @@
+# cmd file : 0001_selftest.txt
+# started  : 2026-09-04T16:26:26
+# exit code: 0
+
+===== STDOUT =====
+bridge-ok host=JM230511012200 
+board-reachable
+Linux linaro-alip 6.1.141 #2 SMP Mon Jan 26 19:05:34 CST 2026 aarch64 GNU/Linux
+snapshot-absent
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000027092848D00
+
