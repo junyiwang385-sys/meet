@@ -1,0 +1,14 @@
+# cmd file : 0009_import_ok.txt
+# started  : 2026-09-04T16:40:46
+# exit code: 0
+
+===== STDOUT =====
+usage: main.py [-h] --source-audio SOURCE_AUDIO --out-dir OUT_DIR
+               [--trace-id TRACE_ID] [--meeting-id MEETING_ID]
+               [--task-id TASK_ID] [--run-id RUN_ID] [--overwrite | --resume]
+               [--board-scripts-dir BOARD_SCRIPTS_DIR]
+IMPORT_EXIT=0
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000002286624AC70
+
