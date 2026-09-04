@@ -1,0 +1,57 @@
+# cmd file : 0010_probe_18082.txt
+# started  : 2026-09-04T16:42:50
+# exit code: 0
+
+===== STDOUT =====
+== 1.进程 ==
+linaro      9502       1  0 9月03 ?       00:00:10 python3 /userdata/meeting_agent1/scripts/start_board_agent1_mainline_20260826.py
+== 2.健康 ==
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-04T08:42:51.043901Z"}
+== 3.启动脚本 ==
+-rw-r--r-- 1 linaro linaro 1688  8月26日 17:35 /userdata/meeting_agent1/scripts/start_board_agent1_mainline_20260826.py
+== 4.脚本内容 ==
+from pathlib import Path
+
+from meeting_agent.adapters.board import board_agent_api_v0 as api
+from meeting_agent.adapters.board import board_harness_worker_v0 as worker
+from meeting_agent.adapters.board.board_harness_worker_v0 import HarnessRunConfig as BaseHarnessRunConfig
+
+ROOT = Path("/userdata/meeting_agent1")
+_original_build_command = worker.build_command
+
+
+def isolated_config(**kwargs):
+    values = dict(kwargs)
+    values.update(
+        {
+            "scripts_dir": ROOT / "scripts",
+            "three_d_speaker_dir": Path("/userdata/3D-Speaker"),
+            "three_d_speaker_python": Path("/userdata/miniforge3/envs/3dspeaker/bin/python"),
+            "asr_dir": Path("/userdata/meeting_agent/runtime/asr/qwen3_asr_gcc10/rknn_Qwen3_ASR_batch_demo"),
+            "asr_model_dir": Path("/userdata/meeting_agent/models/asr/qwen3-asr-0.6b-rknn"),
+            "model_dir": Path("/userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k"),
+            "server": Path("/usr/bin/rkllm3-server"),
+            "host": "127.0.0.1",
+            "port": 18247,
+        }
+    )
+    return BaseHarnessRunConfig(**values)
+
+
+def mainline_build_command(source_audio, out_dir, config, python_executable=None):
+    command = _original_build_command(source_audio, out_dir, config, python_executable)
+    if len(command) >= 3 and command[1:3] == ["-m", "harness.main"]:
+        command[2] = "meeting_agent.harness.main"
+    return command
+
+
+worker.build_command = mainline_build_command
+api.DEFAULT_PORT = 18082
+api.DEFAULT_DATA_ROOT = ROOT / "runtime" / "board_agent_api_v0_mainline"
+api.HarnessRunConfig = isolated_config
+api.DEFAULT_DATA_ROOT.mkdir(parents=True, exist_ok=True)
+api.main()
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000015EE3608270
+
