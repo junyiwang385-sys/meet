@@ -1,0 +1,16 @@
+# cmd file : 0006_check_mainpy_bytes.txt
+# started  : 2026-09-04T16:36:18
+# exit code: 0
+
+===== STDOUT =====
+size=12288
+nulls=3932
+== head bytes ==
+   %   T   S   D   -   H   e   a   d   e   r   -   #   #   #   %
+ 221 006 345 372   4 250 361 021 206 361   X 034 370 347 270 326
+ 001  \0 004  \0 200  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0
+   @  \0 001  \0  \v 203 024 256 344 261  \0  \0   T 263   P  \0
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001AA5EDE79B0
+
