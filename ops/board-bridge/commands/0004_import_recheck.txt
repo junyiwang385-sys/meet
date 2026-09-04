@@ -1,0 +1,1 @@
+ssh linaro@10.10.22.36 "PYTHONPATH=/userdata/meeting_agent1/mainline_b92550a/src /userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python -c 'import pypinyin, meeting_agent.harness.main, meeting_agent.adapters.board.board_agent_api_v0, meeting_agent.observability.run_report; print(\"harness_import=ok\")'"
