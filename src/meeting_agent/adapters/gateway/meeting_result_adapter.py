@@ -167,9 +167,9 @@ def normalize_harness_result(
         if isinstance(item, dict) and item.get("speaker_id")
     }
     for speaker_id, stats in speaker_stats.items():
-        overview = summary_speaker_overview.get(speaker_id)
-        if overview:
-            stats["summary"] = overview
+        speaker_overview = summary_speaker_overview.get(speaker_id)
+        if speaker_overview:
+            stats["summary"] = speaker_overview
 
     decisions = []
     for index, source in enumerate(_list(summary.get("decisions")), 1):

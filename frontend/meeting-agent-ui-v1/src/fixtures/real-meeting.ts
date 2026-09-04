@@ -1,11 +1,12 @@
 import type { MeetingResultV1 } from '../api/types';
 
 // 真实板端数据(g1:学校上半年总结会,~31min)经 v2→v1 映射器产出,供前端完整预览。
+// 由 scratchpad/regen_real_meeting.py 生成,勿手改。
 export const realMeetingResult: MeetingResultV1 = {
   "schema_version": "meeting-result.v1",
   "meeting_id": "meeting-real-001",
   "result_revision": 1,
-  "language": "zh-CN",
+  "language": "zh",
   "duration_ms": 1862276,
   "generated_at": "2026-09-03T06:54:03Z",
   "availability": {
@@ -3785,7 +3786,7 @@ export const realMeetingResult: MeetingResultV1 = {
     }
   ],
   "minutes": {
-    "overview": "",
+    "overview": "会议围绕疫情后学校运营、教学安排及防疫措施展开讨论。上半年因疫情学生在家上网课，教师反馈网课效率不高，下半年需调整教学方式并制定考试安排。疫情期间学校开销减少，主要支出为教师薪资和设备维修，安保部门裁员部分员工居家休息。食堂因无人使用空闲，需定期消毒并调整运营模式。住宿费退一半、书费不退的政策已确定，财务部省下水电经费用于提升教学质量。宿舍设施需检查并完善，强调安全用电和消防措施。校园宣传通过社团活动和航拍进行，军训安排需明确教官来源及服装方案，计算机专业招生与教学资源配置也纳入讨论。",
     "outline": [
       {
         "node_id": "chapter-1",
