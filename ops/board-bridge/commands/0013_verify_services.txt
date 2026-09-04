@@ -1,0 +1,1 @@
+echo == gateway(经它代理板端18082) == & curl -s -m 10 http://127.0.0.1:8787/api/board/health & echo. & echo == frontend 5173 == & curl -s -m 6 -I http://127.0.0.1:5173/ & echo. & echo == done ==

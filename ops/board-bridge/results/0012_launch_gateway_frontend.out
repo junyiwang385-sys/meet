@@ -1,0 +1,6 @@
+# cmd file : 0012_launch_gateway_frontend.txt
+# 说明：本条用 start 起了 Gateway/前端长驻进程，其子进程继承了轮询器的输出管道，
+# 导致轮询器 subprocess.run 阻塞（等管道 EOF）。start 已执行，两个新窗口应已开启。
+# 处理：本结果文件由开发机手动补写，令轮询器重启后跳过 0012，不重复开窗口。
+# 后续长驻进程改用 PowerShell Start-Process 启动（完全脱离管道），见 0013 起。
+LAUNCHED (detached via start; poller was interrupted, restarted clean)
