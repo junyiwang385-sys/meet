@@ -1,0 +1,12 @@
+# cmd file : 0017_relaunch_gateway.txt
+# started  : 2026-09-04T17:08:07
+# exit code: 0
+
+===== STDOUT =====
+=== 杀掉旧 Gateway(错settings) ===
+kill gw pid 11424
+kill gw pid 7816
+=== Gateway 已用 agent1 settings 重启(新窗�? ===
+
+===== STDERR =====
+
