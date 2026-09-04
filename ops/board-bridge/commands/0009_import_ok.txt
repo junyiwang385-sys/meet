@@ -1,0 +1,1 @@
+ssh linaro@10.10.22.36 "PYTHONPATH=/userdata/meeting_agent1/mainline_b92550a/src /userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python -m meeting_agent.harness.main --help 2>&1 | head -4; echo IMPORT_EXIT=${PIPESTATUS[0]}"
