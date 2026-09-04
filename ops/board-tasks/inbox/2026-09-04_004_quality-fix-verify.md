@@ -119,9 +119,10 @@ git push origin feature/transcript-postprocess
 
 ## 开发机判读要点（回传后我自己看，实验机不用管）
 
-对照 003 的 g1–g5，重点看四项是否改善：
-1. `run_report.blocks.continues_previous_count` 是否脱离 0（003 是 0/40 全 false）
+对照 003 的 g1–g5 与 task 002 的红旗，重点看五项是否改善：
+1. `run_report.blocks.continues_previous_count` 是否脱离 0（003 全 0/40、002 也是 0；修复见 77f63f2）
 2. enrichment QA 是否还有答非所问/重复
 3. action_items 是否还有「明确待办」占位
 4. `run_report.memory.server_rss_peak_mb` 是否已填（003 是 None，本次代码已修）
-5. g6 长会：是否跑通、RTF、内存峰值、是否触发 split/retry —— 项目头牌主张首验
+5. `run_report.segmentation.blocks_opened_by_speaker`：换人开启的块占比是否仍偏高（002 是 5/8，过切嫌疑，尚未处理，仅观察）
+6. g6 长会：是否跑通、RTF、内存峰值、是否触发 split/retry、章节数是否爆 full-summary 预算（已知缺口）—— 项目头牌主张首验
