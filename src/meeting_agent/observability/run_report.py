@@ -244,11 +244,31 @@ def build_run_report(root: pathlib.Path) -> dict[str, Any]:
                 return mem[name]
         return None
 
+    # server 峰值在嵌套 process_peaks.rkllm_server 里（板端采样器实际结构）
+    server_rss = _mm("server_rss_peak_mb", "peak_server_rss_mb")
+    if server_rss is None:
+        proc_peaks = mem.get("process_peaks") if isinstance(mem, dict) else None
+        if isinstance(proc_peaks, dict):
+            server_rss = (proc_peaks.get("rkllm_server") or {}).get("rss_peak_mb")
+
+    # 泄漏判定：板端不直接产出，用「cleanup 相位峰值 - 基线」的残留量推导。
+    # 残留含页缓存等正常开销，阈值放宽到 500MB；缺相位数据则保持 None（不误报）。
+    leak = _mm("memory_leak_suspected")
+    if leak is None:
+        phases = mem.get("phase_board_used_peak_mb") if isinstance(mem, dict) else None
+        baseline = _mm("baseline_board_used_mb")
+        if isinstance(phases, dict) and isinstance(baseline, (int, float)):
+            cleanup_peak = phases.get("llm_cleanup")
+            if isinstance(cleanup_peak, (int, float)):
+                leak = (cleanup_peak - baseline) > 500.0
+
     report["memory"] = {
         "board_used_peak_mb": _mm("board_used_peak_mb", "peak_board_used_mb", "board_peak_mb"),
-        "server_rss_peak_mb": _mm("server_rss_peak_mb", "peak_server_rss_mb"),
+        "board_used_peak_delta_mb": _mm("board_used_peak_delta_mb"),
+        "baseline_board_used_mb": _mm("baseline_board_used_mb"),
+        "server_rss_peak_mb": server_rss,
         "mem_available_min_mb": _mm("mem_available_min_mb", "min_mem_available_mb"),
-        "memory_leak_suspected": _mm("memory_leak_suspected"),
+        "memory_leak_suspected": leak,
         "raw_keys": sorted(mem.keys()) if isinstance(mem, dict) else None,
     }
 
