@@ -1,0 +1,14 @@
+# cmd file : 0005_import_via_help.txt
+# started  : 2026-09-04T16:34:34
+# exit code: 0
+
+===== STDOUT =====
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+ValueError: source code string cannot contain null bytes
+EXIT=0
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001D5FEDF2E30
+
