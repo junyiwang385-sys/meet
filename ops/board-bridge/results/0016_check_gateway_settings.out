@@ -1,0 +1,33 @@
+# cmd file : 0016_check_gateway_settings.txt
+# started  : 2026-09-04T17:06:04
+# exit code: 0
+
+===== STDOUT =====
+== Ĭ��settings(gateway�õ����) == 
+(Ĭ���ļ�������) 
+ 
+== agent1 settings(Ӧָ��18082) == 
+{
+    "schema_version":  "gateway-settings.v1",
+    "updated_at":  "2026-08-26T08:47:14Z",
+    "settings":  {
+                     "device_name":  "RK1828 Agent-1",
+                     "board":  {
+                                   "address":  "10.10.22.36",
+                                   "port":  18082
+                               },
+                     "model_profile":  "qwen3-4b-v104-ctx16k",
+                     "meeting_library_path":  "D:\\Meeting_Agent_mainline\\runtime\\meeting_library_agent1",
+                     "keep_audio_until_finalized":  true,
+                     "default_export_formats":  [
+                                                    "html",
+                                                    "txt",
+                                                    "json"
+                                                ],
+                     "default_language":  "zh-CN"
+                 }
+} 
+== done ==
+
+===== STDERR =====
+
