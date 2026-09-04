@@ -1,0 +1,22 @@
+# cmd file : 0013_verify_services.txt
+# started  : 2026-09-04T17:00:10
+# exit code: 0
+
+===== STDOUT =====
+== gateway(�����������18082) == 
+{"error": {"code": "board_unreachable", "message": "[WinError 10061] 由于目标计算机积极拒绝，无法连接。", "retryable": false}, "request_id": "req-752936aeb566"} 
+== frontend 5173 == 
+HTTP/1.1 200 OK
+Vary: Origin
+Content-Type: text/html
+Cache-Control: no-cache
+Etag: W/"2a0-C+6ja1ToCx9puYUz7mFqPDNCtJ8"
+Date: Fri, 04 Sep 2026 09:00:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+ 
+== done ==
+
+===== STDERR =====
+
