@@ -1,0 +1,10 @@
+# cmd file : 0018_verify_gateway_board.txt
+# started  : 2026-09-04T17:09:26
+# exit code: 0
+
+===== STDOUT =====
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-04T09:09:27.122418Z", "gateway": {"service": "meeting-agent-gateway-v0", "version": "0.2.0", "local_only": true}} 
+== done ==
+
+===== STDERR =====
+
