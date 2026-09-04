@@ -1,0 +1,12 @@
+# cmd file : 0004_import_recheck.txt
+# started  : 2026-09-04T16:33:17
+# exit code: 1
+
+===== STDOUT =====
+
+===== STDERR =====
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ValueError: source code string cannot contain null bytes
+close - IO is still pending on closed socket. read:1, write:0, io:000001EFDC3E2670
+
