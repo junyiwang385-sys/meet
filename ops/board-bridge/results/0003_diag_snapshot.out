@@ -1,0 +1,14 @@
+# cmd file : 0003_diag_snapshot.txt
+# started  : 2026-09-04T16:32:01
+# exit code: 0
+
+===== STDOUT =====
+== py文件数 ==
+59
+== 含空字节的文件(损坏) ==
+== 首个核心文件头200字节十六进制 ==
+
+===== STDERR =====
+bash: 行 1: xxd: 未找到命令
+close - IO is still pending on closed socket. read:1, write:0, io:0000027E332FDE40
+
