@@ -1,0 +1,11 @@
+{
+  "note": "板端任务 004：验证 003 之后的三处质量修复（QA 错配/占位待办/continues_previous）。g1-g5 用与 003 完全相同的 5 段音频做受控对比；g6 为长会（1h+）首次板端实测。cases 指向回传的 run_report.json，run_eval 自动汇总。",
+  "cases": [
+    {"meeting": "g1", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g1/run_report.json"},
+    {"meeting": "g2", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g2/run_report.json"},
+    {"meeting": "g3", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g3/run_report.json"},
+    {"meeting": "g4", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g4/run_report.json"},
+    {"meeting": "g5", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g5/run_report.json"},
+    {"meeting": "g6_long", "run_report": "ops/board-results/2026-09-04_004_quality-fix-verify/g6/run_report.json"}
+  ]
+}
