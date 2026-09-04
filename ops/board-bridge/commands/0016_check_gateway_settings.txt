@@ -1,0 +1,1 @@
+echo == 默认settings(gateway用的这个) == & type D:\Meeting_Agent_mainline\runtime\gateway_settings.json 2>nul || echo (默认文件不存在) & echo. & echo == agent1 settings(应指向18082) == & type D:\Meeting_Agent_mainline\runtime\gateway_settings_agent1.json 2>nul || echo (agent1文件不存在) & echo. & echo == done ==
