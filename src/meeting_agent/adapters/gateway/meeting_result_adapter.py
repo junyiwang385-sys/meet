@@ -160,6 +160,17 @@ def normalize_harness_result(
         stats["segment_count"] += 1
         stats["duration_ms"] += max(0, segment["end_ms"] - segment["start_ms"])
 
+    # 发言人总结：把 summary.speakers[].overview 并入对应 speaker（板端按 speaker_id 对齐）
+    summary_speaker_overview = {
+        _text(item.get("speaker_id")): _text(item.get("overview"))
+        for item in _list(summary.get("speakers"))
+        if isinstance(item, dict) and item.get("speaker_id")
+    }
+    for speaker_id, stats in speaker_stats.items():
+        overview = summary_speaker_overview.get(speaker_id)
+        if overview:
+            stats["summary"] = overview
+
     decisions = []
     for index, source in enumerate(_list(summary.get("decisions")), 1):
         if not isinstance(source, dict):
@@ -177,6 +188,27 @@ def normalize_harness_result(
                 "user_edited": False,
             }
         )
+
+    if not decisions:
+        # summary 未产决策（多块 map-reduce 路径的已知缺口）时，用 enrichment 抽取的决策兜底。
+        # 仅文字：enrichment 决策的 turn_ids 是行号而非 segment_id，暂无法接证据跳转。
+        for index, source in enumerate(_list(_dict(source_document.get("enrichment")).get("decisions")), 1):
+            if not isinstance(source, dict):
+                continue
+            text = _text(source.get("decision"))
+            if not text:
+                continue
+            decisions.append(
+                {
+                    "decision_id": f"decision-e{index}",
+                    "text": text,
+                    "evidence_ids": [],
+                    "review_status": "pending",
+                    "user_edited": False,
+                }
+            )
+            if len(decisions) >= 20:
+                break
 
     action_items = []
     for index, source in enumerate(_list(summary.get("action_items")), 1):
@@ -214,6 +246,32 @@ def normalize_harness_result(
         for chapter in chapter_items
     ]
 
+    # 内容丰富（对标飞书/阿里）：把板端 enrichment 投影成前端 Enrichment 契约。
+    src_enrichment = _dict(source_document.get("enrichment"))
+    enrichment: dict[str, Any] | None = None
+    if src_enrichment:
+        enrichment = {
+            "keywords": [str(value) for value in _list(src_enrichment.get("keywords")) if str(value).strip()],
+            "quotes": [
+                {
+                    "quote": _text(item.get("quote")),
+                    "comment": _text(item.get("comment")),
+                    "segment_id": item.get("ref") if isinstance(item.get("ref"), str) else None,
+                    "speaker_id": (
+                        source_by_id.get(item["ref"], {}).get("speaker_id")
+                        if isinstance(item.get("ref"), str) else None
+                    ),
+                }
+                for item in _list(src_enrichment.get("quotes"))
+                if isinstance(item, dict) and _text(item.get("quote"))
+            ],
+            "qa": [
+                {"question": _text(item.get("question")), "answer": _text(item.get("answer"))}
+                for item in _list(src_enrichment.get("qa"))
+                if isinstance(item, dict) and _text(item.get("question")) and _text(item.get("answer"))
+            ],
+        }
+
     duration_ms = _integer(meeting.get("duration_ms"))
     if duration_ms <= 0 and normalized_segments:
         duration_ms = max(segment["end_ms"] for segment in normalized_segments)
@@ -248,6 +306,7 @@ def normalize_harness_result(
         "chapters": chapter_items if summary_available else None,
         "decisions": decisions if summary_available else None,
         "action_items": action_items if summary_available else None,
+        "enrichment": enrichment if summary_available else None,
         "evidence": evidence,
         # Technical details stay in board_result.json/diagnostics.json and are
         # projected only through an explicit ``include=diagnostics`` request.
