@@ -1,0 +1,14 @@
+# cmd file : 0002_deploy_snapshot.txt
+# started  : 2026-09-04T16:30:09
+# exit code: 1
+
+===== STDOUT =====
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000018A951E8A50
+close - IO is still pending on closed socket. read:1, write:0, io:000001A171E1DB40
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ValueError: source code string cannot contain null bytes
+close - IO is still pending on closed socket. read:1, write:0, io:00000180E2DB3C50
+
