@@ -1,0 +1,1 @@
+ssh linaro@10.10.22.36 "D=/userdata/meeting_agent1/mainline_b92550a/src/meeting_agent; echo '== py文件数 =='; find $D -name '*.py' | wc -l; echo '== 含空字节的文件(损坏) =='; grep -rlP '\x00' $D --include='*.py' | head -20; echo '== 首个核心文件头200字节十六进制 =='; head -c 200 $D/__init__.py | xxd | head -8"
