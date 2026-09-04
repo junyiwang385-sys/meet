@@ -1,0 +1,1 @@
+start "MeetGateway" cmd /k D:\Meeting_Agent_mainline\ops\board-bridge\run\start_gateway.bat & ping -n 4 127.0.0.1 >nul & start "MeetFrontend" cmd /k D:\Meeting_Agent_mainline\ops\board-bridge\run\start_frontend.bat & echo LAUNCHED gateway+frontend in new windows
