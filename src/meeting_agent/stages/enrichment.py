@@ -284,8 +284,25 @@ def extract_quotes(
             comment = str(q.get("comment") or "").strip()
             if quote and comment:
                 real, seg_id = _snap_to_transcript(quote, segments)
-                cands.append({"quote": real, "comment": comment, "ref": seg_id, "verbatim": seg_id is not None})
+                cands.append({
+                    "quote": real,                    # 逐字原句（证据，锚 ref，不改）
+                    "display": _smooth_quote(real),   # 顺滑展示句（有损，仅展示，见原则8）
+                    "comment": comment,
+                    "ref": seg_id,
+                    "verbatim": seg_id is not None,
+                })
     return cands[:max_quotes]
+
+
+def _smooth_quote(text: str) -> str:
+    """金句展示顺滑（确定性、无 LLM）：去纯口语语气字与相邻结巴重复，只用于展示。
+
+    有损处理——原句 quote/ref 保持逐字不变，本函数产出的仅供 UI 展示（守 CLAUDE.md 原则8）。
+    """
+    t = re.sub(r"[呃嗯额哦]", "", text)          # 去纯停顿语气字（保留"啊/呀"等可能成词的）
+    t = re.sub(r"(.{2,5}?)\1+", r"\1", t)        # 折叠相邻重复（"这个这个"/"就是就是"→一次）
+    t = t.strip("，,。.、！!？? ")
+    return t or text
 
 
 # ---- 关键决策（结构化：问题→方案[谁提]→依据） -----------------------------
