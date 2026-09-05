@@ -417,7 +417,7 @@ def build_outline_summary(
     res = llm_call(
         [{"role": "system", "content": sys}, {"role": "user", "content": "各章节摘要：\n" + joined}],
         _OUTLINE_SCHEMA,
-        max_tokens=1300,
+        max_tokens=1900,  # 嵌套大纲JSON最长,给足输出预算,否则截断→解析空(实测1300会截)
     )
     groups = []
     for g in res.get("groups") or []:
@@ -510,7 +510,7 @@ def make_session_llm_call(
     out_dir: "_pathlib.Path",
     run_log: Any | None = None,
     *,
-    max_predict: int = 1400,
+    max_predict: int = 2000,
 ) -> tuple[LlmCall, dict[str, int]]:
     """把 RkllmServerSession（或鸭子对齐的 OllamaSession）.request 包成 enrichment 要的 LlmCall。
 
@@ -546,7 +546,7 @@ def run_enrichment_stage(
     out_dir: "_pathlib.Path",
     chapter_summaries: list[str] | None = None,
     run_log: Any | None = None,
-    max_predict: int = 1400,
+    max_predict: int = 2000,
 ) -> dict[str, Any]:
     """在摘要之后、复用同一活着 server，产出关键词/问答/金句/决策/层级大纲。
 
