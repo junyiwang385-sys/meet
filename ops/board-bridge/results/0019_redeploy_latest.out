@@ -1,0 +1,19 @@
+# cmd file : 0019_redeploy_latest.txt
+# started  : 2026-09-05T23:53:56
+# exit code: 0
+
+===== STDOUT =====
+正克隆到 '_srcpull2'...
+正在更新文件:  40% (2/5)
+正在更新文件:  60% (3/5)
+正在更新文件:  80% (4/5)
+正在更新文件: 100% (5/5)
+正在更新文件: 100% (5/5), 完成.
+deployed_commit=7360491
+p1_keyword_filter=2
+p1_decision_owner=4
+usage: main.py [-h] --source-audio SOURCE_AUDIO --out-dir OUT_DIR
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000025E12BCCA60
+
