@@ -55,8 +55,11 @@ def extract_keywords(
     if not text.strip():
         return []
     sys = (
-        "你是会议关键词提炼器。从会议内容中提炼最能代表主题的关键词（名词/名词短语），"
-        "覆盖讨论到的主要方面。只输出词，不要解释。以JSON输出 {\"keywords\":[...]}。"
+        "你是会议关键词提炼器。从会议内容中提炼最能代表【议题/主题】的关键词（名词/名词短语），"
+        "覆盖讨论到的主要方面。\n"
+        "只要议题词（如 网课、住宿费、招生宣传、军训安排、消防安全）；"
+        "**不要人名、部门名、职务、说话人称谓**（如 院长、招生办、保卫科、服务员、教务主任、经理）。\n"
+        "只输出词，不要解释。以JSON输出 {\"keywords\":[...]}。"
     )
     freq: dict[str, int] = {}
     for i in range(0, len(text), block_chars):
@@ -70,9 +73,24 @@ def extract_keywords(
             w = str(kw).strip()
             if w:
                 freq[w] = freq.get(w, 0) + 1
-    # 频次高优先，其次先出现的
-    ordered = sorted(freq, key=lambda w: (-freq[w]))
+    # 后处理去噪：滤掉人名/部门/职务类词（提示词可能仍漏网），只留议题词
+    ordered = [w for w in sorted(freq, key=lambda w: (-freq[w])) if not _is_role_or_dept(w)]
     return ordered[:top_k]
+
+
+# 角色/部门/职务后缀：这类词是"谁在说"而非"说了什么"，不作主题关键词
+_ROLE_DEPT_SUFFIX = ("部", "科", "办", "处", "长", "员", "主任", "经理", "主持人", "董事长")
+_ROLE_DEPT_EXACT = {"服务员", "保卫科", "招生办", "后勤部", "教务主任", "院长", "校长", "经理", "董事长", "主持人", "副院长"}
+
+
+def _is_role_or_dept(w: str) -> bool:
+    w = w.strip()
+    if not w:
+        return True
+    if w in _ROLE_DEPT_EXACT:
+        return True
+    # 短词且以角色/部门后缀结尾（如 招生办/保卫科/教务主任/服务员），判为称谓类
+    return len(w) <= 5 and w.endswith(_ROLE_DEPT_SUFFIX)
 
 
 # ---- 问答回顾 ---------------------------------------------------------------
@@ -138,7 +156,7 @@ def _norm_q(q: str) -> str:
 
 
 def extract_qa(
-    segments: list[dict[str, Any]], llm_call: LlmCall, *, block_segs: int = 40, max_qa: int = 12
+    segments: list[dict[str, Any]], llm_call: LlmCall, *, block_segs: int = 40, max_qa: int = 15
 ) -> list[dict[str, Any]]:
     """提取"提问→回答"对（书面化）。分块抽取→质量门过滤→按问题去重→全局限量。
 
@@ -270,6 +288,7 @@ _DECISIONS_SCHEMA = {
                     "problem": {"type": "string"},
                     "options": {"type": "array", "items": {"type": "string"}},
                     "rationale": {"type": "string"},
+                    "owner": {"type": "string"},
                     "turn_ids": {"type": "array", "items": {"type": "integer"}},
                 },
                 "required": ["decision"],
@@ -292,10 +311,11 @@ def extract_decisions(
         "- decision: 最终决定（一句话）；\n"
         "- problem: 该决策针对的问题/背景；\n"
         "- options: 讨论过的方案/选项（数组，可为空）；\n"
-        "- rationale: 决策依据/理由。\n"
+        "- rationale: 决策依据/理由；\n"
+        "- owner: 提出或负责该决策的人/部门，**只在转写里明确出现时填**（如某部门、某职务），否则留空，不要猜。\n"
         "严格：只提取明确作出的决定，普通建议、设想、还在讨论没定的，不算决策，不要臆造。"
         "turn_ids 填涉及行号。以JSON输出 "
-        '{"decisions":[{"decision":"","problem":"","options":[],"rationale":"","turn_ids":[]}]}。'
+        '{"decisions":[{"decision":"","problem":"","options":[],"rationale":"","owner":"","turn_ids":[]}]}。'
     )
     out: list[dict[str, Any]] = []
     for i in range(0, len(segments), block_segs):
@@ -314,9 +334,19 @@ def extract_decisions(
                     "problem": str(d.get("problem") or "").strip(),
                     "options": _dedup([str(o) for o in (d.get("options") or [])]),
                     "rationale": str(d.get("rationale") or "").strip(),
+                    "owner": str(d.get("owner") or "").strip(),
                     "turn_ids": d.get("turn_ids") or [],
                 })
-    return out
+    # 跨块去重：按决策文本归一化合并，避免同一决定被多块各报一遍（旧版 30 条偏多）
+    deduped: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for d in out:
+        key = "".join(ch for ch in d["decision"] if ch.isalnum())[:24]
+        if key and key in seen:
+            continue
+        seen.add(key)
+        deduped.append(d)
+    return deduped
 
 
 # ---- 层级化全文摘要（分组大纲，对标飞书三层缩进） ---------------------------
