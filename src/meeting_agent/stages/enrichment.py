@@ -16,6 +16,7 @@ LLM 由调用方注入（LlmCall，与 postprocess 一致），不绑定后端�
 
 from __future__ import annotations
 
+import re
 from typing import Any, Protocol
 
 
@@ -130,6 +131,9 @@ def _numbered_timeline(segments: list[dict[str, Any]], start: int) -> tuple[str,
 
 _QA_MARKS = ("吗", "怎么", "如何", "什么", "是否", "有没有", "为什么", "哪", "呢", "?", "？")
 _QA_FILLER = set("嗯呃啊哦额那这就是的了吧呗吧呀啦哈")
+# 纯口头语气/停顿字：句中出现连串或高密度 → ASR 把口语噪声当内容识别，答案不可信
+_DISFLUENCY = set("呃嗯额哦啊呀啦呗哈")
+_DISFLUENCY_RUN = re.compile(r"[呃嗯额哦啊]{2,}")  # 连续≥2个语气字（如"呃嗯"）
 
 
 def _is_question(q: str) -> bool:
@@ -137,12 +141,16 @@ def _is_question(q: str) -> bool:
 
 
 def _valid_answer(a: str) -> bool:
-    """答案质量门：过滤过短、纯语气词开头、结巴/ASR 噪声、以疑问收尾（多半是没说完）。"""
+    """答案质量门：过滤过短、纯语气词开头、结巴/ASR 噪声（连串/高密度语气字）、以疑问收尾。"""
     if len(a) < 6:
         return False
     if a.rstrip("。.！!").endswith(("？", "?")):
         return False  # 以问号结尾 → 是半句/反问，不是回答
+    if _DISFLUENCY_RUN.search(a):
+        return False  # 句中出现"呃嗯"这类连续语气字 → ASR 噪声混入（如"反对党的呃嗯被动会"）
     core = a.strip("，。、,. ")
+    if core and sum(1 for c in core if c in _DISFLUENCY) / len(core) > 0.15:
+        return False  # 语气字密度过高 → 口语噪声，非有效回答
     j = 0
     while j < len(core) and core[j] in _QA_FILLER:
         j += 1
