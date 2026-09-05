@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:43:12.7185967Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"summary\": \"本章聚焦疫情期间学校各部门应对措施：教务处确定网课考试安排（高数等核心科目需返校考试），财务部退还住宿费一半，安保部裁减人员并实施严格防疫措施（篮球场限流、隔三座一人），同时明确返校需提前一周打卡。\", \"refs\": [\"seg-000023\", \"seg-000024\", \"seg-000037\", \"seg-000054\", \"seg-000062\", \"seg-000088\"] }"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3068401800,
+  "load_duration": 2366800,
+  "prompt_eval_count": 2853,
+  "prompt_eval_duration": 40517000,
+  "eval_count": 135,
+  "eval_duration": 2085393999
+}

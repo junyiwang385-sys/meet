@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:09.6034129Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"summary\": \"疫情下高校网课效率不足，下半年将调整教学安排并处理退费问题。\", \"refs\": [\"seg-000041\", \"seg-000042\", \"seg-000043\", \"seg-000044\", \"seg-000045\", \"seg-000046\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1838050600,
+  "load_duration": 1609600,
+  "prompt_eval_count": 1777,
+  "prompt_eval_duration": 476663000,
+  "eval_count": 88,
+  "eval_duration": 1284599000
+}

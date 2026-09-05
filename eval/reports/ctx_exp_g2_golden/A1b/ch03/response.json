@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:55.5725839Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦公司上半年财务表现及下半年战略调整，明确上半年营收80万元、净利润70万元，同比增长；针对网络竞品冲击，提出通过网红带货提升市场竞争力的短期策略。\",\n  \"refs\": [\n    \"seg-000071\",\n    \"seg-000076\",\n    \"seg-000078\",\n    \"seg-000080\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1840224900,
+  "load_duration": 1013700,
+  "prompt_eval_count": 1204,
+  "prompt_eval_duration": 321437000,
+  "eval_count": 103,
+  "eval_duration": 1452066000
+}

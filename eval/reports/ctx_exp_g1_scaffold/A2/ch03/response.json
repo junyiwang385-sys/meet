@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:43:18.4427274Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"summary\": \"本章讨论疫情期间学校食堂运营调整及财务政策。因学生离校，食堂窗口缩减至3个，需定期消毒；财务部对退学学生退费处理为半数，同时省下水电等经费用于提升教学质量。\", \"refs\": [\"seg-000100\", \"seg-000104\", \"seg-000122\", \"seg-000126\", \"seg-000137\", \"seg-000148\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2318947000,
+  "load_duration": 9083100,
+  "prompt_eval_count": 1845,
+  "prompt_eval_duration": 32857999,
+  "eval_count": 120,
+  "eval_duration": 1642480000
+}

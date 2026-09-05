@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:39.2693703Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦上半年财务表现与下半年战略调整，化妆品市场受疫情影响线下客流下降但线上销售增长，公司净利润同比增长；针对网络竞品冲击，计划通过网红带货提升市场竞争力。\",\n  \"refs\": [\n    \"seg-000071\",\n    \"seg-000076\",\n    \"seg-000078\",\n    \"seg-000080\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1787208800,
+  "load_duration": 2701000,
+  "prompt_eval_count": 1143,
+  "prompt_eval_duration": 310270000,
+  "eval_count": 101,
+  "eval_duration": 1415565000
+}

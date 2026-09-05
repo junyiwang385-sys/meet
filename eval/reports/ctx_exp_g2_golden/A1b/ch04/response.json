@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:57.3243588Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦男性化妆品市场潜力，提出开发素颜霜等轻量化产品以满足男性护肤需求，强调通过小技巧和专业课程提升产品认知。\",\n  \"refs\": [\n    \"seg-000093\",\n    \"seg-000094\",\n    \"seg-000095\",\n    \"seg-000103\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1691175700,
+  "load_duration": 3284900,
+  "prompt_eval_count": 1169,
+  "prompt_eval_duration": 312632000,
+  "eval_count": 93,
+  "eval_duration": 1301591000
+}

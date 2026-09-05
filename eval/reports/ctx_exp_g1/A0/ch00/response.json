@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:37:31.8919696Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦疫情下高校各部门协作应对网课问题及开学准备，明确下半年将实施线下考试、调整招生计划，并处理住宿费退款事宜。\",\n  \"refs\": [\n    \"seg-000009\",\n    \"seg-000016\",\n    \"seg-000023\",\n    \"seg-000028\",\n    \"seg-000037\",\n    \"seg-000040\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5775841800,
+  "load_duration": 3697112800,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 439509000,
+  "eval_count": 115,
+  "eval_duration": 1624602000
+}

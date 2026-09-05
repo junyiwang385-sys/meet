@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:54.6725477Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章讨论学校财务调整与招生规划，因上半年未开学，决定将节省的水电经费用于招生宣传，重点突出硬件设施、宿舍安全及消防措施以回应学生关切。\",\n  \"refs\": [\n    \"seg-000170\",\n    \"seg-000171\",\n    \"seg-000172\",\n    \"seg-000175\",\n    \"seg-000177\",\n    \"seg-000184\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2399126100,
+  "load_duration": 1704400,
+  "prompt_eval_count": 2141,
+  "prompt_eval_duration": 569489000,
+  "eval_count": 121,
+  "eval_duration": 1729668000
+}

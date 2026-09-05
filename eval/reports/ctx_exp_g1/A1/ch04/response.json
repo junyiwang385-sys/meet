@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:37:57.5896992Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"下半年将针对新招生开展宣传，重点突出学校硬件设施、食堂及宿舍安全等优势，以吸引新生入学。\",\n  \"refs\": [\n    \"seg-000170\",\n    \"seg-000172\",\n    \"seg-000175\",\n    \"seg-000177\",\n    \"seg-000185\",\n    \"seg-000186\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1889480300,
+  "load_duration": 1637500,
+  "prompt_eval_count": 1349,
+  "prompt_eval_duration": 349094000,
+  "eval_count": 107,
+  "eval_duration": 1484264000
+}

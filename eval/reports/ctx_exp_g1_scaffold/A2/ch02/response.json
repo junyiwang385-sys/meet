@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:43:16.0488123Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"summary\": \"疫情期间学校暂停开学，上半年因无学生导致食堂窗口减少至3个，收入下降；安保部门裁撤部分人员并实施每日消毒值班，篮球场等场地按防疫要求限流入场，学生返校需提前一周报备并每日打卡。\", \"refs\": [\"seg-000042\", \"seg-000043\", \"seg-000051\", \"seg-000054\", \"seg-000062\", \"seg-000092\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3287663400,
+  "load_duration": 1561200,
+  "prompt_eval_count": 2559,
+  "prompt_eval_duration": 38877000,
+  "eval_count": 124,
+  "eval_duration": 2029785000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:43.5620123Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"公司计划通过培养现有客户中的网红或专柜人员进行直播带货，以低成本提升产品宣传效果并解决消费者对护肤品的误解，同时通过试用体验和专业讲解减少投诉。\",\n  \"refs\": [\n    \"seg-000113\",\n    \"seg-000114\",\n    \"seg-000116\",\n    \"seg-000125\",\n    \"seg-000126\",\n    \"seg-000129\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2210293300,
+  "load_duration": 2358700,
+  "prompt_eval_count": 1380,
+  "prompt_eval_duration": 371084000,
+  "eval_count": 123,
+  "eval_duration": 1763099000
+}

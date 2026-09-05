@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:03.2908988Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章讨论了军训教官招募与活动设计。明确以退伍青年士兵为主力，兼顾海军、空军等兵种特色，通过晚间互动游戏和表演赛提升学生参与积极性。\",\n  \"refs\": [\n    \"seg-000255\",\n    \"seg-000256\",\n    \"seg-000257\",\n    \"seg-000258\",\n    \"seg-000259\",\n    \"seg-000260\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1980932800,
+  "load_duration": 1800100,
+  "prompt_eval_count": 956,
+  "prompt_eval_duration": 224074000,
+  "eval_count": 123,
+  "eval_duration": 1689237000
+}

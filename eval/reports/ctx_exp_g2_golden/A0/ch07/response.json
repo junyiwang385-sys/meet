@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:31.2506832Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦于公司会员体系与客户维护策略，提出通过消费返现、节日免费保养等措施提升客户黏性，强调精准流量与回头客价值。\",\n  \"refs\": [\n    \"seg-000174\",\n    \"seg-000175\",\n    \"seg-000178\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1409270600,
+  "load_duration": 1676600,
+  "prompt_eval_count": 631,
+  "prompt_eval_duration": 147733000,
+  "eval_count": 84,
+  "eval_duration": 1168991000
+}

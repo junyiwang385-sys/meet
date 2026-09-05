@@ -1,0 +1,336 @@
+[
+  {
+    "arm": "A2",
+    "chapters": 9,
+    "avg_summary_chars": 72.2,
+    "anchor_support_rate": 0.674,
+    "contam_ref_rate": 0.326,
+    "avg_bleed_delta": -0.0006,
+    "per_chapter": [
+      {
+        "chapter_index": 0,
+        "title": "会议开场与议题讨论",
+        "summary": "本章聚焦疫情下高校各部门协作应对网课问题及开学准备，明确下半年需返校考试科目、学生费用退费机制。结论：网课效率不足，下半年将调整教学安排并处理退费问题。",
+        "refs": [
+          "seg-000016",
+          "seg-000023",
+          "seg-000024",
+          "seg-000037",
+          "seg-000040"
+        ],
+        "refs_in": 5,
+        "refs_out": 0,
+        "refs_total": 5,
+        "summary_chars": 76,
+        "bleed_delta": 0.0
+      },
+      {
+        "chapter_index": 1,
+        "title": "疫情后学校运营与防疫措施讨论",
+        "summary": "本章聚焦疫情期间学校各部门应对措施：教务处确定网课考试安排（高数等核心科目需返校考试），财务部退还住宿费一半，安保部裁减人员并实施严格防疫措施（篮球场限流、隔三座一人），同时明确返校需提前一周打卡。",
+        "refs": [
+          "seg-000023",
+          "seg-000024",
+          "seg-000037",
+          "seg-000054",
+          "seg-000062",
+          "seg-000088"
+        ],
+        "refs_in": 3,
+        "refs_out": 3,
+        "refs_total": 6,
+        "summary_chars": 99,
+        "bleed_delta": -0.0021
+      },
+      {
+        "chapter_index": 2,
+        "title": "食堂运营与防疫措施调整",
+        "summary": "疫情期间学校暂停开学，上半年因无学生导致食堂窗口减少至3个，收入下降；安保部门裁撤部分人员并实施每日消毒值班，篮球场等场地按防疫要求限流入场，学生返校需提前一周报备并每日打卡。",
+        "refs": [
+          "seg-000042",
+          "seg-000043",
+          "seg-000051",
+          "seg-000054",
+          "seg-000062",
+          "seg-000092"
+        ],
+        "refs_in": 0,
+        "refs_out": 6,
+        "refs_total": 6,
+        "summary_chars": 88,
+        "bleed_delta": 0.0015
+      },
+      {
+        "chapter_index": 3,
+        "title": "退费政策与资源优化讨论",
+        "summary": "本章讨论疫情期间学校食堂运营调整及财务政策。因学生离校，食堂窗口缩减至3个，需定期消毒；财务部对退学学生退费处理为半数，同时省下水电等经费用于提升教学质量。",
+        "refs": [
+          "seg-000100",
+          "seg-000104",
+          "seg-000122",
+          "seg-000126",
+          "seg-000137",
+          "seg-000148"
+        ],
+        "refs_in": 4,
+        "refs_out": 2,
+        "refs_total": 6,
+        "summary_chars": 78,
+        "bleed_delta": -0.0014
+      },
+      {
+        "chapter_index": 4,
+        "title": "宿舍设施与安全措施讨论",
+        "summary": "本章讨论学校财务调整与招生规划，因上半年未开学，决定将节省的水电经费用于招生宣传，重点突出硬件设施、宿舍安全及消防措施以吸引新生。",
+        "refs": [
+          "seg-000170",
+          "seg-000171",
+          "seg-000172",
+          "seg-000175",
+          "seg-000177",
+          "seg-000185"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 65,
+        "bleed_delta": -0.0053
+      },
+      {
+        "chapter_index": 5,
+        "title": "校园活动与设施维护讨论",
+        "summary": "本章聚焦学校下半年招生准备，明确需优先投入招生宣传与硬件设施展示。经讨论，学校将重点突出空调、独立卫生间等硬件优势，同时加强消防演练及社团活动推广，确保新生入学前完成宣传方案。",
+        "refs": [
+          "seg-000170",
+          "seg-000171",
+          "seg-000172",
+          "seg-000185",
+          "seg-000195",
+          "seg-000212"
+        ],
+        "refs_in": 2,
+        "refs_out": 4,
+        "refs_total": 6,
+        "summary_chars": 88,
+        "bleed_delta": 0.0033
+      },
+      {
+        "chapter_index": 6,
+        "title": "军训安排与校园宣传讨论",
+        "summary": "本章讨论了学校军训安排及宣传策略。针对新生军训可能因疫情推迟，招生办计划通过创新活动（如军训期间组织西瓜采购等）缓解学生恐惧，同时利用航拍等技术优化校园环境宣传，确保军训与学生综合素质培养结合。",
+        "refs": [
+          "seg-000225",
+          "seg-000227",
+          "seg-000236",
+          "seg-000237",
+          "seg-000221",
+          "seg-000223"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 97,
+        "bleed_delta": -0.0054
+      },
+      {
+        "chapter_index": 7,
+        "title": "军训教官来源与服装方案讨论",
+        "summary": "本章讨论军训安排及教官来源，确定将军训推迟至学期末，计划招募退伍兵作为教官，同时提出通过晚间活动和表演赛提升军训体验。",
+        "refs": [
+          "seg-000255",
+          "seg-000256",
+          "seg-000262",
+          "seg-000271",
+          "seg-000275"
+        ],
+        "refs_in": 5,
+        "refs_out": 0,
+        "refs_total": 5,
+        "summary_chars": 59,
+        "bleed_delta": 0.0043
+      },
+      {
+        "chapter_index": 8,
+        "title": "计算机专业招生与教学资源配置讨论",
+        "summary": "",
+        "refs": [],
+        "refs_in": 0,
+        "refs_out": 0,
+        "refs_total": 0,
+        "summary_chars": 0,
+        "bleed_delta": 0.0
+      }
+    ],
+    "recall": null
+  },
+  {
+    "arm": "A2b",
+    "chapters": 9,
+    "avg_summary_chars": 78.2,
+    "anchor_support_rate": 1.0,
+    "contam_ref_rate": 0.0,
+    "avg_bleed_delta": -0.0054,
+    "per_chapter": [
+      {
+        "chapter_index": 0,
+        "title": "会议开场与议题讨论",
+        "summary": "本章聚焦疫情下高校各部门协作应对网课问题及开学准备，明确下半年需返校考试科目、学生费用退费机制。结论：网课效率不足，下半年将调整教学安排并处理退费问题。",
+        "refs": [
+          "seg-000016",
+          "seg-000023",
+          "seg-000024",
+          "seg-000037",
+          "seg-000040"
+        ],
+        "refs_in": 5,
+        "refs_out": 0,
+        "refs_total": 5,
+        "summary_chars": 76,
+        "bleed_delta": 0.0
+      },
+      {
+        "chapter_index": 1,
+        "title": "疫情后学校运营与防疫措施讨论",
+        "summary": "疫情期间学校节省了水电等成本，安保部门裁减人员但要求值班并消毒，篮球场限流开放，返校需健康监测与打卡。",
+        "refs": [
+          "seg-000042",
+          "seg-000043",
+          "seg-000052",
+          "seg-000054",
+          "seg-000062",
+          "seg-000090"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 51,
+        "bleed_delta": -0.0042
+      },
+      {
+        "chapter_index": 2,
+        "title": "食堂运营与防疫措施调整",
+        "summary": "疫情期间学校食堂因学生停课而减少窗口，仅保留三个窗口运营，教职工需定期消毒并少量就餐，食堂收入受疫情影响。",
+        "refs": [
+          "seg-000100",
+          "seg-000101",
+          "seg-000103",
+          "seg-000104",
+          "seg-000105",
+          "seg-000106"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 53,
+        "bleed_delta": -0.0051
+      },
+      {
+        "chapter_index": 3,
+        "title": "退费政策与资源优化讨论",
+        "summary": "本章讨论了因疫情导致的学费及住宿费退费政策调整，财务部确认退费一半，同时学校通过省下水电等经费提升教学质量并为教师提供支持。",
+        "refs": [
+          "seg-000122",
+          "seg-000123",
+          "seg-000124",
+          "seg-000126",
+          "seg-000137",
+          "seg-000141"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 62,
+        "bleed_delta": -0.0084
+      },
+      {
+        "chapter_index": 4,
+        "title": "宿舍设施与安全措施讨论",
+        "summary": "下半年开学前需检查宿舍设备安全，重点保障消防设施及宿舍用电安全；同时计划将节省的经费用于招生宣传，突出学校硬件设施优势以吸引新生。",
+        "refs": [
+          "seg-000163",
+          "seg-000164",
+          "seg-000170",
+          "seg-000171",
+          "seg-000172",
+          "seg-000185"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 65,
+        "bleed_delta": -0.005
+      },
+      {
+        "chapter_index": 5,
+        "title": "校园活动与设施维护讨论",
+        "summary": "本章讨论学校招生宣传与后勤问题。需加强新生宣传，重点突出硬件设施、社团活动及官网信息；同时，宿舍水压不足问题需二次加压解决，高峰期供水问题较少，可考虑太阳能补给。",
+        "refs": [
+          "seg-000188",
+          "seg-000191",
+          "seg-000212",
+          "seg-000215",
+          "seg-000216",
+          "seg-000217"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 81,
+        "bleed_delta": -0.0134
+      },
+      {
+        "chapter_index": 6,
+        "title": "军训安排与校园宣传讨论",
+        "summary": "本章讨论军训安排及校园宣传策略。因疫情，军训计划推迟至学期末，招生办需设计吸引学生的军训活动，如教官参与、趣味互动（如买西瓜）以缓解学生恐惧。同时，校园环境航拍及安保检查纳入宣传重点。",
+        "refs": [
+          "seg-000225",
+          "seg-000227",
+          "seg-000228",
+          "seg-000236",
+          "seg-000237",
+          "seg-000241"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 92,
+        "bleed_delta": -0.006
+      },
+      {
+        "chapter_index": 7,
+        "title": "军训教官来源与服装方案讨论",
+        "summary": "本章讨论军训教官来源及活动优化方案。建议优先招募当届退伍兵（seg-000255），并考虑海军空军教官以丰富训练形式（seg-000265）。同时提出增设晚间互动游戏、军训后表演赛等举措，提升学生参与积极性（seg-000271, seg-000275）。",
+        "refs": [
+          "seg-000255",
+          "seg-000265",
+          "seg-000271",
+          "seg-000275"
+        ],
+        "refs_in": 4,
+        "refs_out": 0,
+        "refs_total": 4,
+        "summary_chars": 128,
+        "bleed_delta": -0.0052
+      },
+      {
+        "chapter_index": 8,
+        "title": "计算机专业招生与教学资源配置讨论",
+        "summary": "本章讨论学校专业招生、教学资源及运动会安保等事项。计算机专业报录比高，学校提供实验室设备并计划更新软件系统；运动会需准备防暑药品和清凉物品，由教务处协调采购。最终确定由财务部审核软件更新费用。",
+        "refs": [
+          "seg-000277",
+          "seg-000282",
+          "seg-000290",
+          "seg-000314",
+          "seg-000321",
+          "seg-000330"
+        ],
+        "refs_in": 6,
+        "refs_out": 0,
+        "refs_total": 6,
+        "summary_chars": 96,
+        "bleed_delta": -0.0014
+      }
+    ],
+    "recall": null
+  }
+]

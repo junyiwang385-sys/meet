@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:51.504209Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦孕妇专用化妆品研发，强调产品采用无公害配方且严格规避过敏风险，但研发成本高导致回本周期长，市场建议针对高端孕妇群体进行精准营销。\",\n  \"refs\": [\n    \"seg-000035\",\n    \"seg-000036\",\n    \"seg-000038\",\n    \"seg-000040\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1673797600,
+  "load_duration": 1036900,
+  "prompt_eval_count": 833,
+  "prompt_eval_duration": 232320000,
+  "eval_count": 100,
+  "eval_duration": 1387592000
+}

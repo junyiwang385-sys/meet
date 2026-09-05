@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:30.6989459Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦疫情下高校后勤经费优化，明确退费规则调整、水电节约及教师补贴机制。结论：通过退费半数、水电减支与经费定向支持，提升防疫期间教学资源保障能力。\",\n  \"refs\": [\n    \"seg-000126\",\n    \"seg-000137\",\n    \"seg-000141\",\n    \"seg-000148\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1814843500,
+  "load_duration": 1711100,
+  "prompt_eval_count": 1117,
+  "prompt_eval_duration": 291015000,
+  "eval_count": 106,
+  "eval_duration": 1455110000
+}

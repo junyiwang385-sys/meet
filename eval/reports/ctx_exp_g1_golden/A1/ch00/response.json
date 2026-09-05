@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:07.7226422Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦疫情下高校各部门协作应对网课问题及开学准备，明确下半年需返校考试科目、学生费用退费机制。结论：网课效率不足，下半年将调整教学安排并处理退费问题。\",\n  \"refs\": [\n    \"seg-000016\",\n    \"seg-000023\",\n    \"seg-000024\",\n    \"seg-000037\",\n    \"seg-000040\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1821482700,
+  "load_duration": 3079000,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 36085000,
+  "eval_count": 118,
+  "eval_duration": 1630733000
+}

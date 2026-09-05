@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:02:53.2818208Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"疫情期间学校食堂因学生缺席，仅保留三个窗口运营，需定期消毒；教职工宿舍费用较高，部分教师选择自愿入住。\",\n  \"refs\": [\n    \"seg-000104\",\n    \"seg-000105\",\n    \"seg-000113\",\n    \"seg-000114\",\n    \"seg-000117\",\n    \"seg-000120\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1828533600,
+  "load_duration": 3192800,
+  "prompt_eval_count": 1000,
+  "prompt_eval_duration": 229799000,
+  "eval_count": 109,
+  "eval_duration": 1498644000
+}

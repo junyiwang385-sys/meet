@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:04:16.6273954Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"下半年开学前需检查宿舍设备安全，重点保障消防设施及宿舍用电安全；同时计划将节省的经费用于招生宣传，突出学校硬件设施优势以吸引新生。\",\n  \"refs\": [\n    \"seg-000163\",\n    \"seg-000164\",\n    \"seg-000170\",\n    \"seg-000171\",\n    \"seg-000172\",\n    \"seg-000185\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2368349000,
+  "load_duration": 1496800,
+  "prompt_eval_count": 2211,
+  "prompt_eval_duration": 578153000,
+  "eval_count": 118,
+  "eval_duration": 1690883000
+}

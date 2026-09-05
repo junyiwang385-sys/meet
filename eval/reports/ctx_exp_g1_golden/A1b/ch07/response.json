@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:03:40.0014982Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"本章聚焦退伍兵作为军训教官的可行性，明确以当届退伍青年为主，兼顾海军/空军特色训练，同时提出通过晚间趣味活动（如游戏、歌唱）及军训后表演赛提升参与积极性。\",\n  \"refs\": [\n    \"seg-000255\",\n    \"seg-000256\",\n    \"seg-000257\",\n    \"seg-000258\",\n    \"seg-000262\",\n    \"seg-000271\",\n    \"seg-000272\",\n    \"seg-000275\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2429799800,
+  "load_duration": 2024600,
+  "prompt_eval_count": 1075,
+  "prompt_eval_duration": 273755000,
+  "eval_count": 153,
+  "eval_duration": 2082846000
+}

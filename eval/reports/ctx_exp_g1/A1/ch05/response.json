@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:37:59.1112334Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"下半年将重点通过官网宣传、社团活动及硬件设施优化吸引新生，突出食堂与宿舍安全优势。\",\n  \"refs\": [\n    \"seg-000195\",\n    \"seg-000194\",\n    \"seg-000212\",\n    \"seg-000214\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1464418600,
+  "load_duration": 1242900,
+  "prompt_eval_count": 1034,
+  "prompt_eval_duration": 268838000,
+  "eval_count": 82,
+  "eval_duration": 1127617000
+}

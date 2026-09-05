@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:37:33.9852809Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"summary\": \"疫情期间学校暂停开学，通过裁员和加强消毒措施控制成本，同时限制观众入场并实施分隔座位，确保防疫安全。\", \"refs\": [\"seg-000042\", \"seg-000043\", \"seg-000054\", \"seg-000062\", \"seg-000083\", \"seg-000090\"] }"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2051624900,
+  "load_duration": 1557400,
+  "prompt_eval_count": 1711,
+  "prompt_eval_duration": 452661000,
+  "eval_count": 98,
+  "eval_duration": 1521261000
+}

@@ -99,14 +99,43 @@ SKELETON = (
 CTX_A0 = ""
 CTX_A1 = "【上一章摘要（仅供理解衔接，不要摘录其内容）】\n{prev_summary}\n\n"
 CTX_A2 = "【上一章原文（仅供理解衔接，不要摘录其内容）】\n{prev_timeline}\n\n"
+# A1b：强定位——把上一章摘要的用途说成“去重锚点”，正向指令(写增量/写差异)而非消极禁令
+CTX_A1B = (
+    "【已写过的上一章摘要——用途：去重锚点】\n{prev_summary}\n"
+    "说明：上面是上一章已经写好的内容。本章摘要**不得与它重复**；"
+    "若本章在延续同一话题，只写本章**新出现的进展、细节或结论**，不要复述上一章已说过的。\n\n"
+)
+
+# A2b：全文上一章，但用强结构标记 + 明确白名单区间（测“脚手架能否救回全文上下文”）
+SKELETON_A2B = (
+    "下面分【参考区】和【本章区】两部分，请严格区分。\n\n"
+    "====== 参考区·上一章（只读，仅帮助你理解上下文衔接） ======\n"
+    "（以下每行的 segment_id 属于上一章，**严禁**出现在你的 refs 里）\n{prev_timeline}\n\n"
+    "====== 本章区·待摘要（你只总结这一部分） ======\n{timeline}\n\n"
+    "任务：只为【本章区】写一段摘要，并给出支撑摘要的原文引用 refs。\n"
+    "要求：\n"
+    "- summary：80~200 个中文字符，只概括【本章区】要点，结论前置；不得写入参考区的内容。\n"
+    "- refs：3~6 个，**只能从【本章区】的 segment_id 里选**，范围是 {id_lo} 到 {id_hi}（含）。\n"
+    "- 参考区的任何 segment_id 都不允许出现在 refs 里。\n"
+    '输出 JSON：{{"summary": "…", "refs": ["seg-xxxxxx", …]}}\n'
+)
 
 
 def build_messages(arm: str, chapter: dict, prev_chapter: dict | None, prev_summary: str) -> list[dict]:
     timeline = render_timeline(chapter["segments"])
-    if arm == "A0" or prev_chapter is None:
+    if arm == "A2b" and prev_chapter is not None:
+        ids = [s["segment_id"] for s in chapter["segments"]]
+        user = SKELETON_A2B.format(
+            prev_timeline=render_timeline(prev_chapter["segments"]),
+            timeline=timeline, id_lo=ids[0], id_hi=ids[-1],
+        )
+        return [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
+    if arm in ("A0", "A2b") or prev_chapter is None:
         ctx = ""
     elif arm == "A1":
         ctx = CTX_A1.format(prev_summary=prev_summary or "（上一章无摘要）")
+    elif arm == "A1b":
+        ctx = CTX_A1B.format(prev_summary=prev_summary or "（上一章无摘要）")
     elif arm == "A2":
         ctx = CTX_A2.format(prev_timeline=render_timeline(prev_chapter["segments"]))
     else:
@@ -242,7 +271,8 @@ def main() -> None:
              f"- 金标：`{args.golden}`" if args.golden else "- 金标：无（本轮只看 anchor/contam/bleed）", "",
              "| 臂 | 说明 | recall↑ | anchor_support↑ | contam_ref↓ | bleed_delta↓ | avg_chars |",
              "|---|---|---|---|---|---|---|"]
-    desc = {"A0": "仅本章(隔离)", "A1": "+上章压缩摘要(现产线)", "A2": "+上章全文(重上下文)"}
+    desc = {"A0": "仅本章(隔离)", "A1": "+上章压缩摘要(现产线)", "A1b": "+上章摘要(强定位/去重)",
+            "A2": "+上章全文(重上下文)", "A2b": "+上章全文(强标记白名单)"}
     for r in results:
         lines.append(f"| {r['arm']} | {desc.get(r['arm'],'')} | {r['recall']} | "
                      f"{r['anchor_support_rate']} | {r['contam_ref_rate']} | {r['avg_bleed_delta']} | {r['avg_summary_chars']} |")

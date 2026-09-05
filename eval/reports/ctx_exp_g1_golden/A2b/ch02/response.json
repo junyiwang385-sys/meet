@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T10:04:11.7237152Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"疫情期间学校食堂因学生停课而减少窗口，仅保留三个窗口运营，教职工需定期消毒并少量就餐，食堂收入受疫情影响。\",\n  \"refs\": [\n    \"seg-000100\",\n    \"seg-000101\",\n    \"seg-000103\",\n    \"seg-000104\",\n    \"seg-000105\",\n    \"seg-000106\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2509222600,
+  "load_duration": 1782800,
+  "prompt_eval_count": 2629,
+  "prompt_eval_duration": 701164000,
+  "eval_count": 112,
+  "eval_duration": 1650515000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-04T09:55:37.443544Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"化妆品市场聚焦高端群体，产品质量获认可但研发成本高致价格偏高；售后部门需加强服务以应对顾客反馈，法务部门处理商标侵权案件取得进展。\",\n  \"refs\": [\n    \"seg-000043\",\n    \"seg-000045\",\n    \"seg-000048\",\n    \"seg-000050\",\n    \"seg-000054\",\n    \"seg-000058\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2104794200,
+  "load_duration": 1755000,
+  "prompt_eval_count": 1114,
+  "prompt_eval_duration": 337077000,
+  "eval_count": 119,
+  "eval_duration": 1670238000
+}
