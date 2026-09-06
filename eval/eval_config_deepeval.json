@@ -1,0 +1,15 @@
+{
+  "note": "DeepEval 质量评测配置。cases 指向板端 meeting_result.json(含 summary+enrichment)+ 人工关键点金标。g1/g2 为 003 板端产物。",
+  "cases": [
+    {
+      "meeting": "g2_化妆品会",
+      "meeting_result": "ops/board-results/2026-09-02_003_enrichment-wire-board-verify/g2/harness/meeting_result.json",
+      "golden": "eval/golden/R002S05C01.keypoints.json"
+    },
+    {
+      "meeting": "g1_学校会",
+      "meeting_result": "ops/board-results/2026-09-02_003_enrichment-wire-board-verify/g1/harness/meeting_result.json",
+      "golden": "eval/golden/g1_school_ops.keypoints.json"
+    }
+  ]
+}

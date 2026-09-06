@@ -1,0 +1,48 @@
+[
+  {
+    "关键点召回": {
+      "score": 0.9,
+      "success": true,
+      "reason": "全部召回 9/10；漏：['kp7']"
+    },
+    "低频精确召回": {
+      "score": 0.0,
+      "success": false,
+      "reason": "低频召回 0/1；漏：['kp7']"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.7,
+      "success": false,
+      "reason": "The response generally captures key details from the transcript, including the financial figures of 800,000 yuan in revenue and 700,000 yuan in net profit, and "
+    },
+    "完整度 [GEval]": {
+      "score": 0.9,
+      "success": true,
+      "reason": "The Actual Output provides a comprehensive summary of the meeting transcript, covering all major topics including the first-half work summary, after-sales servi"
+    },
+    "meeting": "g2_化妆品会"
+  },
+  {
+    "关键点召回": {
+      "score": 0.917,
+      "success": true,
+      "reason": "全部召回 11/12；漏：['kp7']"
+    },
+    "低频精确召回": {
+      "score": 1.0,
+      "success": true,
+      "reason": "低频召回 3/3；漏：[]"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.4,
+      "success": false,
+      "reason": "The output captures several points directly from the transcript, such as online classes being inefficient, partial dormitory fee refunds, reduced cafeteria oper"
+    },
+    "完整度 [GEval]": {
+      "score": 0.7,
+      "success": false,
+      "reason": "The output captures many major topics from the transcript, including online teaching inefficiency, exam arrangements, partial dormitory fee refund, pandemic exp"
+    },
+    "meeting": "g1_学校会"
+  }
+]
