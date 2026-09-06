@@ -35,7 +35,10 @@ from deepeval.test_case import LLMTestCase                       # noqa: E402
 
 from judge.qwen_judge import QwenJudge                           # noqa: E402
 from metrics.keypoint_recall_metric import KeypointRecallMetric  # noqa: E402
-from metrics.geval_metrics import faithfulness, completeness     # noqa: E402
+from metrics.geval_metrics import faithfulness, completeness, conciseness  # noqa: E402
+from metrics.deterministic_metrics import (                      # noqa: E402
+    AnchorSupportMetric, KeywordPurityMetric, DecisionOwnerMetric,
+)
 
 
 def build_case(meeting_result_path: Path, golden_path: Path, meeting: str):
@@ -68,11 +71,13 @@ def build_case(meeting_result_path: Path, golden_path: Path, meeting: str):
     # minutes 结构化 dict(给确定性召回搜锚词——含全层,章节+enrichment)
     minutes = {"summary": summary, "enrichment": enrich}
     golden = json.loads(golden_path.read_text(encoding="utf-8"))
+    valid_seg_ids = {s["segment_id"] for s in segs if (s.get("text") or "").strip()}
 
     return LLMTestCase(
         input=transcript,
         actual_output=actual_output,
-        additional_metadata={"golden": golden, "minutes": minutes, "meeting": meeting},
+        additional_metadata={"golden": golden, "minutes": minutes, "meeting": meeting,
+                             "valid_seg_ids": list(valid_seg_ids)},
     )
 
 
@@ -94,11 +99,19 @@ def main() -> None:
     cfg = json.loads(args.config.read_text(encoding="utf-8"))
     judge = QwenJudge(model=args.judge_model)
     metrics = [
+        # L1 确定性(对金标/结构,判定依据)
         KeypointRecallMetric(threshold=0.8),
         KeypointRecallMetric(threshold=0.8, low_freq_only=True),
+        AnchorSupportMetric(threshold=0.8),
+        KeywordPurityMetric(threshold=0.9),
+        DecisionOwnerMetric(threshold=0.3),
+        # L2 裁判(千问,质量参考)
         faithfulness(judge),
         completeness(judge),
+        conciseness(judge),   # 精确侧:简洁/不跑题(替代太慢的 SummarizationMetric)
     ]
+    # 注:DeepEval SummarizationMetric(摘要专用,精确+覆盖)在 qwen3.8-max(慢)+全文下会超时,
+    #     暂不入默认套件;需要时换更快裁判(qwen-plus)再启用。
 
     args.out.mkdir(parents=True, exist_ok=True)
     rows = []

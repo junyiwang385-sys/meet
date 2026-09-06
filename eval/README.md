@@ -3,14 +3,25 @@
 基于 **DeepEval**(业界开源 LLM 评测框架)+ **千问 qwen3.8-max 裁判**,融合项目已有的人工金标与召回逻辑。
 评测跑在 PC/CI,不上板端;裁判用云端千问(比端侧 4B 大 → 判定可靠),不影响端侧离线部署。
 
-## 指标(两层)
+## 指标(8 个,两层)+ 裁判校准
 
 | 层 | 指标 | 实现 | 性质 |
 |---|---|---|---|
-| **L1 确定性** | 关键点召回 | `metrics/keypoint_recall_metric.py`(复用 `summary/keypoint_recall.py`) | 对人工金标,可复现,**判定依据** |
-| **L1 确定性** | 低频精确召回 | 同上(`low_freq_only`:anchor 含数字/中文数字的子类) | 对标飞书/阿里最大短板 |
-| **L2 裁判** | 忠实度 | `metrics/geval_metrics.py` G-Eval,千问裁判 | 不编造,数字/专名对得上;**参考** |
-| **L2 裁判** | 完整度 | 同上 | 覆盖主要议题/关键结论;**参考** |
+| **L1 确定性** | 关键点召回 | `metrics/keypoint_recall_metric.py`(复用 `summary/keypoint_recall.py`) | 对人工金标,搜全层(章节+enrichment),**判定依据** |
+| **L1 确定性** | 低频精确召回 | 同上(`low_freq_only`:anchor 含数字/中文数字子类) | 对标飞书/阿里最大短板 |
+| **L1 确定性** | 锚点支持率 | `metrics/deterministic_metrics.py` | 证据可回溯率(refs 落到真实原文段)——项目卖点 |
+| **L1 确定性** | 关键词纯净度 | 同上 | 议题词占比(不含人名/部门),量化 P1 去噪 |
+| **L1 确定性** | 决策owner归属率 | 同上 | 带负责人的决策占比,对标飞书说话人归属 |
+| **L2 裁判** | 忠实度 | `metrics/geval_metrics.py` G-Eval,千问 | 不编造,数字/专名对得上 |
+| **L2 裁判** | 完整度 | 同上 | 覆盖主要议题/关键结论 |
+| **L2 裁判** | 简洁相关度 | 同上 | 精确侧:简洁/不跑题/无冗余 |
+
+**裁判校准** `judge/calibrate.py`:用人工金标当真值,逐关键点问裁判"覆盖没有",与确定性召回比一致率。
+≥0.8 → 裁判的完整度判断可采信(实测 g1/g2 = 0.818,达标)。
+
+> 注:DeepEval `SummarizationMetric`(摘要专用,精确+覆盖)配 qwen3.8-max(慢)+全文会超时,
+> 未入默认套件;精确侧改用轻量 G-Eval 简洁相关度。需要时换更快裁判(qwen-plus)再启用 Summarization。
+> 分章 Pk/WindowDiff 需人工金标边界(g1/g2 暂无),`topic_segmentation/pk_windowdiff.py` 备用,有金标再接。
 
 ## 组成
 

@@ -1,0 +1,161 @@
+{
+  "agreement": 0.818,
+  "n": 22,
+  "verdict": "可信(≥0.8,G-Eval完整度可采信)",
+  "rows": [
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp1",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp2",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp3",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp4",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp5",
+      "det": true,
+      "judge": false,
+      "match": false
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp6",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp7",
+      "det": false,
+      "judge": true,
+      "match": false
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp8",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp9",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g2_化妆品会",
+      "kp": "kp10",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp1",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp2",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp3",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp4",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp5",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp6",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp7",
+      "det": false,
+      "judge": false,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp8",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp9",
+      "det": true,
+      "judge": false,
+      "match": false
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp10",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp11",
+      "det": true,
+      "judge": true,
+      "match": true
+    },
+    {
+      "meeting": "g1_学校会",
+      "kp": "kp12",
+      "det": true,
+      "judge": false,
+      "match": false
+    }
+  ]
+}

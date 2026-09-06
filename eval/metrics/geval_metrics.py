@@ -25,6 +25,22 @@ def faithfulness(judge, threshold: float = 0.8) -> GEval:
     )
 
 
+def conciseness(judge, threshold: float = 0.7) -> GEval:
+    """简洁相关度(精确侧):纪要是否简洁、聚焦,不啰嗦、不跑题、不堆无关内容。
+    补"只有召回没有精确"的缺口——一份什么都塞的纪要召回高但可能冗长,这里扣它。"""
+    return GEval(
+        name="简洁相关度",
+        criteria=(
+            "判断【实际纪要 Actual Output】是否简洁聚焦:围绕会议实质议题,"
+            "不啰嗦重复、不跑题、不堆入与会议无关或价值很低的内容。"
+            "紧扣要点、无冗余得高分;啰嗦注水、混入无关内容扣分。"
+        ),
+        evaluation_params=[P.INPUT, P.ACTUAL_OUTPUT],
+        model=judge,
+        threshold=threshold,
+    )
+
+
 def completeness(judge, threshold: float = 0.8) -> GEval:
     """完整度:纪要是否覆盖了原文讨论的主要议题与关键结论,有没有漏掉重要信息。"""
     return GEval(

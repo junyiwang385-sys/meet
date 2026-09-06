@@ -10,15 +10,35 @@
       "success": false,
       "reason": "低频召回 0/1；漏：['kp7']"
     },
-    "忠实度 [GEval]": {
-      "score": 0.7,
+    "锚点支持率": {
+      "score": 1.0,
+      "success": true,
+      "reason": "证据可回溯 22/22"
+    },
+    "关键词纯净度": {
+      "score": 0.944,
+      "success": true,
+      "reason": "纯净 17/18；混入称谓：['专员']"
+    },
+    "决策owner归属率": {
+      "score": 0.0,
       "success": false,
-      "reason": "The response generally captures key details from the transcript, including the financial figures of 800,000 yuan in revenue and 700,000 yuan in net profit, and "
+      "reason": "带owner 0/18"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.8,
+      "success": true,
+      "reason": "The response accurately captures key details from the input, such as the financial figures (800,000 yuan in revenue and 700,000 yuan in net profit), the tradema"
     },
     "完整度 [GEval]": {
-      "score": 0.9,
+      "score": 0.8,
       "success": true,
-      "reason": "The Actual Output provides a comprehensive summary of the meeting transcript, covering all major topics including the first-half work summary, after-sales servi"
+      "reason": "The output broadly captures the meeting’s major topics and conclusions, including the half-year summary, sales and after-sales issues, pregnant-customer product"
+    },
+    "简洁相关度 [GEval]": {
+      "score": 0.7,
+      "success": true,
+      "reason": "The Actual Output stays largely focused on the substantive meeting topics, including first-half sales and service review, pregnancy-specific product R&D, pricin"
     },
     "meeting": "g2_化妆品会"
   },
@@ -33,15 +53,35 @@
       "success": true,
       "reason": "低频召回 3/3；漏：[]"
     },
-    "忠实度 [GEval]": {
-      "score": 0.4,
+    "锚点支持率": {
+      "score": 1.0,
+      "success": true,
+      "reason": "证据可回溯 27/27"
+    },
+    "关键词纯净度": {
+      "score": 0.667,
       "success": false,
-      "reason": "The output captures several points directly from the transcript, such as online classes being inefficient, partial dormitory fee refunds, reduced cafeteria oper"
+      "reason": "纯净 12/18；混入称谓：['招生办', '院长', '服务员', '保卫科', '后勤部', '教务主任']"
+    },
+    "决策owner归属率": {
+      "score": 0.0,
+      "success": false,
+      "reason": "带owner 0/30"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.3,
+      "success": false,
+      "reason": "The response captures many broad topics from the transcript, such as online classes, partial dormitory fee refunds, security staffing, canteen disinfection, rec"
     },
     "完整度 [GEval]": {
+      "score": 0.8,
+      "success": true,
+      "reason": "The Actual Output covers most major topics and decisions from the meeting transcript, including the shift from online to in-person classes, exam arrangements, r"
+    },
+    "简洁相关度 [GEval]": {
       "score": 0.7,
-      "success": false,
-      "reason": "The output captures many major topics from the transcript, including online teaching inefficiency, exam arrangements, partial dormitory fee refund, pandemic exp"
+      "success": true,
+      "reason": "The Actual Output largely focuses on the meeting’s substantive topics—online teaching, exam arrangements, pandemic-related expenses, refunds, dormitory safety, "
     },
     "meeting": "g1_学校会"
   }

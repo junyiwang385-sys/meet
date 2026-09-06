@@ -29,7 +29,7 @@ class QwenJudge(DeepEvalBaseLLM):
         if not key:
             raise RuntimeError("缺 DASHSCOPE_API_KEY 环境变量(千问裁判需要)")
         self.model = model
-        self._client = OpenAI(api_key=key, base_url=base_url, timeout=300.0)
+        self._client = OpenAI(api_key=key, base_url=base_url, timeout=600.0)
 
     def load_model(self) -> "QwenJudge":
         return self
