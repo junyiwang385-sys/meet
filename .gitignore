@@ -53,3 +53,8 @@ data/lifelog_quant/dataset_np/
 *.bin
 *.npy
 *.gguf
+
+# 评测LLM请求逐次dump(噪声,不追踪;保留RESULTS/结果json)
+eval/reports/**/_g*/
+eval/reports/**/_llm/
+eval/reports/ctx_exp_*/A*/
