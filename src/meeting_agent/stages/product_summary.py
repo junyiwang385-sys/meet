@@ -1383,6 +1383,16 @@ def _summaries_too_similar(left: str, right: str, threshold: float = 0.8) -> boo
     return len(left_grams & right_grams) / len(left_grams | right_grams) >= threshold
 
 
+def _continues_from_boundary(block: dict[str, Any]) -> bool:
+    """A0 解耦后,continues_previous 由 A 层边界原因确定性判定,不再靠模型(避免把上文喂进摘要)。
+
+    仅"因超长被切开的续块"(opened_by == ['size_split'],同一话题被预算切碎)并回上一章;
+    cohesion/gap/speaker/start 均为真话题/说话人边界,不并。
+    (依据:5 场受控实测 A0 单章 召回0.916>0.825、串味0.008<0.034 优于带 carryover 的 A1。)
+    """
+    return list(block.get("opened_by") or []) == ["size_split"]
+
+
 def _reduce_blocks_to_chapters(
     block_results: list[dict[str, Any]],
     segment_by_id: dict[str, dict[str, Any]],
@@ -1799,14 +1809,15 @@ def run_product_summary_stage(
         atomic_write_json(out_dir / "segmentation.json", segmentation)
         segment_by_id = {segment["segment_id"]: segment for segment in nonempty}
 
-        # B 层：逐块摘要（map），一次调用一块，附上一块上下文判定是否延续同一话题
+        # B 层：逐块摘要（map），一次一块，【A0 单章隔离——不喂上一块上下文】。
+        # 实测(5场受控):带 carryover 的 A1 召回更低(0.825<0.916)、串味更高(0.034>0.008),故切 A0。
+        # continues_previous 不再靠模型判(那需要把上文喂进来),改由 A 层边界原因确定性判定。
         block_results: list[dict[str, Any]] = []
-        prev_context: dict[str, str] | None = None
         for block in blocks:
             block_id = block["block_id"]
             block_segments = [segment_by_id[seg_id] for seg_id in block["segment_ids"]]
             messages = _block_summary_messages(
-                block_segments, prev_context, ref_map=ref_map, speaker_map=speaker_map,
+                block_segments, None, ref_map=ref_map, speaker_map=speaker_map,
                 profile=config.profile,
             )
             estimate = estimate_message_tokens(messages, budget)
@@ -1838,10 +1849,12 @@ def run_product_summary_stage(
                 estimate=estimate,
                 validator=validate_block_request,
             )
-            block_result = {**block_result, "block_id": block_id, "segment_ids": block["segment_ids"]}
+            block_result = {
+                **block_result, "block_id": block_id, "segment_ids": block["segment_ids"],
+                "continues_previous": _continues_from_boundary(block),  # 确定性,不用模型判
+            }
             atomic_write_json(request_dir / "validated_block.json", block_result)
             block_results.append(block_result)
-            prev_context = {"title": block_result["title"], "summary": block_result["summary"]}
 
         # 合并（reduce over boundaries）：相邻块 continues_previous 的并成一章，把 A 层过切收回来
         chapters, action_candidates = _reduce_blocks_to_chapters(block_results, segment_by_id)

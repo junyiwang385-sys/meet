@@ -1,0 +1,25 @@
+{
+  "title": "本块小标题",
+  "key_points": [
+    "先抽取：本块最重要的结论/决定/方案（含被“总结/第一二三/所以/结论是”标记的内容）"
+  ],
+  "anchors": [
+    "具体例子/数字/专有名词（如：微波炉、300万、某模块名）"
+  ],
+  "summary": "再据上面 key_points 与 anchors 写成的连续摘要",
+  "continues_previous": false,
+  "key_refs": [
+    "r1",
+    "r3"
+  ],
+  "action_candidates": [
+    {
+      "task": "明确待办",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r1"
+      ]
+    }
+  ]
+}
