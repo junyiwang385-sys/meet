@@ -1,0 +1,321 @@
+# cmd file : 0022_probe_existing_evalkit.txt
+# started  : 2026-09-08T11:43:41
+# exit code: 0
+
+===== STDOUT =====
+===README===
+# Meeting_Agent 模型质量评测
+
+`evals/` 是模型质量评测目录，与 `tests/` 中的 Python 软件测试分开。第一阶段从 canonical Timeline 开始，评估当前本地摘要流程，并用远程 Anthropic Claude 做 LLM-as-a-Judge。
+
+## 凭据与 API
+
+Judge 使用 Python 标准库 `urllib` 直接调用 Anthropic-compatible Messages API，不需要安装 `anthropic` SDK、conda 或额外虚拟环境。为了方便板端重复执行，可以直接在 [llm_judge.py](llm_judge.py) 顶部填写：
+
+```python
+ANTHROPIC_API_KEY = "sk-ant-..."
+ANTHROPIC_BASE_URL = "https://maas.xgimi.com"
+```
+
+代码会使用这两个常量，通过 `https://maas.xgimi.com/v1/messages` 调用 Anthropic Messages API。API Key 为空时会记录 `missing_api_key`，不会静默跳过 Judge。真实密钥不要提交到 Git。
+
+Judge 默认模型是 `claude-opus-5`，远程 Claude 只负责评审，不负责生成候选摘要。
+
+## 先做无 API 的 smoke test
+
+已有候选结果时，可以跳过本地板端 LLM，先验证数据发现、确定性评分和产物：
+
+```bash
+python -m evals.run_eval \
+  --candidate-summary-root output/my_candidate_results \
+  --skip-judge \
+  --output-root output/evals
+```
+
+候选目录支持：
+
+```text
+output/my_candidate_results/<case_id>/meeting_summary.json
+output/my_candidate_results/<case_id>.json
+```
+
+只评估一个 case：
+
+```bash
+python -m evals.run_eval \
+  --cases vcsum_technical_01_id230 \
+  --candidate-summary output/my_candidate_results/vcsum_technical_01_id230/meeting_summary.json \
+  --skip-judge
+```
+
+## 使用当前本地摘要流程
+
+没有 `--candidate-summary-root` 时，runner 会尝试调用现有 `meeting_harness.product_summary.run_product_summary_stage`。这需要本机能够导入 Harness，并且能连接 `rkllm3-server`/模型文件；完整参数可通过 `--model-dir`、`--server`、`--ctx` 等覆盖。
+
+默认板端路径是：
+
+```text
+eval package:  /userdata/meeting_agent/evals
+VCSum data:    /userdata/meeting_agent/evals/data/vcsum
+Eval output:   /userdata/meeting_agent/evals/output
+Board scripts: /userdata/meeting_agent/scripts
+LLM model:     /userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k
+LLM server:    /usr/bin/rkllm3-server
+LLM endpoint:  127.0.0.1:18245
+```
+
+评测代码和评测数据单独放在 `/userdata/meeting_agent/evals`，生产 Harness 仍然使用 `/userdata/meeting_agent/scripts`。由于 `evals` 是 Python package，运行时从 `/userdata/meeting_agent` 目录启动；代码会自动寻找 `/userdata/meeting_agent/scripts/harness`。
+
+```bash
+cd /userdata/meeting_agent
+
+python3 -m evals.run_eval \
+  --vcsum-root /userdata/meeting_agent/evals/data/vcsum \
+  --board-scripts-dir /userdata/meeting_agent/scripts \
+  --model-dir /userdata/meeting_agent/models/llm/v104/qwen3-4b-v104-ctx16k \
+  --output-root /userdata/meeting_agent/evals/output
+===DATA_LS===
+===AUDIO_TRAINL_LS===
+===EXPECTED_OR_GOLDEN===
+===RUN_E2E_HEAD===
+"""Run audio-to-summary end-to-end evaluation with a remote LLM Judge."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import pathlib
+import re
+import subprocess
+import sys
+import time
+from collections import Counter
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from typing import Any
+
+from .deterministic_grader import grade_summary, normalize_expected
+from .e2e_metrics import evaluate_timelines
+from .textgrid import parse_textgrid, render_reference_timeline
+
+JUDGE_PROMPT_VERSION = "judge_claim_fact_v2"
+TIMELINE_LINE_RE = re.compile(
+    r"^\[(seg-\d+)\]\[(\d+)m(\d{2})s-(\d+)m(\d{2})s\]\[([^\]]+)\]\s+(.*)$"
+)
+
+
+@dataclass(frozen=True)
+class E2ECase:
+    case_id: str
+    group: str
+    category: str
+    audio_path: pathlib.Path
+    reference_timeline_path: pathlib.Path
+    expected_path: pathlib.Path
+    pipeline_output_dir: pathlib.Path | None
+    metadata: dict[str, Any]
+
+
+def _repo_root() -> pathlib.Path:
+    return pathlib.Path(__file__).resolve().parents[1]
+
+
+def _atomic_write(path: pathlib.Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def _atomic_text(path: pathlib.Path, value: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(value, encoding="utf-8")
+
+
+def parse_timeline(path: pathlib.Path) -> tuple[list[dict[str, Any]], list[str], str]:
+===GRADER_HEAD===
+"""Deterministic grading for evidence-linked meeting summaries."""
+
+from __future__ import annotations
+
+import difflib
+import json
+import re
+from collections import Counter
+from typing import Any
+
+try:
+    from meeting_harness.validation import SummaryValidationError, validate_summary_object
+except Exception:  # pragma: no cover - allows data-only smoke tests
+    SummaryValidationError = ValueError
+    validate_summary_object = None
+
+_NORMALIZE_RE = re.compile(r"[^\w一-鿿]+", re.UNICODE)
+
+
+def _norm(text: Any) -> str:
+    return _NORMALIZE_RE.sub("", str(text or "")).lower()
+
+
+def _similarity(left: Any, right: Any) -> float:
+    a, b = _norm(left), _norm(right)
+    if not a or not b:
+        return 0.0
+    if a in b or b in a:
+        return 1.0
+    ratio = difflib.SequenceMatcher(None, a, b).ratio()
+    if len(a) >= 4 and len(b) >= 4:
+        overlap = len(set(a) & set(b)) / max(1, len(set(a) | set(b)))
+        return max(ratio, overlap)
+    return ratio
+
+
+def _f1(precision: float, recall: float) -> float:
+    return 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+
+
+def _match_texts(expected: list[dict[str, Any]], actual: list[dict[str, Any]], threshold: float = 0.30) -> dict[str, Any]:
+    candidates = []
+    for expected_item in expected:
+        best = None
+        for index, actual_item in enumerate(actual):
+===METRICS_HEAD===
+"""Deterministic Timeline metrics for end-to-end Meeting_Agent evaluation."""
+
+from __future__ import annotations
+
+import re
+from typing import Any
+
+_TEXT_RE = re.compile(r"[0-9a-zA-Z一-鿿]")
+
+
+def normalize_text(value: Any) -> str:
+    return "".join(_TEXT_RE.findall(str(value or "").lower()))
+
+
+def edit_distance(left: str, right: str) -> int:
+    """Return exact Levenshtein distance using a bit-parallel algorithm."""
+    if left == right:
+        return 0
+    if not left:
+        return len(right)
+    if not right:
+        return len(left)
+    if len(left) > len(right):
+        left, right = right, left
+
+    pattern_length = len(left)
+    high_bit = 1 << (pattern_length - 1)
+    mask = (1 << pattern_length) - 1
+    char_masks: dict[str, int] = {}
+    for index, char in enumerate(left):
+        char_masks[char] = char_masks.get(char, 0) | (1 << index)
+
+    positive = mask
+    negative = 0
+    score = pattern_length
+    for char in right:
+        equal = char_masks.get(char, 0)
+        vertical = equal | negative
+        horizontal = (((equal & positive) + positive) ^ positive) | equal
+        positive_horizontal = negative | ~(horizontal | positive)
+        negative_horizontal = positive & horizontal
+        if positive_horizontal & high_bit:
+            score += 1
+        elif negative_horizontal & high_bit:
+            score -= 1
+===PREPARE_HEAD===
+"""Create four-field E2E expected labels from official TextGrid transcripts."""
+
+# ruff: noqa: TRY004 - validation errors consistently use ValueError in this project
+
+from __future__ import annotations
+
+import argparse
+import ast
+import json
+import os
+import pathlib
+import re
+import time
+import urllib.error
+import urllib.request
+from dataclasses import dataclass
+from typing import Any
+
+from .textgrid import parse_textgrid, render_reference_timeline
+
+PREPARATION_VERSION = "textgrid_expected_v1"
+DEFAULT_MODEL = "claude-opus-5"
+DEFAULT_SPLITS = ("test", "train_L", "train_S")
+TARGET_FIELDS = ("overview", "chapters", "speakers", "action_items")
+
+EXPECTED_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "overview": {
+            "type": "object",
+            "properties": {
+                "text": {"type": "string"},
+                "refs": {"type": "array", "items": {"type": "string"}},
+            },
+            "required": ["text", "refs"],
+            "additionalProperties": False,
+        },
+        "chapters": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string"},
+                    "overview": {"type": "string"},
+                    "start_ref": {"type": "string"},
+===LLMJUDGE_HEAD===
+"""Remote LLM-as-a-Judge over the Anthropic-compatible HTTP API."""
+
+from __future__ import annotations
+
+import json
+import pathlib
+import urllib.error
+import urllib.request
+from typing import Any
+
+JUDGE_PROMPT_VERSION = "judge_claim_fact_v2"
+DEFAULT_JUDGE_MODEL = "claude-opus-5"
+
+# Fill these values locally before running the Judge.
+# Keep the file out of commits if it contains a real credential.
+ANTHROPIC_API_KEY = "sk-8RjafDM9zrIYg1h_SqIVVw"
+ANTHROPIC_BASE_URL = "https://maas.xgimi.com"
+ANTHROPIC_VERSION = "2023-06-01"
+
+JUDGE_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "claim_evaluations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "claim_id": {"type": "string"},
+                    "claim": {"type": "string"},
+                    "status": {"type": "string", "enum": ["supported", "partially_supported", "unsupported", "contradiction"]},
+                    "severity": {"type": "string", "enum": ["none", "minor", "critical"]},
+                    "refs": {"type": "array", "items": {"type": "string"}},
+                    "reason": {"type": "string"},
+                },
+                "required": ["claim_id", "claim", "status", "severity", "refs", "reason"],
+                "additionalProperties": False,
+            },
+        },
+        "fact_coverage": {
+            "type": "array",
+===REPORTS_LS===
+build_report.py
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:00000210A0223DE0
+
