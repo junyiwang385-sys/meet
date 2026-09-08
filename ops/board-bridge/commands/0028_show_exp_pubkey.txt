@@ -1,0 +1,1 @@
+type %USERPROFILE%\.ssh\id_ed25519.pub 2>nul & type %USERPROFILE%\.ssh\id_rsa.pub 2>nul & echo ===PUBKEYS_END===
