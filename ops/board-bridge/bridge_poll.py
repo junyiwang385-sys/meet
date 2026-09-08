@@ -99,10 +99,30 @@ def process_one(cmd_file: Path) -> None:
         print(f"[{stamp()}] push 失败，下轮重试：{push.stderr.strip()[:120]}")
 
 
+def self_heal() -> None:
+    """pull 失败（多为 rebase/autostash 弹栈冲突留下 unmerged）时，清干净并硬对齐上游。
+
+    会丢弃本机未推送的本地提交（只可能是 result *.out，重跑对应命令即可再生），
+    换取轮询器永远能向前走、不再被 "have unmerged files" 卡死。
+    """
+    git("rebase", "--abort")
+    git("merge", "--abort")
+    git("stash", "clear")
+    git("fetch", "origin")
+    up = git("rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{u}")
+    if up.returncode == 0:
+        upstream = up.stdout.strip()
+        r = git("reset", "--hard", upstream)
+        print(f"[{stamp()}] 自愈：reset --hard {upstream} rc={r.returncode}")
+    else:
+        print(f"[{stamp()}] 自愈失败：拿不到上游分支，人工介入")
+
+
 def loop_once() -> None:
     pull = git("pull", "--rebase", "--autostash")
     if pull.returncode != 0:
-        print(f"[{stamp()}] git pull 失败：{pull.stderr.strip()[:120]}")
+        print(f"[{stamp()}] git pull 失败：{pull.stderr.strip()[:120]} —— 尝试自愈")
+        self_heal()
     pending = sorted(
         p for p in CMD_DIR.glob("*.txt")
         if not (RES_DIR / (p.stem + ".out")).exists()
