@@ -1,0 +1,70 @@
+# cmd file : 0030_probe_ft_gpu.txt
+# started  : 2026-09-08T18:03:01
+# exit code: 0
+
+===== STDOUT =====
+===WSL_NVSMI===
+-r-xr-xr-x 2 root root 828384 May  6 11:16 /usr/lib/wsl/lib/nvidia-smi
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 3070, 8192 MiB, 596.49
+===DXG===
+crw-rw-rw- 1 root root 10, 125 Jul 31 15:13 /dev/dxg
+===WSL_LIB===
+libcuda.so
+libcuda.so.1
+libcuda.so.1.1
+libcudadebugger.so.1
+libd3d12.so
+libd3d12core.so
+libdxcore.so
+libnvcuvid.so
+libnvcuvid.so.1
+libnvdxdlkernels.so
+libnvidia-encode.so
+libnvidia-encode.so.1
+libnvidia-gpucomp.so
+libnvidia-gpucomp.so.595.71.05
+libnvidia-ml.so.1
+libnvidia-ngx.so.1
+libnvidia-opticalflow.so
+libnvidia-opticalflow.so.1
+libnvoptix.so.1
+libnvoptix_loader.so.1
+===PATH_NVSMI===
+not-on-path
+===DF_ALL===
+Filesystem      Size  Used Avail Use% Mounted on
+none             48G     0   48G   0% /usr/lib/modules/6.6.114.1-microsoft-standard-WSL2
+none             48G  4.0K   48G   1% /mnt/wsl
+drivers         281G  243G   39G  87% /usr/lib/wsl/drivers
+/dev/sdd       1007G  898G   59G  94% /
+none             48G  192K   48G   1% /mnt/wslg
+none             48G     0   48G   0% /usr/lib/wsl/lib
+rootfs           48G  2.8M   48G   1% /init
+none             48G  1.2M   48G   1% /run
+none             48G     0   48G   0% /run/lock
+none             48G     0   48G   0% /run/shm
+none             48G   80K   48G   1% /mnt/wslg/versions.txt
+none             48G   80K   48G   1% /mnt/wslg/doc
+C:\             281G  243G   39G  87% /mnt/c
+D:\             196G   25G  171G  13% /mnt/d
+E:\             3.7T  1.3T  2.4T  35% /mnt/e
+snapfuse         18M   18M     0 100% /snap/nvim/4755
+snapfuse         74M   74M     0 100% /snap/core22/2411
+snapfuse         74M   74M     0 100% /snap/core22/2437
+snapfuse         51M   51M     0 100% /snap/snapd/27710
+snapfuse         51M   51M     0 100% /snap/snapd/27738
+===MNT===
+c
+d
+e
+wsl
+wslg
+===MEM===
+               total        used        free      shared  buff/cache   available
+Mem:              94           2          90           0           1          91
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000002A3E9853FD0
+
