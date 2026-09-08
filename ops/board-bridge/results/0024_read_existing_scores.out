@@ -1,0 +1,854 @@
+# cmd file : 0024_read_existing_scores.txt
+# started  : 2026-09-08T11:53:19
+# exit code: 0
+
+===== STDOUT =====
+===ALL_AGGREGATES===
+output/prompt_v24_20260824T091415Z/aggregate.json
+output/e2e_smoke_judge_fixed_v2/aggregate.json
+output/20260817T082045Z/aggregate.json
+output/e2e_smoke_judge_normalized_v3/aggregate.json
+output/vcsum_50_rejudge_fable5_retry/20260819T053956Z/aggregate.json
+output/vcsum_50_rejudge_fable5/20260819T031641Z/aggregate.json
+output/e2e_trainL_full_20260821T020347Z/aggregate.json
+output/e2e/e2e_smoke_20260820T054343Z/aggregate.json
+output/vcsum_50_mvp_final/20260819T064109Z/aggregate.json
+output/20260818T072524Z/aggregate.json
+output/baseline_v23_merged_v2/aggregate.json
+output/20260817T091320Z/aggregate.json
+output/vcsum_50_current/20260818T100237Z/aggregate.json
+output/20260817T073110Z/aggregate.json
+output/e2e_test20_full_20260820T071622Z/aggregate.json
+output/20260817T081710Z/aggregate.json
+output/20260818T070459Z/aggregate.json
+output/20260818T053857Z/aggregate.json
+output/e2e_smoke_judge_fixed/aggregate.json
+===CAT_AGGREGATES===
+--- output/prompt_v24_20260824T091415Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 2,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 0.5,
+      "judge_success_count": 0,
+      "faithfulness": null,
+      "weighted_completeness": null,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 0,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 0
+      },
+      "critical_error_count": 0,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 0,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 0.5,
+        "timeline_evaluated_count": 2,
+        "cer_corpus": 0.383071,
+        "cer_macro": 0.4167,
+        "speech_recall_macro": 1.0,
+        "speech_precision_macro": 0.7715,
+        "speaker_accuracy_macro": 0.9167,
+        "speaker_count_mae": 0.5,
+        "unknown_speech_ratio_macro": 0.306,
+        "total_elapsed_seconds_mean": 353.695,
+        "total_elapsed_seconds_max": 384.4,
+        "llm_model_call_elapsed_seconds_mean": 99.46,
+        "memory_peak_mb_mean": 2632.455,
+        "memory_peak_mb_max": 2657.191,
+        "stage_elapsed_seconds_mean": {
+          "batch_asr": 75.4395,
+          "compat_export": 0.042,
+          "llm_summary": 130.199,
+          "segmentation": 185.0755,
+          "transcript_prepare": 0.0195
+        },
+        "failure_counts": {
+          "llm_summary:validation_failed": 1
+        }
+      }
+    },
+    "train_L": {
+      "case_count": 2,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 0.5,
+      "judge_success_count": 0,
+      "faithfulness": null,
+      "weighted_completeness": null,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 0,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 0
+      },
+      "critical_error_count": 0,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 0,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 0.5,
+        "timeline_evaluated_count": 2,
+--- output/e2e_smoke_judge_fixed_v2/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 1,
+      "faithfulness": null,
+      "weighted_completeness": 0.0,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 13,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 13
+      },
+      "critical_error_count": 3,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 1,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 1.0,
+        "timeline_evaluated_count": 1,
+        "cer_corpus": 0.379695,
+        "cer_macro": 0.3797,
+        "speech_recall_macro": 1.0,
+        "speech_precision_macro": 0.8951,
+        "speaker_accuracy_macro": 0.9671,
+        "speaker_count_mae": 1.0,
+        "unknown_speech_ratio_macro": 0.1215,
+        "total_elapsed_seconds_mean": 94.449,
+        "total_elapsed_seconds_max": 94.449,
+        "llm_model_call_elapsed_seconds_mean": 60.235,
+        "memory_peak_mb_mean": 1317.285,
+        "memory_peak_mb_max": 1317.285,
+        "stage_elapsed_seconds_mean": {
+          "batch_asr": null,
+          "compat_export": 0.032,
+          "llm_summary": 94.01,
+          "segmentation": null,
+          "transcript_prepare": 0.017
+        },
+        "failure_counts": {}
+      }
+    },
+    "test": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 1,
+      "faithfulness": null,
+      "weighted_completeness": 0.0,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 13,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 13
+      },
+      "critical_error_count": 3,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 1,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 1.0,
+        "timeline_evaluated_count": 1,
+        "cer_corpus": 0.379695,
+        "cer_macro": 0.3797,
+--- output/20260817T082045Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 2,
+      "candidate_success_count": 2,
+      "judge_success_count": 2,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0572,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 1.5,
+      "judge_completeness": 1.5,
+      "judge_structure": 1.5,
+      "judge_readability": 2.0,
+      "critical_error_count": 0
+    },
+    "vcsum": {
+      "case_count": 2,
+      "candidate_success_count": 2,
+      "judge_success_count": 2,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0572,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 1.5,
+      "judge_completeness": 1.5,
+      "judge_structure": 1.5,
+      "judge_readability": 2.0,
+      "critical_error_count": 0
+    },
+    "sharing": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "judge_success_count": 1,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0588,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 0.0,
+      "judge_completeness": 0.0,
+      "judge_structure": 0.0,
+      "judge_readability": 0.0,
+      "critical_error_count": 0
+    },
+    "technical": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "judge_success_count": 1,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0556,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+--- output/e2e_smoke_judge_normalized_v3/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 1,
+      "faithfulness": 0.8385,
+      "weighted_completeness": 0.5,
+      "claim_count": 65,
+      "claim_status_counts": {
+        "supported": 52,
+        "partially_supported": 5,
+        "unsupported": 5,
+        "contradiction": 3
+      },
+      "fact_count": 13,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 13,
+        "missing": 0
+      },
+      "critical_error_count": 3,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 1,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 1.0,
+        "timeline_evaluated_count": 1,
+        "cer_corpus": 0.379695,
+        "cer_macro": 0.3797,
+        "speech_recall_macro": 1.0,
+        "speech_precision_macro": 0.8951,
+        "speaker_accuracy_macro": 0.9671,
+        "speaker_count_mae": 1.0,
+        "unknown_speech_ratio_macro": 0.1215,
+        "total_elapsed_seconds_mean": 94.449,
+        "total_elapsed_seconds_max": 94.449,
+        "llm_model_call_elapsed_seconds_mean": 60.235,
+        "memory_peak_mb_mean": 1317.285,
+        "memory_peak_mb_max": 1317.285,
+        "stage_elapsed_seconds_mean": {
+          "batch_asr": null,
+          "compat_export": 0.032,
+          "llm_summary": 94.01,
+          "segmentation": null,
+          "transcript_prepare": 0.017
+        },
+        "failure_counts": {}
+      }
+    },
+    "test": {
+      "case_count": 1,
+      "candidate_success_count": 1,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 1,
+      "faithfulness": 0.8385,
+      "weighted_completeness": 0.5,
+      "claim_count": 65,
+      "claim_status_counts": {
+        "supported": 52,
+        "partially_supported": 5,
+        "unsupported": 5,
+        "contradiction": 3
+      },
+      "fact_count": 13,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 13,
+        "missing": 0
+      },
+      "critical_error_count": 3,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 1,
+      "e2e": {
+        "pipeline_success_count": 1,
+        "pipeline_completion_rate": 1.0,
+        "timeline_evaluated_count": 1,
+        "cer_corpus": 0.379695,
+        "cer_macro": 0.3797,
+--- output/vcsum_50_rejudge_fable5_retry/20260819T053956Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 15,
+      "candidate_success_count": 15,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 15,
+      "faithfulness": 0.7811,
+      "weighted_completeness": 0.5943,
+      "claim_count": 683,
+      "claim_status_counts": {
+        "supported": 480,
+        "partially_supported": 107,
+        "unsupported": 62,
+        "contradiction": 34
+      },
+      "fact_count": 194,
+      "fact_status_counts": {
+        "covered": 63,
+        "partial": 106,
+        "missing": 25
+      },
+      "critical_error_count": 40,
+      "critical_claim_error_count": 0,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0561,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 3.2,
+      "judge_completeness": 3.0,
+      "judge_structure": 3.6667,
+      "judge_readability": 4.0,
+      "critical_error_case_count": 14
+    },
+    "vcsum": {
+      "case_count": 15,
+      "candidate_success_count": 15,
+      "pipeline_completion_rate": 1.0,
+      "judge_success_count": 15,
+      "faithfulness": 0.7811,
+      "weighted_completeness": 0.5943,
+      "claim_count": 683,
+      "claim_status_counts": {
+        "supported": 480,
+        "partially_supported": 107,
+        "unsupported": 62,
+        "contradiction": 34
+      },
+      "fact_count": 194,
+      "fact_status_counts": {
+        "covered": 63,
+        "partial": 106,
+        "missing": 25
+      },
+      "critical_error_count": 40,
+      "critical_claim_error_count": 0,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 1.0,
+      "key_fact_recall": 0.0561,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 3.2,
+      "judge_completeness": 3.0,
+      "judge_structure": 3.6667,
+      "judge_readability": 4.0,
+      "critical_error_case_count": 14
+    },
+--- output/vcsum_50_rejudge_fable5/20260819T031641Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 50,
+      "candidate_success_count": 49,
+      "pipeline_completion_rate": 0.98,
+      "judge_success_count": 34,
+      "faithfulness": 0.8218,
+      "weighted_completeness": 0.6498,
+      "claim_count": 1403,
+      "claim_status_counts": {
+        "supported": 1039,
+        "partially_supported": 228,
+        "unsupported": 93,
+        "contradiction": 43
+      },
+      "fact_count": 452,
+      "fact_status_counts": {
+        "covered": 190,
+        "partial": 212,
+        "missing": 50
+      },
+      "critical_error_count": 64,
+      "critical_claim_error_count": 0,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 0.98,
+      "key_fact_recall": 0.0634,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 3.3235,
+      "judge_completeness": 3.1176,
+      "judge_structure": 3.4,
+      "judge_readability": 4.0,
+      "critical_error_case_count": 30
+    },
+    "vcsum": {
+      "case_count": 50,
+      "candidate_success_count": 49,
+      "pipeline_completion_rate": 0.98,
+      "judge_success_count": 34,
+      "faithfulness": 0.8218,
+      "weighted_completeness": 0.6498,
+      "claim_count": 1403,
+      "claim_status_counts": {
+        "supported": 1039,
+        "partially_supported": 228,
+        "unsupported": 93,
+        "contradiction": 43
+      },
+      "fact_count": 452,
+      "fact_status_counts": {
+        "covered": 190,
+        "partial": 212,
+        "missing": 50
+      },
+      "critical_error_count": 64,
+      "critical_claim_error_count": 0,
+      "llm_stage_elapsed_seconds_mean": null,
+      "llm_stage_elapsed_seconds_max": null,
+      "llm_model_call_elapsed_seconds_mean": null,
+      "llm_model_call_elapsed_seconds_max": null,
+      "memory_peak_mb_mean": null,
+      "memory_peak_mb_max": null,
+      "llm_request_count_mean": null,
+      "chapter_coverage": 0.98,
+      "key_fact_recall": 0.0634,
+      "action_item_f1": null,
+      "action_item_applicable_cases": 0,
+      "judge_factuality": 3.3235,
+      "judge_completeness": 3.1176,
+      "judge_structure": 3.4,
+      "judge_readability": 4.0,
+      "critical_error_case_count": 30
+    },
+--- output/e2e_trainL_full_20260821T020347Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 30,
+      "candidate_success_count": 26,
+      "pipeline_completion_rate": 0.8667,
+      "judge_success_count": 26,
+      "faithfulness": 0.6399,
+      "weighted_completeness": 0.0376,
+      "claim_count": 293,
+      "claim_status_counts": {
+        "supported": 152,
+        "partially_supported": 71,
+        "unsupported": 44,
+        "contradiction": 26
+      },
+      "fact_count": 294,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 25,
+        "missing": 269
+      },
+      "critical_error_count": 97,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 24,
+      "e2e": {
+        "pipeline_success_count": 26,
+        "pipeline_completion_rate": 0.8667,
+        "timeline_evaluated_count": 30,
+        "cer_corpus": 0.27544,
+        "cer_macro": 0.2823,
+        "speech_recall_macro": 1.0,
+        "speech_precision_macro": 0.8962,
+        "speaker_accuracy_macro": 0.9036,
+        "speaker_count_mae": 1.0333,
+        "unknown_speech_ratio_macro": 0.3017,
+        "total_elapsed_seconds_mean": 409.425,
+        "total_elapsed_seconds_max": 501.319,
+        "llm_model_call_elapsed_seconds_mean": 105.1211,
+        "memory_peak_mb_mean": 2651.869,
+        "memory_peak_mb_max": 2755.387,
+        "stage_elapsed_seconds_mean": {
+          "batch_asr": 83.6606,
+          "compat_export": 0.0318,
+          "llm_summary": 138.4536,
+          "segmentation": 190.8762,
+          "transcript_prepare": 0.0155
+        },
+        "failure_counts": {
+          "llm_summary:request_failed": 2,
+          "llm_summary:validation_failed": 2
+        }
+      }
+    },
+    "train_L": {
+      "case_count": 30,
+      "candidate_success_count": 26,
+      "pipeline_completion_rate": 0.8667,
+      "judge_success_count": 26,
+      "faithfulness": 0.6399,
+      "weighted_completeness": 0.0376,
+      "claim_count": 293,
+      "claim_status_counts": {
+        "supported": 152,
+        "partially_supported": 71,
+        "unsupported": 44,
+        "contradiction": 26
+      },
+      "fact_count": 294,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 25,
+        "missing": 269
+      },
+      "critical_error_count": 97,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 24,
+      "e2e": {
+        "pipeline_success_count": 26,
+        "pipeline_completion_rate": 0.8667,
+--- output/e2e/e2e_smoke_20260820T054343Z/aggregate.json ---
+{
+  "groups": {
+    "all": {
+      "case_count": 1,
+      "candidate_success_count": 0,
+      "pipeline_completion_rate": 0.0,
+      "judge_success_count": 0,
+      "faithfulness": null,
+      "weighted_completeness": null,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 0,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 0
+      },
+      "critical_error_count": 0,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 0,
+      "e2e": {
+        "pipeline_success_count": 0,
+        "pipeline_completion_rate": 0.0,
+        "timeline_evaluated_count": 0,
+        "cer_corpus": null,
+        "cer_macro": null,
+        "speech_recall_macro": null,
+        "speech_precision_macro": null,
+        "speaker_accuracy_macro": null,
+        "speaker_count_mae": null,
+        "unknown_speech_ratio_macro": null,
+        "total_elapsed_seconds_mean": 531.221,
+        "total_elapsed_seconds_max": 531.221,
+        "llm_model_call_elapsed_seconds_mean": null,
+        "memory_peak_mb_mean": 2777.289,
+        "memory_peak_mb_max": 2777.289,
+        "stage_elapsed_seconds_mean": {
+          "batch_asr": 99.584,
+          "segmentation": 238.543,
+          "transcript_prepare": 0.049
+        },
+        "failure_counts": {
+          "llm_summary:validation_failed": 1
+        }
+      }
+    },
+    "test": {
+      "case_count": 1,
+      "candidate_success_count": 0,
+      "pipeline_completion_rate": 0.0,
+      "judge_success_count": 0,
+      "faithfulness": null,
+      "weighted_completeness": null,
+      "claim_count": 0,
+      "claim_status_counts": {
+        "supported": 0,
+        "partially_supported": 0,
+        "unsupported": 0,
+        "contradiction": 0
+      },
+      "fact_count": 0,
+      "fact_status_counts": {
+        "covered": 0,
+        "partial": 0,
+        "missing": 0
+      },
+      "critical_error_count": 0,
+      "critical_claim_error_count": 0,
+      "critical_error_case_count": 0,
+      "e2e": {
+        "pipeline_success_count": 0,
+        "pipeline_completion_rate": 0.0,
+        "timeline_evaluated_count": 0,
+        "cer_corpus": null,
+        "cer_macro": null,
+===SAMPLE_GRADE===
+--- output/prompt_v24_20260824T091415Z/train_L_20200708_L_R002S05C01/deterministic_grade.json ---
+{
+  "status": "pass",
+  "validation": {
+    "status": "skipped",
+    "checks": {
+      "json_parse": true,
+      "schema": true
+    }
+  },
+  "validation_error": null,
+  "checks": {
+    "json_parse": true,
+    "schema": true,
+    "refs": false,
+    "chapter_continuity": true,
+    "full_timeline_coverage": true,
+    "speaker_reference_validity": true,
+    "context_not_truncated": true
+  },
+  "coverage": {
+    "segment_count": 168,
+    "referenced_segment_count": 54,
+    "chapter_coverage": 1.0,
+    "chapter_count": 4
+  },
+  "key_facts": {
+    "expected_count": 7,
+    "actual_count": 13,
+    "matched": [],
+    "missing_ids": [
+      "fact-overview",
+      "fact-chapter-001",
+      "fact-chapter-002",
+      "fact-chapter-003",
+      "fact-chapter-004",
+      "fact-chapter-005",
+      "fact-chapter-006"
+    ],
+    "extra_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "action_items": {
+    "expected_count": 1,
+    "actual_count": 2,
+===SAMPLE_TIMELINE===
+--- output/prompt_v24_20260824T091415Z/train_L_20200708_L_R002S05C01/timeline_metrics.json ---
+{
+  "status": "success",
+  "text": {
+    "reference_chars": 5873,
+    "predicted_chars": 8073,
+    "edit_distance": 3653,
+    "cer": 0.621999
+  },
+  "speech": {
+    "reference_speech_ms": 1259818,
+    "predicted_speech_ms": 1990229,
+    "overlap_speech_ms": 1259798,
+    "recall": 0.999984,
+    "precision": 0.632991
+  },
+  "speaker": {
+    "reference_count": 7,
+    "predicted_count": 7,
+    "count_error": 0,
+    "absolute_count_error": 0,
+    "mapping_predicted_to_reference": {
+      "speaker_0": "006-F",
+      "speaker_1": "002-M",
+      "speaker_2": "001-M",
+      "speaker_3": "004-F",
+      "speaker_4": "003-M",
+      "speaker_5": "007-F"
+    },
+    "overlap_matrix_ms": {
+      "speaker_0": {
+        "001-M": 4561,
+        "002-M": 16736,
+        "003-M": 1582,
+        "004-F": 7769,
+        "005-F": 6067,
+        "006-F": 221505,
+        "007-F": 1526
+      },
+      "speaker_1": {
+        "001-M": 11262,
+        "002-M": 231849,
+        "003-M": 1145,
+        "004-F": 0,
+        "005-F": 2110,
+        "006-F": 17558,
+        "007-F": 0
+      },
+      "speaker_2": {
+        "001-M": 166641,
+        "002-M": 8494,
+        "003-M": 5851,
+        "004-F": 9006,
+        "005-F": 3363,
+        "006-F": 0,
+        "007-F": 2711
+      },
+      "speaker_3": {
+        "001-M": 4798,
+        "002-M": 0,
+        "003-M": 0,
+        "004-F": 168668,
+        "005-F": 3098,
+        "006-F": 3738,
+        "007-F": 1526
+      },
+      "speaker_4": {
+        "001-M": 17121,
+        "002-M": 27805,
+        "003-M": 99138,
+        "004-F": 0,
+        "005-F": 0,
+        "006-F": 2491,
+        "007-F": 415
+      },
+      "speaker_5": {
+        "001-M": 8885,
+        "002-M": 2221,
+        "003-M": 0,
+        "004-F": 2178,
+        "005-F": 2110,
+        "006-F": 640,
+        "007-F": 88656
+      },
+      "speaker_6": {
+        "001-M": 0,
+        "002-M": 134,
+        "003-M": 0,
+        "004-F": 0,
+        "005-F": 0,
+        "006-F": 0,
+        "007-F": 0
+      }
+    },
+    "evaluated_sample_count": 10121,
+    "accuracy_on_overlap": 0.950894
+  },
+  "timeline": {
+    "reference_segment_count": 222,
+    "predicted_segment_count": 185,
+    "predicted_nonempty_timeline_segment_count": 168,
+    "predicted_empty_text_count": 17,
+    "reference_end_ms": 1327604,
+    "predicted_end_ms": 1990249,
+    "duration_difference_ms": 662645,
+    "duration_ratio": 1.499129,
+    "unknown_segment_count": 80,
+    "unknown_segment_ratio": 0.432432,
+    "unknown_speech_ms": 826009,
+    "unknown_speech_ratio": 0.415032
+  }
+}
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001E6AB4AE290
+
