@@ -287,7 +287,7 @@ DEFAULT_JUDGE_MODEL = "claude-opus-5"
 
 # Fill these values locally before running the Judge.
 # Keep the file out of commits if it contains a real credential.
-ANTHROPIC_API_KEY = "sk-8RjafDM9zrIYg1h_SqIVVw"
+ANTHROPIC_API_KEY = "sk-REDACTED-ROTATE-IMMEDIATELY"
 ANTHROPIC_BASE_URL = "https://maas.xgimi.com"
 ANTHROPIC_VERSION = "2023-06-01"
 
