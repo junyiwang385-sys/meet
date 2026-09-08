@@ -1,0 +1,1 @@
+ssh linaro@10.10.22.36 "cat /userdata/meeting_agent/evals/output/prompt_v24_20260824T091415Z/train_L_20200708_L_R002S05C01/expected.json"
