@@ -1,0 +1,24 @@
+# cmd file : 0029_probe_ft_server2.txt
+# started  : 2026-09-08T18:01:18
+# exit code: 0
+
+===== STDOUT =====
+===OK===
+JM230401012101
+ubuntu
+Linux JM230401012101 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+===GPU===
+no-nvidia-smi
+===CUDA===
+===PY===
+Python 3.12.3
+no-conda
+no-torch
+===DISK===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  898G   59G  94% /
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000027630E8C7E0
+
