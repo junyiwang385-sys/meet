@@ -1,0 +1,9 @@
+# cmd file : 0027_probe_ft_server.txt
+# started  : 2026-09-08T17:56:41
+# exit code: 255
+
+===== STDOUT =====
+
+===== STDERR =====
+ubuntu@10.10.22.40: Permission denied (publickey,password,keyboard-interactive).
+
