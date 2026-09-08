@@ -1,0 +1,10 @@
+# cmd file : 0028_show_exp_pubkey.txt
+# started  : 2026-09-08T17:58:02
+# exit code: 0
+
+===== STDOUT =====
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPAaAbj9n4oNT1xTcKjMsDcFMFa545xx3S1NaXLoLzWD “chao11.wang@xgimi.com”
+===PUBKEYS_END===
+
+===== STDERR =====
+
