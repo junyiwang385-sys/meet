@@ -98,6 +98,44 @@ def _is_role_or_dept(w: str) -> bool:
     return len(w) <= 5 and w.endswith(_ROLE_DEPT_SUFFIX)
 
 
+# ---- 关键词索引（B：加工关键词 → 原文 seg 引用，用于可点击回溯）----------------
+# 关键词本身仍是 4B 的书面化话题标签（不改），这里只额外做“确定性定位”：
+# 把关键词的内容 token 拿去转写里子串匹配，命中的 seg 即“讨论它的地方”。
+# 定位不到就给空列表（书面化/无对应原词），绝不伪造引用。实测 8 组命中 ~90-100%。
+
+
+def _kw_tokens(kw: str) -> list[str]:
+    """关键词→内容 token。有 jieba 用分词，无则用 2 字滑窗兜底；均过滤称谓类。"""
+    kw = str(kw).strip()
+    try:
+        import jieba  # 板端可能无 jieba → 走兜底，不硬依赖
+        toks = [t for t in jieba.lcut(kw) if len(t) >= 2]
+    except Exception:
+        toks = [kw[i : i + 2] for i in range(len(kw) - 1)] if len(kw) >= 2 else [kw]
+    toks = [t for t in toks if not _is_role_or_dept(t)]
+    return toks or ([kw] if kw else [])
+
+
+def _index_keywords(
+    keywords: list[str], segments: list[dict[str, Any]], *, max_refs: int = 5
+) -> dict[str, list[str]]:
+    """给每个关键词挂上讨论它的原文 seg-id（确定性 token 子串匹配）。
+
+    定位不到 → 空列表（表示“书面化，无法在原文定位”），不伪造引用。
+    仅用于“点关键词跳转”这类导航，不作为“已核验”证据。
+    """
+    index: dict[str, list[str]] = {}
+    for kw in keywords:
+        toks = _kw_tokens(kw)
+        refs = [
+            str(s["segment_id"])
+            for s in segments
+            if s.get("segment_id") and any(t in str(s.get("text") or "") for t in toks)
+        ]
+        index[str(kw)] = refs[:max_refs]
+    return index
+
+
 # ---- 问答回顾 ---------------------------------------------------------------
 
 _QA_SCHEMA = {
@@ -466,8 +504,10 @@ def enrich(
 
     chapter_summaries 提供时额外产出层级化大纲摘要（否则跳过，避免重复喂原文）。
     """
+    keywords = extract_keywords(segments, llm_call)
     result = {
-        "keywords": extract_keywords(segments, llm_call),
+        "keywords": keywords,  # 4B 书面化话题标签（不变，向后兼容）
+        "keyword_index": _index_keywords(keywords, segments),  # 新增：词→原文 seg 引用，可回溯
         "qa": extract_qa(segments, llm_call),
         "quotes": extract_quotes(segments, llm_call),
         "decisions": extract_decisions(segments, llm_call),
