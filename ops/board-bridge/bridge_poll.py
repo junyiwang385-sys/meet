@@ -135,9 +135,26 @@ def loop_once() -> None:
         print(f"[{stamp()}] 无新命令")
 
 
+def _keep_system_awake() -> None:
+    """锁住系统电源:轮询器在跑期间不睡眠/不待机(显示器仍可息屏)。
+
+    修复"实验机一息屏→睡眠→轮询器停/断网"。ES_SYSTEM_REQUIRED 阻止系统睡眠,
+    不设 ES_DISPLAY_REQUIRED 所以屏幕照常关。仅 Windows 生效,其它平台静默跳过。
+    """
+    try:
+        import ctypes
+        ES_CONTINUOUS = 0x80000000
+        ES_SYSTEM_REQUIRED = 0x00000001
+        ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
+        print(f"[{stamp()}] 已锁系统不睡眠(息屏不影响运行)。")
+    except Exception as exc:  # noqa: BLE001
+        print(f"[{stamp()}] 保持唤醒设置失败(忽略):{exc!r}")
+
+
 def main() -> None:
     RES_DIR.mkdir(parents=True, exist_ok=True)
     CMD_DIR.mkdir(parents=True, exist_ok=True)
+    _keep_system_awake()
     print(f"[{stamp()}] 轮询器启动(健壮版)，仓库 {ROOT}，每 {INTERVAL}s 拉取。Ctrl+C 停止。")
     while True:
         try:
