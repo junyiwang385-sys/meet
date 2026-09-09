@@ -1,0 +1,12 @@
+# cmd file : 0032_liveness.txt
+# started  : 2026-09-09T10:21:53
+# exit code: 0
+
+===== STDOUT =====
+BRIDGE_ALIVE
+2026年 09月 09日 星期三 10:21:54 CST
+linaro-alip
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001B2BA33FD70
+
