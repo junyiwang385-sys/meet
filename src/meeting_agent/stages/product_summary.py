@@ -1228,6 +1228,30 @@ def _save_reusable_request(
     )
 
 
+# 确定性关键数据打捞:数字+单位+短名词,去报工号/"一个一块"填充/语气词。
+# 通用构词规则(跨 5 组会议验证),用于补 4B 归纳时漏掉的低频数字/量。
+_KD_UNIT = ("场|个|名|位|人|次|天|日|周|月|年|季度|元|块|万|亿|百万|千|度|%|％|倍|成|半|分之"
+            "|斤|公斤|台|间|栋|层|门|瓶|箱|届|分钟|小时|米|套|条|项|轮|折|岁")
+_KD_DATA = re.compile(r"[几多好]?[0-9零〇一二两三四五六七八九十百千万亿]+(?:" + _KD_UNIT + r")[一-鿿]{0,4}")
+
+
+def _extract_key_data(block_segments: list[dict[str, Any]]) -> list[str]:
+    """从本块原文确定性抽取关键数据点(数字/金额/次数等),过滤噪声。faithful,不经模型。"""
+    text = "".join(str(s.get("text") or "") for s in block_segments)
+    seen: set[str] = set()
+    out: list[str] = []
+    for m in _KD_DATA.finditer(text):
+        s = m.group(0)
+        if s in seen:
+            continue
+        if (re.search(r"我是|我叫|我姓", s) or re.match(r"^[零〇幺]", s)
+                or re.match(r"^[一两幺]?[个块]", s) or re.match(r"^[一二两三]?[度样]", s)):
+            continue  # 报工号 / "一个一块"填充 / "一度一样"语气
+        seen.add(s)
+        out.append(s)
+    return out
+
+
 def _block_summary_messages(
     block_segments: list[dict[str, Any]],
     prev_context: dict[str, str] | None,
@@ -1235,6 +1259,7 @@ def _block_summary_messages(
     ref_map: dict[str, str],
     speaker_map: dict[str, str],
     profile: DomainProfile = GENERIC_PROFILE,
+    key_data: list[str] | None = None,
 ) -> list[dict[str, str]]:
     """B 层逐块摘要提示词：只处理一块，并判定是否延续上一块话题。抽取维度由 profile 决定。"""
     timeline = _render_compact_timeline(block_segments, ref_map, speaker_map)
@@ -1247,6 +1272,10 @@ def _block_summary_messages(
         )
     else:
         prev_text = "（这是第一块，没有上一块。）\n\n"
+    must_cover = (
+        f"- 本块【必须覆盖的数据点】(逐字保留，不改写/不省略/不换算，自然嵌入 summary)：{'、'.join(key_data)}\n"
+        if key_data else ""
+    )
     prompt = (
         "任务：\n"
         "先从下面这一小段会议 Timeline 抽取要点与锚点，再据此写摘要，并判断是否延续上一块话题。\n"
@@ -1259,6 +1288,7 @@ def _block_summary_messages(
         "成文要求（后做）：\n"
         f"- summary 约 {profile.summary_target_min}～{profile.summary_target_max} 个中文字符，"
         "必须涵盖上面的 key_points，并把 anchors 自然嵌入其中。\n"
+        f"{must_cover}"
         "- 结论前置：先说本块最重要的结论，再补背景与展开；不要写成“会议讨论了X、强调了Y”的流水账。\n"
         "- 只依据本块 Timeline，不得引入块外信息，不得改写 anchors 的原意。\n"
         "其它字段：\n"
@@ -1816,9 +1846,10 @@ def run_product_summary_stage(
         for block in blocks:
             block_id = block["block_id"]
             block_segments = [segment_by_id[seg_id] for seg_id in block["segment_ids"]]
+            key_data = _extract_key_data(block_segments)  # 确定性关键数据(补低频漏)
             messages = _block_summary_messages(
                 block_segments, None, ref_map=ref_map, speaker_map=speaker_map,
-                profile=config.profile,
+                profile=config.profile, key_data=key_data,
             )
             estimate = estimate_message_tokens(messages, budget)
             request_dir = out_dir / "blocks" / block_id
@@ -1851,6 +1882,7 @@ def run_product_summary_stage(
             )
             block_result = {
                 **block_result, "block_id": block_id, "segment_ids": block["segment_ids"],
+                "key_data": key_data,  # 结构化兜底:即使4B漏织入,数据点也留在结构里
                 "continues_previous": _continues_from_boundary(block),  # 确定性,不用模型判
             }
             atomic_write_json(request_dir / "validated_block.json", block_result)
