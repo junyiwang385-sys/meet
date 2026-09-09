@@ -1,0 +1,19 @@
+# cmd file : 0036_deploy_key_data.txt
+# started  : 2026-09-09T16:32:17
+# exit code: 0
+
+===== STDOUT =====
+正克隆到 '_srcpull5'...
+正在更新文件:  40% (2/5)
+正在更新文件:  60% (3/5)
+正在更新文件:  80% (4/5)
+正在更新文件: 100% (5/5)
+正在更新文件: 100% (5/5), 完成.
+deployed_commit=7d3952c
+has_extract=2
+has_mustcover=2
+usage: main.py [-h] --source-audio SOURCE_AUDIO --out-dir OUT_DIR
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000023619734690
+
