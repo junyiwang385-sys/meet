@@ -1859,10 +1859,12 @@ def run_product_summary_stage(
         for block in blocks:
             block_id = block["block_id"]
             block_segments = [segment_by_id[seg_id] for seg_id in block["segment_ids"]]
-            key_data = _extract_key_data(block_segments)  # 确定性关键数据(补低频漏)
+            # 关键数据仅作展示/结构化保底,【不】喂进生成:去噪实验(temp0.3×K4,g1/g2/g5)证明
+            # must_cover 会分散 4B、系统性拉低召回 -5pp,故不注入 summary。
+            key_data = _extract_key_data(block_segments)
             messages = _block_summary_messages(
                 block_segments, None, ref_map=ref_map, speaker_map=speaker_map,
-                profile=config.profile, key_data=key_data,
+                profile=config.profile,
             )
             estimate = estimate_message_tokens(messages, budget)
             request_dir = out_dir / "blocks" / block_id
