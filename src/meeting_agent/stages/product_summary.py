@@ -1232,30 +1232,35 @@ def _save_reusable_request(
 # 通用构词规则(跨会验证):硬单位(场/名/次/人/元/万…)恒为数据;软单位(个/天/年…)易被
 # "一个/一天/一年一样"污染 → 要求数字非孤立的一/两。整句为单位 → 4B 有语境不会粘生口语。
 _KD_SPLIT = re.compile(r"[。！？!?；;，、\n]")
-_KD_NUM = "[0-9零〇一二两三四五六七八九十百千万亿]+"
-_KD_HARD = re.compile(_KD_NUM + r"(?:场|名|位|次|人|窗口|灭火器|元|万|亿|块|台|套|间|栋|门|届|轮|米|公里|吨|%|％)")
-_KD_SOFT = re.compile(r"[0-9二三四五六七八九十百千][0-9一二两三四五六七八九十百千万]*(?:个|天|日|周|月|年|度|层|条|项|分钟|小时)")
+# 宽检测(召回优先):数字+任意单位(含 半/成) 或 百分比/折/倍。整句为单位,带语境。
+_KD_UNIT = ("场|名|位|次|人|窗口|灭火器|元|万|亿|块|台|套|间|栋|门|届|轮|米|公里|吨|%|％"
+            "|个|天|日|周|月|年|度|层|条|项|分钟|小时|半|成")
+_KD_NUMU = re.compile(r"[0-9零〇一二两三四五六七八九十百千万亿]+(?:" + _KD_UNIT + r")")
 _KD_PCT = re.compile(r"百分之[一二两三四五六七八九十百]+|[一二三四五六七八九十]成|[一二三四五六七八九十]折|[一二两三四五六七八九十]+倍")
+_KD_FILLER = re.compile(r"^[一两幺这那几]?[个块]$|^(?:一些|一下|一点)$")  # 纯填充量词,非数据
+# 强数据(金额/硬计数/百分比):优先入选,防杂质封顶时先保它们
+_KD_STRONG = re.compile(r"[0-9零〇一二两三四五六七八九十百千]+(?:元|万|亿|块|场|名|次|人|窗口|灭火器|台|%|％)"
+                        r"|百分之|[一二三四五六七八九十]折")
 
 
-def _is_confident_data(clause: str) -> bool:
-    """整句是否含"真数据":金额/硬单位计数/百分比折扣;报工号句一律否。"""
-    if re.search(r"我是|我叫|我姓", clause):
-        return False
-    return bool(_KD_HARD.search(clause) or _KD_SOFT.search(clause) or _KD_PCT.search(clause))
-
-
-def _extract_key_data(block_segments: list[dict[str, Any]]) -> list[str]:
-    """按标点切句,保留含真数据的原文短句(4~40字)。faithful,带语境,不经模型。"""
+def _extract_key_data(block_segments: list[dict[str, Any]], *, max_items: int = 6) -> list[str]:
+    """按标点切句,保留含真数据的原文短句(带语境)。强数据优先、每块封顶 max_items 防杂质。"""
     text = "".join(str(s.get("text") or "") for s in block_segments)
+    scored: list[tuple[int, str]] = []
     seen: set[str] = set()
-    out: list[str] = []
     for clause in _KD_SPLIT.split(text):
         clause = clause.strip()
-        if 4 <= len(clause) <= 40 and clause not in seen and _is_confident_data(clause):
-            seen.add(clause)
-            out.append(clause)
-    return out
+        if not (4 <= len(clause) <= 40) or clause in seen:
+            continue
+        if re.search(r"我是|我叫|我姓", clause):  # 报工号句
+            continue
+        hits = [m.group(0) for m in _KD_NUMU.finditer(clause) if not _KD_FILLER.match(m.group(0))]
+        if not hits and not _KD_PCT.search(clause):  # 无真数据(纯"一个方面"之类)
+            continue
+        seen.add(clause)
+        scored.append((0 if _KD_STRONG.search(clause) else 1, clause))  # 强数据排前
+    scored.sort(key=lambda x: x[0])
+    return [c for _, c in scored[:max_items]]
 
 
 def _block_summary_messages(
@@ -1279,8 +1284,8 @@ def _block_summary_messages(
     else:
         prev_text = "（这是第一块，没有上一块。）\n\n"
     must_cover = (
-        "- 本块【关键数据（取自原文，须覆盖）】——写 summary 时把其中的数字/金额/次数原样保留，"
-        "并用书面语自然表达（不要照抄下面的口语原句）：\n"
+        "- 本块【关键数据（取自原文，须覆盖）】——把其中的数字/金额/次数用书面语自然带进 summary，"
+        "**只保留数据本身**：不要照抄下面的口语原句，也不要为此引入与数据无关的细节或凑字：\n"
         + "".join(f"    · {c}\n" for c in key_data)
         if key_data else ""
     )
