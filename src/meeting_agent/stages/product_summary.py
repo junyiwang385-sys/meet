@@ -1228,27 +1228,33 @@ def _save_reusable_request(
     )
 
 
-# 确定性关键数据打捞:数字+单位+短名词,去报工号/"一个一块"填充/语气词。
-# 通用构词规则(跨 5 组会议验证),用于补 4B 归纳时漏掉的低频数字/量。
-_KD_UNIT = ("场|个|名|位|人|次|天|日|周|月|年|季度|元|块|万|亿|百万|千|度|%|％|倍|成|半|分之"
-            "|斤|公斤|台|间|栋|层|门|瓶|箱|届|分钟|小时|米|套|条|项|轮|折|岁")
-_KD_DATA = re.compile(r"[几多好]?[0-9零〇一二两三四五六七八九十百千万亿]+(?:" + _KD_UNIT + r")[一-鿿]{0,4}")
+# 确定性关键数据打捞:抽"含真数据的原文短句"(带语境),供 must_cover 让 4B 据原文书面化。
+# 通用构词规则(跨会验证):硬单位(场/名/次/人/元/万…)恒为数据;软单位(个/天/年…)易被
+# "一个/一天/一年一样"污染 → 要求数字非孤立的一/两。整句为单位 → 4B 有语境不会粘生口语。
+_KD_SPLIT = re.compile(r"[。！？!?；;，、\n]")
+_KD_NUM = "[0-9零〇一二两三四五六七八九十百千万亿]+"
+_KD_HARD = re.compile(_KD_NUM + r"(?:场|名|位|次|人|窗口|灭火器|元|万|亿|块|台|套|间|栋|门|届|轮|米|公里|吨|%|％)")
+_KD_SOFT = re.compile(r"[0-9二三四五六七八九十百千][0-9一二两三四五六七八九十百千万]*(?:个|天|日|周|月|年|度|层|条|项|分钟|小时)")
+_KD_PCT = re.compile(r"百分之[一二两三四五六七八九十百]+|[一二三四五六七八九十]成|[一二三四五六七八九十]折|[一二两三四五六七八九十]+倍")
+
+
+def _is_confident_data(clause: str) -> bool:
+    """整句是否含"真数据":金额/硬单位计数/百分比折扣;报工号句一律否。"""
+    if re.search(r"我是|我叫|我姓", clause):
+        return False
+    return bool(_KD_HARD.search(clause) or _KD_SOFT.search(clause) or _KD_PCT.search(clause))
 
 
 def _extract_key_data(block_segments: list[dict[str, Any]]) -> list[str]:
-    """从本块原文确定性抽取关键数据点(数字/金额/次数等),过滤噪声。faithful,不经模型。"""
+    """按标点切句,保留含真数据的原文短句(4~40字)。faithful,带语境,不经模型。"""
     text = "".join(str(s.get("text") or "") for s in block_segments)
     seen: set[str] = set()
     out: list[str] = []
-    for m in _KD_DATA.finditer(text):
-        s = m.group(0)
-        if s in seen:
-            continue
-        if (re.search(r"我是|我叫|我姓", s) or re.match(r"^[零〇幺]", s)
-                or re.match(r"^[一两幺]?[个块]", s) or re.match(r"^[一二两三]?[度样]", s)):
-            continue  # 报工号 / "一个一块"填充 / "一度一样"语气
-        seen.add(s)
-        out.append(s)
+    for clause in _KD_SPLIT.split(text):
+        clause = clause.strip()
+        if 4 <= len(clause) <= 40 and clause not in seen and _is_confident_data(clause):
+            seen.add(clause)
+            out.append(clause)
     return out
 
 
@@ -1273,7 +1279,9 @@ def _block_summary_messages(
     else:
         prev_text = "（这是第一块，没有上一块。）\n\n"
     must_cover = (
-        f"- 本块【必须覆盖的数据点】(逐字保留，不改写/不省略/不换算，自然嵌入 summary)：{'、'.join(key_data)}\n"
+        "- 本块【关键数据（取自原文，须覆盖）】——写 summary 时把其中的数字/金额/次数原样保留，"
+        "并用书面语自然表达（不要照抄下面的口语原句）：\n"
+        + "".join(f"    · {c}\n" for c in key_data)
         if key_data else ""
     )
     prompt = (
