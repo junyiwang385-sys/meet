@@ -1,0 +1,102 @@
+# cmd file : 0046_probe_whisper.txt
+# started  : 2026-09-10T11:32:04
+# exit code: 0
+
+===== STDOUT =====
+===TREE===
+总计 232
+drwxr-xr-x 20 linaro linaro  4096  6月26日 16:01 .
+drwxr-xr-x  4 linaro linaro  4096  7月 1日 19:29 ..
+-rw-r--r--  1 linaro linaro  6192  6月26日 16:01 AGENTS.md
+-rw-r--r--  1 linaro linaro 21736  6月26日 16:01 AUTHORS
+drwxr-xr-x  6 linaro linaro  4096  6月26日 16:01 bindings
+drwxr-xr-x  7 linaro linaro  4096  6月26日 16:01 build
+-rwxr-xr-x  1 linaro linaro 23342  6月26日 16:01 build-xcframework.sh
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 ci
+-rw-r--r--  1 linaro linaro   939  6月26日 16:01 close-issue.yml
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 cmake
+-rw-r--r--  1 linaro linaro 11632  6月26日 16:01 CMakeLists.txt
+-rw-r--r--  1 linaro linaro  4570  6月26日 16:01 CMakePresets.json
+-rw-r--r--  1 linaro linaro  9500  6月26日 16:01 CONTRIBUTING.md
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 .devops
+-rw-r--r--  1 linaro linaro    25  6月26日 16:01 .dockerignore
+drwxr-xr-x 27 linaro linaro  4096  6月26日 16:01 examples
+drwxr-xr-x  5 linaro linaro  4096  6月26日 16:01 ggml
+drwxr-xr-x  8 linaro linaro  4096  6月26日 16:01 .git
+drwxr-xr-x  4 linaro linaro  4096  6月26日 16:01 .github
+-rw-r--r--  1 linaro linaro   912  6月26日 16:01 .gitignore
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 grammars
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 include
+-rw-r--r--  1 linaro linaro  1078  6月26日 16:01 LICENSE
+-rw-r--r--  1 linaro linaro  2170  6月26日 16:01 Makefile
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 media
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:19 models
+drwxr-xr-x  3 linaro linaro  4096  6月26日 16:01 .pi
+-rw-r--r--  1 linaro linaro 36779  6月26日 16:01 README.md
+-rw-r--r--  1 linaro linaro  6593  6月26日 16:01 README_sycl.md
+drwxr-xr-x  2 linaro linaro  4096  6月26日 16:01 samples
+drwxr-xr-x  3 linaro linaro  4096  6月26日 16:01 scripts
+drwxr-xr-x  4 linaro linaro  4096  6月26日 16:01 src
+drwxr-xr-x  5 linaro linaro  4096  6月26日 16:01 tests
+===BIN===
+总计 6064
+drwxr-xr-x 2 linaro linaro    4096  6月26日 16:03 .
+drwxr-xr-x 7 linaro linaro    4096  6月26日 16:01 ..
+-rwxr-xr-x 1 linaro linaro   71952  6月26日 16:01 bench
+lrwxrwxrwx 1 linaro linaro      17  6月26日 16:01 libggml-base.so -> libggml-base.so.0
+lrwxrwxrwx 1 linaro linaro      22  6月26日 16:01 libggml-base.so.0 -> libggml-base.so.0.15.2
+-rwxr-xr-x 1 linaro linaro  805864  6月26日 16:01 libggml-base.so.0.15.2
+lrwxrwxrwx 1 linaro linaro      16  6月26日 16:01 libggml-cpu.so -> libggml-cpu.so.0
+lrwxrwxrwx 1 linaro linaro      21  6月26日 16:01 libggml-cpu.so.0 -> libggml-cpu.so.0.15.2
+-rwxr-xr-x 1 linaro linaro  857360  6月26日 16:01 libggml-cpu.so.0.15.2
+lrwxrwxrwx 1 linaro linaro      12  6月26日 16:02 libggml.so -> libggml.so.0
+lrwxrwxrwx 1 linaro linaro      17  6月26日 16:02 libggml.so.0 -> libggml.so.0.15.2
+-rwxr-xr-x 1 linaro linaro   77272  6月26日 16:02 libggml.so.0.15.2
+lrwxrwxrwx 1 linaro linaro      16  6月26日 16:02 libparakeet.so -> libparakeet.so.1
+lrwxrwxrwx 1 linaro linaro      20  6月26日 16:02 libparakeet.so.1 -> libparakeet.so.1.9.1
+-rwxr-xr-x 1 linaro linaro  162960  6月26日 16:02 libparakeet.so.1.9.1
+lrwxrwxrwx 1 linaro linaro      15  6月26日 16:02 libwhisper.so -> libwhisper.so.1
+lrwxrwxrwx 1 linaro linaro      19  6月26日 16:02 libwhisper.so.1 -> libwhisper.so.1.9.1
+-rwxr-xr-x 1 linaro linaro  622952  6月26日 16:02 libwhisper.so.1.9.1
+-rwxr-xr-x 1 linaro linaro   71952  6月26日 16:01 main
+-rwxr-xr-x 1 linaro linaro  612840  6月26日 16:03 parakeet-cli
+-rwxr-xr-x 1 linaro linaro  182952  6月26日 16:03 parakeet-quantize
+-rwxr-xr-x 1 linaro linaro   72776  6月26日 16:02 whisper-bench
+-rwxr-xr-x 1 linaro linaro  931072  6月26日 16:03 whisper-cli
+-rwxr-xr-x 1 linaro linaro  250440  6月26日 16:03 whisper-quantize
+-rwxr-xr-x 1 linaro linaro 1228056  6月26日 16:03 whisper-server
+-rwxr-xr-x 1 linaro linaro  612120  6月26日 16:03 whisper-vad-speech-segments
+===MODELS===
+-rw-r--r-- 1 linaro linaro   575451  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-base.bin
+-rw-r--r-- 1 linaro linaro   586836  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-base.en.bin
+-rw-r--r-- 1 linaro linaro   575451  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-large.bin
+-rw-r--r-- 1 linaro linaro   575451  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-medium.bin
+-rw-r--r-- 1 linaro linaro   586836  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-medium.en.bin
+-rw-r--r-- 1 linaro linaro    16603  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-parakeet-tdt.bin
+-rw-r--r-- 1 linaro linaro   575451  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-small.bin
+-rw-r--r-- 1 linaro linaro   586836  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-small.en.bin
+-rw-r--r-- 1 linaro linaro   575451  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-tiny.bin
+-rw-r--r-- 1 linaro linaro   586836  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-ggml-tiny.en.bin
+-rw-r--r-- 1 linaro linaro   885098  6月26日 16:01 /userdata/asr/whisper.cpp/models/for-tests-silero-v6.2.0-ggml.bin
+-rw-r--r-- 1 linaro linaro 46740480  6月26日 16:19 /userdata/asr/whisper.cpp/models/ggml-base.bin
+===HELP_CLI===
+  -t N,      --threads N            [4      ] number of threads to use during computation
+  -bs N,     --beam-size N          [5      ] beam size for beam search
+  -tr,       --translate            [false  ] translate from source language to english
+  -l LANG,   --language LANG        [en     ] spoken language ('auto' for auto-detect)
+  -dl,       --detect-language      [false  ] exit after automatically detecting language
+             --prompt PROMPT        [       ] initial prompt (max n_text_ctx/2 tokens)
+             --carry-initial-prompt [false  ] always prepend initial prompt
+  -m FNAME,  --model FNAME          [models/ggml-base.en.bin] model path
+===HELP_MAIN===
+===MEETING_WAV===
+/userdata/meeting_agent/evals/pipeline_outputs/prompt_v25_20260825T000000Z/01_segments/input_mono16k.wav
+/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S08C01/01_segments/input_mono16k.wav
+/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200708_L_R002S05C01/01_segments/input_mono16k.wav
+/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200708_L_R002S03C01/01_segments/input_mono16k.wav
+/userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S05C01/01_segments/input_mono16k.wav
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001EE8DDD6F90
+
