@@ -1,0 +1,49 @@
+# cmd file : 0050_cat_vad_code.txt
+# started  : 2026-09-10T17:30:05
+# exit code: 0
+
+===== STDOUT =====
+===L100_125===
+                'pval': 0.012,
+            }
+        }
+    }
+    config = Config(conf)
+    return build('cluster', config)
+
+def get_voice_activity_detection_model(device: torch.device=None, cache_dir:str = None):
+    conf = {
+        'model_id': 'iic/speech_fsmn_vad_zh-cn-16k-common-pytorch',
+        'revision': 'v2.0.4',
+    }
+    cache_dir = download_model_from_modelscope(conf['model_id'], conf['revision'], cache_dir)
+    with silent_print():
+        vad_pipeline = pipeline(
+            task=Tasks.voice_activity_detection, 
+            model=cache_dir, 
+            device = 'cpu' if device is None else '%s:%s'%(device.type, device.index) if device.index else device.type,
+            disable_pbar=True,
+            disable_update=True,
+            )
+    return vad_pipeline
+
+def get_segmentation_model(use_auth_token, device: torch.device=None):
+    segmentation_params = {
+        'segmentation':'pyannote/segmentation-3.0',
+===L210_220===
+
+        self.output_field_labels = output_field_labels
+        return output_field_labels
+
+    def do_vad(self, wav):
+        # wav: [1, T]
+        vad_results = self.vad_model(wav[0])[0]
+        vad_time = [[vad_t[0]/1000, vad_t[1]/1000] for vad_t in vad_results['value']]
+        return vad_time
+
+    def do_segmentation(self, wav):
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:00000180431657F0
+
