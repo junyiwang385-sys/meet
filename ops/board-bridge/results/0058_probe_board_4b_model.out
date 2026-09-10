@@ -1,0 +1,26 @@
+# cmd file : 0058_probe_board_4b_model.txt
+# started  : 2026-09-11T00:57:37
+# exit code: 0
+
+===== STDOUT =====
+===LS===
+总计 3189716
+drwxr-xr-x 2 linaro linaro       4096  8月12日 19:36 .
+drwxr-xr-x 5 linaro linaro       4096  8月20日 12:03 ..
+-rw-r--r-- 1 linaro linaro   50006056  8月12日 19:10 Qwen3-4B-ctx16384.rknn
+-rw-r--r-- 1 linaro linaro 2432392704  8月12日 19:10 Qwen3-4B-ctx16384.weight
+-rw-r--r-- 1 linaro linaro  777912320  8月11日 09:48 Qwen3-4B.embed.bin
+-rw-r--r-- 1 linaro linaro    5933326  8月11日 09:48 Qwen3-4B.tokenizer.gguf
+===JSONS===
+--config.json--
+--generation_config.json--
+--tokenizer_config.json--
+--rkllm.json--
+--convert.json--
+--meta.json--
+===NAME_HINT===
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000029F1BF06BE0
+
