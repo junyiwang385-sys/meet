@@ -1,0 +1,14 @@
+# cmd file : 0053_commit_vad_thr02.txt
+# started  : 2026-09-10T17:52:27
+# exit code: 0
+
+===== STDOUT =====
+BACKUP_EXISTS(original kept)
+PATCHED_OK
+HAS_0.2: True
+BAK_EXISTS: True
+LINE: vad_results = self.vad_model(wav[0], speech_noise_thres=0.2, max_end_silence_time=800)[0]  # VAD-tuned 2026-09: 0.6->0.2
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:00000279A2691F40
+
