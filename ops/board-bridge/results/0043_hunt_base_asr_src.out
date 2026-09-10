@@ -1,0 +1,28 @@
+# cmd file : 0043_hunt_base_asr_src.txt
+# started  : 2026-09-10T11:14:04
+# exit code: 0
+
+===== STDOUT =====
+===LINUX_QWEN3ASR===
+===LINUX_LLM_AUDIO_CC===
+===LINUX_ASR_MAINS===
+===WIN_ARCHIVES===
+/mnt/c/Users/Administrator/Downloads/rknn3-runtime.tgz
+/mnt/c/Users/Administrator/Desktop/01_Rockchip_RK182X_Quick_Start_RKNN3_SDK_V1.0.0_CN.pdf
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin/bunzip2
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin/bzip2
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin/bzip2recover
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/conda-meta/bzip2-1.0.8-h5eee18b_6.json
+/mnt/c/Users/Administrator/Desktop/1828/.rknn3_v100/deps/PIL/TarIO.py
+/mnt/c/Users/Administrator/Desktop/1828/.rknn3_v100/deps/pillow-12.2.0.dist-info/zip-safe
+/mnt/c/Users/Administrator/Desktop/1828/.rknn3_v100/deps/python_dateutil-2.9.0.post0.dist-info/zip-safe
+/mnt/c/Users/Administrator/Desktop/1828/.rknn3_v100/deps/pytz-2026.2.dist-info/zip-safe
+/mnt/c/Users/Administrator/Desktop/1828/asr_export_logs.tar.gz
+/mnt/c/Users/Administrator/Desktop/1828/docs/Rockchip_RK182X_Quick_Start_RKNN3_SDK_V1.0.0_CN.pdf
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/doc/01_Rockchip_RKNPU3_Quick_Start_RKNN3_SDK_V1.0.4_CN.pdf
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/doc/01_Rockchip_RKNPU3_Quick_Start_RKNN3_SDK_V1.0.4_EN.pdf
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000024C2E43CC30
+
