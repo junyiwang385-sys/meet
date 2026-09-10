@@ -1,0 +1,9 @@
+# cmd file : 0038_locate_asr_src.txt
+# started  : 2026-09-10T10:45:55
+# exit code: 1
+
+===== STDOUT =====
+
+===== STDERR =====
+The system cannot find the file specified.
+
