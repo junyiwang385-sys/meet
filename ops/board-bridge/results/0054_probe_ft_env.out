@@ -1,0 +1,10 @@
+# cmd file : 0054_probe_ft_env.txt
+# started  : 2026-09-11T00:07:15
+# exit code: 127
+
+===== STDOUT =====
+bash: line 1: /mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin/python: No such file or directory
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000002C94F7A64A0
+
