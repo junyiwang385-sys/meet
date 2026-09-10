@@ -1,0 +1,1 @@
+ssh -p 2222 ubuntu@10.10.22.40 "echo ===API_H_SIGS===; tar xzf /mnt/c/Users/Administrator/Downloads/rknn3-runtime.tgz -O rknn3-runtime/rknn3-api/include/rknn3_api.h 2>/dev/null | grep -nE 'rknn3_|embed|prefill|kvcache|RKLLM|typedef|struct|token|input|context' | head -120; echo ===DONE==="
