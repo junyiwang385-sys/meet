@@ -1,0 +1,31 @@
+# cmd file : 0040_locate_asr_src_ftserver.txt
+# started  : 2026-09-10T10:57:37
+# exit code: 0
+
+===== STDOUT =====
+===HOSTNAME===
+JM230401012101
+===FIND_CC===
+/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810/batch_main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3/cpp/main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3/cpp/rknn_qwen3_llm.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_Embedding/cpp/main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_Embedding/cpp/rknn_qwen3_embedding.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL/cpp/llm/rknn_qwen3_vl_llm.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL/cpp/main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL/cpp/qwen3_vl.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL/cpp/vision/rknn_qwen3_vl_vision.cc
+/mnt/wslg/distro/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810/batch_main.cc
+===FIND_QWEN3ASR_DIR===
+/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810
+/mnt/wslg/distro/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810
+===FIND_MAINCC===
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3/cpp/main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_Embedding/cpp/main.cc
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL/cpp/main.cc
+===FIND_QWENASR_CC===
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000019FC833E3F0
+
