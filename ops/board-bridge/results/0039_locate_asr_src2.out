@@ -1,0 +1,82 @@
+# cmd file : 0039_locate_asr_src2.txt
+# started  : 2026-09-10T10:55:27
+# exit code: 0
+
+===== STDOUT =====
+===DEMO_DIR===
+总计 16
+drwxr-xr-x 4 linaro linaro 4096  8月10日 13:49 .
+drwxr-xr-x 3 linaro linaro 4096  8月 5日 10:06 ..
+drwxr-xr-x 3 linaro linaro 4096  8月10日 13:39 rknn_Qwen3_ASR_batch_demo
+drwxr-xr-x 3 linaro linaro 4096  8月 5日 10:06 rknn_Qwen3_ASR_demo
+===DEMO_SUB===
+总计 4588
+drwxr-xr-x 3 linaro linaro    4096  8月 5日 10:06 .
+drwxr-xr-x 4 linaro linaro    4096  8月10日 13:49 ..
+drwxr-xr-x 2 linaro linaro    4096  8月 4日 16:23 lib
+-rw-r--r-- 1 linaro linaro  668929  8月 4日 15:30 mel_128_filters.txt
+-rwxr-xr-x 1 linaro linaro 1999960  8月 4日 16:23 rknn_qwen3_asr_demo
+-rwxr-xr-x 1 linaro linaro 2008424  8月 4日 16:23 rknn_qwen3_asr_demo_online
+===FIND_CC===
+===FIND_CMAKE===
+/userdata/asr/whisper.cpp/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-opencl/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-zendnn/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-hip/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-zdnn/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-cann/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-virtgpu/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-virtgpu/backend/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-musa/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-openvino/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-cuda/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-blas/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-sycl/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-rpc/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-webgpu/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-vulkan/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-vulkan/vulkan-shaders/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-hexagon/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-hexagon/htp/CMakeLists.txt
+/userdata/asr/whisper.cpp/ggml/src/ggml-metal/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/stream.wasm/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/whisper.android.java/app/src/main/jni/whisper/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/whisper.android/lib/src/main/jni/whisper/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/wchess/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/wchess/wchess.wasm/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/wchess/wchess.cmd/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/wchess/libwchess/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/bench.wasm/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/whisper.wasm/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/lsp/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/talk-llama/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/command.wasm/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/sycl/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/addon.node/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/cli/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/deprecation-warning/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/parakeet-quantize/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/parakeet-cli/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/command/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/bench/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/stream/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/server/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/quantize/CMakeLists.txt
+/userdata/asr/whisper.cpp/examples/vad-speech-segments/CMakeLists.txt
+/userdata/asr/whisper.cpp/bindings/CMakeLists.txt
+/userdata/asr/whisper.cpp/bindings/javascript/CMakeLists.txt
+/userdata/asr/whisper.cpp/src/CMakeLists.txt
+/userdata/asr/whisper.cpp/tests/CMakeLists.txt
+===EXAMPLES_DIR===
+/userdata/miniforge3/envs/3dspeaker/lib/python3.10/site-packages/funasr/models/qwen3_asr
+/userdata/miniforge3/envs/3dspeaker/lib/python3.10/site-packages/transformers/models/qwen3_asr
+/userdata/meeting_agent/runtime/asr/qwen3_asr_gcc10
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001D92F9D28E0
+
