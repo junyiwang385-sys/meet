@@ -1,0 +1,812 @@
+# cmd file : 0042_cat_batch_main.txt
+# started  : 2026-09-10T11:11:36
+# exit code: 0
+
+===== STDOUT =====
+===SHA256SUMS===
+038e70786ad76271778de585f48a3b99d62dccfa86dae7522b6e97003ded038b  batch_main.cc
+f3d33af0afa034ab0529c9918e8ead022598cae3aa954a13bfbce5ef9052ebdf  CMakeLists.txt
+===CMAKELISTS===
+cmake_minimum_required(VERSION 3.10)
+
+project(rknn_qwen3_asr_demo)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+if (ENABLE_ASAN)
+	message(STATUS "BUILD WITH ADDRESS SANITIZER")
+	set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+	set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+endif ()
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../../3rdparty/ 3rdparty.out)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../../utils/ utils.out)
+
+set(CMAKE_INSTALL_RPATH "$ORIGIN/lib")
+
+file(GLOB SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
+
+include_directories(${CMAKE_SOURCE_DIR}/llm)
+include_directories(${CMAKE_SOURCE_DIR}/audio/)
+
+set(llm_file llm/rknn_qwen3_asr_llm.cc)
+set(audio_file audio/rknn_qwen3_asr_audio.cc)
+
+message(STATUS "LIBRKNNAPI = ${LIBRKNNAPI}")
+message(STATUS "LIBRKNNAPI_INCLUDES = ${LIBRKNNAPI_INCLUDES}")
+message(STATUS "TARGET_LIB_ARCH = ${TARGET_LIB_ARCH}")
+
+add_executable(${PROJECT_NAME}
+    main.cc
+    qwen3_asr.cc
+    ${llm_file}
+    ${audio_file}
+)
+
+add_executable(${PROJECT_NAME}_online
+    online_main.cc
+    qwen3_asr.cc
+    ${llm_file}
+    ${audio_file}
+)
+
+add_executable(rknn_qwen3_asr_batch_demo
+    batch_main.cc
+    qwen3_asr.cc
+    ${llm_file}
+    ${audio_file}
+)
+
+target_link_libraries(${PROJECT_NAME}
+    timeutils
+    audioutils
+    fileutils
+    ${LIBRKNNAPI}
+    ${LIBTOKENIZER}
+    dl
+)
+
+target_link_libraries(${PROJECT_NAME}_online
+    timeutils
+    audioutils
+    fileutils
+    ${LIBRKNNAPI}
+    ${LIBTOKENIZER}
+    dl
+)
+
+target_link_libraries(rknn_qwen3_asr_batch_demo
+    timeutils
+    audioutils
+    fileutils
+    ${LIBRKNNAPI}
+    ${LIBTOKENIZER}
+    dl
+)
+
+if (CMAKE_SYSTEM_NAME STREQUAL "Android")
+    target_link_libraries(${PROJECT_NAME}
+    log
+)
+
+    target_link_libraries(${PROJECT_NAME}_online
+    log
+)
+
+    target_link_libraries(rknn_qwen3_asr_batch_demo
+    log
+)
+endif()
+
+if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    target_link_libraries(${PROJECT_NAME}
+        pthread
+    )
+
+    target_link_libraries(${PROJECT_NAME}_online
+        pthread
+    )
+
+    target_link_libraries(rknn_qwen3_asr_batch_demo
+        pthread
+    )
+endif()
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${LIBRKNNAPI_INCLUDES}
+    ${LIBTOKENIZER_INCLUDES}
+)
+
+target_include_directories(${PROJECT_NAME}_online PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${LIBRKNNAPI_INCLUDES}
+    ${LIBTOKENIZER_INCLUDES}
+)
+
+target_include_directories(rknn_qwen3_asr_batch_demo PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${LIBRKNNAPI_INCLUDES}
+    ${LIBTOKENIZER_INCLUDES}
+)
+
+install(TARGETS ${PROJECT_NAME} DESTINATION .)
+install(TARGETS ${PROJECT_NAME}_online DESTINATION .)
+install(TARGETS rknn_qwen3_asr_batch_demo DESTINATION .)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../data/audio/asr_en.wav DESTINATION ./)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../data/audio/mel_128_filters.txt DESTINATION ./)
+file(GLOB RKNN_FILES "${CMAKE_CURRENT_SOURCE_DIR}/../model/*/*.rknn")
+set(WEIGHT_FILES "")
+foreach(rknn_file ${RKNN_FILES})
+    string(REPLACE ".rknn" ".weight" weight_file ${rknn_file})
+    if(EXISTS ${weight_file})
+        list(APPEND WEIGHT_FILES ${weight_file})
+    endif()
+endforeach()
+file(GLOB TOKENIZER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/../model/llm/*.tokenizer.gguf")
+file(GLOB EMBED_FILES "${CMAKE_CURRENT_SOURCE_DIR}/../model/llm/*.embed.bin")
+install(FILES ${RKNN_FILES} DESTINATION ./model)
+install(FILES ${WEIGHT_FILES} DESTINATION ./model)
+install(FILES ${TOKENIZER_FILES} DESTINATION ./model)
+install(FILES ${EMBED_FILES} DESTINATION ./model)
+
+# Workaround for aarch64 cross GCC default PIE linking with bundled non-PIC libfftw3f.a
+if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
+  target_link_options(rknn_qwen3_asr_demo PRIVATE -no-pie)
+  target_link_options(rknn_qwen3_asr_demo_online PRIVATE -no-pie)
+  target_link_options(rknn_qwen3_asr_demo_batch PRIVATE -no-pie)
+endif()
+===BATCH_MAIN_CC===
+     1	// Copyright (c) 2025 by Rockchip Electronics Co., Ltd. All Rights Reserved.
+     2	//
+     3	// Licensed under the Apache License, Version 2.0 (the "License");
+     4	// you may not use this file except in compliance with the License.
+     5	// You may obtain a copy of the License at
+     6	//
+     7	//     http://www.apache.org/licenses/LICENSE-2.0
+     8	//
+     9	// Unless required by applicable law or agreed to in writing, software
+    10	// distributed under the License is distributed on an "AS IS" BASIS,
+    11	// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    12	// See the License for the specific language governing permissions and
+    13	// limitations under the License.
+    14	
+    15	#include <errno.h>
+    16	#include <fcntl.h>
+    17	#include <signal.h>
+    18	#include <stdio.h>
+    19	#include <stdlib.h>
+    20	#include <string.h>
+    21	#include <sys/mman.h>
+    22	#include <sys/stat.h>
+    23	#include <unistd.h>
+    24	
+    25	#include <fstream>
+    26	#include <sstream>
+    27	#include <string>
+    28	#include <vector>
+    29	
+    30	#include "qwen3_asr.h"
+    31	#include "audio_utils.h"
+    32	#include "time_utils.h"
+    33	
+    34	#define OFFLINE_MAX_AUDIO_SECONDS (20 * 60)
+    35	#define ASR_TEXT_TOKEN 151704
+    36	#define MIN_AUDIO_FRAMES 400
+    37	
+    38	struct batch_job
+    39	{
+    40	    std::string id;
+    41	    std::string wav_path;
+    42	};
+    43	
+    44	struct batch_callback_context
+    45	{
+    46	    Tokenizer* tokenizer;
+    47	    std::string text;
+    48	    bool text_started;
+    49	    bool first_decode;
+    50	    bool callback_error;
+    51	    bool max_new_tokens_reached;
+    52	    int64_t first_token_time;
+    53	};
+    54	
+    55	static volatile sig_atomic_t g_stop_requested = 0;
+    56	
+    57	const rknn3_sampling_params SAMPLE_PARAMS = {
+    58	    .top_k = 1,
+    59	    .top_p = 0.9,
+    60	    .temperature = 1.0f,
+    61	    .repeat_penalty = 1.2f,
+    62	    .frequency_penalty = 0.0f,
+    63	    .presence_penalty = 0.0f
+    64	};
+    65	
+    66	static void on_signal(int)
+    67	{
+    68	    g_stop_requested = 1;
+    69	}
+    70	
+    71	static std::string json_escape(const std::string& value)
+    72	{
+    73	    std::ostringstream out;
+    74	    static const char hex[] = "0123456789abcdef";
+    75	    for (size_t i = 0; i < value.size(); ++i)
+    76	    {
+    77	        unsigned char c = static_cast<unsigned char>(value[i]);
+    78	        switch (c)
+    79	        {
+    80	            case '\"': out << "\\\""; break;
+    81	            case '\\': out << "\\\\"; break;
+    82	            case '\b': out << "\\b"; break;
+    83	            case '\f': out << "\\f"; break;
+    84	            case '\n': out << "\\n"; break;
+    85	            case '\r': out << "\\r"; break;
+    86	            case '\t': out << "\\t"; break;
+    87	            default:
+    88	                if (c < 0x20)
+    89	                {
+    90	                    out << "\\u00" << hex[(c >> 4) & 0x0f] << hex[c & 0x0f];
+    91	                }
+    92	                else
+    93	                {
+    94	                    out << value[i];
+    95	                }
+    96	        }
+    97	    }
+    98	    return out.str();
+    99	}
+   100	
+   101	static std::string trim_copy(const std::string& value)
+   102	{
+   103	    size_t begin = value.find_first_not_of(" \t\r\n");
+   104	    if (begin == std::string::npos)
+   105	    {
+   106	        return "";
+   107	    }
+   108	    size_t end = value.find_last_not_of(" \t\r\n");
+   109	    return value.substr(begin, end - begin + 1);
+   110	}
+   111	
+   112	static bool load_manifest(const char* path, std::vector<batch_job>* jobs, std::string* error)
+   113	{
+   114	    std::ifstream input(path);
+   115	    if (!input)
+   116	    {
+   117	        *error = std::string("cannot open manifest: ") + path;
+   118	        return false;
+   119	    }
+   120	
+   121	    std::string line;
+   122	    int line_number = 0;
+   123	    while (std::getline(input, line))
+   124	    {
+   125	        ++line_number;
+   126	        if (!line.empty() && line[line.size() - 1] == '\r')
+   127	        {
+   128	            line.resize(line.size() - 1);
+   129	        }
+   130	        if (line.empty() || line[0] == '#')
+   131	        {
+   132	            continue;
+   133	        }
+   134	
+   135	        size_t tab = line.find('\t');
+   136	        if (tab == std::string::npos || line.find('\t', tab + 1) != std::string::npos)
+   137	        {
+   138	            std::ostringstream message;
+   139	            message << "manifest line " << line_number << " must contain exactly one tab";
+   140	            *error = message.str();
+   141	            return false;
+   142	        }
+   143	
+   144	        batch_job job;
+   145	        job.id = trim_copy(line.substr(0, tab));
+   146	        job.wav_path = trim_copy(line.substr(tab + 1));
+   147	        if (job.id.empty() || job.wav_path.empty())
+   148	        {
+   149	            std::ostringstream message;
+   150	            message << "manifest line " << line_number << " has an empty field";
+   151	            *error = message.str();
+   152	            return false;
+   153	        }
+   154	
+   155	        for (size_t i = 0; i < jobs->size(); ++i)
+   156	        {
+   157	            if ((*jobs)[i].id == job.id)
+   158	            {
+   159	                std::ostringstream message;
+   160	                message << "duplicate job id at line " << line_number << ": " << job.id;
+   161	                *error = message.str();
+   162	                return false;
+   163	            }
+   164	        }
+   165	        jobs->push_back(job);
+   166	    }
+   167	
+   168	    if (jobs->empty())
+   169	    {
+   170	        *error = "manifest has no jobs";
+   171	        return false;
+   172	    }
+   173	    return true;
+   174	}
+   175	
+   176	static int result_callback(void* userdata, RKLLMResult* result, LLMCallState state)
+   177	{
+   178	    batch_callback_context* ctx = static_cast<batch_callback_context*>(userdata);
+   179	    if (!ctx)
+   180	    {
+   181	        return -1;
+   182	    }
+   183	
+   184	    if (state == RKLLM_RUN_ERROR)
+   185	    {
+   186	        ctx->callback_error = true;
+   187	        return 0;
+   188	    }
+   189	    if (state == RKLLM_RUN_MAX_NEW_TOKEN_REACHED)
+   190	    {
+   191	        ctx->max_new_tokens_reached = true;
+   192	        return 0;
+   193	    }
+   194	    if (state != RKLLM_RUN_NORMAL || !result || !result->token_ids)
+   195	    {
+   196	        return 0;
+   197	    }
+   198	
+   199	    if (ctx->first_decode)
+   200	    {
+   201	        ctx->first_token_time = getCurrentTimeUs();
+   202	        ctx->first_decode = false;
+   203	    }
+   204	
+   205	    for (int i = 0; i < result->num_tokens; ++i)
+   206	    {
+   207	        int token_id = result->token_ids[i];
+   208	        if (!ctx->text_started)
+   209	        {
+   210	            if (token_id == ASR_TEXT_TOKEN)
+   211	            {
+   212	                ctx->text_started = true;
+   213	            }
+   214	            continue;
+   215	        }
+   216	        ctx->text += ctx->tokenizer->TokenToPiece(token_id);
+   217	    }
+   218	    return 0;
+   219	}
+   220	
+   221	static int tokenizer_callback(void* userdata, const char* text, int32_t text_len, int32_t* tokens, int32_t n_tokens_max)
+   222	{
+   223	    Tokenizer* tokenizer = static_cast<Tokenizer*>(userdata);
+   224	    int n_tokens = tokenizer->Tokenize(text, text_len, tokens, n_tokens_max);
+   225	    if (n_tokens <= 0)
+   226	    {
+   227	        fprintf(stderr, "tokenizer failed for %s\n", text);
+   228	    }
+   229	    return n_tokens;
+   230	}
+   231	
+   232	static int embed_callback(void* userdata, int32_t* tokens, uint64_t num_tokens, void* embed, uint64_t len)
+   233	{
+   234	    struct embedding_info* embed_info = static_cast<struct embedding_info*>(userdata);
+   235	    if (len != num_tokens * embed_info->embedding_dim * sizeof(float16))
+   236	    {
+   237	        fprintf(stderr, "invalid embed buffer\n");
+   238	        return -1;
+   239	    }
+   240	
+   241	    for (uint64_t n = 0; n < num_tokens; ++n)
+   242	    {
+   243	        int32_t token_id = tokens[n];
+   244	        if (token_id < 0 || token_id >= embed_info->vocab_size)
+   245	        {
+   246	            fprintf(stderr, "invalid token id: %d\n", token_id);
+   247	            return -1;
+   248	        }
+   249	        memcpy(static_cast<unsigned char*>(embed) + n * embed_info->embedding_dim * sizeof(float16),
+   250	               embed_info->embedding_data + token_id * embed_info->embedding_dim,
+   251	               embed_info->embedding_dim * sizeof(float16));
+   252	    }
+   253	    return 0;
+   254	}
+   255	
+   256	static void reset_callback_context(batch_callback_context* ctx)
+   257	{
+   258	    ctx->text.clear();
+   259	    ctx->text_started = false;
+   260	    ctx->first_decode = true;
+   261	    ctx->callback_error = false;
+   262	    ctx->max_new_tokens_reached = false;
+   263	    ctx->first_token_time = 0;
+   264	}
+   265	
+   266	static void write_result(FILE* output,
+   267	                         const batch_job& job,
+   268	                         const char* status,
+   269	                         const std::string& text,
+   270	                         const std::string& error,
+   271	                         float audio_duration_sec,
+   272	                         float elapsed_sec,
+   273	                         const rknn_perf_metrics_t& perf,
+   274	                         int attempt)
+   275	{
+   276	    fprintf(output,
+   277	            "{\"job_id\":\"%s\",\"wav_path\":\"%s\",\"status\":\"%s\","
+   278	            "\"text\":\"%s\",\"error\":\"%s\",\"audio_duration_sec\":%.6f,"
+   279	            "\"elapsed_sec\":%.6f,\"audio_latency_ms\":%.3f,\"llm_elapsed_ms\":%.3f,"
+   280	            "\"prefill_tokens\":%d,\"decode_tokens\":%d,\"attempt\":%d}\n",
+   281	            json_escape(job.id).c_str(),
+   282	            json_escape(job.wav_path).c_str(),
+   283	            status,
+   284	            json_escape(text).c_str(),
+   285	            json_escape(error).c_str(),
+   286	            audio_duration_sec,
+   287	            elapsed_sec,
+   288	            perf.audio_latency / 1000.0,
+   289	            (perf.llm_end_time > perf.llm_start_time) ? (perf.llm_end_time - perf.llm_start_time) / 1000.0 : 0.0,
+   290	            perf.n_prefill_tokens,
+   291	            perf.n_decode_tokens,
+   292	            attempt);
+   293	    fflush(output);
+   294	}
+   295	
+   296	static void print_usage(const char* program)
+   297	{
+   298	    fprintf(stderr,
+   299	            "Usage: %s <audio_model_path> <audio_weight_path> <llm_model_path> <llm_weight_path> "
+   300	            "<tokenizer_path> <embedding_path> <audio_core_mask> <llm_core_mask> "
+   301	            "<manifest.tsv> <results.jsonl> [--append] [--stop-on-error]\n",
+   302	            program);
+   303	}
+   304	
+   305	int main(int argc, char** argv)
+   306	{
+   307	    if (argc < 11 || argc > 13)
+   308	    {
+   309	        print_usage(argv[0]);
+   310	        return 2;
+   311	    }
+   312	
+   313	    bool append = false;
+   314	    bool stop_on_error = false;
+   315	    for (int i = 11; i < argc; ++i)
+   316	    {
+   317	        if (strcmp(argv[i], "--append") == 0)
+   318	        {
+   319	            append = true;
+   320	        }
+   321	        else if (strcmp(argv[i], "--stop-on-error") == 0)
+   322	        {
+   323	            stop_on_error = true;
+   324	        }
+   325	        else
+   326	        {
+   327	            fprintf(stderr, "unknown option: %s\n", argv[i]);
+   328	            print_usage(argv[0]);
+   329	            return 2;
+   330	        }
+   331	    }
+   332	
+   333	    const char* audio_model_path = argv[1];
+   334	    const char* audio_weight_path = argv[2];
+   335	    const char* llm_model_path = argv[3];
+   336	    const char* llm_weight_path = argv[4];
+   337	    const char* tokenizer_path = argv[5];
+   338	    const char* embedding_path = argv[6];
+   339	    uint32_t audio_core_mask = strtoul(argv[7], NULL, 16);
+   340	    uint32_t llm_core_mask = strtoul(argv[8], NULL, 16);
+   341	    const char* manifest_path = argv[9];
+   342	    const char* results_path = argv[10];
+   343	
+   344	    std::vector<batch_job> jobs;
+   345	    std::string manifest_error;
+   346	    if (!load_manifest(manifest_path, &jobs, &manifest_error))
+   347	    {
+   348	        fprintf(stderr, "manifest error: %s\n", manifest_error.c_str());
+   349	        return 2;
+   350	    }
+   351	
+   352	    signal(SIGINT, on_signal);
+   353	    signal(SIGTERM, on_signal);
+   354	
+   355	    int ret = 0;
+   356	    int final_ret = 0;
+   357	    int failed = 0;
+   358	    int completed = 0;
+   359	    int64_t batch_started = getCurrentTimeUs();
+   360	
+   361	    rknn_app_context_t app_ctx;
+   362	    memset(&app_ctx, 0, sizeof(app_ctx));
+   363	    bool model_init_attempted = false;
+   364	
+   365	    Tokenizer* tokenizer = NULL;
+   366	    VocabInfo vocab_info;
+   367	    memset(&vocab_info, 0, sizeof(vocab_info));
+   368	
+   369	    struct embedding_info embedding_info;
+   370	    memset(&embedding_info, 0, sizeof(embedding_info));
+   371	    embedding_info.fd = -1;
+   372	    embedding_info.embedding_data = NULL;
+   373	    struct stat emb_st;
+   374	    memset(&emb_st, 0, sizeof(emb_st));
+   375	
+   376	    FILE* output = NULL;
+   377	    batch_callback_context callback_ctx;
+   378	    callback_ctx.tokenizer = NULL;
+   379	    reset_callback_context(&callback_ctx);
+   380	
+   381	    int n_params = 1;
+   382	    rknn3_llm_param params;
+   383	    memset(&params, 0, sizeof(params));
+   384	    RKLLMCallback callback;
+   385	    memset(&callback, 0, sizeof(callback));
+   386	
+   387	    tokenizer = new Tokenizer(TOKENIZER_BACKEND_LLAMA, tokenizer_path);
+   388	    if (!tokenizer)
+   389	    {
+   390	        fprintf(stderr, "load tokenizer failed: %s\n", tokenizer_path);
+   391	        final_ret = 2;
+   392	        goto cleanup;
+   393	    }
+   394	    tokenizer->GetVocabInfo(&vocab_info);
+   395	
+   396	    embedding_info.fd = open(embedding_path, O_RDONLY);
+   397	    if (embedding_info.fd == -1)
+   398	    {
+   399	        fprintf(stderr, "open embedding failed: %s\n", strerror(errno));
+   400	        final_ret = 2;
+   401	        goto cleanup;
+   402	    }
+   403	    if (fstat(embedding_info.fd, &emb_st) == -1)
+   404	    {
+   405	        fprintf(stderr, "fstat embedding failed: %s\n", strerror(errno));
+   406	        final_ret = 2;
+   407	        goto cleanup;
+   408	    }
+   409	    embedding_info.embedding_data = static_cast<float16*>(mmap(NULL, emb_st.st_size, PROT_READ, MAP_PRIVATE, embedding_info.fd, 0));
+   410	    if (embedding_info.embedding_data == MAP_FAILED)
+   411	    {
+   412	        embedding_info.embedding_data = NULL;
+   413	        fprintf(stderr, "mmap embedding failed: %s\n", strerror(errno));
+   414	        final_ret = 2;
+   415	        goto cleanup;
+   416	    }
+   417	    embedding_info.vocab_size = vocab_info.vocab_size;
+   418	    embedding_info.embedding_dim = (emb_st.st_size / vocab_info.vocab_size) / sizeof(float16);
+   419	
+   420	    callback_ctx.tokenizer = tokenizer;
+   421	    reset_callback_context(&callback_ctx);
+   422	
+   423	    params.logits_name = (char*)"logits";
+   424	    params.max_context_len = MAX_CONTEXT_LEN;
+   425	    params.sampling_param = SAMPLE_PARAMS;
+   426	    params.vocab_info.vocab_size = vocab_info.vocab_size;
+   427	    params.vocab_info.n_special_eos_id = vocab_info.n_special_eos_id;
+   428	    params.vocab_info.n_special_bos_id = vocab_info.n_special_bos_id;
+   429	    memcpy(params.vocab_info.special_eos_id, vocab_info.special_eos_id, sizeof(vocab_info.special_eos_id));
+   430	    memcpy(params.vocab_info.special_bos_id, vocab_info.special_bos_id, sizeof(vocab_info.special_bos_id));
+   431	    params.vocab_info.linefeed_id = vocab_info.linefeed_id;
+   432	
+   433	    callback.result_callback = result_callback;
+   434	    callback.result_userdata = &callback_ctx;
+   435	    callback.tokenizer_callback = tokenizer_callback;
+   436	    callback.tokenizer_userdata = tokenizer;
+   437	    callback.embed_callback = embed_callback;
+   438	    callback.embed_userdata = &embedding_info;
+   439	
+   440	    fprintf(stderr, "BATCH_INIT jobs=%zu\n", jobs.size());
+   441	    model_init_attempted = true;
+   442	    ret = init_qwen3_asr_model(&app_ctx,
+   443	                               llm_model_path,
+   444	                               llm_weight_path,
+   445	                               audio_model_path,
+   446	                               audio_weight_path,
+   447	                               &params,
+   448	                               n_params,
+   449	                               callback,
+   450	                               llm_core_mask,
+   451	                               audio_core_mask);
+   452	    if (ret != 0)
+   453	    {
+   454	        fprintf(stderr, "init qwen3_asr model failed: %d\n", ret);
+   455	        final_ret = 2;
+   456	        goto cleanup;
+   457	    }
+   458	
+   459	    output = fopen(results_path, append ? "ab" : "wb");
+   460	    if (!output)
+   461	    {
+   462	        fprintf(stderr, "open results failed: %s\n", strerror(errno));
+   463	        final_ret = 2;
+   464	        goto cleanup;
+   465	    }
+   466	
+   467	    for (size_t i = 0; i < jobs.size(); ++i)
+   468	    {
+   469	        if (g_stop_requested)
+   470	        {
+   471	            fprintf(stderr, "BATCH_STOP requested before job=%s\n", jobs[i].id.c_str());
+   472	            final_ret = 130;
+   473	            break;
+   474	        }
+   475	
+   476	        const batch_job& job = jobs[i];
+   477	        audio_buffer_t audio;
+   478	        memset(&audio, 0, sizeof(audio));
+   479	        float16* audio_embeds = NULL;
+   480	        rknn_perf_metrics_t perf;
+   481	        memset(&perf, 0, sizeof(perf));
+   482	        reset_callback_context(&callback_ctx);
+   483	        std::string error;
+   484	        const char* status = "ok";
+   485	        int64_t started = getCurrentTimeUs();
+   486	        float duration = 0.0f;
+   487	
+   488	        fprintf(stderr, "BATCH_JOB_BEGIN index=%zu/%zu id=%s wav=%s\n",
+   489	                i + 1, jobs.size(), job.id.c_str(), job.wav_path.c_str());
+   490	
+   491	        ret = rknn3_session_clear_kvcache(app_ctx.llm.rknn_sess, RKNN3_KVCACHE_CLEAR_ALL);
+   492	        if (ret < 0)
+   493	        {
+   494	            status = "kvcache_clear_failed";
+   495	            std::ostringstream message;
+   496	            message << "rknn3_session_clear_kvcache ret=" << ret;
+   497	            error = message.str();
+   498	        }
+   499	
+   500	        if (strcmp(status, "ok") == 0)
+   501	        {
+   502	            ret = read_audio(job.wav_path.c_str(), &audio);
+   503	            if (ret != 0)
+   504	            {
+   505	                status = "audio_read_failed";
+   506	                std::ostringstream message;
+   507	                message << "read_audio ret=" << ret;
+   508	                error = message.str();
+   509	            }
+   510	        }
+   511	
+   512	        if (strcmp(status, "ok") == 0)
+   513	        {
+   514	            if (audio.sample_rate <= 0 || audio.num_frames < MIN_AUDIO_FRAMES)
+   515	            {
+   516	                status = "audio_invalid";
+   517	                error = "audio is empty or shorter than one FFT window";
+   518	            }
+   519	            else
+   520	            {
+   521	                int max_frames = audio.sample_rate * OFFLINE_MAX_AUDIO_SECONDS;
+   522	                if (audio.num_frames > max_frames)
+   523	                {
+   524	                    audio.num_frames = max_frames;
+   525	                }
+   526	                duration = static_cast<float>(audio.num_frames) / audio.sample_rate;
+   527	            }
+   528	        }
+   529	
+   530	        if (strcmp(status, "ok") == 0)
+   531	        {
+   532	            size_t n_audio_tokens = get_n_audio(&app_ctx.audio, audio.num_frames);
+   533	            size_t n_embed_audio = n_audio_tokens * app_ctx.audio.embeds_shape[1];
+   534	            if (n_audio_tokens == 0 || n_embed_audio == 0)
+   535	            {
+   536	                status = "audio_token_invalid";
+   537	                error = "get_n_audio returned zero";
+   538	            }
+   539	            else
+   540	            {
+   541	                audio_embeds = static_cast<float16*>(malloc(n_embed_audio * sizeof(float16)));
+   542	                if (!audio_embeds)
+   543	                {
+   544	                    status = "malloc_failed";
+   545	                    error = "failed to allocate audio embeddings";
+   546	                }
+   547	                else
+   548	                {
+   549	                    ret = inference_qwen3_asr_model(&app_ctx, &audio, audio_embeds, n_audio_tokens, 1, &perf);
+   550	                    if (ret != 0)
+   551	                    {
+   552	                        status = "inference_failed";
+   553	                        std::ostringstream message;
+   554	                        message << "inference ret=" << ret;
+   555	                        error = message.str();
+   556	                    }
+   557	                    else if (callback_ctx.callback_error)
+   558	                    {
+   559	                        status = "callback_error";
+   560	                        error = "LLM callback reported an error";
+   561	                    }
+   562	                    else if (!callback_ctx.text_started || trim_copy(callback_ctx.text).empty())
+   563	                    {
+   564	                        status = "transcript_empty";
+   565	                        error = "ASR text marker or transcript was not produced";
+   566	                    }
+   567	                    else if (callback_ctx.max_new_tokens_reached)
+   568	                    {
+   569	                        status = "max_new_tokens";
+   570	                        error = "maximum new tokens reached";
+   571	                    }
+   572	                }
+   573	            }
+   574	        }
+   575	
+   576	        float elapsed = static_cast<float>(getCurrentTimeUs() - started) / 1000000.0f;
+   577	        write_result(output, job, status, trim_copy(callback_ctx.text), error, duration, elapsed, perf, 1);
+   578	
+   579	        if (audio_embeds)
+   580	        {
+   581	            free(audio_embeds);
+   582	        }
+   583	        if (audio.data)
+   584	        {
+   585	            free(audio.data);
+   586	        }
+   587	
+   588	        ++completed;
+   589	        if (strcmp(status, "ok") != 0)
+   590	        {
+   591	            ++failed;
+   592	            final_ret = 1;
+   593	        }
+   594	        fprintf(stderr, "BATCH_JOB_END id=%s status=%s elapsed=%.3f text_chars=%zu\n",
+   595	                job.id.c_str(), status, elapsed, callback_ctx.text.size());
+   596	
+   597	        if (strcmp(status, "ok") != 0 && stop_on_error)
+   598	        {
+   599	            break;
+   600	        }
+   601	    }
+   602	
+   603	cleanup:
+   604	    if (output)
+   605	    {
+   606	        fclose(output);
+   607	        output = NULL;
+   608	    }
+   609	    if (model_init_attempted)
+   610	    {
+   611	        ret = release_qwen3_asr_model(&app_ctx);
+   612	        if (ret != 0)
+   613	        {
+   614	            fprintf(stderr, "release qwen3_asr model failed: %d\n", ret);
+   615	            if (final_ret == 0)
+   616	            {
+   617	                final_ret = 2;
+   618	            }
+   619	        }
+   620	    }
+   621	    if (embedding_info.embedding_data)
+   622	    {
+   623	        munmap(static_cast<void*>(embedding_info.embedding_data), emb_st.st_size);
+   624	        embedding_info.embedding_data = NULL;
+   625	    }
+   626	    if (embedding_info.fd != -1)
+   627	    {
+   628	        close(embedding_info.fd);
+   629	        embedding_info.fd = -1;
+   630	    }
+   631	    if (tokenizer)
+   632	    {
+   633	        delete tokenizer;
+   634	        tokenizer = NULL;
+   635	    }
+   636	
+   637	    fprintf(stderr,
+   638	            "BATCH_DONE jobs=%zu completed=%d failed=%d elapsed=%.3f exit=%d\n",
+   639	            jobs.size(),
+   640	            completed,
+   641	            failed,
+   642	            static_cast<float>(getCurrentTimeUs() - batch_started) / 1000000.0f,
+   643	            final_ret);
+   644	    return final_ret;
+   645	}
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001A886EBF730
+
