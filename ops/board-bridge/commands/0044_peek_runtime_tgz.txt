@@ -1,0 +1,1 @@
+ssh -p 2222 ubuntu@10.10.22.40 "echo ===RUNTIME_TGZ_ASR===; tar tzf /mnt/c/Users/Administrator/Downloads/rknn3-runtime.tgz 2>/dev/null | grep -iE 'asr'; echo ===RUNTIME_TGZ_TOP===; tar tzf /mnt/c/Users/Administrator/Downloads/rknn3-runtime.tgz 2>/dev/null | head -30; echo ===DONE==="
