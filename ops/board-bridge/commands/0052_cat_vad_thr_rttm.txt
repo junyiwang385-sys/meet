@@ -1,0 +1,1 @@
+ssh linaro@10.10.22.36 "for T in 0.4 0.2; do echo ===RTTM_thr$T===; cat /userdata/meeting_agent/output/vad_thr_test/thr$T/input_mono16k.rttm 2>/dev/null; done; echo ===DONE==="
