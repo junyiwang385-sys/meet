@@ -1,0 +1,18 @@
+# cmd file : 0057_ft_gpu_final.txt
+# started  : 2026-09-11T00:14:51
+# exit code: 0
+
+===== STDOUT =====
+===WSL_NVSMI===
+-r-xr-xr-x 2 root root 828384 May  6 11:16 /usr/lib/wsl/lib/nvidia-smi
+===NVSMI_L===
+GPU 0: NVIDIA GeForce RTX 3070 (UUID: GPU-6a33949c-31a9-f4e9-abd8-fab91f98c158)
+===DXG===
+/dev/dxg
+===NATIVE_PY_TORCH===
+no-native-torch
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001E38159B870
+
