@@ -1,0 +1,17 @@
+# cmd file : 0051_run_vad_thr_test.txt
+# started  : 2026-09-10T17:32:34
+# exit code: 0
+
+===== STDOUT =====
+NEEDLE_FOUND True
+===RUN_thr0.4===
+rc 0
+RTTM /userdata/meeting_agent/output/vad_thr_test/thr0.4/input_mono16k.rttm 452 lines
+===RUN_thr0.2===
+rc 0
+RTTM /userdata/meeting_agent/output/vad_thr_test/thr0.2/input_mono16k.rttm 493 lines
+===RESTORED_DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001E0B81DE720
+
