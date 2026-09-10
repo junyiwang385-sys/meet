@@ -1,0 +1,28 @@
+# cmd file : 0059_find_4b_hf_source.txt
+# started  : 2026-09-11T00:59:21
+# exit code: 0
+
+===== STDOUT =====
+===QWEN3_4B_CONFIGS===
+FOUND /mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen2_5_Omni/python/llm/config.json
+    "architectures": [
+    "hidden_size": 2048,
+    "model_type": "qwen2",
+    "num_hidden_layers": 36,
+===4B_DIRS===
+===CONVERT_LOG===
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit/examples/qwen2_5/test.py:14:ONNX_MODEL = './Qwen2.5-0.5B-Instruct.onnx'
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit/examples/qwen2_5/test.py:15:LLM_CONFIG = './Qwen2.5-0.5B-Instruct.config.pkl'
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit/examples/qwen2_5/test.py:16:RKNN_MODEL = './Qwen2.5-0.5B-Instruct.rknn'
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit/examples/qwen2_5/test.py:17:EMBED_PATH = './Qwen2.5-0.5B-Instruct.embed.bin'
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit/examples/qwen2_5/test.py:19:TOKENIZER_PATH = 'Qwen/Qwen2.5-0.5B-Instruct'
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Gemma4/gemma-4-E2B-it/tokenizer.json:2799:      "='": 2507,
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Gemma4/gemma-4-E2B-it/tokenizer.json:12100:      "▁instructions": 11808,
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Gemma4/gemma-4-E2B-it/tokenizer.json:12799:      "▁लिया": 12507,
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Gemma4/gemma-4-E2B-it/tokenizer.json:15079:      "▁instruction": 14787,
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Gemma4/gemma-4-E2B-it/tokenizer.json:15167:      "▁instruct": 14875,
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000016D89510780
+
