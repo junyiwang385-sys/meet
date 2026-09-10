@@ -1,0 +1,1 @@
+ssh -p 2222 ubuntu@10.10.22.40 "P=/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810; echo ===SHA256SUMS===; cat $P/SHA256SUMS; echo ===CMAKELISTS===; cat $P/CMakeLists.txt; echo ===BATCH_MAIN_CC===; cat -n $P/batch_main.cc; echo ===DONE==="
