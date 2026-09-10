@@ -1,0 +1,48 @@
+# cmd file : 0055_locate_ftpy_gpu.txt
+# started  : 2026-09-11T00:09:34
+# exit code: 0
+
+===== STDOUT =====
+===ENV_DIR===
+total 0
+drwxrwxrwx 1 root root 4096 Jul 31 11:52 .
+drwxrwxrwx 1 root root 4096 Jul 31 11:48 ..
+drwxrwxrwx 1 root root 4096 Jul 31 11:52 bin
+drwxrwxrwx 1 root root 4096 Jul 31 11:52 compiler_compat
+drwxrwxrwx 1 root root 4096 Jul 31 11:52 conda-meta
+drwxrwxrwx 1 root root 4096 Jul 31 11:52 x86_64-conda-linux-gnu
+===FIND_PY===
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin/python3.11-config
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/conda-meta/python-3.11.15-h17756b0_1.json
+===OTHER_CONDA_ENVS===
+===GPU===
+NO_NVIDIA_SMI
+===QWEN3_DIRS===
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora
+/mnt/c/Users/Administrator/Desktop/1828/.venv_qwen3_lora
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_Embedding
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-model-zoo/examples/Qwen3_VL
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Qwen3
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Qwen3/Qwen3-1.7B-Base
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Qwen3VL
+/mnt/c/Users/Administrator/Desktop/1828/rknn3-toolkit/rknn3-toolkit-lite/examples/Qwen3VL/qwen3_VL_2B
+/home/ubuntu/qwen3_batch_patch.FuxGx3
+/home/ubuntu/qwen3_batch_patch.FuxGx3/Qwen3_ASR_batch_patch_20260810
+/home/ubuntu/rknn_Qwen3_ASR_batch_demo_20260810_133903
+===FRAMEWORKS===
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/bin
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/compiler_compat
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/conda-meta
+/mnt/c/Users/Administrator/Desktop/1828/.conda_qwen3_lora/x86_64-conda-linux-gnu
+/mnt/c/Users/Administrator/Desktop/1828/.venv_qwen3_lora
+/mnt/c/Users/Administrator/Desktop/1828/.venv_qwen3_lora/bin
+/mnt/c/Users/Administrator/Desktop/1828/.venv_qwen3_lora/include
+/mnt/c/Users/Administrator/Desktop/1828/.venv_qwen3_lora/lib
+/mnt/c/Users/Administrator/Desktop/1828/data/lifelog_sft
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000002299B9DC550
+
