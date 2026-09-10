@@ -1,0 +1,25 @@
+# cmd file : 0044_peek_runtime_tgz.txt
+# started  : 2026-09-10T11:15:23
+# exit code: 0
+
+===== STDOUT =====
+===RUNTIME_TGZ_ASR===
+===RUNTIME_TGZ_TOP===
+rknn3-runtime/
+rknn3-runtime/rknn3-api/
+rknn3-runtime/rknn3-api/Android/
+rknn3-runtime/rknn3-api/Android/arm64-v8a/
+rknn3-runtime/rknn3-api/Android/arm64-v8a/librknn3_api_native.so
+rknn3-runtime/rknn3-api/Android/arm64-v8a/librknn3_api.so
+rknn3-runtime/rknn3-api/include/
+rknn3-runtime/rknn3-api/include/rknn3_api.h
+rknn3-runtime/rknn3-api/include/float16.h
+rknn3-runtime/rknn3-api/Linux/
+rknn3-runtime/rknn3-api/Linux/aarch64/
+rknn3-runtime/rknn3-api/Linux/aarch64/librknn3_api_native.so
+rknn3-runtime/rknn3-api/Linux/aarch64/librknn3_api.so
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001F7E82B15B0
+
