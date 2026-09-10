@@ -1,0 +1,131 @@
+# cmd file : 0045_api_header_sigs.txt
+# started  : 2026-09-10T11:17:30
+# exit code: 0
+
+===== STDOUT =====
+===API_H_SIGS===
+32:#define RKNN3_ERR_CTX_INVALID -4               /** < context is invalid. */
+36:#define RKNN3_ERR_INPUT_INVALID -8             /** < input is invalid. */
+45:#define RKNN3_ERR_WEIGHT_LOAD_NOT_PREPARED -17 /** < streaming weight load not prepared, call rknn3_model_init first. */
+46:#define RKNN3_ERR_INCOMPATIBLE_VERSION -18     /** < version mismatch between librknn3_api and rknn3_transfer_proxy / server(firmware for co-processor or rknn3_server for non-co-processor), all three components must be same version. */
+59:#define RKNN3_MAX_DYNAMIC_SHAPE_NUM 512            /* maximum number of dynamic shape for each input. */
+61:#define RKNN3_MAX_SPECIAL_BOS_ID_NUM 64            /* maximum number of special Begin-Of-Sequence (BOS) token. */
+62:#define RKNN3_MAX_SPECIAL_EOS_ID_NUM 64            /* maximum number of special End-Of-Sequence (EOS) token. */
+72:typedef uint32_t rknn3_context;
+74:typedef uint64_t rknn3_context;
+77:typedef void rknn3_session;
+80: * @brief The query command for rknn3_query
+82:typedef enum _rknn3_query_cmd
+84:  RKNN3_QUERY_IN_OUT_NUM  = 0, /** < query the number of input & output tensor. */
+85:  RKNN3_QUERY_INPUT_ATTR  = 1, /** < query the attribute of input tensor. */
+92:  RKNN3_QUERY_ORIGIN_INPUT_ATTR  = 8, /** < query the attribute of origin input tensor. */
+107:  RKNN3_QUERY_POSTPROCESS_IN_OUT_NUM = 18, /** < query the number of postprocess input and output, only valid when postprocess is enabled */
+117:} rknn3_query_cmd;
+122:typedef enum _rknn3_tensor_type
+142:} rknn3_tensor_type;
+147:typedef enum _rknn3_tensor_qnt_type
+158:} rknn3_tensor_qnt_type;
+163:typedef enum _rknn3_tensor_layout
+176:} rknn3_tensor_layout;
+181:typedef enum _rknn3_mem_alloc_flags
+186:} rknn3_mem_alloc_flags;
+189: * @brief Memory synchronization modes for rknn3_mem_sync function
+191:typedef enum _rknn3_mem_sync_mode
+199:} rknn3_mem_sync_mode;
+204:typedef enum _rknn3_core_mask
+216:} rknn3_core_mask;
+221:typedef enum _rknn3_mem_type
+225:} rknn3_mem_type;
+227:typedef enum _rknn3_kvcache_dtype
+238:} rknn3_kvcache_dtype;
+240:typedef enum _rknn3_kvcache_store_method
+245:} rknn3_kvcache_store_method;
+250:typedef enum
+254:  RKNN3_KVCACHE_POLICY_NORMAL,      /**< Use normal cache policy. Only use KV cache with max_context_len */
+257:} rknn3_kvcache_policy;
+266:typedef enum
+270:} rknn3_kvcache_clear_policy;
+273: * @enum rknn3_llm_input_type
+274: * @brief Defines the types of inputs that can be fed into the LLM.
+276:typedef enum
+279:  RKNN3_LLM_INPUT_TOKEN      = 1, /**< Input is a sequence of tokens. */
+280:  RKNN3_LLM_INPUT_EMBED      = 2, /**< Input is an embedding vector. */
+281:  RKNN3_LLM_INPUT_MULTIMODAL = 3, /**< Multimodal input */
+282:  RKNN3_LLM_INPUT_AUX        = 4, /**< AUX input */
+283:  RKNN3_LLM_INPUT_MAX,            /**< Maximum value for input type enumeration. */
+284:} rknn3_llm_input_type;
+290:typedef enum
+292:  RKLLM_RUN_NORMAL                = 0, /**< The LLM call is in a normal running state. */
+293:  RKLLM_RUN_WAITING               = 1, /**< The LLM call is waiting for complete UTF-8 encoded character. */
+294:  RKLLM_RUN_FINISH                = 2, /**< The LLM call has finished execution. */
+295:  RKLLM_RUN_STOP                  = 3, /**< The LLM call is stopped by user. */
+296:  RKLLM_RUN_MAX_NEW_TOKEN_REACHED = 4, /**< The LLM call has reached the maximum number of new tokens. */
+297:  RKLLM_RUN_ERROR                 = 5, /**< An error occurred during the LLM call. */
+298:  RKLLM_RUN_PAUSE                 = 6, /**< The LLM call is paused. */
+299:  RKLLM_RUN_RESUME                = 7, /**< The LLM call is resumed from pause. */
+306:typedef enum
+308:  RKLLM_OUTPUT_CALLBACK_PREFILL_PROCESSING = 0, /** < output_callback is processing in prefill stage. */
+309:  RKLLM_OUTPUT_CALLBACK_PREFILL_FINISHED   = 1, /** < output_callback is finished in prefill stage. */
+310:  RKLLM_OUTPUT_CALLBACK_DECODE_PROCESSING  = 2, /** < output_callback is processing in decode stage. */
+311:  RKLLM_OUTPUT_CALLBACK_DECODE_FINISHED    = 3, /** < output_callback is finished in decode stage. */
+317:typedef enum _rknn3_llm_task_type
+320:  RKNN3_LLM_TASK_EMBEDDING = 1, /** < The embedding task. */
+322:} rknn3_llm_task_type;
+327:typedef struct _rknn3_input_output_num
+329:  uint32_t n_input;  /** < the number of input. */
+331:} rknn3_input_output_num;
+334: * @brief Quantization information structure
+336:typedef struct
+340:} rknn3_quant_info;
+345:typedef struct _rknn3_tensor_attr
+347:  uint32_t index;                /** < input parameter, the index of input/output tensor,
+348:                                    need set before call rknn3_query. */
+358:  rknn3_tensor_type     dtype;    /** < the data type of tensor. */
+359:  rknn3_tensor_layout   layout;   /** < the data layout of tensor. */
+360:  rknn3_tensor_qnt_type qnt_type; /** < the quantization type of tensor. */
+361:  rknn3_quant_info      qnt_info; /** < the quantization information of tensor. */
+365:} rknn3_tensor_attr;
+370:typedef struct _rknn3_sdk_version
+374:} rknn3_sdk_version;
+379:typedef struct _rknn3_core_mem_size
+385:} rknn3_core_mem_size;
+390:typedef struct _rknn3_custom_string
+393:} rknn3_custom_string;
+396: * @brief Tensor memory information structure
+398:typedef struct _rknn3_tensor_memory
+409:  rknn3_mem_type mem_type;  /** < the memory type of tensor buffer. */
+410:} rknn3_tensor_mem;
+415:typedef enum _rknn3_im_fmt
+429:} rknn3_im_fmt;
+434:typedef enum _rknn3_im_proc_flag
+443:} rknn3_im_proc_flag;
+446: * @brief Image rectangle structure
+448:typedef struct _rknn3_im_rect
+454:} rknn3_im_rect;
+456:typedef struct _rknn3_im_metadata
+459:} rknn3_im_metadata;
+462: * @brief Image memory information structure
+464:typedef struct _rknn3_im_mem
+469:  rknn3_im_fmt format; /** < the format of image buffer. */
+471:  rknn3_tensor_mem* data_mem;     /** < the memory information of image buffer. */
+472:  rknn3_im_metadata metadata;     /** < extra bookkeeping shared between host and device. */
+473:} rknn3_im_mem;
+479:typedef struct _rknn3_config
+488:} rknn3_config;
+493: * This structure holds both the memory information and attributes of a tensor used in RKNN3 operations.
+494: * It serves as a fundamental data structure for handling tensors in the RKNN3 runtime.
+496: * @struct _rknn3_tensor
+497: * @see rknn3_tensor_mem
+498: * @see rknn3_tensor_attr
+500:typedef struct _rknn3_tensor
+502:  rknn3_tensor_mem*  mem;  /** < the memory information of tensor */
+503:  rknn3_tensor_attr* attr; /** < the attribute of tensor */
+504:} rknn3_tensor;
+506:typedef rknn3_tensor rknn3_aux_tensor;
+511: * This structure provides detailed memory allocation information across different memory types
+512: * (command, weight, internal, kvcache) and their distribution across NPU cores.
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001D61BB0F4C0
+
