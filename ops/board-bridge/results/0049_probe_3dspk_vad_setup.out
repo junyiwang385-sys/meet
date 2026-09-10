@@ -1,0 +1,44 @@
+# cmd file : 0049_probe_3dspk_vad_setup.txt
+# started  : 2026-09-10T17:28:47
+# exit code: 0
+
+===== STDOUT =====
+===EXISTS===
+-rw-r--r-- 1 linaro linaro 20290  8月 5日 16:18 /userdata/3D-Speaker/speakerlab/bin/infer_diarization.py
+===VAD_SETUP===
+14:import argparse
+31:from speakerlab.utils.utils import merge_vad, silent_print, download_model_from_modelscope, circle_pad
+37:from modelscope.pipelines import pipeline
+42:parser = argparse.ArgumentParser(description='Speaker diarization inference.')
+43:parser.add_argument('--wav', type=str, required=True, help='Input wavs')
+44:parser.add_argument('--out_dir', type=str, required=True, help='Out results dir')
+45:parser.add_argument('--out_type', choices=['rttm', 'json'], default='rttm', type=str, help='Results format, rttm or json')
+46:parser.add_argument('--include_overlap', action='store_true', help='Include overlapping region')
+47:parser.add_argument('--hf_access_token', type=str, help='hf_access_token for pyannote/segmentation-3.0 model. It\'s required if --include_overlap is specified')
+48:parser.add_argument('--diable_progress_bar', action='store_true', help='Close the progress bar')
+49:parser.add_argument('--nprocs', default=None, type=int, help='Num of procs')
+50:parser.add_argument('--speaker_num', default=None, type=int, help='Oracle num of speaker')
+109:        'model_id': 'iic/speech_fsmn_vad_zh-cn-16k-common-pytorch',
+114:        vad_pipeline = pipeline(
+121:    return vad_pipeline
+161:        diarization_pipeline = Diarization3Dspeaker(device, include_overlap, hf_access_token)
+162:        output = diarization_pipeline(input_audio) # input_audio can be a path to a WAV file, a NumPy array, or a PyTorch tensor
+164:        diarization_pipeline.save_diar_output('audio.rttm') # or audio.json
+174:        self.vad_model = get_voice_activity_detection_model(self.device, model_cache_dir)
+188:        # stage 1-1: do vad
+189:        vad_time = self.do_vad(wav_data)
+194:            vad_time = merge_vad(vad_time, valid_field)
+197:        chunks = [c for (st, ed) in vad_time for c in self.chunk(st, ed)]
+214:    def do_vad(self, wav):
+216:        vad_results = self.vad_model(wav[0])[0]
+217:        vad_time = [[vad_t[0]/1000, vad_t[1]/1000] for vad_t in vad_results['value']]
+218:        return vad_time
+326:    def binary_to_segs(self, binary, timestamps, threshold=0.5):
+332:            is_active = k_scores[0] > threshold
+336:                    if y < threshold:
+341:                    if y > threshold:
+===DONE===
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:000001EA962D8290
+
