@@ -1,0 +1,1 @@
+python ops\e2e\gateway_e2e_client.py --gateway http://127.0.0.1:8787 --audio "D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-1d9ca8d1c0b9\source.wav" --meeting-id meeting-7dbc774a30af --poll-interval 10 --timeout 1500

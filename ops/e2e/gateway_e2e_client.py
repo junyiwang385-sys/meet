@@ -73,6 +73,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--gateway", default="http://127.0.0.1:8787")
     ap.add_argument("--audio", required=True)
+    ap.add_argument("--meeting-id", default=None, help="复用已建会议(跳过建会),用于恢复中断的运行")
     ap.add_argument("--poll-interval", type=float, default=10.0)
     ap.add_argument("--timeout", type=float, default=1500.0)
     args = ap.parse_args()
@@ -98,14 +99,18 @@ def main() -> int:
     if s != 200 or health.get("status") != "ready":
         log("!! 板端不健康,终止"); return 3
 
-    # 3. 建会
-    s, created = _json("POST", f"{gw}/api/meetings", {"task_kind": "harness_meeting_v0"}, timeout=60)
-    log(f"[3] POST /api/meetings -> {s}")
-    if s not in (200, 201):
-        log("!! 建会失败:", json.dumps(created, ensure_ascii=False)[:600]); return 4
-    mid = created.get("meeting_id")
-    btid = created.get("board_task_id")
-    log(f"    meeting_id={mid}  board_task_id={btid}  state={_state_of(created)}")
+    # 3. 建会(或复用已有会议)
+    if args.meeting_id:
+        mid = args.meeting_id
+        log(f"[3] 复用已建会议 meeting_id={mid}(跳过建会)")
+    else:
+        s, created = _json("POST", f"{gw}/api/meetings", {"task_kind": "harness_meeting_v0"}, timeout=60)
+        log(f"[3] POST /api/meetings -> {s}")
+        if s not in (200, 201, 202):
+            log("!! 建会失败:", json.dumps(created, ensure_ascii=False)[:600]); return 4
+        mid = created.get("meeting_id")
+        btid = created.get("board_task_id")
+        log(f"    meeting_id={mid}  board_task_id={btid}  state={_state_of(created)}")
 
     # 4. 上传音频(Gateway 转板端,板端起 Harness)
     with open(args.audio, "rb") as fh:
