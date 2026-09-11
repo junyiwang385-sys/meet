@@ -1,0 +1,1 @@
+set GIT_TERMINAL_PROMPT=0 & git remote remove gitlab 2>nul & git remote add gitlab https://code.xgimi.com/chao11.wang/meeting.git & echo === REMOTES === & git remote -v & echo === PULL LATEST === & git pull --rebase --autostash & echo === PUSH gitlab feature/transcript-postprocess === & git push gitlab HEAD:feature/transcript-postprocess 2>&1 & echo === EXIT %errorlevel% ===
