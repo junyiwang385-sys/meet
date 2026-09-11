@@ -1,0 +1,16 @@
+# cmd file : 0062_relaunch_gateway_verify.txt
+# started  : 2026-09-11T14:19:14
+# exit code: 0
+
+===== STDOUT =====
+=== 杀掉旧 Gateway(错settings) ===
+kill gw pid 3612
+=== Gateway 已用 agent1 settings 重启(新窗口) ===
+=== API_INFO === 
+{"service": "meeting-agent-gateway-v0", "version": "0.2.0", "api_contract_version": "meeting-agent.api.v1", "status": "ready", "local_only": true, "base_url": "http://127.0.0.1:8787", "board_url": "http://10.10.22.36:18082", "capabilities": {"meeting_library": true, "local_upload": true, "pc_record": false, "board_record": false, "partial_result": true, "draft": true, "finalize": true, "audio_delete": false, "settings": true, "storage_management": true, "diagnostics": true}, "api": ["GET /", "GET /app", "GET /api/info", "GET /api/system/status", "GET /api/settings", "PUT /api/settings", "POST /api/settings/board/check", "POST /api/settings/storage/check", "GET /api/storage", "GET /api/storage/meetings", "POST /api/storage/cleanup-temp", "POST /api/system/reveal", "GET /api/board/health", "GET /api/meetings", "POST /api/meetings", "GET /api/meetings/{meeting_id}", "GET /api/meetings/{meeting_id}/result", "GET /api/meetings/{meeting_id}/draft", "PUT /api/meetings/{meeting_id}/draft", "POST /api/meetings/{meeting_id}/finalize", "GET /api/meetings/{meeting_id}/exports", "GET /api/meetings/{meeting_id}/exports/{format}", "PUT /api/meetings/{meeting_id}/audio", "POST /api/meetings/{meeting_id}/cancel", "POST /api/meetings/{meeting_id}/retry", "POST /api/meetings/{meeting_id}/rescan", "DELETE /api/meetings/{meeting_id}?mode=index_only"]}
+ 
+=== BOARD_HEALTH_VIA_GW === 
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-11T06:19:30.022040Z", "gateway": {"service": "meeting-agent-gateway-v0", "version": "0.2.0", "local_only": true}}
+
+===== STDERR =====
+
