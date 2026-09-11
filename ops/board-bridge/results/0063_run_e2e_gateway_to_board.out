@@ -1,0 +1,16 @@
+# cmd file : 0063_run_e2e_gateway_to_board.txt
+# started  : 2026-09-11T14:20:49
+# exit code: 4
+
+===== STDOUT =====
+========== �˵��� ǰ�ˡ���ˡ���ǰ�� ==========
+gateway : http://127.0.0.1:8787
+audio   : D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-1d9ca8d1c0b9\source.wav
+
+[1] GET /api/info -> 200  service=meeting-agent-gateway-v0 board_url=http://10.10.22.36:18082
+[2] GET /api/board/health -> 200  status=ready busy=False profile=qwen3-4b-v104-ctx16k
+[3] POST /api/meetings -> 202
+!! ����ʧ��: {"meeting_id": "meeting-7dbc774a30af", "board_task_id": "task-9e3770d36024", "board_task": {"task_id": "task-9e3770d36024", "meeting_id": "meeting-7dbc774a30af", "task_kind": "harness_meeting_v0", "state": "created", "stage": "awaiting_audio", "seq": 1, "created_at": "2026-09-11T06:20:49.849353Z", "updated_at": "2026-09-11T06:20:49.849353Z", "error": null, "input_path": null, "input_size": null, "input_sha256": null, "input_verified": false, "harness_model_profile": "qwen3-4b-v104-ctx16k", "harness_out_dir": "/userdata/meeting_agent1/runtime/board_agent_api_v0_mainline/task-9e3770d36024/harnes
+
+===== STDERR =====
+
