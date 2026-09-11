@@ -1,0 +1,42 @@
+# cmd file : 0060_probe_e2e_readiness.txt
+# started  : 2026-09-11T14:12:39
+# exit code: 0
+
+===== STDOUT =====
+=== HOST === 
+JM230511012200
+=== BRANCH === 
+feature/transcript-postprocess
+=== GW_CFG === 
+{
+    "schema_version":  "gateway-settings.v1",
+    "updated_at":  "2026-08-26T08:47:14Z",
+    "settings":  {
+                     "device_name":  "RK1828 Agent-1",
+                     "board":  {
+                                   "address":  "10.10.22.36",
+                                   "port":  18082
+                               },
+                     "model_profile":  "qwen3-4b-v104-ctx16k",
+                     "meeting_library_path":  "D:\\Meeting_Agent_mainline\\runtime\\meeting_library_agent1",
+                     "keep_audio_until_finalized":  true,
+                     "default_export_formats":  [
+                                                    "html",
+                                                    "txt",
+                                                    "json"
+                                                ],
+                     "default_language":  "zh-CN"
+                 }
+}=== TCP_18082 === 
+True
+=== BOARD === 
+{"status": "ready", "board_id": "linaro-alip", "protocol_version": "board-agent.v1", "agent_version": "0.2.0", "model_profile": "qwen3-4b-v104-ctx16k", "busy": false, "active_task_id": null, "local_only": true, "timestamp": "2026-09-11T06:12:52.395503Z"}
+--PROC--
+linaro     64022       1  0 9月04 ?       00:01:06 /userdata/meeting_agent1/venvs/mainline_cc9d83e/bin/python /userdata/meeting_agent1/scripts/start_board_agent1_mainline_20260826.py
+--SNAP--
+/userdata/meeting_agent1/mainline_cc9d83e
+snapshot_present
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:0000015BD2532A70
+
