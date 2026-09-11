@@ -78,10 +78,18 @@ export class GatewayMeetingApi implements MeetingApi {
   }
 
   async uploadAudio(meetingId: string, file: File): Promise<MeetingDetail> {
+    // Windows often reports a .wav file's MIME as "audio/wave" (or empty), which the
+    // Gateway/board reject with 415 -> the connection is aborted before the body is
+    // fully sent, surfacing as a spurious "gateway offline". Normalize to a content
+    // type the backend actually accepts (audio/wav / x-wav / application/octet-stream).
+    const accepted = new Set(['audio/wav', 'audio/x-wav', 'application/octet-stream']);
+    const contentType = file.name.toLowerCase().endsWith('.wav')
+      ? 'audio/wav'
+      : (accepted.has(file.type) ? file.type : 'application/octet-stream');
     return this.request(`/api/meetings/${encodeURIComponent(meetingId)}/audio`, {
       method: 'PUT',
       headers: {
-        'Content-Type': file.type || 'application/octet-stream',
+        'Content-Type': contentType,
         'X-File-Name': encodeURIComponent(file.name),
       },
       body: file,
