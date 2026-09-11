@@ -1,0 +1,55 @@
+# cmd file : 0061_probe_gateway_run_prereqs.txt
+# started  : 2026-09-11T14:15:45
+# exit code: 0
+
+===== STDOUT =====
+=== LOCAL_WAVS === 
+
+FullName                                                                                            MB
+--------                                                                                            --
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-1d9ca8d1c0b9\source.wav 59.2
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-1db923b08109\source.wav 59.2
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-35917c22985f\source.wav 59.2
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-7f5efe8498fd\source.wav 56.8
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-932cb313a3f0\source.wav 59.2
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-9542b1716bcb\source.wav 59.2
+D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-a4db3aefd8dc\source.wav 59.2
+
+
+
+=== GATEWAY_PROC === 
+
+
+ProcessId : 3612
+
+ProcessId : 32736
+
+ProcessId : 25424
+
+
+
+
+=== PORT8787 === 
+True
+=== NODE === 
+v24.16.0
+11.13.0
+=== BOARD_WAVS === 
+-rw-r--r-- 1 linaro pulse-access 70731278  8月 6日 14:45 /userdata/meeting_agent/input/L_R004S06C01_full_16k.wav
+--short--
+-rw-r--r-- 1 linaro linaro 960078  8月 5日 10:40 /userdata/meeting_agent1/input/meeting_short_30s.wav
+--evals--
+-rw-r--r-- 1 linaro linaro 64354860  8月21日 10:03 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S01C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 69048684  8月21日 10:13 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S02C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 62658258  8月21日 10:23 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S03C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 66469678  8月21日 10:32 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S04C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 67279462  8月21日 10:42 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S05C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 67055074  8月21日 10:50 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S06C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 69967896  8月21日 11:01 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S07C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 59094732  8月21日 11:10 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200706_L_R001S08C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 63875538  8月21日 11:15 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S01C01/01_segments/input_mono16k.wav
+-rw-r--r-- 1 linaro linaro 59381050  8月21日 11:26 /userdata/meeting_agent/evals/pipeline_outputs/e2e_trainL_full/train_L_20200707_L_R001S02C01/01_segments/input_mono16k.wav
+
+===== STDERR =====
+close - IO is still pending on closed socket. read:1, write:0, io:00000261EF014040
+
