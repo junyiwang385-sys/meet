@@ -1,0 +1,91 @@
+# cmd file : 0064_run_e2e_reuse_meeting.txt
+# started  : 2026-09-11T14:33:29
+# exit code: 1
+
+===== STDOUT =====
+========== �˵��� ǰ�ˡ���ˡ���ǰ�� ==========
+gateway : http://127.0.0.1:8787
+audio   : D:\Meeting_Agent_mainline\runtime\meeting_library_agent1\meetings\meeting-1d9ca8d1c0b9\source.wav
+
+[1] GET /api/info -> 200  service=meeting-agent-gateway-v0 board_url=http://10.10.22.36:18082
+[2] GET /api/board/health -> 200  status=ready busy=True profile=qwen3-4b-v104-ctx16k
+[3] �����ѽ����� meeting_id=meeting-7dbc774a30af(��������)
+[4] PUT /api/meetings/meeting-7dbc774a30af/audio  bytes=62112684 sha256=9c6133819814365e...
+    -> 202  state=processing stage=segmentation
+[5] ��ѯ GET /api/meetings/meeting-7dbc774a30af (ÿ 10s)
+    t+    16s  state=processing  stage=segmentation
+    t+    26s  state=processing  stage=segmentation
+    t+    36s  state=processing  stage=segmentation
+    t+    46s  state=processing  stage=segmentation
+    t+    56s  state=processing  stage=segmentation
+    t+    66s  state=processing  stage=segmentation
+    t+    76s  state=processing  stage=segmentation
+    t+    86s  state=processing  stage=segmentation
+    t+    96s  state=processing  stage=segmentation
+    t+   106s  state=processing  stage=segmentation
+    t+   116s  state=processing  stage=segmentation
+    t+   126s  state=processing  stage=segmentation
+    t+   136s  state=processing  stage=segmentation
+    t+   146s  state=processing  stage=segmentation
+    t+   156s  state=processing  stage=segmentation
+    t+   166s  state=processing  stage=segmentation
+    t+   176s  state=processing  stage=segmentation
+    t+   186s  state=processing  stage=segmentation
+    t+   196s  state=processing  stage=segmentation
+    t+   206s  state=processing  stage=segmentation
+    t+   216s  state=processing  stage=segmentation
+    t+   226s  state=processing  stage=segmentation
+    t+   236s  state=processing  stage=segmentation
+    t+   246s  state=processing  stage=segmentation
+    t+   256s  state=processing  stage=batch_asr
+    t+   266s  state=processing  stage=batch_asr
+    t+   276s  state=processing  stage=batch_asr
+    t+   286s  state=processing  stage=batch_asr
+    t+   297s  state=processing  stage=batch_asr
+    t+   307s  state=processing  stage=batch_asr
+    t+   317s  state=processing  stage=batch_asr
+    t+   327s  state=processing  stage=llm_summary
+    t+   337s  state=processing  stage=llm_summary
+    t+   347s  state=processing  stage=llm_summary
+    t+   357s  state=processing  stage=llm_summary
+    t+   367s  state=processing  stage=llm_summary
+    t+   377s  state=processing  stage=llm_summary
+    t+   387s  state=processing  stage=llm_summary
+    t+   397s  state=processing  stage=llm_summary
+    t+   407s  state=processing  stage=llm_summary
+    t+   417s  state=processing  stage=llm_summary
+    t+   427s  state=processing  stage=llm_summary
+    t+   437s  state=processing  stage=llm_summary
+    t+   447s  state=processing  stage=llm_summary
+    t+   457s  state=processing  stage=llm_summary
+    t+   467s  state=processing  stage=llm_summary
+    t+   477s  state=processing  stage=compat_export
+    t+   487s  state=processing  stage=compat_export
+    t+   497s  state=processing  stage=compat_export
+    t+   507s  state=processing  stage=compat_export
+    t+   517s  state=processing  stage=compat_export
+    t+   527s  state=processing  stage=compat_export
+    t+   538s  state=processing  stage=compat_export
+    t+   548s  state=completed  stage=meeting_ready
+
+[5] ��̬ state=completed  ��ʱ 548s
+[6] GET /api/meetings/meeting-7dbc774a30af/result -> 200
+---------- ���ͶӰ(��ǰ��) ----------
+title    : 
+overview : 
+chapters =0  speakers=0  action_items=0
+result top-level keys: task_id,meeting_id,result,artifact_refs
+
+===== STDERR =====
+Traceback (most recent call last):
+  File "D:\Meeting_Agent_mainline\ops\e2e\gateway_e2e_client.py", line 185, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\Meeting_Agent_mainline\ops\e2e\gateway_e2e_client.py", line 180, in main
+    log(f"\n\u2705 �˵��˳ɹ�:ǰ��(Gateway API)����� Harness 6 �׶Ρ������Ͷ,��ʱ {el:.0f}s")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Meeting_Agent_mainline\ops\e2e\gateway_e2e_client.py", line 83, in log
+    print(*a, flush=True)
+    ~~~~~^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2705' in position 2: illegal multibyte sequence
+
