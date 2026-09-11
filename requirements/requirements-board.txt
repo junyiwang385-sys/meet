@@ -1,0 +1,11 @@
+# 板端 Harness 运行时最小依赖（RK1828，隔离 venv：/userdata/meeting_agent1/venvs/mainline_<sha>）
+# 背景：pyproject.toml 的 dependencies=[] 未声明，但主链路 import 即需 pypinyin，缺了会 ModuleNotFoundError。
+# 验证：PYTHONPATH=<snapshot>/src <venv>/bin/python -c "import pypinyin, meeting_agent.harness.main; print('ok')"
+
+pypinyin            # stages/postprocess.py 顶层硬依赖（专名纠错的拼音候选）——必装
+jieba               # stages/enrichment.py 可选（关键词切分），try/except 兜底，缺则降级、不崩
+
+# —— 以下不是 pip 依赖，但同属板端运行环境，须另行准备（见 docs/ASSET-INVENTORY.md / 板端全链路说明）——
+#  说话人分离：独立 conda 环境 /userdata/miniforge3/envs/3dspeaker（3D-Speaker + torch CPU + funasr）
+#  ASR：编译好的 RKNN runner  …/runtime/asr/qwen3_asr_gcc10/rknn_Qwen3_ASR_batch_demo（非 pip）
+#  LLM：/usr/bin/rkllm3-server + RKNN3 runtime 1.0.4（非 pip）

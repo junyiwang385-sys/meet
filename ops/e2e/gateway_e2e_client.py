@@ -158,26 +158,36 @@ def main() -> int:
     if s != 200:
         log("!! 拉结果失败:", json.dumps(result, ensure_ascii=False)[:600]); return 7
 
-    # 结果摘要(不打印全文,避免刷屏)
+    # 结果摘要(不打印全文,避免刷屏)。注意:投影结果嵌在 result["result"] 下,
+    # 顶层键通常是 task_id/meeting_id/result/artifact_refs。
     def dig(d, *ks):
         for k in ks:
             d = d.get(k) if isinstance(d, dict) else None
         return d
-    summary = result.get("summary") if isinstance(result.get("summary"), dict) else result
-    title = dig(result, "summary", "title") or result.get("title")
-    overview = dig(result, "summary", "overview") or result.get("overview")
-    chapters = dig(result, "summary", "chapters") or result.get("chapters") or []
-    speakers = dig(result, "summary", "speakers") or result.get("speakers") or []
-    actions = dig(result, "summary", "action_items") or result.get("action_items") or []
-    enrich = result.get("enrichment") if isinstance(result.get("enrichment"), dict) else {}
+    log("result 顶层键:", ",".join(list(result.keys())[:20]))
+    payload = result.get("result") if isinstance(result.get("result"), dict) else result
+    # 纪要主体可能在 payload / payload["summary"] / payload["meeting_summary"] 下,逐个兜底
+    body = None
+    for cand in (payload.get("summary"), payload.get("meeting_summary"), payload):
+        if isinstance(cand, dict) and (cand.get("title") or cand.get("overview") or cand.get("chapters")):
+            body = cand; break
+    body = body or payload
+    title = body.get("title") if isinstance(body, dict) else None
+    overview = body.get("overview") if isinstance(body, dict) else None
+    chapters = (body.get("chapters") if isinstance(body, dict) else None) or []
+    speakers = (body.get("speakers") if isinstance(body, dict) else None) or []
+    actions = (body.get("action_items") if isinstance(body, dict) else None) or []
+    enrich = payload.get("enrichment") if isinstance(payload.get("enrichment"), dict) else {}
+    arefs = result.get("artifact_refs") if isinstance(result.get("artifact_refs"), dict) else {}
     log("---------- 结果投影(回前端) ----------")
     log("title    :", (title or "")[:120])
     log("overview :", (overview or "")[:240])
     log(f"chapters ={len(chapters)}  speakers={len(speakers)}  action_items={len(actions)}")
     if enrich:
         log("enrichment keys:", ",".join(list(enrich.keys())[:12]))
-    log("result top-level keys:", ",".join(list(result.keys())[:20]))
-    log(f"\n✅ 端到端成功:前端(Gateway API)→板端 Harness 6 阶段→结果回投,用时 {el:.0f}s")
+    if arefs:
+        log("artifact_refs:", ",".join(list(arefs.keys())[:20]))
+    log(f"\n[OK] 端到端成功: 前端(Gateway API) -> 板端 Harness 6 阶段 -> 结果回投, 用时 {el:.0f}s")
     return 0
 
 

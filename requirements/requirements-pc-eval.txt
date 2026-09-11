@@ -1,0 +1,35 @@
+# PC 侧评测 / 微调 / 板端逻辑复现环境（实测 pico-embed venv @ RTX4060 · CUDA cu128 · Windows）
+# 用途：
+#   - eval/transcription/（jiwer 算 CER/B-WER，pyannote.metrics 算 DER/纯度）
+#   - eval/golden_v2/（银标生成/核验/打分）
+#   - eval/finetune/（QLoRA：peft/trl/bitsandbytes）
+#   - PC 用真 stage 代码复现板端逻辑（llm/ollama_session.py，走 Ollama 原生 API）
+# 安装顺序：先装 CUDA 版 torch（否则会拉到 CPU 版），再装其余。
+#   pip install torch==2.11.0+cu128 --extra-index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements-pc-eval.txt
+
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+transformers==5.16.1
+datasets==5.0.1
+accelerate==1.15.0
+peft==0.20.0
+trl==1.13.0
+bitsandbytes==0.50.2
+tokenizers==0.23.1
+safetensors==0.8.0
+sentencepiece==0.2.2
+modelscope==1.39.1
+funasr==1.4.11
+jiwer==4.0.0
+librosa==1.0.0
+soundfile==0.14.0
+scipy==1.18.1
+numpy==2.4.6
+pyannote.metrics          # 点2 说话人评测（DER/纯度/覆盖）；版本以实测为准，未在上面 freeze 中固定
+pypinyin                  # 与板端一致（PC 复现 postprocess 用）
+
+# —— 非 pip 部分 ——
+#  摘要 PC 后端：Ollama（便携版在 E:\ollama）+ 模型 qwen3:4b（GGUF Q4）；serve 会话切换会被杀，跑前先重启
+#  embedding 分章：Qwen3-Embedding-0.6B / bge-small-zh-v1.5（modelscope 下到 E:\modelscope / E:\models）
+#  ⚠️ 系统 Python314 的 torch 是 CPU-only，跑 GPU 必须用本 venv；model 与 inputs 都要 float32（fp16 会 bias dtype 报错）

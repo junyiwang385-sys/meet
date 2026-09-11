@@ -1,0 +1,80 @@
+# Python / editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+._*
+
+# Local environments
+.venv*/
+.conda*/
+.rknn3_v100/
+.cache/
+.modelscope/
+
+# Secrets / local machine state
+.ssh_transfer/
+.claude/
+.codex/
+.agents/
+daily/
+
+# Local datasets and documentation drafts
+/data/
+/docs/drafts/
+
+# Local-only script experiments and one-off patches
+scripts/local_only/
+
+# Local upstream checkout
+/VCSum-main/
+
+# Local board upload notes and temporary deployment copies
+/board_upload_*.py.txt
+/scripts/board/board_upload_*.py
+
+# Session transcripts and local work logs
+/20??-??-??-??????-this-session-is-being-continued-from-a-previous-c.txt
+/daily_*.md
+
+# Retired implementations; Git history preserves the removed sources
+/scripts/old/
+/runners/sensevoice_stage1/
+
+# One-off evaluation data preparation experiments
+/evals/tools/prepare_vcsum_expected_extractive.js
+/evals/tools/prepare_vcsum_expected_local.js
+/evals/tools/rewrite_speakers_varied.js
+/scripts/generate_vcsum_technical_dataset.js
+
+# Historical TSD recovery copies
+*.tsd.backup
+
+# Model weights, generated artifacts, and build scratch
+output/
+tmp/
+hf_models/
+SenseVoiceSmall/
+audio/
+local_test_results/
+lifelog-summarizer-v1/
+
+# Vendored upstream repos checked out locally
+rknn3-model-zoo/
+rknn3-toolkit/
+
+# Generated calibration arrays can be rebuilt and are large.
+data/lifelog_quant/dataset_np/
+
+# Large model formats if they appear outside ignored dirs
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.rknn
+*.weight
+*.bin
+*.npy
+*.gguf

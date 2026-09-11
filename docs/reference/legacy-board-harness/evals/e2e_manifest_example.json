@@ -1,0 +1,15 @@
+{
+  "dataset_root": ".",
+  "cases": [
+    {
+      "name": "meeting_001",
+      "group": "production",
+      "category": "meeting",
+      "audio_file": "test/wav/meeting_001.flac",
+      "reference_timeline_file": "test/TextGrid/meeting_001.TextGrid",
+      "expected_file": "e2e_expected/test/meeting_001_expected.json",
+      "rttm_file": "test/TextGrid/meeting_001.rttm",
+      "expected_source": "llm_assisted_from_official_textgrid"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "note": "g2化妆品会 改造前后对比。before=003板端旧版;after=本地PC(Ollama4b)新代码重跑enrichment(转写/章节沿用003,仅换enrichment层)。同一金标R002S05C01。诚实:after为PC等价,非板端RKLLM。",
+  "cases": [
+    {
+      "meeting": "g2_before(003旧版)",
+      "meeting_result": "ops/board-results/2026-09-02_003_enrichment-wire-board-verify/g2/harness/meeting_result.json",
+      "golden": "eval/golden/R002S05C01.keypoints.json"
+    },
+    {
+      "meeting": "g2_after(PC新代码)",
+      "meeting_result": "eval/local_rerun/g2_pc_newcode/meeting_result.json",
+      "golden": "eval/golden/R002S05C01.keypoints.json"
+    }
+  ]
+}
