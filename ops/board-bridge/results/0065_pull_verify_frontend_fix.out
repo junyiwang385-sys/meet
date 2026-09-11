@@ -1,0 +1,13 @@
+# cmd file : 0065_pull_verify_frontend_fix.txt
+# started  : 2026-09-11T15:57:41
+# exit code: 1
+
+===== STDOUT =====
+Already up to date.
+=== HEAD === 
+1bf4107 bridge: 0065 pull + verify frontend upload fix on experiment machine
+5d5b5ac fix(frontend): send accepted Content-Type on audio upload (wav -> audio/wav)
+=== FIX_PRESENT === 
+
+===== STDERR =====
+
