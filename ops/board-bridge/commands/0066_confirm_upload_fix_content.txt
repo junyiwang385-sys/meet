@@ -1,0 +1,1 @@
+powershell -NoProfile -Command "$f='frontend\meeting-agent-ui-v1\src\api\gateway-meeting-api.ts'; Select-String -Path $f -Pattern 'audio/wav','endsWith','Content-Type','application/octet-stream' | Select-Object LineNumber,Line | Format-Table -AutoSize | Out-String -Width 240"
