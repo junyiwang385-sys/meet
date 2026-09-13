@@ -1069,8 +1069,12 @@ def _validate_actions(
         [segment["speaker_id"] for segment in segments]
     )
     raw = _expand_payload(raw, compact_ref_map, compact_speaker_map)
+    # 弱模型有时不按 {"action_items":[...]} 包裹，直接返回单个待办对象或裸数组；兼容归一。
+    items = raw.get("action_items")
+    if not isinstance(items, list):
+        items = [raw] if raw.get("task") else []
     summary, _ = validate_summary_object(
-        {**_empty_long_summary(), "action_items": raw.get("action_items", [])},
+        {**_empty_long_summary(), "action_items": items},
         segments,
     )
     # 过滤 4B echo 出来的占位待办（如"确认后的待办"/"明确待办"）
@@ -1981,6 +1985,9 @@ def run_product_summary_stage(
         )
         title = overview_result["title"]
         overview = overview_result["overview"]
+        if not title and chapters:
+            # LLM 未给会议标题时，确定性兜底为首章标题（标签而非事实，安全，避免"未命名会议"）。
+            title = str(chapters[0].get("title") or "").strip() or None
 
         action_items = []
         if action_candidates:

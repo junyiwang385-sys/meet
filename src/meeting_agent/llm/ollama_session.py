@@ -35,6 +35,9 @@ class OllamaConfig:
     port: int = 11434
     temperature: float = 0.0
     max_tokens: int = 1024
+    # Ollama 默认 num_ctx 偏小(常为 4096)，会静默截断长输入——概览/单请求喂整条
+    # timeline 时会被切→done_reason=length→校验"未干净收尾"失败。显式对齐板端 ctx。
+    num_ctx: int = 16384
     request_timeout: float = 180.0
     # Ollama OpenAI 兼容端点对 response_format 支持有限；默认走 json_object 软约束，
     # 具体 JSON 形状由 prompt 指定（与板端一致）。
@@ -123,6 +126,7 @@ class OllamaSession:
             "options": {
                 "temperature": self.config.temperature,
                 "num_predict": max_tokens or self.config.max_tokens,
+                "num_ctx": self.config.num_ctx,
             },
         }
         if self.config.use_json_object:
