@@ -101,6 +101,7 @@ E: 盘上的模型/数据集/venv/ollama **几乎都能自行下载或按 `requi
 | [`docs/实验与各阶段成果.md`](实验与各阶段成果.md) | 分阶段实验/指标/结论（阶段一~十三） |
 | [`docs/需求调研.md`](需求调研.md) + `docs/需求调研/` | 需求总结 + MVP PRD 导读 + PRD 全套 |
 | [`docs/OPEN-ITEMS.md`](OPEN-ITEMS.md) | 待办 / 已知问题 / 已弃 |
+| [`docs/测试与测评覆盖.md`](测试与测评覆盖.md) · [`docs/选型依据审计.md`](选型依据审计.md) | 测试/测评覆盖矩阵；每个选型是否基于测评(诚实标注) |
 | [`docs/ASSET-INVENTORY.md`](ASSET-INVENTORY.md) | 模型/数据/金标/机器资产清单 |
 | [`docs/inventory/2026-09-04_RK1828板端目录与全链路文件说明.md`](inventory/) | 板端目录/路径/重跑清单（板端权威手册） |
 | [`docs/operations/`](operations/) | 部署与模型转换历史 |

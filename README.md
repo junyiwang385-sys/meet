@@ -149,6 +149,7 @@ ops\board-bridge\run\start_frontend.bat     :: Vite :5173 指向 Gateway :8787
 | [`docs/OPEN-ITEMS.md`](docs/OPEN-ITEMS.md) | 待办 / 已知问题 / 已弃（负结果别重踩） |
 | [`docs/优化方向.md`](docs/优化方向.md) | 后续 roadmap：微调 / 领域知识库·RAG 专名 / 专用分章模型 / 前端会议资料写入 |
 | [`docs/测试与测评覆盖.md`](docs/测试与测评覆盖.md) | 全链路测试(单元/集成)与质量测评覆盖矩阵 + 缺口(validation/postprocess/gateway/长会) |
+| [`docs/选型依据审计.md`](docs/选型依据审计.md) | 每个技术选型是否基于测评：评测驱动 / 边界机理驱动 / 未评测惯例驱动 + 诚实大限 |
 | [`docs/ASSET-INVENTORY.md`](docs/ASSET-INVENTORY.md) | 模型/数据/金标/机器资产清单（含 E: 盘须转移项） |
 | `requirements/requirements-board.txt` · `requirements-pc-eval.txt` | Python 依赖锁（板端最小 + PC 评测/微调） |
 | [`docs/inventory/2026-09-04_RK1828板端目录与全链路文件说明.md`](docs/inventory/) | 板端目录/模型/脚本路径/重跑清单（板端权威手册） |
