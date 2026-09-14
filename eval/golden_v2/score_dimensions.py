@@ -24,9 +24,26 @@ from score_candidate import norm, score as core_score  # noqa: E402
 import jieba  # noqa: E402
 jieba.setLogLevel(60)
 
-CASES = [("g1", "20200707_L_R001S04C01"), ("g2", "20200708_L_R002S05C01"),
-         ("g3", "20200707_L_R001S03C01"), ("g5", "20200709_L_R002S04C01")]
+# --clean: 干净输入线(timeline 真值转写),n=30,隔离 ASR/分离噪声,测纯摘要/结构化质量。
+# 默认: board-noisy 端到端线,n=4(受板端 run 限制)。
+CLEAN = "--clean" in sys.argv
+_BOARD_CASES = [("g1", "20200707_L_R001S04C01"), ("g2", "20200708_L_R002S05C01"),
+                ("g3", "20200707_L_R001S03C01"), ("g5", "20200709_L_R002S04C01")]
 BR = ROOT / "ops/board-results/2026-09-02_003_enrichment-wire-board-verify"
+if CLEAN:
+    _mids = sorted(p.name[: -len(".golden.json")]
+                   for p in (ROOT / "eval/golden_v2/out").glob("*.golden.json"))
+    CASES = [(m, m) for m in _mids]
+else:
+    CASES = _BOARD_CASES
+
+
+def _out_dir(tag):
+    return ROOT / (f"eval/_pc_clean/{tag}" if CLEAN else f"eval/_pc_full_minutes/{tag}")
+
+
+def _transcript_path(tag):
+    return (_out_dir(tag) / "meeting_result.json") if CLEAN else (BR / tag / "harness/meeting_result.json")
 _STOP = set("的了和与在是我们你们他们这那就都也要会对不没有一个进行以及等还把被让给可以需要")
 
 
@@ -69,11 +86,11 @@ def recall(items, key, test):
 
 
 def eval_one(tag, mid):
-    out = ROOT / f"eval/_pc_full_minutes/{tag}"
+    out = _out_dir(tag)
     summ = json.loads((out / "meeting_summary.json").read_text(encoding="utf-8"))
     enr = json.loads((out / "enrichment.json").read_text(encoding="utf-8")) if (out / "enrichment.json").exists() else {}
     gold = json.loads((ROOT / f"eval/golden_v2/out/{mid}.golden.json").read_text(encoding="utf-8"))
-    tr = json.loads((BR / tag / "harness/meeting_result.json").read_text(encoding="utf-8"))
+    tr = json.loads(_transcript_path(tag).read_text(encoding="utf-8"))
     trans_norm = norm(" ".join(s.get("text", "") for s in (tr.get("transcript") or {}).get("segments") or []))
 
     # 候选大文本(所有产出，用于"内容覆盖")
@@ -121,9 +138,10 @@ def _r(h, t):
 
 
 def main():
+    print(f"口径: {'干净输入线(timeline真值, n=30)' if CLEAN else 'board-noisy 端到端线(n=4)'}")
     rows = []
     for tag, mid in CASES:
-        out = ROOT / f"eval/_pc_full_minutes/{tag}/meeting_summary.json"
+        out = _out_dir(tag) / "meeting_summary.json"
         if not out.exists():
             print(f"[{tag}] 缺 pipeline 输出，跳过(先跑 pc_full_minutes)"); continue
         r = eval_one(tag, mid)

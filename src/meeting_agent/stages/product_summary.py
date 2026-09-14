@@ -1389,9 +1389,14 @@ def _validate_block_summary(
     summary = clean_text(raw.get("summary"))
     if title is None or summary is None:
         raise SummaryValidationError("block summary requires title and summary")
-    if len(summary) < profile.summary_min_chars:
+    # 内容感知长度门：min_chars 本意挡退化响应(空/"无"/单词),不是强制啰嗦。
+    # 点名自我介绍、backchannel 密集块本就压得短(15段"我是X"→30字合理),硬卡 60 会整场崩。
+    # 薄源块按源字符降门槛(绝对下限 24 仍挡真失败),内容丰富块维持 profile 满门槛。
+    src_chars = sum(len(str(s.get("text") or "")) for s in block_segments)
+    min_required = min(profile.summary_min_chars, max(24, src_chars // 6))
+    if len(summary) < min_required:
         raise SummaryValidationError(
-            f"block summary is too short ({len(summary)} chars)"
+            f"block summary is too short ({len(summary)} chars, need {min_required})"
         )
     by_id = {segment["segment_id"]: segment for segment in block_segments}
     key_refs = raw.get("key_refs")

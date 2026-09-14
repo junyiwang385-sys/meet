@@ -50,6 +50,10 @@ class SegmentationConfig:
     # 单块原文的 token 硬上限（兜底）；None 表示由预算推导（留出 B 层提示词开销）。
     max_block_tokens: int | None = None
     block_overhead_tokens: int = 512
+    # 单块 segment 数上限：文本 token 之外的第二道尺寸闸。几百个极短 backchannel 段
+    # （"对"/"嗯"/"好的"）文本 token 很小、却撑出海量逐段格式化开销 + B 层要为每段产 ref，
+    # 使块摘要输出溢出 num_predict（finish_reason=length 崩溃）。按段数再切一刀兜底。
+    max_block_segments: int = 60
 
 
 def _char_bigrams(text: str) -> Counter:
@@ -234,7 +238,9 @@ def _split_over_cap(
     同一函数服务软目标（target_block_tokens）与硬上限（max_block_tokens）——
     段尺寸驱动的切分，右半块用 reason 标注来源（size_split）。
     """
-    if len(seg_slice) <= 1 or _block_text_tokens(seg_slice, policy) <= cap_tokens:
+    within_tokens = _block_text_tokens(seg_slice, policy) <= cap_tokens
+    within_count = len(seg_slice) <= config.max_block_segments
+    if len(seg_slice) <= 1 or (within_tokens and within_count):
         return [(seg_slice, opened_by)]
     best_pos = None
     best_similarity = None
@@ -308,16 +314,19 @@ def segment_blocks(
     merged: list[tuple[list[dict[str, Any]], list[str]]] = []
     for seg_slice, reasons in raw_blocks:
         chars = sum(len(str(item.get("text") or "")) for item in seg_slice)
-        if merged and chars < config.min_block_chars:
+        # 合并守卫：过短才并，但并后段数不得超上限（否则碎 backchannel 段会重新堆成巨块）。
+        if (merged and chars < config.min_block_chars
+                and len(merged[-1][0]) + len(seg_slice) <= config.max_block_segments):
             prev_slice, prev_reasons = merged[-1]
             merged[-1] = (prev_slice + seg_slice, prev_reasons)
         else:
             merged.append((seg_slice, list(reasons)))
-    # 首块若过短且后面还有块，向后并入。
+    # 首块若过短且后面还有块，向后并入（同样守段数上限）。
     if len(merged) >= 2:
         first_slice, first_reasons = merged[0]
         first_chars = sum(len(str(item.get("text") or "")) for item in first_slice)
-        if first_chars < config.min_block_chars:
+        if (first_chars < config.min_block_chars
+                and len(first_slice) + len(merged[1][0]) <= config.max_block_segments):
             second_slice, _ = merged[1]
             merged[1] = (first_slice + second_slice, first_reasons)
             merged.pop(0)
@@ -335,14 +344,16 @@ def segment_blocks(
     recovered: list[tuple[list[dict[str, Any]], list[str]]] = []
     for seg_slice, reasons in budgeted:
         chars = sum(len(str(item.get("text") or "")) for item in seg_slice)
-        if recovered and chars < config.min_block_chars:
+        if (recovered and chars < config.min_block_chars
+                and len(recovered[-1][0]) + len(seg_slice) <= config.max_block_segments):
             prev_slice, prev_reasons = recovered[-1]
             recovered[-1] = (prev_slice + seg_slice, prev_reasons)
         else:
             recovered.append((seg_slice, list(reasons)))
     if len(recovered) >= 2:
         first_slice, first_reasons = recovered[0]
-        if sum(len(str(item.get("text") or "")) for item in first_slice) < config.min_block_chars:
+        if (sum(len(str(item.get("text") or "")) for item in first_slice) < config.min_block_chars
+                and len(first_slice) + len(recovered[1][0]) <= config.max_block_segments):
             second_slice, _ = recovered[1]
             recovered[1] = (first_slice + second_slice, first_reasons)
             recovered.pop(0)
