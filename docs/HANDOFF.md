@@ -88,7 +88,7 @@ E: 盘上的模型/数据集/venv/ollama **几乎都能自行下载或按 `requi
 - **NPU 单大模型**：板端同一时刻只能跑一个大模型，ASR 与 LLM **串行调度**（并发会 `rknn3_create_mem timeout`）。
 - **ASR runner 编译**：必须 GCC-ARM **10.3**（GCC13 产物 glibc 不兼容板端）；FFTW 加 `-no-pie`。
 - **VAD 真相**：AliMeeting 是**话语级**标注（既松又漏），帧级 miss/DER 会失真、被高估约 5×；量 VAD 漏检要用逐句实义覆盖率（当前 `speech_noise_thres=0.2` 已固化上板，整句丢 28%→9%）。
-- **4B 能力边界**：强检索/抽取、弱归纳（≤30%）/篇章/低频；设计铁律见 `CLAUDE.md`（确定性搭骨架、4B 只做受控抽取、不用 few-shot 会 echo 示例）。
+- **4B 能力边界**：强检索/抽取、弱归纳（≤30%）/篇章/低频；设计原则见 `CLAUDE.md`（确定性搭骨架、4B 只做受控抽取、不用 few-shot 会 echo 示例）。
 - **前端上传 415**：Windows 把 .wav 报成 `audio/wave`，Gateway 只认 `audio/wav` → 前端已改成按扩展名发 `audio/wav`（`gateway-meeting-api.ts`），服务端 415 不 drain 体的隐患见 OPEN-ITEMS。
 
 ## 十、文档地图
