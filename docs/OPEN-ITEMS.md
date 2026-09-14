@@ -8,6 +8,7 @@
 - 前端→Gateway→板端→回前端 端到端 1 次（2026-09-11，30min 音频 548s，走到 `meeting_ready`）。
 - 前端 VAD 优化固化上板（`speech_noise_thres` 0.6→0.2，整句丢 28%→9%，端到端 CER 0.56→0.44，全 30 场泛化）。
 - 评测线：golden_v2 银标 + 对标飞书/通义（over_decision=0 唯一强项）；transcription 点1-4（jiwer/pyannote）。
+- 维度质量评测**扩到 n=30 干净线**（`score_dimensions.py --clean`，timeline真值输入，金标同源）：core0.82/决策覆盖0.91/待办覆盖0.93/金句0.85；扩样本时挖出并**治本块阶段四类崩溃**（length→`max_block_segments`；too-short→内容感知门；missing-title→块级降级`_fallback_block_summary`；overview-short→概览级降级`_fallback_overview`），7/30场触发确定性降级（诚实标：对应组件是抽取式底线非4B产出）。见 `eval/golden_v2/RESULTS_dimensions.md`。
 - 工程设施：命令桥、桌面启动器、e2e 客户端；结构化日志迁移 P1/P2/P3/P5（P4 部分，见下）。
 
 ## 🐞 已知问题 / bug（待修）
