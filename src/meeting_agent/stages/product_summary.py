@@ -1174,6 +1174,34 @@ def _fallback_block_summary(
     }
 
 
+def _fallback_overview(
+    chapters: list[dict[str, Any]],
+    segment_by_id: dict[str, dict[str, Any]],
+) -> tuple[str, list[str]]:
+    """概览(reduce)重试后仍失败时的确定性兜底：从已校验章节抽取式拼概览 + 收集有效 refs。
+
+    薄/退化会议里 4B 的整会概览可能反复产出 3-4 字(实测 30 场中 3 场,~10%),硬失败会崩整场。
+    章节本身已是 4B 逐块产出+已校验,这里确定性拼接它们的标题/overview 作概览,refs 取章节
+    start/end 锚(仍在原文、可核验)。返回 (text, refs),供上层组成 overview 对象。
+    """
+    parts: list[str] = []
+    refs: list[str] = []
+    for chapter in chapters:
+        title = str(chapter.get("title") or "").strip()
+        ov = str(chapter.get("overview") or "").strip()
+        seg = f"{title}：{ov}" if title and ov else (ov or title)
+        if seg:
+            parts.append(seg)
+        for ref in (chapter.get("start_ref"), chapter.get("end_ref")):
+            ref = str(ref) if ref is not None else ""
+            if ref in segment_by_id and segment_by_id[ref].get("text") and ref not in refs:
+                refs.append(ref)
+    text = "；".join(parts)[:600] or "（本会议内容较薄，未能生成完整概览。）"
+    if not refs:
+        refs = [sid for sid, s in segment_by_id.items() if s.get("text")][:3]
+    return text, refs
+
+
 def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:
     return {
         "request_id": result.get("request_id"),
@@ -2079,17 +2107,27 @@ def run_product_summary_stage(
             )
             return {"title": title, "overview": overview}
 
-        overview_result = run_request(
-            messages=summary_messages,
-            request_dir=out_dir / "requests" / "full_summary",
-            request_id="full-summary",
-            request_kind="full-summary",
-            phase="llm_full_summary",
-            estimate=summary_estimate,
-            validator=validate_overview_request,
-        )
-        title = overview_result["title"]
-        overview = overview_result["overview"]
+        try:
+            overview_result = run_request(
+                messages=summary_messages,
+                request_dir=out_dir / "requests" / "full_summary",
+                request_id="full-summary",
+                request_kind="full-summary",
+                phase="llm_full_summary",
+                estimate=summary_estimate,
+                validator=validate_overview_request,
+            )
+            title = overview_result["title"]
+            overview = overview_result["overview"]
+        except SummaryValidationError as exc:
+            # 概览级优雅降级:重试后仍不合格,从已校验章节确定性拼概览,不崩整场。
+            ov_text, ov_refs = _fallback_overview(chapters, segment_by_id)
+            title = None
+            overview = {"text": ov_text, "refs": ov_refs, "fallback": True}
+            atomic_write_json(
+                out_dir / "requests" / "full_summary" / "fallback_reason.json",
+                {"error": str(exc)},
+            )
         if not title and chapters:
             # LLM 未给会议标题时，确定性兜底为首章标题（标签而非事实，安全，避免"未命名会议"）。
             title = str(chapters[0].get("title") or "").strip() or None
