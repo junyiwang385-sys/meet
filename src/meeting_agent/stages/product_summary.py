@@ -1130,6 +1130,50 @@ def _actions_from_candidates(
     return kept
 
 
+def _fallback_block_summary(
+    block_segments: list[dict[str, Any]],
+    *,
+    continues_previous: bool,
+) -> dict[str, Any]:
+    """块摘要重试后仍失败时的确定性兜底：抽取式摘要,保证整场不崩(宁可这一块粗糙)。
+
+    弱模型(4B)在点名/backchannel 密集/退化响应的块上可能反复产出不合格 JSON
+    (缺 title/summary、过短、length 截断)。逐块硬失败会崩掉整场 542 段会议——
+    与全仓"宁可产出别静默丢/别整场崩"一致(参 key_data 保底、action 地板),这里退回
+    确定性抽取式:取本块最长的几段按时序拼成 summary,refs 锚这些段(仍在块内、可核验)。
+    产出打 fallback=True 标记,供观测/评测识别这块非 4B 产出。
+    """
+    ranked = sorted(block_segments, key=lambda s: len(str(s.get("text") or "")), reverse=True)
+    picked: list[dict[str, Any]] = []
+    total = 0
+    for seg in ranked:
+        if not str(seg.get("text") or "").strip():
+            continue
+        picked.append(seg)
+        total += len(str(seg.get("text") or ""))
+        if total >= 120 and len(picked) >= 2:
+            break
+    index_of = {id(s): i for i, s in enumerate(block_segments)}
+    picked.sort(key=lambda s: index_of[id(s)])
+    summary = "；".join(str(s.get("text") or "").strip() for s in picked)[:400]
+    if not summary:
+        summary = "（本片段无有效转写内容）"
+    first_text = str(block_segments[0].get("text") or "").strip()
+    refs = [str(s["segment_id"]) for s in picked] or [str(block_segments[0]["segment_id"])]
+    return {
+        "title": first_text[:18] or "会议片段",
+        "key_points": [],
+        "anchors": [],
+        "summary": summary,
+        "continues_previous": continues_previous,
+        "refs": refs,
+        "action_candidates": [],
+        "start_ref": str(block_segments[0]["segment_id"]),
+        "end_ref": str(block_segments[-1]["segment_id"]),
+        "fallback": True,
+    }
+
+
 def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:
     return {
         "request_id": result.get("request_id"),
@@ -1941,15 +1985,25 @@ def run_product_summary_stage(
                     profile=config.profile,
                 )
 
-            block_result = run_request(
-                messages=messages,
-                request_dir=request_dir,
-                request_id=block_id,
-                request_kind="block-summary",
-                phase="llm_block_summary",
-                estimate=estimate,
-                validator=validate_block_request,
-            )
+            try:
+                block_result = run_request(
+                    messages=messages,
+                    request_dir=request_dir,
+                    request_id=block_id,
+                    request_kind="block-summary",
+                    phase="llm_block_summary",
+                    estimate=estimate,
+                    validator=validate_block_request,
+                )
+            except SummaryValidationError as exc:
+                # 块级优雅降级:重试后仍不合格,退确定性抽取式兜底,不崩整场。
+                block_result = _fallback_block_summary(
+                    block_segments, continues_previous=_continues_from_boundary(block)
+                )
+                atomic_write_json(
+                    request_dir / "fallback_reason.json",
+                    {"block_id": block_id, "error": str(exc)},
+                )
             block_result = {
                 **block_result, "block_id": block_id, "segment_ids": block["segment_ids"],
                 "key_data": key_data,  # 结构化兜底:即使4B漏织入,数据点也留在结构里
