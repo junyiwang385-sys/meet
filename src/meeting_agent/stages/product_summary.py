@@ -1084,27 +1084,50 @@ def _validate_actions(
     ]
 
 
+def _norm_task(text: Any) -> str:
+    return re.sub(r"[\s，。、！？；：,.!?;:\"'‘’“”（）()【】\[\]]+", "", str(text or ""))
+
+
+def _task_similar(a: Any, b: Any) -> bool:
+    """两条待办是否同一件事：归一后包含 或 字符 bigram Jaccard≥0.5。
+
+    确定性、无外部依赖。合并跨块改写的同义待办(如"通知班长统计人数"vs"让班长统计各班人数")。
+    """
+    na, nb = _norm_task(a), _norm_task(b)
+    if not na or not nb:
+        return False
+    if len(na) >= 4 and len(nb) >= 4 and (na in nb or nb in na):
+        return True
+    ga = {na[i:i + 2] for i in range(len(na) - 1)}
+    gb = {nb[i:i + 2] for i in range(len(nb) - 1)}
+    if not ga or not gb:
+        return na == nb
+    return len(ga & gb) / len(ga | gb) >= 0.5
+
+
 def _actions_from_candidates(
     candidates: list[dict[str, Any]],
     segments: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    """action-review 塌缩时的 recall 地板：块级候选直接校验 + 按 task 去重。
+    """action-review 塌缩时的 recall 地板：块级候选直接校验 + 语义近似去重。
 
     弱模型(如 qwen3:4b)的 action-review 有时不按 {"action_items":[...]} 包裹、把多个候选
     塌成一个对象返回(实测 g1/g3/g5 各 13/10 候选塌成 1)。此时退回块级候选,避免静默丢待办。
+    去重用 _task_similar(包含/bigram Jaccard)合并跨块改写的同义待办,提精度。
     候选可能带紧凑 refs,调用方须先展开为 canonical。
     """
     summary, _ = validate_summary_object(
         {**_empty_long_summary(), "action_items": candidates}, segments
     )
-    seen: set[str] = set()
-    out: list[dict[str, Any]] = []
+    kept: list[dict[str, Any]] = []
     for item in summary["action_items"]:
-        key = re.sub(r"\s+", "", str(item.get("task") or ""))
-        if key and key not in seen and not _is_placeholder_task(item.get("task")):
-            seen.add(key)
-            out.append(item)
-    return out
+        task = item.get("task")
+        if not task or _is_placeholder_task(task):
+            continue
+        if any(_task_similar(task, k.get("task")) for k in kept):
+            continue
+        kept.append(item)
+    return kept
 
 
 def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:

@@ -21,7 +21,7 @@
 | identity 不含 `source_sha256` | 哈希以 `source_audio_sha256` 存 manifest/result | 如需统一入 identity 块 |
 | product_summary 事件 / board_agent 投影 缺独立单测 | 仅集成测试 `test_p0_diagnostics.py` 间接覆盖 | 补 unit |
 | speaker 超预算只前缀截断 | 未做 chunk/merge，长发言人漏后半段 | 实现 speaker chunk/merge |
-| action-review 待办结构化 | 塌缩(弱模型把多候选塌成一个对象)**已修**(2026-09-14 加候选地板,`_actions_from_candidates`);**残留=过产/精度**——候选去重仅按 task 文本,跨块同义待办仍可能重复 | 更强去重(语义/refs 重叠)或让 4B 只合并不丢弃;见 `eval/golden_v2/RESULTS_dimensions.md` |
+| action-review 待办结构化 | 塌缩(弱模型把多候选塌成一个对象)**已修**(2026-09-14 加候选地板+近似去重,`_actions_from_candidates`/`_task_similar`)；**残留=过产,已定性为高召回边界(非 bug)**——12 vs 金标 8 是"块提取粒度>金标 curation"、非重复(bigram 去重本批无收益) | 接受高召回;硬压需语义重要性过滤(4B 不可靠、会误删真待办),不做;见 `eval/golden_v2/RESULTS_dimensions.md` |
 
 ## 🔲 未完成 / 待验（功能与验证缺口）
 
