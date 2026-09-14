@@ -1084,6 +1084,29 @@ def _validate_actions(
     ]
 
 
+def _actions_from_candidates(
+    candidates: list[dict[str, Any]],
+    segments: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """action-review 塌缩时的 recall 地板：块级候选直接校验 + 按 task 去重。
+
+    弱模型(如 qwen3:4b)的 action-review 有时不按 {"action_items":[...]} 包裹、把多个候选
+    塌成一个对象返回(实测 g1/g3/g5 各 13/10 候选塌成 1)。此时退回块级候选,避免静默丢待办。
+    候选可能带紧凑 refs,调用方须先展开为 canonical。
+    """
+    summary, _ = validate_summary_object(
+        {**_empty_long_summary(), "action_items": candidates}, segments
+    )
+    seen: set[str] = set()
+    out: list[dict[str, Any]] = []
+    for item in summary["action_items"]:
+        key = re.sub(r"\s+", "", str(item.get("task") or ""))
+        if key and key not in seen and not _is_placeholder_task(item.get("task")):
+            seen.add(key)
+            out.append(item)
+    return out
+
+
 def _request_record(result: dict[str, Any], estimate: int) -> dict[str, Any]:
     return {
         "request_id": result.get("request_id"),
@@ -2009,6 +2032,16 @@ def run_product_summary_stage(
                     segments,
                 ),
             )
+
+        # 稳健性：action-review 若把多候选塌成一个对象(弱模型 schema 不稳,见
+        # eval/golden_v2/RESULTS_dimensions.md)，退回块级候选(recall 地板)+确定性去重。
+        if len(action_candidates) >= 2 and len(action_items) <= 1:
+            expanded = _expand_payload(
+                {"action_items": action_candidates}, compact_ref_map, compact_speaker_map
+            ).get("action_items", [])
+            floor = _actions_from_candidates(expanded, segments)
+            if len(floor) > len(action_items):
+                action_items = floor
 
         speaker_documents = _build_speaker_documents(nonempty)
         speaker_documents, speaker_truncations = _truncate_speaker_documents(
