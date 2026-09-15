@@ -1,0 +1,11 @@
+[
+  {
+    "mid": "20200707_L_R001S04C01",
+    "faithfulness": 0.85,
+    "claims": 62,
+    "over_decision": 3,
+    "missed_decision": 0,
+    "critical": 2,
+    "verdict": "weak"
+  }
+]

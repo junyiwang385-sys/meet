@@ -66,13 +66,20 @@ def _parse(text: str) -> dict:
         raise
 
 
+def _to_float(x):
+    try:
+        return round(float(x), 3)
+    except (TypeError, ValueError):
+        return None
+
+
 def _row(mid: str, r: dict) -> dict:
     claims = r.get("claims") or []
     over = r.get("over_decisions") or []
     missed = r.get("missed_decisions") or []
     return {
         "mid": mid,
-        "faithfulness": r.get("faithfulness"),
+        "faithfulness": _to_float(r.get("faithfulness")),
         "claims": len(claims),
         "over_decision": len(over),
         "missed_decision": len(missed),

@@ -75,3 +75,6 @@ eval/reports/a3b_g2/*/
 eval/reports/a0_vs_a1/*/
 eval/reports/cross_ref/*/
 !eval/reports/**/RESULTS*.md
+
+# conformance judge 中间产物(提示词),留 result
+eval/reports/conformance/_judge/*.prompt.txt
