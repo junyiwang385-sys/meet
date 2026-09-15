@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:44:34.1647186Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"宿舍是否配备独立卫生间和空调？\",\n      \"answer\": \"宿舍已配备独立卫生间和空调设施。\"\n    },\n    {\n      \"question\": \"下半年开学前需要检查宿舍设备状况吗？\",\n      \"answer\": \"为确保下半年开学后宿舍设备正常运行，建议检查设备损坏情况及电路安全。\"\n    },\n    {\n      \"question\": \"学校招生宣传应重点突出哪些方面？\",\n      \"answer\": \"招生宣传应重点突出学校硬件设施、教育质量、就业率及安全细节等优势。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1905843400,
+  "load_duration": 1590000,
+  "prompt_eval_count": 862,
+  "prompt_eval_duration": 189630000,
+  "eval_count": 133,
+  "eval_duration": 1672957000
+}

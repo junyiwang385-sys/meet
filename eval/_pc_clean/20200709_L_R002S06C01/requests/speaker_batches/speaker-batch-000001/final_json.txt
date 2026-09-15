@@ -1,0 +1,8 @@
+{
+  "speakers": [
+    {
+      "speaker_id": "sp1",
+      "overview": "该发言人的会议贡献总结"
+    }
+  ]
+}

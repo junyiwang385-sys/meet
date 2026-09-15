@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:48:56.2417895Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"销售活动与客户拉新策略\",\n  \"key_points\": [\n    \"销售活动定期开展以提升营销效果\",\n    \"宣传做得好能显著降低营销成本\",\n    \"利用老客户拉新是有效策略\",\n    \"通过网络渠道拉新客户\"\n  ],\n  \"anchors\": [\n    \"销售活动\",\n    \"营销策略\",\n    \"老客户\",\n    \"新客户\",\n    \"网络渠道\"\n  ],\n  \"summary\": \"本块讨论了销售活动的定期开展对营销效果的提升作用，强调宣传做得好可大幅降低营销成本。核心策略包括利用老客户拉新，通过网络渠道高效获取新客户，从而实现营销资源的优化配置。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r427\",\n    \"r437\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"定期开展销售活动\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r427\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3314569100,
+  "load_duration": 1569700,
+  "prompt_eval_count": 1425,
+  "prompt_eval_duration": 158349000,
+  "eval_count": 232,
+  "eval_duration": 3005018000
+}

@@ -1,0 +1,3666 @@
+{
+  "meeting": {
+    "meeting_id": "20200709_L_R002S08C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 405,
+    "nonempty_segment_count": 403,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 35000,
+        "end_ms": 36000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是总经理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 36000,
+        "end_ms": 38000,
+        "speaker_id": "speaker_2",
+        "text": "零二六我是销售部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 38000,
+        "end_ms": 39000,
+        "speaker_id": "speaker_3",
+        "text": "零二二我是法务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 39000,
+        "end_ms": 41000,
+        "speaker_id": "speaker_4",
+        "text": "零幺九市场部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 41000,
+        "end_ms": 42000,
+        "speaker_id": "speaker_5",
+        "text": "零二三财务部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 43000,
+        "end_ms": 44000,
+        "speaker_id": "speaker_6",
+        "text": "零二四总监",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 44000,
+        "end_ms": 46000,
+        "speaker_id": "speaker_7",
+        "text": "零幺四人事部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 49000,
+        "end_ms": 53000,
+        "speaker_id": "speaker_1",
+        "text": "行，好的。今天咱们主要就是商讨一下儿这个团建活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 53000,
+        "end_ms": 56000,
+        "speaker_id": "speaker_1",
+        "text": "那咱总监这边儿主持一下儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 56000,
+        "end_ms": 70000,
+        "speaker_id": "speaker_6",
+        "text": "对，由于我们，上半诶这一年已经辛忙忙碌碌，辛辛苦苦的度过了，最后在这个快要结束这一年工作的情况下，我们上面考虑了一下儿，要给大家放一个十五天的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 70000,
+        "end_ms": 71000,
+        "speaker_id": "speaker_6",
+        "text": "长假",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 70000,
+        "end_ms": 73000,
+        "speaker_id": "speaker_2",
+        "text": "好好好同意同意同意同意",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 71000,
+        "end_ms": 77000,
+        "speaker_id": "speaker_6",
+        "text": "那现在我们就把大家召过来就是想询问一下，因为这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 78000,
+        "end_ms": 88000,
+        "speaker_id": "speaker_6",
+        "text": "假期嘛是为我们大家考虑的，就想问一下大家的意见是想怎么度过这个假期？是想我们公司组织一个团建，还是还是说？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 86000,
+        "end_ms": 89000,
+        "speaker_id": "speaker_7",
+        "text": "团建团建团建团建团建",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 87000,
+        "end_ms": 92000,
+        "speaker_id": "speaker_2",
+        "text": "肯定团建呀肯定团建呀，团建出去旅游玩儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 88000,
+        "end_ms": 90000,
+        "speaker_id": "speaker_3",
+        "text": "团建呀，大家一起出去玩儿啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 90000,
+        "end_ms": 92000,
+        "speaker_id": "speaker_7",
+        "text": "部门儿要出门儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 92000,
+        "end_ms": 97000,
+        "speaker_id": "speaker_6",
+        "text": "啊，这两个部门有没有什么别的意见？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 92000,
+        "end_ms": 93000,
+        "speaker_id": "speaker_3",
+        "text": "对啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 97000,
+        "end_ms": 98000,
+        "speaker_id": "speaker_5",
+        "text": "没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 98000,
+        "end_ms": 109000,
+        "speaker_id": "speaker_4",
+        "text": "我其实有一个大家呃没有说到的，我个人想到的一个建议，我们可以去敬老院做一些爱心服务活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 108000,
+        "end_ms": 112000,
+        "speaker_id": "speaker_7",
+        "text": "做十五天的敬老院爱心服务，我觉得我不能接受",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 112000,
+        "end_ms": 114000,
+        "speaker_id": "speaker_2",
+        "text": "对，我也不能接受",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 113000,
+        "end_ms": 117000,
+        "speaker_id": "speaker_3",
+        "text": "我觉得我觉得我的工作压力挺大的，我想出去放松放松",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 117000,
+        "end_ms": 125000,
+        "speaker_id": "speaker_4",
+        "text": "其实我们可以换一个角度来思考这个问题，呃敬老院那些老人他们平时非常的孤独",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 125000,
+        "end_ms": 142000,
+        "speaker_id": "speaker_4",
+        "text": "孩子们都忙于工作，其实我们个人来讲的话，可能我们对自己的老人也在孝顺这一方面有一些欠缺，我们就把它当成是对我们自己祖辈或者父辈的一个孝顺来做的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 132000,
+        "end_ms": 133000,
+        "speaker_id": "speaker_6",
+        "text": "有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 134000,
+        "end_ms": 135000,
+        "speaker_id": "speaker_6",
+        "text": "有一些疏忽",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 142000,
+        "end_ms": 148000,
+        "speaker_id": "speaker_4",
+        "text": "我们换一种思维去做一些爱心的活动去陪伴他们。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 146000,
+        "end_ms": 146000,
+        "speaker_id": "speaker_3",
+        "text": "",
+        "status": "transcript_empty"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 147000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_7",
+        "text": "因为我们因为我们公司其实像这些福利活动啊，这些爱心捐助其实我们每年都有定期在做，所以我觉得为期一个十五期的一个长假，对于我们员工来说其实是一个很好的调节的一个时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 159000,
+        "end_ms": 161000,
+        "speaker_id": "speaker_3",
+        "text": "而且我",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 160000,
+        "end_ms": 170000,
+        "speaker_id": "speaker_7",
+        "text": "所以我仅代表我们各部门儿我们这个部门儿意见是，其实我打算大家好好出去放松一下，因为团建是公司报销总部报销，咱们公司也不是败在这个运营费里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 170000,
+        "end_ms": 175000,
+        "speaker_id": "speaker_7",
+        "text": "所以我就大胆一点儿说，其实我想领着大家去北极玩儿，这是我的想法儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 175000,
+        "end_ms": 176000,
+        "speaker_id": "speaker_3",
+        "text": "去哪里，去哪里",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 176000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_7",
+        "text": "北极",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 176000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_4",
+        "text": "北极",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 177000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_3",
+        "text": "北极",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 177000,
+        "end_ms": 180000,
+        "speaker_id": "speaker_2",
+        "text": "北极，是不是有点儿让人接受不了啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 177000,
+        "end_ms": 178000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 180000,
+        "end_ms": 190000,
+        "speaker_id": "speaker_7",
+        "text": "因为什么啊？因为我们常规的旅行啊，就国内国外其实我们个人都可以去，当然就这个氛围而言，这个这个这个资金问题而言，其实我比较想去北极这种地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 190000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_7",
+        "text": "因为是公司报销嘛，就我个人压力可能会小一点儿，所以就，对，会想法儿可能会大胆一些，这是我的想法。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 193000,
+        "end_ms": 195000,
+        "speaker_id": "speaker_6",
+        "text": "去一些平时去不到的一些地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 199000,
+        "end_ms": 217000,
+        "speaker_id": "speaker_4",
+        "text": "其实之所以提出去敬老院呢，是因为我看过一个报道，一个呃就是非常非常有钱的人，嗯，他去敬老院做了呃一个星期的服务，他说我做我这一辈子从来没有做过的事情，平常都是衣来伸手",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 217000,
+        "end_ms": 235000,
+        "speaker_id": "speaker_4",
+        "text": "饭来张口的，因为他家里有佣人单位呢也有秘书，所以他基本上没有自己洗过衣服，没有自自己去做过一顿饭，当他去为那敬老院的老人服务去刷他们的那些裤子啊，帮他们洗洗头，帮他们剪指甲的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 235000,
+        "end_ms": 252000,
+        "speaker_id": "speaker_4",
+        "text": "他真的体验到了不一样的人生。当他与病患为伍的时候，他感觉到了自己健康的珍贵，当他与老人为伍的时候，他真的感觉到了青春的可贵，所以其实我觉得这一次我们去呃有这么十五天的时间，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 251000,
+        "end_ms": 251000,
+        "speaker_id": "speaker_6",
+        "text": "我想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 252000,
+        "end_ms": 255000,
+        "speaker_id": "speaker_6",
+        "text": "我想针对你刚刚说的这个就是提问一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 255000,
+        "end_ms": 264000,
+        "speaker_id": "speaker_6",
+        "text": "就是你你想我们公司这些人嗯就像你说的那些情况，我们现在年轻人对这个父母啊孝顺这方面有一些纰漏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 264000,
+        "end_ms": 278000,
+        "speaker_id": "speaker_6",
+        "text": "他怎么可能会想要去这个敬老院去给别人家的这个爷爷奶奶去洗裤子啊或者换洗什么衣服啊，这方面肯定是会做到这个照顾不周的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 276000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_4",
+        "text": "所以这个一个，所以呃并不需要他们呃，其实一人有有一天的时间，或者有一个小时跟老人的一个聊天，嗯，坐在他的对面促膝交谈，呃去看着老人的脸，握着老人的手就听他说话，其实这也是对年轻人，包括对老年人，这是一个非常珍贵的一个经历，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 302000,
+        "end_ms": 303000,
+        "speaker_id": "speaker_5",
+        "text": "但是我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 302000,
+        "end_ms": 319000,
+        "speaker_id": "speaker_7",
+        "text": "但是我觉得其实赡养老人是我们每个人必经的一个阶段，我们可以提前实现，但我觉得没有必要拿十五天这个假期去换一个这样，然后可能我们公司是一个比较年轻的公司，大家年龄段儿可能比较偏年轻，但是也有这些年长的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 319000,
+        "end_ms": 333000,
+        "speaker_id": "speaker_7",
+        "text": "他们上有父母下有孩子，他们平时就是在做这些日常的事情，如果我们在这个长假的这定义，以这种公益这种来绑架个人他们其实他们日复一日都在做的一个事情，我觉得对这部分员工其实是不太公平的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 333000,
+        "end_ms": 353000,
+        "speaker_id": "speaker_4",
+        "text": "其实我觉得呃并没有一个员工据我了解日复一日去做这种孝顺老人工作，相反正是老人在照顾了他们的日常生活，帮他们带孩子给他们做饭，帮他们洗衣服做家务，而他们只是坐享其成，根本就没有过孝顺老人或者陪伴老人的这一这样的机会，或者说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 353000,
+        "end_ms": 355000,
+        "speaker_id": "speaker_4",
+        "text": "从来没有给自己创造过这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 355000,
+        "end_ms": 356000,
+        "speaker_id": "speaker_6",
+        "text": "我想我想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 355000,
+        "end_ms": 363000,
+        "speaker_id": "speaker_7",
+        "text": "那为什么这十五天在家陪自己的这些爷爷奶奶而要去那些陪去那些根本就没有照顾过自己的人呢，这个就很奇怪了呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 358000,
+        "end_ms": 366000,
+        "speaker_id": "speaker_5",
+        "text": "对啊可能对自己家的父母的时间还很少，我觉得可以不用去外，先把自己家的情况做好，然后再去外边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 363000,
+        "end_ms": 379000,
+        "speaker_id": "speaker_4",
+        "text": "我我觉得其实其实可以，在敬老院待一天，然后选择去的是待一天或者待呃三到五天这样的时间，然后回家去照顾自己的家人。我觉得亲情，温情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 368000,
+        "end_ms": 370000,
+        "speaker_id": "speaker_5",
+        "text": "待一天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 375000,
+        "end_ms": 382000,
+        "speaker_id": "speaker_6",
+        "text": "我想这个问题我想说一下儿啊，就是首先我们要明确一下，我们是想搞一个团建",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 383000,
+        "end_ms": 393000,
+        "speaker_id": "speaker_6",
+        "text": "是想促进一下儿我们公司各部门员工和主管之间的这个关系，让这个也可以放松一下我们一年的这个工作情况，放松一下身心",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 393000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_6",
+        "text": "那如果去这个养老院是不是没有这个效果，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 396000,
+        "end_ms": 404000,
+        "speaker_id": "speaker_5",
+        "text": "而且平常工作本来就很忙碌，大家都想去放松一下，去那儿以后又是义务打扫又是干什么，我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 404000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_5",
+        "text": "更会会更累",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 405000,
+        "end_ms": 421000,
+        "speaker_id": "speaker_6",
+        "text": "啊像你刚刚提出来这个是去养老院这个想法儿是挺好的，对这个呃尊老爱幼嘛，然后但是我觉得我们可以在平时就是想要做一些爱心活动的时候可以去一个养老院进行一个这样的活动，对，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 420000,
+        "end_ms": 440000,
+        "speaker_id": "speaker_4",
+        "text": "如果是如果是大家都反对，或者说大家都不愿意有以这么长的时间去做一个爱心服务工作的话，那你刚才说到了有一个机会我们可以去做，那么我们就可以选择一个周末或者周六的时间，我们去敬老院给老人们包一顿饺子吃，这也这也是我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 429000,
+        "end_ms": 430000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 434000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_3",
+        "text": "主要是我们这个，这次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 437000,
+        "end_ms": 441000,
+        "speaker_id": "speaker_6",
+        "text": "对我想的是我们可以以后通过某一个重阳节",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 441000,
+        "end_ms": 442000,
+        "speaker_id": "speaker_6",
+        "text": "或者一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 441000,
+        "end_ms": 448000,
+        "speaker_id": "speaker_3",
+        "text": "对咱们可以通过其他的时候儿去这个做一些爱心活动，咱们这次主要的目的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 441000,
+        "end_ms": 442000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 442000,
+        "end_ms": 443000,
+        "speaker_id": "speaker_6",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 448000,
+        "end_ms": 454000,
+        "speaker_id": "speaker_3",
+        "text": "是为了让员工出去放松一下儿，去缓解一下儿工作上的压力。公",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 455000,
+        "end_ms": 458000,
+        "speaker_id": "speaker_3",
+        "text": "公司的主要目的是我们之间的团建",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 458000,
+        "end_ms": 459000,
+        "speaker_id": "speaker_3",
+        "text": "团建问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 459000,
+        "end_ms": 467000,
+        "speaker_id": "speaker_7",
+        "text": "所以就这个团建问题我们部门儿是想去北极这边儿，然后我想看各部门儿是否同意我这个提议呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 460000,
+        "end_ms": 460000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 467000,
+        "end_ms": 472000,
+        "speaker_id": "speaker_3",
+        "text": "嗯，我觉得我赞同，北极去看北极庄，对去看北极光呃绕绕对吧？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 473000,
+        "end_ms": 479000,
+        "speaker_id": "speaker_2",
+        "text": "北极是不是太极端了，那儿会不会太冷或者是有人冻伤，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 479000,
+        "end_ms": 481000,
+        "speaker_id": "speaker_1",
+        "text": "咱们要也要考虑一些安全问题啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 481000,
+        "end_ms": 484000,
+        "speaker_id": "speaker_2",
+        "text": "啊冻伤或者一些如果，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 484000,
+        "end_ms": 488000,
+        "speaker_id": "speaker_2",
+        "text": "身体不舒服之类的东西，他会不会就是没有及时就医？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 488000,
+        "end_ms": 498000,
+        "speaker_id": "speaker_6",
+        "text": "对，因为我们部门属于一个呃很庞大的一个公司，像一些老的员工，他是不是得考虑一下儿是否可以去做一些这些极限运动？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 498000,
+        "end_ms": 508000,
+        "speaker_id": "speaker_7",
+        "text": "呃因为北极它不光是大家想的那个比如科考的那个地儿很荒芜人际的，但是它北极其实也有点儿形成这种旅游的趋势了。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 508000,
+        "end_ms": 518000,
+        "speaker_id": "speaker_7",
+        "text": "然后在比较边远的地方，虽然说是比较冷，但是它的设施都是比较完备的，然后而且那边比较特色北极的北极熊呀、北极光呀，还有那个比如说那个什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 519000,
+        "end_ms": 539000,
+        "speaker_id": "speaker_7",
+        "text": "呃那个狗拉雪橇这一类，我觉得是在在其他任何一个地方都不能享享有的，而且你像北极这种地方就是你一辈子去一次已经是一件很幸福的事情了，所以我想趁这次机会大家一起去对一起去，而且就是说团建啊大家团结在一起，然后在这种比较极端这种与世隔离隔绝的地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 531000,
+        "end_ms": 533000,
+        "speaker_id": "speaker_6",
+        "text": "和我们的员工一起去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 539000,
+        "end_ms": 546000,
+        "speaker_id": "speaker_7",
+        "text": "我觉得大家就是唯一存在的话，可能对于我们这些团结呀这一类的都有很大的帮助",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 546000,
+        "end_ms": 548000,
+        "speaker_id": "speaker_6",
+        "text": "别的部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 546000,
+        "end_ms": 557000,
+        "speaker_id": "speaker_2",
+        "text": "嗯团结，我觉得北极方面如果人去的话就算它属于年轻人或者是中年人这方面，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 547000,
+        "end_ms": 550000,
+        "speaker_id": "speaker_3",
+        "text": "我同意我同意去去北极，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 557000,
+        "end_ms": 559000,
+        "speaker_id": "speaker_4",
+        "text": "因为我们的住宿啊或者是呃，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 558000,
+        "end_ms": 561000,
+        "speaker_id": "speaker_2",
+        "text": "如果是年轻人去的话他如果",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 561000,
+        "end_ms": 564000,
+        "speaker_id": "speaker_4",
+        "text": "吃住都怎么解决这个问题呢？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 564000,
+        "end_ms": 567000,
+        "speaker_id": "speaker_2",
+        "text": "那你年轻人如果去的话有生命危险没有回来怎么办？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 565000,
+        "end_ms": 569000,
+        "speaker_id": "speaker_3",
+        "text": "会有，它当地会有这个酒店，旅店呀，饭店呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 567000,
+        "end_ms": 574000,
+        "speaker_id": "speaker_7",
+        "text": "这个不可能，因为我们是在那个旅游区，我们不是探险类的，我们还是以旅游为主，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 572000,
+        "end_ms": 574000,
+        "speaker_id": "speaker_3",
+        "text": "对，咱们不是去探险",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 574000,
+        "end_ms": 576000,
+        "speaker_id": "speaker_2",
+        "text": "以旅游为主",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 575000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_3",
+        "text": "安全是有保障的，放心",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 576000,
+        "end_ms": 580000,
+        "speaker_id": "speaker_6",
+        "text": "那你这边儿不同意有没有什么别的想要去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 580000,
+        "end_ms": 582000,
+        "speaker_id": "speaker_6",
+        "text": "举行的一个形式",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 581000,
+        "end_ms": 591000,
+        "speaker_id": "speaker_2",
+        "text": "比较想去如果真要去玩儿的话，他们会不会想去看一些大草原之类的。像一些他们骑过马吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 591000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_3",
+        "text": "骑过呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 593000,
+        "end_ms": 594000,
+        "speaker_id": "speaker_2",
+        "text": "这个部门儿骑过，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 593000,
+        "end_ms": 594000,
+        "speaker_id": "speaker_7",
+        "text": "没骑过，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 594000,
+        "end_ms": 596000,
+        "speaker_id": "speaker_7",
+        "text": "没骑过，但是好多人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 595000,
+        "end_ms": 599000,
+        "speaker_id": "speaker_2",
+        "text": "大多数儿人骑过吗？咱们公司的这些人都是属于汉族啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 597000,
+        "end_ms": 598000,
+        "speaker_id": "speaker_3",
+        "text": "大多数儿人都骑过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 600000,
+        "end_ms": 601000,
+        "speaker_id": "speaker_2",
+        "text": "属于平原啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 601000,
+        "end_ms": 609000,
+        "speaker_id": "speaker_7",
+        "text": "那这去内蒙古会不会有点儿单一呀大草原，就是可能是想到就是篝火，环境，骑马，然后这些骑射这一类，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 601000,
+        "end_ms": 603000,
+        "speaker_id": "speaker_5",
+        "text": "那是你内蒙古大草原",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 604000,
+        "end_ms": 606000,
+        "speaker_id": "speaker_3",
+        "text": "对呀，只有草原",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 608000,
+        "end_ms": 616000,
+        "speaker_id": "speaker_3",
+        "text": "就是如果说你在草原上待半个月回来的话，我觉得咱们不光回来是黑了一圈儿，也会被蚊子咬的肿了一圈我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 610000,
+        "end_ms": 613000,
+        "speaker_id": "speaker_7",
+        "text": "待十五天我觉得有点儿无法忍受",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 616000,
+        "end_ms": 617000,
+        "speaker_id": "speaker_2",
+        "text": "那在北极呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 618000,
+        "end_ms": 619000,
+        "speaker_id": "speaker_3",
+        "text": "北极，没有任何",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 618000,
+        "end_ms": 620000,
+        "speaker_id": "speaker_7",
+        "text": "北极你每天都有新的冒险呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 621000,
+        "end_ms": 623000,
+        "speaker_id": "speaker_3",
+        "text": "不是，就是每天都有新的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 623000,
+        "end_ms": 628000,
+        "speaker_id": "speaker_2",
+        "text": "看雪吗？会不会有雪盲症儿啊？就算没有危险，这个雪盲症儿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 627000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_3",
+        "text": "这个雪盲症是很少会有人患有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 630000,
+        "end_ms": 631000,
+        "speaker_id": "speaker_2",
+        "text": "会会会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 631000,
+        "end_ms": 632000,
+        "speaker_id": "speaker_3",
+        "text": "如果说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 631000,
+        "end_ms": 633000,
+        "speaker_id": "speaker_4",
+        "text": "会遇到雪崩",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 633000,
+        "end_ms": 635000,
+        "speaker_id": "speaker_7",
+        "text": "戴眼镜儿，北极不会雪崩",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 635000,
+        "end_ms": 638000,
+        "speaker_id": "speaker_3",
+        "text": "咱们不是去爬雪山，所以没有雪崩，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 638000,
+        "end_ms": 642000,
+        "speaker_id": "speaker_6",
+        "text": "啊，这个北极去的话是主要考虑一下儿这个呃服装啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 642000,
+        "end_ms": 644000,
+        "speaker_id": "speaker_6",
+        "text": "这一方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 642000,
+        "end_ms": 645000,
+        "speaker_id": "speaker_7",
+        "text": "对，衣服，不要被子好一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 643000,
+        "end_ms": 647000,
+        "speaker_id": "speaker_3",
+        "text": "对呀，主要是咱们咱们公司会出这部分资金吗，我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 648000,
+        "end_ms": 654000,
+        "speaker_id": "speaker_6",
+        "text": "此去如果是去北极的话，其实每一个部门员工都要考虑一套衣服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 654000,
+        "end_ms": 657000,
+        "speaker_id": "speaker_6",
+        "text": "嗯，这一方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 654000,
+        "end_ms": 656000,
+        "speaker_id": "speaker_7",
+        "text": "我们可以一起嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 657000,
+        "end_ms": 669000,
+        "speaker_id": "speaker_6",
+        "text": "对这一方面是需要一部分很大一部分经费的，我们把这个经费都用在买服装上面，我们别的呃吃啊住啊这一方面，就，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 666000,
+        "end_ms": 669000,
+        "speaker_id": "speaker_4",
+        "text": "这个公司预算应该是有一个上限的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 670000,
+        "end_ms": 673000,
+        "speaker_id": "speaker_6",
+        "text": "这方面如果去北极的话，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 671000,
+        "end_ms": 674000,
+        "speaker_id": "speaker_4",
+        "text": "我们现在做一个预算是不是超了？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 675000,
+        "end_ms": 677000,
+        "speaker_id": "speaker_5",
+        "text": "嗯，可以这两天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 675000,
+        "end_ms": 680000,
+        "speaker_id": "speaker_2",
+        "text": "而且北极你们了解那儿的，旅游景点吗，因为都没有去过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 681000,
+        "end_ms": 696000,
+        "speaker_id": "speaker_7",
+        "text": "呃我知道北欧有一个小镇，它算是属于北极村划分范围之内，是最北方一个好像叫什么库里。然后那个地方它就是人是比较少的，当然它的旅游业发展是比较好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 697000,
+        "end_ms": 708000,
+        "speaker_id": "speaker_7",
+        "text": "它也属于北极范围，大家不是每次一说北极想就那个冰盖儿之上，这个可能会有一点儿麻烦，但是他们去一个北欧小镇靠近北极村的地方，这个还是比较准确的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 709000,
+        "end_ms": 714000,
+        "speaker_id": "speaker_2",
+        "text": "像刚才我说的去内蒙古之类的骑马、篝火",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 715000,
+        "end_ms": 722000,
+        "speaker_id": "speaker_2",
+        "text": "还有像一些烤全羊之类的，只有这方面想的，但是人们想到北极狗拉雪橇，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 722000,
+        "end_ms": 729000,
+        "speaker_id": "speaker_2",
+        "text": "其中一点儿，还有一种滑雪项目儿，还可以观光北极熊，它还有更多的项目啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 730000,
+        "end_ms": 733000,
+        "speaker_id": "speaker_2",
+        "text": "他不会在两三天就把这些项目就会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 730000,
+        "end_ms": 730000,
+        "speaker_id": "speaker_4",
+        "text": "有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 733000,
+        "end_ms": 734000,
+        "speaker_id": "speaker_2",
+        "text": "看腻了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 733000,
+        "end_ms": 744000,
+        "speaker_id": "speaker_7",
+        "text": "景点景点，因为北极的它这个气候原因这个景点跟咱们这些靠中间的这些地方的景点呢是肯定是很不一样的。而且是独有的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 746000,
+        "end_ms": 750000,
+        "speaker_id": "speaker_2",
+        "text": "那那为什么不去哈尔滨呢，相对于来说较安全一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 751000,
+        "end_ms": 759000,
+        "speaker_id": "speaker_2",
+        "text": "去北极的话肯定需要肯定需要就是和一些那个航空公司合作，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 755000,
+        "end_ms": 755000,
+        "speaker_id": "speaker_4",
+        "text": "",
+        "status": "transcript_empty"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 759000,
+        "end_ms": 763000,
+        "speaker_id": "speaker_3",
+        "text": "主要是想也想要出去感受一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 765000,
+        "end_ms": 769000,
+        "speaker_id": "speaker_4",
+        "text": "如果我们去北极的话，有没有考虑到签证的难度？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 769000,
+        "end_ms": 779000,
+        "speaker_id": "speaker_7",
+        "text": "我们只要出国都要考虑到签证问题，但是咱们团建也是也会往国外飞咱们毕竟是一个旅游旅游签嘛，我觉得这个还是比较好签的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 780000,
+        "end_ms": 785000,
+        "speaker_id": "speaker_4",
+        "text": "但是我了解到的是北极的话签证的难度是比较大的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 785000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_7",
+        "text": "欧洲小国靠近北极的位置不是北极冰盖儿之上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 790000,
+        "end_ms": 801000,
+        "speaker_id": "speaker_6",
+        "text": "那如果不是是在北极范围内的这个小小城小城镇，是不是是可以说看到你刚刚说的那种啊北极熊啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 796000,
+        "end_ms": 796000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 801000,
+        "end_ms": 806000,
+        "speaker_id": "speaker_6",
+        "text": "或者就想要去北极参观的那个特点，是不是有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 806000,
+        "end_ms": 813000,
+        "speaker_id": "speaker_7",
+        "text": "呃还是我们以这个欧洲小镇为主，但是因为它靠近北极冰盖儿，我们可以用几天的时间坐这个轮渡，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 814000,
+        "end_ms": 824000,
+        "speaker_id": "speaker_7",
+        "text": "靠近这个地方游览一两天我们不能在那里长住，但是我们可以去那边参观一下，因为这是在别的城市，别的国家都永远不可能享受到的一种。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 825000,
+        "end_ms": 828000,
+        "speaker_id": "speaker_6",
+        "text": "别的部门儿还有没有别的意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 828000,
+        "end_ms": 849000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得还是在国内比较好。因为十五天时间十五天团建时间，我觉得没必要，就是说呃就是在交通上花太多的时间，在国内的话交通也相对呃相对呃时间相对较短，也比较安全，对你这样玩儿的时间长一点，不会把过多的时间浪费在咱们去的那个路上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 843000,
+        "end_ms": 845000,
+        "speaker_id": "speaker_4",
+        "text": "玩儿的时间还长一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 849000,
+        "end_ms": 852000,
+        "speaker_id": "speaker_4",
+        "text": "来，往返的话会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 849000,
+        "end_ms": 856000,
+        "speaker_id": "speaker_5",
+        "text": "而且有的人可能坐飞机会&对&坐飞机的时候可能会觉得呃不舒服，我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 856000,
+        "end_ms": 869000,
+        "speaker_id": "speaker_5",
+        "text": "你如果去北极的话，你除了坐飞机还有别的什么，什么什么那个，对呀，你没有没有考虑到每个人的身体状况，比如说你说那些五十多岁的人，他，对他心脏不好他承受不了呀，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 859000,
+        "end_ms": 862000,
+        "speaker_id": "speaker_4",
+        "text": "没有，只能坐飞机",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 867000,
+        "end_ms": 870000,
+        "speaker_id": "speaker_4",
+        "text": "心脏不好血压升高的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 870000,
+        "end_ms": 884000,
+        "speaker_id": "speaker_5",
+        "text": "你不能因为我觉得还是在国内比较好，你说你三四天五六天玩完一个地区咱们可以再换，因为国内毕竟呃就是呃景点可，嗯，对，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 881000,
+        "end_ms": 888000,
+        "speaker_id": "speaker_2",
+        "text": "景点比较多吧，可以选取一个省份来进行游玩儿并不一定是一个城市，这样游玩儿地方，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 887000,
+        "end_ms": 889000,
+        "speaker_id": "speaker_5",
+        "text": "对可以可以转换呀。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 890000,
+        "end_ms": 893000,
+        "speaker_id": "speaker_2",
+        "text": "而且国内相对于也较为安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 894000,
+        "end_ms": 895000,
+        "speaker_id": "speaker_4",
+        "text": "比较方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 895000,
+        "end_ms": 900000,
+        "speaker_id": "speaker_6",
+        "text": "是确实如果去北极的话，需要考虑一些很多因素",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 900000,
+        "end_ms": 905000,
+        "speaker_id": "speaker_6",
+        "text": "嗯，像一些，对经费是一方面，然后还有这个人员安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 900000,
+        "end_ms": 902000,
+        "speaker_id": "speaker_4",
+        "text": "不单单是经费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 906000,
+        "end_ms": 913000,
+        "speaker_id": "speaker_6",
+        "text": "还有一些，要买的一些，对真正玩儿的时间其实，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 907000,
+        "end_ms": 909000,
+        "speaker_id": "speaker_4",
+        "text": "真正游玩儿的时间其实比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 909000,
+        "end_ms": 912000,
+        "speaker_id": "speaker_4",
+        "text": "往返的往返的路途其实挺占时间的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 913000,
+        "end_ms": 924000,
+        "speaker_id": "speaker_5",
+        "text": "如果在一个礼拜之内玩儿就是在北极的项目都完成了，我们还要再花更多的那个呃资金带我们去别的地址的选址上，我觉得这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 924000,
+        "end_ms": 931000,
+        "speaker_id": "speaker_5",
+        "text": "嗯，都花费在这个交通上，我觉得这个资金其实有点儿没有被充分利用。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 932000,
+        "end_ms": 941000,
+        "speaker_id": "speaker_6",
+        "text": "那有没有说像国内有一一个某一个地区，就是我们大家都想去的，但平常都不会去的一个地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 942000,
+        "end_ms": 947000,
+        "speaker_id": "speaker_7",
+        "text": "偏远一点儿偏远一点儿的就这些沿海省份儿啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 942000,
+        "end_ms": 944000,
+        "speaker_id": "speaker_6",
+        "text": "比较有特色的一一些地方。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 947000,
+        "end_ms": 950000,
+        "speaker_id": "speaker_7",
+        "text": "这些呃，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 948000,
+        "end_ms": 952000,
+        "speaker_id": "speaker_4",
+        "text": "有山有水的地方，森林覆盖率比较大的地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 952000,
+        "end_ms": 955000,
+        "speaker_id": "speaker_4",
+        "text": "我们可以去西南边陲，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 954000,
+        "end_ms": 964000,
+        "speaker_id": "speaker_7",
+        "text": "其实我比较想去那种人比较少的地方，因为到处都是人人人人人压力特别大，就想想去一个旅游空旷的一个地方，咱们实现一种完全的生活自主的感觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 964000,
+        "end_ms": 966000,
+        "speaker_id": "speaker_5",
+        "text": "郊外",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 964000,
+        "end_ms": 983000,
+        "speaker_id": "speaker_4",
+        "text": "那我们就可以往，往南往北往南的话我们可以去云南，往北的话我们可以去东北长白山，哦对了，我不知道大家对塞罕坝有没有了解，那儿现在建设的非常好，嗯，呃，那那边儿其实最开始是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 966000,
+        "end_ms": 969000,
+        "speaker_id": "speaker_7",
+        "text": "对类似于这样，但是比较有特点一点的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 970000,
+        "end_ms": 971000,
+        "speaker_id": "speaker_3",
+        "text": "特点，大草原人少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 978000,
+        "end_ms": 981000,
+        "speaker_id": "speaker_7",
+        "text": "塞罕坝，你可以说一下吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 983000,
+        "end_ms": 986000,
+        "speaker_id": "speaker_3",
+        "text": "最开始是一片沙漠一片荒漠",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 985000,
+        "end_ms": 986000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 986000,
+        "end_ms": 987000,
+        "speaker_id": "speaker_3",
+        "text": "后来经过咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 987000,
+        "end_ms": 988000,
+        "speaker_id": "speaker_4",
+        "text": "三代人的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 988000,
+        "end_ms": 990000,
+        "speaker_id": "speaker_3",
+        "text": "塞罕坝奇迹，大家都听说过对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 990000,
+        "end_ms": 990000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 990000,
+        "end_ms": 991000,
+        "speaker_id": "speaker_7",
+        "text": "啊植树造林",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 991000,
+        "end_ms": 991000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 991000,
+        "end_ms": 992000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 992000,
+        "end_ms": 1000000,
+        "speaker_id": "speaker_4",
+        "text": "呃我知道一个故事，呃一个年轻人也就是二十多岁的样子，呃不到三十岁，他说他是林三代",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 992000,
+        "end_ms": 994000,
+        "speaker_id": "speaker_7",
+        "text": "会沙漠人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 1000000,
+        "end_ms": 1012000,
+        "speaker_id": "speaker_4",
+        "text": "因为现在都说什么富二代呀官二代呀，对他非常站在舞台上非常自豪的说我是林三代，我爷爷从我爷爷开始就植树造林嘛，就是让那那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 1002000,
+        "end_ms": 1004000,
+        "speaker_id": "speaker_5",
+        "text": "有钱人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 1012000,
+        "end_ms": 1020000,
+        "speaker_id": "speaker_4",
+        "text": "那一片沙漠有一抹绿色，那是他爷爷的愿望，他爷爷就在那儿，然后到了他爸爸这一代呢又继续的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 1017000,
+        "end_ms": 1018000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 1020000,
+        "end_ms": 1028000,
+        "speaker_id": "speaker_4",
+        "text": "植树造林，直到了他大学毕业之后同样又回到了塞罕坝，他非常自豪地说请你们到我们这里来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 1028000,
+        "end_ms": 1035000,
+        "speaker_id": "speaker_4",
+        "text": "要感受一下绿色，而且他们呃集体在那儿做一个对呃林三代他们整个的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 1032000,
+        "end_ms": 1034000,
+        "speaker_id": "speaker_5",
+        "text": "三代人的一个森林",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 1035000,
+        "end_ms": 1044000,
+        "speaker_id": "speaker_4",
+        "text": "呃嗯就是当时那些现在还还在岗位上的这些工作人员，他们集体的朗诵了一首诗词，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 1044000,
+        "end_ms": 1055000,
+        "speaker_id": "speaker_4",
+        "text": "献给在场的所有的嘉宾，最后诚诚挚的邀请呃所有的人到塞罕坝去感受一下他们那里的美丽，那是人造人人工的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 1055000,
+        "end_ms": 1060000,
+        "speaker_id": "speaker_4",
+        "text": "那个时候就感到了人的力量的伟大，而且传承的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 1060000,
+        "end_ms": 1066000,
+        "speaker_id": "speaker_7",
+        "text": "这个塞罕坝更多的是一种精神的传递，但它作为一个旅游景点来说，我觉得优势好像不是那么的突出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 1066000,
+        "end_ms": 1069000,
+        "speaker_id": "speaker_2",
+        "text": "这方面可以去一下儿西湖啊，去一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 1069000,
+        "end_ms": 1070000,
+        "speaker_id": "speaker_3",
+        "text": "杭州的西湖是吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 1070000,
+        "end_ms": 1071000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1071000,
+        "end_ms": 1072000,
+        "speaker_id": "speaker_5",
+        "text": "杭州",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1071000,
+        "end_ms": 1081000,
+        "speaker_id": "speaker_2",
+        "text": "苏提白堤呀，这方面因为苏提白堤不是有一年四季特色吗？它讲究一种春来花满，苏提柳满烟，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1073000,
+        "end_ms": 1074000,
+        "speaker_id": "speaker_5",
+        "text": "人杭州",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1081000,
+        "end_ms": 1089000,
+        "speaker_id": "speaker_2",
+        "text": "这方面特色，因为咱们这个公司如果是要按照各个不同的季节去，还有像什么夏季也有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1089000,
+        "end_ms": 1099000,
+        "speaker_id": "speaker_2",
+        "text": "红衣绿扇映清波这种这种传统的，还有就像如果是九月多份儿快入秋的时候，还有秋来一色湖光万顷秋之类的这种美如画的这种形象。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1099000,
+        "end_ms": 1106000,
+        "speaker_id": "speaker_2",
+        "text": "还有咱们团建肯定不可能冬天，但是冬天也有它冬天的特色，比方说白堤一痕青花墨之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1106000,
+        "end_ms": 1109000,
+        "speaker_id": "speaker_3",
+        "text": "这都是属于一种山水画，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1106000,
+        "end_ms": 1117000,
+        "speaker_id": "speaker_7",
+        "text": "但是你刚才说的这些这些都是都是一种意境，等你到了实景的话，你会发现其实跟咱们现在达活泉公园没有什么区别，所以我想去一个比较有特色的地方，真的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1110000,
+        "end_ms": 1111000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1117000,
+        "end_ms": 1119000,
+        "speaker_id": "speaker_7",
+        "text": "你要去西湖的话就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1118000,
+        "end_ms": 1138000,
+        "speaker_id": "speaker_4",
+        "text": "呃，其实如果这么说话我就觉得偏激了，呃为什么呃苏轼会写西湖的时候说呃浓妆淡抹总相宜，它一定跟达活泉公园儿是有别的，呃只有身临其境的时候，你才能够感受到为什么古人会那么说，为什么文人骚客会那么想那么写",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1139000,
+        "end_ms": 1160000,
+        "speaker_id": "speaker_7",
+        "text": "呃西湖一个是一个比较热门的一个地方，会不会很有人去过呀，或者咱们去的时候那里有很多的人呀，都有，对这个问题肯定其实比较比较直接的一个问题。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1146000,
+        "end_ms": 1149000,
+        "speaker_id": "speaker_5",
+        "text": "嗯对这个是需要考虑进去的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1151000,
+        "end_ms": 1153000,
+        "speaker_id": "speaker_3",
+        "text": "什么，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1160000,
+        "end_ms": 1172000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得去草原是一个很好的选择，因为到晚上大家可以一起篝火晚会，我们可以公司团建嘛。对，本来就是公司团建，然后篝火晚会就会增进同事间的感情嘛。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1164000,
+        "end_ms": 1166000,
+        "speaker_id": "speaker_4",
+        "text": "我们可以就住帐篷",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1168000,
+        "end_ms": 1169000,
+        "speaker_id": "speaker_1",
+        "text": "可以增进感情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1168000,
+        "end_ms": 1169000,
+        "speaker_id": "speaker_4",
+        "text": "对，去骑马",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1172000,
+        "end_ms": 1183000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是属于这种选地，如果要选人少的地方感觉如果人多的地方肯定是好玩儿人们才去的，这是其一，其二人少的地方那肯定荒凉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1183000,
+        "end_ms": 1186000,
+        "speaker_id": "speaker_2",
+        "text": "荒凉就是他们觉得这地方没有什么意思，才去人少，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1185000,
+        "end_ms": 1188000,
+        "speaker_id": "speaker_4",
+        "text": "其实人人少地方是安静，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1188000,
+        "end_ms": 1188000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1188000,
+        "end_ms": 1195000,
+        "speaker_id": "speaker_4",
+        "text": "是空旷，是我们可以站在大草原上感受那种天地我的那种意境。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1196000,
+        "end_ms": 1199000,
+        "speaker_id": "speaker_7",
+        "text": "所以咱们要选冷门儿的还是热门儿的？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1199000,
+        "end_ms": 1212000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得既然是出去放松了，我们就选择那种人比较少的，然后景比较好的绿色比较多的天比较蓝的，云比较白的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1205000,
+        "end_ms": 1206000,
+        "speaker_id": "speaker_5",
+        "text": "对。人比较少的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1208000,
+        "end_ms": 1209000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1209000,
+        "end_ms": 1213000,
+        "speaker_id": "speaker_7",
+        "text": "人少不代表它是一个冷门的一个场地，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1212000,
+        "end_ms": 1224000,
+        "speaker_id": "speaker_2",
+        "text": "对，这方面我比较赞同。就是去一些安静舒适的环境，因为在公司这方面压力比较大嘛，所以人们需要静下心来去感受一下儿大自然的魅力对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1219000,
+        "end_ms": 1220000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1222000,
+        "end_ms": 1223000,
+        "speaker_id": "speaker_5",
+        "text": "放松一下心情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1223000,
+        "end_ms": 1226000,
+        "speaker_id": "speaker_4",
+        "text": "所以我觉得躺在草地上数星星的感觉很好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1225000,
+        "end_ms": 1235000,
+        "speaker_id": "speaker_7",
+        "text": "那为什么咱不不不不买一个度假别墅在里面躺十五天呢也很休闲也很放松，环境也很不错呀，我们就要感受不一样，有特色的那种，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1235000,
+        "end_ms": 1241000,
+        "speaker_id": "speaker_4",
+        "text": "我我们要要在大自然中去感受啊，我们就是就是大自然中的一员",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1238000,
+        "end_ms": 1241000,
+        "speaker_id": "speaker_7",
+        "text": "度假村就是大自然大自带草坪的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1241000,
+        "end_ms": 1255000,
+        "speaker_id": "speaker_7",
+        "text": "其实我还是想去那种比较就是比较有特色的地方，比如说什么什么庐山瀑布那种大瀑布，黄河瀑布那种大瀑布，你在其它地方都是绝对看不到的，就类似于这样，也不枉此行了。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1255000,
+        "end_ms": 1260000,
+        "speaker_id": "speaker_3",
+        "text": "去瀑布这方面的话，就需要人员爬山和解决住宿问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1262000,
+        "end_ms": 1269000,
+        "speaker_id": "speaker_7",
+        "text": "其实有没有某个景点就在那个山脚底下，就是周围风景特别好，就类似于古村落这种的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1268000,
+        "end_ms": 1272000,
+        "speaker_id": "speaker_4",
+        "text": "那我们可以去庐山横看成岭侧成峰",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1272000,
+        "end_ms": 1273000,
+        "speaker_id": "speaker_7",
+        "text": "庐山。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1273000,
+        "end_ms": 1274000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1273000,
+        "end_ms": 1290000,
+        "speaker_id": "speaker_6",
+        "text": "刚刚提出来这个庐山瀑布，我觉得去看瀑布是一个不错的选择，我们可以选择呃住宿问题的话，因为刚刚不是说到可以篝火晚会嘛，我想可以在这个山脚啊或者哪里搭建一些帐篷",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1285000,
+        "end_ms": 1286000,
+        "speaker_id": "speaker_3",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1290000,
+        "end_ms": 1295000,
+        "speaker_id": "speaker_6",
+        "text": "然后我们员工可以在一块儿晚上的时候嗯举行一下儿这个晚会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1296000,
+        "end_ms": 1320000,
+        "speaker_id": "speaker_4",
+        "text": "其实我们可以选择一个就是既然有十五天的长假嘛，我们可以选择一个路线，就是比较这些景点比较近的，比较有特色的，大家都比较能够接受的，呃风景宜人的，呃气候比较舒爽的，然后风景比较优美的，有山有水的这样的地方，综合点连一条线今天去哪明天去哪，然后我们嗯给大家做一个汇报。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1321000,
+        "end_ms": 1323000,
+        "speaker_id": "speaker_6",
+        "text": "对那你有没有这方面的推荐？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1324000,
+        "end_ms": 1342000,
+        "speaker_id": "speaker_4",
+        "text": "比如说我们可以去云南、大理、丽江，呃还还有重庆三塔寺，比如说西双版纳这一条线，因为云南云南省比较板块儿比较大嘛，景点比较分散，我们可以用十五天时间把云南游个遍",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1343000,
+        "end_ms": 1349000,
+        "speaker_id": "speaker_6",
+        "text": "考虑，如果是这样的话，每一天都安排的特别满，呃都在赶",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1347000,
+        "end_ms": 1378000,
+        "speaker_id": "speaker_4",
+        "text": "对，呃也不是因为比如说我们去呃石林，让大家去感受大自然的鬼斧神工，啊我们在那儿呃游玩儿一天，那我们下一站可以去洱海，那么在洱海就是自由的一个活动，大家可以在海上可以去驾船，呃我们可以在海边漫步这些呃活动，或者说我们在呃丽江古城的时候，我们白天可以组织一些集体活动，晚上可以自由的去游古城，去买一些银器呀，或者买一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1378000,
+        "end_ms": 1400000,
+        "speaker_id": "speaker_4",
+        "text": "具有民族风的一些鼓啊，还有还有他们那些民族的服装我们可以穿上，而且价格也不贵，一套就是那种那种裙子哈，就是呃她们呃女孩子穿上非常显腰身儿的那那样的裹裙儿，一套也就八十块钱。嗯，而且呃我上次去那儿买了一个上衣，就是一个中袖儿的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1400000,
+        "end_ms": 1405000,
+        "speaker_id": "speaker_4",
+        "text": "夏天穿的呃非常料子也非常的呃舒服&嗯&，就二十块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1405000,
+        "end_ms": 1417000,
+        "speaker_id": "speaker_4",
+        "text": "呃，让大家可以在晚上的夜市的时候，可以呃自己的去选择呃自己去夜市啊或者说去呃广场啊去玩儿，白天的话我们可以安排集体的时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1418000,
+        "end_ms": 1426000,
+        "speaker_id": "speaker_6",
+        "text": "那这个根据这个提议大家有没有想法有赞同或者不赞同的吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1424000,
+        "end_ms": 1438000,
+        "speaker_id": "speaker_7",
+        "text": "云南那边儿风景好，可能就是个人旅游的话是一种享受，但是咱们作为团这一大堆人，就可能把这种宁静给冲散了，就可能享受不到这种，它这个旅游景点本来应该给人的体验",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1424000,
+        "end_ms": 1425000,
+        "speaker_id": "speaker_5",
+        "text": "我赞同",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1437000,
+        "end_ms": 1464000,
+        "speaker_id": "speaker_4",
+        "text": "呃，景点的区域是比较大的，比如说长马古道，我们可以骑着马，当然他们有一个就是跟我们牵马的人，呃我们就是每一个人都可以骑马在长马古道上走走一圈儿，也就是半个小时的时间，然后呃我们也可以彼此拍照，或者他可以给我拿着我们的手机让我们好好好的坐好，抓稳嘛他给我们拍照，呃在长马古道上给我们每一个人留影",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1464000,
+        "end_ms": 1472000,
+        "speaker_id": "speaker_4",
+        "text": "其实还有我们可以就是自己坐船啊或者自己开船那种气垫儿船，我们三个人一组三个人一组一起出去玩儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1472000,
+        "end_ms": 1479000,
+        "speaker_id": "speaker_4",
+        "text": "其实在大海之中我们就不会发现我们这么多人，我们这么多人也不过就是沧海一粟而已。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1480000,
+        "end_ms": 1495000,
+        "speaker_id": "speaker_2",
+        "text": "其实我感觉旅游景点儿要选的话肯定要分为两种，第一种就属于能让人静心，一种环境，还有一种就是属于游玩儿设施，就是可以既可以拍照儿也可以满足大多数儿人嘞需求。比方说像中年人他们可能喜静",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1495000,
+        "end_ms": 1496000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1496000,
+        "end_ms": 1502000,
+        "speaker_id": "speaker_2",
+        "text": "喜欢那种骑骑马看看风景之类的，或者喜欢那种游玩儿散步，像那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1498000,
+        "end_ms": 1498000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1502000,
+        "end_ms": 1510000,
+        "speaker_id": "speaker_2",
+        "text": "谈心之类的这种问题。如果是年轻人的话，公司因为毕竟刚才说了嘛是比较年轻的一个公司，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1510000,
+        "end_ms": 1510000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1510000,
+        "end_ms": 1514000,
+        "speaker_id": "speaker_2",
+        "text": "然后他年轻人如果需求的话，也可以要有一些刺激性的项目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1514000,
+        "end_ms": 1516000,
+        "speaker_id": "speaker_2",
+        "text": "要选择这样的一个景点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1516000,
+        "end_ms": 1518000,
+        "speaker_id": "speaker_7",
+        "text": "就是选择性比较多的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1518000,
+        "end_ms": 1520000,
+        "speaker_id": "speaker_2",
+        "text": "嗯选择性比较多的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1521000,
+        "end_ms": 1522000,
+        "speaker_id": "speaker_7",
+        "text": "不那么单一的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1522000,
+        "end_ms": 1532000,
+        "speaker_id": "speaker_6",
+        "text": "像刚刚说的呃考虑一下儿，把各个景点联合到一一，我们可以进行一个一系列的游玩儿，这样的话是不是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1532000,
+        "end_ms": 1539000,
+        "speaker_id": "speaker_6",
+        "text": "呃可以照顾到各个层次的这个不同人，想要玩儿这个安静一点儿的或者刺激一点儿的，这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1538000,
+        "end_ms": 1553000,
+        "speaker_id": "speaker_2",
+        "text": "对咱们可以选择一个省份进进行游玩儿，而不是一个城市进行游玩儿。这样的话游玩儿的景点儿较多吧，它可以一个省份分好多城市，咱可以进行把每一个城市好玩儿的地方，咱可以综合一一下儿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1553000,
+        "end_ms": 1559000,
+        "speaker_id": "speaker_2",
+        "text": "然后哪些排除掉哪些留下来这样的话进行制定一个路线，而且经费也不是很高的一种路线。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1560000,
+        "end_ms": 1566000,
+        "speaker_id": "speaker_6",
+        "text": "啊刚刚提到了云南这边儿你这边儿还有没有说想要去的城市？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1560000,
+        "end_ms": 1561000,
+        "speaker_id": "speaker_3",
+        "text": "诶",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1567000,
+        "end_ms": 1578000,
+        "speaker_id": "speaker_2",
+        "text": "其实刚刚那边儿提到的云南，其实我这个部门儿其实作为这个部长我有点儿心动，因为云南的话那边儿是有自己的项目，如果是要安静的话，你看像那里会有会盛产一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1575000,
+        "end_ms": 1575000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1578000,
+        "end_ms": 1579000,
+        "speaker_id": "speaker_5",
+        "text": "山山水水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1580000,
+        "end_ms": 1588000,
+        "speaker_id": "speaker_2",
+        "text": "会盛产一些水果儿，比方说像一些中年人他们喜欢耕作一些植物啊，或者种一些东西啊或者采摘一些东西啊，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1581000,
+        "end_ms": 1582000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1588000,
+        "end_ms": 1589000,
+        "speaker_id": "speaker_5",
+        "text": "种植园的感觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1589000,
+        "end_ms": 1597000,
+        "speaker_id": "speaker_2",
+        "text": "对，还有一种那儿还有像有像那种浅浅式的鱼塘也可以进行互动就属于看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1589000,
+        "end_ms": 1591000,
+        "speaker_id": "speaker_6",
+        "text": "可以去亲自摘一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1597000,
+        "end_ms": 1602000,
+        "speaker_id": "speaker_2",
+        "text": "捞捞鱼嘛，比下捞鱼，然后租一个山庄进行，咱们可以自己烹饪一下儿食物，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1603000,
+        "end_ms": 1610000,
+        "speaker_id": "speaker_2",
+        "text": "这也是一种游玩儿方式，然后继续在云南这个省份找一些刺激性的项目，比方说像一些刚才的快艇啊之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1611000,
+        "end_ms": 1612000,
+        "speaker_id": "speaker_2",
+        "text": "都可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1611000,
+        "end_ms": 1616000,
+        "speaker_id": "speaker_6",
+        "text": "可以组织一些想要去玩儿刺激项目的年轻人，可以去游玩儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1615000,
+        "end_ms": 1615000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1616000,
+        "end_ms": 1619000,
+        "speaker_id": "speaker_4",
+        "text": "他们可以去三江并流那儿玩儿，年轻人可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1619000,
+        "end_ms": 1620000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1621000,
+        "end_ms": 1623000,
+        "speaker_id": "speaker_6",
+        "text": "这边儿有没有什么想法？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1624000,
+        "end_ms": 1625000,
+        "speaker_id": "speaker_5",
+        "text": "没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1626000,
+        "end_ms": 1632000,
+        "speaker_id": "speaker_6",
+        "text": "那就是呃赞同刚刚说的云南这边儿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1629000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_3",
+        "text": "嗯，我我也赞同",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1631000,
+        "end_ms": 1633000,
+        "speaker_id": "speaker_5",
+        "text": "我也赞同",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1634000,
+        "end_ms": 1649000,
+        "speaker_id": "speaker_7",
+        "text": "咱们去云南要怎么去呢大家就是坐飞机直接把这个时间结到过去，还是说趁此机会，毕竟云南离咱这儿还比较远，咱们还是说，我想咱们是坐坐飞机的好处是它节省时间，当然它就比如说咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1642000,
+        "end_ms": 1647000,
+        "speaker_id": "speaker_4",
+        "text": "呃我们可以坐飞机，我们可以提前订票，这样的话会打折的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1649000,
+        "end_ms": 1664000,
+        "speaker_id": "speaker_7",
+        "text": "两点一线，咱们会把中间最后这帮就忽略了，我觉得咱们要是咱们如果咱们如果坐绿皮火车的话，咱们可以把沿线省份的风景也顺便看了，这样会不会也是一种放松",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1652000,
+        "end_ms": 1657000,
+        "speaker_id": "speaker_4",
+        "text": "我们坐飞机直接到昆明，然后停在昆明",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1661000,
+        "end_ms": 1664000,
+        "speaker_id": "speaker_4",
+        "text": "其实我们在火车上是看不到多少风景的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1664000,
+        "end_ms": 1668000,
+        "speaker_id": "speaker_4",
+        "text": "没有没有什么风景在火车里面看到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1666000,
+        "end_ms": 1680000,
+        "speaker_id": "speaker_7",
+        "text": "享受这种快感，有人为什么说大家现在节奏都比较快，天天快来快去的，什么高那个高铁一直在提速，大家坐飞机就是因为咱们十五天并不那么赶时间，并不是要出差那样，大家也经常坐飞机，是比较皮，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1679000,
+        "end_ms": 1682000,
+        "speaker_id": "speaker_4",
+        "text": "但是大家没有必要把时间浪费在路上了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1681000,
+        "end_ms": 1684000,
+        "speaker_id": "speaker_7",
+        "text": "这不叫浪费，你坐火车怎么能是浪费呢，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1681000,
+        "end_ms": 1684000,
+        "speaker_id": "speaker_3",
+        "text": "这不是浪费，这是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1683000,
+        "end_ms": 1685000,
+        "speaker_id": "speaker_6",
+        "text": "放松心情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1684000,
+        "end_ms": 1691000,
+        "speaker_id": "speaker_7",
+        "text": "对，而且火车每到一个城市的话，比如说一个大站的话，它会停半个小时你完全可以半个小时下来来周边转一转都是可以的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1692000,
+        "end_ms": 1695000,
+        "speaker_id": "speaker_7",
+        "text": "所以我想咱们把旅途的这段儿时程时间也利用起来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1692000,
+        "end_ms": 1695000,
+        "speaker_id": "speaker_4",
+        "text": "旅游景点或者说可观的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1696000,
+        "end_ms": 1697000,
+        "speaker_id": "speaker_2",
+        "text": "其实这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1696000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_4",
+        "text": "火车站我们看到只是匆匆忙忙的人流问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1698000,
+        "end_ms": 1704000,
+        "speaker_id": "speaker_3",
+        "text": "或者说或者说咱们去的时候儿可以采用就是坐绿皮火车的方式，回来的时候儿就是咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1702000,
+        "end_ms": 1707000,
+        "speaker_id": "speaker_2",
+        "text": "这个绿皮火车和高铁这个我感觉还有飞机都可以选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1707000,
+        "end_ms": 1721000,
+        "speaker_id": "speaker_3",
+        "text": "这是我我个人建议就是咱们去的时候儿是以这个绿皮火车的方式，就是咱们一开始就是放松心情嘛，回来的时候儿，对比较有新鲜感，回来的时候儿对回来的时候儿我们可以坐飞机，这是大家都已经玩儿够了玩儿玩儿累了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1713000,
+        "end_ms": 1715000,
+        "speaker_id": "speaker_7",
+        "text": "比较有新鲜感",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1715000,
+        "end_ms": 1716000,
+        "speaker_id": "speaker_2",
+        "text": "让生活慢下来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1717000,
+        "end_ms": 1717000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1718000,
+        "end_ms": 1720000,
+        "speaker_id": "speaker_7",
+        "text": "对，回来的时候儿坐一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1720000,
+        "end_ms": 1721000,
+        "speaker_id": "speaker_7",
+        "text": "玩儿累了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1721000,
+        "end_ms": 1726000,
+        "speaker_id": "speaker_3",
+        "text": "呃不愿意再在火车上再耗费精力时间了，咱们就可以坐飞机回来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1727000,
+        "end_ms": 1740000,
+        "speaker_id": "speaker_7",
+        "text": "就我想起让大家感受一下，因为现在绿皮火车也比较少，就是从咱这儿往云南坐，也就是&嗯&好像是两天到三天的时间，这你完全可以就享受一下这种感觉，就你在最后一节车轨你看那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1740000,
+        "end_ms": 1750000,
+        "speaker_id": "speaker_7",
+        "text": "铁轨也是特别有特别有一种事情，它让大家，对，让大家节奏慢一下儿，让你知道在路上就然后这种感觉怎样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1743000,
+        "end_ms": 1745000,
+        "speaker_id": "speaker_5",
+        "text": "另外的一种感觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1747000,
+        "end_ms": 1751000,
+        "speaker_id": "speaker_4",
+        "text": "好几天的时间是要考虑买卧铺吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1750000,
+        "end_ms": 1766000,
+        "speaker_id": "speaker_7",
+        "text": "那肯定是卧铺呀，对，你能看到那些那些不同地方的那些瓦房平顶的，还有那个斜顶的，然后那个山区，然后不同的山脉那种走向，还有那些地方特色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1751000,
+        "end_ms": 1754000,
+        "speaker_id": "speaker_3",
+        "text": "肯定是卧铺啊不可能坐着",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1751000,
+        "end_ms": 1753000,
+        "speaker_id": "speaker_6",
+        "text": "那肯定是要买",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1753000,
+        "end_ms": 1758000,
+        "speaker_id": "speaker_2",
+        "text": "让沿途的风景让咱们的工作人员尽收眼底的这种这种感觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1766000,
+        "end_ms": 1774000,
+        "speaker_id": "speaker_7",
+        "text": "就是大家一想每个地方就是建筑是一样的，但是其实地方特色，就比如说北方的平房，南方的尖房都是不一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1771000,
+        "end_ms": 1774000,
+        "speaker_id": "speaker_4",
+        "text": "它火车每到一个站然后都会给你做一个简单的介绍",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1774000,
+        "end_ms": 1781000,
+        "speaker_id": "speaker_4",
+        "text": "在火车上会给你播报我们会将进入哪个省，哪个城市，这个城市的文化，这个城市的历史",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1778000,
+        "end_ms": 1780000,
+        "speaker_id": "speaker_7",
+        "text": "对，火车都会报的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1782000,
+        "end_ms": 1785000,
+        "speaker_id": "speaker_4",
+        "text": "所所有的一切包括特色小吃，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1784000,
+        "end_ms": 1791000,
+        "speaker_id": "speaker_7",
+        "text": "对火车都会都会播报，所以我想让咱们的旅途过程，也能成为咱们整个旅途比较享受的一种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1791000,
+        "end_ms": 1802000,
+        "speaker_id": "speaker_3",
+        "text": "因为在公司竞争压力比较大嘛，而且生活节奏特别快，比方说晚上如果加班儿的话，回到家都没有时间放松，每天的人就是绷紧一根儿弦的在工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1801000,
+        "end_ms": 1803000,
+        "speaker_id": "speaker_7",
+        "text": "对，大家总是在匆匆忙忙的赶时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1803000,
+        "end_ms": 1807000,
+        "speaker_id": "speaker_3",
+        "text": "对，然后如果就是绿皮火车的话可以放松一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1804000,
+        "end_ms": 1807000,
+        "speaker_id": "speaker_4",
+        "text": "这样的话根据我们的人数儿我们可以包一节车厢啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1808000,
+        "end_ms": 1818000,
+        "speaker_id": "speaker_6",
+        "text": "对，这样儿可以考虑的，这样儿的话我们都可以在一块儿的话，对，然后呃平这你在车上的时候儿还可以谈谈心啊或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1809000,
+        "end_ms": 1810000,
+        "speaker_id": "speaker_7",
+        "text": "如果能",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1812000,
+        "end_ms": 1814000,
+        "speaker_id": "speaker_7",
+        "text": "对，也比较方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1814000,
+        "end_ms": 1814000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1815000,
+        "end_ms": 1824000,
+        "speaker_id": "speaker_4",
+        "text": "我知道有有有有一辆慢车，它就是旅游专线，呃包括在沙河这样的小城市就是县级市它都会停",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1824000,
+        "end_ms": 1829000,
+        "speaker_id": "speaker_4",
+        "text": "它都会停靠，呃我们可以建议坐这个车，这个车是最慢的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1829000,
+        "end_ms": 1837000,
+        "speaker_id": "speaker_7",
+        "text": "嗯，这个这个就要沟通了看可行不可行，毕竟因为咱们这旅游时间可能是，对，可能怕赶不上这个时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1834000,
+        "end_ms": 1835000,
+        "speaker_id": "speaker_6",
+        "text": "有限",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1835000,
+        "end_ms": 1842000,
+        "speaker_id": "speaker_4",
+        "text": "因为它它到它到从沙河到北京市它都需要五个多小时",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1843000,
+        "end_ms": 1851000,
+        "speaker_id": "speaker_6",
+        "text": "这个我们也考虑一下儿在车上呆好多天，啊这个人员有没有对，有没有不舒服啊或者什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1848000,
+        "end_ms": 1849000,
+        "speaker_id": "speaker_2",
+        "text": "会不会不方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1851000,
+        "end_ms": 1853000,
+        "speaker_id": "speaker_6",
+        "text": "这个考虑的也是比较",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1853000,
+        "end_ms": 1857000,
+        "speaker_id": "speaker_2",
+        "text": "这个可以就是咱们可以租用两名医护人员",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1857000,
+        "end_ms": 1869000,
+        "speaker_id": "speaker_7",
+        "text": "对，随行的医护人员。对，我们去一些比较偏的地方的时候，可以，对一些小伤可以自行处理，就不用每到一个地方都要去找医院这样这是比较麻烦的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1858000,
+        "end_ms": 1859000,
+        "speaker_id": "speaker_2",
+        "text": "随行医护人员",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1860000,
+        "end_ms": 1865000,
+        "speaker_id": "speaker_6",
+        "text": "比方我们出行有人受伤可以及时医治一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1871000,
+        "end_ms": 1873000,
+        "speaker_id": "speaker_6",
+        "text": "对，这是一方面。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1873000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_4",
+        "text": "然后我们呃出行的话必备一些常用的药品，比如说感冒的呀或者是消炎的呀止止血的呀，包括创可贴呀这一类的东西我们要带带着，嗯，还有一些呃防蚊的驱虫的，这这些清凉油儿这一类的，呃风油精的这这些东西我们要多备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1892000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_7",
+        "text": "这个这个肯定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1893000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_4",
+        "text": "包括酒精",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1895000,
+        "end_ms": 1900000,
+        "speaker_id": "speaker_7",
+        "text": "对，这个点儿都要考虑在内，还有个人个人，有一些人，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1896000,
+        "end_ms": 1899000,
+        "speaker_id": "speaker_3",
+        "text": "就是随身携带可以带一些简单的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1898000,
+        "end_ms": 1917000,
+        "speaker_id": "speaker_4",
+        "text": "我们就带一个那个就像医生护士带带的那那个那个叫箱，急救箱，我们要带一个所有东西都在里面，呃不管我们同行的人员中谁呃划伤了或或或者，对，直接去里边拿就可以了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1903000,
+        "end_ms": 1906000,
+        "speaker_id": "speaker_3",
+        "text": "医疗医疗箱啊，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1912000,
+        "end_ms": 1915000,
+        "speaker_id": "speaker_6",
+        "text": "这个需要的我们都有准备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1916000,
+        "end_ms": 1927000,
+        "speaker_id": "speaker_7",
+        "text": "对，还有员工个人身体问题，比如说他可能就是心脏有些不好，身体有些不好咱们都要提前把这个征集出来了，不必要的一些情况我们能规避就规避掉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1923000,
+        "end_ms": 1926000,
+        "speaker_id": "speaker_6",
+        "text": "对这个都要各部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1927000,
+        "end_ms": 1931000,
+        "speaker_id": "speaker_6",
+        "text": "对这个这个事情各部门回去就调查一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1929000,
+        "end_ms": 1945000,
+        "speaker_id": "speaker_4",
+        "text": "包括这就上下上中下铺的安排，呃就是五十岁以以上的或者五十岁左右的人，我们都通通安排在下铺，然后青年人可以住中铺或者上铺，所以嗯这样儿要提前安排，别最后没有安排的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1945000,
+        "end_ms": 1952000,
+        "speaker_id": "speaker_4",
+        "text": "呃年轻人住下铺，老年人要要往上面爬，就是很不方便，作为老年人的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1950000,
+        "end_ms": 1969000,
+        "speaker_id": "speaker_7",
+        "text": "如果咱们自己人的话，其实你车票不管怎么订，你到时候跟你自行换铺，大家毕竟一个公司我觉得其实比较好说话的，我们前期如果按人按铺买可能就是工作量比较大，我们就直接就是对一人一票先把这个地方咱们占住，咱们再回去分一下儿前期分的话可能工作量有点儿太大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1957000,
+        "end_ms": 1958000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1961000,
+        "end_ms": 1963000,
+        "speaker_id": "speaker_5",
+        "text": "考虑一群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1970000,
+        "end_ms": 1972000,
+        "speaker_id": "speaker_3",
+        "text": "嗯，这个可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1973000,
+        "end_ms": 1979000,
+        "speaker_id": "speaker_1",
+        "text": "行。嗯咱们讨论了这么多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1980000,
+        "end_ms": 1992000,
+        "speaker_id": "speaker_1",
+        "text": "嗯咱们准备这个去的地方，咱们要做一个具体的这个这方面的一个计划，整个流程，咱们十五天，这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1993000,
+        "end_ms": 1999000,
+        "speaker_id": "speaker_1",
+        "text": "整个流程一定要，总监这边儿一定要，最主要的就是注意安全，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1999000,
+        "end_ms": 2000000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 2000000,
+        "end_ms": 2002000,
+        "speaker_id": "speaker_1",
+        "text": "安全问题一定要考虑到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 2002000,
+        "end_ms": 2007000,
+        "speaker_id": "speaker_1",
+        "text": "嗯，其他这边儿我这边儿没有什么问题，你们还有问题吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 2007000,
+        "end_ms": 2008000,
+        "speaker_id": "speaker_6",
+        "text": "没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 2007000,
+        "end_ms": 2008000,
+        "speaker_id": "speaker_5",
+        "text": "没了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 2008000,
+        "end_ms": 2009000,
+        "speaker_id": "speaker_2",
+        "text": "没有问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 2009000,
+        "end_ms": 2013000,
+        "speaker_id": "speaker_1",
+        "text": "没有问题那咱本场会议就先到此结束",
+        "status": "ok"
+      }
+    ]
+  }
+}

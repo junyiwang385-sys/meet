@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:58:06.3405139Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"task\": \"明确大公司与小公司的界定标准\",\n  \"owner\": null,\n  \"deadline\": null,\n  \"refs\": [\n    \"r12\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1247142700,
+  "load_duration": 1073600,
+  "prompt_eval_count": 877,
+  "prompt_eval_duration": 168859000,
+  "eval_count": 42,
+  "eval_duration": 552068000
+}

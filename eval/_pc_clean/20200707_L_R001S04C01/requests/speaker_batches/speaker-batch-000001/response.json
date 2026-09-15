@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:44:16.6536989Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"speakers\": [\n    {\n      \"speaker_id\": \"sp3\",\n      \"overview\": \"sp3 询问了疫情期间学校开销、设备维修、安保安排、学生费用退费、食堂运营、宿舍管理、军训安排、社团活动等具体问题，并要求教务处和财务部提供相关方案和报表\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 6434371500,
+  "load_duration": 1576300,
+  "prompt_eval_count": 13465,
+  "prompt_eval_duration": 4735649000,
+  "eval_count": 78,
+  "eval_duration": 1548451000
+}

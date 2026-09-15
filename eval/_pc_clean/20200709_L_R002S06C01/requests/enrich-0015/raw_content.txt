@@ -1,0 +1,52 @@
+{
+  "decisions": [
+    {
+      "decision": "将背包放入储藏柜",
+      "problem": "顾客携带背包可能被发现",
+      "options": [],
+      "rationale": "受温度影响，背包问题需要控制，需放入储藏柜",
+      "owner": "",
+      "turn_ids": [155]
+    },
+    {
+      "decision": "对顾客进行摸身检查",
+      "problem": "进店时的仪器扫描和保安搜身",
+      "options": [],
+      "rationale": "避免使用‘搜身’等敏感词汇，改用‘摸身’进行人身检查",
+      "owner": "",
+      "turn_ids": [162]
+    },
+    {
+      "decision": "保安需加大店内巡逻力度，及时制止顾客闹事行为",
+      "problem": "店内顾客可能闹事",
+      "options": [],
+      "rationale": "保安需有眼力劲儿，识别并制止可能闹事的顾客",
+      "owner": "",
+      "turn_ids": [171]
+    },
+    {
+      "decision": "发现店内吸食毒品者立即控制并报警",
+      "problem": "毒品管控",
+      "options": [],
+      "rationale": "及时处理吸食毒品的顾客，防止事态扩大",
+      "owner": "",
+      "turn_ids": [177]
+    },
+    {
+      "decision": "营销部需明确散台和卡座数量",
+      "problem": "营销部对散台和卡座数量的了解",
+      "options": [],
+      "rationale": "卡座约15个，散台约11-12个",
+      "owner": "",
+      "turn_ids": [185]
+    },
+    {
+      "decision": "营销部需分析不同顾客群体的消费习惯",
+      "problem": "顾客消费习惯差异",
+      "options": [],
+      "rationale": "不同顾客（如谈客户、学生）消费习惯不同，影响套餐选择",
+      "owner": "",
+      "turn_ids": [198]
+    }
+  ]
+}

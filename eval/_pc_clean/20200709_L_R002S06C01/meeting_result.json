@@ -1,0 +1,4818 @@
+{
+  "meeting": {
+    "meeting_id": "20200709_L_R002S06C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 533,
+    "nonempty_segment_count": 531,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 27000,
+        "end_ms": 30000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是总经理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 30000,
+        "end_ms": 32000,
+        "speaker_id": "speaker_2",
+        "text": "零二六我是安保",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 32000,
+        "end_ms": 33000,
+        "speaker_id": "speaker_3",
+        "text": "零二二我是董事长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 34000,
+        "end_ms": 35000,
+        "speaker_id": "speaker_4",
+        "text": "零幺九保洁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 35000,
+        "end_ms": 37000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是营销",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 37000,
+        "end_ms": 38000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是人力",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 38000,
+        "end_ms": 41000,
+        "speaker_id": "speaker_7",
+        "text": "零幺四我是财务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 43000,
+        "end_ms": 49000,
+        "speaker_id": "speaker_3",
+        "text": "嗯嗯好今天咱们开就是就上个季度的销售情况咱们来开一场会议",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 49000,
+        "end_ms": 54000,
+        "speaker_id": "speaker_3",
+        "text": "就是咱们这个嗯泰坦泰坦酒吧的销售儿情况哈",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 54000,
+        "end_ms": 59000,
+        "speaker_id": "speaker_3",
+        "text": "首先我先问一下儿咱们这个人事部就是咱们最近",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 59000,
+        "end_ms": 63000,
+        "speaker_id": "speaker_3",
+        "text": "呃请到的这些DJ有哪些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 64000,
+        "end_ms": 68000,
+        "speaker_id": "speaker_3",
+        "text": "就是嗯他们受过那些专业的培训吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 68000,
+        "end_ms": 73000,
+        "speaker_id": "speaker_6",
+        "text": "对我们这个呃过一段时间定期就会比如说每周六日",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 73000,
+        "end_ms": 82000,
+        "speaker_id": "speaker_6",
+        "text": "会请一些百大DJ呃会提前两三个星期就会跟他们询问他们这个时间安排情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 76000,
+        "end_ms": 76000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 82000,
+        "end_ms": 87000,
+        "speaker_id": "speaker_6",
+        "text": "然后是否可以到店，然后几点到店，和他们进行一些协商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 87000,
+        "end_ms": 93000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们播放的内容是每天都有都有变化吗？还是说每天都在重复一部分的内容",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 93000,
+        "end_ms": 99000,
+        "speaker_id": "speaker_6",
+        "text": "我们这个是每天不是一样的，我们会有固定的几个呃曲子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 96000,
+        "end_ms": 96000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 99000,
+        "end_ms": 103000,
+        "speaker_id": "speaker_6",
+        "text": "每天都会换呃每天都会换不一样的风格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 103000,
+        "end_ms": 104000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 104000,
+        "end_ms": 106000,
+        "speaker_id": "speaker_6",
+        "text": "这个也根据我们请来的那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 105000,
+        "end_ms": 107000,
+        "speaker_id": "speaker_1",
+        "text": "咱顾客这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 107000,
+        "end_ms": 109000,
+        "speaker_id": "speaker_1",
+        "text": "这个看法是一个什么样的看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 109000,
+        "end_ms": 114000,
+        "speaker_id": "speaker_6",
+        "text": "我们顾客对这方面的看法一定是很满意的，因为如果你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 114000,
+        "end_ms": 123000,
+        "speaker_id": "speaker_6",
+        "text": "经常放一样的话，每天都一样的话，也是会对一些经常来的这些顾客有一些厌倦感我们是为了增加这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 121000,
+        "end_ms": 121000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 123000,
+        "end_ms": 128000,
+        "speaker_id": "speaker_6",
+        "text": "呃新鲜感，所以就制定制制制作了一一系列的这个曲子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 128000,
+        "end_ms": 131000,
+        "speaker_id": "speaker_1",
+        "text": "就是安排好了周周一到周日",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 130000,
+        "end_ms": 131000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 131000,
+        "end_ms": 135000,
+        "speaker_id": "speaker_6",
+        "text": "周一到周日呃里面有五套",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 132000,
+        "end_ms": 132000,
+        "speaker_id": "speaker_1",
+        "text": "周日",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 134000,
+        "end_ms": 135000,
+        "speaker_id": "speaker_1",
+        "text": "七天是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 135000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_6",
+        "text": "然后哪一天用哪一套都是制定好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 138000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_1",
+        "text": "制定好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 138000,
+        "end_ms": 139000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 139000,
+        "end_ms": 139000,
+        "speaker_id": "speaker_1",
+        "text": "嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 139000,
+        "end_ms": 140000,
+        "speaker_id": "speaker_3",
+        "text": "那那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 140000,
+        "end_ms": 144000,
+        "speaker_id": "speaker_3",
+        "text": "呃营销部咱们这个顾客的反馈啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 144000,
+        "end_ms": 151000,
+        "speaker_id": "speaker_3",
+        "text": "就是咱们所请到的DJ是否能够嗯抓住这个带动带动氛围",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 152000,
+        "end_ms": 154000,
+        "speaker_id": "speaker_5",
+        "text": "呃可以因为他们请的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 153000,
+        "end_ms": 154000,
+        "speaker_id": "speaker_3",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 154000,
+        "end_ms": 156000,
+        "speaker_id": "speaker_3",
+        "text": "嗯你说你先说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 156000,
+        "end_ms": 160000,
+        "speaker_id": "speaker_5",
+        "text": "因为他们请的这些DJ其实有很多现在都是网上特别有名气的那些DJ",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 161000,
+        "end_ms": 169000,
+        "speaker_id": "speaker_5",
+        "text": "因为他们的粉丝数量就比较多，他们在网上的需求也很大他们每次来之前都会有许多在网上提前的预告",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 169000,
+        "end_ms": 170000,
+        "speaker_id": "speaker_5",
+        "text": "所以因为这些然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 170000,
+        "end_ms": 173000,
+        "speaker_id": "speaker_1",
+        "text": "就很带动咱们这个这边儿的消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 173000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 173000,
+        "end_ms": 178000,
+        "speaker_id": "speaker_5",
+        "text": "对很多人就会咨询就会提前咨询我们就是说呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 174000,
+        "end_ms": 175000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 178000,
+        "end_ms": 182000,
+        "speaker_id": "speaker_5",
+        "text": "哪天就是有时间，然后让我们给他安排一个位置",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 182000,
+        "end_ms": 183000,
+        "speaker_id": "speaker_3",
+        "text": "嗯好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 183000,
+        "end_ms": 190000,
+        "speaker_id": "speaker_4",
+        "text": "其实我倒有一个疑问呃说周一到周日呃就是固定的，如果有的人就是周末来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 186000,
+        "end_ms": 187000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 188000,
+        "end_ms": 189000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 190000,
+        "end_ms": 193000,
+        "speaker_id": "speaker_4",
+        "text": "他会不会每次来都听到同样的对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 191000,
+        "end_ms": 193000,
+        "speaker_id": "speaker_1",
+        "text": "每次来都听",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 193000,
+        "end_ms": 196000,
+        "speaker_id": "speaker_6",
+        "text": "不是这个我们周六日的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 196000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_6",
+        "text": "是其实是请一些嘉宾的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 198000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 198000,
+        "end_ms": 203000,
+        "speaker_id": "speaker_6",
+        "text": "请一些DJ到现场的这个DJ他们用的曲子是一定不会一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 203000,
+        "end_ms": 203000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 203000,
+        "end_ms": 206000,
+        "speaker_id": "speaker_5",
+        "text": "就说每人即兴发挥的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 205000,
+        "end_ms": 213000,
+        "speaker_id": "speaker_6",
+        "text": "对对我们这个都是提前协商好的而且我们制定的这个计划是一周制定一次的不是说就每天都这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 210000,
+        "end_ms": 211000,
+        "speaker_id": "speaker_2",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 212000,
+        "end_ms": 213000,
+        "speaker_id": "speaker_2",
+        "text": "每周有一个是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 213000,
+        "end_ms": 214000,
+        "speaker_id": "speaker_1",
+        "text": "每个月",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 213000,
+        "end_ms": 214000,
+        "speaker_id": "speaker_2",
+        "text": "啊啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 214000,
+        "end_ms": 216000,
+        "speaker_id": "speaker_1",
+        "text": "好一直这样重复的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 216000,
+        "end_ms": 217000,
+        "speaker_id": "speaker_6",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 217000,
+        "end_ms": 220000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是这个上季度咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 220000,
+        "end_ms": 228000,
+        "speaker_id": "speaker_3",
+        "text": "酒吧里面有这种那个喝多以后酒后闹事的情况，我想问一下咱们保安部是怎么处理的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 229000,
+        "end_ms": 233000,
+        "speaker_id": "speaker_2",
+        "text": "酒后闹事协商肯定是协商不了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 233000,
+        "end_ms": 237000,
+        "speaker_id": "speaker_2",
+        "text": "因为他都喝多了咱进行调节协商不了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 234000,
+        "end_ms": 236000,
+        "speaker_id": "speaker_3",
+        "text": "对啊肯定是协商不了，来的都是一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 238000,
+        "end_ms": 242000,
+        "speaker_id": "speaker_2",
+        "text": "我们会就是有一个区域休息区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 240000,
+        "end_ms": 242000,
+        "speaker_id": "speaker_3",
+        "text": "就是你们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 242000,
+        "end_ms": 252000,
+        "speaker_id": "speaker_3",
+        "text": "你们有没有就是说呃设门禁呀就是有那种专门扫描的系统，就是防止他们进来带一些管制刀具",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 252000,
+        "end_ms": 253000,
+        "speaker_id": "speaker_2",
+        "text": "有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 253000,
+        "end_ms": 254000,
+        "speaker_id": "speaker_3",
+        "text": "有是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 253000,
+        "end_ms": 256000,
+        "speaker_id": "speaker_2",
+        "text": "不过但是还是有带进来的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 256000,
+        "end_ms": 257000,
+        "speaker_id": "speaker_3",
+        "text": "还是有进来为什么呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 257000,
+        "end_ms": 259000,
+        "speaker_id": "speaker_2",
+        "text": "因为它不属于金属物品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 259000,
+        "end_ms": 260000,
+        "speaker_id": "speaker_3",
+        "text": "不属于金属物品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 260000,
+        "end_ms": 267000,
+        "speaker_id": "speaker_2",
+        "text": "像一些什么修饰过的木刀子和一些塑料刀子，也是可以造对人身造成伤害的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 267000,
+        "end_ms": 271000,
+        "speaker_id": "speaker_3",
+        "text": "那我觉得咱们可以对顾客进行搜身呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 271000,
+        "end_ms": 276000,
+        "speaker_id": "speaker_2",
+        "text": "那你不就是侵权了吗侵犯人家人身那个什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 273000,
+        "end_ms": 274000,
+        "speaker_id": "speaker_3",
+        "text": "有有不就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 276000,
+        "end_ms": 277000,
+        "speaker_id": "speaker_3",
+        "text": "就是咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 276000,
+        "end_ms": 279000,
+        "speaker_id": "speaker_6",
+        "text": "对我们这个酒吧应该制定一个相应的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 277000,
+        "end_ms": 279000,
+        "speaker_id": "speaker_5",
+        "text": "你那个不行对我们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 280000,
+        "end_ms": 286000,
+        "speaker_id": "speaker_6",
+        "text": "相应的规章制度，就是进门在门口的时候不仅要检查一下儿有没有金属材料也应该",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 287000,
+        "end_ms": 290000,
+        "speaker_id": "speaker_6",
+        "text": "呃顺势摸一下身，我觉得这是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 289000,
+        "end_ms": 292000,
+        "speaker_id": "speaker_3",
+        "text": "啊就是不是说搜身就是摸一下儿摸一下口袋里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 290000,
+        "end_ms": 291000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 291000,
+        "end_ms": 293000,
+        "speaker_id": "speaker_7",
+        "text": "这个不太好吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 292000,
+        "end_ms": 294000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 293000,
+        "end_ms": 294000,
+        "speaker_id": "speaker_2",
+        "text": "这个如",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 294000,
+        "end_ms": 301000,
+        "speaker_id": "speaker_3",
+        "text": "这个是别的酒吧里都有这种都有这种这个模式的都是为了咱们那个店内的顾客着想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 300000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_1",
+        "text": "对为了大家所着想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 302000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 302000,
+        "end_ms": 303000,
+        "speaker_id": "speaker_3",
+        "text": "因为咱们毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 303000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_3",
+        "text": "这种咱们这种营销的模式就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 303000,
+        "end_ms": 304000,
+        "speaker_id": "speaker_6",
+        "text": "进出这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 305000,
+        "end_ms": 309000,
+        "speaker_id": "speaker_6",
+        "text": "进出这种人鱼混杂的场所我觉得应该有这个安全保障",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 307000,
+        "end_ms": 311000,
+        "speaker_id": "speaker_3",
+        "text": "对因为比较乱那个什么而且就是容易出事儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 310000,
+        "end_ms": 312000,
+        "speaker_id": "speaker_7",
+        "text": "那安保部门应该招几个女士",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 313000,
+        "end_ms": 314000,
+        "speaker_id": "speaker_3",
+        "text": "这也是需需要女士的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 313000,
+        "end_ms": 314000,
+        "speaker_id": "speaker_1",
+        "text": "嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 314000,
+        "end_ms": 318000,
+        "speaker_id": "speaker_7",
+        "text": "现在咱还没有女保安呢我觉得应该招一点，因为这个问题有点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 318000,
+        "end_ms": 325000,
+        "speaker_id": "speaker_1",
+        "text": "对这个刚才呃咱们呃这边儿说这个搜身这一块",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 325000,
+        "end_ms": 329000,
+        "speaker_id": "speaker_1",
+        "text": "嗯除了还有别的方法吗？这一块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 329000,
+        "end_ms": 333000,
+        "speaker_id": "speaker_2",
+        "text": "因为我们这个最近发现有的女性嘛她会把一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 333000,
+        "end_ms": 339000,
+        "speaker_id": "speaker_2",
+        "text": "像一些毒品啊或一些摇头丸之类藏在一些就是搜身发现不了的一些位置",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 339000,
+        "end_ms": 343000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们的这个嗯门禁那里都会扫描出来的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 344000,
+        "end_ms": 345000,
+        "speaker_id": "speaker_7",
+        "text": "这个你扫描不出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 345000,
+        "end_ms": 348000,
+        "speaker_id": "speaker_2",
+        "text": "这个东西没有热量它扫描不出来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 345000,
+        "end_ms": 346000,
+        "speaker_id": "speaker_3",
+        "text": "不可以吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 346000,
+        "end_ms": 347000,
+        "speaker_id": "speaker_7",
+        "text": "当然不可能",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 348000,
+        "end_ms": 351000,
+        "speaker_id": "speaker_1",
+        "text": "所以咱要加加大对这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 349000,
+        "end_ms": 351000,
+        "speaker_id": "speaker_6",
+        "text": "那这个情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 351000,
+        "end_ms": 353000,
+        "speaker_id": "speaker_1",
+        "text": "监管知道吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 353000,
+        "end_ms": 354000,
+        "speaker_id": "speaker_6",
+        "text": "就店内的巡逻",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 354000,
+        "end_ms": 356000,
+        "speaker_id": "speaker_1",
+        "text": "对店内的巡逻这一块",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 354000,
+        "end_ms": 356000,
+        "speaker_id": "speaker_3",
+        "text": "店内的巡逻",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 356000,
+        "end_ms": 358000,
+        "speaker_id": "speaker_3",
+        "text": "嗯行如果如果发现有这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 356000,
+        "end_ms": 357000,
+        "speaker_id": "speaker_1",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 358000,
+        "end_ms": 359000,
+        "speaker_id": "speaker_1",
+        "text": "立马咱就报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 359000,
+        "end_ms": 366000,
+        "speaker_id": "speaker_3",
+        "text": "对使用这种摇头丸呀还有就是使用这种笑气呀打气球的这种行为，咱们都要进行管控",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 360000,
+        "end_ms": 360000,
+        "speaker_id": "speaker_2",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 366000,
+        "end_ms": 368000,
+        "speaker_id": "speaker_3",
+        "text": "就是及时报警，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 369000,
+        "end_ms": 373000,
+        "speaker_id": "speaker_2",
+        "text": "先要把这个涉嫌售卖毒品的这个人控制起来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 373000,
+        "end_ms": 375000,
+        "speaker_id": "speaker_3",
+        "text": "对先控制起来，然后再报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 375000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得还有一个方法就是刚刚考虑那个搜身的问题嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 378000,
+        "end_ms": 389000,
+        "speaker_id": "speaker_6",
+        "text": "或者这个物品毒品啊或者什么会带到我们场所里面，我觉得有一个方法是我们可以在进入这个大厅之前在外面设立一个小的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 389000,
+        "end_ms": 394000,
+        "speaker_id": "speaker_6",
+        "text": "呃放置物品的一个区域，把你的所有物品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 391000,
+        "end_ms": 392000,
+        "speaker_id": "speaker_3",
+        "text": "就是那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 394000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_6",
+        "text": "呃只可以带着手机进去我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 396000,
+        "end_ms": 399000,
+        "speaker_id": "speaker_3",
+        "text": "只只带贵重物品，就是那些乱七八",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 398000,
+        "end_ms": 398000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 398000,
+        "end_ms": 400000,
+        "speaker_id": "speaker_7",
+        "text": "储物柜是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 400000,
+        "end_ms": 401000,
+        "speaker_id": "speaker_3",
+        "text": "对储藏柜",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 401000,
+        "end_ms": 401000,
+        "speaker_id": "speaker_6",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 401000,
+        "end_ms": 403000,
+        "speaker_id": "speaker_2",
+        "text": "那那他不放毒品怎么办啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 403000,
+        "end_ms": 404000,
+        "speaker_id": "speaker_7",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 404000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_7",
+        "text": "就是你你不可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 405000,
+        "end_ms": 409000,
+        "speaker_id": "speaker_3",
+        "text": "所以所以就是嗯制定重重关卡吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 410000,
+        "end_ms": 417000,
+        "speaker_id": "speaker_3",
+        "text": "首先就是先把东西不让就是尽量包裹，就是包那个背的包啊这些东西背包儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 414000,
+        "end_ms": 419000,
+        "speaker_id": "speaker_6",
+        "text": "背的包儿或者外套儿或者外套都不可以携带进去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 416000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_4",
+        "text": "像超市那样可以呃储物柜就是超市那样的拿拿拿代码呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 420000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_3",
+        "text": "对把那个不可以不可以携带背包",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 423000,
+        "end_ms": 424000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 424000,
+        "end_ms": 427000,
+        "speaker_id": "speaker_6",
+        "text": "或者穿戴外套儿，这样不不不容易发现",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 426000,
+        "end_ms": 429000,
+        "speaker_id": "speaker_3",
+        "text": "呃外套儿外套儿就是如果说这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 430000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_3",
+        "text": "受温度影响啊，这个咱们可以不不控制，就是主要是这个背包问题，咱们要放到储藏这个储藏柜里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 436000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_2",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 436000,
+        "end_ms": 437000,
+        "speaker_id": "speaker_3",
+        "text": "这是第一道关卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 437000,
+        "end_ms": 437000,
+        "speaker_id": "speaker_2",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 437000,
+        "end_ms": 441000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是进店的时候儿那个仪器上的扫描",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 441000,
+        "end_ms": 442000,
+        "speaker_id": "speaker_2",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 441000,
+        "end_ms": 443000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是保安的搜身",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 443000,
+        "end_ms": 448000,
+        "speaker_id": "speaker_3",
+        "text": "不能说搜身吧搜身太难听了，就是这个摸身对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 447000,
+        "end_ms": 448000,
+        "speaker_id": "speaker_1",
+        "text": "是是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 448000,
+        "end_ms": 450000,
+        "speaker_id": "speaker_7",
+        "text": "更难听了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 449000,
+        "end_ms": 450000,
+        "speaker_id": "speaker_2",
+        "text": "",
+        "status": "transcript_empty"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 449000,
+        "end_ms": 450000,
+        "speaker_id": "speaker_4",
+        "text": "",
+        "status": "transcript_empty"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 450000,
+        "end_ms": 452000,
+        "speaker_id": "speaker_3",
+        "text": "主要是对这个人身进行检查嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 452000,
+        "end_ms": 454000,
+        "speaker_id": "speaker_1",
+        "text": "对是这一块",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 453000,
+        "end_ms": 453000,
+        "speaker_id": "speaker_3",
+        "text": "是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 455000,
+        "end_ms": 464000,
+        "speaker_id": "speaker_3",
+        "text": "这是第二道工序第三道第三道这个那个工序就是咱们的保安需要加大巡逻店内的巡逻力度，就是防止",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 465000,
+        "end_ms": 471000,
+        "speaker_id": "speaker_3",
+        "text": "就是你们也要有一些眼力劲儿，明白吗？就是看哪些顾客像是像喝多了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 473000,
+        "end_ms": 481000,
+        "speaker_id": "speaker_3",
+        "text": "就是有点儿那种闹事的闹事的那种这个比如说已经骂起来了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 476000,
+        "end_ms": 477000,
+        "speaker_id": "speaker_4",
+        "text": "情绪像",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 478000,
+        "end_ms": 478000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 481000,
+        "end_ms": 482000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 482000,
+        "end_ms": 484000,
+        "speaker_id": "speaker_3",
+        "text": "对吧？这都要及时制止的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 484000,
+        "end_ms": 494000,
+        "speaker_id": "speaker_3",
+        "text": "还有还有就是这个毒品管控的情况，如果有发现在在我们店内吸食毒品的，我们都要及时先把人员控制起来并报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 494000,
+        "end_ms": 495000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 494000,
+        "end_ms": 495000,
+        "speaker_id": "speaker_2",
+        "text": "好吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 495000,
+        "end_ms": 496000,
+        "speaker_id": "speaker_2",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 496000,
+        "end_ms": 498000,
+        "speaker_id": "speaker_1",
+        "text": "你还要积极的配合警察的工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 498000,
+        "end_ms": 500000,
+        "speaker_id": "speaker_3",
+        "text": "对还要积极配合警察的工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 500000,
+        "end_ms": 500000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 501000,
+        "end_ms": 508000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是这个这个营销部，咱们现在是有多少个散台，多少个卡座？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 509000,
+        "end_ms": 516000,
+        "speaker_id": "speaker_5",
+        "text": "卡座大概有十五个，然后散台大概在也是十十一二个左右",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 511000,
+        "end_ms": 512000,
+        "speaker_id": "speaker_3",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 517000,
+        "end_ms": 519000,
+        "speaker_id": "speaker_3",
+        "text": "那平每天这个都可以坐满吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 520000,
+        "end_ms": 534000,
+        "speaker_id": "speaker_5",
+        "text": "不是像周一到周，呃像周一到周五的时候，因为其实这个时间大家都在上班，所以出来娱乐的人会比较少。像这种情况下，周一到周五咱们的卡座和散台其实一般情况下只有一半的人数",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 529000,
+        "end_ms": 530000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 534000,
+        "end_ms": 535000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 534000,
+        "end_ms": 546000,
+        "speaker_id": "speaker_5",
+        "text": "就是一半，但是在周六周日和周五那天晚上，就是大家都会有周六日的节假日嘛，大家那天反正就会爆满，都是爆满就是卡座和散台几乎都有预定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 540000,
+        "end_ms": 540000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 542000,
+        "end_ms": 543000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 547000,
+        "end_ms": 548000,
+        "speaker_id": "speaker_3",
+        "text": "好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 549000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_3",
+        "text": "那么嗯营销情况就是，他们所点的物品啊就是所点的酒水啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 557000,
+        "end_ms": 559000,
+        "speaker_id": "speaker_3",
+        "text": "咱们这个销售情况呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 558000,
+        "end_ms": 562000,
+        "speaker_id": "speaker_5",
+        "text": "有不同的套餐，其实根据很多人定的，比如说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 562000,
+        "end_ms": 576000,
+        "speaker_id": "speaker_5",
+        "text": "一些人就是来谈客户的，他们会选择卡座，他们点的酒他们点的套餐也是比较多的，里面会含香槟和各种各种酒，但是你说如果就是说像学生嘛大学生他们出来玩",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 576000,
+        "end_ms": 590000,
+        "speaker_id": "speaker_5",
+        "text": "学生本身就没有很多的钱，他们不可能花一千一两千开一个卡座，他们也就会开一个散台，就花几百块钱几个人，平常大家一起平均分一下儿，他们点的套餐就是比较少，就是只有酒，比如说没有果盘之类",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 580000,
+        "end_ms": 581000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 585000,
+        "end_ms": 586000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 588000,
+        "end_ms": 590000,
+        "speaker_id": "speaker_3",
+        "text": "就是低价促销的那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 590000,
+        "end_ms": 596000,
+        "speaker_id": "speaker_5",
+        "text": "对没有果盘儿之类，针对不同层次不同的消费人群，然后我们有不同的套餐",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 591000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 596000,
+        "end_ms": 597000,
+        "speaker_id": "speaker_3",
+        "text": "那就是我们针对这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 598000,
+        "end_ms": 604000,
+        "speaker_id": "speaker_3",
+        "text": "充当大哥的行为就比如说他点了一个很贵的套餐，花了几万块钱点了一个比如说是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 604000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_3",
+        "text": "配套配套A啊这种情况就是套餐，然后他不喝",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 608000,
+        "end_ms": 609000,
+        "speaker_id": "speaker_5",
+        "text": "他不喝",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 609000,
+        "end_ms": 618000,
+        "speaker_id": "speaker_3",
+        "text": "对他不喝，他就是摆在面前就是一种嗯炫耀的方式吧，就是他花了一次的钱，然后他炫耀无数次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 618000,
+        "end_ms": 620000,
+        "speaker_id": "speaker_3",
+        "text": "就这种情况下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 619000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_6",
+        "text": "我们这边儿是不可以就每次来都是需要低消的，如果你是开那卡座的话对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 624000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_3",
+        "text": "啊需要低消的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 625000,
+        "end_ms": 628000,
+        "speaker_id": "speaker_5",
+        "text": "对咱们就是营销这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 626000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 627000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_3",
+        "text": "虽然说酒是他的但是他来还是需要付一定的进厂费的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 629000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 630000,
+        "end_ms": 634000,
+        "speaker_id": "speaker_6",
+        "text": "如果他酒买了之后一直在那放着，这属于他没有消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 630000,
+        "end_ms": 631000,
+        "speaker_id": "speaker_3",
+        "text": "还行吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 634000,
+        "end_ms": 635000,
+        "speaker_id": "speaker_3",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 636000,
+        "end_ms": 636000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 637000,
+        "end_ms": 647000,
+        "speaker_id": "speaker_3",
+        "text": "那就是还有咱们就是保洁部，呃咱们咱们这个酒吧肯因为是酒吧嘛肯定会有喝多喝吐的。咱们的卫生间有没有这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 647000,
+        "end_ms": 650000,
+        "speaker_id": "speaker_3",
+        "text": "嗯醒酒池啊不是醒酒筒什么的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 651000,
+        "end_ms": 660000,
+        "speaker_id": "speaker_4",
+        "text": "其实因为我们是夜店嘛呃跟一般的这个酒店呀，呃还有一些餐厅呢是不一样的，所以设呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 659000,
+        "end_ms": 660000,
+        "speaker_id": "speaker_3",
+        "text": "对营销模式跟他们不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 660000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 661000,
+        "end_ms": 674000,
+        "speaker_id": "speaker_4",
+        "text": "我们是设立了一定的数量。呃特别是我也对我们保洁的几几个大姐呃也经常跟她们谈心，因为在这儿喝多喝吐这种现象是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 663000,
+        "end_ms": 664000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 674000,
+        "end_ms": 677000,
+        "speaker_id": "speaker_4",
+        "text": "呃频繁的对比较频繁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 674000,
+        "end_ms": 675000,
+        "speaker_id": "speaker_3",
+        "text": "比较常见的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 675000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_3",
+        "text": "嗯是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 677000,
+        "end_ms": 684000,
+        "speaker_id": "speaker_4",
+        "text": "所以我们面对这些呃呕吐物呢，呃我们要及时的清理，呃保证",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 682000,
+        "end_ms": 683000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 684000,
+        "end_ms": 700000,
+        "speaker_id": "speaker_4",
+        "text": "呃这个不能说对这种异味儿，就是对嗯在在我们酒店里面儿就是在我们那个店里面呃蔓延，要及时的。其中说到及时清理呢我，其实我们就是不停的在呃夜店里面转呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 685000,
+        "end_ms": 688000,
+        "speaker_id": "speaker_3",
+        "text": "不会影响到其他其他其他顾客",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 699000,
+        "end_ms": 700000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 700000,
+        "end_ms": 701000,
+        "speaker_id": "speaker_3",
+        "text": "其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 700000,
+        "end_ms": 716000,
+        "speaker_id": "speaker_4",
+        "text": "你发发现一些垃圾的话，我们及时清理掉，其实最主要的就是发现这些酒酒醉的人，呃我们可能会给他们送上一杯水啊漱漱口啊，呃然后他们的呕吐物我们及时的清理掉，这一点大家做得还是不错的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 716000,
+        "end_ms": 729000,
+        "speaker_id": "speaker_4",
+        "text": "呃没有人说嗯啊恶心啊怎么呀，因为知道自己的工作性质就是这样儿，我们只就是呃家离得比较近的这几位大姐在这儿工作做兼职，嗯嗯所以呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 721000,
+        "end_ms": 722000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 727000,
+        "end_ms": 728000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 729000,
+        "end_ms": 731000,
+        "speaker_id": "speaker_4",
+        "text": "呃大家工作态度还是蛮好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 731000,
+        "end_ms": 741000,
+        "speaker_id": "speaker_3",
+        "text": "嗯工作态度还是蛮好的那平常就是咱们保洁部门都是上班时间都是几点来上班，比如说咱们酒吧是九点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 741000,
+        "end_ms": 746000,
+        "speaker_id": "speaker_3",
+        "text": "是需要所有部门的人员都到都到位的，因为我们十点就开始了嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 748000,
+        "end_ms": 753000,
+        "speaker_id": "speaker_4",
+        "text": "我们是八点八点之前全部到位因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 752000,
+        "end_ms": 754000,
+        "speaker_id": "speaker_3",
+        "text": "呃保洁部是到的比较早是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 753000,
+        "end_ms": 767000,
+        "speaker_id": "speaker_4",
+        "text": "对，我们必须是在大家就是上班上班之前要打扫干净的，因为可能头一天有一些呃细节部位，我们没有检查到的，我们要首先检查一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 767000,
+        "end_ms": 783000,
+        "speaker_id": "speaker_4",
+        "text": "呃把特别是像舞台台上的一些什么彩带啊一些呃那个呃就是人们在上面那个唱歌啊跳舞啊就是留下的一些东西呃嗯然后我首先把这个舞台清理出来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 783000,
+        "end_ms": 797000,
+        "speaker_id": "speaker_4",
+        "text": "然后把这个各个的卡卡座散台呃卫生清理一遍，用一个小时的时间，所以我们要提前比大家提前一个小时，八点之前我们都就到位了在大家进入场地之前我们要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 787000,
+        "end_ms": 789000,
+        "speaker_id": "speaker_1",
+        "text": "嗯就是要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 796000,
+        "end_ms": 798000,
+        "speaker_id": "speaker_1",
+        "text": "对咱们环境卫生一定要搞好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 798000,
+        "end_ms": 813000,
+        "speaker_id": "speaker_4",
+        "text": "对对对对呃因为进入夜店属于高消费嘛，所以也要在干净的环境下保证大家的卫生，然后每一个人进入我们的夜店都会耳目一新",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 808000,
+        "end_ms": 809000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 813000,
+        "end_ms": 818000,
+        "speaker_id": "speaker_4",
+        "text": "最最起码是在卫生方面是可以保证的，这个这一点没有问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 813000,
+        "end_ms": 814000,
+        "speaker_id": "speaker_3",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 817000,
+        "end_ms": 817000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 818000,
+        "end_ms": 822000,
+        "speaker_id": "speaker_3",
+        "text": "嗯保洁部这方面做得非常好的，大家可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 822000,
+        "end_ms": 824000,
+        "speaker_id": "speaker_3",
+        "text": "吸取这个学习一下儿工作经验吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 825000,
+        "end_ms": 836000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是说到这个上班，对说到这个上班问题啊，就是各部门有没有这种迟到的情况，还有就是针对迟到的情况大家是怎么处理的？就比如说每个月设置一下儿全勤奖",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 837000,
+        "end_ms": 843000,
+        "speaker_id": "speaker_3",
+        "text": "迟到了以后会扣除一些工资啊，或者就是没有得不到全勤奖这种情况，各部门有没有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 844000,
+        "end_ms": 858000,
+        "speaker_id": "speaker_5",
+        "text": "那营销部这边儿其实是没有大部分没有人迟到的，因为营销会在提前一两天把这个客户呃安排好，因为客户会在提前一两天要去的之前，就向我们营销咨询，然后让我们把台都定好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 844000,
+        "end_ms": 845000,
+        "speaker_id": "speaker_3",
+        "text": "什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 859000,
+        "end_ms": 869000,
+        "speaker_id": "speaker_5",
+        "text": "不会说等到那天去的时候没有地方所以如果他是如果客户要是来了，但是营销不在，这个业绩其实是不进入这个营销身上的，别的营销会替上去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 869000,
+        "end_ms": 877000,
+        "speaker_id": "speaker_5",
+        "text": "所以一般情况下没有特殊情况，就是营销是不会请假的就是说不会无缘无故把自己的那个业绩就是让给别人的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 873000,
+        "end_ms": 873000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 878000,
+        "end_ms": 896000,
+        "speaker_id": "speaker_4",
+        "text": "我们保洁这边呢其实不允许迟到的偶尔一次说谁比如说车子坏了坏坏在路上了需要维修，然后呃迟到的话，那么他会提前打电话给给当班儿的呃领领班儿给打电话，我我来晚一点，然后那么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 896000,
+        "end_ms": 901000,
+        "speaker_id": "speaker_4",
+        "text": "其他的人因为他的工作量，别人的工作量就会相应的增加",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 901000,
+        "end_ms": 907000,
+        "speaker_id": "speaker_4",
+        "text": "少了一个人，那么就呃两两个人的工作就是一个人干三人工作成两个人干了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 902000,
+        "end_ms": 903000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 907000,
+        "end_ms": 916000,
+        "speaker_id": "speaker_4",
+        "text": "那么别人就要呃加快速度去还是在一个小时之内要把这个工作完成，所以呃不允许迟到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 911000,
+        "end_ms": 912000,
+        "speaker_id": "speaker_3",
+        "text": "其它工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 913000,
+        "end_ms": 914000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 916000,
+        "end_ms": 924000,
+        "speaker_id": "speaker_4",
+        "text": "呃如果有个别情况呃迟到的话，他也他也会比如说我把车会锁在一个地方，然后打打车过来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 925000,
+        "end_ms": 939000,
+        "speaker_id": "speaker_4",
+        "text": "呃而且对于迟到的话，我们会相应的进行考核，呃对于呃一个月之内没有请假没有迟到的，我们也会有一个奖奖励的制度，虽然不多，但是也是对大家一个激励",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 939000,
+        "end_ms": 950000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是这个保洁部，咱们不能只能说不能说是等到所有的垃圾到了第二天，咱们开业前来清理，应该是咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 950000,
+        "end_ms": 951000,
+        "speaker_id": "speaker_4",
+        "text": "闭店",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 951000,
+        "end_ms": 952000,
+        "speaker_id": "speaker_3",
+        "text": "闭店以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 952000,
+        "end_ms": 953000,
+        "speaker_id": "speaker_4",
+        "text": "都清理了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 953000,
+        "end_ms": 956000,
+        "speaker_id": "speaker_3",
+        "text": "及时清理，不然的话经过一天的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 956000,
+        "end_ms": 957000,
+        "speaker_id": "speaker_4",
+        "text": "特别是夏天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 957000,
+        "end_ms": 960000,
+        "speaker_id": "speaker_3",
+        "text": "对特别是夏天就可能就没法呆了就没法呆了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 958000,
+        "end_ms": 959000,
+        "speaker_id": "speaker_4",
+        "text": "对就有味儿了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 959000,
+        "end_ms": 960000,
+        "speaker_id": "speaker_4",
+        "text": "嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 960000,
+        "end_ms": 970000,
+        "speaker_id": "speaker_4",
+        "text": "我们嗯我们第二天其实进场的时候，呃其实是呃做一些常规性的呃清理工作，就是一些保洁工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 960000,
+        "end_ms": 961000,
+        "speaker_id": "speaker_3",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 968000,
+        "end_ms": 969000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 970000,
+        "end_ms": 985000,
+        "speaker_id": "speaker_4",
+        "text": "但是所有的垃圾，特特别是一些酒类的，或者是其它的呃这些呃果皮呀这这一类的，是在闭店的时候都要把它清理出去，呃我们的规定就是垃圾日清",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 985000,
+        "end_ms": 989000,
+        "speaker_id": "speaker_4",
+        "text": "所有的垃圾桶在闭店的时候全部清理清空",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 990000,
+        "end_ms": 992000,
+        "speaker_id": "speaker_3",
+        "text": "嗯好的行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 992000,
+        "end_ms": 997000,
+        "speaker_id": "speaker_2",
+        "text": "还有我们这边儿安保部门是没有迟到的现现象，因为我们这边儿属于三班儿倒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 998000,
+        "end_ms": 1005000,
+        "speaker_id": "speaker_2",
+        "text": "它就算是属于闭店状态，我们也会安排在安保在店内进行休息",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1006000,
+        "end_ms": 1006000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1006000,
+        "end_ms": 1010000,
+        "speaker_id": "speaker_2",
+        "text": "因为防止一些什么贵重物品丢失像一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1011000,
+        "end_ms": 1021000,
+        "speaker_id": "speaker_3",
+        "text": "比如那些一些设备啊音响呀什么的其实有没有别的竞争，就是别的酒店的同行业的竞争者来捣乱，是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1012000,
+        "end_ms": 1013000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1013000,
+        "end_ms": 1015000,
+        "speaker_id": "speaker_2",
+        "text": "设备平常在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1020000,
+        "end_ms": 1021000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1021000,
+        "end_ms": 1032000,
+        "speaker_id": "speaker_3",
+        "text": "然后我们还要注意店内的消防还有一些线路问题，比方说线路老化的话，如果是请来的DJ在咱们台上进行表演",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1032000,
+        "end_ms": 1037000,
+        "speaker_id": "speaker_2",
+        "text": "就是带动观众情绪的时候如果线路老化发生了电火花摩擦事件",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1038000,
+        "end_ms": 1043000,
+        "speaker_id": "speaker_2",
+        "text": "那种引起火灾，这样的话就会对这些消费者们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1038000,
+        "end_ms": 1039000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1043000,
+        "end_ms": 1047000,
+        "speaker_id": "speaker_3",
+        "text": "就是设备维修这方面，你们保安部也会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1043000,
+        "end_ms": 1045000,
+        "speaker_id": "speaker_2",
+        "text": "嗯就是安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1047000,
+        "end_ms": 1052000,
+        "speaker_id": "speaker_2",
+        "text": "对，也会在闭店的时候儿进行就是整改或者检查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1050000,
+        "end_ms": 1051000,
+        "speaker_id": "speaker_3",
+        "text": "检查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1054000,
+        "end_ms": 1065000,
+        "speaker_id": "speaker_2",
+        "text": "然后我们这儿是处于三班儿倒的情况，他们没有什么迟到现象，然后他们只会但是不排除路上突发情情情况，就像刚才保洁部门说的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1065000,
+        "end_ms": 1073000,
+        "speaker_id": "speaker_2",
+        "text": "如果路上车子坏了话，突发情况，我们这个安保人员会就是稍微出一点力或者进行替班儿替班儿工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1065000,
+        "end_ms": 1066000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1073000,
+        "end_ms": 1077000,
+        "speaker_id": "speaker_3",
+        "text": "那你们部门有没有就是说设置一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1078000,
+        "end_ms": 1081000,
+        "speaker_id": "speaker_3",
+        "text": "呃迟到的罚款呀或者说全勤的奖项啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1081000,
+        "end_ms": 1083000,
+        "speaker_id": "speaker_3",
+        "text": "有没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1082000,
+        "end_ms": 1094000,
+        "speaker_id": "speaker_2",
+        "text": "我们是全勤的话是给给予一定的奖金，而且会就是公司开会时候会我们那个部门开会的时候就会跟他们说出来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1087000,
+        "end_ms": 1087000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1095000,
+        "end_ms": 1098000,
+        "speaker_id": "speaker_2",
+        "text": "点评一下儿。谁谁谁表现对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1097000,
+        "end_ms": 1098000,
+        "speaker_id": "speaker_3",
+        "text": "评选优秀员工是吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1098000,
+        "end_ms": 1103000,
+        "speaker_id": "speaker_2",
+        "text": "但是不会批评人，因为如果批评的话就会打击他们的积极性",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1104000,
+        "end_ms": 1106000,
+        "speaker_id": "speaker_2",
+        "text": "会对心理上产生一定的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1106000,
+        "end_ms": 1112000,
+        "speaker_id": "speaker_3",
+        "text": "不啊你设置这个奖设置这个全勤奖奖金就是在调动他们积极性他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1112000,
+        "end_ms": 1116000,
+        "speaker_id": "speaker_3",
+        "text": "因为他们自身的原因去迟到的话你不去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1115000,
+        "end_ms": 1121000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得赏罚严明才可以，不能说只只是去奖没有罚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1117000,
+        "end_ms": 1118000,
+        "speaker_id": "speaker_3",
+        "text": "对啊，你不去训斥他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1119000,
+        "end_ms": 1122000,
+        "speaker_id": "speaker_2",
+        "text": "其实如果是鼓励的话也就相当于是批评了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1123000,
+        "end_ms": 1125000,
+        "speaker_id": "speaker_2",
+        "text": "为什么他们有全勤奖你自己没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1125000,
+        "end_ms": 1127000,
+        "speaker_id": "speaker_3",
+        "text": "他毕竟表现不好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1125000,
+        "end_ms": 1133000,
+        "speaker_id": "speaker_6",
+        "text": "但是我觉得一些呃这个员工会有一些心理是侥幸心理，他觉得他自己很庆幸",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1128000,
+        "end_ms": 1128000,
+        "speaker_id": "speaker_4",
+        "text": "他会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1134000,
+        "end_ms": 1143000,
+        "speaker_id": "speaker_6",
+        "text": "就是自己没有被你说他，所以我觉得你还是要发现这个员工有一些问题，什么迟到或者什么方面的问题，一定要明确的指出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1142000,
+        "end_ms": 1143000,
+        "speaker_id": "speaker_3",
+        "text": "要及时去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1143000,
+        "end_ms": 1146000,
+        "speaker_id": "speaker_3",
+        "text": "那个指出他制止他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1144000,
+        "end_ms": 1145000,
+        "speaker_id": "speaker_6",
+        "text": "明确的指出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1145000,
+        "end_ms": 1149000,
+        "speaker_id": "speaker_4",
+        "text": "及时的去指正我觉得考核还是需要的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1149000,
+        "end_ms": 1151000,
+        "speaker_id": "speaker_1",
+        "text": "嗯销售这边呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1149000,
+        "end_ms": 1150000,
+        "speaker_id": "speaker_4",
+        "text": "否则的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1153000,
+        "end_ms": 1155000,
+        "speaker_id": "speaker_3",
+        "text": "营销这边营销这部分",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1157000,
+        "end_ms": 1160000,
+        "speaker_id": "speaker_3",
+        "text": "就是你们你们部门的这种迟到的情况啊怎么的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1161000,
+        "end_ms": 1164000,
+        "speaker_id": "speaker_1",
+        "text": "刚才你对刚才那个有什么样的看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1164000,
+        "end_ms": 1166000,
+        "speaker_id": "speaker_3",
+        "text": "对呀，比如说保安部门它们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1166000,
+        "end_ms": 1172000,
+        "speaker_id": "speaker_3",
+        "text": "就是嗯咱们的保安部部长就是觉得不愿意惩罚自己的员工，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1171000,
+        "end_ms": 1172000,
+        "speaker_id": "speaker_4",
+        "text": "他是鼓励型的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1172000,
+        "end_ms": 1178000,
+        "speaker_id": "speaker_3",
+        "text": "他是鼓励行为的，就是你们这儿如果说有这种迟到行为的话你们是怎么你是怎么处理的？对你手下的员工",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1178000,
+        "end_ms": 1185000,
+        "speaker_id": "speaker_5",
+        "text": "对我们手下那些营销，我觉得啊我觉得反正不能采取鼓励的措施",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1185000,
+        "end_ms": 1189000,
+        "speaker_id": "speaker_5",
+        "text": "因为你要是采取鼓励的措施，他不会把这件事重视起来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1189000,
+        "end_ms": 1197000,
+        "speaker_id": "speaker_5",
+        "text": "他会觉得呃有一次这样的错误，既然没有得到上面的就是批评，下次我还会抱着侥幸心理还会再犯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1189000,
+        "end_ms": 1190000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1197000,
+        "end_ms": 1197000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1197000,
+        "end_ms": 1202000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得如果这样的话，整个公司就是呃内部就已经开始垮了这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1202000,
+        "end_ms": 1203000,
+        "speaker_id": "speaker_3",
+        "text": "对开始",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1203000,
+        "end_ms": 1207000,
+        "speaker_id": "speaker_5",
+        "text": "人员都不行，别说自己公司内部的人员都不行，你别说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1208000,
+        "end_ms": 1222000,
+        "speaker_id": "speaker_5",
+        "text": "在团结起来去呃找客户干嘛我觉得呃还是要采取，比如说他迟到了，咱们要对他进行一定的批评，让他就是或者进行一定的罚款，第一次咱们可以就是批评，第二次如果还有这种情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1221000,
+        "end_ms": 1224000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得我们可以制定一个考核细则",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1224000,
+        "end_ms": 1229000,
+        "speaker_id": "speaker_4",
+        "text": "让大家有章可循，自己犯错误知道我我要得到怎样的惩罚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1225000,
+        "end_ms": 1226000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1229000,
+        "end_ms": 1232000,
+        "speaker_id": "speaker_5",
+        "text": "对第三次的话，如果还有咱们就罚双倍",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1232000,
+        "end_ms": 1240000,
+        "speaker_id": "speaker_5",
+        "text": "他们来咱们这儿工作大部分都是都也是为了挣钱，我觉得如果这样的话，他们可能会呃下次就是不会再犯这个错误",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1240000,
+        "end_ms": 1243000,
+        "speaker_id": "speaker_3",
+        "text": "主要还是以经济惩罚的方式",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1243000,
+        "end_ms": 1246000,
+        "speaker_id": "speaker_3",
+        "text": "因为谁工作不是为了挣那几块钱嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1243000,
+        "end_ms": 1244000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1246000,
+        "end_ms": 1246000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1246000,
+        "end_ms": 1247000,
+        "speaker_id": "speaker_3",
+        "text": "对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1247000,
+        "end_ms": 1251000,
+        "speaker_id": "speaker_3",
+        "text": "呃那咱们这个人事部就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1251000,
+        "end_ms": 1254000,
+        "speaker_id": "speaker_6",
+        "text": "人事部这边主要是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1254000,
+        "end_ms": 1257000,
+        "speaker_id": "speaker_6",
+        "text": "气氛组他们有没有按时到点儿然后有没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1254000,
+        "end_ms": 1255000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1257000,
+        "end_ms": 1261000,
+        "speaker_id": "speaker_3",
+        "text": "因为咱们气氛组这个比较多的都是年轻人嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1261000,
+        "end_ms": 1261000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1262000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_6",
+        "text": "找的都大概是呃呃十八岁到二十三岁中间。对这个年龄段的一些年轻人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1266000,
+        "end_ms": 1266000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1268000,
+        "end_ms": 1268000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1271000,
+        "end_ms": 1273000,
+        "speaker_id": "speaker_3",
+        "text": "但是这些年轻人他们就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1273000,
+        "end_ms": 1278000,
+        "speaker_id": "speaker_3",
+        "text": "比较浮躁嘛，可能不太听从你们的管理就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1275000,
+        "end_ms": 1288000,
+        "speaker_id": "speaker_6",
+        "text": "对因为我们酒吧，就是需要这些浮躁的人来活跃气氛。他们首先是有这个精力和这个活动量可以一直在上面一直蹦一晚上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1279000,
+        "end_ms": 1281000,
+        "speaker_id": "speaker_5",
+        "text": "带动气氛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1288000,
+        "end_ms": 1300000,
+        "speaker_id": "speaker_6",
+        "text": "是吧？三四个小时都没有问题，然后呃这个担心他们会不服从我们安排，这个事情是不用考虑的，因为我们首先呃会有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1300000,
+        "end_ms": 1311000,
+        "speaker_id": "speaker_6",
+        "text": "在来这里上班儿之前都会明确说出，呃如果有这个违法，我们不会违反我们的违反我们的这规章制度，我们都会有严格的惩罚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1313000,
+        "end_ms": 1319000,
+        "speaker_id": "speaker_6",
+        "text": "这个在一开始就会通知到，不会说到时候啊发生了一些情况之后说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1319000,
+        "end_ms": 1320000,
+        "speaker_id": "speaker_4",
+        "text": "提前已经告知了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1320000,
+        "end_ms": 1324000,
+        "speaker_id": "speaker_6",
+        "text": "对，我们提前已经通知了，你不要说你犯犯错之后我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1325000,
+        "end_ms": 1328000,
+        "speaker_id": "speaker_6",
+        "text": "扯训你或者什么你的时候，你现在说不知道",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1328000,
+        "end_ms": 1337000,
+        "speaker_id": "speaker_6",
+        "text": "就是没有这个情况，我们完全是因为我们是每天需要人会呃人数儿是不定的，所以我们完全可以在这一天把他解除",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1337000,
+        "end_ms": 1340000,
+        "speaker_id": "speaker_4",
+        "text": "嗯其实十八岁以上都已经是成年人了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1340000,
+        "end_ms": 1344000,
+        "speaker_id": "speaker_6",
+        "text": "对这一这一部分这一部分我们找的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1344000,
+        "end_ms": 1352000,
+        "speaker_id": "speaker_6",
+        "text": "人员都是一般是这个大学生或者想要来兼职的对，我们完全可以这一天的工资就没有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1347000,
+        "end_ms": 1349000,
+        "speaker_id": "speaker_3",
+        "text": "以兼职的方式噢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1352000,
+        "end_ms": 1355000,
+        "speaker_id": "speaker_6",
+        "text": "是以这样的形式，所以没有不说不听话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1354000,
+        "end_ms": 1357000,
+        "speaker_id": "speaker_3",
+        "text": "因为迟到就是一晚上都没有了吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1357000,
+        "end_ms": 1362000,
+        "speaker_id": "speaker_6",
+        "text": "不是你刚不是说太浮躁了，然后就是呃不不服从管理，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1361000,
+        "end_ms": 1363000,
+        "speaker_id": "speaker_3",
+        "text": "啊不服从管理啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1363000,
+        "end_ms": 1363000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1364000,
+        "end_ms": 1376000,
+        "speaker_id": "speaker_3",
+        "text": "好然后现在还有一个情况就是咱们是泰坦酒吧对吧？同行业的还有像这个M二酒吧呀，还有这个七娱乐酒呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1377000,
+        "end_ms": 1377000,
+        "speaker_id": "speaker_3",
+        "text": "这是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1377000,
+        "end_ms": 1378000,
+        "speaker_id": "speaker_6",
+        "text": "topone",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1378000,
+        "end_ms": 1383000,
+        "speaker_id": "speaker_3",
+        "text": "大家都是在竞争市场嘛，咱们凭什么就能胜出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1383000,
+        "end_ms": 1389000,
+        "speaker_id": "speaker_6",
+        "text": "这个就是靠我们营销营销这一方面他的客户拉拢量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1384000,
+        "end_ms": 1386000,
+        "speaker_id": "speaker_3",
+        "text": "咱们的优势在哪里",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1389000,
+        "end_ms": 1404000,
+        "speaker_id": "speaker_6",
+        "text": "这个是我觉得很关键的一点，如果他认识的如果这个营销他做的比较好，他认识的一些人，呃一些有势力的人，一些有钱的人多一点儿的话，也可以通过介绍朋友什么经常来玩儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1399000,
+        "end_ms": 1400000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1400000,
+        "end_ms": 1401000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1404000,
+        "end_ms": 1407000,
+        "speaker_id": "speaker_6",
+        "text": "这我觉得是很大一方面的一个客流量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1407000,
+        "end_ms": 1408000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1409000,
+        "end_ms": 1415000,
+        "speaker_id": "speaker_5",
+        "text": "还有我觉得其实也是硬件的设施，比如说灯光有的酒吧灯光和一些设施都比较破",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1415000,
+        "end_ms": 1415000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1415000,
+        "end_ms": 1426000,
+        "speaker_id": "speaker_5",
+        "text": "去了的时候去的时候就是根本就没有想要玩的欲望，还有那些DJ放的歌曲，然后就是让人想嗨都嗨不起来对听了想睡觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1419000,
+        "end_ms": 1420000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1422000,
+        "end_ms": 1424000,
+        "speaker_id": "speaker_3",
+        "text": "相对来说比较忧郁点嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1425000,
+        "end_ms": 1427000,
+        "speaker_id": "speaker_3",
+        "text": "他的这个他就是不会能带动人的气氛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1427000,
+        "end_ms": 1429000,
+        "speaker_id": "speaker_5",
+        "text": "带动人的气氛对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1428000,
+        "end_ms": 1429000,
+        "speaker_id": "speaker_6",
+        "text": "不活跃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1429000,
+        "end_ms": 1430000,
+        "speaker_id": "speaker_5",
+        "text": "不活跃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1430000,
+        "end_ms": 1439000,
+        "speaker_id": "speaker_7",
+        "text": "我们酒吧上个月的那个主题派对效果挺好的就看这流水来说是一个小高峰，所以我希望就营销这边",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1434000,
+        "end_ms": 1435000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1439000,
+        "end_ms": 1446000,
+        "speaker_id": "speaker_7",
+        "text": "就跟上个月这个模式一样，咱们可以一年十二个月每月办一个主题派对，我觉得这个是一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1446000,
+        "end_ms": 1451000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得可以我觉得可以在呃在可以在某一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1451000,
+        "end_ms": 1453000,
+        "speaker_id": "speaker_6",
+        "text": "对某一个节日对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1453000,
+        "end_ms": 1460000,
+        "speaker_id": "speaker_5",
+        "text": "想到一点比如就是说圣诞节的时候，咱们可以搞一个平安夜的派对就是很多这种节日，其实比如说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1459000,
+        "end_ms": 1461000,
+        "speaker_id": "speaker_4",
+        "text": "还有就是七夕节",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1460000,
+        "end_ms": 1463000,
+        "speaker_id": "speaker_5",
+        "text": "对七夕的时候，情人节的时候这些都是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1463000,
+        "end_ms": 1465000,
+        "speaker_id": "speaker_5",
+        "text": "呃非常容易做活动的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1465000,
+        "end_ms": 1470000,
+        "speaker_id": "speaker_4",
+        "text": "对一些传统节日，像端午啊、中秋啊、重阳啊这些节日",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 1470000,
+        "end_ms": 1476000,
+        "speaker_id": "speaker_5",
+        "text": "也可以在套餐上给予一定的比如说赠两瓶酒就是这样的优惠我觉得这样应该",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 1477000,
+        "end_ms": 1478000,
+        "speaker_id": "speaker_3",
+        "text": "或者说是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 1477000,
+        "end_ms": 1479000,
+        "speaker_id": "speaker_4",
+        "text": "也会促进他们出来消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 1479000,
+        "end_ms": 1483000,
+        "speaker_id": "speaker_3",
+        "text": "有没有就咱们营销模式嘛就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 1483000,
+        "end_ms": 1491000,
+        "speaker_id": "speaker_3",
+        "text": "咱们有这个日就是消费最高呃每晚的消费最高排行榜",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 1490000,
+        "end_ms": 1491000,
+        "speaker_id": "speaker_5",
+        "text": "消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 1491000,
+        "end_ms": 1506000,
+        "speaker_id": "speaker_5",
+        "text": "消费最高这个有，就咱们前面有一个LED的屏，然后每每晚上，然后咱们那个消费最高的这个前三名就会在这个这个屏幕上来回滚动，然后这个最低消费因为是由那个低消，所以不用担心这个低消的问题。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 1506000,
+        "end_ms": 1516000,
+        "speaker_id": "speaker_3",
+        "text": "就是他们这些有钱的老板嘛他们就是会争这个名额，会争谁是第一名，谁是第二名，如果说今天晚上只来了一个老板",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 1513000,
+        "end_ms": 1514000,
+        "speaker_id": "speaker_6",
+        "text": "对因为他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 1517000,
+        "end_ms": 1523000,
+        "speaker_id": "speaker_3",
+        "text": "没有人跟他争，那我们怎么办？就是咱们是应该是不是应该从公司内部找一个托儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 1524000,
+        "end_ms": 1532000,
+        "speaker_id": "speaker_3",
+        "text": "就是假装的点了一些东西，然后一直让让让那个让来的这个老板一直跟他竞争",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 1526000,
+        "end_ms": 1528000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这一方面儿咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000430",
+        "index": 429,
+        "start_ms": 1532000,
+        "end_ms": 1538000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得如果这样做的话，会在这个老板知道以后，因为他不可能只来这一次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000431",
+        "index": 430,
+        "start_ms": 1538000,
+        "end_ms": 1540000,
+        "speaker_id": "speaker_3",
+        "text": "不啊这是咱们内部的情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000432",
+        "index": 431,
+        "start_ms": 1540000,
+        "end_ms": 1552000,
+        "speaker_id": "speaker_6",
+        "text": "咱们内部的情况他肯定也是知如果他多经历这样几次情况的话，他肯定就会知道了，我觉得这样对是有一种欺骗啊顾客消费的这个情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000433",
+        "index": 432,
+        "start_ms": 1551000,
+        "end_ms": 1554000,
+        "speaker_id": "speaker_1",
+        "text": "那其他部门对这个怎么看呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000434",
+        "index": 433,
+        "start_ms": 1554000,
+        "end_ms": 1555000,
+        "speaker_id": "speaker_4",
+        "text": "我不建议这样做",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000435",
+        "index": 434,
+        "start_ms": 1555000,
+        "end_ms": 1557000,
+        "speaker_id": "speaker_7",
+        "text": "我也觉得不是特别的好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000436",
+        "index": 435,
+        "start_ms": 1557000,
+        "end_ms": 1559000,
+        "speaker_id": "speaker_2",
+        "text": "我也不建议这样因为如果",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000437",
+        "index": 436,
+        "start_ms": 1558000,
+        "end_ms": 1562000,
+        "speaker_id": "speaker_3",
+        "text": "因为无奸不商吗咱们是商人对吧无奸不商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000438",
+        "index": 437,
+        "start_ms": 1561000,
+        "end_ms": 1563000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000439",
+        "index": 438,
+        "start_ms": 1562000,
+        "end_ms": 1565000,
+        "speaker_id": "speaker_2",
+        "text": "商人要以诚为本呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000440",
+        "index": 439,
+        "start_ms": 1564000,
+        "end_ms": 1573000,
+        "speaker_id": "speaker_7",
+        "text": "而且这么大一个客户如果一旦去就是没有不漏风的墙啊万一让他知道这件事之后，你的口碑立刻就坏掉了就会有一个很大的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000441",
+        "index": 440,
+        "start_ms": 1572000,
+        "end_ms": 1577000,
+        "speaker_id": "speaker_4",
+        "text": "然后我我我要纠正一件事情无奸不商这个奸字怎么写",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000442",
+        "index": 441,
+        "start_ms": 1573000,
+        "end_ms": 1574000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000443",
+        "index": 442,
+        "start_ms": 1577000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_4",
+        "text": "我们认为通常认为是女字旁这个奸对吧？其实最初无奸不商那奸不是那么写，是上小下大这么写的，这什么意思呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000444",
+        "index": 443,
+        "start_ms": 1580000,
+        "end_ms": 1581000,
+        "speaker_id": "speaker_3",
+        "text": "呃对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000445",
+        "index": 444,
+        "start_ms": 1587000,
+        "end_ms": 1595000,
+        "speaker_id": "speaker_4",
+        "text": "来源于是呃良商良商就是良商这个这个尖字是什么意思呢呃？就过去人们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000446",
+        "index": 445,
+        "start_ms": 1589000,
+        "end_ms": 1590000,
+        "speaker_id": "speaker_3",
+        "text": "格力啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000447",
+        "index": 446,
+        "start_ms": 1593000,
+        "end_ms": 1598000,
+        "speaker_id": "speaker_3",
+        "text": "对就是从小从过去的就是从小小益",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000448",
+        "index": 447,
+        "start_ms": 1596000,
+        "end_ms": 1599000,
+        "speaker_id": "speaker_4",
+        "text": "人们过去那个升斗对吧呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000449",
+        "index": 448,
+        "start_ms": 1599000,
+        "end_ms": 1610000,
+        "speaker_id": "speaker_4",
+        "text": "这个卖粮食呢就是一升或者一斗就是平了，就算是够够数儿了对吧？但是他就为了回头客嘛，他都是让它冒尖儿，这粮食都冒，无论是米面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000450",
+        "index": 449,
+        "start_ms": 1610000,
+        "end_ms": 1619000,
+        "speaker_id": "speaker_4",
+        "text": "这一升一斗都让它冒冒着尖，所以说无奸不商是为了拉拢回头客做的这种买一赠一的这个活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000451",
+        "index": 450,
+        "start_ms": 1619000,
+        "end_ms": 1623000,
+        "speaker_id": "speaker_4",
+        "text": "这叫无奸不商其实后来更换了给",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000452",
+        "index": 451,
+        "start_ms": 1620000,
+        "end_ms": 1623000,
+        "speaker_id": "speaker_1",
+        "text": "那既然都说了不同意",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000453",
+        "index": 452,
+        "start_ms": 1624000,
+        "end_ms": 1626000,
+        "speaker_id": "speaker_1",
+        "text": "那大家有什么其它好的办法没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000454",
+        "index": 453,
+        "start_ms": 1626000,
+        "end_ms": 1627000,
+        "speaker_id": "speaker_3",
+        "text": "那就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000455",
+        "index": 454,
+        "start_ms": 1626000,
+        "end_ms": 1637000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得针对这个方法你就比如说只有一个老板在然后他没有人促进他的消费我觉得这个呃可以可以通过我们那个营销嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000456",
+        "index": 455,
+        "start_ms": 1630000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000457",
+        "index": 456,
+        "start_ms": 1632000,
+        "end_ms": 1633000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000458",
+        "index": 457,
+        "start_ms": 1637000,
+        "end_ms": 1638000,
+        "speaker_id": "speaker_6",
+        "text": "对他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000459",
+        "index": 458,
+        "start_ms": 1638000,
+        "end_ms": 1639000,
+        "speaker_id": "speaker_1",
+        "text": "通过营销",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000460",
+        "index": 459,
+        "start_ms": 1639000,
+        "end_ms": 1646000,
+        "speaker_id": "speaker_6",
+        "text": "对因为他跟自己的营销是肯定十分熟的，就比如说营销啊营销可以啊促进一下，就说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000461",
+        "index": 460,
+        "start_ms": 1646000,
+        "end_ms": 1662000,
+        "speaker_id": "speaker_6",
+        "text": "啊咱老板好几天没来了，咱们联络一下感情是吧？然后然后和我我我有几个朋友我可以介绍你认识一下儿，咱们一块喝个酒，我觉得以这样的方式促进他多饮酒这个是是一个我们消费的主要手段",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000462",
+        "index": 461,
+        "start_ms": 1660000,
+        "end_ms": 1662000,
+        "speaker_id": "speaker_4",
+        "text": "还有一点就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000463",
+        "index": 462,
+        "start_ms": 1662000,
+        "end_ms": 1679000,
+        "speaker_id": "speaker_4",
+        "text": "既然他是老板嘛，他肯定会出手就是会比较大方。那那我们就是舞台的那个这个嗯就是那个表演的这些人员怎么说呃是我们可以呃邀请一个他比较喜欢的类型的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000464",
+        "index": 463,
+        "start_ms": 1666000,
+        "end_ms": 1667000,
+        "speaker_id": "speaker_6",
+        "text": "比较阔绰",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000465",
+        "index": 464,
+        "start_ms": 1679000,
+        "end_ms": 1679000,
+        "speaker_id": "speaker_6",
+        "text": "给他推荐",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000466",
+        "index": 465,
+        "start_ms": 1679000,
+        "end_ms": 1686000,
+        "speaker_id": "speaker_4",
+        "text": "对让他推荐。然后我们会说啊你我们可以给这个女演员这个送花啊就是给",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000467",
+        "index": 466,
+        "start_ms": 1686000,
+        "end_ms": 1691000,
+        "speaker_id": "speaker_4",
+        "text": "歌手送花啊或者给读者送花这样的方式来刺激消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000468",
+        "index": 467,
+        "start_ms": 1692000,
+        "end_ms": 1693000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000469",
+        "index": 468,
+        "start_ms": 1694000,
+        "end_ms": 1697000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得用这些方式比较合理一点儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000470",
+        "index": 469,
+        "start_ms": 1697000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_4",
+        "text": "他也心甘情愿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000471",
+        "index": 470,
+        "start_ms": 1699000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000472",
+        "index": 471,
+        "start_ms": 1702000,
+        "end_ms": 1712000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是咱们停车场的问题，咱们用不用跟那个代驾公司合作，或者说跟出租车公司合作，毕竟咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000473",
+        "index": 472,
+        "start_ms": 1712000,
+        "end_ms": 1716000,
+        "speaker_id": "speaker_3",
+        "text": "很多顾客来这儿是开车来的，但是喝完酒以后就不可以再开车了都会聚集对吧咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000474",
+        "index": 473,
+        "start_ms": 1716000,
+        "end_ms": 1721000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得出租车一般酒吧门口都会晚上，因为在凌晨",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000475",
+        "index": 474,
+        "start_ms": 1720000,
+        "end_ms": 1722000,
+        "speaker_id": "speaker_3",
+        "text": "都会聚集对吧咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000476",
+        "index": 475,
+        "start_ms": 1721000,
+        "end_ms": 1731000,
+        "speaker_id": "speaker_5",
+        "text": "都会聚集，所以咱们可以跟代驾公司就搞一下儿合作，因为许多开车来的业主，他们不是那些顾客，他们来了之后他们一些朋友都会都会喝酒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000477",
+        "index": 476,
+        "start_ms": 1731000,
+        "end_ms": 1737000,
+        "speaker_id": "speaker_5",
+        "text": "所以你说如果他们再打车回去，自己车留在这儿我觉得其实是不太现实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000478",
+        "index": 477,
+        "start_ms": 1735000,
+        "end_ms": 1744000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这个方这个方法是可行的，这个一方面是让这个顾客感受到我们喝完酒了，还会照顾把客人代驾接走这个，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000479",
+        "index": 478,
+        "start_ms": 1745000,
+        "end_ms": 1755000,
+        "speaker_id": "speaker_6",
+        "text": "这个人之常情嘛，让他们感受到我们这个热情这个服务的周到然后二还可以和代驾公司嘛进行一个联合，我们从中抽取一些利润。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000480",
+        "index": 479,
+        "start_ms": 1755000,
+        "end_ms": 1758000,
+        "speaker_id": "speaker_3",
+        "text": "可以抽取一些利润好行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000481",
+        "index": 480,
+        "start_ms": 1758000,
+        "end_ms": 1761000,
+        "speaker_id": "speaker_3",
+        "text": "那还有别的建议吗就是在营销这方面的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000482",
+        "index": 481,
+        "start_ms": 1762000,
+        "end_ms": 1770000,
+        "speaker_id": "speaker_3",
+        "text": "就是咱们还是以盈利为目的嘛，比如说搞一些什么活动啊，套餐呀什么的，大家有什么建议吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000483",
+        "index": 482,
+        "start_ms": 1771000,
+        "end_ms": 1773000,
+        "speaker_id": "speaker_4",
+        "text": "其实我这边还是真有一些熟人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000484",
+        "index": 483,
+        "start_ms": 1771000,
+        "end_ms": 1774000,
+        "speaker_id": "speaker_2",
+        "text": "套餐咱们酒店不是有吗之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000485",
+        "index": 484,
+        "start_ms": 1773000,
+        "end_ms": 1778000,
+        "speaker_id": "speaker_5",
+        "text": "对啊套餐然后咱每个月的办那主题活动，这是目前都已经有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000486",
+        "index": 485,
+        "start_ms": 1777000,
+        "end_ms": 1777000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000487",
+        "index": 486,
+        "start_ms": 1778000,
+        "end_ms": 1785000,
+        "speaker_id": "speaker_2",
+        "text": "也可以进行每晚每每星期就是指定，比方说周六周天儿人比较火爆，刚才说了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000488",
+        "index": 487,
+        "start_ms": 1785000,
+        "end_ms": 1788000,
+        "speaker_id": "speaker_2",
+        "text": "可以指定在周天儿的时候或者周六的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000489",
+        "index": 488,
+        "start_ms": 1788000,
+        "end_ms": 1796000,
+        "speaker_id": "speaker_2",
+        "text": "进行现场现场抽奖，像聚光灯随着一首音乐停止以后，聚光灯停止在某一个人身上然后将他照片儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000490",
+        "index": 489,
+        "start_ms": 1795000,
+        "end_ms": 1797000,
+        "speaker_id": "speaker_3",
+        "text": "你那像是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000491",
+        "index": 490,
+        "start_ms": 1797000,
+        "end_ms": 1801000,
+        "speaker_id": "speaker_3",
+        "text": "像是这是酒吧搞得活动啊我怎么感觉听着像是那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000492",
+        "index": 491,
+        "start_ms": 1800000,
+        "end_ms": 1801000,
+        "speaker_id": "speaker_2",
+        "text": "这个可以赠酒啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000493",
+        "index": 492,
+        "start_ms": 1801000,
+        "end_ms": 1802000,
+        "speaker_id": "speaker_3",
+        "text": "赠酒是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000494",
+        "index": 493,
+        "start_ms": 1802000,
+        "end_ms": 1803000,
+        "speaker_id": "speaker_2",
+        "text": "对啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000495",
+        "index": 494,
+        "start_ms": 1803000,
+        "end_ms": 1808000,
+        "speaker_id": "speaker_3",
+        "text": "啊就是随机抽取幸幸运这个顾客来进行就是赠一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000496",
+        "index": 495,
+        "start_ms": 1809000,
+        "end_ms": 1811000,
+        "speaker_id": "speaker_3",
+        "text": "酒水这个果盘儿啊之类的零食",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000497",
+        "index": 496,
+        "start_ms": 1811000,
+        "end_ms": 1819000,
+        "speaker_id": "speaker_2",
+        "text": "啊你总不能聚光灯打到人家身上，只是给人家显示到荧幕上不取不进行赠酒活动或者一些赠送东西的环节这就会显这个太",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000498",
+        "index": 497,
+        "start_ms": 1818000,
+        "end_ms": 1827000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这个可以在我们这个消费高的这个顾客中实行，就是我觉得不应该是在全场的所有观众中",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000499",
+        "index": 498,
+        "start_ms": 1822000,
+        "end_ms": 1822000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000500",
+        "index": 499,
+        "start_ms": 1827000,
+        "end_ms": 1828000,
+        "speaker_id": "speaker_4",
+        "text": "不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000501",
+        "index": 500,
+        "start_ms": 1827000,
+        "end_ms": 1828000,
+        "speaker_id": "speaker_6",
+        "text": "所有的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000502",
+        "index": 501,
+        "start_ms": 1827000,
+        "end_ms": 1832000,
+        "speaker_id": "speaker_2",
+        "text": "因为他如果进门的话肯定设立就是进门就是会掏一定的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000503",
+        "index": 502,
+        "start_ms": 1832000,
+        "end_ms": 1834000,
+        "speaker_id": "speaker_2",
+        "text": "就是金钱了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000504",
+        "index": 503,
+        "start_ms": 1834000,
+        "end_ms": 1843000,
+        "speaker_id": "speaker_2",
+        "text": "如果进酒吧如果进酒吧之前会有一些酒吧会有这样的规定，男生进去以后多少钱，女生就几点以后就可以免免门票之类的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000505",
+        "index": 504,
+        "start_ms": 1836000,
+        "end_ms": 1838000,
+        "speaker_id": "speaker_3",
+        "text": "对不然",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000506",
+        "index": 505,
+        "start_ms": 1843000,
+        "end_ms": 1844000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000507",
+        "index": 506,
+        "start_ms": 1844000,
+        "end_ms": 1847000,
+        "speaker_id": "speaker_2",
+        "text": "如果都掏的话，肯定可以进行免费抽奖",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000508",
+        "index": 507,
+        "start_ms": 1847000,
+        "end_ms": 1849000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000509",
+        "index": 508,
+        "start_ms": 1849000,
+        "end_ms": 1863000,
+        "speaker_id": "speaker_3",
+        "text": "我问一下儿保安这里啊咱们针对这些蹦野迪的情况下咱们是怎么处理的？就是他们过来只是什么钱也不花什么，什么也就是什么也不消费，只是单纯的来我们这个场地来感受我们这个气氛来娱乐",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000510",
+        "index": 509,
+        "start_ms": 1864000,
+        "end_ms": 1865000,
+        "speaker_id": "speaker_5",
+        "text": "其实我感觉吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000511",
+        "index": 510,
+        "start_ms": 1865000,
+        "end_ms": 1866000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000512",
+        "index": 511,
+        "start_ms": 1865000,
+        "end_ms": 1869000,
+        "speaker_id": "speaker_2",
+        "text": "为什么要赶出去呢，他进来的时候门票已经花钱了呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000513",
+        "index": 512,
+        "start_ms": 1867000,
+        "end_ms": 1887000,
+        "speaker_id": "speaker_7",
+        "text": "这属于潜在客户一来给我们带来这个满座率可以稍高一点然后人气多一点二来他们可能会再来他们可能会推荐别人来可能他带的人都不花一分钱但只要他花了一次钱他就是我们一个固定客户了这是一个我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000514",
+        "index": 513,
+        "start_ms": 1870000,
+        "end_ms": 1871000,
+        "speaker_id": "speaker_6",
+        "text": "对我觉得这一方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000515",
+        "index": 514,
+        "start_ms": 1875000,
+        "end_ms": 1877000,
+        "speaker_id": "speaker_4",
+        "text": "他们来增加了我们人气",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000516",
+        "index": 515,
+        "start_ms": 1876000,
+        "end_ms": 1878000,
+        "speaker_id": "speaker_2",
+        "text": "还可以推荐的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000517",
+        "index": 516,
+        "start_ms": 1878000,
+        "end_ms": 1880000,
+        "speaker_id": "speaker_4",
+        "text": "他可能带别人来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000518",
+        "index": 517,
+        "start_ms": 1880000,
+        "end_ms": 1883000,
+        "speaker_id": "speaker_4",
+        "text": "我们的目光要放的长远一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000519",
+        "index": 518,
+        "start_ms": 1887000,
+        "end_ms": 1891000,
+        "speaker_id": "speaker_7",
+        "text": "这是每一个商人必经的一个阶段，没必要忍受一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000520",
+        "index": 519,
+        "start_ms": 1889000,
+        "end_ms": 1891000,
+        "speaker_id": "speaker_4",
+        "text": "他目前没有钱不等于他以后没有钱，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000521",
+        "index": 520,
+        "start_ms": 1891000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000522",
+        "index": 521,
+        "start_ms": 1892000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000523",
+        "index": 522,
+        "start_ms": 1892000,
+        "end_ms": 1895000,
+        "speaker_id": "speaker_4",
+        "text": "我们不是只看今天我们有有未来的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000524",
+        "index": 523,
+        "start_ms": 1895000,
+        "end_ms": 1898000,
+        "speaker_id": "speaker_2",
+        "text": "而且别人一看这酒吧人这么多，他也可以增加人气啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000525",
+        "index": 524,
+        "start_ms": 1898000,
+        "end_ms": 1899000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000526",
+        "index": 525,
+        "start_ms": 1899000,
+        "end_ms": 1902000,
+        "speaker_id": "speaker_3",
+        "text": "也就是说支持这种行为发生是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000527",
+        "index": 526,
+        "start_ms": 1902000,
+        "end_ms": 1904000,
+        "speaker_id": "speaker_6",
+        "text": "对各部门都支持",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000528",
+        "index": 527,
+        "start_ms": 1902000,
+        "end_ms": 1903000,
+        "speaker_id": "speaker_2",
+        "text": "对呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000529",
+        "index": 528,
+        "start_ms": 1904000,
+        "end_ms": 1909000,
+        "speaker_id": "speaker_3",
+        "text": "行那我这边是没有什么问题了，各部门还有什么问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000530",
+        "index": 529,
+        "start_ms": 1909000,
+        "end_ms": 1909000,
+        "speaker_id": "speaker_1",
+        "text": "没有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000531",
+        "index": 530,
+        "start_ms": 1909000,
+        "end_ms": 1911000,
+        "speaker_id": "speaker_3",
+        "text": "没有了吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000532",
+        "index": 531,
+        "start_ms": 1911000,
+        "end_ms": 1911000,
+        "speaker_id": "speaker_7",
+        "text": "没了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000533",
+        "index": 532,
+        "start_ms": 1911000,
+        "end_ms": 1914000,
+        "speaker_id": "speaker_3",
+        "text": "行，那咱们这场会议就散会吧",
+        "status": "ok"
+      }
+    ]
+  }
+}

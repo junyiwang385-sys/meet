@@ -1,0 +1,18 @@
+{
+  "model": "qwen3:4b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是会议事实整理器，只能依据当前请求中提供的会议内容生成结果。\n允许先在 <think>...</think> 中进行推理；思考结束后只能输出一个合法 JSON 对象，不要输出 Markdown、解释或代码围栏。\n不得虚构输入中没有的事实、数字、决定、风险、负责人或截止时间。\n不同请求可能提供完整 Timeline，也可能只提供章节摘要、待办候选或证据 JSON。Timeline 文本使用紧凑格式 [r38][14m48s-15m12s][sp3] 内容；r38 是 segment 的唯一引用 ID，时间全部使用分钟 m 和秒 s，sp3 是匿名 speaker 标识。即使当前请求没有 Timeline 行，字段中的 segment_id、refs、speaker_id 和 owner 仍使用同一套紧凑 r/sp ID；所有 ID 必须原样使用当前输入中出现的值，不要修改、补造或转换。\n普通讨论、建议和观点不能自动升级为决定或待办。\n没有明确依据的标量使用 null，没有明确依据的集合使用 []，不要用“暂无”“未明确”“N/A”等占位文字代替空值。"
+    },
+    {
+      "role": "user",
+      "content": "任务：\n复核下面各章节窗口提取的待办候选及其原文证据，输出最终待办。\n\n复核规则：\n- 只有明确要求后续执行的事项才保留。\n- 普通建议、观点、愿望和讨论必须删除。\n- 合并表达相同任务的候选，保留最明确的任务描述和证据。\n- owner 必须有原文依据；deadline 必须在原文明确出现，否则使用 null。\n\n输出结构：\n{\n  \"action_items\": [\n    {\n      \"task\": \"确认后的待办\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r1\"\n      ]\n    }\n  ]\n}\n\n候选：\n[\n  {\n    \"task\": \"协商僵尸车问题\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r2\"\n    ]\n  },\n  {\n    \"task\": \"在安全出口处增加摄像头\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r53\"\n    ]\n  },\n  {\n    \"task\": \"后厨主管检查食材新鲜度\",\n    \"owner\": \"sp2\",\n    \"deadline\": null,\n    \"refs\": [\n      \"r161\"\n    ]\n  },\n  {\n    \"task\": \"针对销售平稳的日化产品实施跨楼层消费赠送购物券抵扣活动\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r248\"\n    ]\n  },\n  {\n    \"task\": \"确认上半年女装畅销款为潮流款式\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r331\"\n    ]\n  },\n  {\n    \"task\": \"与越南合作进口玉石原材料和成品\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r390\"\n    ]\n  },\n  {\n    \"task\": \"加强内部人员安保措施\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r427\"\n    ]\n  },\n  {\n    \"task\": \"日化区特价宣传单制作\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r511\"\n    ]\n  },\n  {\n    \"task\": \"服装部摆设与新款展示优化\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r522\"\n    ]\n  },\n  {\n    \"task\": \"首饰品类扩充计划\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r528\"\n    ]\n  }\n]\n\n证据：\n[\n  {\n    \"segment_id\": \"r2\",\n    \"speaker_id\": \"sp2\",\n    \"text\": \"零二六，我是经理。\"\n  },\n  {\n    \"segment_id\": \"r53\",\n    \"speaker_id\": \"sp2\",\n    \"text\": \"不允许堆放杂物\"\n  },\n  {\n    \"segment_id\": \"r161\",\n    \"speaker_id\": \"sp2\",\n    \"text\": \"让后厨主管帮忙看一下这个后厨的食材的新鲜度啊\"\n  },\n  {\n    \"segment_id\": \"r248\",\n    \"speaker_id\": \"sp5\",\n    \"text\": \"嗯，对那些嗯，呃销售就是比较平常的那些，就正在实行这个促销方式。\"\n  },\n  {\n    \"segment_id\": \"r331\",\n    \"speaker_id\": \"sp6\",\n    \"text\": \"销售量最大\"\n  },\n  {\n    \"segment_id\": \"r390\",\n    \"speaker_id\": \"sp7\",\n    \"text\": \"因为我们，我们这边，国产的这边那个质量已经是比较好的啦。但是我们要降低一定的成本，所以就跟国外的这些合作一下，我们进口的有这个，有成品也有这个原材料。\"\n  },\n  {\n    \"segment_id\": \"r427\",\n    \"speaker_id\": \"sp7\",\n    \"text\": \"啊，这个因为这位员工在我们这里工作时间其实并不是很长。就不是我们的老员工，\"\n  },\n  {\n    \"segment_id\": \"r511\",\n    \"speaker_id\": \"sp5\",\n    \"text\": \"然后日化区呢，就是嗯，制作一些宣传单嘛，然后宣传单上面要，就是突出特价。\"\n  },\n  {\n    \"segment_id\": \"r522\",\n    \"speaker_id\": \"sp6\",\n    \"text\": \"做这个店内的摆设，和新款的展示。\"\n  },\n  {\n    \"segment_id\": \"r528\",\n    \"speaker_id\": \"sp7\",\n    \"text\": \"我们对于这些呃，卖卖卖的东西具体来说我们想把两个倾斜一方面就是经理你说的这个男士首饰问题。\"\n  }\n]"
+    }
+  ],
+  "temperature": 0.0,
+  "max_tokens": 3072,
+  "response_format": {
+    "type": "json_object"
+  }
+}

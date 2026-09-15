@@ -1,0 +1,26 @@
+[
+  {
+    "request_id": "speaker-batch-000001",
+    "speaker_ids": [
+      "speaker_1"
+    ],
+    "segment_count": 26,
+    "estimated_prompt_tokens": 1514,
+    "split_depth": 0,
+    "truncated_speaker_ids": []
+  },
+  {
+    "request_id": "speaker-batch-000002",
+    "speaker_ids": [
+      "speaker_6",
+      "speaker_4",
+      "speaker_3",
+      "speaker_7",
+      "speaker_2"
+    ],
+    "segment_count": 303,
+    "estimated_prompt_tokens": 12750,
+    "split_depth": 0,
+    "truncated_speaker_ids": []
+  }
+]

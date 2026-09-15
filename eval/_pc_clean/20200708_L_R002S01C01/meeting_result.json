@@ -1,0 +1,2730 @@
+{
+  "meeting": {
+    "meeting_id": "20200708_L_R002S01C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 301,
+    "nonempty_segment_count": 301,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 61000,
+        "end_ms": 63000,
+        "speaker_id": "speaker_1",
+        "text": "零零二，我是校长。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 64000,
+        "end_ms": 65000,
+        "speaker_id": "speaker_2",
+        "text": "零二六，我是副校长。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 65000,
+        "end_ms": 67000,
+        "speaker_id": "speaker_3",
+        "text": "零二二我是教务处",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 67000,
+        "end_ms": 69000,
+        "speaker_id": "speaker_4",
+        "text": "零二七，我是教学",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 69000,
+        "end_ms": 71000,
+        "speaker_id": "speaker_5",
+        "text": "零二三，我是咨询处。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 71000,
+        "end_ms": 73000,
+        "speaker_id": "speaker_6",
+        "text": "零二四，我是市场。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 73000,
+        "end_ms": 75000,
+        "speaker_id": "speaker_7",
+        "text": "零幺四，管理处",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 76000,
+        "end_ms": 83000,
+        "speaker_id": "speaker_1",
+        "text": "行，好的，今天把各部门儿叫过来，开一个咱们这个就业指导会。嗯就业方面的一些问题。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 84000,
+        "end_ms": 89000,
+        "speaker_id": "speaker_1",
+        "text": "嗯这个这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 90000,
+        "end_ms": 103000,
+        "speaker_id": "speaker_1",
+        "text": "就业是这个困扰很多大学生的一个问题，呃所以，今天咱们把各部门儿叫过来，咱们就商，商讨一下儿这个问题，嗯关键在于咱们这个。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 103000,
+        "end_ms": 111000,
+        "speaker_id": "speaker_1",
+        "text": "嗯每个人对这个问题的这个看法，现在由咱们这个，嗯副校长这边主持一下儿这个会。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 111000,
+        "end_ms": 119000,
+        "speaker_id": "speaker_2",
+        "text": "好的，刚才感谢校长的发言，在本次会议的时候，是就当代大学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 119000,
+        "end_ms": 127000,
+        "speaker_id": "speaker_2",
+        "text": "就业问题和去大公司好还是小公司好，我可以先给大家先举一个案例，就像。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 128000,
+        "end_ms": 129000,
+        "speaker_id": "speaker_2",
+        "text": "中国区域",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 128000,
+        "end_ms": 132000,
+        "speaker_id": "speaker_3",
+        "text": "不是什么是大公司什么是小公司啊？你这个明确的这个点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 133000,
+        "end_ms": 135000,
+        "speaker_id": "speaker_2",
+        "text": "你比方说，像刚创业吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 133000,
+        "end_ms": 134000,
+        "speaker_id": "speaker_3",
+        "text": "你得有界限",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 136000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_3",
+        "text": "刚起步的创业公司吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 138000,
+        "end_ms": 139000,
+        "speaker_id": "speaker_2",
+        "text": "他算大公司吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 140000,
+        "end_ms": 143000,
+        "speaker_id": "speaker_3",
+        "text": "那看，那也取决它的规模呀。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 143000,
+        "end_ms": 149000,
+        "speaker_id": "speaker_2",
+        "text": "如果它的规模特别大资金特别少那算大公司还是小公司呢？按照你的理解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 147000,
+        "end_ms": 149000,
+        "speaker_id": "speaker_3",
+        "text": "所以现在就是在问你。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 149000,
+        "end_ms": 157000,
+        "speaker_id": "speaker_2",
+        "text": "好收，这，这方面教务处这方面有疑问，先保留，让我来讲以下案列，因为他听完案例他自然就会懂。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 159000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 159000,
+        "end_ms": 165000,
+        "speaker_id": "speaker_2",
+        "text": "就比方说，一个中国一个亚马逊的一个副总裁张思宏。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 165000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_2",
+        "text": "他是从麦当劳的实习生开始的，就属于一种出去找工作可能和自己的专业不对口儿之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 174000,
+        "end_ms": 181000,
+        "speaker_id": "speaker_2",
+        "text": "学习收银，制作薯条儿，后来又跳槽到可口可乐公司当包装的员工。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 182000,
+        "end_ms": 193000,
+        "speaker_id": "speaker_2",
+        "text": "然后，他在二零一二年的时候，又跳到了亚马逊，他觉得需要自己创业，从一个小规模的私营企业乐视公司。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 194000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_2",
+        "text": "开始盈利，但是五个多月后他又离职。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 198000,
+        "end_ms": 205000,
+        "speaker_id": "speaker_2",
+        "text": "然后，他回到亚马逊去找了一份相对来规模较大的公司，属于亚马逊当地的公司。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 206000,
+        "end_ms": 211000,
+        "speaker_id": "speaker_2",
+        "text": "虽然起步很低，然后也没什么专专业性，还是属于一种餐饮的公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 211000,
+        "end_ms": 226000,
+        "speaker_id": "speaker_2",
+        "text": "但是他觉得在这个大公司的发展和小公司的发展是有很大的区别的，相对于大公司的像一些五险一金之类的东西，或者一些社保，医保。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 226000,
+        "end_ms": 235000,
+        "speaker_id": "speaker_2",
+        "text": "可能都会给交，小公司可能相对于工资待遇或者员工之间的关系比较融洽，一起属于创业阶段。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 235000,
+        "end_ms": 247000,
+        "speaker_id": "speaker_2",
+        "text": "这个两个大公司小公司，是就当代大学生，如果他们出去创业的话，从小公司起步没有足够的资金是去大公司好还是小公司好。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 247000,
+        "end_ms": 253000,
+        "speaker_id": "speaker_2",
+        "text": "如果去大公司的话，没有任何提升空间，或者是大公司和他的专业不对口儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 252000,
+        "end_ms": 254000,
+        "speaker_id": "speaker_1",
+        "text": "这个因为很多这个学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 255000,
+        "end_ms": 260000,
+        "speaker_id": "speaker_1",
+        "text": "嗯都来找咱们老师去指指导这个请教这个问题，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 260000,
+        "end_ms": 260000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 260000,
+        "end_ms": 269000,
+        "speaker_id": "speaker_1",
+        "text": "所以刚才这个副校长这边儿把这个嗯问题抛在咱们会上，嗯所以大家对这个问题都怎么看的？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 269000,
+        "end_ms": 276000,
+        "speaker_id": "speaker_1",
+        "text": "刚才副副校长说的这个你可以说一下这个，你对这个事件的一个看法。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 277000,
+        "end_ms": 283000,
+        "speaker_id": "speaker_2",
+        "text": "我对这个事件的看法就先说一下弊端吧，像一些大公司之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 283000,
+        "end_ms": 288000,
+        "speaker_id": "speaker_2",
+        "text": "大公司如果你是学计算机的，可能你去那儿起步特别的低。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 289000,
+        "end_ms": 294000,
+        "speaker_id": "speaker_2",
+        "text": "你们就会觉着大公司的薪水不如一些小公司。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 295000,
+        "end_ms": 301000,
+        "speaker_id": "speaker_2",
+        "text": "甚至还没有小公司的专业和自己对口儿，但是小公司它升职又特别的慢。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 302000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_2",
+        "text": "所以大家对这方面有什么看法吗？就比方说升职之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 304000,
+        "end_ms": 314000,
+        "speaker_id": "speaker_5",
+        "text": "因为大公司比较稳定嘛，如果你刚刚出来就业，你选择一个小公司，他可能刚到来还没站稳脚尖，然后那个公司就已经倒闭被遣散了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 314000,
+        "end_ms": 326000,
+        "speaker_id": "speaker_5",
+        "text": "因为我觉得应该首先是选大公司去锻炼一下吧，毕竟大公司里面的管理系统，可能大公司里有很多就是企业家名人，跟他们也能学习到不同的东西嘛。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 326000,
+        "end_ms": 337000,
+        "speaker_id": "speaker_6",
+        "text": "我也觉得嗯我们应该首先考虑的是大公司吧，因为我们大学生刚出来就业的话有好的机会，我们应该往长远的方面去考虑。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 337000,
+        "end_ms": 348000,
+        "speaker_id": "speaker_6",
+        "text": "为我们以后升职呃或者分是更大的进步空间考虑，呃小公司的话这方面就没有更多办法可以考虑，没有更多机会。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 348000,
+        "end_ms": 350000,
+        "speaker_id": "speaker_6",
+        "text": "大公司比较合适",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 349000,
+        "end_ms": 353000,
+        "speaker_id": "speaker_3",
+        "text": "我个人觉得如果说咱们选呃选择小公司的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 353000,
+        "end_ms": 360000,
+        "speaker_id": "speaker_3",
+        "text": "肯定这个大家关系就同事之间的氛围比较融洽，然后你升职的机会要比大公司要更高，因为你是老员工",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 361000,
+        "end_ms": 367000,
+        "speaker_id": "speaker_3",
+        "text": "你是陪着这个公司一直在起步阶段，就是你在起步阶段你就进入这个公司，你一直陪伴这个公司的成长。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 368000,
+        "end_ms": 374000,
+        "speaker_id": "speaker_3",
+        "text": "所以你在这个公司里升职加薪的机率是很高的，当然也是有风险的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 374000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_2",
+        "text": "好，以上三个部门儿发表了自己的意见，就比方说吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 378000,
+        "end_ms": 380000,
+        "speaker_id": "speaker_1",
+        "text": "其他部门儿有什么意见吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 380000,
+        "end_ms": 394000,
+        "speaker_id": "speaker_4",
+        "text": "其实我觉得是，他说能去大公司，有那机会吧还是想要去，但是也就是说首先他们作为一个刚毕业的学生的话，你去了大公司，其实你去不了什么重要的岗位，这是一个很现实的问题，对吧？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 394000,
+        "end_ms": 404000,
+        "speaker_id": "speaker_4",
+        "text": "你就说你刚毕业人家大公司，一进来，你说我学管理的，你把你管公司给我管理吧，人家可可能给你管理吗？对吧，不可能很多人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 394000,
+        "end_ms": 395000,
+        "speaker_id": "speaker_3",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 395000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_3",
+        "text": "是是是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 402000,
+        "end_ms": 403000,
+        "speaker_id": "speaker_3",
+        "text": "对对对说得对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 403000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_6",
+        "text": "但是但是我觉得如果你去小公司的话。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 406000,
+        "end_ms": 416000,
+        "speaker_id": "speaker_6",
+        "text": "嗯也是你得经过你的实习期然后你慢慢在公司里学习，然后一步一步往上升，这个和在大公司一样都是得慢慢往上升的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 409000,
+        "end_ms": 410000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 411000,
+        "end_ms": 413000,
+        "speaker_id": "speaker_4",
+        "text": "你说但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 415000,
+        "end_ms": 419000,
+        "speaker_id": "speaker_4",
+        "text": "是慢，但是这都得慢慢的，但是你像小公司的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 419000,
+        "end_ms": 422000,
+        "speaker_id": "speaker_4",
+        "text": "能更快的到达你那个岗位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 422000,
+        "end_ms": 422000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 422000,
+        "end_ms": 424000,
+        "speaker_id": "speaker_6",
+        "text": "可是小公司没有更多的岗位呀。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 423000,
+        "end_ms": 424000,
+        "speaker_id": "speaker_3",
+        "text": "小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 424000,
+        "end_ms": 425000,
+        "speaker_id": "speaker_5",
+        "text": "小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 424000,
+        "end_ms": 426000,
+        "speaker_id": "speaker_4",
+        "text": "对呀除了小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 425000,
+        "end_ms": 433000,
+        "speaker_id": "speaker_2",
+        "text": "好好好，以上部门儿都已经发表发表了一下儿自己的意见，刚才也听了主要是这边儿听一下儿管理部门儿的意见，你们再综合讨论一下。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 433000,
+        "end_ms": 434000,
+        "speaker_id": "speaker_6",
+        "text": "好嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 434000,
+        "end_ms": 445000,
+        "speaker_id": "speaker_7",
+        "text": "我这边儿认为就是大家常说的一句话，由简入奢易由奢入俭难，就是如果你一毕业就去参加了大公司大公司跟小公司，它的资金",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 446000,
+        "end_ms": 457000,
+        "speaker_id": "speaker_7",
+        "text": "是不一样的，然后它运转起来也不一样，一些设施也不一样，比如说很正常一件事情就是大公司它配有很完备的设施，餐厅条件，还有这些茶水间啊大厅啊这些设备都比较好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 457000,
+        "end_ms": 468000,
+        "speaker_id": "speaker_7",
+        "text": "如果说你一毕业你就进入大公司，然后你适应了几年之后，然后如果你觉得大公司没有发展空间，当你再想回到小公司的时候，你是很不适应的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 468000,
+        "end_ms": 479000,
+        "speaker_id": "speaker_7",
+        "text": "因为小公司它的一些设施根本就不完善，比如说午餐它可能不给你报销，然后车费不给你报销，然后你就会有一种失落感，一种差距在里面，你就感觉不舒服。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 479000,
+        "end_ms": 490000,
+        "speaker_id": "speaker_7",
+        "text": "但是还有一个问题就是说，如果你从一开始，因为大学生嘛就是象牙塔里长了这么多年，你哐下儿进入大公司大公司的层次是很严格的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 490000,
+        "end_ms": 503000,
+        "speaker_id": "speaker_7",
+        "text": "然后他之间人际关系也是就是不像小公司那么的嗯简单吧，所以说当你在很明显的一个等级之前的时候，你一个学生刚毕业的学生能不能很快的适应这个问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 503000,
+        "end_ms": 512000,
+        "speaker_id": "speaker_7",
+        "text": "所以说大家在考虑的时候，因为现在九零后网上常说就是一个辞职跳槽都是一个比较频繁的一个一个现象",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 512000,
+        "end_ms": 527000,
+        "speaker_id": "speaker_7",
+        "text": "所以说如果你是选择是在大公司之间跳槽，可能差距并没有那么大，但是如果你在大小公司之间跳槽的话，你的心理落差可能会对你的后续发展以及你这个以后的就业的方向都会有很大的影响。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 527000,
+        "end_ms": 535000,
+        "speaker_id": "speaker_2",
+        "text": "好，这边管理部刚才说了一下儿这个大公司的这方面的原因，然后从大公司跳槽到小公司之间的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 535000,
+        "end_ms": 538000,
+        "speaker_id": "speaker_2",
+        "text": "这方面呢你们有什么看法？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 538000,
+        "end_ms": 540000,
+        "speaker_id": "speaker_3",
+        "text": "我很认同这个想法，我觉得还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 539000,
+        "end_ms": 546000,
+        "speaker_id": "speaker_2",
+        "text": "我可以说一下，如果相对于以上那几个部门选择大公司的话，我可以问一下她们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 546000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_2",
+        "text": "就比方说如果一个人你的个人能力如果不是特别突出的话，你去大公司上了十年的就是参加了十年的工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 556000,
+        "end_ms": 559000,
+        "speaker_id": "speaker_2",
+        "text": "你们觉得你们的升值空间大吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 559000,
+        "end_ms": 561000,
+        "speaker_id": "speaker_5",
+        "text": "不大那肯定是不大呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 560000,
+        "end_ms": 561000,
+        "speaker_id": "speaker_4",
+        "text": "不大肯定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 561000,
+        "end_ms": 573000,
+        "speaker_id": "speaker_6",
+        "text": "不是，我首先我觉得我是一个刚毕业的大学生，我对我自己的未来的一些规划是很有期待和自信的我不觉得我去大公司没有什么上升空间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 573000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_2",
+        "text": "那你觉得你可以在那个大公司凸显出你的个人能力吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 577000,
+        "end_ms": 583000,
+        "speaker_id": "speaker_6",
+        "text": "呃刚出来肯定是不是什么都那么熟悉，但是都是需要靠后期的经验啊。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 583000,
+        "end_ms": 587000,
+        "speaker_id": "speaker_2",
+        "text": "如果以上这些大公司都说需要靠个人的经验",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 587000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_2",
+        "text": "是靠你自己的经验去琢磨它呢的还是找人带你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 590000,
+        "end_ms": 600000,
+        "speaker_id": "speaker_6",
+        "text": "去大公司里面实习的那些经验，肯定和小公司那些经验是不一样的，他可有更大的规模，然后可以见识到更多不一样的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 600000,
+        "end_ms": 604000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得在我们这个年纪我们还这么年轻的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 603000,
+        "end_ms": 606000,
+        "speaker_id": "speaker_1",
+        "text": "你更倾向于学生去这个大公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 605000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_6",
+        "text": "对我更建议去打拼一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 606000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_3",
+        "text": "主要出去见见世面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 608000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 609000,
+        "end_ms": 616000,
+        "speaker_id": "speaker_2",
+        "text": "那我想问一下，如果大公司它的人员工作比较复杂，掺杂了这些社会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 609000,
+        "end_ms": 612000,
+        "speaker_id": "speaker_6",
+        "text": "去拼一下就知道自己行不行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 616000,
+        "end_ms": 619000,
+        "speaker_id": "speaker_2",
+        "text": "或者需要高情商的人来完成这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 618000,
+        "end_ms": 623000,
+        "speaker_id": "speaker_6",
+        "text": "那你想什么时候儿去面对这个掺杂的社会，不是工作的时候那你什么时候去啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 623000,
+        "end_ms": 624000,
+        "speaker_id": "speaker_5",
+        "text": "面对这个问题吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 624000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_4",
+        "text": "有人地方就得人际关系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 625000,
+        "end_ms": 628000,
+        "speaker_id": "speaker_2",
+        "text": "这这方面啊我",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 628000,
+        "end_ms": 637000,
+        "speaker_id": "speaker_2",
+        "text": "是属于让你们探讨一下，因为我这方面都有一点儿想法，我可以跟你们说一下。首先小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 637000,
+        "end_ms": 643000,
+        "speaker_id": "speaker_2",
+        "text": "如果你有什么不懂的，你可以及时问，他们可能会一些就是叫哥啊叫姐之类的，可能会帮助到你。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 644000,
+        "end_ms": 648000,
+        "speaker_id": "speaker_2",
+        "text": "这是其一，可能小公司的待遇环境不是很好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 648000,
+        "end_ms": 660000,
+        "speaker_id": "speaker_2",
+        "text": "但是也有它的优点，大公司肯定也有它的利弊，大公司的利益是什么呢？它的五险一金，养老保险肯定都会给你，还有还有一些大公司会提供一些住房公积金",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 661000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_2",
+        "text": "这方面就会让你在这在社会上足以立足脚跟，这是大公司的优点，大公司的缺点就是什么？可能你去大公司工作，他们还会排斥你，如果你工作能力特别突出的话，你会不会把他们的饭碗抢掉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 676000,
+        "end_ms": 685000,
+        "speaker_id": "speaker_2",
+        "text": "职位顶掉，或者如果他和你的关系不好，你到了他的高层甚至上司，他会不会为难你？这些方面你会不会考虑？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 685000,
+        "end_ms": 687000,
+        "speaker_id": "speaker_6",
+        "text": "但是我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 686000,
+        "end_ms": 694000,
+        "speaker_id": "speaker_2",
+        "text": "如果你去公司，他难道立马就会倾囊教给你一些东西吗？你问一些东西他可能故意刁难你会怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 694000,
+        "end_ms": 699000,
+        "speaker_id": "speaker_4",
+        "text": "小公司你它就一定会倾囊教给你吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 696000,
+        "end_ms": 702000,
+        "speaker_id": "speaker_6",
+        "text": "也会面临这些问题我觉得这是大公司小公司都会有的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 700000,
+        "end_ms": 706000,
+        "speaker_id": "speaker_2",
+        "text": "难道你觉得社会上的小公司和国企央企竞争能力会更难吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 706000,
+        "end_ms": 711000,
+        "speaker_id": "speaker_6",
+        "text": "但是我觉得这就需要你个人的一些人际关系方面怎么调解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 710000,
+        "end_ms": 714000,
+        "speaker_id": "speaker_3",
+        "text": "但是你刚毕业你刚毕业出来你有那么多的社会阅历吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 715000,
+        "end_ms": 718000,
+        "speaker_id": "speaker_2",
+        "text": "刚毕业的大学生还是要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 715000,
+        "end_ms": 726000,
+        "speaker_id": "speaker_6",
+        "text": "不是需要社会阅历是需要你这个人是需要你这个人怎么不小心眼儿，或者怎么和别人交流这是需要沟通的，我觉得并不是说需要社会阅历",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 717000,
+        "end_ms": 718000,
+        "speaker_id": "speaker_3",
+        "text": "循序渐进的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 726000,
+        "end_ms": 731000,
+        "speaker_id": "speaker_3",
+        "text": "但是你可以做到洁身自好，但是你能防范别人在背后给你使绊子吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 731000,
+        "end_ms": 734000,
+        "speaker_id": "speaker_3",
+        "text": "别人对你使绊子你能察觉到吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 734000,
+        "end_ms": 742000,
+        "speaker_id": "speaker_6",
+        "text": "但是这个是每个每个不仅是公司了，就是你人与人之间都会有这样的问题，你不能考虑到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 741000,
+        "end_ms": 749000,
+        "speaker_id": "speaker_3",
+        "text": "我觉得可以先在我我觉得可以先在小公司锻炼一下，然后觉得自己这个时机成熟了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 749000,
+        "end_ms": 751000,
+        "speaker_id": "speaker_3",
+        "text": "再跳槽也不晚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 750000,
+        "end_ms": 754000,
+        "speaker_id": "speaker_5",
+        "text": "我跟你的想法是相反我是觉得先可以从大公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 750000,
+        "end_ms": 757000,
+        "speaker_id": "speaker_4",
+        "text": "你的意思是反正是小公司他坑你啊，使绊子啊不会吃太大亏是这个意思吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 759000,
+        "end_ms": 782000,
+        "speaker_id": "speaker_7",
+        "text": "大学生刚毕业主要是一个经验问题，你不可能说毕业之后你找的第一家公司，你能工作十年二十年，所以说你把眼光先放的短一点，就是在你毕业的这个过渡期，在你即将面对的一到两年的这个工作期间，你想选择在大公司提高一下儿经验，还是在小公司做一下心理的过渡，这是一个不同的人可能会做出不同的选择。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 765000,
+        "end_ms": 766000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 782000,
+        "end_ms": 793000,
+        "speaker_id": "speaker_2",
+        "text": "他就像刚才说的那些大公司和小公司的问题和一个眼光的问题，就像小公司小公司也有很多弊端，小公司的弊端就是它的运营可能不完善",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 794000,
+        "end_ms": 804000,
+        "speaker_id": "speaker_2",
+        "text": "运营不完善，而且管理制度也不完善，然后业务也经常调整，可能人员他们部门儿之间也会互相的调，没有大公司那么完善。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 804000,
+        "end_ms": 812000,
+        "speaker_id": "speaker_2",
+        "text": "但是如果你经历小公司这些弊端之后，你已经面对过到大公司，如果你初入社会就进入到大公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 812000,
+        "end_ms": 825000,
+        "speaker_id": "speaker_2",
+        "text": "你就要经常在大公司，如果说人员调配之间的属于人家部门儿领导去让当代大学生去调换，你也没有办法左右，如果是小公司的话，你可以向上级提提出你的意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 826000,
+        "end_ms": 834000,
+        "speaker_id": "speaker_2",
+        "text": "说不定会审核一下大公司谁会管你这种个人情绪，它只会管理一个公司的整体运营，它会以团队协作为主",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 835000,
+        "end_ms": 840000,
+        "speaker_id": "speaker_2",
+        "text": "他不会考虑到你的个人情绪，因为你的能力没有那么突出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 841000,
+        "end_ms": 843000,
+        "speaker_id": "speaker_2",
+        "text": "以上你们有什么看法？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 843000,
+        "end_ms": 851000,
+        "speaker_id": "speaker_7",
+        "text": "其实每个公司肯定都是有利有弊的。举一个比较现实的例子，就比如说我上初中的时候，两个兄弟班，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 851000,
+        "end_ms": 857000,
+        "speaker_id": "speaker_7",
+        "text": "然后A班和B班B班的第一名考试永远考不过A班A班的第一名",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 857000,
+        "end_ms": 870000,
+        "speaker_id": "speaker_7",
+        "text": "但是过了一年之后拆班啦两个班合到了一一起之后，B班的第一名突然就比A班的第一名强了。是因为当他处于A班这个氛围这个环境中之后，他会不自觉地跳出自己原来的舒适圈",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 870000,
+        "end_ms": 883000,
+        "speaker_id": "speaker_7",
+        "text": "然后有了对比之后他才会更强，他本身能力是有的，但他处于B班这个比较低一层次的班级，所以他永远感受不到A班，但他当他进了A班之后，他就会不自觉的把自己的能力进一步提高",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 883000,
+        "end_ms": 891000,
+        "speaker_id": "speaker_7",
+        "text": "这个相对于来说就是小公司和大公司的区别，当你进到大公司之后，你可以更好的发挥自己的实力，但是另一个比较",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 891000,
+        "end_ms": 902000,
+        "speaker_id": "speaker_7",
+        "text": "呃容易被忽略的问题就是说你在大公司里面所有人都比你能力强的时候，你到底有没有出头之日？就说你能不能完全发挥自己的实力，比如说大家常说的扫地僧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 902000,
+        "end_ms": 912000,
+        "speaker_id": "speaker_7",
+        "text": "就是少林寺里面比较一个低调，但是他很有本事的一个人也就是说当你把自己放于一个扫地僧的位置的时候，你真的可以有实力的把自己的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 912000,
+        "end_ms": 924000,
+        "speaker_id": "speaker_7",
+        "text": "呃就是你有有机会把自己的这个实力完全发出来了发展出来了，但是如果当你进了一个小公司，大家说小公司为什么为小公司因为它的各方面都跟大公司有些差别，先不说资金问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 924000,
+        "end_ms": 934000,
+        "speaker_id": "speaker_7",
+        "text": "就他人缘问题，他肯定没有大公司的人的那个学历那么高，见识那么广，所以说当你个人能力还不错的时候，你在小公司里面你就会是拔尖的那一层",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 934000,
+        "end_ms": 947000,
+        "speaker_id": "speaker_7",
+        "text": "你就会受到重用你就会不断的增强自己的见识，然后不断的就是别人也找你帮忙，然后上层领导也重用你，在无形之间你会发挥自己的价值，你就会得到一种满足感，从而更好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 947000,
+        "end_ms": 956000,
+        "speaker_id": "speaker_7",
+        "text": "更好的往未来发展。所以说不同的人不同的那个性格，他在大公司和小公司里可能他生存呢这样的那个感觉是不一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 956000,
+        "end_ms": 962000,
+        "speaker_id": "speaker_7",
+        "text": "所以说我还是很强调就是利弊是肯定都有的，但是要根据个人情况来去选择。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 963000,
+        "end_ms": 979000,
+        "speaker_id": "speaker_2",
+        "text": "好，我再说一下我的看法，就比方说你如果起步是大公司，但是你干到了毕业的时候都是二十多岁，干到了快要四十岁的时候，你觉得实在是真的上上升不上去了，你去跳槽到小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 979000,
+        "end_ms": 987000,
+        "speaker_id": "speaker_2",
+        "text": "你觉得是用小公司还是大公司作为后边的后台？就比方说如果刚毕业你去了小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 987000,
+        "end_ms": 999000,
+        "speaker_id": "speaker_2",
+        "text": "你去那里工作了，到三十多岁左右，你去跳槽了到大公司，准备一个养老左右的一个就是规划，可以规划自己生活，可以去大公司养老，但是小公司他做不到养老这方面。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 999000,
+        "end_ms": 1004000,
+        "speaker_id": "speaker_2",
+        "text": "因为小公司的未来发展你确定不了，你们有什么看法？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 1005000,
+        "end_ms": 1010000,
+        "speaker_id": "speaker_2",
+        "text": "是要大公司做第一份工作，还是以小公司做第一份工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 1012000,
+        "end_ms": 1015000,
+        "speaker_id": "speaker_3",
+        "text": "你的意思就是说养老",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 1016000,
+        "end_ms": 1023000,
+        "speaker_id": "speaker_2",
+        "text": "难道你工作你去小公司一直成天疲惫，大学生刚毕业为了是什么？不就是为了挣钱嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 1025000,
+        "end_ms": 1033000,
+        "speaker_id": "speaker_2",
+        "text": "如果你去大公司它升值不起来的话，他不就资金相就是工资相对于较少嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 1025000,
+        "end_ms": 1028000,
+        "speaker_id": "speaker_3",
+        "text": "大学生刚毕业不是没经验嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 1033000,
+        "end_ms": 1044000,
+        "speaker_id": "speaker_7",
+        "text": "其实大学生刚毕业的时候压力是很小的，因为你没有结婚不用养孩子，你的父母也没有退休可以自己过活。所以说你在一到两年的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 1044000,
+        "end_ms": 1056000,
+        "speaker_id": "speaker_7",
+        "text": "处于一个过渡期的时候，你是完全可以追求自己想做的事情，如果你过了三十岁以后一切都稳定下来之后，你必须要保证自己未来退休之后的生活以及你孩子的那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 1056000,
+        "end_ms": 1069000,
+        "speaker_id": "speaker_7",
+        "text": "呃学费等问题所以这个时候你是没有选择的，所以说你放开一切就是你个人自由不担心花销这个方面儿就光是这个个人提升经验问题，你是觉得大公司好一点儿还是小公司好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 1072000,
+        "end_ms": 1083000,
+        "speaker_id": "speaker_7",
+        "text": "不用考虑那么多工资啊问题，因为不管你在大公司还是小公司，然后就你个人花销而言都是完全够的，所以说你就是想个人经历提高一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 1083000,
+        "end_ms": 1093000,
+        "speaker_id": "speaker_7",
+        "text": "然后未来发展方向能更好，能更稳定，还是说你想舒舒服服的先把这个过渡期渡过，然后再慢慢的考虑未来，这是一个很现实的事",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 1091000,
+        "end_ms": 1097000,
+        "speaker_id": "speaker_2",
+        "text": "好，管理部门这边儿给出了他自己的看法，那市场部和咨询部这边儿有什么看法吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 1097000,
+        "end_ms": 1098000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 1098000,
+        "end_ms": 1100000,
+        "speaker_id": "speaker_2",
+        "text": "刚才坚持就是大公司之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 1100000,
+        "end_ms": 1115000,
+        "speaker_id": "speaker_5",
+        "text": "对，因为我刚才就是听了管理部门说的意见之后，我觉得其实真的就是大学生毕业之后，在二十岁到三十岁期间真是没有什么压力，所以在这段儿时间我觉得这就是应该选择想要去挑战的事情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 1115000,
+        "end_ms": 1117000,
+        "speaker_id": "speaker_5",
+        "text": "你说你刚出来你就去一个小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 1118000,
+        "end_ms": 1131000,
+        "speaker_id": "speaker_5",
+        "text": "里面就竞争不会很激烈，然后你嗯你的提升也不会很快，还不如你去大公司大公司先见识一下，把这些管理，然后还有那些各种模式都熟悉都清楚以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 1131000,
+        "end_ms": 1138000,
+        "speaker_id": "speaker_5",
+        "text": "等等到你有了足够的阅历和资本，然后你可以在去试试选择跳槽并不是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 1138000,
+        "end_ms": 1147000,
+        "speaker_id": "speaker_5",
+        "text": "在大公司你没有发展的余地了，你就还要一直在那里。我觉得可以先把小小公司当做那个以后的那个发展背景。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 1147000,
+        "end_ms": 1154000,
+        "speaker_id": "speaker_2",
+        "text": "好，咨询部这边的意见总结来说就是，没有成功就不算失败，就属于这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 1154000,
+        "end_ms": 1161000,
+        "speaker_id": "speaker_2",
+        "text": "就是属于当代大学生敢拼嘛，这种方面的精神那这边市场部有什么意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 1162000,
+        "end_ms": 1168000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得嗯刚刚说的想以后把什么作为养老，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 1168000,
+        "end_ms": 1170000,
+        "speaker_id": "speaker_5",
+        "text": "五险一金就那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 1169000,
+        "end_ms": 1180000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得大学生刚出来是没有什么压力，但是如果是我的话，我要考虑去哪个公司，我肯定要考虑这个公司的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 1180000,
+        "end_ms": 1181000,
+        "speaker_id": "speaker_3",
+        "text": "福利问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 1181000,
+        "end_ms": 1193000,
+        "speaker_id": "speaker_6",
+        "text": "对，首先就考虑的是这个问题，所以相对来说大公司这方面肯定是条件各方面都比较好的，为什么有一个好的条件在我面前，我要去选一个小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 1193000,
+        "end_ms": 1202000,
+        "speaker_id": "speaker_6",
+        "text": "所以我觉得嗯在我这个各方面都可以可以的情况下，我肯定会选择去尝试一下儿挑战一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 1202000,
+        "end_ms": 1212000,
+        "speaker_id": "speaker_6",
+        "text": "然后嗯之后对之后这种养老什么的情况，我觉得我有一定的资本之后，我是不会选择继续在工作的，我可以自己",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 1212000,
+        "end_ms": 1219000,
+        "speaker_id": "speaker_6",
+        "text": "嗯创业，自己做一点儿别的事情，这是我以后的一个想法吧。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 1219000,
+        "end_ms": 1229000,
+        "speaker_id": "speaker_2",
+        "text": "行，市场部这边儿发表了意见，这边儿是属于女生的观点，那这边儿教务教学部有什么想法吗？因为咱们属于男性嘛，男性以后肯定要面临",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 1229000,
+        "end_ms": 1234000,
+        "speaker_id": "speaker_2",
+        "text": "房贷啊车贷啊之类的这方面的压力，他会怎么选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 1235000,
+        "end_ms": 1245000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得一开始作为过渡还是小公司更好，因为在小公司的话你有更多的机会去施施展自己的能力对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 1245000,
+        "end_ms": 1256000,
+        "speaker_id": "speaker_4",
+        "text": "就我之前也说了你说你学这管理专业，你到大公司，你管理不上，轮不到你管理，对不对那你学这个技能那你又用不上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 1256000,
+        "end_ms": 1259000,
+        "speaker_id": "speaker_5",
+        "text": "不是说学了管理就要去管理而是学习个技能这意思",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 1257000,
+        "end_ms": 1258000,
+        "speaker_id": "speaker_4",
+        "text": "我知道",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 1259000,
+        "end_ms": 1267000,
+        "speaker_id": "speaker_4",
+        "text": "我说是学可能自己去不了，那只能说一看别人的是你在小公司的话，你可以不断的熟练自己的技能对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 1263000,
+        "end_ms": 1264000,
+        "speaker_id": "speaker_5",
+        "text": "对啊看看呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 1268000,
+        "end_ms": 1272000,
+        "speaker_id": "speaker_4",
+        "text": "这种公司你有做管理的经验，你有做高层的经验，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 1272000,
+        "end_ms": 1275000,
+        "speaker_id": "speaker_5",
+        "text": "在小公司的经验未必有大公司的经验多啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 1275000,
+        "end_ms": 1276000,
+        "speaker_id": "speaker_6",
+        "text": "但是你就像大公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 1275000,
+        "end_ms": 1279000,
+        "speaker_id": "speaker_4",
+        "text": "在小公司的经验是你实操得来的是你自己的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 1279000,
+        "end_ms": 1284000,
+        "speaker_id": "speaker_4",
+        "text": "你大公能看的再多的点经验，那是别人做的，你只能是去一个看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 1282000,
+        "end_ms": 1289000,
+        "speaker_id": "speaker_5",
+        "text": "我是要先看了之后才能操做啊，我不能还没没有看我就去操作，那我可能什么都不会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 1288000,
+        "end_ms": 1290000,
+        "speaker_id": "speaker_4",
+        "text": "实践是检验真理的唯一标准",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 1290000,
+        "end_ms": 1293000,
+        "speaker_id": "speaker_5",
+        "text": "那之前不得有了解嘛了解了才能实践嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 1291000,
+        "end_ms": 1296000,
+        "speaker_id": "speaker_4",
+        "text": "先做在实践再做这是个反复的过程",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 1296000,
+        "end_ms": 1298000,
+        "speaker_id": "speaker_5",
+        "text": "你什么都不知道你怎么实践",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 1297000,
+        "end_ms": 1301000,
+        "speaker_id": "speaker_4",
+        "text": "不存在说你这就属于先有鸡还是先有蛋的问题对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 1301000,
+        "end_ms": 1304000,
+        "speaker_id": "speaker_4",
+        "text": "要一样就行了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 1302000,
+        "end_ms": 1312000,
+        "speaker_id": "speaker_6",
+        "text": "我我我想我想插一下嘴就是你你刚刚说的是在大公司你学的这个专业，但是你不会从事这个专业的一些东西，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 1312000,
+        "end_ms": 1321000,
+        "speaker_id": "speaker_4",
+        "text": "不光是这个专业，我是举个例子不光是专业，比如说不管你有什么本事，你去了大公司你基本上就是整理文件端茶倒水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 1321000,
+        "end_ms": 1326000,
+        "speaker_id": "speaker_4",
+        "text": "能端茶倒水儿也也就不来赖了你别说还整整理文件更多一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 1326000,
+        "end_ms": 1339000,
+        "speaker_id": "speaker_7",
+        "text": "嗯大公司很现实的一个问题，就是你刚毕业到那之后，你基本上是无事可做的，因为大公司运营这么多年，它的系统已经很完善了，他其实并不缺你这一个人，他只是为后续的扩展需要在招纳人而已。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 1326000,
+        "end_ms": 1327000,
+        "speaker_id": "speaker_2",
+        "text": "好这",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 1331000,
+        "end_ms": 1332000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 1339000,
+        "end_ms": 1352000,
+        "speaker_id": "speaker_7",
+        "text": "所以说你刚那儿之后你的心落差可能是很大的，在你专业里比如说你年年专业第一年年拿奖学金，到大公司发现之后，所有项目都不让你接手，然后一给你一个机会之后，你发现什么都不会做",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 1353000,
+        "end_ms": 1364000,
+        "speaker_id": "speaker_7",
+        "text": "然后他说然后你就是上司问你的时候，你说我没有实践，我说那你大学其实已经就白学了嘛，因为你学习和实践肯定是有差距的，但是到了大公司之后他不给你实践的机会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 1364000,
+        "end_ms": 1369000,
+        "speaker_id": "speaker_7",
+        "text": "但是他又不认可你在大学里取得这个表面的成绩，是一个很矛盾又很现实的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 1369000,
+        "end_ms": 1371000,
+        "speaker_id": "speaker_3",
+        "text": "对，就是这个意思",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 1372000,
+        "end_ms": 1375000,
+        "speaker_id": "speaker_2",
+        "text": "还有这个积少成多的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 1376000,
+        "end_ms": 1386000,
+        "speaker_id": "speaker_2",
+        "text": "就就业嘛肯定刚才也说了，教学部这边儿他肯定要跟学生打交道特别多嘛，属于教学老师管理这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 1386000,
+        "end_ms": 1401000,
+        "speaker_id": "speaker_2",
+        "text": "教学从小做到大，怎么样从小做到大？他们这边教学生也得是从小教大，你不能像小公司大公司你教学生也一样，就像大公司就相当于扔扔给你一塌书，让你自己学",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 1401000,
+        "end_ms": 1410000,
+        "speaker_id": "speaker_2",
+        "text": "你可能看不懂小公司是什么，可能老师在你旁边儿给你讲解，可能属于这种，但是当然讲解的也有不细的，但是至少他在跟你讲，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 1410000,
+        "end_ms": 1415000,
+        "speaker_id": "speaker_2",
+        "text": "可能他在把一些他想要的人生阅历呀，给你说一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 1415000,
+        "end_ms": 1416000,
+        "speaker_id": "speaker_2",
+        "text": "这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 1416000,
+        "end_ms": 1426000,
+        "speaker_id": "speaker_3",
+        "text": "嗯小公司会更那个能让你有更多的实践的机会，但是你去大公司的话，你可能真的就是连端茶倒水的机会都没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 1421000,
+        "end_ms": 1421000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 1425000,
+        "end_ms": 1428000,
+        "speaker_id": "speaker_4",
+        "text": "没错端茶倒水都轮不着你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1428000,
+        "end_ms": 1436000,
+        "speaker_id": "speaker_3",
+        "text": "必须是嗯我个人觉得就是在小公司充分得到了发展的这个学习吧，得到充分的实践",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1434000,
+        "end_ms": 1435000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1436000,
+        "end_ms": 1440000,
+        "speaker_id": "speaker_3",
+        "text": "你有一定的工作经验以后，你再去大公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1440000,
+        "end_ms": 1443000,
+        "speaker_id": "speaker_4",
+        "text": "对，那才有可能能轮着你端茶送水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1444000,
+        "end_ms": 1445000,
+        "speaker_id": "speaker_2",
+        "text": "但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1444000,
+        "end_ms": 1447000,
+        "speaker_id": "speaker_3",
+        "text": "这是个很现实嘞东西你可能在小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1444000,
+        "end_ms": 1450000,
+        "speaker_id": "speaker_1",
+        "text": "你们说了说了这么多嗯那你们觉得嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1450000,
+        "end_ms": 1454000,
+        "speaker_id": "speaker_1",
+        "text": "应该怎么去指导这个咱们这个学生去就业呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1454000,
+        "end_ms": 1464000,
+        "speaker_id": "speaker_3",
+        "text": "我觉得还是让学生的眼光少，呃刚毕业的学生眼光还是先暂时先放低一下，咱们从咱们还是说现实一点，不要好高骛远",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1460000,
+        "end_ms": 1460000,
+        "speaker_id": "speaker_1",
+        "text": "放低",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1465000,
+        "end_ms": 1467000,
+        "speaker_id": "speaker_3",
+        "text": "免得踩空",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1467000,
+        "end_ms": 1476000,
+        "speaker_id": "speaker_7",
+        "text": "这个其实还要还是要根据个人能力分，比如说一个人他很积极上进，他的性格就是比较争强好胜这一种。他在大公司其实也可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1476000,
+        "end_ms": 1486000,
+        "speaker_id": "speaker_7",
+        "text": "走得开，然后他人际关系这方面，然后也是比较好的话，他在大公司其实还是有潜力的，你把他放到小公司可能就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1486000,
+        "end_ms": 1497000,
+        "speaker_id": "speaker_7",
+        "text": "有点限制，但是对于那种个人能力很强，但是他个人就是有点闷闷的那种，他如果到了大公司，他绝对是被打压的那一批，所以把他放到这种小公司对他来说是一种好事",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1497000,
+        "end_ms": 1508000,
+        "speaker_id": "speaker_7",
+        "text": "所以咱们还是要最重点是具体问题具体分析，根据个人能力个人理想以及他的性格方面，让他更好的选择方向，指明一条方向，让所有人去走，这是肯定不行的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1508000,
+        "end_ms": 1517000,
+        "speaker_id": "speaker_2",
+        "text": "咱们教学部门儿只能给学生推荐咱们这次会议讨论的经验，给他们推荐，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1516000,
+        "end_ms": 1517000,
+        "speaker_id": "speaker_3",
+        "text": "给学生做出分析",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1518000,
+        "end_ms": 1526000,
+        "speaker_id": "speaker_2",
+        "text": "做来分析的完善一点，让学生自己去选择，去大公司好还是小公司好？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1518000,
+        "end_ms": 1520000,
+        "speaker_id": "speaker_3",
+        "text": "分析他适合",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1527000,
+        "end_ms": 1538000,
+        "speaker_id": "speaker_2",
+        "text": "咱们争辩的这个话题都说起步要小公司，然后这边管理部门也说了，如果分个人能力嘛去大公司还是小公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1539000,
+        "end_ms": 1549000,
+        "speaker_id": "speaker_2",
+        "text": "他肯定不能一步到位，去什么公司都是都是从基层慢慢爬的，或者如果学历能力强的话，会从中层开始爬",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1549000,
+        "end_ms": 1557000,
+        "speaker_id": "speaker_2",
+        "text": "但是都是属于中下游开始往上慢慢爬，如果是大公司的话，他人际关系特别的复杂",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1557000,
+        "end_ms": 1571000,
+        "speaker_id": "speaker_2",
+        "text": "你可能在那里就有一句话说的好？没有永远的朋友，只有永远的利益，可能这句话在小公司相对来说也有，但相对来说没有大公司多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1572000,
+        "end_ms": 1580000,
+        "speaker_id": "speaker_2",
+        "text": "大公司如果会为了某一个利益将你这个人排挤掉，就像那种闷闷的人去大公司，不好说话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1580000,
+        "end_ms": 1590000,
+        "speaker_id": "speaker_2",
+        "text": "但是你又占着一个他想要的岗位，他就想想办法尽快把你挤掉。所以去大公司这方面可以根据学生的能力让他们自己去选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1591000,
+        "end_ms": 1602000,
+        "speaker_id": "speaker_2",
+        "text": "但是小公司的弊端就是什么？它可能不会给你交五险一金，它可能薪资待遇你可能会后边儿提升上来，但是前面的薪资待遇肯定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1602000,
+        "end_ms": 1612000,
+        "speaker_id": "speaker_2",
+        "text": "不是让你很满意。还有就是专业对口儿，如果你执意要去大公司的话，你的专业不对口儿，也没有什么上升空间。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1613000,
+        "end_ms": 1624000,
+        "speaker_id": "speaker_2",
+        "text": "所以对专业对口儿这方面，各位老师有什么发表意见，就比方说毕业以后找了一份不属于你专业对口儿的工作，你是要执意找一份儿呢还是怎么说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1625000,
+        "end_ms": 1630000,
+        "speaker_id": "speaker_4",
+        "text": "反正就现在来说你想找个专业对口的这个不好找",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1630000,
+        "end_ms": 1630000,
+        "speaker_id": "speaker_7",
+        "text": "太少了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1631000,
+        "end_ms": 1632000,
+        "speaker_id": "speaker_4",
+        "text": "很难很难",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1631000,
+        "end_ms": 1634000,
+        "speaker_id": "speaker_7",
+        "text": "很少有专业对口直接就业的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1633000,
+        "end_ms": 1641000,
+        "speaker_id": "speaker_4",
+        "text": "尤其说你要是去大公司，你还想专业对口儿那真的，基本上没啥指望",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1642000,
+        "end_ms": 1644000,
+        "speaker_id": "speaker_4",
+        "text": "除非你学的是前台接待",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1644000,
+        "end_ms": 1646000,
+        "speaker_id": "speaker_5",
+        "text": "也不用这么悲观，其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1646000,
+        "end_ms": 1653000,
+        "speaker_id": "speaker_4",
+        "text": "不是也要说了你要是真学个企业管理上大公司，真管不上对不对？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1654000,
+        "end_ms": 1656000,
+        "speaker_id": "speaker_2",
+        "text": "那市场咨询这方面呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1657000,
+        "end_ms": 1674000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这个考虑的话要看个人的意愿吧，如果你呃这个专业肯定你学的专业首先是你最感兴趣的这个之外，然后你或许对别的也会有一些兴趣，我会首先考虑这样儿的工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1674000,
+        "end_ms": 1686000,
+        "speaker_id": "speaker_5",
+        "text": "对，但是肯定也会结合实际情况也不是说我学什么，我出去一定要做什么，不会有那么多合适的职位等着自己所以事实需要挑战的时候，也会说不用选择非要去对口",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1679000,
+        "end_ms": 1679000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1688000,
+        "end_ms": 1693000,
+        "speaker_id": "speaker_2",
+        "text": "好，就属于那种不对口儿的专业，也可以就是通过自己的努力。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1693000,
+        "end_ms": 1697000,
+        "speaker_id": "speaker_5",
+        "text": "对，还是看自身本人的性格本人的意愿本人的想法。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1697000,
+        "end_ms": 1700000,
+        "speaker_id": "speaker_2",
+        "text": "嗯那有什么好的建议吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1703000,
+        "end_ms": 1711000,
+        "speaker_id": "speaker_2",
+        "text": "各位部门就是属于这种如果咱们以教学方式教给学生的话，怎么样去引导他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1712000,
+        "end_ms": 1718000,
+        "speaker_id": "speaker_2",
+        "text": "因为是老师嘛肯定要引导学生啊，如果这个学生执意要这么做，咱们要怎么改善？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1718000,
+        "end_ms": 1723000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得像刚刚那个部门说的，一定要先跟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1723000,
+        "end_ms": 1733000,
+        "speaker_id": "speaker_6",
+        "text": "刚毕业的大学生说好咱们这个现实的情况，不能让他们太好高骛远了，这是很多大学生刚毕业都有的一个心理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1733000,
+        "end_ms": 1743000,
+        "speaker_id": "speaker_6",
+        "text": "然后必须得告诉他们社会就是这么的现实，去大公司也是呃面临很多的一些问题，所以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1743000,
+        "end_ms": 1749000,
+        "speaker_id": "speaker_6",
+        "text": "呃想一出去就有一个好的工作，然后高的薪资这是不太可能的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1750000,
+        "end_ms": 1760000,
+        "speaker_id": "speaker_6",
+        "text": "专业呃专业方面也是这样，做什么工作也是不可以，你学这个计算机的你想出去就是一个编一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1760000,
+        "end_ms": 1769000,
+        "speaker_id": "speaker_6",
+        "text": "编一个软件，然后呃大家都爱用了，它这个软件一这个是不可能一下就完成的，所以呃这个大学生肯定是心理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1769000,
+        "end_ms": 1778000,
+        "speaker_id": "speaker_6",
+        "text": "心理上他会有一个那个很理想化的一个想法，我们一定要作为老师嘛，我们的目的是引导他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1778000,
+        "end_ms": 1782000,
+        "speaker_id": "speaker_6",
+        "text": "呃告诉他们以后这些情况让他们有更多的选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1784000,
+        "end_ms": 1799000,
+        "speaker_id": "speaker_2",
+        "text": "嗯这方面找工作也得看他们自己个人意愿，就说现在就业吧大学生都知道，现在找工作很难找，更别去找对口儿的工作，除非学历或者能力到达一定的高高度，他才可能找到对口的专业",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1793000,
+        "end_ms": 1794000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1799000,
+        "end_ms": 1813000,
+        "speaker_id": "speaker_2",
+        "text": "对于找工作这方面，老师们有什么对学生就是给他们减压之类的心理指导，他们万一就是认为就毕了业，真的是无所事事怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1813000,
+        "end_ms": 1816000,
+        "speaker_id": "speaker_2",
+        "text": "各部门发表一下意见来教务部开始",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1822000,
+        "end_ms": 1830000,
+        "speaker_id": "speaker_3",
+        "text": "我觉得还是分具体情况和你们具体分析吧，每个学生跟每个学生他的追求不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1830000,
+        "end_ms": 1839000,
+        "speaker_id": "speaker_3",
+        "text": "咱们说现实一点，他有的学生就是家庭就是好，或者说父母给他安排工作的，他上大学只是镀金",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1833000,
+        "end_ms": 1835000,
+        "speaker_id": "speaker_2",
+        "text": "嗯家庭条件好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1839000,
+        "end_ms": 1840000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1840000,
+        "end_ms": 1842000,
+        "speaker_id": "speaker_3",
+        "text": "这个咱们就可以嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1843000,
+        "end_ms": 1850000,
+        "speaker_id": "speaker_3",
+        "text": "不用过多的这个建议他们自己有自己的想法儿，但是像那种就是希望自己从事的专业",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1850000,
+        "end_ms": 1864000,
+        "speaker_id": "speaker_3",
+        "text": "呃呃从事的工作就是自己对口儿的专业的话，咱们就可以多给他们一些建议，是可能去某些公司啊或者说哪个单位，他们可能薪资待遇不是很好，但是慢儿慢儿会往上升",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1864000,
+        "end_ms": 1866000,
+        "speaker_id": "speaker_3",
+        "text": "但是是跟自己的专业是挂钩儿的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1867000,
+        "end_ms": 1880000,
+        "speaker_id": "speaker_1",
+        "text": "对，说了这么多，这就是需要一个过程。刚才说了很多就是，刚才说这个有些这个学嘞专业跟自己干的工作是不一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1871000,
+        "end_ms": 1871000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1880000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_1",
+        "text": "尽量还是建议一些大学生，你学这个专业就去先去尝试一下这个工作，然后嗯根据自己的一个工作情况，然后咱再去做决定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1894000,
+        "end_ms": 1900000,
+        "speaker_id": "speaker_1",
+        "text": "行呃那今天我们既然嗯都说了这么多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1901000,
+        "end_ms": 1907000,
+        "speaker_id": "speaker_1",
+        "text": "呃下去以后，咱们把这个咱们会上的内容副校长这边儿总结一下儿。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1907000,
+        "end_ms": 1908000,
+        "speaker_id": "speaker_2",
+        "text": "好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1908000,
+        "end_ms": 1909000,
+        "speaker_id": "speaker_1",
+        "text": "然后给学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1910000,
+        "end_ms": 1916000,
+        "speaker_id": "speaker_1",
+        "text": "咱们把学生召集过来，然后开一个这个会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1916000,
+        "end_ms": 1918000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿你来主持一下下次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1918000,
+        "end_ms": 1919000,
+        "speaker_id": "speaker_2",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1918000,
+        "end_ms": 1919000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1919000,
+        "end_ms": 1923000,
+        "speaker_id": "speaker_1",
+        "text": "那咱本次会议就先到此结束，散会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1934000,
+        "end_ms": 1937000,
+        "speaker_id": "speaker_3",
+        "text": "还是啥也不懂这个",
+        "status": "ok"
+      }
+    ]
+  }
+}

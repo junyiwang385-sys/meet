@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:14:14.0123038Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"节目互动与预算安排\",\n  \"key_points\": [\n    \"讨论在节目表演中加入实时互动环节，如现场抽选学生上台表演或与观众互动\",\n    \"计划从十万赞助资金中拨出一千元用于建立大型微信群，分组发放元旦红包\",\n    \"建议将节目名单和预算通过PPT和Excel清晰公示，由计算机专业同学负责制作\",\n    \"确定由AB两位同学负责制作条幅，D和C同学分别负责PPT和Excel预算表\",\n    \"需提前两个月发布节目公告，确保各部有足够时间排练和调整节目顺序\",\n    \"考虑与外校音乐学院合作，但需先完成内部预算核算再决定外联事宜\"\n  ],\n  \"anchors\": [\n    \"十万块钱赞助\",\n    \"一千块钱\",\n    \"元旦红包\",\n    \"PPT\",\n    \"Excel\",\n    \"条幅\",\n    \"空乘系\",\n    \"播音系\"\n  ],\n  \"summary\": \"会议决定在节目表演中加入实时互动环节，如现场抽选学生上台表演或与观众互动。计划从十万块钱赞助中拨出一千块钱建立大型微信群，分组发放元旦红包。需由D和C同学分别制作PPT和Excel预算表，AB同学负责条幅。同时要求提前两个月发布节目公告，确保各部有足够时间排练。此外，考虑与外校音乐学院合作，但需先完成内部预算核算再决定外联事宜。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r314\",\n    \"r316\",\n    \"r334\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"制作节目名单PPT\",\n      \"owner\": \"sp3\",\n      \"deadline\": null,\n      \"refs\": [\n        \"r314\"\n      ]\n    },\n    {\n      \"task\": \"制作预算Excel表\",\n      \"owner\": \"sp3\",\n      \"deadline\": null,\n      \"refs\": [\n        \"r316\"\n      ]\n    },\n    {\n      \"task\": \"制作条幅\",\n      \"owner\": \"sp3\",\n      \"deadline\": null,\n      \"refs\": [\n        \"r325\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 7660665800,
+  "load_duration": 2650100,
+  "prompt_eval_count": 2841,
+  "prompt_eval_duration": 560605000,
+  "eval_count": 493,
+  "eval_duration": 6984568000
+}

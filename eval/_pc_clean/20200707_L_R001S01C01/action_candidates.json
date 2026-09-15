@@ -1,0 +1,146 @@
+[
+  {
+    "task": "处理卫生间漏水问题",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000003"
+    ]
+  },
+  {
+    "task": "提交会议场地及设备详细财务表",
+    "owner": "speaker_7",
+    "deadline": null,
+    "refs": [
+      "seg-000112"
+    ]
+  },
+  {
+    "task": "后勤人员招聘审批",
+    "owner": "speaker_7",
+    "deadline": null,
+    "refs": [
+      "seg-000113"
+    ]
+  },
+  {
+    "task": "制作人员调整报表",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000147"
+    ]
+  },
+  {
+    "task": "开展客户满意度调查",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000181"
+    ]
+  },
+  {
+    "task": "拟订专家合作合同初稿",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000208"
+    ]
+  },
+  {
+    "task": "招募临时服务员",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000270"
+    ]
+  },
+  {
+    "task": "运营部联系政府工作人员参与商业会议",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000285"
+    ]
+  },
+  {
+    "task": "检查会场电路及防疫设施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000344"
+    ]
+  },
+  {
+    "task": "确认商务会议时间及天气预案",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000426"
+    ]
+  },
+  {
+    "task": "与客户确认婚礼室内/室外安排",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000499"
+    ]
+  },
+  {
+    "task": "确认婚庆公司方案提交流程",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000535"
+    ]
+  },
+  {
+    "task": "确认蛋糕由内部糕点师完成",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000596"
+    ]
+  },
+  {
+    "task": "落实婚礼蛋糕及赠品优惠",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000628"
+    ]
+  },
+  {
+    "task": "联合市场部开展婚礼宣传",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000631"
+    ]
+  },
+  {
+    "task": "财政部门提供额外资金支持",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000638"
+    ]
+  },
+  {
+    "task": "婚礼后进行酒店满意度调研",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000642"
+    ]
+  },
+  {
+    "task": "协商婚车数量",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000669"
+    ]
+  }
+]

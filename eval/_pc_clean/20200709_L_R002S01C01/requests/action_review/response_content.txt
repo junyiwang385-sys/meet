@@ -1,0 +1,8 @@
+{
+  "task": "开展顾客满意度调查",
+  "owner": "sp6",
+  "deadline": null,
+  "refs": [
+    "r68"
+  ]
+}

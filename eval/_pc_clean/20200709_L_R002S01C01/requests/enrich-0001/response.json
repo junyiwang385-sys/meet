@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:13:17.7537188Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"keywords\": [\n    \"下半年工作安排\",\n    \"上半年经营情况总结\",\n    \"教练资格认证\",\n    \"教练服务态度\",\n    \"顾客心理需求\",\n    \"VIP会员服务\",\n    \"安全检查\",\n    \"车辆管理\",\n    \"健康码使用\",\n    \"体温检测\",\n    \"消毒措施\",\n    \"监控系统维护\",\n    \"保安人员配置\",\n    \"设备维护\",\n    \"清洁卫生\",\n    \"游泳馆水温管理\",\n    \"地面湿滑处理\",\n    \"顾客咨询量增加\",\n    \"前台服务培训\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3442029500,
+  "load_duration": 2109700,
+  "prompt_eval_count": 3591,
+  "prompt_eval_duration": 964323000,
+  "eval_count": 123,
+  "eval_duration": 1874100000
+}

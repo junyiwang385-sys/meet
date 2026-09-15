@@ -1,0 +1,82 @@
+[
+  {
+    "task": "申请监控盲区报表",
+    "owner": "speaker_2",
+    "deadline": null,
+    "refs": [
+      "seg-000064"
+    ]
+  },
+  {
+    "task": "增加专业人员检修水泵",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000106"
+    ]
+  },
+  {
+    "task": "加装抽水泵",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000161"
+    ]
+  },
+  {
+    "task": "更新绿化设施并采购标识牌",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000177"
+    ]
+  },
+  {
+    "task": "配备保洁工具（沙土、小铲子）",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000201"
+    ]
+  },
+  {
+    "task": "制定小区宠物管理规章制度",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000213"
+    ]
+  },
+  {
+    "task": "增加垃圾桶及引导措施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000224"
+    ]
+  },
+  {
+    "task": "联系当地垃圾站协助厨余垃圾分拣",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000299"
+    ]
+  },
+  {
+    "task": "电梯卡问题处理",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000341"
+    ]
+  },
+  {
+    "task": "夜间巡逻问题处理机制",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000396"
+    ]
+  }
+]

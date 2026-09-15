@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:07:18.7706708Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"上半年化妆品行业现状及公司销售策略如何？\",\n      \"answer\": \"上半年化妆品行业覆盖全年龄段用户，包括男性、女性及儿童，且产品兼具护肤与保健功能，公司销售策略已拓展至全性别群体。\"\n    },\n    {\n      \"question\": \"上半年销售业绩受疫情影响情况如何？\",\n      \"answer\": \"尽管受疫情影响导致线下门店关闭及消费者出行受限，上半年销售业绩仍保持良好水平，较去年同期下半年有所下滑。\"\n    },\n    {\n      \"question\": \"售后部门对产品质量的反馈及处理措施是什么？\",\n      \"answer\": \"售后部门未收到产品质量问题反馈，产品由专属厂家供应且与大品牌合作，但有顾客反映价格偏高。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2605709500,
+  "load_duration": 1554700,
+  "prompt_eval_count": 934,
+  "prompt_eval_duration": 256673999,
+  "eval_count": 173,
+  "eval_duration": 2190750000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:01:22.9714956Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"decisions\": []}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 441972700,
+  "load_duration": 1582000,
+  "prompt_eval_count": 1222,
+  "prompt_eval_duration": 286106000,
+  "eval_count": 7,
+  "eval_duration": 96359000
+}

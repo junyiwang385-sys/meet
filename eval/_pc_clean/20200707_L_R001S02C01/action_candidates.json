@@ -1,0 +1,74 @@
+[
+  {
+    "task": "请主播多拍卖货视频",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000001"
+    ]
+  },
+  {
+    "task": "与果农合作开展直播活动",
+    "owner": "speaker_2",
+    "deadline": null,
+    "refs": [
+      "seg-000126"
+    ]
+  },
+  {
+    "task": "制定滞销水果销售方案",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000193"
+    ]
+  },
+  {
+    "task": "策划具体促销方案",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000233"
+    ]
+  },
+  {
+    "task": "策划限时秒杀活动",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000274"
+    ]
+  },
+  {
+    "task": "制作水果相关搞笑视频",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000287"
+    ]
+  },
+  {
+    "task": "优先直播水果解决滞销问题",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000319"
+    ]
+  },
+  {
+    "task": "制定水果与榨汁机联合销售策略",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000370"
+    ]
+  },
+  {
+    "task": "优化水果运输包装方案",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000392"
+    ]
+  }
+]

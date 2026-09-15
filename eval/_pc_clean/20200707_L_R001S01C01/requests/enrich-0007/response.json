@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:36:32.3204853Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"当前公司是否计划裁减部分非正式员工以优化人力资源配置？\",\n      \"answer\": \"会议中明确表示目前不打算裁减人员，但讨论了部分非正式员工（如暑期工）可能存在的冗余问题，需进一步评估是否裁减。\"\n    },\n    {\n      \"question\": \"大堂部门当前人员配置是否充足？\",\n      \"answer\": \"大堂部门目前人员不拥挤但也不充裕，存在忙时人手不足的风险，但现阶段不打算新增或裁减人员。\"\n    },\n    {\n      \"question\": \"市场部门下阶段客户获取计划的具体内容是什么？\",\n      \"answer\": \"市场部门下阶段计划主要围绕海报推广和组织活动，同时考虑利用出租车辆广告资源进行客户拉新，但需控制广告费用。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2566290500,
+  "load_duration": 1061100,
+  "prompt_eval_count": 786,
+  "prompt_eval_duration": 168700000,
+  "eval_count": 189,
+  "eval_duration": 2364620000
+}

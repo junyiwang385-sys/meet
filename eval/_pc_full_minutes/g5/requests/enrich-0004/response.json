@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T10:22:17.1019197Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"餐饮部门每月需重复培训哪些文明用语？\",\n      \"answer\": \"餐饮部门每月需重复培训包含'顾客您好，请对不起'等十个文明用语的标准化服务流程。\"\n    },\n    {\n      \"question\": \"若服务员与顾客发生争执应如何处理？\",\n      \"answer\": \"发生争执时，应先劝离服务员由主管或代班人员处理，随后对服务员进行安抚并要求其向顾客道歉。\"\n    },\n    {\n      \"question\": \"餐饮部门如何处理当日滞销熟食？\",\n      \"answer\": \"餐饮部门通过控制熟食生产量、每日统计销量并提前在七点半前以六折或五折优惠促销，确保熟食在保质期内售出。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2858747900,
+  "load_duration": 1043700,
+  "prompt_eval_count": 1814,
+  "prompt_eval_duration": 425856000,
+  "eval_count": 180,
+  "eval_duration": 2359033000
+}

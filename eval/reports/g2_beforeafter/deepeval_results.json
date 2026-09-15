@@ -1,0 +1,88 @@
+[
+  {
+    "关键点召回": {
+      "score": 0.9,
+      "success": true,
+      "reason": "全部召回 9/10；漏：['kp7']"
+    },
+    "低频精确召回": {
+      "score": 0.0,
+      "success": false,
+      "reason": "低频召回 0/1；漏：['kp7']"
+    },
+    "锚点支持率": {
+      "score": 1.0,
+      "success": true,
+      "reason": "证据可回溯 22/22"
+    },
+    "关键词纯净度": {
+      "score": 0.944,
+      "success": true,
+      "reason": "纯净 17/18；混入称谓：['专员']"
+    },
+    "决策owner归属率": {
+      "score": 0.0,
+      "success": false,
+      "reason": "带owner 0/18"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.7,
+      "success": false,
+      "reason": "The Actual Output largely reflects the Input’s meeting content, including sales during the pandemic, high-quality products with high price feedback, pregnancy-f"
+    },
+    "完整度 [GEval]": {
+      "score": 0.8,
+      "success": true,
+      "reason": "The Actual Output captures most major topics and decisions from the meeting, including sales performance, after-sales service issues, R&D for pregnant women, pr"
+    },
+    "简洁相关度 [GEval]": {
+      "score": 0.7,
+      "success": true,
+      "reason": "The Actual Output stays largely focused on the meeting's substantive topics, including sales performance, after-sales issues, R&D for pregnant women, pricing, l"
+    },
+    "meeting": "g2_before(003旧版)"
+  },
+  {
+    "关键点召回": {
+      "score": 0.9,
+      "success": true,
+      "reason": "全部召回 9/10；漏：['kp7']"
+    },
+    "低频精确召回": {
+      "score": 0.0,
+      "success": false,
+      "reason": "低频召回 0/1；漏：['kp7']"
+    },
+    "锚点支持率": {
+      "score": 1.0,
+      "success": true,
+      "reason": "证据可回溯 22/22"
+    },
+    "关键词纯净度": {
+      "score": 1.0,
+      "success": true,
+      "reason": "纯净 18/18；混入称谓：[]"
+    },
+    "决策owner归属率": {
+      "score": 0.273,
+      "success": false,
+      "reason": "带owner 3/11"
+    },
+    "忠实度 [GEval]": {
+      "score": 0.8,
+      "success": true,
+      "reason": "The Actual Output is largely faithful to the Input, accurately capturing key discussion points such as the impact of the pandemic on sales, the high quality but"
+    },
+    "完整度 [GEval]": {
+      "score": 0.9,
+      "success": true,
+      "reason": "The Actual Output comprehensively covers the main topics and key conclusions from the Input, including the first-half sales performance despite pandemic impact,"
+    },
+    "简洁相关度 [GEval]": {
+      "score": 0.8,
+      "success": true,
+      "reason": "The Actual Output stays largely focused on the meeting’s substantive topics, including sales performance, after-sales service, pregnancy-safe product R&D, prici"
+    },
+    "meeting": "g2_after(PC新代码)"
+  }
+]

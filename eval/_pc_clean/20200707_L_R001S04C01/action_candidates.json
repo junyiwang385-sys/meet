@@ -1,0 +1,99 @@
+[
+  {
+    "task": "确定下半年考试安排标准",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000028"
+    ]
+  },
+  {
+    "task": "协调英语四六级考试实施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000046"
+    ]
+  },
+  {
+    "task": "解决篮球场被占问题",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000102",
+      "seg-000103"
+    ]
+  },
+  {
+    "task": "登记武汉/被隔离/北京学生信息",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000125"
+    ]
+  },
+  {
+    "task": "退费处理完成",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000186"
+    ]
+  },
+  {
+    "task": "检查宿舍设备及食品安全",
+    "owner": "speaker_6",
+    "deadline": null,
+    "refs": [
+      "seg-000246"
+    ]
+  },
+  {
+    "task": "拟招生宣传方案",
+    "owner": "speaker_5",
+    "deadline": null,
+    "refs": [
+      "seg-000258"
+    ]
+  },
+  {
+    "task": "向财务申请军训相关预算",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000327"
+    ]
+  },
+  {
+    "task": "招生办需提前确定学生身高体重",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000372"
+    ]
+  },
+  {
+    "task": "组织军训汇演后的表演赛",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000392"
+    ]
+  },
+  {
+    "task": "采购西瓜等物资预防学生运动受伤",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000450"
+    ]
+  },
+  {
+    "task": "实验室软件更新申请财务拨款",
+    "owner": "speaker_7",
+    "deadline": null,
+    "refs": [
+      "seg-000457"
+    ]
+  }
+]

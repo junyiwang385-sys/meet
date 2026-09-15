@@ -1,0 +1,66 @@
+[
+  {
+    "task": "每月开展文明用语培训",
+    "owner": "speaker_1",
+    "deadline": "每月",
+    "refs": [
+      "seg-000048"
+    ]
+  },
+  {
+    "task": "加强生鲜保质期检查",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000085"
+    ]
+  },
+  {
+    "task": "设立海外专品区",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000152"
+    ]
+  },
+  {
+    "task": "优化店内服装设计",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000189"
+    ]
+  },
+  {
+    "task": "餐饮部制定每周食谱",
+    "owner": "speaker_4",
+    "deadline": null,
+    "refs": [
+      "seg-000253"
+    ]
+  },
+  {
+    "task": "超市设立水果试吃摊位",
+    "owner": "speaker_6",
+    "deadline": null,
+    "refs": [
+      "seg-000274"
+    ]
+  },
+  {
+    "task": "日化部门联合服装部门推出消费券",
+    "owner": "speaker_6",
+    "deadline": null,
+    "refs": [
+      "seg-000279"
+    ]
+  },
+  {
+    "task": "下月加大人员管理投入",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000311"
+    ]
+  }
+]

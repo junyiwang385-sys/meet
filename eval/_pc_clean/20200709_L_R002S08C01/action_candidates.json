@@ -1,0 +1,75 @@
+[
+  {
+    "task": "确定团建活动具体形式",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000010"
+    ]
+  },
+  {
+    "task": "确认重阳节包饺子活动可行性",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000072"
+    ]
+  },
+  {
+    "task": "确认北极团建安全措施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000082"
+    ]
+  },
+  {
+    "task": "确定国内偏远沿海省份作为团建备选",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000187"
+    ]
+  },
+  {
+    "task": "确定团建地点为人少、绿色覆盖率高的冷门区域",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000195"
+    ]
+  },
+  {
+    "task": "解决爬山和住宿问题",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000260"
+    ]
+  },
+  {
+    "task": "确定云南15天旅游路线",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000295"
+    ]
+  },
+  {
+    "task": "确认旅游专线慢车可行性",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000366"
+    ]
+  },
+  {
+    "task": "完成人员健康状况征集",
+    "owner": "speaker_6",
+    "deadline": "15天",
+    "refs": [
+      "seg-000387",
+      "seg-000389"
+    ]
+  }
+]

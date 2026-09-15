@@ -1,0 +1,132 @@
+{
+  "action_items": [
+    {
+      "task": "确定场地租赁与设备需求",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r19"
+      ]
+    },
+    {
+      "task": "通知学生活动",
+      "owner": "sp2",
+      "deadline": null,
+      "refs": [
+        "r76"
+      ]
+    },
+    {
+      "task": "确定晚会场地为体育馆内",
+      "owner": "sp7",
+      "deadline": null,
+      "refs": [
+        "r138"
+      ]
+    },
+    {
+      "task": "制定晚会主题方案",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r164"
+      ]
+    },
+    {
+      "task": "准备红地毯及接待设施",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r166"
+      ]
+    },
+    {
+      "task": "确定主持人招募来源",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r236"
+      ]
+    },
+    {
+      "task": "通知空乘及播音班级报名",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r257"
+      ]
+    },
+    {
+      "task": "制作节目名单PPT",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r314"
+      ]
+    },
+    {
+      "task": "制作预算Excel表",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r316"
+      ]
+    },
+    {
+      "task": "制作条幅",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r325"
+      ]
+    },
+    {
+      "task": "确定参与奖物品清单",
+      "owner": "sp1",
+      "deadline": null,
+      "refs": [
+        "r382"
+      ]
+    },
+    {
+      "task": "确定三等奖奖励方案",
+      "owner": "sp3",
+      "deadline": null,
+      "refs": [
+        "r393"
+      ]
+    },
+    {
+      "task": "确定奖项结构并匹配节目选拔",
+      "owner": "sp2",
+      "deadline": null,
+      "refs": [
+        "r483"
+      ]
+    },
+    {
+      "task": "明确获奖等级与学分对应规则",
+      "owner": "sp2",
+      "deadline": null,
+      "refs": [
+        "r517"
+      ]
+    },
+    {
+      "task": "取消参与奖学分奖励",
+      "owner": "sp1",
+      "deadline": null,
+      "refs": [
+        "r521"
+      ]
+    },
+    {
+      "task": "设立幸运奖并优化参与机制",
+      "owner": "sp7",
+      "deadline": null,
+      "refs": [
+        "r527"
+      ]
+    }
+  ]
+}

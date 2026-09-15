@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:58:21.8636959Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"在当代大学生就业选择中，从大公司和小公司两个角度出发，如何判断哪种就业模式更适合个人发展？\",\n      \"answer\": \"会议中通过亚马逊副总裁张思宏的案例说明，大公司提供五险一金等保障但可能专业不对口且晋升空间有限，而小公司虽初期资金少、专业性不足，但员工关系更融洽且创业初期更具灵活性。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1764936100,
+  "load_duration": 1578900,
+  "prompt_eval_count": 998,
+  "prompt_eval_duration": 263499000,
+  "eval_count": 107,
+  "eval_duration": 1375577000
+}

@@ -1,0 +1,3198 @@
+{
+  "meeting": {
+    "meeting_id": "20200706_L_R001S07C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 353,
+    "nonempty_segment_count": 353,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 65000,
+        "end_ms": 67000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是总经理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 68000,
+        "end_ms": 71000,
+        "speaker_id": "speaker_2",
+        "text": "零二二我是销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 73000,
+        "end_ms": 74000,
+        "speaker_id": "speaker_3",
+        "text": "零二六我是售后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 75000,
+        "end_ms": 76000,
+        "speaker_id": "speaker_4",
+        "text": "零幺三我是生产",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 76000,
+        "end_ms": 78000,
+        "speaker_id": "speaker_5",
+        "text": "零二三设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 78000,
+        "end_ms": 80000,
+        "speaker_id": "speaker_6",
+        "text": "零二四行政部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 80000,
+        "end_ms": 81000,
+        "speaker_id": "speaker_7",
+        "text": "零二五财务部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 82000,
+        "end_ms": 97000,
+        "speaker_id": "speaker_1",
+        "text": "行好的今天把各部门儿领导叫过来就是说一下咱们嗯下个月咱这个比赛嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 98000,
+        "end_ms": 105000,
+        "speaker_id": "speaker_1",
+        "text": "嗯有一个这个服装比赛服装大赛这一块儿各部门儿都有什么建议呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 108000,
+        "end_ms": 110000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿销售这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 114000,
+        "end_ms": 115000,
+        "speaker_id": "speaker_2",
+        "text": "销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 116000,
+        "end_ms": 120000,
+        "speaker_id": "speaker_2",
+        "text": "我们应该最快速度的到客户的信任",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 121000,
+        "end_ms": 123000,
+        "speaker_id": "speaker_2",
+        "text": "让他们相信我们的产品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 124000,
+        "end_ms": 134000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得首先得从设计上来讲吧看大众现在都偏偏什么风格喜欢什么风格比如说男性各种风格其实就有很多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 127000,
+        "end_ms": 129000,
+        "speaker_id": "speaker_1",
+        "text": "嗯那设计讲讲",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 134000,
+        "end_ms": 140000,
+        "speaker_id": "speaker_5",
+        "text": "一种是传统风格儿就是说跟就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 141000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_5",
+        "text": "用那些大量服装史上的一些造型款式色彩然后就是图案和工艺法然后弄出来和那会和那个现代风格有特别大的那种差异然后对比然后第二种就是那种田园风格就是比较简洁简单休闲偏休闲一点儿那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 145000,
+        "end_ms": 146000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 159000,
+        "end_ms": 180000,
+        "speaker_id": "speaker_5",
+        "text": "然后再有就是阳刚一点儿的那种就是说比较直率然后展展现男性化那种直率风格强悍等特征还有一种就是大众风格儿比如说就是大部分群众所喜欢的那种所能认可能和接受最常见的那种就是大众风格儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 180000,
+        "end_ms": 181000,
+        "speaker_id": "speaker_1",
+        "text": "大众啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 181000,
+        "end_ms": 193000,
+        "speaker_id": "speaker_5",
+        "text": "然后咱们现在在也有就是嗯男生就是说可以说下你们就是对这些设计男性这种是比较喜欢哪个对采采取下你们的意见你们来说一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 190000,
+        "end_ms": 190000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 194000,
+        "end_ms": 196000,
+        "speaker_id": "speaker_1",
+        "text": "嗯销售这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 196000,
+        "end_ms": 210000,
+        "speaker_id": "speaker_2",
+        "text": "现在我们销售部发现客流量最大的还是嘻哈风格年轻人的嗯然后像是这种西装风格的就是商业人士",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 202000,
+        "end_ms": 204000,
+        "speaker_id": "speaker_1",
+        "text": "嘻哈风格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 211000,
+        "end_ms": 212000,
+        "speaker_id": "speaker_1",
+        "text": "西装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 212000,
+        "end_ms": 214000,
+        "speaker_id": "speaker_2",
+        "text": "中高端人群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 216000,
+        "end_ms": 220000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是女生现在古风比较流行嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 222000,
+        "end_ms": 225000,
+        "speaker_id": "speaker_1",
+        "text": "古风古风这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 223000,
+        "end_ms": 234000,
+        "speaker_id": "speaker_5",
+        "text": "汉服现在其实很常见啦在路上在街上很多人穿汉服出门儿男生女生都有就这个也可以考虑一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 237000,
+        "end_ms": 238000,
+        "speaker_id": "speaker_1",
+        "text": "嗯售后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 240000,
+        "end_ms": 247000,
+        "speaker_id": "speaker_3",
+        "text": "售后这边儿处理的话主要就是通过他们的风格儿来拉客流量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 247000,
+        "end_ms": 254000,
+        "speaker_id": "speaker_3",
+        "text": "肯定是以咱们的态度和服务来打出来品牌",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 255000,
+        "end_ms": 270000,
+        "speaker_id": "speaker_3",
+        "text": "而且我比较推荐的这种衣服的样式啊还是简约风格比较好因为还是符合很多人吧因为简约风格的人嗯简约风格的衣服它比较好搭配",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 270000,
+        "end_ms": 291000,
+        "speaker_id": "speaker_3",
+        "text": "比方说你要是买一套别的衣服别的单个儿的一个衣服比方说一个衬衫儿你就想搭一个西服裤子你就需要成身儿的这样搭如果简约风格的话你就可以通过你那些柜子里头那些简约风的衣服啊来搭配自己想穿的衣服搭配的变化比较多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 294000,
+        "end_ms": 326000,
+        "speaker_id": "speaker_4",
+        "text": "嗯我觉得我比较喜欢那种啊居家一点儿舒服一点儿的风格啊这对对对一个是它不可能这种风格儿一一个是它要跟着现在的潮流儿变而变它不可能说啊我们现在这个这个风格它还处于在上一个潮流那不太对对对对对对对然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 302000,
+        "end_ms": 304000,
+        "speaker_id": "speaker_5",
+        "text": "舒适一点的那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 318000,
+        "end_ms": 325000,
+        "speaker_id": "speaker_5",
+        "text": "就像穿衣服呢服装第一个肯定还是舒适为主然后其次才是样式设计对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 326000,
+        "end_ms": 337000,
+        "speaker_id": "speaker_4",
+        "text": "再一个我们穿衣服其实就是为了舒适啊然后所以这个风格我是比较推崇搭配的生产这边儿其实它布料儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 337000,
+        "end_ms": 346000,
+        "speaker_id": "speaker_4",
+        "text": "就这种绵呀什么的其实对对对对都其实大家还是比较喜欢这种面料儿的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 339000,
+        "end_ms": 341000,
+        "speaker_id": "speaker_5",
+        "text": "贴肤一点的那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 350000,
+        "end_ms": 390000,
+        "speaker_id": "speaker_6",
+        "text": "嗯从女生的角度来看的话嗯其实更喜欢男生穿一种比较个性一点儿潮潮搭穿潮牌的其实嗯感觉那样儿的男生其实购物购物的话也会比较多一点儿嗯我觉得那样儿嗯那样儿的风格是我们可以主抓的嗯也是现在网络上流行带货啊或者直播什么的嗯也有网红就卖衣服嘛做服装品牌他们都主推的都是这种风格我觉得我们嗯店面上也可以做成那种风格的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 390000,
+        "end_ms": 402000,
+        "speaker_id": "speaker_5",
+        "text": "对其实还是大部分就是喜欢男生就女生对男生的审美来说喜欢他们穿还是简单一点儿干净一点儿看起来就很阳光那种然后可能这样他们看起来也会比较舒服。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 404000,
+        "end_ms": 410000,
+        "speaker_id": "speaker_7",
+        "text": "对你看就是首先我们要就是给我们公司进行的一个定位嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 410000,
+        "end_ms": 417000,
+        "speaker_id": "speaker_7",
+        "text": "就是说像现在这个下半年情况的话我们要走一个一个什么样的风格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 417000,
+        "end_ms": 437000,
+        "speaker_id": "speaker_7",
+        "text": "然后是走一个什么样的方式像我个人的话我是比较喜欢古风一点儿的因为古风是很特色嗯你像前面所说的这都是关于那些比较潮牌我感觉潮牌这个方面的话就需要设计这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 438000,
+        "end_ms": 448000,
+        "speaker_id": "speaker_7",
+        "text": "加大那个力度因为嗯作为财务的话我能做的话就是给设计部多拨点儿那个研发资金",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 451000,
+        "end_ms": 462000,
+        "speaker_id": "speaker_7",
+        "text": "那嗯咱们公司具体下半年要走什么样的风格啊这个现在应该是需要讨论出来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 461000,
+        "end_ms": 466000,
+        "speaker_id": "speaker_4",
+        "text": "可以作为市场调研就是大家喜欢什么样的风格儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 466000,
+        "end_ms": 492000,
+        "speaker_id": "speaker_5",
+        "text": "对通过他们意见反馈然后再来设计而且女性呃刚才只说了男性风格啦女性话就是一些衣服设计风格其实也挺多有那种高雅一点儿的就是看起来很精致很端庄那种然后还有就是阴柔一点儿比较妩媚柔弱那种然后用那种特别柔和的曲线和那种曲面然后让那个古装看起来更加精致更加极致",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 492000,
+        "end_ms": 503000,
+        "speaker_id": "speaker_5",
+        "text": "还有一种就是奢华但是这个其实在现实生活中其实嗯对很少见就可能就是展示的时候就参加晚会干什么才会有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 495000,
+        "end_ms": 497000,
+        "speaker_id": "speaker_4",
+        "text": "很少见啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 503000,
+        "end_ms": 515000,
+        "speaker_id": "speaker_5",
+        "text": "还有一种就是现代风格就比较休闲动感休闲然后比较中性一些然后就真切地反映了现代服装的审美情趣然后就更加简约",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 516000,
+        "end_ms": 526000,
+        "speaker_id": "speaker_5",
+        "text": "然后说到就是在这儿这几个部门的主管就是比较喜欢看女生穿自己觉得舒服的那种衣服是哪种类型",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 527000,
+        "end_ms": 529000,
+        "speaker_id": "speaker_5",
+        "text": "售后这边儿这个说说吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 531000,
+        "end_ms": 542000,
+        "speaker_id": "speaker_3",
+        "text": "要售后的话女生是穿的类型啊我感觉她这个女生买衣服啊我觉得不用在意别人的眼光嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 542000,
+        "end_ms": 546000,
+        "speaker_id": "speaker_5",
+        "text": "不我就说你觉得审美好看你的审美来说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 546000,
+        "end_ms": 550000,
+        "speaker_id": "speaker_6",
+        "text": "你觉得应该往哪一个风格上发展",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 549000,
+        "end_ms": 550000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 551000,
+        "end_ms": 555000,
+        "speaker_id": "speaker_5",
+        "text": "就提个意见就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 554000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_6",
+        "text": "往性感风格儿是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 558000,
+        "end_ms": 568000,
+        "speaker_id": "speaker_3",
+        "text": "女生如果穿衣服的话给人眼前一亮的话我感觉最好是那种校园清纯风吧或者是汉服吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 568000,
+        "end_ms": 589000,
+        "speaker_id": "speaker_3",
+        "text": "还有那种比较正规点儿的衣服吧就比方说你像空乘的制服你你觉着她穿那个衣服走在街上你看她就以你们女生的角度看她不以我男生的角度来说你看她和看别人你是不感兴趣",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 588000,
+        "end_ms": 594000,
+        "speaker_id": "speaker_6",
+        "text": "但是我觉得你这个提议不好因为毕竟那个是制服是工装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 595000,
+        "end_ms": 599000,
+        "speaker_id": "speaker_6",
+        "text": "嗯你穿出去的话一看就是你在上班儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 597000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_3",
+        "text": "我只是以我个人的意见来说毕竟要看女生眼前一亮但是看女生如果要眼前一亮的话你单纯看脸就可以了不需要看衣服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 603000,
+        "end_ms": 606000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这个不正常这个销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 608000,
+        "end_ms": 610000,
+        "speaker_id": "speaker_2",
+        "text": "复古衣服非常重要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 609000,
+        "end_ms": 611000,
+        "speaker_id": "speaker_6",
+        "text": "我穿搭其实也很重要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 611000,
+        "end_ms": 613000,
+        "speaker_id": "speaker_3",
+        "text": "穿搭很重要吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 613000,
+        "end_ms": 624000,
+        "speaker_id": "speaker_2",
+        "text": "那很重要你就像你像你像现在男生大部分喜欢女生穿就是可爱风",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 614000,
+        "end_ms": 621000,
+        "speaker_id": "speaker_3",
+        "text": "穿搭很重要我觉着休闲风比较能接受别的衣服太浮夸啦有点儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 624000,
+        "end_ms": 625000,
+        "speaker_id": "speaker_5",
+        "text": "可爱风",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 624000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_3",
+        "text": "不是我比较喜欢她休闲一点儿稍微那个什么点儿比方说就正常一点儿就可以了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 631000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_3",
+        "text": "不要那种我接受不了那种汉服那种风格还有什么一些风格我就觉得属于就属于那种比较就是比较日常一点儿就可以了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 638000,
+        "end_ms": 641000,
+        "speaker_id": "speaker_5",
+        "text": "你觉得那种出门穿不正常是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 643000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_2",
+        "text": "咱们售后部可能有点直男",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 646000,
+        "end_ms": 650000,
+        "speaker_id": "speaker_6",
+        "text": "售后的想法有点儿传统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 650000,
+        "end_ms": 651000,
+        "speaker_id": "speaker_2",
+        "text": "对比较传统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 651000,
+        "end_ms": 653000,
+        "speaker_id": "speaker_3",
+        "text": "不过也不是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 654000,
+        "end_ms": 659000,
+        "speaker_id": "speaker_3",
+        "text": "不过如果你要不以传统的眼光来看待这件事儿的话现在另类的人有多少个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 660000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_2",
+        "text": "总之",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 661000,
+        "end_ms": 667000,
+        "speaker_id": "speaker_2",
+        "text": "你说你这款式你这个你看上去你是无法穿出去的未必通过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 667000,
+        "end_ms": 670000,
+        "speaker_id": "speaker_3",
+        "text": "对只有只有在上班儿的时候儿穿一穿平常的时候儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 672000,
+        "end_ms": 681000,
+        "speaker_id": "speaker_3",
+        "text": "这种售后这方面儿我考虑的就只是往外卖因为如果上班儿一个公司都要制作的话他的人流量也不行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 682000,
+        "end_ms": 697000,
+        "speaker_id": "speaker_5",
+        "text": "你那样的话你最多一个人两套然后这也是一下儿就限定住了如果我们做多元化那种风格的话女生其实消费量特别大她可能今天想买了之后她明天还会想买",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 697000,
+        "end_ms": 701000,
+        "speaker_id": "speaker_3",
+        "text": "做售后的反正是知道一件事情女生的衣柜里就永远少一件儿衣服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 701000,
+        "end_ms": 712000,
+        "speaker_id": "speaker_3",
+        "text": "所以这个需要设计部来设计他们女生心爱的款式因为身为男性吗在售后部这方面还是经验比较欠欠缺的眼光儿可能不够独到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 712000,
+        "end_ms": 725000,
+        "speaker_id": "speaker_5",
+        "text": "这只是就是寻征求征求一下意见找人看一下看法对可能我就是女性化这边儿就太片面了所以就都问一下儿问一下大家意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 714000,
+        "end_ms": 715000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 715000,
+        "end_ms": 717000,
+        "speaker_id": "speaker_3",
+        "text": "只是说一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 723000,
+        "end_ms": 727000,
+        "speaker_id": "speaker_2",
+        "text": "对应该不同的男生喜欢不同样子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 726000,
+        "end_ms": 727000,
+        "speaker_id": "speaker_1",
+        "text": "风格儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 727000,
+        "end_ms": 742000,
+        "speaker_id": "speaker_3",
+        "text": "对呀如果如果真想让它眼前一亮的话那种衣服的话你可以做像那种彩色风格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 727000,
+        "end_ms": 732000,
+        "speaker_id": "speaker_5",
+        "text": "它就这样一才更多元化设计的肯定卖的才会更多呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 742000,
+        "end_ms": 743000,
+        "speaker_id": "speaker_5",
+        "text": "浮夸一点儿是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 743000,
+        "end_ms": 753000,
+        "speaker_id": "speaker_3",
+        "text": "浮夸一点儿对或者然后浮夸风配上那个中国那种古风的那种衣服因为现在三亚那边儿比较流行这款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 744000,
+        "end_ms": 745000,
+        "speaker_id": "speaker_5",
+        "text": "颜色浮夸很鲜艳",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 756000,
+        "end_ms": 759000,
+        "speaker_id": "speaker_3",
+        "text": "咱们可以引进一下人家的意见。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 760000,
+        "end_ms": 765000,
+        "speaker_id": "speaker_3",
+        "text": "旗袍这个是中国的传统每个女性在适当的年纪都会有一件儿旗袍",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 765000,
+        "end_ms": 768000,
+        "speaker_id": "speaker_4",
+        "text": "就穿上之后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 766000,
+        "end_ms": 771000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得加入中国风的元素在衣服里面就是可以考虑进去。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 771000,
+        "end_ms": 772000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 772000,
+        "end_ms": 779000,
+        "speaker_id": "speaker_5",
+        "text": "不只是旗袍或者汉服就是平时穿的也可以加入进去中国的文化",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 772000,
+        "end_ms": 774000,
+        "speaker_id": "speaker_2",
+        "text": "咱这中国风的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 778000,
+        "end_ms": 780000,
+        "speaker_id": "speaker_4",
+        "text": "画一些图案啊或者什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 780000,
+        "end_ms": 784000,
+        "speaker_id": "speaker_2",
+        "text": "像中国风啊稍微应该是比较啊偏了那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 784000,
+        "end_ms": 787000,
+        "speaker_id": "speaker_3",
+        "text": "但是既然要是创新的话肯定要实验吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 788000,
+        "end_ms": 796000,
+        "speaker_id": "speaker_3",
+        "text": "中国风有些衣服就是像那种汉服旗袍为什么能流传到现在呢还有一些中山装为什么都没有人去改呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 796000,
+        "end_ms": 814000,
+        "speaker_id": "speaker_3",
+        "text": "因为这些衣服太难改了咱们只能通过平常人来下手就是他们的这些衣服不要加入汉汉服这种什么元素如果你配一些别的元素进去就感觉这件儿衣服可能没有还真的没有原来那种好看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 809000,
+        "end_ms": 814000,
+        "speaker_id": "speaker_2",
+        "text": "你像现在的话这个会会搭配就是比较",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 814000,
+        "end_ms": 815000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 815000,
+        "end_ms": 822000,
+        "speaker_id": "speaker_2",
+        "text": "就是现在平常穿的衣服穿上太热了而且呢整个可能会特别",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 821000,
+        "end_ms": 823000,
+        "speaker_id": "speaker_3",
+        "text": "比方说怎么搭配",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 824000,
+        "end_ms": 826000,
+        "speaker_id": "speaker_3",
+        "text": "列举一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 826000,
+        "end_ms": 831000,
+        "speaker_id": "speaker_2",
+        "text": "你就像嗯你买衣服的话消费出去或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 829000,
+        "end_ms": 830000,
+        "speaker_id": "speaker_5",
+        "text": "比方说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 831000,
+        "end_ms": 848000,
+        "speaker_id": "speaker_2",
+        "text": "不能说单买一件儿所以说但是你想如果它是一个比较潮牌的这个嗯在我看这个上衣的话这个上衣采购也是比较贵的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 834000,
+        "end_ms": 838000,
+        "speaker_id": "speaker_3",
+        "text": "那你为什么说好搭配呢它不是一套吗它需要什么搭配呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 851000,
+        "end_ms": 860000,
+        "speaker_id": "speaker_5",
+        "text": "然后我到时候会就是再做一些调查然后调查问卷然后看一下大家普遍喜欢什么然后再就再进行设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 860000,
+        "end_ms": 897000,
+        "speaker_id": "speaker_1",
+        "text": "嗯刚才嗯那个大家这个都说了一些自己的看法嗯可能这次比赛呢也就是刚才咱们说的一个什么嗯像别的服装展厅一样这是根据因为现在这个服装展是比比上下每个人对这个服装的理解然后做了一个有男的女的嗯老的少的这一系列这个服装然后现在呢在这一块儿还是这个设计这边儿得抓紧因为咱们这",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 896000,
+        "end_ms": 896000,
+        "speaker_id": "speaker_5",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 897000,
+        "end_ms": 910000,
+        "speaker_id": "speaker_1",
+        "text": "非常严各部门儿都发表一下儿咱们对这个嗯服装的看法儿这一块儿还是你去表达一下儿服装设计一下儿还有那个跟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 908000,
+        "end_ms": 909000,
+        "speaker_id": "speaker_2",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 910000,
+        "end_ms": 929000,
+        "speaker_id": "speaker_1",
+        "text": "还有下一个事情就是咱们嗯明年咱们厂子接到一个大单是一个贵族学校的一个校服儿的设计校服这方面都有什么意见呢对贵族学校一个校服设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 923000,
+        "end_ms": 923000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 925000,
+        "end_ms": 927000,
+        "speaker_id": "speaker_2",
+        "text": "贵族学校吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 929000,
+        "end_ms": 931000,
+        "speaker_id": "speaker_2",
+        "text": "如果是贵族学校的话我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 931000,
+        "end_ms": 951000,
+        "speaker_id": "speaker_1",
+        "text": "因为这个单子嘛咱们可以跟他长期合作如果长期合作的话对咱这个收益是非常高的因为他每年一年两两季都要都要设计服装还有就根据嗯随着年纪变大他这服装也要重新的去给他设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 951000,
+        "end_ms": 960000,
+        "speaker_id": "speaker_1",
+        "text": "肯定不能从一年级穿到六年级这是不可能的事情根据这个嗯这个事你们都怎么看嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 954000,
+        "end_ms": 956000,
+        "speaker_id": "speaker_2",
+        "text": "对对对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 960000,
+        "end_ms": 979000,
+        "speaker_id": "speaker_2",
+        "text": "嗯我个人觉得按照传就是普遍来说吧每一般贵族学校的校服都偏欧美化对都是偏制服化我觉得嗯虽然说制服穿着很庄重吧但是毕竟是学生嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 967000,
+        "end_ms": 968000,
+        "speaker_id": "speaker_3",
+        "text": "制服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 979000,
+        "end_ms": 980000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 979000,
+        "end_ms": 984000,
+        "speaker_id": "speaker_2",
+        "text": "我觉得还是要宽松一点舒适一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 985000,
+        "end_ms": 988000,
+        "speaker_id": "speaker_2",
+        "text": "更要百搭一点还有就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 986000,
+        "end_ms": 986000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 990000,
+        "end_ms": 991000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 991000,
+        "end_ms": 994000,
+        "speaker_id": "speaker_4",
+        "text": "他的校服也可以当做别的衣服穿出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 993000,
+        "end_ms": 994000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 994000,
+        "end_ms": 1008000,
+        "speaker_id": "speaker_2",
+        "text": "好多学校的衣服都偏西方文化一点我觉得再改的话可以改成偏中式一点的加入一些中国中国风的元素请也可以确实也可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 1001000,
+        "end_ms": 1002000,
+        "speaker_id": "speaker_1",
+        "text": "中式",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 1004000,
+        "end_ms": 1005000,
+        "speaker_id": "speaker_4",
+        "text": "比如说中山装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 1004000,
+        "end_ms": 1006000,
+        "speaker_id": "speaker_7",
+        "text": "中山装作为男性",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 1007000,
+        "end_ms": 1008000,
+        "speaker_id": "speaker_1",
+        "text": "中山装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 1009000,
+        "end_ms": 1015000,
+        "speaker_id": "speaker_1",
+        "text": "这个中山装会不会觉得一些太隆重太老气",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 1014000,
+        "end_ms": 1016000,
+        "speaker_id": "speaker_4",
+        "text": "太老气了对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 1015000,
+        "end_ms": 1022000,
+        "speaker_id": "speaker_5",
+        "text": "他们平常你要是写字干嘛是不方便就这样折不方便我也觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 1022000,
+        "end_ms": 1024000,
+        "speaker_id": "speaker_5",
+        "text": "如果作为校服来说的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 1023000,
+        "end_ms": 1024000,
+        "speaker_id": "speaker_1",
+        "text": "那",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 1024000,
+        "end_ms": 1027000,
+        "speaker_id": "speaker_2",
+        "text": "那各位有各位部门有什么意见吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 1027000,
+        "end_ms": 1032000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得可以出一些图纸让这些学生们去选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 1032000,
+        "end_ms": 1035000,
+        "speaker_id": "speaker_1",
+        "text": "啊图纸咱出出什么样式呢？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 1035000,
+        "end_ms": 1043000,
+        "speaker_id": "speaker_4",
+        "text": "嗯说各种各样的风格吧比如说就简约一点儿的浮夸一点儿的或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 1036000,
+        "end_ms": 1038000,
+        "speaker_id": "speaker_2",
+        "text": "不能太笼统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 1043000,
+        "end_ms": 1050000,
+        "speaker_id": "speaker_2",
+        "text": "如果你是这个学生如果你是这个学校的学生你觉得你想穿上什么的这潮流",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 1050000,
+        "end_ms": 1064000,
+        "speaker_id": "speaker_4",
+        "text": "我想想穿的话就是就是首先是舒服再一个就是能啊再一个就是能跟上一些潮流嘛比如现在流行什么样的衣服就是校服设计成什么样子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 1064000,
+        "end_ms": 1070000,
+        "speaker_id": "speaker_4",
+        "text": "这一年因为每年都要订的话那就每每个季度都去换嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 1071000,
+        "end_ms": 1075000,
+        "speaker_id": "speaker_4",
+        "text": "因为贵族学校的话也可能是不差钱的嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 1075000,
+        "end_ms": 1104000,
+        "speaker_id": "speaker_1",
+        "text": "但基基本上还是都都是一个刚才也说每年每年只不过是嗯两个季度它的服装是不一样的但是大体风格要保持一致为秋季夏季他这个不是呃春秋不是这个春春天嗯这个一套春天到夏天夏天这边儿一套然后冬季这个一套",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 1088000,
+        "end_ms": 1089000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 1104000,
+        "end_ms": 1112000,
+        "speaker_id": "speaker_1",
+        "text": "这一块儿都都怎么考虑的，针对男的女的后勤不是售后这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 1112000,
+        "end_ms": 1119000,
+        "speaker_id": "speaker_3",
+        "text": "这一块儿可以通知到学校老师帮我们采集一下儿学生让他们先自己设计一下校服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 1119000,
+        "end_ms": 1120000,
+        "speaker_id": "speaker_1",
+        "text": "学生意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 1120000,
+        "end_ms": 1131000,
+        "speaker_id": "speaker_3",
+        "text": "对然后咱们把他们收集起来的校服的样式给他们大众化一下儿就比方说占比嘛大部分学生喜欢那个风格咱们就可以做成那个风格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 1133000,
+        "end_ms": 1135000,
+        "speaker_id": "speaker_3",
+        "text": "按比例来算",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 1136000,
+        "end_ms": 1140000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行政这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 1141000,
+        "end_ms": 1172000,
+        "speaker_id": "speaker_6",
+        "text": "嗯我觉得贵族的学校对贵族学校嘛那个衣服的质量肯定要做上去其次就是它的样式它嗯因为他见的那些好看的衣服肯定多啦所以我觉得要做的青春活力一点儿就是颜色也可以稍微鲜艳一点儿女孩儿可以是粉粉的小裙子然后男孩儿的话就夏天就可以是短裤衩儿然后冬季的话就可以是长裤儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 1142000,
+        "end_ms": 1145000,
+        "speaker_id": "speaker_1",
+        "text": "男男的和女的肯定是不一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 1150000,
+        "end_ms": 1152000,
+        "speaker_id": "speaker_1",
+        "text": "对质量方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 1155000,
+        "end_ms": 1156000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 1173000,
+        "end_ms": 1174000,
+        "speaker_id": "speaker_6",
+        "text": "然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 1176000,
+        "end_ms": 1187000,
+        "speaker_id": "speaker_6",
+        "text": "因为因为因为小学生正是可爱的时候儿嘛我觉得作为我的嗯女孩儿的心理的话就是更喜欢这种小裙子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 1180000,
+        "end_ms": 1181000,
+        "speaker_id": "speaker_2",
+        "text": "整套套服吗觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 1187000,
+        "end_ms": 1197000,
+        "speaker_id": "speaker_6",
+        "text": "因为很多学生其实在学校都不喜欢穿校服就是因为觉得不好看所以我觉得嗯做成小裙子的话会让他们很喜欢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 1197000,
+        "end_ms": 1199000,
+        "speaker_id": "speaker_1",
+        "text": "有不同意见吗你觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 1199000,
+        "end_ms": 1221000,
+        "speaker_id": "speaker_2",
+        "text": "嗯我觉得女生穿裙子是个是因为这样就像我们的嗯女生就是爱美吗然后她应该涉及到零用钱所以我们就要设立一个组织办公室但是她就喜如果她们喜欢穿裙子的话会对我们敏感",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 1226000,
+        "end_ms": 1233000,
+        "speaker_id": "speaker_6",
+        "text": "夏季是嗯冬季的话应该呃也做成长长裤",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 1233000,
+        "end_ms": 1238000,
+        "speaker_id": "speaker_3",
+        "text": "可以问问就她们喜欢什么样式的裙子然后给它做一个统一",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 1238000,
+        "end_ms": 1240000,
+        "speaker_id": "speaker_4",
+        "text": "就是因为现在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 1239000,
+        "end_ms": 1245000,
+        "speaker_id": "speaker_6",
+        "text": "裙子就是嗯普遍就是如果学校校服的话就是百褶裙",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 1247000,
+        "end_ms": 1257000,
+        "speaker_id": "speaker_4",
+        "text": "百褶的话现在嗯基本现在好多地方都是百褶的话，我觉得我们可以重新这个设计这种别的款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 1258000,
+        "end_ms": 1260000,
+        "speaker_id": "speaker_4",
+        "text": "但是改制成一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 1259000,
+        "end_ms": 1264000,
+        "speaker_id": "speaker_1",
+        "text": "售后是有什么问题吗刚才你这边儿有问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 1265000,
+        "end_ms": 1266000,
+        "speaker_id": "speaker_3",
+        "text": "借给我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 1266000,
+        "end_ms": 1270000,
+        "speaker_id": "speaker_3",
+        "text": "售后觉得他们的设计的风格儿就属于JK风",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 1270000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_1",
+        "text": "JK风",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 1272000,
+        "end_ms": 1273000,
+        "speaker_id": "speaker_6",
+        "text": "日系校园风",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 1274000,
+        "end_ms": 1275000,
+        "speaker_id": "speaker_1",
+        "text": "日系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 1277000,
+        "end_ms": 1284000,
+        "speaker_id": "speaker_2",
+        "text": "因为日本那边儿的学校都是女生是裙子就算是冬天也是裙子百褶裙",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 1279000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_3",
+        "text": "百褶裙",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 1280000,
+        "end_ms": 1287000,
+        "speaker_id": "speaker_6",
+        "text": "其实外国的学校的校服都是差不多那样儿的但是我们中国的就是比较传统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 1285000,
+        "end_ms": 1288000,
+        "speaker_id": "speaker_1",
+        "text": "咱一定要加入自己的元素啊是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 1288000,
+        "end_ms": 1316000,
+        "speaker_id": "speaker_6",
+        "text": "对我我是说我是觉得中国的校服就是比较传统有一些传统观点就是比如说嗯就做了版型故意的特别肥特别大然后所以学生都不爱穿因为觉得他不合身然后就是不好看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 1303000,
+        "end_ms": 1303000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 1304000,
+        "end_ms": 1318000,
+        "speaker_id": "speaker_2",
+        "text": "因为作为贵族学校的话对于这方面还是比较看的重的所以说你要是像中国传统衣钵啊就是运动裤然后运动上衣的话是没有什么吸引力的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 1318000,
+        "end_ms": 1323000,
+        "speaker_id": "speaker_2",
+        "text": "要不然就是还整成汉服但是那样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 1321000,
+        "end_ms": 1322000,
+        "speaker_id": "speaker_1",
+        "text": "汉服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 1325000,
+        "end_ms": 1327000,
+        "speaker_id": "speaker_2",
+        "text": "所以说这里是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 1326000,
+        "end_ms": 1328000,
+        "speaker_id": "speaker_3",
+        "text": "可以整的简约一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 1329000,
+        "end_ms": 1334000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得这个就比较创新孩子们可能也会觉得很新鲜",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 1329000,
+        "end_ms": 1330000,
+        "speaker_id": "speaker_2",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 1331000,
+        "end_ms": 1332000,
+        "speaker_id": "speaker_2",
+        "text": "可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 1333000,
+        "end_ms": 1337000,
+        "speaker_id": "speaker_2",
+        "text": "但是你像咱们嘛是啊是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 1337000,
+        "end_ms": 1345000,
+        "speaker_id": "speaker_1",
+        "text": "汉服汉服它它是一个怎么说呢汉服是很大的嗯笼统一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 1337000,
+        "end_ms": 1338000,
+        "speaker_id": "speaker_6",
+        "text": "改衣服了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 1345000,
+        "end_ms": 1349000,
+        "speaker_id": "speaker_1",
+        "text": "咱那么多厂家每个厂子咱们每个厂子都有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 1349000,
+        "end_ms": 1351000,
+        "speaker_id": "speaker_2",
+        "text": "就所以说不是一件事",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 1354000,
+        "end_ms": 1373000,
+        "speaker_id": "speaker_1",
+        "text": "因为咱现在就是咱现在除了设计就是设计上对这边儿有没有什么嗯对对运动式式上体育课嘞嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 1362000,
+        "end_ms": 1375000,
+        "speaker_id": "speaker_2",
+        "text": "因为贵族学校可以跟那些比如说就是单纯的评价比如说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 1377000,
+        "end_ms": 1382000,
+        "speaker_id": "speaker_1",
+        "text": "你这边儿可以怎么看具体一点你们说的都太笼统了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 1382000,
+        "end_ms": 1402000,
+        "speaker_id": "speaker_2",
+        "text": "啊啊这里也可以给设计意见就是说你像贵族学校他们培养的话是需要多层信息的关爱啊这里为了培养他们的兴趣爱好可以有一个有一片天就就相当于是你的衣服里就是可以就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 1402000,
+        "end_ms": 1408000,
+        "speaker_id": "speaker_2",
+        "text": "比如说你像在那个嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 1408000,
+        "end_ms": 1413000,
+        "speaker_id": "speaker_2",
+        "text": "黑黑的贵族去嗯上不上去也可以做成",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 1413000,
+        "end_ms": 1417000,
+        "speaker_id": "speaker_7",
+        "text": "还有这个项目包装这个同时进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 1419000,
+        "end_ms": 1430000,
+        "speaker_id": "speaker_7",
+        "text": "这样就是既能满足他们嗯就是培养兴趣爱好和能力同样也是为我们这个服装行业嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 1430000,
+        "end_ms": 1439000,
+        "speaker_id": "speaker_1",
+        "text": "咱每一款这个服装校服嘛肯定会有一个学校的徽章这一块儿嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 1439000,
+        "end_ms": 1440000,
+        "speaker_id": "speaker_2",
+        "text": "应该是有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 1439000,
+        "end_ms": 1452000,
+        "speaker_id": "speaker_7",
+        "text": "你像咱们前面所说的某一个风格我们听说就是如果就是学校刚才肯定有个氛围就是想讨论我就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 1455000,
+        "end_ms": 1457000,
+        "speaker_id": "speaker_7",
+        "text": "希望市里组织也可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 1463000,
+        "end_ms": 1466000,
+        "speaker_id": "speaker_1",
+        "text": "行吧那咱各是各部门儿说一下自己看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 1467000,
+        "end_ms": 1468000,
+        "speaker_id": "speaker_1",
+        "text": "来从咱这个销售这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 1468000,
+        "end_ms": 1472000,
+        "speaker_id": "speaker_2",
+        "text": "反正我们销售部还是觉得是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1473000,
+        "end_ms": 1477000,
+        "speaker_id": "speaker_2",
+        "text": "推荐和那个汉服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1475000,
+        "end_ms": 1481000,
+        "speaker_id": "speaker_1",
+        "text": "汉服嗯是嗯什么样的汉服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1483000,
+        "end_ms": 1489000,
+        "speaker_id": "speaker_2",
+        "text": "就是相对来说简约一点嗯不会对上课造成太大影响",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1485000,
+        "end_ms": 1486000,
+        "speaker_id": "speaker_1",
+        "text": "简约一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1489000,
+        "end_ms": 1489000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1491000,
+        "end_ms": 1499000,
+        "speaker_id": "speaker_2",
+        "text": "就是你如果说你是正装的话反正你不论穿什么衣服你都都都会受一些影响",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1499000,
+        "end_ms": 1503000,
+        "speaker_id": "speaker_2",
+        "text": "除了运动装除了休闲装以外",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1503000,
+        "end_ms": 1509000,
+        "speaker_id": "speaker_2",
+        "text": "所以既然咱们要打特色的话，我觉得简约一些的和服，汉服是不错的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1508000,
+        "end_ms": 1509000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1510000,
+        "end_ms": 1511000,
+        "speaker_id": "speaker_1",
+        "text": "嗯售后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1511000,
+        "end_ms": 1523000,
+        "speaker_id": "speaker_3",
+        "text": "售后这边就感觉平常的校服就可以因为不知道为什么虽然是贵族学校如果你穿太好的衣服的话人们会有视觉疲惫",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1524000,
+        "end_ms": 1546000,
+        "speaker_id": "speaker_3",
+        "text": "简约简单一点儿如果是太大众的话也不行要属于那种中高档一点儿也属于要对材质要好一点儿然后属于那种用绸子之类的或者是绵之类的改一下儿用那种传统的一种手艺吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1532000,
+        "end_ms": 1534000,
+        "speaker_id": "speaker_1",
+        "text": "材质要好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1546000,
+        "end_ms": 1559000,
+        "speaker_id": "speaker_3",
+        "text": "然后去做这个项目儿因为你如果太正装你看着也别扭如果太嘻哈你看着也别扭全都是古风在大街上那一票人你看着更别扭",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1559000,
+        "end_ms": 1572000,
+        "speaker_id": "speaker_3",
+        "text": "如果他穿的太正式你就会感觉看一段儿时间就感觉这个学校可能太正式了就不像是学生在那里面就属于快快乐乐的待的那种感觉环境就不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1571000,
+        "end_ms": 1577000,
+        "speaker_id": "speaker_1",
+        "text": "你的建议就是还是就是这个正规一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1575000,
+        "end_ms": 1576000,
+        "speaker_id": "speaker_5",
+        "text": "正规一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1576000,
+        "end_ms": 1577000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1576000,
+        "end_ms": 1580000,
+        "speaker_id": "speaker_2",
+        "text": "但是你看贵族学校培养的那些学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1581000,
+        "end_ms": 1589000,
+        "speaker_id": "speaker_3",
+        "text": "培养的学生多但是他们的家教肯定好他会让你嘻哈吗家长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1585000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_2",
+        "text": "对啊所以说这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1589000,
+        "end_ms": 1597000,
+        "speaker_id": "speaker_3",
+        "text": "他会让你穿汉服去上学吗嗯那样儿的家长可能比较少对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1597000,
+        "end_ms": 1611000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行这这个售后这边儿还是想要这个嗯就材质好一点那个正规一点正式一点不用那么嗯乱糟糟的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1602000,
+        "end_ms": 1604000,
+        "speaker_id": "speaker_3",
+        "text": "一个部门有一个部门的意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1611000,
+        "end_ms": 1620000,
+        "speaker_id": "speaker_1",
+        "text": "还是就嗯古朴一点这一块儿嗯然后咱下个部门儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1620000,
+        "end_ms": 1640000,
+        "speaker_id": "speaker_4",
+        "text": "我这边儿主要就是还是我说的呃两套吧算是就像嗯一个季节两套就是一套是就是平常穿的还有一套是运动装嗯就比如说像小孩子很容易喜欢上课出去跑啊干嘛的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1640000,
+        "end_ms": 1645000,
+        "speaker_id": "speaker_1",
+        "text": "就是你更注意这下这个啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1646000,
+        "end_ms": 1660000,
+        "speaker_id": "speaker_1",
+        "text": "销售这边儿说的这个这个汉服儿或者是售后这边儿说的就是正常一点这种服装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1652000,
+        "end_ms": 1652000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1658000,
+        "end_ms": 1660000,
+        "speaker_id": "speaker_4",
+        "text": "嗯正常正常一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1660000,
+        "end_ms": 1665000,
+        "speaker_id": "speaker_1",
+        "text": "你也正常一点就是运动式嘞还是那种嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1661000,
+        "end_ms": 1662000,
+        "speaker_id": "speaker_3",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1666000,
+        "end_ms": 1675000,
+        "speaker_id": "speaker_3",
+        "text": "运动运动休闲舒服吧对对校服儿就是校服主要就是以舒服为主",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1668000,
+        "end_ms": 1671000,
+        "speaker_id": "speaker_2",
+        "text": "学生要以舒服为主嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1672000,
+        "end_ms": 1673000,
+        "speaker_id": "speaker_1",
+        "text": "运动类的嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1676000,
+        "end_ms": 1678000,
+        "speaker_id": "speaker_1",
+        "text": "然后大家先转一转",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1679000,
+        "end_ms": 1681000,
+        "speaker_id": "speaker_5",
+        "text": "嗯我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1682000,
+        "end_ms": 1704000,
+        "speaker_id": "speaker_5",
+        "text": "嗯我觉得汉服是平时有点儿那个不方便因为它对设计太繁琐了啊我觉得稍微稍微的正常一点儿结合结合那个刚刚销售说的休闲的嗯两个可以结合一下儿对这是我的看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1687000,
+        "end_ms": 1688000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1690000,
+        "end_ms": 1691000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1706000,
+        "end_ms": 1709000,
+        "speaker_id": "speaker_1",
+        "text": "啊咱这边儿有什么看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1710000,
+        "end_ms": 1732000,
+        "speaker_id": "speaker_7",
+        "text": "啊财务部的话你像销售部说的呃不是你像啊后勤呃后勤售后说的就是说材质要用好点这这一点是肯定要的因为毕竟嗯料子好了你才能出货嗯关于你说风格方面的话我真实感觉还是感觉就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1722000,
+        "end_ms": 1723000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1725000,
+        "end_ms": 1726000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1732000,
+        "end_ms": 1757000,
+        "speaker_id": "speaker_7",
+        "text": "风格要多一些因为他们不可能单独分为平时穿还有运动穿应该还有别的就是对我们设设计的话肯定是要把嗯消耗大量的那个呃财力然后进行那个嗯时间要进行调研然后然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1741000,
+        "end_ms": 1742000,
+        "speaker_id": "speaker_1",
+        "text": "别的课",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1743000,
+        "end_ms": 1744000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1757000,
+        "end_ms": 1767000,
+        "speaker_id": "speaker_2",
+        "text": "啊就是关于工作这方面的话其实舒服和那个嗯稍微过一下儿因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1769000,
+        "end_ms": 1781000,
+        "speaker_id": "speaker_7",
+        "text": "嗯所以说这几天实际上就是多几种风格然后到时候就是学生们自己选然后也能够应付到各种程度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1780000,
+        "end_ms": 1784000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行那咱们这个设计部门儿总结一下儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1784000,
+        "end_ms": 1797000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得大家其实有的是从家长的方面考虑有的是从自己在学校学习就是方便考虑然后我觉得最重要的还是要采取学生本身的意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1797000,
+        "end_ms": 1801000,
+        "speaker_id": "speaker_5",
+        "text": "就是听取他们大部分人的意见然后再来做一个设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1801000,
+        "end_ms": 1821000,
+        "speaker_id": "speaker_5",
+        "text": "但是我觉得也是舒适为主但是如果说想要时尚一点儿也是也是也是可以有的毕竟贵族学校就是观念不会像我们这种学校就是说比较传统型就都接受不了所以我觉得还是说多征集一些意见然后再再来做设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1821000,
+        "end_ms": 1828000,
+        "speaker_id": "speaker_1",
+        "text": "你更倾向于哪一个方面你说你现在他们都说啦啊说自己的想法你更倾向于哪",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1823000,
+        "end_ms": 1831000,
+        "speaker_id": "speaker_5",
+        "text": "我更我更我个人更倾倾向于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1831000,
+        "end_ms": 1846000,
+        "speaker_id": "speaker_5",
+        "text": "舒适中但是带着点儿那种汉服的一点儿元素不用说就是就那么宽大的袖子我就觉得校服里面带一点儿那种古风汉服那种元素就可以沿着舒适为主对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1842000,
+        "end_ms": 1845000,
+        "speaker_id": "speaker_1",
+        "text": "啊汉服舒适为主",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1846000,
+        "end_ms": 1851000,
+        "speaker_id": "speaker_1",
+        "text": "嗯这方面有什么具体的想法吗具体的想法有吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1854000,
+        "end_ms": 1863000,
+        "speaker_id": "speaker_1",
+        "text": "你觉得你更刚才说了这么多你更倾向于肯定有色调儿啊色调的搭配啊你更倾向于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1863000,
+        "end_ms": 1864000,
+        "speaker_id": "speaker_5",
+        "text": "啊色调",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1863000,
+        "end_ms": 1868000,
+        "speaker_id": "speaker_1",
+        "text": "啊五颜六色还是单单一种颜色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1868000,
+        "end_ms": 1875000,
+        "speaker_id": "speaker_5",
+        "text": "色调应该不会特别繁琐但是也不会说特别单一就一种颜色看起来就我觉得应该是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1875000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_1",
+        "text": "现在你看咱原来咱们上学你们都是什么样的服装红色白色其他人什么样嘞蓝色灰色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1881000,
+        "end_ms": 1891000,
+        "speaker_id": "speaker_5",
+        "text": "我记得我原来是红色红色和白色对然后其他人呢校服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1891000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_2",
+        "text": "蓝色灰色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1894000,
+        "end_ms": 1897000,
+        "speaker_id": "speaker_2",
+        "text": "啊我还是就感觉深颜色吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1897000,
+        "end_ms": 1898000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1898000,
+        "end_ms": 1901000,
+        "speaker_id": "speaker_2",
+        "text": "我觉得就白色就是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1901000,
+        "end_ms": 1907000,
+        "speaker_id": "speaker_1",
+        "text": "你们上小学的时候都都怎么样颜色深蓝色五种颜色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1904000,
+        "end_ms": 1918000,
+        "speaker_id": "speaker_5",
+        "text": "深蓝蓝色对因男生和女生要穿一种不能太过女性化也不能只能中性就蓝色就非常好标志对学校的标志对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1913000,
+        "end_ms": 1919000,
+        "speaker_id": "speaker_1",
+        "text": "深蓝色这有个这个校校徽嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1920000,
+        "end_ms": 1921000,
+        "speaker_id": "speaker_2",
+        "text": "现在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1923000,
+        "end_ms": 1924000,
+        "speaker_id": "speaker_2",
+        "text": "一般是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1924000,
+        "end_ms": 1926000,
+        "speaker_id": "speaker_1",
+        "text": "设计一条什么颜色的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1927000,
+        "end_ms": 1928000,
+        "speaker_id": "speaker_2",
+        "text": "红色怎么太单调嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1928000,
+        "end_ms": 1933000,
+        "speaker_id": "speaker_1",
+        "text": "你觉得这服装好看吗你那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1930000,
+        "end_ms": 1932000,
+        "speaker_id": "speaker_2",
+        "text": "怎么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1933000,
+        "end_ms": 1934000,
+        "speaker_id": "speaker_2",
+        "text": "太单调",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1934000,
+        "end_ms": 1951000,
+        "speaker_id": "speaker_1",
+        "text": "穿着舒服吗也不舒服老穿着也宽宽松松胖胖大大的反正就感觉不合身",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1936000,
+        "end_ms": 1945000,
+        "speaker_id": "speaker_2",
+        "text": "穿着也行对我觉得它的板式板式太老",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1948000,
+        "end_ms": 1948000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1951000,
+        "end_ms": 1952000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1952000,
+        "end_ms": 1952000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1953000,
+        "end_ms": 1955000,
+        "speaker_id": "speaker_2",
+        "text": "说那一种材料的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1955000,
+        "end_ms": 1957000,
+        "speaker_id": "speaker_1",
+        "text": "就跟塑料布啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1957000,
+        "end_ms": 1964000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿不透气",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1958000,
+        "end_ms": 1962000,
+        "speaker_id": "speaker_5",
+        "text": "对还而且还不透气以前那个校服对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1962000,
+        "end_ms": 1964000,
+        "speaker_id": "speaker_2",
+        "text": "最重要以后就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1965000,
+        "end_ms": 1975000,
+        "speaker_id": "speaker_1",
+        "text": "啊对这就是嗯这个嗯售后这边儿原来你们都穿什么纯红",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1973000,
+        "end_ms": 1974000,
+        "speaker_id": "speaker_3",
+        "text": "纯红",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1976000,
+        "end_ms": 1978000,
+        "speaker_id": "speaker_1",
+        "text": "缴费站还有别的两道儿红",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1978000,
+        "end_ms": 1983000,
+        "speaker_id": "speaker_3",
+        "text": "对对对呃然后胳膊上是两道儿红是那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1984000,
+        "end_ms": 1987000,
+        "speaker_id": "speaker_3",
+        "text": "三儿角形儿的那种黄还不是条形的红",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1987000,
+        "end_ms": 1993000,
+        "speaker_id": "speaker_1",
+        "text": "你觉得你对这个服装有什么建议你对这个服装有什么看法你可以可以想想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1994000,
+        "end_ms": 1996000,
+        "speaker_id": "speaker_3",
+        "text": "我对这个服装的唯一看法就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1997000,
+        "end_ms": 2001000,
+        "speaker_id": "speaker_3",
+        "text": "我们学校本来服装设计的就不好看还男女不分",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1999000,
+        "end_ms": 2000000,
+        "speaker_id": "speaker_1",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 2002000,
+        "end_ms": 2010000,
+        "speaker_id": "speaker_1",
+        "text": "男女不分都是一样的那那个上身是这个下身是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 2003000,
+        "end_ms": 2004000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 2004000,
+        "end_ms": 2014000,
+        "speaker_id": "speaker_3",
+        "text": "对都是一样的没有男女款下身女生是裙子男生是裤子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 2013000,
+        "end_ms": 2014000,
+        "speaker_id": "speaker_1",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 2016000,
+        "end_ms": 2020000,
+        "speaker_id": "speaker_1",
+        "text": "那这边儿销售部门这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 2020000,
+        "end_ms": 2029000,
+        "speaker_id": "speaker_2",
+        "text": "我这边儿我觉得校服吧我那会儿我那会儿我那会儿就是蓝色蓝色和白色啊比较青春一点儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 2022000,
+        "end_ms": 2024000,
+        "speaker_id": "speaker_1",
+        "text": "你原来你是啥",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 2026000,
+        "end_ms": 2028000,
+        "speaker_id": "speaker_1",
+        "text": "蓝色白色",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 2030000,
+        "end_ms": 2033000,
+        "speaker_id": "speaker_4",
+        "text": "嗯我觉得我那会校服还挺好看的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 2033000,
+        "end_ms": 2034000,
+        "speaker_id": "speaker_1",
+        "text": "挺好看的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 2034000,
+        "end_ms": 2035000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 2037000,
+        "end_ms": 2045000,
+        "speaker_id": "speaker_1",
+        "text": "感觉黑校服就挺好看的啊那咱们女生这边儿学生这边儿小学生的是什么呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 2044000,
+        "end_ms": 2055000,
+        "speaker_id": "speaker_6",
+        "text": "小学的校服也是那种就是浅蓝色和白色然后校徽校徽就是在嗯前面有一个背后有一个大的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 2055000,
+        "end_ms": 2058000,
+        "speaker_id": "speaker_1",
+        "text": "啊你对于这个服装有什么看法你对这个肥",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 2057000,
+        "end_ms": 2069000,
+        "speaker_id": "speaker_6",
+        "text": "就是也是宽宽大大就是嗯但是它就是肥嘛对校服嗯觉得也不好看因为因为也是男女不分觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 2069000,
+        "end_ms": 2076000,
+        "speaker_id": "speaker_6",
+        "text": "又肥又大呃觉得不好看我觉得嗯应该分开男女",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 2075000,
+        "end_ms": 2081000,
+        "speaker_id": "speaker_1",
+        "text": "那那时候儿有什么想法你觉得换成什么样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 2081000,
+        "end_ms": 2090000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得那个时候想法我想改一下儿裤腿儿对觉得它太胖了太肥了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 2084000,
+        "end_ms": 2090000,
+        "speaker_id": "speaker_1",
+        "text": "裤腿儿做一下儿裤腿儿嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 2091000,
+        "end_ms": 2096000,
+        "speaker_id": "speaker_6",
+        "text": "然后料子也是有夏夏季的那个不透气儿对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 2091000,
+        "end_ms": 2092000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 2095000,
+        "end_ms": 2096000,
+        "speaker_id": "speaker_1",
+        "text": "不透气",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 2097000,
+        "end_ms": 2104000,
+        "speaker_id": "speaker_1",
+        "text": "这就是你们说的就这些点肯定咱们下次对不要不要出现这些点儿啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 2100000,
+        "end_ms": 2102000,
+        "speaker_id": "speaker_5",
+        "text": "设计的时候他考虑",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 2105000,
+        "end_ms": 2120000,
+        "speaker_id": "speaker_1",
+        "text": "嗯还有就是现在人现在这个小孩儿跟咱咱们这个思想也是不一样了，所以根据这个你们也要设计部门儿根据这个你也要嗯考虑进去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 2119000,
+        "end_ms": 2120000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 2120000,
+        "end_ms": 2125000,
+        "speaker_id": "speaker_1",
+        "text": "设计嘞风格也要考虑进去行吧行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 2123000,
+        "end_ms": 2123000,
+        "speaker_id": "speaker_5",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 2126000,
+        "end_ms": 2134000,
+        "speaker_id": "speaker_1",
+        "text": "那咱本场会就先开到这儿嗯下去以后还是设计的部门儿主抓一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 2133000,
+        "end_ms": 2135000,
+        "speaker_id": "speaker_5",
+        "text": "嗯好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 2136000,
+        "end_ms": 2143000,
+        "speaker_id": "speaker_1",
+        "text": "还有这个销售这边儿跟学校联系一下儿主抓一下儿这个行散会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 2139000,
+        "end_ms": 2140000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 2141000,
+        "end_ms": 2142000,
+        "speaker_id": "speaker_2",
+        "text": "嗯行",
+        "status": "ok"
+      }
+    ]
+  }
+}

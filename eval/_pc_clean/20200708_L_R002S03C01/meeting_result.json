@@ -1,0 +1,3882 @@
+{
+  "meeting": {
+    "meeting_id": "20200708_L_R002S03C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 429,
+    "nonempty_segment_count": 428,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 37000,
+        "end_ms": 40000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是主持人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 40000,
+        "end_ms": 43000,
+        "speaker_id": "speaker_2",
+        "text": "零二六我是销售员A",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 43000,
+        "end_ms": 45000,
+        "speaker_id": "speaker_3",
+        "text": "零二二我是销售员B",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 45000,
+        "end_ms": 47000,
+        "speaker_id": "speaker_4",
+        "text": "零二七我是销售培训",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 47000,
+        "end_ms": 49000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是销售人人员C",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 49000,
+        "end_ms": 52000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是销售人员D",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 52000,
+        "end_ms": 54000,
+        "speaker_id": "speaker_7",
+        "text": "零幺四我是销售人员E",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 55000,
+        "end_ms": 60000,
+        "speaker_id": "speaker_1",
+        "text": "行好的今天咱们有请销售方面的专家给咱们进行一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 60000,
+        "end_ms": 65000,
+        "speaker_id": "speaker_1",
+        "text": "嗯销售方面的一个知识和培训那有请咱们专家",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 65000,
+        "end_ms": 66000,
+        "speaker_id": "speaker_4",
+        "text": "",
+        "status": "transcript_empty"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 67000,
+        "end_ms": 78000,
+        "speaker_id": "speaker_4",
+        "text": "围绕我们今天做一个简短的销售培训大家想做一个好的这种销售员那么咱们首先要知道销售它是干什么的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 71000,
+        "end_ms": 73000,
+        "speaker_id": "speaker_1",
+        "text": "嗯嗯欢迎",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 79000,
+        "end_ms": 85000,
+        "speaker_id": "speaker_4",
+        "text": "销售干什么的销售干什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 80000,
+        "end_ms": 81000,
+        "speaker_id": "speaker_1",
+        "text": "这个AA这边儿销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 81000,
+        "end_ms": 85000,
+        "speaker_id": "speaker_2",
+        "text": "销售我觉得就是把一种东西卖出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 85000,
+        "end_ms": 87000,
+        "speaker_id": "speaker_4",
+        "text": "哎没错就是我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 86000,
+        "end_ms": 94000,
+        "speaker_id": "speaker_2",
+        "text": "然后再进行自己赚一部分利润啊什么的就是推广给大众让他们喜爱上产品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 94000,
+        "end_ms": 97000,
+        "speaker_id": "speaker_4",
+        "text": "没错这就是销售干的销售说白了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 97000,
+        "end_ms": 103000,
+        "speaker_id": "speaker_4",
+        "text": "就是把东西卖出去就是你说哎说的利润卖出去你自然有提成对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 103000,
+        "end_ms": 108000,
+        "speaker_id": "speaker_4",
+        "text": "咱主要就是把东西卖出去咱怎么把这个东东西卖出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 108000,
+        "end_ms": 109000,
+        "speaker_id": "speaker_1",
+        "text": "B这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 109000,
+        "end_ms": 112000,
+        "speaker_id": "speaker_4",
+        "text": "B你觉得怎么样才能把这个东西给卖出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 112000,
+        "end_ms": 116000,
+        "speaker_id": "speaker_3",
+        "text": "快速地让顾客相信我们相信我们的产品了解我们的产品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 116000,
+        "end_ms": 121000,
+        "speaker_id": "speaker_3",
+        "text": "认为我们产品是物有所值的是值的他们购买的也是他们所需求的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 122000,
+        "end_ms": 126000,
+        "speaker_id": "speaker_5",
+        "text": "让他们就是看到这个产品的好处优点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 126000,
+        "end_ms": 127000,
+        "speaker_id": "speaker_4",
+        "text": "优点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 127000,
+        "end_ms": 149000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得是要把咱们这个呃抓住这些消费人员的心理他们想要什么样儿的东西我们就把咱们这产品呃的那些方面的优点特点突出突突出给这些呃想要消费的这些人然后诱惑他们想购买的心理才可以嗯快速地消费出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 127000,
+        "end_ms": 128000,
+        "speaker_id": "speaker_1",
+        "text": "D这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 132000,
+        "end_ms": 133000,
+        "speaker_id": "speaker_4",
+        "text": "消费心理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 149000,
+        "end_ms": 161000,
+        "speaker_id": "speaker_6",
+        "text": "就是让他把需要的东西变成非常需要把不需要的东西变成可能也需要然后把这东西从各方面都最快最好的推销出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 161000,
+        "end_ms": 172000,
+        "speaker_id": "speaker_4",
+        "text": "那我总结下首先咱要把这东西卖出去，那一要我觉得这东西好，对不对？这好他觉得东西好才可有这种想要可能性对不对？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 172000,
+        "end_ms": 178000,
+        "speaker_id": "speaker_4",
+        "text": "这一好二是什么？二是让顾客觉得这个价钱买这个东西它值",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 178000,
+        "end_ms": 182000,
+        "speaker_id": "speaker_4",
+        "text": "就是一个好，一个是物有所值，第三个是什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 182000,
+        "end_ms": 184000,
+        "speaker_id": "speaker_4",
+        "text": "就是之前说的说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 184000,
+        "end_ms": 187000,
+        "speaker_id": "speaker_4",
+        "text": "让顾客觉得有这个需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 188000,
+        "end_ms": 194000,
+        "speaker_id": "speaker_4",
+        "text": "你不是不用说可能说给我们买回去之后，我不可能说天天用它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 194000,
+        "end_ms": 199000,
+        "speaker_id": "speaker_4",
+        "text": "但最起码得让顾客觉得他在买的时候觉得这东西它是有用的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 200000,
+        "end_ms": 208000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？就是说他有需求，咱们给他扩大需求人家没有说需求，咱们得给他创造需求。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 201000,
+        "end_ms": 201000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 208000,
+        "end_ms": 214000,
+        "speaker_id": "speaker_4",
+        "text": "咱举个最简单的例子啊，我家的微波炉买的还算是当时买算比较高级的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 214000,
+        "end_ms": 218000,
+        "speaker_id": "speaker_4",
+        "text": "但是它在我家只有一个作用热剩饭",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 218000,
+        "end_ms": 219000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 219000,
+        "end_ms": 222000,
+        "speaker_id": "speaker_4",
+        "text": "怎么但你说这微波炉它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 223000,
+        "end_ms": 226000,
+        "speaker_id": "speaker_4",
+        "text": "其他工其他工作是没有没有用就拿它热剩饭",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 227000,
+        "end_ms": 232000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？你说这样的话，就光一个热剩饭用买一个微波炉吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 233000,
+        "end_ms": 234000,
+        "speaker_id": "speaker_4",
+        "text": "大家觉得用吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 235000,
+        "end_ms": 236000,
+        "speaker_id": "speaker_5",
+        "text": "用不着",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 236000,
+        "end_ms": 237000,
+        "speaker_id": "speaker_4",
+        "text": "用吗不用吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 237000,
+        "end_ms": 239000,
+        "speaker_id": "speaker_3",
+        "text": "嗯这个东西只能说是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 240000,
+        "end_ms": 249000,
+        "speaker_id": "speaker_3",
+        "text": "还要看情况，有的家庭他就是用饭锅热。他有的家庭就是用这个微波炉热比较方便，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 243000,
+        "end_ms": 244000,
+        "speaker_id": "speaker_4",
+        "text": "对是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 247000,
+        "end_ms": 248000,
+        "speaker_id": "speaker_4",
+        "text": "对但就是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 249000,
+        "end_ms": 257000,
+        "speaker_id": "speaker_4",
+        "text": "微波炉买回来后其实并没有用到那么多它宣传的好处，宣传的功能对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 256000,
+        "end_ms": 260000,
+        "speaker_id": "speaker_3",
+        "text": "但是我们要宣传到位，我们就是就是要夸大它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 258000,
+        "end_ms": 259000,
+        "speaker_id": "speaker_4",
+        "text": "对宣传是要到位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 261000,
+        "end_ms": 265000,
+        "speaker_id": "speaker_4",
+        "text": "不是夸大啊不能夸大啊记住不能夸大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 266000,
+        "end_ms": 270000,
+        "speaker_id": "speaker_4",
+        "text": "咱卖东西儿是什么？咱销售什么，实事求是，一就是一二就是二，对不对？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 270000,
+        "end_ms": 271000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 270000,
+        "end_ms": 274000,
+        "speaker_id": "speaker_4",
+        "text": "你可以说把这缺点说的模糊点儿，对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 274000,
+        "end_ms": 275000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 275000,
+        "end_ms": 278000,
+        "speaker_id": "speaker_4",
+        "text": "但你不能说不能把缺点说成优点，这是不对的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 279000,
+        "end_ms": 281000,
+        "speaker_id": "speaker_1",
+        "text": "这肯定是不行的，不能太夸大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 280000,
+        "end_ms": 280000,
+        "speaker_id": "speaker_4",
+        "text": "对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 282000,
+        "end_ms": 284000,
+        "speaker_id": "speaker_4",
+        "text": "对啊咱啥东西儿就得说啥东西儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 284000,
+        "end_ms": 287000,
+        "speaker_id": "speaker_1",
+        "text": "他夸大相当于欺骗欺骗消费者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 286000,
+        "end_ms": 287000,
+        "speaker_id": "speaker_4",
+        "text": "没错",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 287000,
+        "end_ms": 297000,
+        "speaker_id": "speaker_4",
+        "text": "咱一经常在网上看到的时候，面试题目说面试官给你一瓶水，说你把这水卖到一百一千块钱，大家都都看过这个事儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 297000,
+        "end_ms": 297000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 297000,
+        "end_ms": 298000,
+        "speaker_id": "speaker_5",
+        "text": "看过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 298000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_4",
+        "text": "然后之前也说马云说哎有这么干的，然后马云把他开除了，说你这不是销售，你这是欺诈",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 306000,
+        "end_ms": 308000,
+        "speaker_id": "speaker_4",
+        "text": "对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 308000,
+        "end_ms": 315000,
+        "speaker_id": "speaker_4",
+        "text": "所以说咱们卖东西儿，首先一觉让顾客觉得好，二觉得物有所值，三给给它创造需求",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 317000,
+        "end_ms": 322000,
+        "speaker_id": "speaker_4",
+        "text": "那咱们怎么能把这东西儿更好表达出来，首先我们需要了解这个产品对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 322000,
+        "end_ms": 325000,
+        "speaker_id": "speaker_4",
+        "text": "我们卖什么我们得了解什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 325000,
+        "end_ms": 326000,
+        "speaker_id": "speaker_4",
+        "text": "是不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 326000,
+        "end_ms": 327000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 328000,
+        "end_ms": 331000,
+        "speaker_id": "speaker_4",
+        "text": "咱就说以前我表弟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 331000,
+        "end_ms": 331000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 332000,
+        "end_ms": 335000,
+        "speaker_id": "speaker_4",
+        "text": "去卖过做过一段时间的销售，他卖的是什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 336000,
+        "end_ms": 341000,
+        "speaker_id": "speaker_4",
+        "text": "他卖的一种产品，他当时他自己都不清楚名字",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 341000,
+        "end_ms": 343000,
+        "speaker_id": "speaker_4",
+        "text": "你觉得他这是一个好销售吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 343000,
+        "end_ms": 343000,
+        "speaker_id": "speaker_5",
+        "text": "不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 344000,
+        "end_ms": 354000,
+        "speaker_id": "speaker_4",
+        "text": "对吧？他不清楚那我也他都不清楚了，那我也不知道对不对我简单的给大家说一下产品啊，这个产品它是一种保健品，它的主要成分是地龙粉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 355000,
+        "end_ms": 358000,
+        "speaker_id": "speaker_4",
+        "text": "说地曼城大家可能不知道，其实就是蚯蚓。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 359000,
+        "end_ms": 363000,
+        "speaker_id": "speaker_4",
+        "text": "当时我就问过问了他几个问题我问他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 363000,
+        "end_ms": 373000,
+        "speaker_id": "speaker_4",
+        "text": "你这地龙是啥东西儿？他说蚯地龙就是蚯蚓什么，那个不就是蚯蚓粉吗？你蚯蚓粉你卖这么贵，然后说我这不是蚯蚓粉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 373000,
+        "end_ms": 382000,
+        "speaker_id": "speaker_4",
+        "text": "他说然后说那你跟我说说你这个地龙粉跟我自己拿蚯蚓磨成粉它有什么区别",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 383000,
+        "end_ms": 387000,
+        "speaker_id": "speaker_4",
+        "text": "然后他当时就跟我急眼了啊哪有你这么顾客呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 388000,
+        "end_ms": 391000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？大家觉得觉得销售这么着能能行吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 392000,
+        "end_ms": 392000,
+        "speaker_id": "speaker_5",
+        "text": "不行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 392000,
+        "end_ms": 393000,
+        "speaker_id": "speaker_4",
+        "text": "不行对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 393000,
+        "end_ms": 393000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 394000,
+        "end_ms": 398000,
+        "speaker_id": "speaker_4",
+        "text": "你说虽然说我没有见过这个产品啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 398000,
+        "end_ms": 408000,
+        "speaker_id": "speaker_4",
+        "text": "那你说咱们就说这个东西儿你要给顾客卖给他推广你怎么给他推广，我就问你个问题，你这地龙粉我自己磨得蚯蚓粉跟你这有啥区别",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 409000,
+        "end_ms": 410000,
+        "speaker_id": "speaker_4",
+        "text": "咱们可以怎么说啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 411000,
+        "end_ms": 416000,
+        "speaker_id": "speaker_4",
+        "text": "咱们可以说我这个蚯蚓我也说我是专门饲养的跟野生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 416000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿刚刚才老师说了说如果咱们平常咱们在销售当中会怎么说呢A这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 423000,
+        "end_ms": 438000,
+        "speaker_id": "speaker_2",
+        "text": "如果要是真的顾客问这个和蚯蚓粉有什么区别，因为做销售首先就要了解这个产品它有什么好处，他肯定要了解他为什么和蚯蚓粉它区别在哪儿。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 429000,
+        "end_ms": 431000,
+        "speaker_id": "speaker_4",
+        "text": "对就和自己磨蚯蚓粉有啥区别",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 438000,
+        "end_ms": 449000,
+        "speaker_id": "speaker_4",
+        "text": "咱现在就是说咱现在不不了解这个产品，咱现在不了解不了解这个产品，我也不知道这个产品，咱们就说咱们从哪个方面哪个方向",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 439000,
+        "end_ms": 441000,
+        "speaker_id": "speaker_1",
+        "text": "你你会怎么去说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 445000,
+        "end_ms": 445000,
+        "speaker_id": "speaker_2",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 449000,
+        "end_ms": 454000,
+        "speaker_id": "speaker_4",
+        "text": "就是说这东西儿跟那个你磨得蚯蚓粉有什么区别咱们往哪个方向去说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 455000,
+        "end_ms": 458000,
+        "speaker_id": "speaker_2",
+        "text": "既然它是个保健品，肯定是要以健康为主，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 458000,
+        "end_ms": 458000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 459000,
+        "end_ms": 462000,
+        "speaker_id": "speaker_2",
+        "text": "可以说我们的好处",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 463000,
+        "end_ms": 467000,
+        "speaker_id": "speaker_2",
+        "text": "说的具体一点成分可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 468000,
+        "end_ms": 481000,
+        "speaker_id": "speaker_2",
+        "text": "比方说里头有什么中药之类的，掺杂着蚯蚓粉，对我们还有别的东西，对人身体起到什么对附加的东西，坏处的话可以一概而过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 470000,
+        "end_ms": 470000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 471000,
+        "end_ms": 473000,
+        "speaker_id": "speaker_4",
+        "text": "对就是说我们除了蚯蚓，我们还有别的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 476000,
+        "end_ms": 477000,
+        "speaker_id": "speaker_1",
+        "text": "附加的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 481000,
+        "end_ms": 486000,
+        "speaker_id": "speaker_2",
+        "text": "就可以说我们这个产品肯定是有好处也有坏处的，顾客肯定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 486000,
+        "end_ms": 494000,
+        "speaker_id": "speaker_2",
+        "text": "也要了解的是吧？不可能一个产品它没有坏缺点的，给他们说一下缺点，缺点可能就是比方说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 494000,
+        "end_ms": 494000,
+        "speaker_id": "speaker_4",
+        "text": "贵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 495000,
+        "end_ms": 505000,
+        "speaker_id": "speaker_2",
+        "text": "就是价钱稍高一点儿，就是这方面比方说就是也不能多食用，多食用的话会对身体才就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 496000,
+        "end_ms": 497000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 505000,
+        "end_ms": 507000,
+        "speaker_id": "speaker_4",
+        "text": "嗯不良啊虚不受补啊这种的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 506000,
+        "end_ms": 506000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 507000,
+        "end_ms": 509000,
+        "speaker_id": "speaker_2",
+        "text": "对说这方面几个缺点，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 509000,
+        "end_ms": 516000,
+        "speaker_id": "speaker_2",
+        "text": "当然肯定要优点多于缺点，就这方面我会进行这样的销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 516000,
+        "end_ms": 518000,
+        "speaker_id": "speaker_4",
+        "text": "有别的看法儿的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 518000,
+        "end_ms": 520000,
+        "speaker_id": "speaker_4",
+        "text": "有没有别的想法儿的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 521000,
+        "end_ms": 523000,
+        "speaker_id": "speaker_1",
+        "text": "C这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 523000,
+        "end_ms": 524000,
+        "speaker_id": "speaker_4",
+        "text": "就有没有别的想法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 525000,
+        "end_ms": 537000,
+        "speaker_id": "speaker_5",
+        "text": "我感觉也可以从就比如说咱们蚯蚓的生长环境，然后还有就是它和那种普通嗯顾客问的那种就是用蚯蚓磨成那种粉两个之间的功效",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 529000,
+        "end_ms": 530000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 538000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_5",
+        "text": "因为你这咱们这蚯蚓粉里面肯定就咱们专有名字里面，这个肯定不只是只是蚯蚓它还添加了别的东西，你要把这个和他使用普通的那种蚯蚓粉的差别和功效说出来，让顾客知道啊不能只是单纯的说蚯蚓就行，跟我们的产品是不一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 557000,
+        "end_ms": 571000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我们还可以从我们这个专业的生产团队后面这个我们有很专业的器材，然后我们饲养的那些蚯蚓也是从呃也是我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 571000,
+        "end_ms": 583000,
+        "speaker_id": "speaker_6",
+        "text": "特特殊饲养的对我们对我们是专业的从卫生啊或者各方面保健这方面，我们不能保健产品，然后会有这些安全食品隐患",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 572000,
+        "end_ms": 573000,
+        "speaker_id": "speaker_4",
+        "text": "也是专业饲养的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 574000,
+        "end_ms": 575000,
+        "speaker_id": "speaker_4",
+        "text": "我们专业的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 583000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_6",
+        "text": "所以让可以让呃这个客户呃自己磨的这个自己的这个蚯蚓粉，他肯定是不放心自己随便食用的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 592000,
+        "end_ms": 605000,
+        "speaker_id": "speaker_6",
+        "text": "因为呃随手这个野生的蚯蚓呃肯定是会有一些各种各样的什么细菌啊这种隐患，所以我们还可以从这方面呃给这个顾客介绍我没了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 605000,
+        "end_ms": 615000,
+        "speaker_id": "speaker_4",
+        "text": "所以说我们说的就是要向顾客说明，我们的这个产品这个地龙粉它的价值是要远高于你自己磨的这个蚯蚓粉。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 615000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_4",
+        "text": "我们其实初中课本儿上这个政治讲经济这块儿就有过，说什么决定商品的价值，是社会必要劳动时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 626000,
+        "end_ms": 633000,
+        "speaker_id": "speaker_4",
+        "text": "这个社会必要劳动时间兑换到我们那个制作上，这是什么？这就是制作的工艺，对不对？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 633000,
+        "end_ms": 636000,
+        "speaker_id": "speaker_4",
+        "text": "要说我们说要多的话药材，但是其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 637000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_4",
+        "text": "大家基本上都明白，就是说我们这个东西儿经过了多少多少道工艺的反复，复杂工艺的这个反复的制作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 643000,
+        "end_ms": 644000,
+        "speaker_id": "speaker_1",
+        "text": "研磨制作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 645000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 646000,
+        "end_ms": 657000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？就比如说你瓷器好，瓷器它为什么贵？它烧一遍化一遍，烧一遍化一遍，来来回回工作十几好几十遍对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 657000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_4",
+        "text": "这是一个复杂的工艺。那为什么说这个说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 662000,
+        "end_ms": 668000,
+        "speaker_id": "speaker_4",
+        "text": "卖的国画儿，我哪怕说是没啥名气的，这一张",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 668000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_4",
+        "text": "就是大的啊不是小品的，大的四十六十八十的，就没什么名气的，它一张也得大几百小几千的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 676000,
+        "end_ms": 680000,
+        "speaker_id": "speaker_4",
+        "text": "这是没有名气的，有名气的，随便弄一张",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 681000,
+        "end_ms": 691000,
+        "speaker_id": "speaker_4",
+        "text": "什么一万了上万的对不对比如说在什么什么古代的那个，那个他就是价更高，那为什么？画一张画儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 683000,
+        "end_ms": 683000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 691000,
+        "end_ms": 696000,
+        "speaker_id": "speaker_4",
+        "text": "他能卖这么多钱，这就是旅游对工艺工具在里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 697000,
+        "end_ms": 702000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？咱们就要让顾客知道这里面的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 702000,
+        "end_ms": 709000,
+        "speaker_id": "speaker_4",
+        "text": "咱们是经过多少道工序让顾客觉得这个值，或者你说顾客花这个钱买回来了然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 709000,
+        "end_ms": 723000,
+        "speaker_id": "speaker_4",
+        "text": "顾客买回来之后，顾客顾客那个朋友啊同事啊听起来，来他家啦，给他一看，我拿这东东西给他们一撇，我说花多少多少钱买的，然后他朋友来一个你这不你这不就蚯蚓粉吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 723000,
+        "end_ms": 730000,
+        "speaker_id": "speaker_4",
+        "text": "你说这样对顾客这心里他是什么感觉？是不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 730000,
+        "end_ms": 731000,
+        "speaker_id": "speaker_5",
+        "text": "被欺骗了性质",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 731000,
+        "end_ms": 742000,
+        "speaker_id": "speaker_4",
+        "text": "不是说欺骗了就是感觉自己这脸面落不住啊，对不对？我花这么多东西儿，这么多钱买这东西儿，结果让朋友看我看我看看傻子似的你觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 735000,
+        "end_ms": 735000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 742000,
+        "end_ms": 751000,
+        "speaker_id": "speaker_4",
+        "text": "这样顾客还会还会再来买咱们这个东西吗？不会了吧对不对？所以说咱们如果卖那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 745000,
+        "end_ms": 746000,
+        "speaker_id": "speaker_5",
+        "text": "不会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 747000,
+        "end_ms": 748000,
+        "speaker_id": "speaker_2",
+        "text": "嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 751000,
+        "end_ms": 759000,
+        "speaker_id": "speaker_4",
+        "text": "高端的或者用高价的物品，那咱们一定得让顾客知道这东西它贵在哪儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 759000,
+        "end_ms": 764000,
+        "speaker_id": "speaker_4",
+        "text": "你得让顾客知道它贵有贵的好，那你你能忽悠顾客买一次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 764000,
+        "end_ms": 771000,
+        "speaker_id": "speaker_4",
+        "text": "但是顾客回去之后被朋友啥一打击，他就不会再来买第二次。要不咱顾客知道",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 771000,
+        "end_ms": 773000,
+        "speaker_id": "speaker_4",
+        "text": "这东西儿它好在哪儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 774000,
+        "end_ms": 785000,
+        "speaker_id": "speaker_4",
+        "text": "然后顾客买回来之后，朋友说唉你这这么贵不就是蚯蚓粉吗？呃顾客就可以把咱们跟顾客说的，跟他朋友再说一遍，这还显得人家顾客呃还能回回显的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 785000,
+        "end_ms": 786000,
+        "speaker_id": "speaker_3",
+        "text": "人家懂",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 786000,
+        "end_ms": 796000,
+        "speaker_id": "speaker_4",
+        "text": "有知识对呀还能懂还博学呀是不是让顾客不可能说买的产品能享受这个产品的好处，还能在朋友面前长面儿对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 789000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 790000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 797000,
+        "end_ms": 803000,
+        "speaker_id": "speaker_4",
+        "text": "所以那样的话这个顾客下次是不是哪怕有同类的产品，是不是还要来找咱们买",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 804000,
+        "end_ms": 815000,
+        "speaker_id": "speaker_4",
+        "text": "对不对啊&对&其实这也也就属于一个服务上，是不是？我知道贵有贵的好是不是&嗯&",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 816000,
+        "end_ms": 824000,
+        "speaker_id": "speaker_4",
+        "text": "那么大家有没有什么那种销售上的问题，就是对于自己手上的商品销售上遇到了什么问题的？大家可以问一下。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 824000,
+        "end_ms": 825000,
+        "speaker_id": "speaker_2",
+        "text": "我有一个看法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 825000,
+        "end_ms": 826000,
+        "speaker_id": "speaker_4",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 826000,
+        "end_ms": 830000,
+        "speaker_id": "speaker_2",
+        "text": "顾客买东西，首先他肯定会了解产品的质量，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 830000,
+        "end_ms": 831000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 831000,
+        "end_ms": 834000,
+        "speaker_id": "speaker_2",
+        "text": "他了解完质量以后，他肯定要了解产品的价格。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 835000,
+        "end_ms": 849000,
+        "speaker_id": "speaker_2",
+        "text": "比方说这个是卖五百块钱的微波炉，但是那个微波炉就卖四百多，但是质量方面只是稍微就是可能差不多，但是功能就是少了两个功能",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 849000,
+        "end_ms": 854000,
+        "speaker_id": "speaker_2",
+        "text": "就比方说咱们销售也可能做市场销售啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 854000,
+        "end_ms": 864000,
+        "speaker_id": "speaker_2",
+        "text": "超市那方面的销售啊，如果是在超市里面的话，他这个摆放顺序会不会要做一些调整，比方说咱可以从左向右",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 864000,
+        "end_ms": 872000,
+        "speaker_id": "speaker_2",
+        "text": "因为顾客在看货架上的东西，一般的方式都是从左向右，咱可以价格儿从左向右依次增高",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 872000,
+        "end_ms": 873000,
+        "speaker_id": "speaker_4",
+        "text": "这个可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 873000,
+        "end_ms": 878000,
+        "speaker_id": "speaker_2",
+        "text": "这样可以给他们就是对于购物这方面的东西给他们自己也有一个参考",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 879000,
+        "end_ms": 887000,
+        "speaker_id": "speaker_2",
+        "text": "再加上咱们这些推销员在旁边的一些介绍，可能更能激起顾客这这种购买欲望。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 887000,
+        "end_ms": 889000,
+        "speaker_id": "speaker_4",
+        "text": "对这个是可以的，这个没有问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 890000,
+        "end_ms": 893000,
+        "speaker_id": "speaker_4",
+        "text": "你还有其他问题吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 893000,
+        "end_ms": 896000,
+        "speaker_id": "speaker_2",
+        "text": "我那我想知道如果是这个产品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 897000,
+        "end_ms": 909000,
+        "speaker_id": "speaker_2",
+        "text": "它怎么样如果滞销了，但是这个不好不好推荐的这种产品就是比较买的人特别少是要怎么宣传它或者推销它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 909000,
+        "end_ms": 913000,
+        "speaker_id": "speaker_4",
+        "text": "那首先你得清楚他这个滞销的原因具体是什么，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 913000,
+        "end_ms": 914000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 914000,
+        "end_ms": 915000,
+        "speaker_id": "speaker_4",
+        "text": "就他是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 915000,
+        "end_ms": 916000,
+        "speaker_id": "speaker_2",
+        "text": "需求量比较小",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 917000,
+        "end_ms": 919000,
+        "speaker_id": "speaker_4",
+        "text": "就是说这这一种产品吗是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 919000,
+        "end_ms": 921000,
+        "speaker_id": "speaker_2",
+        "text": "啊属于这一种产品需求量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 920000,
+        "end_ms": 923000,
+        "speaker_id": "speaker_4",
+        "text": "是就是说这一种产品应用需求比较小，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 923000,
+        "end_ms": 923000,
+        "speaker_id": "speaker_2",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 923000,
+        "end_ms": 924000,
+        "speaker_id": "speaker_4",
+        "text": "对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 926000,
+        "end_ms": 933000,
+        "speaker_id": "speaker_4",
+        "text": "它这种运营需求比较小，就是说你单纯靠推广它，这可能顾客就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 933000,
+        "end_ms": 941000,
+        "speaker_id": "speaker_4",
+        "text": "都不需要这东西儿，就是你硬给他找需求你都找不到，是这么一种东西儿对吧？那这种东西儿首先的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 938000,
+        "end_ms": 939000,
+        "speaker_id": "speaker_2",
+        "text": "嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 942000,
+        "end_ms": 947000,
+        "speaker_id": "speaker_4",
+        "text": "现在是两个办法，一个是你想办法给它开展一个另外一种用途",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 947000,
+        "end_ms": 948000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 948000,
+        "end_ms": 950000,
+        "speaker_id": "speaker_4",
+        "text": "再一种就是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 950000,
+        "end_ms": 958000,
+        "speaker_id": "speaker_4",
+        "text": "把它跟其他商品，其他那种特价商品搭配",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 955000,
+        "end_ms": 956000,
+        "speaker_id": "speaker_2",
+        "text": "分类",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 958000,
+        "end_ms": 961000,
+        "speaker_id": "speaker_4",
+        "text": "咱比如说最常见的街摊儿上买一箱奶来送你个盆儿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 962000,
+        "end_ms": 962000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 963000,
+        "end_ms": 966000,
+        "speaker_id": "speaker_4",
+        "text": "对不对？买一箱奶送你个饭盒儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 967000,
+        "end_ms": 968000,
+        "speaker_id": "speaker_4",
+        "text": "这是最常见的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 968000,
+        "end_ms": 969000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 969000,
+        "end_ms": 972000,
+        "speaker_id": "speaker_4",
+        "text": "所以你的产品也可以和它互相搭配",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 973000,
+        "end_ms": 980000,
+        "speaker_id": "speaker_4",
+        "text": "这搭配之间不需要不一定非要有什么关系。比如说一箱奶和一个脸盆儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 980000,
+        "end_ms": 987000,
+        "speaker_id": "speaker_4",
+        "text": "他有什么必然的联系吗这个都？他们有什么配合使用的方面吗对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 982000,
+        "end_ms": 983000,
+        "speaker_id": "speaker_2",
+        "text": "没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 987000,
+        "end_ms": 990000,
+        "speaker_id": "speaker_4",
+        "text": "所以这这两个基本方法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 991000,
+        "end_ms": 997000,
+        "speaker_id": "speaker_4",
+        "text": "还有其他另一种方法就第三种方法，是这个方式，虽然说你这个产品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 997000,
+        "end_ms": 999000,
+        "speaker_id": "speaker_4",
+        "text": "做的够大的情况下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 999000,
+        "end_ms": 1001000,
+        "speaker_id": "speaker_2",
+        "text": "品牌有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 1001000,
+        "end_ms": 1010000,
+        "speaker_id": "speaker_4",
+        "text": "对你说你的东西够大，规模够大，实力够强的情况下，你可以去跟顾客们创造这种需求，或者引导他们有这种需求。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 1010000,
+        "end_ms": 1011000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 1011000,
+        "end_ms": 1013000,
+        "speaker_id": "speaker_4",
+        "text": "那就比方说打比方啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 1014000,
+        "end_ms": 1018000,
+        "speaker_id": "speaker_4",
+        "text": "以前十几年前我见过有卖淘米水的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 1019000,
+        "end_ms": 1026000,
+        "speaker_id": "speaker_4",
+        "text": "有专业的淘米水，他说我用我的水淘米，就特别好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 1020000,
+        "end_ms": 1020000,
+        "speaker_id": "speaker_2",
+        "text": "淘米",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 1026000,
+        "end_ms": 1033000,
+        "speaker_id": "speaker_4",
+        "text": "但是十几年前，就咱们这看你们这种消费水平，大家会去买这个东西吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1033000,
+        "end_ms": 1034000,
+        "speaker_id": "speaker_2",
+        "text": "不会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1034000,
+        "end_ms": 1038000,
+        "speaker_id": "speaker_4",
+        "text": "淘米水不会吧因为大家都觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1035000,
+        "end_ms": 1036000,
+        "speaker_id": "speaker_2",
+        "text": "嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1038000,
+        "end_ms": 1043000,
+        "speaker_id": "speaker_4",
+        "text": "不就拿水这么着淘米不就行了吗为什么需要你这东西儿啊是不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1044000,
+        "end_ms": 1047000,
+        "speaker_id": "speaker_4",
+        "text": "其实这个淘米的问题你刚才说那种产品就很像嘛对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1047000,
+        "end_ms": 1048000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1048000,
+        "end_ms": 1050000,
+        "speaker_id": "speaker_4",
+        "text": "就说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1050000,
+        "end_ms": 1056000,
+        "speaker_id": "speaker_4",
+        "text": "这样他那种淘米水的应该怎么办？要么是转到大城市，那是大城市恐怕也不用他人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1056000,
+        "end_ms": 1057000,
+        "speaker_id": "speaker_2",
+        "text": "比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1057000,
+        "end_ms": 1061000,
+        "speaker_id": "speaker_4",
+        "text": "对吧所以如果他实力够强他就可以去宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1061000,
+        "end_ms": 1074000,
+        "speaker_id": "speaker_4",
+        "text": "虽然我们不知道有多么到底有什么好，让更多的人去了解他这个东他这个东西儿对不对？其实大家说不需要，其实更多是因为不了解它，不清楚它跟这个直接拿清水淘米有什么区别",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1070000,
+        "end_ms": 1070000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1074000,
+        "end_ms": 1079000,
+        "speaker_id": "speaker_4",
+        "text": "你光说有营养怎么有营养法儿？对不对？大家都不了解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1079000,
+        "end_ms": 1082000,
+        "speaker_id": "speaker_4",
+        "text": "所以就是这三个方法。一",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1083000,
+        "end_ms": 1085000,
+        "speaker_id": "speaker_4",
+        "text": "对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1087000,
+        "end_ms": 1088000,
+        "speaker_id": "speaker_4",
+        "text": "就是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1088000,
+        "end_ms": 1089000,
+        "speaker_id": "speaker_2",
+        "text": "进行推广",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1089000,
+        "end_ms": 1090000,
+        "speaker_id": "speaker_4",
+        "text": "对推广",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1091000,
+        "end_ms": 1098000,
+        "speaker_id": "speaker_4",
+        "text": "然后给它搭配处理，开展它新的用途，对不对？基本就这三种方法。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1094000,
+        "end_ms": 1095000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1098000,
+        "end_ms": 1099000,
+        "speaker_id": "speaker_4",
+        "text": "那还有其他问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1099000,
+        "end_ms": 1100000,
+        "speaker_id": "speaker_2",
+        "text": "没有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1100000,
+        "end_ms": 1100000,
+        "speaker_id": "speaker_4",
+        "text": "来下一位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1100000,
+        "end_ms": 1116000,
+        "speaker_id": "speaker_5",
+        "text": "我这边儿想问，比如说我现在手里有一批护颈仪，就是一个仪器就是对对对健康养生，但是一是一种中型，不是说就是说消费啊消费水平就是中端，不是低端，也不是特别高的那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1106000,
+        "end_ms": 1107000,
+        "speaker_id": "speaker_4",
+        "text": "哦脖子这儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1116000,
+        "end_ms": 1141000,
+        "speaker_id": "speaker_5",
+        "text": "我现在就是有这个问题就是销售不出去，因为销售的时候客户会问，就是说你这个有的比你这个相同的护颈仪比你这个便宜，有的说价格比你高，说我可以多少花点钱，然后去选择一个低价位的，我就说我随便用用，有的会说我买一个中型的，不如我多花点儿钱，买一个买一个高端一点儿的，就是用的时间更久更好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1141000,
+        "end_ms": 1145000,
+        "speaker_id": "speaker_5",
+        "text": "然后有人就是说我可以去选择去外面按摩",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1145000,
+        "end_ms": 1163000,
+        "speaker_id": "speaker_5",
+        "text": "或者说我去拔罐，或者说我要是这样的话，我还不如多花点钱去买一个按摩椅。在这种情况下，我如果想要销售这种中型的就是消费水平中型的这种护颈仪我应该就采用什么办法，因为大家的选择都特别多，为什么会选择我这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1164000,
+        "end_ms": 1169000,
+        "speaker_id": "speaker_4",
+        "text": "假如说他选择你这个，首先你得先确定自己的优势",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1169000,
+        "end_ms": 1174000,
+        "speaker_id": "speaker_4",
+        "text": "你只有先确定自己的优势了，你才能根据客户儿指示去怎么说东西儿呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1174000,
+        "end_ms": 1181000,
+        "speaker_id": "speaker_4",
+        "text": "但是你自己都不确定我这东西儿到底好在哪儿，那你怎么跟顾客说这东西儿好，对不对刚才你说是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1181000,
+        "end_ms": 1187000,
+        "speaker_id": "speaker_4",
+        "text": "咱先不说瞧你说的什么按摩呀，什么按摩椅啊或拔罐儿针灸啥的对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1187000,
+        "end_ms": 1187000,
+        "speaker_id": "speaker_5",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1188000,
+        "end_ms": 1195000,
+        "speaker_id": "speaker_4",
+        "text": "调动的事，首先你说针灸按摩拔罐儿得去人家店儿里，对不对按摩椅还占地方不？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1193000,
+        "end_ms": 1193000,
+        "speaker_id": "speaker_5",
+        "text": "是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1195000,
+        "end_ms": 1196000,
+        "speaker_id": "speaker_5",
+        "text": "对占得空间大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1197000,
+        "end_ms": 1198000,
+        "speaker_id": "speaker_4",
+        "text": "而且你不能走哪儿带哪儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1199000,
+        "end_ms": 1208000,
+        "speaker_id": "speaker_4",
+        "text": "你那个中型的你可以你可以走哪带哪儿了，对方便便捷，这是你这些什么按摩针灸按摩椅上这一大优势，对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1201000,
+        "end_ms": 1203000,
+        "speaker_id": "speaker_5",
+        "text": "方便对吧方便便捷是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1208000,
+        "end_ms": 1211000,
+        "speaker_id": "speaker_4",
+        "text": "还有包括你说那个低端的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1212000,
+        "end_ms": 1214000,
+        "speaker_id": "speaker_4",
+        "text": "低端什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1214000,
+        "end_ms": 1233000,
+        "speaker_id": "speaker_5",
+        "text": "大家都可以选择就是花的钱稍微少一些，消费水平稍微低一些，我花一个这个买一个稍微次一点儿的就是低端一点儿的或者有人说我就随便用用，我就不用花那么贵的了，买一个中端的，有的人就说我我就想买一个好一点儿的，我就选择高端的，我为什么选择这个中端的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1216000,
+        "end_ms": 1216000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1233000,
+        "end_ms": 1240000,
+        "speaker_id": "speaker_5",
+        "text": "但中端肯定有它的优点，但是我我就是说在这种情况下，我该怎么跟客户介绍，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1236000,
+        "end_ms": 1236000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1240000,
+        "end_ms": 1245000,
+        "speaker_id": "speaker_4",
+        "text": "首先对于低端的啊你必须得搞清楚，你比它强在哪儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1246000,
+        "end_ms": 1254000,
+        "speaker_id": "speaker_4",
+        "text": "对不对比如说你安全上你比它强，或者你效果上比它好，所以说如果你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1251000,
+        "end_ms": 1254000,
+        "speaker_id": "speaker_5",
+        "text": "对这肯定效果肯定比它好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1254000,
+        "end_ms": 1258000,
+        "speaker_id": "speaker_4",
+        "text": "颈椎按摩他颈椎是什么？这是人体很重要一个部位对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1258000,
+        "end_ms": 1258000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1259000,
+        "end_ms": 1263000,
+        "speaker_id": "speaker_4",
+        "text": "你说你要买低端的买杂牌儿的，这质量有保证吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1265000,
+        "end_ms": 1265000,
+        "speaker_id": "speaker_4",
+        "text": "对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1265000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_5",
+        "text": "那如果他们说选择一个更高价位的呢，我我现在该如何推销我的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1271000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_5",
+        "text": "嗯功能是差不多，可能没有它那么完善，但是就价位相对比它稍微低一些，但是他他要选择高端的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1280000,
+        "end_ms": 1281000,
+        "speaker_id": "speaker_4",
+        "text": "但是人家是这么说啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1282000,
+        "end_ms": 1288000,
+        "speaker_id": "speaker_4",
+        "text": "咱们销售咱不是所有客户都能留住，人家就是有钱就看不上你这个中央的东西儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1289000,
+        "end_ms": 1292000,
+        "speaker_id": "speaker_5",
+        "text": "就是选择合适的消费人群向他销售，是这意思吗。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1289000,
+        "end_ms": 1290000,
+        "speaker_id": "speaker_4",
+        "text": "那你就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1291000,
+        "end_ms": 1296000,
+        "speaker_id": "speaker_4",
+        "text": "对对你这，如果你就是说卖肉夹馍的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1297000,
+        "end_ms": 1300000,
+        "speaker_id": "speaker_4",
+        "text": "追着马云跟人家说来你买买我肉夹馍吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1301000,
+        "end_ms": 1303000,
+        "speaker_id": "speaker_4",
+        "text": "&嗯&觉得这样好吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1303000,
+        "end_ms": 1312000,
+        "speaker_id": "speaker_4",
+        "text": "对吧？人家就是人家就是亿万富翁，人家就是有钱，人家啥就是只要最贵的，人家不考虑什么啥，只要最贵的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1312000,
+        "end_ms": 1313000,
+        "speaker_id": "speaker_1",
+        "text": "呃因人而异",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1313000,
+        "end_ms": 1323000,
+        "speaker_id": "speaker_4",
+        "text": "对，你这样儿的话你这个就主要你确定自己的消消费人群你不也说嘛自己是中端了对不对？那就得对准中端这个消费人群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1314000,
+        "end_ms": 1316000,
+        "speaker_id": "speaker_5",
+        "text": "合适的那个消费人群对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1324000,
+        "end_ms": 1324000,
+        "speaker_id": "speaker_5",
+        "text": "而定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1324000,
+        "end_ms": 1328000,
+        "speaker_id": "speaker_4",
+        "text": "对你可以去发展一些低端的甚至高端这些可以尝试一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1329000,
+        "end_ms": 1334000,
+        "speaker_id": "speaker_4",
+        "text": "但你主要还得针对中端这些人群，你什么商品就得针对什么样的人群。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1334000,
+        "end_ms": 1334000,
+        "speaker_id": "speaker_5",
+        "text": "嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1334000,
+        "end_ms": 1335000,
+        "speaker_id": "speaker_1",
+        "text": "那D这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1337000,
+        "end_ms": 1357000,
+        "speaker_id": "speaker_6",
+        "text": "我这边儿想问一下，就是现在我们不是有嗯消费销售这边儿有很多面临的一个情况，就是我想呃卖一些东西，然后我肯定是要去呃那边儿卖这个东西好的那边儿的市场，去呃看看人群啊或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1357000,
+        "end_ms": 1374000,
+        "speaker_id": "speaker_6",
+        "text": "客流量什么的，去找这些呃会去那边儿消费的这些人员，但是同样的是这个地方肯定是以前会有和我一样的在那儿做这个的，那我通过什么方式我呃可以让别人选择的是我这家",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1374000,
+        "end_ms": 1381000,
+        "speaker_id": "speaker_4",
+        "text": "首先我不推荐你去跟人家抢什么东西，我不推荐，就是人家在那儿干多长时间了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1377000,
+        "end_ms": 1378000,
+        "speaker_id": "speaker_6",
+        "text": "是吧？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1381000,
+        "end_ms": 1387000,
+        "speaker_id": "speaker_4",
+        "text": "你想过这个事儿吗？人家在那干多少年，人家在那积累了多大的多长时间的一个客户群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1387000,
+        "end_ms": 1392000,
+        "speaker_id": "speaker_4",
+        "text": "多少去去哪儿的人都是人家的熟客你考虑过这个问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1392000,
+        "end_ms": 1403000,
+        "speaker_id": "speaker_6",
+        "text": "但是但是如果不去那个地方的话，别的地方呃就是人流啊或者需要我这个东西的人，可能就没有那个地方多，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1404000,
+        "end_ms": 1409000,
+        "speaker_id": "speaker_4",
+        "text": "是没有那个地方多，但是别的地方少，但那都是你的，那儿东西儿多，没你的份儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1410000,
+        "end_ms": 1412000,
+        "speaker_id": "speaker_4",
+        "text": "能明白这个概念吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1412000,
+        "end_ms": 1416000,
+        "speaker_id": "speaker_4",
+        "text": "是你那儿人流量是很多，但是你已经被人家老实人包干完了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1417000,
+        "end_ms": 1435000,
+        "speaker_id": "speaker_6",
+        "text": "但是呃如果我是呃消就是顾客的话，我其实不是我觉得大多数人应该都是这样的，呃就就比如说夜市嘛，啊你经常去逛夜市的话，你会呃只去一个上面一个摊儿上面，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1422000,
+        "end_ms": 1422000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1428000,
+        "end_ms": 1429000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1435000,
+        "end_ms": 1437000,
+        "speaker_id": "speaker_4",
+        "text": "你这个销售的话，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1438000,
+        "end_ms": 1446000,
+        "speaker_id": "speaker_4",
+        "text": "大商场里头跟夜市不一样因为夜市摆摊是流动的大商场他们是固定的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1447000,
+        "end_ms": 1450000,
+        "speaker_id": "speaker_4",
+        "text": "就这两个区别这区别很大的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1450000,
+        "end_ms": 1454000,
+        "speaker_id": "speaker_4",
+        "text": "夜市不会夜市就是说谁看见啥喜欢啥就买了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1454000,
+        "end_ms": 1454000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1454000,
+        "end_ms": 1458000,
+        "speaker_id": "speaker_4",
+        "text": "大商场不是大商场你说你今天去这个店儿你觉得这个好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1458000,
+        "end_ms": 1461000,
+        "speaker_id": "speaker_4",
+        "text": "那下回有你朋友想买这个东西儿你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1461000,
+        "end_ms": 1463000,
+        "speaker_id": "speaker_6",
+        "text": "还是会介绍那个店铺",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1462000,
+        "end_ms": 1465000,
+        "speaker_id": "speaker_4",
+        "text": "对吧你还会介绍来这儿这就是人家客户群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1465000,
+        "end_ms": 1466000,
+        "speaker_id": "speaker_4",
+        "text": "明白什么意思吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1466000,
+        "end_ms": 1467000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1467000,
+        "end_ms": 1473000,
+        "speaker_id": "speaker_4",
+        "text": "当然你要说你真是能在那儿扛着，扛个几年你能扛住",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1473000,
+        "end_ms": 1476000,
+        "speaker_id": "speaker_4",
+        "text": "你劝退分走人家客户儿，这确实可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1476000,
+        "end_ms": 1478000,
+        "speaker_id": "speaker_4",
+        "text": "我给你举个最现实的例子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1479000,
+        "end_ms": 1480000,
+        "speaker_id": "speaker_4",
+        "text": "就是街边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1480000,
+        "end_ms": 1482000,
+        "speaker_id": "speaker_4",
+        "text": "就二十一中",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1482000,
+        "end_ms": 1485000,
+        "speaker_id": "speaker_4",
+        "text": "那十字路口前头以前有一家卖石头饼的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1485000,
+        "end_ms": 1486000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1487000,
+        "end_ms": 1492000,
+        "speaker_id": "speaker_4",
+        "text": "以前那儿整个那十字路口啊包括二中附近，就他一个卖早点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1492000,
+        "end_ms": 1497000,
+        "speaker_id": "speaker_4",
+        "text": "他在那儿卖了得有好几年，大概得有十年左右",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1499000,
+        "end_ms": 1505000,
+        "speaker_id": "speaker_4",
+        "text": "不是他先卖现在的话大概得有十多年十好几年一开始只有他一家",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1505000,
+        "end_ms": 1510000,
+        "speaker_id": "speaker_1",
+        "text": "行，这个老师这边儿咱先先回答一下儿咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1511000,
+        "end_ms": 1516000,
+        "speaker_id": "speaker_1",
+        "text": "嗯E这边儿E这边儿有问题咱抓紧时间先回答一下儿然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1515000,
+        "end_ms": 1515000,
+        "speaker_id": "speaker_4",
+        "text": "诶好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1515000,
+        "end_ms": 1516000,
+        "speaker_id": "speaker_7",
+        "text": "这边就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1517000,
+        "end_ms": 1540000,
+        "speaker_id": "speaker_7",
+        "text": "最近不管做什么产品，面临最大的一个问题就是市场饱和问题，就是各各种特色都有，比如说低价促销的，然后高价走高档品质的，然后作为一个就是在这里就是有了三四年的一个基础，有一定的那个固定的消费人群，但是面临这个就是越来越多的同行业的一个竞争",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1522000,
+        "end_ms": 1522000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1540000,
+        "end_ms": 1553000,
+        "speaker_id": "speaker_7",
+        "text": "该怎么办？因为大家走的路基本就是每一个你能想到的特色都有，就说你没有办法再想出特别新的一个点子来吸引人，那你怎么可以就是再往后走的更长一点儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1554000,
+        "end_ms": 1557000,
+        "speaker_id": "speaker_4",
+        "text": "咱就说各种套路各种啥都已经玩儿烂了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1557000,
+        "end_ms": 1560000,
+        "speaker_id": "speaker_7",
+        "text": "都已经用惯了就是消费都已就是那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1558000,
+        "end_ms": 1559000,
+        "speaker_id": "speaker_4",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1560000,
+        "end_ms": 1563000,
+        "speaker_id": "speaker_7",
+        "text": "就是买的那些人都已经对这种手段疲惫了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1563000,
+        "end_ms": 1567000,
+        "speaker_id": "speaker_4",
+        "text": "是对这种手段疲惫了各种手段都各种风格都已经玩儿烂了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1565000,
+        "end_ms": 1566000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1567000,
+        "end_ms": 1583000,
+        "speaker_id": "speaker_7",
+        "text": "对，但是它这个行业属于一个前景比较好的行业，只不过它处于一个最大问题，就是一个最大就是市场饱和问题就是说哪里都有但是人们都需要，但是哪都有，可能你的选择就是选到你那儿的人群可能会减少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1575000,
+        "end_ms": 1576000,
+        "speaker_id": "speaker_4",
+        "text": "就是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1583000,
+        "end_ms": 1596000,
+        "speaker_id": "speaker_4",
+        "text": "你就是说你已经干了很长时间一个产品，这个产品前景很好，但现在市场趋于饱和儿了，而且你周围干这东西儿人越来越多，开始抢你的客户儿了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1587000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1591000,
+        "end_ms": 1592000,
+        "speaker_id": "speaker_7",
+        "text": "呃对大家都在做",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1596000,
+        "end_ms": 1596000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1596000,
+        "end_ms": 1598000,
+        "speaker_id": "speaker_7",
+        "text": "分流了已经",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1597000,
+        "end_ms": 1601000,
+        "speaker_id": "speaker_4",
+        "text": "哦就说你现在想问是怎么留住这个客户儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1601000,
+        "end_ms": 1603000,
+        "speaker_id": "speaker_7",
+        "text": "怎么留住然后吸纳新客户儿？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1603000,
+        "end_ms": 1604000,
+        "speaker_id": "speaker_4",
+        "text": "怎么留住并吸纳新客户儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1604000,
+        "end_ms": 1620000,
+        "speaker_id": "speaker_7",
+        "text": "对因为你还要往前发展呀，因为还是不断的有人需要你这个产品的，只不过说可能竞争比较多，就是说你不能走到绝路，只不过你路有点儿越走越窄，怎么怎么想办法让自己再拓宽一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1620000,
+        "end_ms": 1626000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这么着吧这有一个老话来叫，人无我有人有我优。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1627000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_4",
+        "text": "那你现在能到这个人有我优的一个程度吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1631000,
+        "end_ms": 1651000,
+        "speaker_id": "speaker_7",
+        "text": "其实我们现在最大的优势还是这个老客户问题，因为我们走不了低价促销，因为我们成本儿在这儿摆着，但是你说优的这话，人家有比我们售价高的，因为人家的品质是真的好，我们公司虽然就是干了这么多年了吧，但是他没有办法进一步的扩那么大的规模因为人家从一开始定位就高端路线",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1634000,
+        "end_ms": 1635000,
+        "speaker_id": "speaker_4",
+        "text": "对呀还是老客户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1638000,
+        "end_ms": 1638000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1652000,
+        "end_ms": 1666000,
+        "speaker_id": "speaker_7",
+        "text": "人家卖的产品就是包装的特别好，然后那些制作工艺都特别的精良，我们达到那种程度，因为我们走的还是一种比较大众的这种路线，所以我们做优的话可能是比不过人家这种特定的定位的这个商家的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1666000,
+        "end_ms": 1667000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1669000,
+        "end_ms": 1676000,
+        "speaker_id": "speaker_4",
+        "text": "人有我优，但是对方也优了，那还有那是最后一条人优我转",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1676000,
+        "end_ms": 1678000,
+        "speaker_id": "speaker_7",
+        "text": "转行啦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1678000,
+        "end_ms": 1683000,
+        "speaker_id": "speaker_4",
+        "text": "也不是说完全转行。你如果完全转行你这个客户不白白流失了吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1683000,
+        "end_ms": 1683000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1684000,
+        "end_ms": 1685000,
+        "speaker_id": "speaker_4",
+        "text": "对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1685000,
+        "end_ms": 1691000,
+        "speaker_id": "speaker_4",
+        "text": "你说就是说你现在发展新客户也很难，因为周围你同类商家也非常多，对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1692000,
+        "end_ms": 1693000,
+        "speaker_id": "speaker_4",
+        "text": "是这个意思吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1693000,
+        "end_ms": 1694000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1694000,
+        "end_ms": 1697000,
+        "speaker_id": "speaker_4",
+        "text": "那你有保留住你的这些老客户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1698000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_4",
+        "text": "的前提下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1699000,
+        "end_ms": 1703000,
+        "speaker_id": "speaker_4",
+        "text": "你可以去拓宽一下儿，看看可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1703000,
+        "end_ms": 1707000,
+        "speaker_id": "speaker_4",
+        "text": "转一别的行业另外你这个行业你已经饱和了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1707000,
+        "end_ms": 1709000,
+        "speaker_id": "speaker_4",
+        "text": "对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1709000,
+        "end_ms": 1711000,
+        "speaker_id": "speaker_7",
+        "text": "但是这个不是拼谁能走到最后吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1711000,
+        "end_ms": 1714000,
+        "speaker_id": "speaker_7",
+        "text": "因为你这个产品是一直都要买，一直都要买的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1714000,
+        "end_ms": 1719000,
+        "speaker_id": "speaker_4",
+        "text": "我知道所所以我说让你保持住啊保持住这个客户保持住你现在这个销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1716000,
+        "end_ms": 1717000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1719000,
+        "end_ms": 1721000,
+        "speaker_id": "speaker_7",
+        "text": "适当的开个副业，这一类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1720000,
+        "end_ms": 1722000,
+        "speaker_id": "speaker_4",
+        "text": "对适当开个副业",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1722000,
+        "end_ms": 1727000,
+        "speaker_id": "speaker_7",
+        "text": "嗯就是不管市场自己发展那方面自己再多发展",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1722000,
+        "end_ms": 1723000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1725000,
+        "end_ms": 1731000,
+        "speaker_id": "speaker_4",
+        "text": "不是不管市场不是说就因为市场饱和，同行越来越多，对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1732000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_4",
+        "text": "所以说就是一个市场饱和了，所以再对这市场投入再多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1735000,
+        "end_ms": 1737000,
+        "speaker_id": "speaker_7",
+        "text": "就给自己多一条路",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1737000,
+        "end_ms": 1738000,
+        "speaker_id": "speaker_4",
+        "text": "你这个收益",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1739000,
+        "end_ms": 1747000,
+        "speaker_id": "speaker_4",
+        "text": "它不会增长太多，对不对？因为它市场已经饱和了你去找一个市场相对贫乏的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1748000,
+        "end_ms": 1754000,
+        "speaker_id": "speaker_4",
+        "text": "需求大，但是他这个货物没有那么多的，你就适当搞一搞这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1754000,
+        "end_ms": 1754000,
+        "speaker_id": "speaker_7",
+        "text": "明白",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1755000,
+        "end_ms": 1758000,
+        "speaker_id": "speaker_1",
+        "text": "行那那咱们B这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1758000,
+        "end_ms": 1759000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1761000,
+        "end_ms": 1762000,
+        "speaker_id": "speaker_3",
+        "text": "那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1763000,
+        "end_ms": 1765000,
+        "speaker_id": "speaker_3",
+        "text": "也是这种情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1766000,
+        "end_ms": 1769000,
+        "speaker_id": "speaker_3",
+        "text": "就是现在市场普遍都比较饱和了对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1768000,
+        "end_ms": 1769000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1769000,
+        "end_ms": 1772000,
+        "speaker_id": "speaker_3",
+        "text": "然后老用户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1773000,
+        "end_ms": 1776000,
+        "speaker_id": "speaker_3",
+        "text": "然后老用户就是他们不想要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1777000,
+        "end_ms": 1778000,
+        "speaker_id": "speaker_3",
+        "text": "因为咱们是顾客量比较大，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1779000,
+        "end_ms": 1779000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1779000,
+        "end_ms": 1782000,
+        "speaker_id": "speaker_3",
+        "text": "然后他不想换品牌",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1782000,
+        "end_ms": 1788000,
+        "speaker_id": "speaker_3",
+        "text": "就是都喜欢我们这个产品，但是慢儿慢儿慢儿慢儿他有别的产品的产生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1789000,
+        "end_ms": 1793000,
+        "speaker_id": "speaker_3",
+        "text": "咱们我觉得咱们还是要主抓产品这块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1793000,
+        "end_ms": 1795000,
+        "speaker_id": "speaker_4",
+        "text": "是这产品你得抓住啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1795000,
+        "end_ms": 1800000,
+        "speaker_id": "speaker_3",
+        "text": "咱也咱咱们应该是跟进产品，不光是在销售上面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1800000,
+        "end_ms": 1806000,
+        "speaker_id": "speaker_3",
+        "text": "你比如说咱们现在的产品是十年前老旧的产品，对咱们得更新换代呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1804000,
+        "end_ms": 1805000,
+        "speaker_id": "speaker_4",
+        "text": "那你得更新换代",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1806000,
+        "end_ms": 1807000,
+        "speaker_id": "speaker_4",
+        "text": "这必须的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1808000,
+        "end_ms": 1813000,
+        "speaker_id": "speaker_4",
+        "text": "得保证产品的活力和市场竞争力。这是你必须要保证的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1810000,
+        "end_ms": 1811000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1813000,
+        "end_ms": 1818000,
+        "speaker_id": "speaker_4",
+        "text": "而且你不光是他说市场竞争力你那样也是对你的客户儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1819000,
+        "end_ms": 1819000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1819000,
+        "end_ms": 1824000,
+        "speaker_id": "speaker_4",
+        "text": "那你说你客户十年前买到的产品，十年后还让他买这个产品，那就客户的不负责",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1824000,
+        "end_ms": 1825000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1825000,
+        "end_ms": 1829000,
+        "speaker_id": "speaker_4",
+        "text": "你这对客户儿不负责任，你对客户儿不负责任客户儿还会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1829000,
+        "end_ms": 1838000,
+        "speaker_id": "speaker_4",
+        "text": "就买你东西吗对不对这就是之前说的你得让客户觉得买你东西儿开心，买你东西儿高兴，对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1831000,
+        "end_ms": 1832000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1841000,
+        "end_ms": 1847000,
+        "speaker_id": "speaker_1",
+        "text": "行，那咱们老师给咱们进行一个今天的一个总结吧。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1848000,
+        "end_ms": 1850000,
+        "speaker_id": "speaker_4",
+        "text": "嗯那最后一个总结首先就是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1850000,
+        "end_ms": 1857000,
+        "speaker_id": "speaker_4",
+        "text": "咱销售干嘛呢就是卖东西的，怎么卖东西儿第一个让顾客觉得这东西好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1857000,
+        "end_ms": 1865000,
+        "speaker_id": "speaker_4",
+        "text": "二他们会觉得物有所值三他觉得或或者他需要然后当我们这个销售遇到问题的时候，我们又要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 1866000,
+        "end_ms": 1868000,
+        "speaker_id": "speaker_4",
+        "text": "发现问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 1868000,
+        "end_ms": 1875000,
+        "speaker_id": "speaker_4",
+        "text": "产品滞销我们得想得弄明白它到底是在哪儿滞销，发现问题、解决问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 1878000,
+        "end_ms": 1882000,
+        "speaker_id": "speaker_4",
+        "text": "包括说这市场饱和了，市场饱和怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 1882000,
+        "end_ms": 1887000,
+        "speaker_id": "speaker_4",
+        "text": "千军万马过独木桥咱们就不要和他们挤了对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 1887000,
+        "end_ms": 1891000,
+        "speaker_id": "speaker_4",
+        "text": "你说你自己走自己走宽敞大道不好吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 1892000,
+        "end_ms": 1895000,
+        "speaker_id": "speaker_3",
+        "text": "老师的意思就是让我们挖掘新市场",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 1895000,
+        "end_ms": 1898000,
+        "speaker_id": "speaker_4",
+        "text": "对，在市场饱和时必须要挖掘新市场，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 1897000,
+        "end_ms": 1899000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行。老师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 1900000,
+        "end_ms": 1909000,
+        "speaker_id": "speaker_1",
+        "text": "我总结一下，在这个呃市场饱和的时候，我们要挖掘新市场进行一个创新嗯行那咱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 1907000,
+        "end_ms": 1907000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 1909000,
+        "end_ms": 1916000,
+        "speaker_id": "speaker_1",
+        "text": "嗯今天嗯这个老师给我们讲了这么多，接下来大家在销售当中",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 1916000,
+        "end_ms": 1925000,
+        "speaker_id": "speaker_1",
+        "text": "嗯一定要把老师今天所讲的嗯嗯运用下去，行，那咱本场这个销售培训到此结束",
+        "status": "ok"
+      }
+    ]
+  }
+}

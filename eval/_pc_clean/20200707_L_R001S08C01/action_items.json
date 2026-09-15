@@ -1,0 +1,58 @@
+[
+  {
+    "task": "确定二维动画电影项目方向",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000007"
+    ]
+  },
+  {
+    "task": "确定故事隐喻设计",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000043"
+    ]
+  },
+  {
+    "task": "征求观众意见完善故事设计",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000135"
+    ]
+  },
+  {
+    "task": "明确主角身份",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000160"
+    ]
+  },
+  {
+    "task": "咨询版权法律顾问",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000202"
+    ]
+  },
+  {
+    "task": "联系万达威获取角色版权授权",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000216"
+    ]
+  },
+  {
+    "task": "完善角色设定与情感线",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000297"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "task": "门禁系统改进",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000017"
+    ]
+  },
+  {
+    "task": "补充监控盲区覆盖",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000042"
+    ]
+  },
+  {
+    "task": "制定保安服务规范",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000052"
+    ]
+  },
+  {
+    "task": "汛期水抽水泵检查与维修",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000069"
+    ]
+  },
+  {
+    "task": "加装抽水泵",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000092"
+    ]
+  },
+  {
+    "task": "更新受损设施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000100"
+    ]
+  },
+  {
+    "task": "增设垃圾桶",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000139"
+    ]
+  },
+  {
+    "task": "制定小区基本规章制度",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000153"
+    ]
+  },
+  {
+    "task": "采购专用垃圾桶",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000187"
+    ]
+  },
+  {
+    "task": "改进停车场设施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000196"
+    ]
+  },
+  {
+    "task": "安装监控设备",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000176"
+    ]
+  },
+  {
+    "task": "确认绿化品种与采摘风险防范",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000229"
+    ]
+  }
+]

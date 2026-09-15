@@ -1,0 +1,30 @@
+{
+  "title": "违约问题初步说明",
+  "key_points": [
+    "公司因生产延误导致向客户交付商品推迟几天，存在违约风险"
+  ],
+  "anchors": [
+    "生产延误",
+    "推迟几天",
+    "违约"
+  ],
+  "summary": "公司因生产延误导致向客户交付商品推迟几天，存在违约风险。当前对违约具体原因和总经理处理方式尚不明确。",
+  "continues_previous": false,
+  "refs": [
+    "seg-000117",
+    "seg-000118",
+    "seg-000119"
+  ],
+  "action_candidates": [
+    {
+      "task": "明确违约原因和总经理处理方案",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "seg-000117"
+      ]
+    }
+  ],
+  "start_ref": "seg-000117",
+  "end_ref": "seg-000122"
+}

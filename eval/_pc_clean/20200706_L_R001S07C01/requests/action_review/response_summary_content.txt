@@ -1,0 +1,8 @@
+{
+  "task": "设计部需提供多元化女性服装方案",
+  "owner": null,
+  "deadline": null,
+  "refs": [
+    "r85"
+  ]
+}

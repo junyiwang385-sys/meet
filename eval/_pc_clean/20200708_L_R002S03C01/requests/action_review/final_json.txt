@@ -1,0 +1,8 @@
+{
+  "task": "明确滞销产品原因",
+  "owner": null,
+  "deadline": null,
+  "refs": [
+    "r176"
+  ]
+}

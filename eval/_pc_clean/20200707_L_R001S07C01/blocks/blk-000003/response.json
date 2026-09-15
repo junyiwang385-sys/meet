@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:52:06.2656659Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"大厅装修讨论\",\n  \"key_points\": [\n    \"讨论大厅装修方案，包括地面材料选择（大理石）和大吊灯更换\"\n  ],\n  \"anchors\": [\n    \"大理石\",\n    \"地面儿\",\n    \"石砖儿\",\n    \"大吊灯\",\n    \"样式比较老\"\n  ],\n  \"summary\": \"大厅装修讨论中，sp3建议采用大理石作为地面材料，认为其装饰效果好但运输费劲；同时指出大厅大吊灯样式过时需更换。当前讨论聚焦于装修细节，未形成明确结论或待办事项。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r117\",\n    \"r118\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"明确待办\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r117\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3019627000,
+  "load_duration": 1548800,
+  "prompt_eval_count": 1129,
+  "prompt_eval_duration": 90929000,
+  "eval_count": 208,
+  "eval_duration": 2663872000
+}

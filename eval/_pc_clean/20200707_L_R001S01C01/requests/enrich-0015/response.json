@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:36:39.3579673Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"婚礼的具体日期、场地及应对天气变化的预案是什么？\",\n      \"answer\": \"婚礼定于8月16日在酒店花园举行，但考虑到天气可能下雨，已与客户沟通好若遇雨则转为室内大堂举办，并将做好场地布置、消毒及人员登记等准备工作。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1264527200,
+  "load_duration": 1038400,
+  "prompt_eval_count": 757,
+  "prompt_eval_duration": 159505000,
+  "eval_count": 85,
+  "eval_duration": 1071776000
+}

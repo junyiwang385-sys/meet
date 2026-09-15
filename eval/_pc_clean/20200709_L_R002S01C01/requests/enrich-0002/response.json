@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:13:19.7979963Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"keywords\": [\"前台人员服务态度\", \"客户咨询引导\", \"前台卫生管理\", \"会员制促销计划\", \"客户体脂率测量\", \"教练部安全措施\", \"保安部人员培训\", \"消毒标准提升\", \"健身器材清洁要求\", \"客户健康风险评估\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1984326100,
+  "load_duration": 2115400,
+  "prompt_eval_count": 2585,
+  "prompt_eval_duration": 703754000,
+  "eval_count": 62,
+  "eval_duration": 1034470000
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "task": "零零一工程项目负责人",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000001"
+    ]
+  },
+  {
+    "task": "实地考察搅拌站资质",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000101"
+    ]
+  },
+  {
+    "task": "协调夜间施工时间",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000158"
+    ]
+  },
+  {
+    "task": "确定夜间施工人员接班时间",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000163"
+    ]
+  },
+  {
+    "task": "高位水箱注水",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000228"
+    ]
+  },
+  {
+    "task": "仓库管理员责任协议签订",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000282"
+    ]
+  },
+  {
+    "task": "后勤部跟进垃圾处理",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000394"
+    ]
+  },
+  {
+    "task": "供货商免费配送西瓜",
+    "owner": "speaker_3",
+    "deadline": null,
+    "refs": [
+      "seg-000395"
+    ]
+  },
+  {
+    "task": "西瓜提前冰处理",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000417"
+    ]
+  },
+  {
+    "task": "小卖部远离工地且禁售酒类",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000442"
+    ]
+  },
+  {
+    "task": "检查塔吊驾驶室绝缘措施",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000502"
+    ]
+  },
+  {
+    "task": "制定夜间作业安全表",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000509"
+    ]
+  }
+]

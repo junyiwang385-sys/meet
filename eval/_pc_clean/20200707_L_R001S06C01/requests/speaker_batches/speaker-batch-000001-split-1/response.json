@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:49:50.137242Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"speakers\": [\n    {\n      \"speaker_id\": \"sp6\",\n      \"overview\": \"sp6 提出在非商业区且靠近学校的位置开设摄影工作室，认为婚纱照需求高且价格可接受；建议长期雇佣专业摄影师以保证服务质量；主张婚纱服装可租售结合，减少库存风险；强调客户留存需通过增值服务而非免费赠送，同时指出需配备后期PS师以提升服务品质。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2208259800,
+  "load_duration": 2138800,
+  "prompt_eval_count": 2693,
+  "prompt_eval_duration": 603617000,
+  "eval_count": 99,
+  "eval_duration": 1349804000
+}

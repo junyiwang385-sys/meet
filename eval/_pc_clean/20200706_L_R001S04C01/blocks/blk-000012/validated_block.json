@@ -1,0 +1,44 @@
+{
+  "title": "会议结束",
+  "key_points": [
+    "会议在33分58秒至34分11秒结束，明确约定后续各部门需提交具体计划"
+  ],
+  "anchors": [
+    "33m54s",
+    "33m58s",
+    "34m09s",
+    "34m10s",
+    "34m11s",
+    "sp1",
+    "sp7",
+    "各部门"
+  ],
+  "summary": "会议于33分58秒至34分11秒结束，sp1明确表示后续各部门需提交具体计划，sp7确认后散会。本次会议未形成新决定，仅约定后续工作安排。",
+  "continues_previous": false,
+  "refs": [
+    "seg-000537",
+    "seg-000538",
+    "seg-000539"
+  ],
+  "action_candidates": [
+    {
+      "task": "各部门提交具体计划",
+      "owner": "speaker_1",
+      "deadline": null,
+      "refs": [
+        "seg-000537"
+      ]
+    }
+  ],
+  "start_ref": "seg-000535",
+  "end_ref": "seg-000539",
+  "block_id": "blk-000012",
+  "segment_ids": [
+    "seg-000535",
+    "seg-000536",
+    "seg-000537",
+    "seg-000538",
+    "seg-000539"
+  ],
+  "key_data": []
+}

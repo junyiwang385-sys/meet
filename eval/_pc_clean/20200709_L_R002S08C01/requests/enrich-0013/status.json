@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "request_id": "enrich-0013",
+  "thinking_source": "none",
+  "finish_reason": "stop",
+  "usage": null,
+  "timings": null,
+  "request_elapsed_seconds": 3.53,
+  "server_ready_seconds": 0.0,
+  "resolved_model_files": {
+    "model": "qwen3:4b"
+  },
+  "server_pid": null,
+  "context_truncated": false
+}

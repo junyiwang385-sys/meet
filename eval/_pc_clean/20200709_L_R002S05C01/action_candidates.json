@@ -1,0 +1,58 @@
+[
+  {
+    "task": "主管将按顺序介绍各幼儿园上月情况",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000010"
+    ]
+  },
+  {
+    "task": "开展幼儿构思课",
+    "owner": "speaker_2",
+    "deadline": null,
+    "refs": [
+      "seg-000022"
+    ]
+  },
+  {
+    "task": "下季度配置二幼统一校服",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000108"
+    ]
+  },
+  {
+    "task": "儿童贴纸制作",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000138"
+    ]
+  },
+  {
+    "task": "建立儿童院卡管理制度",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000187"
+    ]
+  },
+  {
+    "task": "定制印有园区logo的益智类玩具",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000221"
+    ]
+  },
+  {
+    "task": "制定幼儿园院长每日接孩子规则",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000257"
+    ]
+  }
+]

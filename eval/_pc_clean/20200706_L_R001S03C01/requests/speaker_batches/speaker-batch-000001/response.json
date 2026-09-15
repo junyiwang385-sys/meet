@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:20:53.108187Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"speakers\": [\n    {\n      \"speaker_id\": \"sp2\",\n      \"overview\": \"sp2 详细解释了欠条儿和借条儿的法律区别，指出借条儿对应借贷关系而欠条儿可能涉及货款、分红、投资款等不同法律关系，强调欠条儿和借条儿在诉讼中证明效力相同，但借条儿诉讼时效为三年，超过三年法院不再保护；还讨论了婚前财产公证、强制执行、校园暴力处理、正当防卫等法律问题\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 7988619900,
+  "load_duration": 1584500,
+  "prompt_eval_count": 14420,
+  "prompt_eval_duration": 5403555000,
+  "eval_count": 122,
+  "eval_duration": 2497939000
+}

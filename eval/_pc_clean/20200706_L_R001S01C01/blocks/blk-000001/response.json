@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:13:35.5812565Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"会议开场与议题确认\",\n  \"key_points\": [\n    \"会议由部长主持，明确本次会议核心议题为元旦晚会的组织方案\"\n  ],\n  \"anchors\": [\n    \"学生会\",\n    \"元旦晚会\",\n    \"部长\",\n    \"副部长\",\n    \"部员儿A\",\n    \"部员儿B\",\n    \"部员儿C\",\n    \"部员儿D\"\n  ],\n  \"summary\": \"会议开场确认由部长主持，核心议题为元旦晚会的组织方案。学生会成员包括部长、副部长及四名部员，会议将由副部长首先发言。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r1\",\n    \"r2\"\n  ],\n  \"action_candidates\": []\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3545145800,
+  "load_duration": 1134000,
+  "prompt_eval_count": 1313,
+  "prompt_eval_duration": 144570000,
+  "eval_count": 170,
+  "eval_duration": 2248591000
+}

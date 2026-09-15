@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-06T15:55:08.8660159Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"key_refs\": [\n    \"r1\",\n    \"r3\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"明确待办\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r1\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1618702800,
+  "load_duration": 1662300,
+  "prompt_eval_count": 2050,
+  "prompt_eval_duration": 549656000,
+  "eval_count": 66,
+  "eval_duration": 933656000
+}

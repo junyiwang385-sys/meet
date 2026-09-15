@@ -1,0 +1,26 @@
+{
+  "title": "开业前三天策略讨论",
+  "key_points": [
+    "讨论开业前三天的策略"
+  ],
+  "anchors": [
+    "开业前三天"
+  ],
+  "summary": "会议讨论了开业前三天的策略。该时间段是当前重点考虑的初始运营阶段。",
+  "continues_previous": false,
+  "key_refs": [
+    "r370",
+    "r371"
+  ],
+  "action_candidates": [
+    {
+      "task": "讨论开业前三天的策略",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r370",
+        "r371"
+      ]
+    }
+  ]
+}

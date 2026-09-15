@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:36:29.7114241Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"当前各部门人员配置是否需要进行裁员调整？\",\n      \"answer\": \"由于当前处于淡季，各部门人员存在冗余，特别是后勤部门服务员数量过多，但需为即将举行的商务会议和婚礼保留必要人员。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1058402700,
+  "load_duration": 1567200,
+  "prompt_eval_count": 758,
+  "prompt_eval_duration": 161369000,
+  "eval_count": 68,
+  "eval_duration": 858774000
+}

@@ -1,0 +1,3071 @@
+{
+  "meeting": {
+    "meeting_id": "20200709_L_R002S03C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 339,
+    "nonempty_segment_count": 339,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 35000,
+        "end_ms": 37000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是园长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 37000,
+        "end_ms": 38000,
+        "speaker_id": "speaker_2",
+        "text": "零二六我是副园长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 39000,
+        "end_ms": 41000,
+        "speaker_id": "speaker_3",
+        "text": "零二八安保部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 41000,
+        "end_ms": 42000,
+        "speaker_id": "speaker_4",
+        "text": "零幺九后勤部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 42000,
+        "end_ms": 44000,
+        "speaker_id": "speaker_6",
+        "text": "零二三饲养部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 44000,
+        "end_ms": 45000,
+        "speaker_id": "speaker_7",
+        "text": "零二四管理部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 46000,
+        "end_ms": 51000,
+        "speaker_id": "speaker_1",
+        "text": "行好的，咱们有请咱们这个副园长来主持下会议。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 51000,
+        "end_ms": 60000,
+        "speaker_id": "speaker_2",
+        "text": "好，刚才领导说了一下儿，咱们这个动物园儿的情况由我来主持本次会议。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 60000,
+        "end_ms": 68000,
+        "speaker_id": "speaker_2",
+        "text": "主要咱们动物园儿要了解本地的市场情况，还有经营",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 69000,
+        "end_ms": 76000,
+        "speaker_id": "speaker_2",
+        "text": "吸取经验教训，综合起来。还有就是园儿本园儿具体的内容中心",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 76000,
+        "end_ms": 83000,
+        "speaker_id": "speaker_2",
+        "text": "肯定是以开拓创新为主，然后汇报一下本园上上半年的进度。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 84000,
+        "end_ms": 89000,
+        "speaker_id": "speaker_2",
+        "text": "安保部门儿这边儿有什么就是属于动物园儿观光，人们受伤的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 89000,
+        "end_ms": 96000,
+        "speaker_id": "speaker_3",
+        "text": "啊这个这个这个的话就是根据上半年的情况来讲，还有以往的以往的情况来讲",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 96000,
+        "end_ms": 103000,
+        "speaker_id": "speaker_3",
+        "text": "就是对于这个就是游客来参观动物园受伤的问题，目前还是没有没有这种情况出现的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 103000,
+        "end_ms": 107000,
+        "speaker_id": "speaker_3",
+        "text": "然后这边的话就是我们这边安保部门的话，就是要那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 108000,
+        "end_ms": 114000,
+        "speaker_id": "speaker_3",
+        "text": "在园内各个园内把那个动物园的那个注意事项要在各个园内就是安排好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 114000,
+        "end_ms": 122000,
+        "speaker_id": "speaker_3",
+        "text": "然后的话就是隔就是定期的话我们就是安保部门就是定期的话会派人去检查每个每个就是每个园区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 122000,
+        "end_ms": 129000,
+        "speaker_id": "speaker_3",
+        "text": "每个动物的那个隔离网是不是有没有损坏，有没有那个维护，还有就是把那个就是每个动物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 129000,
+        "end_ms": 133000,
+        "speaker_id": "speaker_3",
+        "text": "就是注意事项，还有那个小标题小提示都要贴好，都是定期检查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 134000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_3",
+        "text": "然后的话就是就是比如说那个呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 138000,
+        "end_ms": 144000,
+        "speaker_id": "speaker_3",
+        "text": "现在就是目前来参加参加就是来动物园参观的话还是小朋友居多，就是一般的话家长带着小朋友",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 145000,
+        "end_ms": 149000,
+        "speaker_id": "speaker_3",
+        "text": "或者说老师带着小朋友，就还还说夏令营那些小小朋友居多，就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 150000,
+        "end_ms": 151000,
+        "speaker_id": "speaker_3",
+        "text": "就是一定要就是提",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 150000,
+        "end_ms": 158000,
+        "speaker_id": "speaker_2",
+        "text": "那这些小朋友上回我接到举报，有个小朋友翻进了一种鸵鸟园儿里头，并且",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 158000,
+        "end_ms": 166000,
+        "speaker_id": "speaker_2",
+        "text": "虽然没有被咬伤，但是老师及时发现把小朋友接了出来这方面怎么和家长协调的，咱们这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 167000,
+        "end_ms": 175000,
+        "speaker_id": "speaker_3",
+        "text": "这方面的话就是呃，就是第一第一第一时间的话就是肯定是先确保一下那个小朋友的安全问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 175000,
+        "end_ms": 182000,
+        "speaker_id": "speaker_3",
+        "text": "先确保小朋友的安全问题，然后第二的话就是会加加加高就是鸵鸟园，那个栏杆就是把那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 182000,
+        "end_ms": 184000,
+        "speaker_id": "speaker_3",
+        "text": "网子会进行一些加高加固",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 184000,
+        "end_ms": 187000,
+        "speaker_id": "speaker_2",
+        "text": "它这种网子会有电击网之类的吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 187000,
+        "end_ms": 197000,
+        "speaker_id": "speaker_3",
+        "text": "那个的话目前目前的话是，就是如果是在那个边缘区区域就是人碰不到的地方的话，会设置那个电击网，但是的话就是在园内的话肯定是不会设计的，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 197000,
+        "end_ms": 207000,
+        "speaker_id": "speaker_3",
+        "text": "因为就是肯定会不经意间的话会触碰到那个网的会肯定可能会，对可能会有安全隐患，所以说园内的话可以暂时的话不设施",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 202000,
+        "end_ms": 204000,
+        "speaker_id": "speaker_6",
+        "text": "还有意外的那种情况出现",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 208000,
+        "end_ms": 213000,
+        "speaker_id": "speaker_3",
+        "text": "然后的话就是把那个就是主要还是就是嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 213000,
+        "end_ms": 220000,
+        "speaker_id": "speaker_3",
+        "text": "安就是这个注意事项要给他们提示好，然后就是在比如说就是刚入园的时候，我们会安保部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 220000,
+        "end_ms": 227000,
+        "speaker_id": "speaker_3",
+        "text": "就是会安放那个人员会对那个提示，然后就是白天就是在开园的期间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 227000,
+        "end_ms": 232000,
+        "speaker_id": "speaker_3",
+        "text": "就是我们会就不定期的巡巡逻，那个园内会安排那个巡逻车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 232000,
+        "end_ms": 237000,
+        "speaker_id": "speaker_3",
+        "text": "会嗯二十四小时不间就是开园期间会不间断的一直一直在巡逻，避免",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 236000,
+        "end_ms": 240000,
+        "speaker_id": "speaker_2",
+        "text": "避免这种分分分块儿站岗这种。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 240000,
+        "end_ms": 248000,
+        "speaker_id": "speaker_3",
+        "text": "对我们这边的话有有那个分块儿站岗的，比如说就是一个人固定就是，对，因为的话我们相比我们的动物园会比较大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 244000,
+        "end_ms": 245000,
+        "speaker_id": "speaker_2",
+        "text": "一个片区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 248000,
+        "end_ms": 255000,
+        "speaker_id": "speaker_3",
+        "text": "嗯如果说一个人就是如果只安排一个人就是，每天的话就是安排一圈一圈，这样的话肯定是比如说有哪个部分他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 255000,
+        "end_ms": 261000,
+        "speaker_id": "speaker_3",
+        "text": "刚刚走，可可能说他比如说呃那个鸵鸟园啊或者狮子园，他刚刚从这块儿经过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 262000,
+        "end_ms": 266000,
+        "speaker_id": "speaker_3",
+        "text": "他过去的时候没有什么事情，但是他如果一走就是负责别的地方，就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 266000,
+        "end_ms": 271000,
+        "speaker_id": "speaker_3",
+        "text": "检查别的地方，巡视别的地方的话，可能这个方向就出问题，他自己一个人看管看管不过来。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 271000,
+        "end_ms": 279000,
+        "speaker_id": "speaker_3",
+        "text": "所以就是我们就是说呃分人，就是比如说就是把每个人员安排好几块儿，在这个基础上，然后再安排一批人员就是开着那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 279000,
+        "end_ms": 284000,
+        "speaker_id": "speaker_3",
+        "text": "那个需那个有巡巡巡逻车，就是在咱们那个动物园内定期的巡逻",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 285000,
+        "end_ms": 289000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们这个本园儿毕竟是全市最大的一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 289000,
+        "end_ms": 296000,
+        "speaker_id": "speaker_2",
+        "text": "动物园儿哈占地面积也比较广，那咱们这个观光的小火车，还有一些观光车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 290000,
+        "end_ms": 290000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 296000,
+        "end_ms": 296000,
+        "speaker_id": "speaker_3",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 296000,
+        "end_ms": 300000,
+        "speaker_id": "speaker_2",
+        "text": "是需要是怎么维护",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 300000,
+        "end_ms": 308000,
+        "speaker_id": "speaker_3",
+        "text": "这个的话就是嗯每每就是每次嗯就是咱们每天就是开园之前会对那个观光车还有那个小火车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 309000,
+        "end_ms": 315000,
+        "speaker_id": "speaker_3",
+        "text": "会对进行了定那个会检查，就是比如说看哪边儿有没有，首先的话就是看看那个座子有没有松动的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 316000,
+        "end_ms": 321000,
+        "speaker_id": "speaker_3",
+        "text": "有没有什么安全隐患，第二话其次的话就是会在每个车上就会贴也是会贴那个提示",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 322000,
+        "end_ms": 329000,
+        "speaker_id": "speaker_3",
+        "text": "因为咱们就是开那个观光车肯定是要就是园会转嘛，就是小心，就是比如说那些小朋友啊会就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 329000,
+        "end_ms": 335000,
+        "speaker_id": "speaker_3",
+        "text": "他们小朋友不是爱动嘛，对对会翻那个车。就是就是小心他们那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 335000,
+        "end_ms": 341000,
+        "speaker_id": "speaker_3",
+        "text": "小心就是摔到，然后的话就是就是按规定坐咱们观光车就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 341000,
+        "end_ms": 348000,
+        "speaker_id": "speaker_3",
+        "text": "最最最基本的提示就是不要将手和那个车伸出窗外，更更在开车时候更不可能下车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 348000,
+        "end_ms": 357000,
+        "speaker_id": "speaker_3",
+        "text": "然后就是每天就是闭园的时候会再一次对那个观光车进行优先呃一行检查维护，还有那个消毒定期的消毒消毒是必必不可少的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 353000,
+        "end_ms": 353000,
+        "speaker_id": "speaker_2",
+        "text": "检查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 358000,
+        "end_ms": 361000,
+        "speaker_id": "speaker_2",
+        "text": "行，那后勤部这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 361000,
+        "end_ms": 367000,
+        "speaker_id": "speaker_4",
+        "text": "呃我们这边儿就是主要负责呃动物园儿的绿化和清洁工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 367000,
+        "end_ms": 372000,
+        "speaker_id": "speaker_4",
+        "text": "嗯对于清洁的话，我们会在就是安排所有的人员",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 372000,
+        "end_ms": 380000,
+        "speaker_id": "speaker_4",
+        "text": "在开园的前一小时进行呃清扫，对道路的落叶垃圾进行清理。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 380000,
+        "end_ms": 387000,
+        "speaker_id": "speaker_4",
+        "text": "呃因为我们的园区的面积比较大，所以我们进行区域划分呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 387000,
+        "end_ms": 398000,
+        "speaker_id": "speaker_4",
+        "text": "所有的呃所有的片儿区都责任到人，呃任何一个嗯地方出现了垃圾，落叶没有及时清理，我们都可以问责到人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 398000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_4",
+        "text": "而不是说哎你谁是负责人就就就这一块儿，而是说每一个人具体负责哪一块儿啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 407000,
+        "end_ms": 413000,
+        "speaker_id": "speaker_4",
+        "text": "包括绿化也是这样的，因为我们这个园区挺大的，你如果说你们几个去负责的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 413000,
+        "end_ms": 422000,
+        "speaker_id": "speaker_4",
+        "text": "可能会出现互相推诿的这种现象，我们就是说你负责哪一块儿你负责哪一块儿就是张三李四诶这样一划分的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 422000,
+        "end_ms": 426000,
+        "speaker_id": "speaker_4",
+        "text": "他的责任感就比较强，一上班儿就知道自己该干什么。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 427000,
+        "end_ms": 431000,
+        "speaker_id": "speaker_4",
+        "text": "对于绿植就是那些万年青的定期的修剪",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 431000,
+        "end_ms": 441000,
+        "speaker_id": "speaker_4",
+        "text": "对一些花卉的就是浇灌，他们都会非常上心，自己就会安主动的安排出时间来，我现在干什么，我待会儿干什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 441000,
+        "end_ms": 447000,
+        "speaker_id": "speaker_4",
+        "text": "自己会把这时间安排的比较合理，这样的话我们管理起来也比较呃容易",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 447000,
+        "end_ms": 452000,
+        "speaker_id": "speaker_4",
+        "text": "这样的话就是其实是呃让我们的管理更更到位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 452000,
+        "end_ms": 458000,
+        "speaker_id": "speaker_4",
+        "text": "呃让他们的呃工作呃更到位，让每个人知道我一上班儿我就该干什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 458000,
+        "end_ms": 464000,
+        "speaker_id": "speaker_4",
+        "text": "我这一天八小时我要怎么安排他们自己，因为问责到人了，所以他们自己就会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 464000,
+        "end_ms": 474000,
+        "speaker_id": "speaker_4",
+        "text": "去主动的去做这工作，而不是我们待会儿派一下待会儿派一下，那样的话又被动，而且工作效率也低，我们是这样来安排工作的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 475000,
+        "end_ms": 485000,
+        "speaker_id": "speaker_2",
+        "text": "那上一次我去本园观光的时候有一个垃圾桶，垃圾已经外漏了，这个是最后是怎么进行处理的？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 485000,
+        "end_ms": 493000,
+        "speaker_id": "speaker_4",
+        "text": "这个我们因为是问责到人了嘛，所以我们很快就知道这个是谁负责的，然后对本人进行教育和处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 493000,
+        "end_ms": 499000,
+        "speaker_id": "speaker_4",
+        "text": "嗯我们是我们的处理是发现一次扣五十块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 499000,
+        "end_ms": 504000,
+        "speaker_id": "speaker_4",
+        "text": "如果是在本周儿内发现了第二次，那就是双倍的扣一百",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 505000,
+        "end_ms": 510000,
+        "speaker_id": "speaker_2",
+        "text": "第一次不是直接进行批评教育，就是直接罚钱吗？这样会不会对他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 509000,
+        "end_ms": 509000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 511000,
+        "end_ms": 511000,
+        "speaker_id": "speaker_2",
+        "text": "太严肃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 511000,
+        "end_ms": 515000,
+        "speaker_id": "speaker_4",
+        "text": "因为因为批评教育是在之前我们已经做过的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 516000,
+        "end_ms": 516000,
+        "speaker_id": "speaker_2",
+        "text": "哦，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 516000,
+        "end_ms": 523000,
+        "speaker_id": "speaker_4",
+        "text": "所以我们直接就是以现金的方式去嗯进行考核。如果说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 521000,
+        "end_ms": 521000,
+        "speaker_id": "speaker_2",
+        "text": "罚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 523000,
+        "end_ms": 533000,
+        "speaker_id": "speaker_4",
+        "text": "出现一次我们就是批评教育的话，可能人们都会说啊下不为例，呃人们会出现这种松懈的心理，就是要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 533000,
+        "end_ms": 542000,
+        "speaker_id": "speaker_4",
+        "text": "因为人们都说嘛除了这个嗯割肉疼就就是这个掏钱儿疼吧，就是要在经济上对他们进行处罚。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 543000,
+        "end_ms": 547000,
+        "speaker_id": "speaker_2",
+        "text": "行，还有就是一方面人家动物园儿来看动物的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 548000,
+        "end_ms": 554000,
+        "speaker_id": "speaker_2",
+        "text": "去一些草地呀去野餐这方面，你们后勤部和保卫科是怎么处理这件事儿？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 554000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_2",
+        "text": "就是把直接把客人赶走还是，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 556000,
+        "end_ms": 558000,
+        "speaker_id": "speaker_4",
+        "text": "啊不，好言相劝",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 556000,
+        "end_ms": 562000,
+        "speaker_id": "speaker_3",
+        "text": "啊不就是，就是我们这保卫科的话，就是因为咱咱们那草地的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 562000,
+        "end_ms": 569000,
+        "speaker_id": "speaker_3",
+        "text": "会定期的维护的那个的话，有有有那个就是会设置那个小牌子，就是禁止那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 569000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_3",
+        "text": "就是随意随意践踏草坪那之类的话，如果就是发现就是有那个游客去上面野餐啦或者什么会，我们保卫科会进对他进行劝说，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 577000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_2",
+        "text": "制止",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 577000,
+        "end_ms": 579000,
+        "speaker_id": "speaker_3",
+        "text": "对劝说和制止。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 580000,
+        "end_ms": 588000,
+        "speaker_id": "speaker_2",
+        "text": "对，还有一次是有人把烟头儿，就是抽烟往动物园里头没有什么区域什么是禁止吸烟的，观光有些人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 586000,
+        "end_ms": 587000,
+        "speaker_id": "speaker_3",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 588000,
+        "end_ms": 595000,
+        "speaker_id": "speaker_2",
+        "text": "就没有那么在意垃圾桶在这方面它没有把烟头儿进扔在垃圾桶里面，这方面这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 595000,
+        "end_ms": 600000,
+        "speaker_id": "speaker_2",
+        "text": "上回烧毁了一块儿草地，这是怎么和当事人协商的这边儿后勤？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 601000,
+        "end_ms": 607000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这边儿呢呃因为他们直接造成了我们的损失，所以我们是建议赔偿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 608000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_2",
+        "text": "建议赔偿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 608000,
+        "end_ms": 615000,
+        "speaker_id": "speaker_4",
+        "text": "嗯对，嗯当然我们的态度不会那么强硬，因为这个不是我们的员工，我们是可以直接从公司里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 616000,
+        "end_ms": 623000,
+        "speaker_id": "speaker_4",
+        "text": "去扣扣款的，但是我们会嗯对嗯跟跟他们做一个协调",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 623000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_4",
+        "text": "首先我们会说你造成了我们园区的这个嗯损失，所以要做一个赔偿，因为如果",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 630000,
+        "end_ms": 640000,
+        "speaker_id": "speaker_4",
+        "text": "如果我们对这些事情不闻不问或者说太过宽容的话，嗯可能对我们的呃管理会有很大的影响，是这样的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 640000,
+        "end_ms": 644000,
+        "speaker_id": "speaker_2",
+        "text": "行，那如果这方面下回处理不了的话，直接可以动用法律的手段。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 645000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_4",
+        "text": "对是的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 646000,
+        "end_ms": 648000,
+        "speaker_id": "speaker_2",
+        "text": "那这边儿饲养部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 648000,
+        "end_ms": 654000,
+        "speaker_id": "speaker_6",
+        "text": "嗯饲养部门，因为这个上半年的工作其实还是比较好的，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 654000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_6",
+        "text": "怎么说呢饲养部门它其实是一个嗯非常带有非常特殊带有一定危险性的一个部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 661000,
+        "end_ms": 668000,
+        "speaker_id": "speaker_6",
+        "text": "因为他要做的不仅仅是只是给这些动物喂食，而且他还要就是及时的去清理一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 669000,
+        "end_ms": 670000,
+        "speaker_id": "speaker_6",
+        "text": "嗯就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 670000,
+        "end_ms": 670000,
+        "speaker_id": "speaker_2",
+        "text": "排泄",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 670000,
+        "end_ms": 677000,
+        "speaker_id": "speaker_6",
+        "text": "动物圈舍，对，然后还要保证那些水槽和食食槽那些，那些卫生的清洁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 677000,
+        "end_ms": 686000,
+        "speaker_id": "speaker_6",
+        "text": "因为这些都不属于那个后勤部嘛，所以饲养员在饲养员在在这个工作中过程中会有一定的危险性。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 686000,
+        "end_ms": 693000,
+        "speaker_id": "speaker_6",
+        "text": "然后嗯今年上半年倒是没有出现嗯别的什么情况，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 693000,
+        "end_ms": 696000,
+        "speaker_id": "speaker_6",
+        "text": "饲养员的人数有所减少，因为饲养员这个工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 696000,
+        "end_ms": 702000,
+        "speaker_id": "speaker_6",
+        "text": "嗯怎么说呢要吃苦的，他们不是因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 697000,
+        "end_ms": 701000,
+        "speaker_id": "speaker_2",
+        "text": "饲养员为什么人数减少了，是因为动物减少还是什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 702000,
+        "end_ms": 708000,
+        "speaker_id": "speaker_6",
+        "text": "有的人觉得有的我们的管理人员可能是觉得嗯这个工作比较比较累",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 708000,
+        "end_ms": 714000,
+        "speaker_id": "speaker_6",
+        "text": "因为他不仅要怕脏，他还要就得吃苦耐劳嘛，他可能觉得这个工作有些忍受不了，所以有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 714000,
+        "end_ms": 719000,
+        "speaker_id": "speaker_6",
+        "text": "呃也不是特别多，只是有个别的呃两三个人就选择了辞职",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 719000,
+        "end_ms": 722000,
+        "speaker_id": "speaker_6",
+        "text": "但是饲养员其实也不是像也不是说特别好找的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 723000,
+        "end_ms": 730000,
+        "speaker_id": "speaker_6",
+        "text": "因为他们要会用专业的那些嗯专业的那些嗯办法来来那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 730000,
+        "end_ms": 735000,
+        "speaker_id": "speaker_6",
+        "text": "训练动物，让他们去去找，然后并且训练他们的活跃度。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 735000,
+        "end_ms": 740000,
+        "speaker_id": "speaker_6",
+        "text": "然后因为饲养员和动物之间还有一定的信任度，如果就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 740000,
+        "end_ms": 748000,
+        "speaker_id": "speaker_6",
+        "text": "嗯这个饲养员走了，我们没有及时的饲养员跟这个动物有亲近性去投喂食物的时候也是会有一定的那个危险性。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 748000,
+        "end_ms": 757000,
+        "speaker_id": "speaker_6",
+        "text": "所以我们这边儿其实嗯别的倒是没有什么，但是我们就是要加强一下对新来的那些管理人员饲养员饲养人员的那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 758000,
+        "end_ms": 763000,
+        "speaker_id": "speaker_6",
+        "text": "那些工作对各方面的指导，然后对他们进行一些培训",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 759000,
+        "end_ms": 760000,
+        "speaker_id": "speaker_2",
+        "text": "精神上方面的指导，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 763000,
+        "end_ms": 770000,
+        "speaker_id": "speaker_6",
+        "text": "然后保证他们在投喂和清理，然后过程中既不让我们的动物受到伤害，也保证我们自身的安全。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 771000,
+        "end_ms": 776000,
+        "speaker_id": "speaker_2",
+        "text": "那有的人观光动物的时候，往动物的住所里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 776000,
+        "end_ms": 777000,
+        "speaker_id": "speaker_6",
+        "text": "投喂食物，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 777000,
+        "end_ms": 780000,
+        "speaker_id": "speaker_2",
+        "text": "投喂食物这方面饲养员是怎么处理的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 780000,
+        "end_ms": 784000,
+        "speaker_id": "speaker_6",
+        "text": "这方面我们我们会明令禁止，然后我们也会跟这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 784000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_6",
+        "text": "后勤那边儿说，在那个动物的圈舍外面嗯写上这个禁止投喂的那个标识",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 790000,
+        "end_ms": 798000,
+        "speaker_id": "speaker_6",
+        "text": "但是其实这个现象还是还是存在的，我觉得这边儿也需要也需要我们的安保部门和我们这个饲养部门一块儿再加大力度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 798000,
+        "end_ms": 803000,
+        "speaker_id": "speaker_6",
+        "text": "就是阻止游客的这个行为，因为这个行为不仅是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 803000,
+        "end_ms": 810000,
+        "speaker_id": "speaker_6",
+        "text": "嗯对我们的动物没有好处，而且对它们本身也是带有一定的伤害性危险性，因为这些动物比如说这凶猛的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 811000,
+        "end_ms": 817000,
+        "speaker_id": "speaker_6",
+        "text": "有的时候其实也是不可控的，它们要是发就是发怒了，我们饲养员其实也不是说就能控制得了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 818000,
+        "end_ms": 825000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们本园一些观光动物的场所，会不会有动物和就是观众互动的这种？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 826000,
+        "end_ms": 834000,
+        "speaker_id": "speaker_6",
+        "text": "有啊，就比如说嗯嗯猴这些这些有比如说鹦鹉，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 830000,
+        "end_ms": 831000,
+        "speaker_id": "speaker_2",
+        "text": "鹦鹉啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 834000,
+        "end_ms": 843000,
+        "speaker_id": "speaker_6",
+        "text": "大象就是就有远距离那些喷水，会喷到远距离不会近距离的接触。然后还有比如说看一些那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 844000,
+        "end_ms": 845000,
+        "speaker_id": "speaker_2",
+        "text": "海豚表演，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 844000,
+        "end_ms": 846000,
+        "speaker_id": "speaker_3",
+        "text": "海豚表演",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 844000,
+        "end_ms": 850000,
+        "speaker_id": "speaker_6",
+        "text": "海豚和杂技表演这些都会是有的，但是不会有那种虐待动物的现象，就是发生。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 850000,
+        "end_ms": 855000,
+        "speaker_id": "speaker_2",
+        "text": "那海豚表演会不会就是人类就是不小心触碰到动物的一些就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 855000,
+        "end_ms": 859000,
+        "speaker_id": "speaker_2",
+        "text": "脆弱部位对，就像什么眼睛啊之类的，不小心碰到三",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 855000,
+        "end_ms": 857000,
+        "speaker_id": "speaker_6",
+        "text": "敏感的地位是吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 859000,
+        "end_ms": 866000,
+        "speaker_id": "speaker_6",
+        "text": "在在选择观众去跟这些动物接触的时候，饲养员还有这个训练的人员会在旁边进行专业的指导",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 866000,
+        "end_ms": 872000,
+        "speaker_id": "speaker_6",
+        "text": "会告诉他说哪里是我们这个动物可以接受的范围，哪里是不要动会有危险性的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 872000,
+        "end_ms": 875000,
+        "speaker_id": "speaker_6",
+        "text": "地方会提前都说好，让观众有一个心理准备。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 877000,
+        "end_ms": 883000,
+        "speaker_id": "speaker_2",
+        "text": "行，那这些鹦鹉这些粪便，有时候说它这些饲养呢属于一种馆内饲养吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 883000,
+        "end_ms": 886000,
+        "speaker_id": "speaker_2",
+        "text": "它属于一种相对于来说是属于场地散养",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 886000,
+        "end_ms": 887000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 887000,
+        "end_ms": 896000,
+        "speaker_id": "speaker_2",
+        "text": "这种方面的情况，鹦鹉那些大小便如果落到游客身上，你们的饲养员会怎么样跟游客解释呢？这些安抚游客",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 896000,
+        "end_ms": 900000,
+        "speaker_id": "speaker_6",
+        "text": "这种情况下，首先我们就是第一方面是先准备一些东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 900000,
+        "end_ms": 905000,
+        "speaker_id": "speaker_6",
+        "text": "湿巾什么帮游客进行简单一些清理，然后再会告诉游客说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 905000,
+        "end_ms": 914000,
+        "speaker_id": "speaker_6",
+        "text": "呃其实跟它们接触的时候，因为动物嘛毕竟跟我们人类不一样，有一些不可控性，然后让游客学会接受",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 914000,
+        "end_ms": 919000,
+        "speaker_id": "speaker_6",
+        "text": "然后我们也会进行一些小礼品的安抚，并且以后我们也会把这个鹦鹉和",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 919000,
+        "end_ms": 925000,
+        "speaker_id": "speaker_6",
+        "text": "和这个呃观光的这些群众间设立一定的隔驴",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 925000,
+        "end_ms": 933000,
+        "speaker_id": "speaker_6",
+        "text": "隔离区，然后让他们可以看到，但是不会近距离的在那些鹦鹉的下面，让他们啊接触或者观光这些。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 933000,
+        "end_ms": 940000,
+        "speaker_id": "speaker_2",
+        "text": "这我有一个好的提议啊，就属于饲养员也可以把鹦鹉训练的就是属于和陌生人也可以互动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 941000,
+        "end_ms": 947000,
+        "speaker_id": "speaker_2",
+        "text": "如果有哪些鹦鹉你们发现落在游客身上会有粪便之类的排泄物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 948000,
+        "end_ms": 949000,
+        "speaker_id": "speaker_2",
+        "text": "你可以就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 949000,
+        "end_ms": 950000,
+        "speaker_id": "speaker_6",
+        "text": "加强力度，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 950000,
+        "end_ms": 957000,
+        "speaker_id": "speaker_2",
+        "text": "就是，让鹦鹉和这个游客互动，像鹦鹉进行一些表演活动，让进行安抚游客的心理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 957000,
+        "end_ms": 957000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 958000,
+        "end_ms": 960000,
+        "speaker_id": "speaker_2",
+        "text": "让游客认为这个动物是没有没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 960000,
+        "end_ms": 961000,
+        "speaker_id": "speaker_6",
+        "text": "恶意",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 961000,
+        "end_ms": 962000,
+        "speaker_id": "speaker_2",
+        "text": "恶意的，对，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 962000,
+        "end_ms": 967000,
+        "speaker_id": "speaker_2",
+        "text": "和他互动进行一些道歉行为，或者鹦鹉学习说话儿逗一逗这个游客之类的这方面，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 967000,
+        "end_ms": 971000,
+        "speaker_id": "speaker_6",
+        "text": "好，我们训练员下一下一步会注意这个问题，会改进。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 971000,
+        "end_ms": 973000,
+        "speaker_id": "speaker_2",
+        "text": "行那这边儿管理部门儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 974000,
+        "end_ms": 982000,
+        "speaker_id": "speaker_7",
+        "text": "管理这边儿工作其实属于比较繁杂，首先我们管理部门是要针对这个动物进行一些管理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 982000,
+        "end_ms": 990000,
+        "speaker_id": "speaker_7",
+        "text": "嗯比如说这个野生动物区，我们就呃组织了每次都有这个月月宣传活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 990000,
+        "end_ms": 998000,
+        "speaker_id": "speaker_7",
+        "text": "提高全民对野生动物这个保护意识，呃防止这个动物在我们园内发生一些呃伤害。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 998000,
+        "end_ms": 1006000,
+        "speaker_id": "speaker_7",
+        "text": "嗯其次呢是加强管理，严格执法，啊展开展开野生动物的保护资源保护工作。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 1007000,
+        "end_ms": 1016000,
+        "speaker_id": "speaker_7",
+        "text": "这个我们园其实做的是比较严谨的，还有一些保护呃这个野生动物这个生存的环境",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 1017000,
+        "end_ms": 1024000,
+        "speaker_id": "speaker_7",
+        "text": "做好湿地公园及自然保护区的建筹工作规划，嗯规划重点保护区域",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 1024000,
+        "end_ms": 1031000,
+        "speaker_id": "speaker_7",
+        "text": "这个是我们在嗯保护野生动物方面做的一些工作，还有一些别的动物，我们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 1032000,
+        "end_ms": 1037000,
+        "speaker_id": "speaker_7",
+        "text": "都都做好这个动物防疫工作，这是我们一直在啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 1038000,
+        "end_ms": 1044000,
+        "speaker_id": "speaker_7",
+        "text": "检查的一个重要的工作，因为我们现在是特殊情况，为了防止这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 1044000,
+        "end_ms": 1048000,
+        "speaker_id": "speaker_7",
+        "text": "顾客来我们公园游玩儿的时候有这个担心，我们其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 1048000,
+        "end_ms": 1054000,
+        "speaker_id": "speaker_7",
+        "text": "是呃现在现在这个情况是比较频繁的在对这个动物进行防御工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 1055000,
+        "end_ms": 1059000,
+        "speaker_id": "speaker_7",
+        "text": "避免这个顾客的这个心理是有一些不愿意的这个情况。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 1059000,
+        "end_ms": 1068000,
+        "speaker_id": "speaker_2",
+        "text": "这方面管理如果是小火车就是属于那种乘客进园儿买票，就那种小火车整个整个园观光的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 1068000,
+        "end_ms": 1072000,
+        "speaker_id": "speaker_2",
+        "text": "这方面的管理是怎么样？是让游客和",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 1075000,
+        "end_ms": 1080000,
+        "speaker_id": "speaker_2",
+        "text": "在车上观光动物，会不会就是车的这些管理方面不会，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 1079000,
+        "end_ms": 1081000,
+        "speaker_id": "speaker_7",
+        "text": "我们我们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 1081000,
+        "end_ms": 1088000,
+        "speaker_id": "speaker_7",
+        "text": "公园的这个小火车它不是说嗯在车上可以观察动物，是因为我们的动物园比较大嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 1088000,
+        "end_ms": 1095000,
+        "speaker_id": "speaker_7",
+        "text": "也也有一些小孩子或者一些老人，他们在玩儿的时候比较累",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 1095000,
+        "end_ms": 1100000,
+        "speaker_id": "speaker_7",
+        "text": "这个是方便他们参观我们全园全园的这个景区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 1100000,
+        "end_ms": 1109000,
+        "speaker_id": "speaker_7",
+        "text": "所以是为了方便方便这个用户方便这个游玩儿的，游客们他们嗯行来回行走在各个馆之间行走",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 1109000,
+        "end_ms": 1117000,
+        "speaker_id": "speaker_7",
+        "text": "他们可以选用我们这个小火车，因为我们小火车也是呃外观比较精美，可以在上面拍照儿或者休息什么之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 1117000,
+        "end_ms": 1126000,
+        "speaker_id": "speaker_7",
+        "text": "它不是它次要的一个作用，是用来观光动物嘛，因为远距离的话，其实看动物其实不太方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 1127000,
+        "end_ms": 1129000,
+        "speaker_id": "speaker_2",
+        "text": "嗯说到这个动物问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 1130000,
+        "end_ms": 1136000,
+        "speaker_id": "speaker_2",
+        "text": "上一季度有人给我反馈说什么，就是毕竟咱们的狮子，老虎这些属于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 1136000,
+        "end_ms": 1136000,
+        "speaker_id": "speaker_3",
+        "text": "肉食",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 1136000,
+        "end_ms": 1141000,
+        "speaker_id": "speaker_2",
+        "text": "区域性散养，咱们这个饲养员儿是人工喂食还是投喂呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 1142000,
+        "end_ms": 1143000,
+        "speaker_id": "speaker_7",
+        "text": "咱们饲养员是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 1143000,
+        "end_ms": 1145000,
+        "speaker_id": "speaker_6",
+        "text": "都有这两种都会采取。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 1145000,
+        "end_ms": 1151000,
+        "speaker_id": "speaker_2",
+        "text": "如果是人工喂食的话，就是会不会对饲养员造成伤害？如果它是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 1150000,
+        "end_ms": 1153000,
+        "speaker_id": "speaker_7",
+        "text": "这个我们在管理方面是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 1153000,
+        "end_ms": 1157000,
+        "speaker_id": "speaker_7",
+        "text": "呃是做过相关规定的，是不可以呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 1158000,
+        "end_ms": 1164000,
+        "speaker_id": "speaker_7",
+        "text": "近距离接触这个野生动物的，就说是不会产生这方面的一些呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 1164000,
+        "end_ms": 1168000,
+        "speaker_id": "speaker_7",
+        "text": "一些一些问题，因为我们都有这个相关规定。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 1169000,
+        "end_ms": 1175000,
+        "speaker_id": "speaker_7",
+        "text": "首先这安全问题是肯定会考虑，饲养员安全问题是考虑在范围内的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 1175000,
+        "end_ms": 1183000,
+        "speaker_id": "speaker_2",
+        "text": "行，那上一次咱们不是和非洲那边儿动物园儿有一个合作嘛，他那儿属于大型野生动物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 1184000,
+        "end_ms": 1193000,
+        "speaker_id": "speaker_2",
+        "text": "他那儿野生动物比较凶狠，在运送途中这个道路清理这个，后勤这部门儿就是就是怎么样处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 1196000,
+        "end_ms": 1196000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 1196000,
+        "end_ms": 1201000,
+        "speaker_id": "speaker_2",
+        "text": "就是后勤部门儿会怎么样处理这些道路清理问题之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 1202000,
+        "end_ms": 1210000,
+        "speaker_id": "speaker_4",
+        "text": "嗯道路清理这一这一块儿呢，呃我们就是第一是加强巡视，发现有一些障碍物的话及时清理。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 1210000,
+        "end_ms": 1217000,
+        "speaker_id": "speaker_4",
+        "text": "第二就是呃对嗯区域的负责人，就因为我们是划片儿到人了嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 1217000,
+        "end_ms": 1223000,
+        "speaker_id": "speaker_4",
+        "text": "对于区域负责人加强一些监督管理，让每一个人知道自己的职责所在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 1223000,
+        "end_ms": 1233000,
+        "speaker_id": "speaker_2",
+        "text": "那他们会不会这些负责人，很害怕从非洲运过来那种猛兽啊，他们对这些动物产生的就是害怕，然后不敢去清理卫生之类的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 1233000,
+        "end_ms": 1242000,
+        "speaker_id": "speaker_4",
+        "text": "呃其实呢呃我们也嗯告诉了他们呃安全这一方面儿的，因为我们也跟保安这一边儿呃有过",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 1242000,
+        "end_ms": 1247000,
+        "speaker_id": "speaker_4",
+        "text": "呃跟他们就是我们也在每一天跟他们在交流呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1247000,
+        "end_ms": 1252000,
+        "speaker_id": "speaker_4",
+        "text": "因为它是在笼子里面的，它不是直接从我们身边走过来的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1252000,
+        "end_ms": 1253000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1253000,
+        "end_ms": 1255000,
+        "speaker_id": "speaker_4",
+        "text": "所以呃我们是有防护措施的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1255000,
+        "end_ms": 1259000,
+        "speaker_id": "speaker_4",
+        "text": "也就是说它是在笼子里面儿，不管它再厉害，它也伤不到我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1259000,
+        "end_ms": 1264000,
+        "speaker_id": "speaker_4",
+        "text": "所以就告诉大家不要害怕，因为我们的担心其实是多余的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1264000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_2",
+        "text": "行，那这个动物如果运过来送到动物园儿里面，这边儿清理的方面是怎么样清理？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1271000,
+        "end_ms": 1275000,
+        "speaker_id": "speaker_2",
+        "text": "这笼子整个消一遍毒，那样气味会不会动物接受不了呢？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1275000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_6",
+        "text": "对，不会说整个消毒只会局部的先局部局部消毒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1280000,
+        "end_ms": 1285000,
+        "speaker_id": "speaker_6",
+        "text": "然后在这个气味就是对动物的伤害没有那么大之后再进行进一步的清理。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1285000,
+        "end_ms": 1289000,
+        "speaker_id": "speaker_6",
+        "text": "因为现在比如说咱们的饲养员对那些凶狠的动物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1289000,
+        "end_ms": 1294000,
+        "speaker_id": "speaker_6",
+        "text": "他现在饲养员来说，他不只是饲养员，他是会训练这些动物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1294000,
+        "end_ms": 1299000,
+        "speaker_id": "speaker_6",
+        "text": "他一般情况下他现在会比如说投喂食物这一点，他会把食物藏起来，让动物去找",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1299000,
+        "end_ms": 1309000,
+        "speaker_id": "speaker_6",
+        "text": "一方面是训练这个动物的活跃性，另一方面也是避免这些动物由于那个人工圈养，然后投食带来那种惰性，没有了动物那种血性。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1309000,
+        "end_ms": 1314000,
+        "speaker_id": "speaker_6",
+        "text": "然后现在然后咱们这个饲养员也是就是正在慢慢培养",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1314000,
+        "end_ms": 1321000,
+        "speaker_id": "speaker_6",
+        "text": "不是慢慢就是说大部分就是之前的那些老的管理员都已经和动物之间有了新的信任度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1321000,
+        "end_ms": 1327000,
+        "speaker_id": "speaker_6",
+        "text": "然后这些新的管理管理员饲养员，我们也正在加强他们和那些动物之间的信任度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1327000,
+        "end_ms": 1334000,
+        "speaker_id": "speaker_6",
+        "text": "然后让其他让他们按照我们的指令去做一些基本动作，比如说在一些动物的日常管理中",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1334000,
+        "end_ms": 1340000,
+        "speaker_id": "speaker_6",
+        "text": "比如说大象老虎他们要嗯采采血化验的时候是非常危险的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1340000,
+        "end_ms": 1341000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1341000,
+        "end_ms": 1346000,
+        "speaker_id": "speaker_6",
+        "text": "然后以前是没有什么办法，只能采取这种麻醉，对采取麻醉，现在呢其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1343000,
+        "end_ms": 1345000,
+        "speaker_id": "speaker_1",
+        "text": "现在呢现在是什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1346000,
+        "end_ms": 1356000,
+        "speaker_id": "speaker_6",
+        "text": "饲养员就是通过一些对它们的训练，他比如说给老虎看牙会做一些动作，或者指令那些老虎会坐下来就乖乖的把牙张开，然后让这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1357000,
+        "end_ms": 1361000,
+        "speaker_id": "speaker_6",
+        "text": "饲养员进行挂点滴或者张开嘴巴让兽医看牙",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1362000,
+        "end_ms": 1365000,
+        "speaker_id": "speaker_6",
+        "text": "这都是通过后期的训练可以做到的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1365000,
+        "end_ms": 1366000,
+        "speaker_id": "speaker_4",
+        "text": "它们都很配合",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1367000,
+        "end_ms": 1374000,
+        "speaker_id": "speaker_6",
+        "text": "对，会很配合，但是需要这些训练训练员和饲养员的长期这些配合才能达到这种效果。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1375000,
+        "end_ms": 1376000,
+        "speaker_id": "speaker_4",
+        "text": "跟动物之间的默契",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1376000,
+        "end_ms": 1377000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1377000,
+        "end_ms": 1384000,
+        "speaker_id": "speaker_2",
+        "text": "这是上一季度的问题，对于下一季度各部门儿提一下自己的意见，需要改动。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1385000,
+        "end_ms": 1386000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1385000,
+        "end_ms": 1390000,
+        "speaker_id": "speaker_3",
+        "text": "首先从我们保安部开始吧，从从保安部的话就是因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1390000,
+        "end_ms": 1394000,
+        "speaker_id": "speaker_3",
+        "text": "就是近期嘛近期咱们那个动物园也是引进了那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1394000,
+        "end_ms": 1401000,
+        "speaker_id": "speaker_3",
+        "text": "就是那个野生的动物是吧？它们有血性嘛，但是就是对于安保部门来说的话，就是以从呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1401000,
+        "end_ms": 1406000,
+        "speaker_id": "speaker_3",
+        "text": "最不好的方面来讲，咱们园区肯定是要配备那些麻醉枪什么之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1406000,
+        "end_ms": 1414000,
+        "speaker_id": "speaker_3",
+        "text": "呃就是如果情况再严重一点的话，肯定是要配备一些就是具有杀伤性的武器的，这个是肯定需要考虑到的，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1414000,
+        "end_ms": 1420000,
+        "speaker_id": "speaker_3",
+        "text": "呃毕竟野生动物嘛野生动物它就它就是为了保证那个动物的血性嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1420000,
+        "end_ms": 1420000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1420000,
+        "end_ms": 1424000,
+        "speaker_id": "speaker_3",
+        "text": "然后咱们确保，咱但是咱们就是要确保那个游客的安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1424000,
+        "end_ms": 1428000,
+        "speaker_id": "speaker_3",
+        "text": "就是以防这种情况的出现，所以说这个东西是要估计是要配好的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1429000,
+        "end_ms": 1434000,
+        "speaker_id": "speaker_3",
+        "text": "人的话就是加强一下儿就是那个，加强一下就是那个野生动物旁边那个护栏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1435000,
+        "end_ms": 1440000,
+        "speaker_id": "speaker_3",
+        "text": "就是有没有加固，然后的话还要加强一下对于野生动物这个定定期的巡逻就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1440000,
+        "end_ms": 1445000,
+        "speaker_id": "speaker_3",
+        "text": "呃肯定就是有有一些人有一些游客他存在一种就是想逃票的情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1445000,
+        "end_ms": 1450000,
+        "speaker_id": "speaker_3",
+        "text": "因为野那个咱们那个野生动物他们咱们如果说就是正常买票的那个游客他知道",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1450000,
+        "end_ms": 1456000,
+        "speaker_id": "speaker_3",
+        "text": "她不会说就是靠那个太近，也不就是翻那个围墙，因为野生动物它本来就是很具有危险性",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1456000,
+        "end_ms": 1461000,
+        "speaker_id": "speaker_3",
+        "text": "但是那个逃票的游客他就是他就不会去了解这个，他有可能就会直接就是从那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1462000,
+        "end_ms": 1466000,
+        "speaker_id": "speaker_3",
+        "text": "那个野生动物那个围墙那边翻进来，就是误入到那个野生动物园里面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1466000,
+        "end_ms": 1471000,
+        "speaker_id": "speaker_3",
+        "text": "会那个一方面会对咱们那个动物园就是声声誉会造成一些损失",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1471000,
+        "end_ms": 1476000,
+        "speaker_id": "speaker_3",
+        "text": "另一方面的话对于人家人身安全肯定是有影响的。所以说这些的话都是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1476000,
+        "end_ms": 1483000,
+        "speaker_id": "speaker_3",
+        "text": "都是需要注意的，然后会加强一些那个就是野生动物区那个护栏的那个加加固加高。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1483000,
+        "end_ms": 1490000,
+        "speaker_id": "speaker_2",
+        "text": "那这个停车问题是怎么样？如果是人组团儿来的大巴车，咱们会有自己的停车场面积够吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1491000,
+        "end_ms": 1500000,
+        "speaker_id": "speaker_3",
+        "text": "这边的话就是统一安排吧咱们停车场的话，目前的话只是仅限于那个呃就是私家车，然后就是比如说那个那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1501000,
+        "end_ms": 1505000,
+        "speaker_id": "speaker_3",
+        "text": "那个自行车电动车这些非机动车就是大巴车的话，咱们会在那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1505000,
+        "end_ms": 1509000,
+        "speaker_id": "speaker_3",
+        "text": "有那个游园，咱们那个园外这个统一的场地",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1509000,
+        "end_ms": 1519000,
+        "speaker_id": "speaker_3",
+        "text": "就是进行停放，然后这个安这个人员下车的话或者统一就是这个玩有那个动物园里就是代理之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1509000,
+        "end_ms": 1510000,
+        "speaker_id": "speaker_7",
+        "text": "停放",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1519000,
+        "end_ms": 1524000,
+        "speaker_id": "speaker_2",
+        "text": "毕竟咱们本园地位地势较偏僻嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1524000,
+        "end_ms": 1524000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1524000,
+        "end_ms": 1530000,
+        "speaker_id": "speaker_2",
+        "text": "这方面如果是有人乱停车，因为咱们的停车场属于收费，他属于停到了动物园儿周边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1530000,
+        "end_ms": 1534000,
+        "speaker_id": "speaker_3",
+        "text": "属于路上乱停车这方面是怎么样处理的？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1534000,
+        "end_ms": 1541000,
+        "speaker_id": "speaker_3",
+        "text": "这边的话就是在关于这个停车问题的话，会我们会就是专门儿安排就是那个安保人员去去管理一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1541000,
+        "end_ms": 1548000,
+        "speaker_id": "speaker_3",
+        "text": "就是在停就是在停车场的区域内会专门儿安放一些人员，比如说他们停车的话，就是我们都会当时的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1548000,
+        "end_ms": 1553000,
+        "speaker_id": "speaker_3",
+        "text": "当时就是制止或者说就是劝说就是让让那个就是游客就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1553000,
+        "end_ms": 1556000,
+        "speaker_id": "speaker_3",
+        "text": "把那个车停停好，停到规定的地方。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1557000,
+        "end_ms": 1561000,
+        "speaker_id": "speaker_2",
+        "text": "这方面如果游客不听劝的话，可以联系一下当地的交警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1562000,
+        "end_ms": 1562000,
+        "speaker_id": "speaker_3",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1562000,
+        "end_ms": 1565000,
+        "speaker_id": "speaker_2",
+        "text": "进行罚款处理。后勤部门儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1565000,
+        "end_ms": 1571000,
+        "speaker_id": "speaker_4",
+        "text": "呃我们这个呢就是针对上一次发生的就是垃圾桶垃圾外溢的这个现象",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1571000,
+        "end_ms": 1577000,
+        "speaker_id": "speaker_4",
+        "text": "虽然只是呃本季度的呃一人次，只有他自己",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1577000,
+        "end_ms": 1585000,
+        "speaker_id": "speaker_4",
+        "text": "只有这一次，但是我们也对当事人进行考核，而且呃针对这件事情作为一个反面的事例，再嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1585000,
+        "end_ms": 1593000,
+        "speaker_id": "speaker_4",
+        "text": "安全例会上，在每周儿的我们的嗯例会上给大家讲述这件事情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1593000,
+        "end_ms": 1597000,
+        "speaker_id": "speaker_4",
+        "text": "不是为了只批评他一个人，是为了教育所有的人。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1597000,
+        "end_ms": 1602000,
+        "speaker_id": "speaker_4",
+        "text": "呃然后呢我们根据这这个情况，我们做了一个新的规定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1602000,
+        "end_ms": 1606000,
+        "speaker_id": "speaker_4",
+        "text": "呃垃圾桶不管里面有多少垃圾，当天清空",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1607000,
+        "end_ms": 1613000,
+        "speaker_id": "speaker_4",
+        "text": "每一次每一天在闭园之前垃圾桶都要清空，所有的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1613000,
+        "end_ms": 1614000,
+        "speaker_id": "speaker_4",
+        "text": "然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1613000,
+        "end_ms": 1618000,
+        "speaker_id": "speaker_2",
+        "text": "这个如果是在闭园之前垃圾桶外溢的话会及时处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1618000,
+        "end_ms": 1621000,
+        "speaker_id": "speaker_4",
+        "text": "嗯不会再发生这样的事情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1621000,
+        "end_ms": 1621000,
+        "speaker_id": "speaker_2",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1622000,
+        "end_ms": 1624000,
+        "speaker_id": "speaker_4",
+        "text": "嗯然后就是嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1622000,
+        "end_ms": 1623000,
+        "speaker_id": "speaker_2",
+        "text": "那其他的部门儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1625000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_6",
+        "text": "然后饲养部门这边儿其实主要也是就是对饲养员的技术要提高，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1631000,
+        "end_ms": 1637000,
+        "speaker_id": "speaker_6",
+        "text": "对他们这个饲养嗯喂养动物的时候要按计划和配方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1637000,
+        "end_ms": 1640000,
+        "speaker_id": "speaker_6",
+        "text": "然后配足饲料和草料，就是按照一定的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1641000,
+        "end_ms": 1648000,
+        "speaker_id": "speaker_6",
+        "text": "呃计划执行，不然后经个经过严格的这个标准，然后并且会减少浪费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1648000,
+        "end_ms": 1651000,
+        "speaker_id": "speaker_6",
+        "text": "然后饲养员这边儿也会就是及时的巡查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1651000,
+        "end_ms": 1658000,
+        "speaker_id": "speaker_6",
+        "text": "发现动物生病的各种情况会更加及时的上报，然后那个加强对这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1658000,
+        "end_ms": 1664000,
+        "speaker_id": "speaker_6",
+        "text": "嗯栏舍饮水器和食槽等设施的那个检查，然后进一步完善，让动物们有一个更好的居住环境。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1665000,
+        "end_ms": 1666000,
+        "speaker_id": "speaker_6",
+        "text": "这个就这样。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1665000,
+        "end_ms": 1667000,
+        "speaker_id": "speaker_2",
+        "text": "行那管理部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1668000,
+        "end_ms": 1673000,
+        "speaker_id": "speaker_7",
+        "text": "管理这边儿，嗯下半年会对这个动物安全问题更加",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1673000,
+        "end_ms": 1679000,
+        "speaker_id": "speaker_7",
+        "text": "严格的看管，然后人员方面的话会嗯管理会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1679000,
+        "end_ms": 1683000,
+        "speaker_id": "speaker_7",
+        "text": "会及时对这个员工进行一些培训，让",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1683000,
+        "end_ms": 1689000,
+        "speaker_id": "speaker_7",
+        "text": "让这个让这个人员会更加对这个动物或者一些游玩儿的顾客",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1690000,
+        "end_ms": 1696000,
+        "speaker_id": "speaker_7",
+        "text": "产生嗯不要不要进行不要有一些危险动作要及时进行一些看管。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1697000,
+        "end_ms": 1704000,
+        "speaker_id": "speaker_2",
+        "text": "那在下一季度有没有想过怎么样将本园的活动扩大提一些意见。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1705000,
+        "end_ms": 1709000,
+        "speaker_id": "speaker_7",
+        "text": "嗯这边儿可以制定一些比如说亲子活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1709000,
+        "end_ms": 1714000,
+        "speaker_id": "speaker_7",
+        "text": "或者情侣，啊可以可以享受一些啊两张大人票",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1714000,
+        "end_ms": 1718000,
+        "speaker_id": "speaker_7",
+        "text": "赠一张小儿童票这样的优惠政策。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1718000,
+        "end_ms": 1719000,
+        "speaker_id": "speaker_6",
+        "text": "优惠政策",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1720000,
+        "end_ms": 1727000,
+        "speaker_id": "speaker_2",
+        "text": "那这边儿有没有什么好的项目，比方说像当地联合一些综艺节目，来咱们本园拍摄之类的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1728000,
+        "end_ms": 1731000,
+        "speaker_id": "speaker_7",
+        "text": "嗯这个我可以和外联那边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1731000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_7",
+        "text": "嗯交流一下，如果如果啊可以如果我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1736000,
+        "end_ms": 1740000,
+        "speaker_id": "speaker_7",
+        "text": "园内的条件够好的话，可以做到那个条件的话，可以和",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1740000,
+        "end_ms": 1745000,
+        "speaker_id": "speaker_7",
+        "text": "呃一些综艺节目进行一些询问，看看他们有没有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1745000,
+        "end_ms": 1751000,
+        "speaker_id": "speaker_7",
+        "text": "意愿，有没有这个想法，我们园内是完全支持这样的条件的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1752000,
+        "end_ms": 1759000,
+        "speaker_id": "speaker_7",
+        "text": "还有我觉得可以，嗯你如果如果如果说要请一些外来人员的话，可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1759000,
+        "end_ms": 1765000,
+        "speaker_id": "speaker_7",
+        "text": "比如说一些马戏团，我觉得可以加入到我们的动物园内。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1766000,
+        "end_ms": 1773000,
+        "speaker_id": "speaker_7",
+        "text": "也是因为马戏团嗯因为马戏团的一些观众是主要是去看一些动物表演嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1774000,
+        "end_ms": 1780000,
+        "speaker_id": "speaker_7",
+        "text": "一是我们可以呃学习一下怎么和动物交流，二是可以嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1780000,
+        "end_ms": 1785000,
+        "speaker_id": "speaker_7",
+        "text": "宣传一下我们动物园内的这些动物的多种多样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1786000,
+        "end_ms": 1791000,
+        "speaker_id": "speaker_1",
+        "text": "行，嗯还有就是行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1792000,
+        "end_ms": 1799000,
+        "speaker_id": "speaker_1",
+        "text": "这个活动，咱们一定要增加这个活动量，增加咱们这个每天的入园量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1807000,
+        "end_ms": 1813000,
+        "speaker_id": "speaker_1",
+        "text": "在家里待的时间也够长了，可以适当的进行一项户外活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1817000,
+        "end_ms": 1829000,
+        "speaker_id": "speaker_1",
+        "text": "有些门票啊什么适当的可以搞一些活动，周周六日这这些咱们就可以是人流量比较多咱们可以搞一些这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1829000,
+        "end_ms": 1833000,
+        "speaker_id": "speaker_1",
+        "text": "嗯半价啦，或者打个折的活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1834000,
+        "end_ms": 1839000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行，那咱今天这场会议先到此结束。",
+        "status": "ok"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "项目团队介绍",
+  "key_points": [
+    "零零一工程项目负责人"
+  ],
+  "anchors": [
+    "零零一",
+    "工程项目负责人"
+  ],
+  "summary": "本块会议首先明确零零一工程项目负责人为项目核心负责人。",
+  "continues_previous": false,
+  "key_refs": [
+    "r1"
+  ],
+  "action_candidates": [
+    {
+      "task": "零零一工程项目负责人",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r1"
+      ]
+    }
+  ]
+}

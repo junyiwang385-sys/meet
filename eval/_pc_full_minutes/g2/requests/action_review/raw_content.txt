@@ -1,0 +1,76 @@
+{
+  "action_items": [
+    {
+      "task": "重新招聘售后推销员",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r13"
+      ]
+    },
+    {
+      "task": "针对高端孕妇群体推广产品",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r40"
+      ]
+    },
+    {
+      "task": "加强商标保护",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r42"
+      ]
+    },
+    {
+      "task": "协商赔偿款",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r68"
+      ]
+    },
+    {
+      "task": "开发男士专用素颜霜等快速护肤产品",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r94"
+      ]
+    },
+    {
+      "task": "评估专柜免费化妆试用可行性",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r116"
+      ]
+    },
+    {
+      "task": "开展用户画像调查",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r154"
+      ]
+    },
+    {
+      "task": "确认会员返现方案细节",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r174"
+      ]
+    },
+    {
+      "task": "制定节日免费维护服务计划",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r175"
+      ]
+    }
+  ]
+}

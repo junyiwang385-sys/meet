@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:57:07.8007895Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"就业指导会开场\",\n  \"key_points\": [\n    \"会议明确将就业问题作为本次就业指导会的核心议题\",\n    \"副校长将首先通过案例说明大公司与小公司的界定标准\",\n    \"教务处对大公司与小公司的定义存在疑问，需进一步澄清\"\n  ],\n  \"anchors\": [\n    \"就业指导会\",\n    \"大公司\",\n    \"小公司\",\n    \"教务处\",\n    \"副校长\",\n    \"案例\",\n    \"规模\",\n    \"资金\"\n  ],\n  \"summary\": \"本次就业指导会聚焦大学生就业问题，副校长将通过案例明确大公司与小公司的界定标准。教务处对定义存在疑问，需进一步澄清。会议将围绕就业问题展开讨论。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r8\",\n    \"r12\",\n    \"r13\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"明确大公司与小公司的界定标准\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r12\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3734148100,
+  "load_duration": 1548000,
+  "prompt_eval_count": 1655,
+  "prompt_eval_duration": 424062000,
+  "eval_count": 247,
+  "eval_duration": 3235296000
+}

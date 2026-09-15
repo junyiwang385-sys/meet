@@ -1,0 +1,34 @@
+{
+  "title": "会议结束确认",
+  "key_points": [
+    "确认各部门完成防汛检查，重点检查灭火器状态"
+  ],
+  "anchors": [
+    "防汛",
+    "灭火器",
+    "31m31s-31m34s",
+    "31m35s-31m45s",
+    "31m46s-31m49s",
+    "31m49s-31m50s",
+    "31m50s-31m50s",
+    "31m54s-31m55s"
+  ],
+  "summary": "会议确认各部门需在汛期前完成灭火器检查，重点排查过期或需更换的设备。总经理强调防汛工作，要求各岗位立即落实检查，确保安全。会议于31m55s结束。",
+  "continues_previous": false,
+  "refs": [
+    "seg-000342",
+    "seg-000344"
+  ],
+  "action_candidates": [
+    {
+      "task": "检查灭火器状态",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "seg-000342"
+      ]
+    }
+  ],
+  "start_ref": "seg-000341",
+  "end_ref": "seg-000352"
+}

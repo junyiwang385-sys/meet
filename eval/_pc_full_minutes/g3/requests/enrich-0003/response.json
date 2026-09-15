@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T10:20:04.9827039Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"小区门禁系统是否需要改进？\",\n      \"answer\": \"小区门禁系统存在安全隐患，需改进以防止外来人员非法进入，目前计划通过弱电系统升级和一卡一卡多进的防伪措施进行优化。\"\n    },\n    {\n      \"question\": \"人脸识别门禁系统在小区实施的可行性如何？\",\n      \"answer\": \"人脸识别门禁系统因信息量大、人员复杂且易引发不便，目前不建议实施，业主普遍认为其操作繁琐且可能影响日常出入。\"\n    },\n    {\n      \"question\": \"小区门禁系统升级所需经费由谁承担？\",\n      \"answer\": \"门禁系统升级需较大经费，费用将由全体业主共同承担，但具体实施需考虑业主意愿及物业费使用情况。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2829328400,
+  "load_duration": 1564800,
+  "prompt_eval_count": 968,
+  "prompt_eval_duration": 263118000,
+  "eval_count": 187,
+  "eval_duration": 2411093000
+}

@@ -1,0 +1,10 @@
+{
+  "fingerprint": "05fe6ed44f597ee531d782cdc50e01d8ffe434e9fadb65d42ed0072244318c9c",
+  "request_kind": "speaker-batch",
+  "artifact_sha256": {
+    "final_json": "9b9ac5f1efc3aa89b1ebd924a5bde548861af9a372d0a32a0768d3f8c925b3d3",
+    "validated_result": "b27747fc0e4450b527d059f34f344e2df959f7f52ba3708e2989d10459ad986a",
+    "validation": "a1bc26ff11e0701c44696dfe0947d11506c66c7518f16249e903689646a9fa6d",
+    "status": "57b574b7db62269da4b23b9480c9ed0fafa405173a29f92bd813ea6d8e93e4af"
+  }
+}

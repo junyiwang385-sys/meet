@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:26:26.9574903Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"学校是否考虑为家庭条件允许的学生提供上门教学服务？\",\n      \"answer\": \"学校计划针对家庭条件允许的学生提供上门教学服务，以替代部分课堂学习，具体通过适当定价实现一对一教学。\"\n    },\n    {\n      \"question\": \"学校如何通过赠品活动促进课程销售？\",\n      \"answer\": \"学校拟通过赠送英语读本、动画片光盘、钢笔等学习用品作为课程促销手段，同时支持跨课程赠品组合以吸引学生。\"\n    },\n    {\n      \"question\": \"学校将如何有效分发宣传材料以避免资源浪费？\",\n      \"answer\": \"学校计划在课间或课程结束时由教师向学生简要介绍并发放宣传材料，以PPT形式发送至家长群，确保环保且避免传单散失。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2645606900,
+  "load_duration": 1566700,
+  "prompt_eval_count": 835,
+  "prompt_eval_duration": 176376000,
+  "eval_count": 193,
+  "eval_duration": 2421050000
+}

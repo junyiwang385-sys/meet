@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:17:24.2259694Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"decisions\": [\n    {\n      \"decision\": \"餐饮部将实施四层食材把关机制，确保食材新鲜度和卫生安全\",\n      \"problem\": \"上个月餐饮部食材新鲜度和卫生问题，夏季食品安全风险\",\n      \"options\": [],\n      \"rationale\": \"餐饮部提出从采购人员、厨师、销售环节层层把关，确保不新鲜或不合格食材不被使用，以保障员工和顾客饮食安全\",\n      \"owner\": \"\",\n      \"turn_ids\": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2898658000,
+  "load_duration": 1572400,
+  "prompt_eval_count": 1200,
+  "prompt_eval_duration": 326218000,
+  "eval_count": 181,
+  "eval_duration": 2488353000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:39:26.783052Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"当前水果销售策略中，如何确保直播带货订单与果农供货之间的匹配关系？\",\n      \"answer\": \"当前策略基于直播带货订单量提前备货，再逐步供应，同时优先选择优质水果以匹配市场需求。\"\n    },\n    {\n      \"question\": \"针对水果滞销问题，策划组提出了哪些具体解决方案？\",\n      \"answer\": \"策划组计划通过分类运输方式处理不同保质期的水果，保质期长的采用常规快递，保质期短的则采用空运以确保新鲜度。\"\n    },\n    {\n      \"question\": \"如何通过主播协作机制促进水果销售并提升整体利润？\",\n      \"answer\": \"主播可与品牌方及零食类主播协作推广产品，通过联动销售带动水果及其他商品的利润增长。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2699891100,
+  "load_duration": 3375600,
+  "prompt_eval_count": 977,
+  "prompt_eval_duration": 221233000,
+  "eval_count": 191,
+  "eval_duration": 2422248000
+}

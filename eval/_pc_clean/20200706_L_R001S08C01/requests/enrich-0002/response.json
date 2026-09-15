@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:33:30.076981Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"keywords\": [\"法律赔偿责任\", \"刑事责任\", \"过失杀人\", \"赡养义务\", \"法律常识普及\", \"紧急救助义务\", \"家庭关系法律界定\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 764457300,
+  "load_duration": 1561200,
+  "prompt_eval_count": 594,
+  "prompt_eval_duration": 135262000,
+  "eval_count": 38,
+  "eval_duration": 459654000
+}

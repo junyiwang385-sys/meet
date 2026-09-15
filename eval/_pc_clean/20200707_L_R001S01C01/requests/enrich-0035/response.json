@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:37:39.048808Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"decisions\": [\n    {\n      \"decision\": \"运营部和后勤部将提前协商确定婚车数量并安排停车场\",\n      \"problem\": \"婚车停放问题可能导致停车场拥挤\",\n      \"options\": [\n        \"所有车都开进停车场\",\n        \"只一辆婚车入场\"\n      ],\n      \"rationale\": \"停车场足够，不会出现拥挤情况，将安排工作人员处理\",\n      \"owner\": \"行政部\",\n      \"turn_ids\": [655, 659, 661, \": 664, 665, 669, 671\"]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1913027100,
+  "load_duration": 2446300,
+  "prompt_eval_count": 523,
+  "prompt_eval_duration": 99465000,
+  "eval_count": 142,
+  "eval_duration": 1763240000
+}

@@ -1,0 +1,7 @@
+[seg-000001][0m15s-0m17s][speaker_1] 零零一工程项目负责人
+[seg-000002][0m17s-0m19s][speaker_2] 零二二后勤部
+[seg-000003][0m19s-0m21s][speaker_3] 零二六运营部
+[seg-000004][0m21s-0m22s][speaker_4] 零幺三财政部
+[seg-000005][0m23s-0m24s][speaker_5] 零二三物料部
+[seg-000006][0m25s-0m26s][speaker_6] 零二四仓库部
+[seg-000007][0m26s-0m28s][speaker_7] 零二五管理部

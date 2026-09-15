@@ -1,0 +1,10 @@
+[
+  {
+    "speaker_id": "speaker_1",
+    "overview": "该发言人的会议贡献总结",
+    "refs": [
+      "seg-000111",
+      "seg-000112"
+    ]
+  }
+]

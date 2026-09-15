@@ -1,0 +1,98 @@
+[
+  {
+    "task": "加高加固鸵鸟园栏杆",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000027"
+    ]
+  },
+  {
+    "task": "观光车每日检查与消毒",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000059"
+    ]
+  },
+  {
+    "task": "明确园区清洁责任划分",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000061"
+    ]
+  },
+  {
+    "task": "处理游客野餐等违规行为",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000073"
+    ]
+  },
+  {
+    "task": "加强新饲养员培训与指导",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000132"
+    ]
+  },
+  {
+    "task": "准备湿巾用于游客排泄物清理",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000163"
+    ]
+  },
+  {
+    "task": "野生动物区护栏加固",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000263"
+    ]
+  },
+  {
+    "task": "加强野生动物区巡逻",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000264"
+    ]
+  },
+  {
+    "task": "安排安保人员管理停车场",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000283"
+    ]
+  },
+  {
+    "task": "制定每日闭园前清空垃圾桶的执行标准",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000296"
+    ]
+  },
+  {
+    "task": "优化饲养部门喂养流程",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000305"
+    ]
+  },
+  {
+    "task": "设计亲子/情侣优惠活动方案",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000321"
+    ]
+  }
+]

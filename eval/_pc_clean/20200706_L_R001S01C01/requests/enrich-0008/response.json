@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:15:24.8611771Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"本次晚会的总时长如何确定？\",\n      \"answer\": \"会议中提到晚会总时长为三个小时，实际执行时可根据情况适当增减，但需扣除领导讲话时间。\"\n    },\n    {\n      \"question\": \"晚会节目分类方案是什么？\",\n      \"answer\": \"晚会节目已初步分为歌舞、相声小品、才艺表演三大类，此外可考虑增加情景剧、师生大合唱等互动环节。\"\n    },\n    {\n      \"question\": \"晚会主持人团队的组成要求是什么？\",\n      \"answer\": \"计划招募四名主持人，要求一男一女，身高分别在1.8米左右和1.7米左右，优先从空乘系选拔。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2393411900,
+  "load_duration": 1033500,
+  "prompt_eval_count": 755,
+  "prompt_eval_duration": 161196000,
+  "eval_count": 173,
+  "eval_duration": 2176535000
+}

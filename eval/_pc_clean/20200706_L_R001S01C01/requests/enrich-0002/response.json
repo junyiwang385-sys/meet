@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:15:11.2514601Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"keywords\": [\n    \"奖项设置\",\n    \"奖项等级\",\n    \"一等奖\",\n    \"二等奖\",\n    \"三等奖\",\n    \"参与奖\",\n    \"礼物价值\",\n    \"生活用品\",\n    \"暖手宝\",\n    \"蓝牙耳机\",\n    \"充电宝\",\n    \"折叠电瓶车\",\n    \"蓝牙音箱\",\n    \"学分设置\",\n    \"参与奖种类\",\n    \"赞助资金\",\n    \"经费节约\",\n    \"团队奖项\",\n    \"节目表演\",\n    \"观众参与\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1975899800,
+  "load_duration": 1060100,
+  "prompt_eval_count": 1546,
+  "prompt_eval_duration": 374435000,
+  "eval_count": 112,
+  "eval_duration": 1453096000
+}

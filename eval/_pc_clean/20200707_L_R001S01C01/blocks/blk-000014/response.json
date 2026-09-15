@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:35:51.1295431Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"会议结束前确认事项\",\n  \"key_points\": [\n    \"运营与后勤需提前协商婚车数量\"\n  ],\n  \"anchors\": [\n    \"婚车\",\n    \"32m12s-32m17s\",\n    \"32m17s-32m20s\",\n    \"32m20s-32m21s\",\n    \"32m22s-32m23s\",\n    \"32m23s-32m27s\"\n  ],\n  \"summary\": \"会议结束前确认运营与后勤需提前协商婚车数量，彩排时将安排相关事宜。双方将在彩排前完成婚车数量协调，确保活动顺利进行。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r669\",\n    \"r671\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"协商婚车数量\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r669\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3344220100,
+  "load_duration": 1575600,
+  "prompt_eval_count": 1068,
+  "prompt_eval_duration": 77188000,
+  "eval_count": 247,
+  "eval_duration": 3141359000
+}

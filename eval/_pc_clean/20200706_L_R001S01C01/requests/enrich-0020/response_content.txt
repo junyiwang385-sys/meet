@@ -1,0 +1,41 @@
+{
+  "decisions": [
+    {
+      "decision": "一等奖赠iPad",
+      "problem": "一等奖奖项设置",
+      "options": [
+        "大折叠车"
+      ],
+      "rationale": "因为拉赞助资金比较充裕，一等奖可以价值更高",
+      "owner": "",
+      "turn_ids": [
+        444
+      ]
+    },
+    {
+      "decision": "二等奖赠折叠电瓶车",
+      "problem": "二等奖奖项设置",
+      "options": [
+        "P3/P4",
+        "普通电子产品"
+      ],
+      "rationale": "因为学校面积大，可以给二等奖学生送折叠电瓶车",
+      "owner": "",
+      "turn_ids": [
+        439
+      ]
+    },
+    {
+      "decision": "三等奖赠暖手宝",
+      "problem": "三等奖奖项设置",
+      "options": [
+        "暖手宝"
+      ],
+      "rationale": "因为冬天，大部分是女生，暖手宝比较实用",
+      "owner": "",
+      "turn_ids": [
+        407
+      ]
+    }
+  ]
+}

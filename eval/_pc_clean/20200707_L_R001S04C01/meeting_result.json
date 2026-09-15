@@ -1,0 +1,4287 @@
+{
+  "meeting": {
+    "meeting_id": "20200707_L_R001S04C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 474,
+    "nonempty_segment_count": 474,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 37000,
+        "end_ms": 40000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是院长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 40000,
+        "end_ms": 42000,
+        "speaker_id": "speaker_2",
+        "text": "零二二我是财务部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 42000,
+        "end_ms": 44000,
+        "speaker_id": "speaker_3",
+        "text": "零二六我是副院长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 44000,
+        "end_ms": 46000,
+        "speaker_id": "speaker_4",
+        "text": "零幺三我是保卫科",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 46000,
+        "end_ms": 47000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是招生办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 47000,
+        "end_ms": 49000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是后勤部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 49000,
+        "end_ms": 52000,
+        "speaker_id": "speaker_7",
+        "text": "零二五我是教务主任",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 52000,
+        "end_ms": 57000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行，咱们今天把各部门儿叫过来，开个咱上半年的总结会议",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 58000,
+        "end_ms": 61000,
+        "speaker_id": "speaker_1",
+        "text": "嗯接下来由咱们这个副院长来主持一下这个会议",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 63000,
+        "end_ms": 70000,
+        "speaker_id": "speaker_3",
+        "text": "好，现在会议开始了啊，这个上半年因为这个疫情的缘故闹的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 71000,
+        "end_ms": 73000,
+        "speaker_id": "speaker_3",
+        "text": "学生都是在家上网课",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 74000,
+        "end_ms": 78000,
+        "speaker_id": "speaker_3",
+        "text": "各个老师也都提议说网课的效果不是很好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 78000,
+        "end_ms": 81000,
+        "speaker_id": "speaker_3",
+        "text": "这个教务主任有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 81000,
+        "end_ms": 84000,
+        "speaker_id": "speaker_3",
+        "text": "建议或者什么方案没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 84000,
+        "end_ms": 87000,
+        "speaker_id": "speaker_7",
+        "text": "啊咱们由于上半年啊都是那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 88000,
+        "end_ms": 90000,
+        "speaker_id": "speaker_7",
+        "text": "在家上的那个网课",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 91000,
+        "end_ms": 92000,
+        "speaker_id": "speaker_7",
+        "text": "然后老师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 93000,
+        "end_ms": 96000,
+        "speaker_id": "speaker_7",
+        "text": "好多就是实验什么的他就进行不下去了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 96000,
+        "end_ms": 100000,
+        "speaker_id": "speaker_7",
+        "text": "咱们下半年的话肯定是不能说再像是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 100000,
+        "end_ms": 107000,
+        "speaker_id": "speaker_7",
+        "text": "上半年一样了，咱们毕竟马上就要开学，然后也要新招生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 107000,
+        "end_ms": 112000,
+        "speaker_id": "speaker_7",
+        "text": "呃现在的话咱们老师这块儿是不缺的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 112000,
+        "end_ms": 117000,
+        "speaker_id": "speaker_7",
+        "text": "然后老师的水平都比较高，学生咱们打算的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 117000,
+        "end_ms": 122000,
+        "speaker_id": "speaker_7",
+        "text": "呃和招生办商量一下咱们下个季度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 122000,
+        "end_ms": 125000,
+        "speaker_id": "speaker_7",
+        "text": "要招新生，咱们政策是怎么样啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 125000,
+        "end_ms": 127000,
+        "speaker_id": "speaker_7",
+        "text": "呃毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 127000,
+        "end_ms": 128000,
+        "speaker_id": "speaker_7",
+        "text": "疫情吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 129000,
+        "end_ms": 136000,
+        "speaker_id": "speaker_7",
+        "text": "咱们这好多人就是考试的话它就会被耽误了咱们要定一个什么样的标准这个是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 136000,
+        "end_ms": 141000,
+        "speaker_id": "speaker_7",
+        "text": "我需要跟招生办商量一下。就可以问一下招生办是怎么想的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 141000,
+        "end_ms": 144000,
+        "speaker_id": "speaker_3",
+        "text": "这个问题先等会儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 144000,
+        "end_ms": 146000,
+        "speaker_id": "speaker_3",
+        "text": "这个先说老师上课的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 147000,
+        "end_ms": 155000,
+        "speaker_id": "speaker_3",
+        "text": "老师这方面上课的问题，考试安排的是什么样子是以网络考试还是下半年返校的考试",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 156000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_7",
+        "text": "是以网络考试为那个标准的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 159000,
+        "end_ms": 160000,
+        "speaker_id": "speaker_7",
+        "text": "咱们就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 161000,
+        "end_ms": 167000,
+        "speaker_id": "speaker_7",
+        "text": "对于一些就是还有一些比较特别重要的科目就是你比如说高数",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 165000,
+        "end_ms": 167000,
+        "speaker_id": "speaker_3",
+        "text": "像专业课吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 167000,
+        "end_ms": 171000,
+        "speaker_id": "speaker_7",
+        "text": "对你像不主要像一些高数一些还有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 171000,
+        "end_ms": 172000,
+        "speaker_id": "speaker_7",
+        "text": "一些就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 172000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_7",
+        "text": "比较呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 174000,
+        "end_ms": 176000,
+        "speaker_id": "speaker_7",
+        "text": "重要的一些科目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 176000,
+        "end_ms": 180000,
+        "speaker_id": "speaker_7",
+        "text": "咱们是需要那个返校以后才能进行考试",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 180000,
+        "end_ms": 184000,
+        "speaker_id": "speaker_7",
+        "text": "因为你像在家的话无法实现考试的条件毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 184000,
+        "end_ms": 186000,
+        "speaker_id": "speaker_7",
+        "text": "很多学呃学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 187000,
+        "end_ms": 189000,
+        "speaker_id": "speaker_7",
+        "text": "可以在网上查阅资料儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 190000,
+        "end_ms": 192000,
+        "speaker_id": "speaker_3",
+        "text": "那英语的四六级是怎么考啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 190000,
+        "end_ms": 191000,
+        "speaker_id": "speaker_6",
+        "text": "那怎么保持",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 192000,
+        "end_ms": 196000,
+        "speaker_id": "speaker_7",
+        "text": "英语四六级按照现在国家政策的话它是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 196000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_7",
+        "text": "这个可以开已经可以开始",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 198000,
+        "end_ms": 200000,
+        "speaker_id": "speaker_7",
+        "text": "就是要报名啦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 199000,
+        "end_ms": 200000,
+        "speaker_id": "speaker_5",
+        "text": "报名",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 200000,
+        "end_ms": 201000,
+        "speaker_id": "speaker_3",
+        "text": "那行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 201000,
+        "end_ms": 204000,
+        "speaker_id": "speaker_3",
+        "text": "这说到学生那儿问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 204000,
+        "end_ms": 208000,
+        "speaker_id": "speaker_3",
+        "text": "这是闹疫情，那咱们闹疫情这财务这儿是怎么弄的呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 208000,
+        "end_ms": 210000,
+        "speaker_id": "speaker_3",
+        "text": "这是学生的费用是怎么退的呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 210000,
+        "end_ms": 211000,
+        "speaker_id": "speaker_3",
+        "text": "还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 211000,
+        "end_ms": 217000,
+        "speaker_id": "speaker_2",
+        "text": "目前咱们学校所收的呃住宿费，还有学费书费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 218000,
+        "end_ms": 224000,
+        "speaker_id": "speaker_2",
+        "text": "嗯目前只有这个住宿费返还了一半，因为我们交了是一年度吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 224000,
+        "end_ms": 231000,
+        "speaker_id": "speaker_2",
+        "text": "他是从上上上的去年的上学那个上半季度开始交了交的是一一一学年的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 231000,
+        "end_ms": 235000,
+        "speaker_id": "speaker_2",
+        "text": "咱们只是把这半这一个学期的住宿费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 235000,
+        "end_ms": 236000,
+        "speaker_id": "speaker_2",
+        "text": "退款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 236000,
+        "end_ms": 237000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 237000,
+        "end_ms": 239000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是因为咱们疫情期间嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 240000,
+        "end_ms": 243000,
+        "speaker_id": "speaker_2",
+        "text": "呃没有学在学校里面没有用到水电",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 244000,
+        "end_ms": 247000,
+        "speaker_id": "speaker_2",
+        "text": "咱们在这方面省了很大一笔经费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 247000,
+        "end_ms": 253000,
+        "speaker_id": "speaker_3",
+        "text": "那在学校疫情期间的上半年，学校的开销都有哪些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 253000,
+        "end_ms": 255000,
+        "speaker_id": "speaker_2",
+        "text": "学校的开销主要就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 255000,
+        "end_ms": 257000,
+        "speaker_id": "speaker_2",
+        "text": "老师们的薪资",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 257000,
+        "end_ms": 259000,
+        "speaker_id": "speaker_2",
+        "text": "还有设备的维修",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 259000,
+        "end_ms": 261000,
+        "speaker_id": "speaker_3",
+        "text": "设备维修哪些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 261000,
+        "end_ms": 264000,
+        "speaker_id": "speaker_2",
+        "text": "比如说空调",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 264000,
+        "end_ms": 266000,
+        "speaker_id": "speaker_2",
+        "text": "这个更新换代",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 266000,
+        "end_ms": 272000,
+        "speaker_id": "speaker_2",
+        "text": "还有咱们这个体育馆内的一些嗯设备的更新还有就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 274000,
+        "end_ms": 280000,
+        "speaker_id": "speaker_2",
+        "text": "职工们教职工们的福利薪水福利",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 279000,
+        "end_ms": 280000,
+        "speaker_id": "speaker_3",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 281000,
+        "end_ms": 287000,
+        "speaker_id": "speaker_3",
+        "text": "那这上半年疫情也没开学，这安保部门儿是怎么安排的？是裁员了还是怎么着了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 287000,
+        "end_ms": 290000,
+        "speaker_id": "speaker_4",
+        "text": "安保部这边儿确实是裁员了，裁了一部分人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 290000,
+        "end_ms": 292000,
+        "speaker_id": "speaker_4",
+        "text": "因为这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 293000,
+        "end_ms": 295000,
+        "speaker_id": "speaker_3",
+        "text": "裁员的人都在家歇着吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 295000,
+        "end_ms": 301000,
+        "speaker_id": "speaker_4",
+        "text": "嗯对，裁员裁员的人就是我们裁掉的这些人，我们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 301000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_4",
+        "text": "他们再往后干什么我们是不清楚的，就是还在职的这些人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 306000,
+        "end_ms": 309000,
+        "speaker_id": "speaker_4",
+        "text": "哦我们是要求他们每天来学校这个值班儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 309000,
+        "end_ms": 310000,
+        "speaker_id": "speaker_4",
+        "text": "啊这个得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 310000,
+        "end_ms": 313000,
+        "speaker_id": "speaker_4",
+        "text": "但是值班儿同时我们要做好这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 313000,
+        "end_ms": 314000,
+        "speaker_id": "speaker_4",
+        "text": "消毒杀菌的工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 314000,
+        "end_ms": 316000,
+        "speaker_id": "speaker_4",
+        "text": "嗯消毒防疫",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 316000,
+        "end_ms": 319000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们本校的场地有外人租用吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 319000,
+        "end_ms": 327000,
+        "speaker_id": "speaker_4",
+        "text": "呃在这个疫情期间是没有呃这个马上临近临近夏季嘛，夏季的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 327000,
+        "end_ms": 330000,
+        "speaker_id": "speaker_4",
+        "text": "呃这个疫情也逐渐趋于平稳，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 330000,
+        "end_ms": 334000,
+        "speaker_id": "speaker_4",
+        "text": "在咱们学校这个篮球场的话也会有大大小",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 334000,
+        "end_ms": 336000,
+        "speaker_id": "speaker_4",
+        "text": "大大小小大概二十场比赛吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 337000,
+        "end_ms": 337000,
+        "speaker_id": "speaker_4",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 338000,
+        "end_ms": 342000,
+        "speaker_id": "speaker_4",
+        "text": "然后做一个比赛就是在这个比赛的同时我们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 342000,
+        "end_ms": 347000,
+        "speaker_id": "speaker_4",
+        "text": "除了参赛队员和教练，我们是不允许有观众入场的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 347000,
+        "end_ms": 360000,
+        "speaker_id": "speaker_4",
+        "text": "因为这个还是防止这个大量人员聚集对对对我们是就是呃不不只允许一小部分人进进场",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 350000,
+        "end_ms": 355000,
+        "speaker_id": "speaker_3",
+        "text": "观众入场一定要做好消毒，还有防护工作，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 360000,
+        "end_ms": 369000,
+        "speaker_id": "speaker_4",
+        "text": "呃然后对对分批进场，然后大概就是三隔隔三个人坐一个，就隔三个座位坐一个人吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 361000,
+        "end_ms": 363000,
+        "speaker_id": "speaker_3",
+        "text": "分批进场吗属于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 369000,
+        "end_ms": 375000,
+        "speaker_id": "speaker_3",
+        "text": "行你地方会不会空的太大了隔三个座位咱们体育场能坐多少人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 374000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_4",
+        "text": "体育场大概能坐两千人左右吧嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 377000,
+        "end_ms": 381000,
+        "speaker_id": "speaker_3",
+        "text": "两千人左右，他们来多少人？几百个人吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 380000,
+        "end_ms": 384000,
+        "speaker_id": "speaker_4",
+        "text": "嗯对来几百个人就是一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 383000,
+        "end_ms": 386000,
+        "speaker_id": "speaker_7",
+        "text": "而且你像咱们学生就会反映就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 387000,
+        "end_ms": 389000,
+        "speaker_id": "speaker_7",
+        "text": "他们篮球场被占了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 389000,
+        "end_ms": 391000,
+        "speaker_id": "speaker_7",
+        "text": "这个问题怎么处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 391000,
+        "end_ms": 393000,
+        "speaker_id": "speaker_4",
+        "text": "你夏夏季放暑假的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 394000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_4",
+        "text": "不会有咱场被占的情况呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 396000,
+        "end_ms": 405000,
+        "speaker_id": "speaker_4",
+        "text": "学生们都在家里对对对这这边儿就要做好登记啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 397000,
+        "end_ms": 404000,
+        "speaker_id": "speaker_3",
+        "text": "这个让安保部门到时候做好，不让外校学生进入本校就行了做好防护工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 405000,
+        "end_ms": 410000,
+        "speaker_id": "speaker_7",
+        "text": "毕竟因为就是咱们开学吗就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 405000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 411000,
+        "end_ms": 412000,
+        "speaker_id": "speaker_7",
+        "text": "也要做好准备就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 412000,
+        "end_ms": 416000,
+        "speaker_id": "speaker_4",
+        "text": "开学开学的话是每个人要去做那个咽拭子的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 417000,
+        "end_ms": 417000,
+        "speaker_id": "speaker_4",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 418000,
+        "end_ms": 425000,
+        "speaker_id": "speaker_2",
+        "text": "咱们咱们是要给这个安保部门还有后勤部的宿管呀还有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 425000,
+        "end_ms": 428000,
+        "speaker_id": "speaker_2",
+        "text": "&楼长&食堂的食堂的这个教职工们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 429000,
+        "end_ms": 430000,
+        "speaker_id": "speaker_2",
+        "text": "配备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 430000,
+        "end_ms": 438000,
+        "speaker_id": "speaker_2",
+        "text": "消毒水口罩儿甚至是防护服对于对于上学这个这学年毕业毕业季学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 433000,
+        "end_ms": 434000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 438000,
+        "end_ms": 442000,
+        "speaker_id": "speaker_2",
+        "text": "他们返校拿毕业证儿这个防御工作咱们要做好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 442000,
+        "end_ms": 445000,
+        "speaker_id": "speaker_4",
+        "text": "就是只要是进学校的学生我们都要去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 445000,
+        "end_ms": 448000,
+        "speaker_id": "speaker_4",
+        "text": "对他们进行这个咽拭子的测定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 448000,
+        "end_ms": 450000,
+        "speaker_id": "speaker_4",
+        "text": "然后隔离一段儿时间，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 450000,
+        "end_ms": 462000,
+        "speaker_id": "speaker_7",
+        "text": "然后我们教务处主任就是对学校进行了调查，就是关于就是在疫情现在还是比较严重的地区是不允许返校的。就已经进行了调查就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 462000,
+        "end_ms": 470000,
+        "speaker_id": "speaker_7",
+        "text": "能够返校的咱们到时候安保和那个后勤做好准备就是提供食物以及嗯对学生进行保护",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 471000,
+        "end_ms": 476000,
+        "speaker_id": "speaker_7",
+        "text": "然后不返校的咱们就是要通过邮寄的方式把毕业证邮寄回去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 476000,
+        "end_ms": 483000,
+        "speaker_id": "speaker_3",
+        "text": "那你们那边儿教务处管的有没有登记表格儿之类的？每个班",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 483000,
+        "end_ms": 489000,
+        "speaker_id": "speaker_3",
+        "text": "是武汉的或者是被隔离的，或者是现在在北京的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 486000,
+        "end_ms": 488000,
+        "speaker_id": "speaker_7",
+        "text": "就是现在咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 488000,
+        "end_ms": 493000,
+        "speaker_id": "speaker_7",
+        "text": "因为咱们学校就是在疫情期间就是每天都需要进行打卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 493000,
+        "end_ms": 500000,
+        "speaker_id": "speaker_7",
+        "text": "然后等到就是咱们要是想返校的话，需要提前一周进行报备。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 500000,
+        "end_ms": 507000,
+        "speaker_id": "speaker_3",
+        "text": "暑期还要进行打卡嘛打卡的方式是怎么进行的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 502000,
+        "end_ms": 503000,
+        "speaker_id": "speaker_7",
+        "text": "需要打卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 504000,
+        "end_ms": 507000,
+        "speaker_id": "speaker_7",
+        "text": "就是通过咱们学校自己的一个APP",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 508000,
+        "end_ms": 510000,
+        "speaker_id": "speaker_3",
+        "text": "你都多长时间打一次卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 510000,
+        "end_ms": 513000,
+        "speaker_id": "speaker_7",
+        "text": "打一次卡大概就只需要一分钟左右",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 514000,
+        "end_ms": 515000,
+        "speaker_id": "speaker_2",
+        "text": "每天都要打卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 514000,
+        "end_ms": 515000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 515000,
+        "end_ms": 517000,
+        "speaker_id": "speaker_3",
+        "text": "每天都要打卡吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 517000,
+        "end_ms": 517000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 517000,
+        "end_ms": 523000,
+        "speaker_id": "speaker_6",
+        "text": "报备一下儿自己要去的地方儿去哪儿些地方接触了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 523000,
+        "end_ms": 528000,
+        "speaker_id": "speaker_7",
+        "text": "如果去就是所在地方发生变化也是需要报备的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 523000,
+        "end_ms": 528000,
+        "speaker_id": "speaker_6",
+        "text": "呃接触了哪些人哪些地方是不是对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 527000,
+        "end_ms": 528000,
+        "speaker_id": "speaker_3",
+        "text": "噢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 528000,
+        "end_ms": 534000,
+        "speaker_id": "speaker_3",
+        "text": "这个那你到时候给下边儿导员儿再通知一下班长，让他们做统计吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 534000,
+        "end_ms": 538000,
+        "speaker_id": "speaker_3",
+        "text": "然后再做成报表，然后每天上报，然后你看一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 538000,
+        "end_ms": 541000,
+        "speaker_id": "speaker_3",
+        "text": "哪些需要处理的你处理一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 541000,
+        "end_ms": 545000,
+        "speaker_id": "speaker_3",
+        "text": "然后还有上半年这个食堂问题是怎么说的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 546000,
+        "end_ms": 550000,
+        "speaker_id": "speaker_6",
+        "text": "呃因为这个疫情呃我们学校不是没有开学嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 550000,
+        "end_ms": 556000,
+        "speaker_id": "speaker_6",
+        "text": "呃这个食堂这些教职工呃租的这些地方就空闲下来了因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 556000,
+        "end_ms": 558000,
+        "speaker_id": "speaker_6",
+        "text": "呃没有人在学校嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 558000,
+        "end_ms": 562000,
+        "speaker_id": "speaker_6",
+        "text": "但是这个卫生啊呃需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 562000,
+        "end_ms": 564000,
+        "speaker_id": "speaker_6",
+        "text": "时呃隔一段儿时间去打扫一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 564000,
+        "end_ms": 567000,
+        "speaker_id": "speaker_5",
+        "text": "改进消毒这一项吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 564000,
+        "end_ms": 568000,
+        "speaker_id": "speaker_6",
+        "text": "因为呃呃消毒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 569000,
+        "end_ms": 574000,
+        "speaker_id": "speaker_6",
+        "text": "去的话有人去的话肯定是需要消毒的，就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 571000,
+        "end_ms": 576000,
+        "speaker_id": "speaker_7",
+        "text": "咱们有的老师是需要那个返校消毒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 574000,
+        "end_ms": 581000,
+        "speaker_id": "speaker_6",
+        "text": "对呃对是有学校学校里有时候呃要安排人去呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 582000,
+        "end_ms": 589000,
+        "speaker_id": "speaker_6",
+        "text": "检检查一下儿嘛呃所以就需要去咱们那个食堂里面呃食堂里面需要的人不太多，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 589000,
+        "end_ms": 593000,
+        "speaker_id": "speaker_6",
+        "text": "呃但是隔一段儿时间就需要去打扫一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 595000,
+        "end_ms": 603000,
+        "speaker_id": "speaker_6",
+        "text": "嗯因为咱们疫情期间呃学生都不在学校，呃食堂开设的比较那个窗口儿比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 603000,
+        "end_ms": 617000,
+        "speaker_id": "speaker_6",
+        "text": "嗯对但是有有老师需要去就餐但是开设的窗口儿比较少所以咱们学校呃上半年这个食堂的收入就呃变得并不可观",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 603000,
+        "end_ms": 606000,
+        "speaker_id": "speaker_7",
+        "text": "里面有些老师还是需要就餐的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 615000,
+        "end_ms": 617000,
+        "speaker_id": "speaker_3",
+        "text": "有裁员吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 617000,
+        "end_ms": 620000,
+        "speaker_id": "speaker_6",
+        "text": "对，有就只开设了三个窗口",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 621000,
+        "end_ms": 622000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 621000,
+        "end_ms": 626000,
+        "speaker_id": "speaker_3",
+        "text": "咱们这个食堂是以什么形式来运营的呀是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 626000,
+        "end_ms": 631000,
+        "speaker_id": "speaker_3",
+        "text": "属于他们外边儿租赁的食堂承包的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 628000,
+        "end_ms": 634000,
+        "speaker_id": "speaker_6",
+        "text": "外面承包对对外面承包了咱们承包咱们食堂那个窗口儿。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 634000,
+        "end_ms": 637000,
+        "speaker_id": "speaker_3",
+        "text": "这教职工餐厅是怎么安排",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 636000,
+        "end_ms": 640000,
+        "speaker_id": "speaker_5",
+        "text": "我想问一下那承包的这些租户，他们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 638000,
+        "end_ms": 641000,
+        "speaker_id": "speaker_7",
+        "text": "教职工的话是和他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 640000,
+        "end_ms": 647000,
+        "speaker_id": "speaker_5",
+        "text": "住在学校里专门的宿舍吗？还是他们住在学校外面每天都要进出学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 647000,
+        "end_ms": 651000,
+        "speaker_id": "speaker_6",
+        "text": "因为呃疫情期间不是每天都需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 651000,
+        "end_ms": 656000,
+        "speaker_id": "speaker_6",
+        "text": "呃老师们过来过来学校的，就是有一些事情安排的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 656000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_6",
+        "text": "嗯就需要来一趟所以呃咱们老师是不在学校住的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 661000,
+        "end_ms": 663000,
+        "speaker_id": "speaker_3",
+        "text": "会有没有那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 662000,
+        "end_ms": 666000,
+        "speaker_id": "speaker_7",
+        "text": "对那学生的话就是在宾馆进行隔离",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 663000,
+        "end_ms": 665000,
+        "speaker_id": "speaker_5",
+        "text": "食堂的那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 666000,
+        "end_ms": 674000,
+        "speaker_id": "speaker_3",
+        "text": "有没有那种就是在本地的，但是也没有自己的房子，也不在外边儿住，就属于一直住在教职工宿舍的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 674000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_7",
+        "text": "都会那个什么就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 675000,
+        "end_ms": 685000,
+        "speaker_id": "speaker_6",
+        "text": "这个咱们开始都跟老师协商过，呃可以有自愿自愿想要住在教职工宿舍的，也有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 685000,
+        "end_ms": 687000,
+        "speaker_id": "speaker_6",
+        "text": "也有咱们学校的老师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 687000,
+        "end_ms": 692000,
+        "speaker_id": "speaker_3",
+        "text": "那他这个教职工宿舍的费用跟学生宿舍的费用差距大吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 692000,
+        "end_ms": 693000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 692000,
+        "end_ms": 698000,
+        "speaker_id": "speaker_7",
+        "text": "你像教职工的话呃他们的费用基本上是没有的因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 697000,
+        "end_ms": 703000,
+        "speaker_id": "speaker_1",
+        "text": "那上半年咱们学校已经提前收了学生这个费了这一块儿怎么处理的这一块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 703000,
+        "end_ms": 709000,
+        "speaker_id": "speaker_3",
+        "text": "这一块儿刚才财务部儿这边儿说已经退掉一半儿的住宿费了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 707000,
+        "end_ms": 709000,
+        "speaker_id": "speaker_2",
+        "text": "退掉一半的学那个住宿费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 709000,
+        "end_ms": 710000,
+        "speaker_id": "speaker_1",
+        "text": "退掉一半儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 709000,
+        "end_ms": 714000,
+        "speaker_id": "speaker_2",
+        "text": "书费是不用退的因为咱是邮寄的话学费的话也是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 714000,
+        "end_ms": 718000,
+        "speaker_id": "speaker_2",
+        "text": "补学费也是不用退因为采取的是线上上课",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 717000,
+        "end_ms": 718000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 718000,
+        "end_ms": 727000,
+        "speaker_id": "speaker_2",
+        "text": "他们课时没有没有少对住宿费退一半儿因为这这这学年这半年这个这半个学学年没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 719000,
+        "end_ms": 722000,
+        "speaker_id": "speaker_1",
+        "text": "那个住宿费退一半儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 728000,
+        "end_ms": 736000,
+        "speaker_id": "speaker_2",
+        "text": "没有没有那个学生来住有反馈啊一开始的时候儿他们最开始的时候是他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 729000,
+        "end_ms": 732000,
+        "speaker_id": "speaker_1",
+        "text": "那学生对这块儿有反馈吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 736000,
+        "end_ms": 737000,
+        "speaker_id": "speaker_2",
+        "text": "要求的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 738000,
+        "end_ms": 742000,
+        "speaker_id": "speaker_3",
+        "text": "要求要全退好像是嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 739000,
+        "end_ms": 743000,
+        "speaker_id": "speaker_2",
+        "text": "要求要全退最后我们也就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 743000,
+        "end_ms": 744000,
+        "speaker_id": "speaker_2",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 745000,
+        "end_ms": 751000,
+        "speaker_id": "speaker_2",
+        "text": "认为是合情合理的我们就所以我们就退换嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 746000,
+        "end_ms": 750000,
+        "speaker_id": "speaker_7",
+        "text": "对相关政策也都是关于退费这块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 752000,
+        "end_ms": 756000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是老师们的薪资问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 756000,
+        "end_ms": 758000,
+        "speaker_id": "speaker_3",
+        "text": "也会正常给的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 757000,
+        "end_ms": 761000,
+        "speaker_id": "speaker_2",
+        "text": "由于由于这个这半年咱们没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 761000,
+        "end_ms": 769000,
+        "speaker_id": "speaker_7",
+        "text": "那个不用设备不用那个不用教室不用任何的设备所以水电省下来了很多的经费咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 769000,
+        "end_ms": 770000,
+        "speaker_id": "speaker_7",
+        "text": "可以在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 771000,
+        "end_ms": 771000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 772000,
+        "end_ms": 778000,
+        "speaker_id": "speaker_2",
+        "text": "用来用这些经费来加那个增加一些嗯教学质量吧就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 775000,
+        "end_ms": 776000,
+        "speaker_id": "speaker_3",
+        "text": "教学质量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 778000,
+        "end_ms": 782000,
+        "speaker_id": "speaker_2",
+        "text": "教学设备或者说是环境上的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 779000,
+        "end_ms": 780000,
+        "speaker_id": "speaker_3",
+        "text": "噢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 782000,
+        "end_ms": 783000,
+        "speaker_id": "speaker_2",
+        "text": "改变",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 782000,
+        "end_ms": 783000,
+        "speaker_id": "speaker_3",
+        "text": "改变",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 783000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_7",
+        "text": "对但是像现在咱们的老师他们的任务分为两个，一个是授课，还有一个是做自己的项目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 791000,
+        "end_ms": 797000,
+        "speaker_id": "speaker_7",
+        "text": "呃这个方面的话就是项目儿方面的话是就是我们能做的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 797000,
+        "end_ms": 805000,
+        "speaker_id": "speaker_7",
+        "text": "接下来进行房租啊然后在薪资方面的话就是网上进行网上教课老师可能会更加辛苦一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 806000,
+        "end_ms": 811000,
+        "speaker_id": "speaker_7",
+        "text": "因为长期盯着电脑所以说咱们学校的话呃财务部是可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 812000,
+        "end_ms": 819000,
+        "speaker_id": "speaker_7",
+        "text": "就是按就因为省下来的这一笔钱可以进行对老师的一些呃帮助吧就相当于是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 820000,
+        "end_ms": 825000,
+        "speaker_id": "speaker_7",
+        "text": "呃对算是补贴",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 820000,
+        "end_ms": 822000,
+        "speaker_id": "speaker_4",
+        "text": "是补贴之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 822000,
+        "end_ms": 823000,
+        "speaker_id": "speaker_3",
+        "text": "算是补贴是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 825000,
+        "end_ms": 829000,
+        "speaker_id": "speaker_3",
+        "text": "有没有就属于那种过节之类的给老师发一些东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 829000,
+        "end_ms": 838000,
+        "speaker_id": "speaker_7",
+        "text": "这个是咱们学校传统的，对，因为咱们需要通知公告嘛，所以说这个平台也是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 831000,
+        "end_ms": 832000,
+        "speaker_id": "speaker_3",
+        "text": "传统都要发",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 836000,
+        "end_ms": 838000,
+        "speaker_id": "speaker_2",
+        "text": "这个经费没有很多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 838000,
+        "end_ms": 841000,
+        "speaker_id": "speaker_3",
+        "text": "这个经费这个后勤部儿一般都会送一些什么东西呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 843000,
+        "end_ms": 857000,
+        "speaker_id": "speaker_6",
+        "text": "啊就是像过节的话就是送一些应应节的一些产品，就比如月饼啊或者送一些粽子啊，然后过年的话会送一些呃油啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 850000,
+        "end_ms": 851000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 857000,
+        "end_ms": 864000,
+        "speaker_id": "speaker_6",
+        "text": "这些这些还有饮料啊什么让那个呃教教职工们都拿回家嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 864000,
+        "end_ms": 871000,
+        "speaker_id": "speaker_7",
+        "text": "像平时的话，咱们教师是在学校就餐的，价钱的话也是比学生要低很多的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 871000,
+        "end_ms": 874000,
+        "speaker_id": "speaker_3",
+        "text": "那这个学校就餐是属于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 874000,
+        "end_ms": 879000,
+        "speaker_id": "speaker_3",
+        "text": "充卡里边儿还是直接用微信支付宝或者现金支付啊？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 879000,
+        "end_ms": 889000,
+        "speaker_id": "speaker_7",
+        "text": "现金的话不太好吧，我觉得现在现金对对对都是用一卡通",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 881000,
+        "end_ms": 886000,
+        "speaker_id": "speaker_5",
+        "text": "现在现金其实不太卫生对大部分都是手机吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 883000,
+        "end_ms": 888000,
+        "speaker_id": "speaker_3",
+        "text": "现金用的比较少了是吧？都是用手机支付",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 889000,
+        "end_ms": 891000,
+        "speaker_id": "speaker_7",
+        "text": "因为老师也会配备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 891000,
+        "end_ms": 892000,
+        "speaker_id": "speaker_7",
+        "text": "自己的卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 893000,
+        "end_ms": 903000,
+        "speaker_id": "speaker_6",
+        "text": "对，咱学校是属于呃两个方法，一个就是一卡通教职工和学生都有的然后就是可以微信",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 900000,
+        "end_ms": 901000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 904000,
+        "end_ms": 906000,
+        "speaker_id": "speaker_3",
+        "text": "这个学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 907000,
+        "end_ms": 908000,
+        "speaker_id": "speaker_3",
+        "text": "都是独立卫浴吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 909000,
+        "end_ms": 916000,
+        "speaker_id": "speaker_6",
+        "text": "咱们宿舍这方面的话其实呃其实是环境是比较好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 916000,
+        "end_ms": 922000,
+        "speaker_id": "speaker_6",
+        "text": "呃配备着配都是独立卫生间，然后安装着空调",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 922000,
+        "end_ms": 927000,
+        "speaker_id": "speaker_6",
+        "text": "嗯这一段儿时间是完善了一下，因为呃设备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 927000,
+        "end_ms": 930000,
+        "speaker_id": "speaker_6",
+        "text": "不是半年都宿舍空闲下来嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 930000,
+        "end_ms": 943000,
+        "speaker_id": "speaker_6",
+        "text": "呃这与如果下半年要要如果下半年要开学的话，嗯我建议咱们这边儿是检查一下那些设备是否有损坏，或者呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 943000,
+        "end_ms": 949000,
+        "speaker_id": "speaker_6",
+        "text": "放的那些腐坏了，电路啊什么，嗯需要去检查一下。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 946000,
+        "end_ms": 952000,
+        "speaker_id": "speaker_3",
+        "text": "行那你这些到时候给财务部报一下儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 946000,
+        "end_ms": 949000,
+        "speaker_id": "speaker_7",
+        "text": "现在就有学生反映就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 952000,
+        "end_ms": 959000,
+        "speaker_id": "speaker_5",
+        "text": "也说到这个下半年，因为上半年一直没有开学，然后下半年咱们要迎来新的那个招生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 952000,
+        "end_ms": 953000,
+        "speaker_id": "speaker_6",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 959000,
+        "end_ms": 964000,
+        "speaker_id": "speaker_5",
+        "text": "然后因为毕竟现在也高考了嘛，等到九月份会有一批新的同学然后来我们的学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 965000,
+        "end_ms": 970000,
+        "speaker_id": "speaker_5",
+        "text": "然后我现在就觉得是我们应该去财务那里抽一部分钱，然后把大部分放在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 970000,
+        "end_ms": 974000,
+        "speaker_id": "speaker_5",
+        "text": "招生宣传和招生咨询上面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 973000,
+        "end_ms": 974000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 974000,
+        "end_ms": 976000,
+        "speaker_id": "speaker_2",
+        "text": "嗯没有问题嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 974000,
+        "end_ms": 976000,
+        "speaker_id": "speaker_5",
+        "text": "宣传一下我们学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 975000,
+        "end_ms": 981000,
+        "speaker_id": "speaker_3",
+        "text": "嗯行这个你到时候拟一个方案你给他报一下儿，或者你现在有什么想法你也可以说一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 981000,
+        "end_ms": 988000,
+        "speaker_id": "speaker_5",
+        "text": "想法就是先嗯首先咱们那个宣传海报上一定要咱们学校的首先是咱们的硬件",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 988000,
+        "end_ms": 998000,
+        "speaker_id": "speaker_5",
+        "text": "硬件设施，因为现在很多其实很多学校并不是说都配有空调，咱们学校既然有这个硬件的话，就可以先说出来，然后就是咱们学校的教育",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 993000,
+        "end_ms": 993000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 998000,
+        "end_ms": 999000,
+        "speaker_id": "speaker_5",
+        "text": "然后各种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1000000,
+        "end_ms": 1002000,
+        "speaker_id": "speaker_5",
+        "text": "嗯各种细节安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1002000,
+        "end_ms": 1008000,
+        "speaker_id": "speaker_5",
+        "text": "然后绿化然后食堂，然后咱们的对对对这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1005000,
+        "end_ms": 1006000,
+        "speaker_id": "speaker_2",
+        "text": "就业就业率",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1007000,
+        "end_ms": 1013000,
+        "speaker_id": "speaker_7",
+        "text": "你想咱们学生反映的就业以及各种什么条件的话都是比较好的反映",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1013000,
+        "end_ms": 1022000,
+        "speaker_id": "speaker_3",
+        "text": "那有的男生他比较关心宿舍会不会停电问题，或者是能否使用像电饭煲之类的东西怎么处理呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1022000,
+        "end_ms": 1022000,
+        "speaker_id": "speaker_7",
+        "text": "就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1022000,
+        "end_ms": 1027000,
+        "speaker_id": "speaker_5",
+        "text": "这个其实为了安全还是不建议大家去使用这些大功率的电器",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1022000,
+        "end_ms": 1023000,
+        "speaker_id": "speaker_6",
+        "text": "这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1024000,
+        "end_ms": 1026000,
+        "speaker_id": "speaker_6",
+        "text": "这个后勤其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1027000,
+        "end_ms": 1034000,
+        "speaker_id": "speaker_6",
+        "text": "对不建议使用为了避免发生一些什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1028000,
+        "end_ms": 1029000,
+        "speaker_id": "speaker_7",
+        "text": "是已经就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1031000,
+        "end_ms": 1033000,
+        "speaker_id": "speaker_5",
+        "text": "火灾啥的对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1032000,
+        "end_ms": 1033000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1034000,
+        "end_ms": 1036000,
+        "speaker_id": "speaker_3",
+        "text": "那每栋楼层上边儿都会放",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1037000,
+        "end_ms": 1038000,
+        "speaker_id": "speaker_3",
+        "text": "灭火器吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1037000,
+        "end_ms": 1041000,
+        "speaker_id": "speaker_5",
+        "text": "消防栓对灭火灭火器",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1039000,
+        "end_ms": 1042000,
+        "speaker_id": "speaker_4",
+        "text": "对会放这个每栋楼",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1039000,
+        "end_ms": 1040000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1041000,
+        "end_ms": 1044000,
+        "speaker_id": "speaker_6",
+        "text": "每栋楼层都会放置三个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1044000,
+        "end_ms": 1054000,
+        "speaker_id": "speaker_6",
+        "text": "呃灭火器地点我们每一届都会培训那个消防演练这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1045000,
+        "end_ms": 1057000,
+        "speaker_id": "speaker_5",
+        "text": "等到新的一批学生开学之后我们会和安保这边儿会对安保这边儿要进行消防演练提前看看还能不能使用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1054000,
+        "end_ms": 1060000,
+        "speaker_id": "speaker_7",
+        "text": "对我们和他们也会有合作就是安排学生进行呃消防演习",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1060000,
+        "end_ms": 1068000,
+        "speaker_id": "speaker_3",
+        "text": "这个也让教导主任到时候儿去推广一下儿咱们学校之类的社团活动啊，也可以拉学生的兴趣或者什么学生部门儿啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1069000,
+        "end_ms": 1071000,
+        "speaker_id": "speaker_3",
+        "text": "组织一下这方面的活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1069000,
+        "end_ms": 1086000,
+        "speaker_id": "speaker_7",
+        "text": "这个这个的话就是就需要咱们就是进行宣传好。因为每年都会在开学的就是招完新生以后，咱们就会持续举办，举办一些活动，来介绍我们介绍我们社团以及学生啊组织",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1075000,
+        "end_ms": 1076000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1086000,
+        "end_ms": 1086000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1086000,
+        "end_ms": 1098000,
+        "speaker_id": "speaker_7",
+        "text": "然后咱们可以有很多选择嘛可以进行什么志愿者活动还有进行就是科科协活动就是相当于创新创业之类的咱们学校对于这方面力度还是比较大的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1099000,
+        "end_ms": 1109000,
+        "speaker_id": "speaker_5",
+        "text": "这些宣传这些可以把它放在咱们学校的官网上面，比如想报考的学生，他们可以点开网站，就能直接全全面的了解，直观的了解咱们学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1102000,
+        "end_ms": 1104000,
+        "speaker_id": "speaker_7",
+        "text": "对你看招生办的话也是可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1109000,
+        "end_ms": 1113000,
+        "speaker_id": "speaker_3",
+        "text": "行那宣传这方面财务这边儿有什么经济需要吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1115000,
+        "end_ms": 1118000,
+        "speaker_id": "speaker_2",
+        "text": "我是管财务的我没有什么经济需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1118000,
+        "end_ms": 1120000,
+        "speaker_id": "speaker_3",
+        "text": "经济预算之类的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1119000,
+        "end_ms": 1127000,
+        "speaker_id": "speaker_2",
+        "text": "这边有经济预算就是需要各部门嗯有没有什么计划，大概需要多少钱我拨给你们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1127000,
+        "end_ms": 1131000,
+        "speaker_id": "speaker_3",
+        "text": "哦主要是招生办这边儿问他这边需要大概多少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1130000,
+        "end_ms": 1133000,
+        "speaker_id": "speaker_5",
+        "text": "等我会这边儿做出来，具体的计划就是会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1131000,
+        "end_ms": 1132000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1133000,
+        "end_ms": 1140000,
+        "speaker_id": "speaker_5",
+        "text": "向财务这边儿申请预算",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1135000,
+        "end_ms": 1138000,
+        "speaker_id": "speaker_3",
+        "text": "等他给你报报备嗯，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1136000,
+        "end_ms": 1142000,
+        "speaker_id": "speaker_7",
+        "text": "对然后我们这些收费的话也可以向你进行一个统计啊对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1137000,
+        "end_ms": 1138000,
+        "speaker_id": "speaker_2",
+        "text": "好的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1140000,
+        "end_ms": 1144000,
+        "speaker_id": "speaker_6",
+        "text": "像后勤这边的话就是宿舍需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1144000,
+        "end_ms": 1147000,
+        "speaker_id": "speaker_6",
+        "text": "嗯需要重视一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1145000,
+        "end_ms": 1147000,
+        "speaker_id": "speaker_5",
+        "text": "重新检修一下吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1147000,
+        "end_ms": 1150000,
+        "speaker_id": "speaker_7",
+        "text": "对你像很多学生反映咱们宿舍",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1148000,
+        "end_ms": 1156000,
+        "speaker_id": "speaker_3",
+        "text": "嗯这个校长信箱里头都塞的宿舍热水忽冷忽热的这是怎么处理的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1156000,
+        "end_ms": 1163000,
+        "speaker_id": "speaker_6",
+        "text": "这个是呃宿舍水压的问题，嗯这个需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1163000,
+        "end_ms": 1164000,
+        "speaker_id": "speaker_3",
+        "text": "二次加压吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1165000,
+        "end_ms": 1173000,
+        "speaker_id": "speaker_6",
+        "text": "嗯这个这个是宿舍肯定会出现的问题，这个不是咱们硬件设施的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1170000,
+        "end_ms": 1171000,
+        "speaker_id": "speaker_3",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1174000,
+        "end_ms": 1178000,
+        "speaker_id": "speaker_3",
+        "text": "那会不会在顶楼的学生给他们安点儿太阳能之类的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1179000,
+        "end_ms": 1181000,
+        "speaker_id": "speaker_3",
+        "text": "如果顶楼供水它不足的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1181000,
+        "end_ms": 1188000,
+        "speaker_id": "speaker_6",
+        "text": "这个问题其实呃发生的时间少，就呃如果太多就是太多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1188000,
+        "end_ms": 1190000,
+        "speaker_id": "speaker_6",
+        "text": "太多人嗯同时用的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1189000,
+        "end_ms": 1191000,
+        "speaker_id": "speaker_4",
+        "text": "使用高峰期的时候出现",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1190000,
+        "end_ms": 1193000,
+        "speaker_id": "speaker_7",
+        "text": "学生反映这个问题其实就比较少的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1193000,
+        "end_ms": 1199000,
+        "speaker_id": "speaker_5",
+        "text": "高峰期的时候可以自在楼顶上安装一个为了让同学们使用就是更加方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1199000,
+        "end_ms": 1205000,
+        "speaker_id": "speaker_3",
+        "text": "行那这个宣传主要还有校园环境嘛，咱得用航拍仪航拍一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1205000,
+        "end_ms": 1213000,
+        "speaker_id": "speaker_3",
+        "text": "这个安保部门儿这个还有跟后勤部门儿这个怎么处理校园环境啊有什么绿化方面之类的或者什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1215000,
+        "end_ms": 1219000,
+        "speaker_id": "speaker_4",
+        "text": "啊安保这边儿就是一个是会对定期的对这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1220000,
+        "end_ms": 1223000,
+        "speaker_id": "speaker_4",
+        "text": "校园内的一些设施检查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1223000,
+        "end_ms": 1231000,
+        "speaker_id": "speaker_4",
+        "text": "航拍这边儿的话，就是咱们有这个专门儿无人机呃无人机去拍学校的这个的全景",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1227000,
+        "end_ms": 1228000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1231000,
+        "end_ms": 1232000,
+        "speaker_id": "speaker_4",
+        "text": "嗯然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1232000,
+        "end_ms": 1250000,
+        "speaker_id": "speaker_5",
+        "text": "许多许多咨询咱们学校的学生现在就开始问，因为今年疫情原因，然后咱们开学之后，这些新生会不会有军训这个问题咱们是不是应该讨论一下军训有吗这人员聚集不会太大吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1243000,
+        "end_ms": 1249000,
+        "speaker_id": "speaker_7",
+        "text": "这里的军训是需要军训的因为这个是国家必须的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1243000,
+        "end_ms": 1247000,
+        "speaker_id": "speaker_3",
+        "text": "军训这方面肯定需要军训",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1250000,
+        "end_ms": 1256000,
+        "speaker_id": "speaker_6",
+        "text": "我们可以考虑一下儿军训的时间，可以开学之后放在这个学期末",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1256000,
+        "end_ms": 1257000,
+        "speaker_id": "speaker_6",
+        "text": "或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1256000,
+        "end_ms": 1264000,
+        "speaker_id": "speaker_7",
+        "text": "诶你像现在有就是就将军训往后推迟的这种案例咱们学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1263000,
+        "end_ms": 1266000,
+        "speaker_id": "speaker_5",
+        "text": "推迟是吧就没有取消，但是推迟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1265000,
+        "end_ms": 1269000,
+        "speaker_id": "speaker_7",
+        "text": "对但是军训军训这个是国家规定的必须要参加的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1266000,
+        "end_ms": 1267000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1270000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_5",
+        "text": "好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1272000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_3",
+        "text": "那招生办这方面如果要军训的话，有什么吸引的活动之类的可以吸引学生，就是他们毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1280000,
+        "end_ms": 1282000,
+        "speaker_id": "speaker_3",
+        "text": "有的学生都比较恐惧军训嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1282000,
+        "end_ms": 1287000,
+        "speaker_id": "speaker_7",
+        "text": "像学生向我反映，就是在军训的时候他们教官给买了西瓜",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1287000,
+        "end_ms": 1293000,
+        "speaker_id": "speaker_7",
+        "text": "啊这个行为的话是会特别受到学生呃喜爱然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1293000,
+        "end_ms": 1296000,
+        "speaker_id": "speaker_7",
+        "text": "然后这个招生办咱可以宣传一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1295000,
+        "end_ms": 1304000,
+        "speaker_id": "speaker_5",
+        "text": "如果学生对这方面有反馈，肯定会跟那些教官提前都说好，对也不要说是为了军训而军训，应该在训练的过程中",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1299000,
+        "end_ms": 1300000,
+        "speaker_id": "speaker_7",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1304000,
+        "end_ms": 1313000,
+        "speaker_id": "speaker_4",
+        "text": "增加这个就是本来大家都是刚来嘛就在军训过程中对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1308000,
+        "end_ms": 1314000,
+        "speaker_id": "speaker_5",
+        "text": "对呀让关系更融洽一点，多认识一些朋友，熟悉这个班级，熟悉这个大环境",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1313000,
+        "end_ms": 1318000,
+        "speaker_id": "speaker_7",
+        "text": "对对咱们同样也是军训的目的嘛就是为了就是锻炼他的意识力",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1318000,
+        "end_ms": 1319000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1318000,
+        "end_ms": 1328000,
+        "speaker_id": "speaker_7",
+        "text": "这个方面的话，咱们是必须要做到最好的，因为对于对于学生来说，咱们要招收的是品质优良的学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1328000,
+        "end_ms": 1339000,
+        "speaker_id": "speaker_7",
+        "text": "对于那些吊儿郎当的，咱们也是需要管理的，这就需要咱们招生办的话，咱们政策上就是对于一些条件，咱是要要有一个硬性规定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1340000,
+        "end_ms": 1343000,
+        "speaker_id": "speaker_3",
+        "text": "那你这个教务处这儿招教官是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1343000,
+        "end_ms": 1349000,
+        "speaker_id": "speaker_3",
+        "text": "从学校军校儿里头招呢还是从军区里面招呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1346000,
+        "end_ms": 1358000,
+        "speaker_id": "speaker_7",
+        "text": "咱们学校的话咱们学校的话国防生的话其实现在基本没有国防生了所以说咱们的教官只能是去就是咱们城市里的那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1356000,
+        "end_ms": 1357000,
+        "speaker_id": "speaker_3",
+        "text": "外聘吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1358000,
+        "end_ms": 1363000,
+        "speaker_id": "speaker_7",
+        "text": "就是你像消防消防队的他们的队员也会就是作为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1363000,
+        "end_ms": 1366000,
+        "speaker_id": "speaker_7",
+        "text": "教官来参与到咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1364000,
+        "end_ms": 1368000,
+        "speaker_id": "speaker_4",
+        "text": "也可以招一些这个当届的退伍兵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1368000,
+        "end_ms": 1369000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1369000,
+        "end_ms": 1371000,
+        "speaker_id": "speaker_3",
+        "text": "有经验的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1371000,
+        "end_ms": 1372000,
+        "speaker_id": "speaker_7",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1371000,
+        "end_ms": 1376000,
+        "speaker_id": "speaker_4",
+        "text": "退伍兵的话也他们也有的也愿意来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1376000,
+        "end_ms": 1381000,
+        "speaker_id": "speaker_7",
+        "text": "对你像网上反馈很好的那些什么帅气的小哥哥做教官的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1381000,
+        "end_ms": 1395000,
+        "speaker_id": "speaker_7",
+        "text": "他也是非常有气质不不咱们主要招收的还是青年教官因为他需要跟上我们学校的一个节奏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1382000,
+        "end_ms": 1390000,
+        "speaker_id": "speaker_3",
+        "text": "那如果退伍兵会不会如果年龄比较大的话，比方说像三十多岁会没有共同话题之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1395000,
+        "end_ms": 1397000,
+        "speaker_id": "speaker_4",
+        "text": "咱们招",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1395000,
+        "end_ms": 1400000,
+        "speaker_id": "speaker_3",
+        "text": "那他青年教官会不会没有经验呢，相对于老兵来说经验较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1400000,
+        "end_ms": 1404000,
+        "speaker_id": "speaker_4",
+        "text": "主要招的是这种当就是当届的退伍兵嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1404000,
+        "end_ms": 1407000,
+        "speaker_id": "speaker_4",
+        "text": "就比如说他是士官或者什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1407000,
+        "end_ms": 1408000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1407000,
+        "end_ms": 1411000,
+        "speaker_id": "speaker_4",
+        "text": "就是当届的退伍回来的一些士兵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1412000,
+        "end_ms": 1415000,
+        "speaker_id": "speaker_1",
+        "text": "嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1412000,
+        "end_ms": 1419000,
+        "speaker_id": "speaker_4",
+        "text": "就是都符合要求，又就是岁数儿又没有那么大，就是也能比较有经验的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1420000,
+        "end_ms": 1429000,
+        "speaker_id": "speaker_2",
+        "text": "我现在需要这个招生办最终确定了这个最后招生，最终招生的人数儿还要提前向他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1429000,
+        "end_ms": 1434000,
+        "speaker_id": "speaker_2",
+        "text": "查询他们的身高体重就是穿衣服的嗯尺寸号码儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1434000,
+        "end_ms": 1445000,
+        "speaker_id": "speaker_2",
+        "text": "我需要提前在他们开学之前就向这个服装生产厂家制定制定这个军训的服装",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1441000,
+        "end_ms": 1444000,
+        "speaker_id": "speaker_5",
+        "text": "制定军训的服装吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1443000,
+        "end_ms": 1453000,
+        "speaker_id": "speaker_3",
+        "text": "行这个到时候你和那个什么部儿和厂家联系一下对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1449000,
+        "end_ms": 1453000,
+        "speaker_id": "speaker_2",
+        "text": "和这个招生办招生办这个先协商好这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1453000,
+        "end_ms": 1458000,
+        "speaker_id": "speaker_7",
+        "text": "要好名单然后我再向这个服装生产厂家",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1458000,
+        "end_ms": 1461000,
+        "speaker_id": "speaker_3",
+        "text": "也可以看看招的是什么军官",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1461000,
+        "end_ms": 1466000,
+        "speaker_id": "speaker_3",
+        "text": "海军呀空军啊一般这陆军训练的比较多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1461000,
+        "end_ms": 1462000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1466000,
+        "end_ms": 1473000,
+        "speaker_id": "speaker_3",
+        "text": "也可以整点儿新颖的招一些海军空军，因为海军和空军的衣服也比较好看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1466000,
+        "end_ms": 1467000,
+        "speaker_id": "speaker_4",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1470000,
+        "end_ms": 1473000,
+        "speaker_id": "speaker_2",
+        "text": "因为海军和空军的衣服也比较好看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1471000,
+        "end_ms": 1479000,
+        "speaker_id": "speaker_7",
+        "text": "这个的话咱呃主要还是陆军吧因为咱们的这个财务可能就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1480000,
+        "end_ms": 1485000,
+        "speaker_id": "speaker_4",
+        "text": "陆军的这个训练陆军的训练方式可能更适合于咱们这些学生。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1485000,
+        "end_ms": 1488000,
+        "speaker_id": "speaker_3",
+        "text": "那你们对军训这方面有什么方案吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1488000,
+        "end_ms": 1500000,
+        "speaker_id": "speaker_6",
+        "text": "嗯我建议我建议咱们可以呃为了提升他们的军训质量和兴趣吧，呃坚持坚持一天下来挺累的，可以晚上的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1488000,
+        "end_ms": 1490000,
+        "speaker_id": "speaker_7",
+        "text": "咱们是要不",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1501000,
+        "end_ms": 1513000,
+        "speaker_id": "speaker_6",
+        "text": "呃一两个小时吧适当呃让他们教官和学生一块儿对玩一下儿一个小游戏呀或者教他们唱歌啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1507000,
+        "end_ms": 1508000,
+        "speaker_id": "speaker_3",
+        "text": "互动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1513000,
+        "end_ms": 1514000,
+        "speaker_id": "speaker_6",
+        "text": "可以这样儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1515000,
+        "end_ms": 1520000,
+        "speaker_id": "speaker_3",
+        "text": "还有可以让军训完以后给他们举行一个表演赛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1520000,
+        "end_ms": 1521000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1521000,
+        "end_ms": 1533000,
+        "speaker_id": "speaker_3",
+        "text": "分出来好赖对属于军训汇演的让他们这样打打击他们的积极性，然后促进他们就是想好好儿的表演，再给他们有一个奖项",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1522000,
+        "end_ms": 1524000,
+        "speaker_id": "speaker_5",
+        "text": "军训汇演之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1535000,
+        "end_ms": 1536000,
+        "speaker_id": "speaker_3",
+        "text": "这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1537000,
+        "end_ms": 1539000,
+        "speaker_id": "speaker_3",
+        "text": "就是你们稍微操心一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1539000,
+        "end_ms": 1541000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1541000,
+        "end_ms": 1545000,
+        "speaker_id": "speaker_3",
+        "text": "咱们学校比较热门儿的专业是什么呀教务主任",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1545000,
+        "end_ms": 1551000,
+        "speaker_id": "speaker_3",
+        "text": "学生报的比较多的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1546000,
+        "end_ms": 1551000,
+        "speaker_id": "speaker_7",
+        "text": "咱们学校最热门儿的就是说就是计算机了，因为现在就业形势比较好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1552000,
+        "end_ms": 1554000,
+        "speaker_id": "speaker_3",
+        "text": "计算机就业形势比较好吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1553000,
+        "end_ms": 1555000,
+        "speaker_id": "speaker_7",
+        "text": "对啊还有软件",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1555000,
+        "end_ms": 1568000,
+        "speaker_id": "speaker_7",
+        "text": "空乘啊不会因为现在已经是大大形势就是这样的因为对对对因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1556000,
+        "end_ms": 1563000,
+        "speaker_id": "speaker_3",
+        "text": "那它会不会如果计算机人报的太多的话，他以后反而不好找工作，就是人特别多，市场会出现这种拥挤，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1566000,
+        "end_ms": 1567000,
+        "speaker_id": "speaker_3",
+        "text": "形势就是计算机吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1568000,
+        "end_ms": 1572000,
+        "speaker_id": "speaker_7",
+        "text": "在高科技方面，他们国家下的力度也是比较大的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1572000,
+        "end_ms": 1574000,
+        "speaker_id": "speaker_7",
+        "text": "所以说这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1573000,
+        "end_ms": 1576000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们这儿考证儿需要考吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1576000,
+        "end_ms": 1577000,
+        "speaker_id": "speaker_7",
+        "text": "考证儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1577000,
+        "end_ms": 1580000,
+        "speaker_id": "speaker_3",
+        "text": "属于是毕业以后让他们自己考，还是学校安排呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1580000,
+        "end_ms": 1590000,
+        "speaker_id": "speaker_7",
+        "text": "咱们在学校自己的话也可以对但是咱们也会就是你像他们毕业以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1582000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_6",
+        "text": "学校都会提供机会，然后学生自愿去考试",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1585000,
+        "end_ms": 1586000,
+        "speaker_id": "speaker_3",
+        "text": "噢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1590000,
+        "end_ms": 1593000,
+        "speaker_id": "speaker_7",
+        "text": "咱们会也会做一些要求",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1593000,
+        "end_ms": 1609000,
+        "speaker_id": "speaker_6",
+        "text": "像咱们学校的话，呃后勤这边儿可以有安排很多那个计算机呀计算机设备的教室呃这方面是咱们学校的优势嘛，所以呃报咱们学校这个专业的就是比较多。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 1605000,
+        "end_ms": 1606000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 1609000,
+        "end_ms": 1613000,
+        "speaker_id": "speaker_3",
+        "text": "那这个计算机老师会不会人手配备一台笔记本电脑之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 1613000,
+        "end_ms": 1622000,
+        "speaker_id": "speaker_7",
+        "text": "这个电脑儿的话是咱们学校免费要提供的因为咱们实验室里也有一一些电脑",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 1618000,
+        "end_ms": 1620000,
+        "speaker_id": "speaker_3",
+        "text": "需要提供的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 1621000,
+        "end_ms": 1627000,
+        "speaker_id": "speaker_6",
+        "text": "对咱们都在实验室里面配备着教师用的专用的呃那个设备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 1626000,
+        "end_ms": 1628000,
+        "speaker_id": "speaker_3",
+        "text": "电脑吗行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 1627000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_7",
+        "text": "因为这个项目儿需要的条件会特别高",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 1633000,
+        "end_ms": 1639000,
+        "speaker_id": "speaker_3",
+        "text": "那上一季度这边儿财务也报表了啊，说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 1640000,
+        "end_ms": 1641000,
+        "speaker_id": "speaker_3",
+        "text": "没有什么开销",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 1642000,
+        "end_ms": 1646000,
+        "speaker_id": "speaker_3",
+        "text": "下一季度咱们可以把这些省下来的开销用在学生身上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 1642000,
+        "end_ms": 1643000,
+        "speaker_id": "speaker_2",
+        "text": "因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 1647000,
+        "end_ms": 1649000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们学校用设计校服儿吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000430",
+        "index": 429,
+        "start_ms": 1649000,
+        "end_ms": 1652000,
+        "speaker_id": "speaker_4",
+        "text": "校服的话大学是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000431",
+        "index": 430,
+        "start_ms": 1650000,
+        "end_ms": 1653000,
+        "speaker_id": "speaker_5",
+        "text": "在大学一般不用了吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000432",
+        "index": 431,
+        "start_ms": 1651000,
+        "end_ms": 1657000,
+        "speaker_id": "speaker_7",
+        "text": "大学的话因为你像在对学校来说就学生是不想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000433",
+        "index": 432,
+        "start_ms": 1651000,
+        "end_ms": 1653000,
+        "speaker_id": "speaker_3",
+        "text": "比较少是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000434",
+        "index": 433,
+        "start_ms": 1657000,
+        "end_ms": 1659000,
+        "speaker_id": "speaker_3",
+        "text": "那会有系服之类的吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000435",
+        "index": 434,
+        "start_ms": 1659000,
+        "end_ms": 1665000,
+        "speaker_id": "speaker_7",
+        "text": "系服的话只是会在特殊情况就是运动会上可能会穿一些但是不是很有必要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000436",
+        "index": 435,
+        "start_ms": 1664000,
+        "end_ms": 1677000,
+        "speaker_id": "speaker_5",
+        "text": "其实我觉得系服，像学校其实有准备就行，到那天的时候发下去就行，不用说再每个人再定一套，没有必要不会所有人都准备一场，对一些备用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000437",
+        "index": 436,
+        "start_ms": 1674000,
+        "end_ms": 1681000,
+        "speaker_id": "speaker_4",
+        "text": "准备准备准备一些就可以了而且这个也对这个是长远的一直都可以在用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000438",
+        "index": 437,
+        "start_ms": 1681000,
+        "end_ms": 1688000,
+        "speaker_id": "speaker_3",
+        "text": "那咱们学校如果举办运动会的话，是在本校举行啊，还是就比方说迎新生运动会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000439",
+        "index": 438,
+        "start_ms": 1688000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_7",
+        "text": "咱们本校的条件是可以的因为学生反馈咱们的呃呃运动会办的是挺不错有好几个对有好几个运动场",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000440",
+        "index": 439,
+        "start_ms": 1695000,
+        "end_ms": 1699000,
+        "speaker_id": "speaker_5",
+        "text": "在本校办也比较好毕竟安全",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000441",
+        "index": 440,
+        "start_ms": 1699000,
+        "end_ms": 1702000,
+        "speaker_id": "speaker_3",
+        "text": "行那这个安保工作你是有什么安排啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000442",
+        "index": 441,
+        "start_ms": 1702000,
+        "end_ms": 1707000,
+        "speaker_id": "speaker_4",
+        "text": "安保这边儿一个是保证这个因为运动会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000443",
+        "index": 442,
+        "start_ms": 1707000,
+        "end_ms": 1710000,
+        "speaker_id": "speaker_4",
+        "text": "呃难免会出现一些学生中暑",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000444",
+        "index": 443,
+        "start_ms": 1711000,
+        "end_ms": 1713000,
+        "speaker_id": "speaker_4",
+        "text": "呃这个也会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000445",
+        "index": 444,
+        "start_ms": 1713000,
+        "end_ms": 1717000,
+        "speaker_id": "speaker_4",
+        "text": "及时的向那个财务部门儿申报，去购买一些这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000446",
+        "index": 445,
+        "start_ms": 1717000,
+        "end_ms": 1722000,
+        "speaker_id": "speaker_4",
+        "text": "清凉解暑的物品。再一个就是呃准备一些药品",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000447",
+        "index": 446,
+        "start_ms": 1718000,
+        "end_ms": 1719000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000448",
+        "index": 447,
+        "start_ms": 1722000,
+        "end_ms": 1728000,
+        "speaker_id": "speaker_4",
+        "text": "防止这些学生们就是运运动拉伤啊或者是碰撞啊之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000449",
+        "index": 448,
+        "start_ms": 1728000,
+        "end_ms": 1732000,
+        "speaker_id": "speaker_4",
+        "text": "就是产生这一系列不必要的受伤",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000450",
+        "index": 449,
+        "start_ms": 1732000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_3",
+        "text": "那这方面让教务主任去给下边儿的导员儿说一声吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000451",
+        "index": 450,
+        "start_ms": 1737000,
+        "end_ms": 1740000,
+        "speaker_id": "speaker_3",
+        "text": "让他们采购一些西瓜之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000452",
+        "index": 451,
+        "start_ms": 1740000,
+        "end_ms": 1741000,
+        "speaker_id": "speaker_7",
+        "text": "行行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000453",
+        "index": 452,
+        "start_ms": 1741000,
+        "end_ms": 1745000,
+        "speaker_id": "speaker_7",
+        "text": "这个就需要后勤部帮忙了吧因为他们这个食堂就是提供西瓜什么的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000454",
+        "index": 453,
+        "start_ms": 1746000,
+        "end_ms": 1751000,
+        "speaker_id": "speaker_3",
+        "text": "行，然后最好再找几个男同学去带过去这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000455",
+        "index": 454,
+        "start_ms": 1746000,
+        "end_ms": 1747000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000456",
+        "index": 455,
+        "start_ms": 1751000,
+        "end_ms": 1756000,
+        "speaker_id": "speaker_7",
+        "text": "然后财务现在已经的不是现在教务处有一个问题就是咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000457",
+        "index": 456,
+        "start_ms": 1756000,
+        "end_ms": 1772000,
+        "speaker_id": "speaker_7",
+        "text": "的软件需要更新了对像一个软件的话它现在最新的软件就会花上好几百万然后这就需要向财务部进行报表然后进行拨款因为咱们一个实验室很大一个项目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000458",
+        "index": 457,
+        "start_ms": 1758000,
+        "end_ms": 1759000,
+        "speaker_id": "speaker_3",
+        "text": "软件需要更新吗嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000459",
+        "index": 458,
+        "start_ms": 1772000,
+        "end_ms": 1776000,
+        "speaker_id": "speaker_3",
+        "text": "可以那你拟定一个表格儿，然后价格儿不要定得很高",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000460",
+        "index": 459,
+        "start_ms": 1777000,
+        "end_ms": 1785000,
+        "speaker_id": "speaker_7",
+        "text": "因为价格的话就不是咱们学校可以定的是咱们就是可以直接向公公司进行购买使用权？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000461",
+        "index": 460,
+        "start_ms": 1784000,
+        "end_ms": 1785000,
+        "speaker_id": "speaker_3",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000462",
+        "index": 461,
+        "start_ms": 1786000,
+        "end_ms": 1788000,
+        "speaker_id": "speaker_3",
+        "text": "那其他人还有什么意见吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000463",
+        "index": 462,
+        "start_ms": 1789000,
+        "end_ms": 1791000,
+        "speaker_id": "speaker_4",
+        "text": "安保这边儿没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000464",
+        "index": 463,
+        "start_ms": 1790000,
+        "end_ms": 1794000,
+        "speaker_id": "speaker_5",
+        "text": "招生办这边儿没有就是筹备一下新学期的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000465",
+        "index": 464,
+        "start_ms": 1794000,
+        "end_ms": 1799000,
+        "speaker_id": "speaker_5",
+        "text": "嗯宣传海报招生资料儿好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000466",
+        "index": 465,
+        "start_ms": 1795000,
+        "end_ms": 1799000,
+        "speaker_id": "speaker_3",
+        "text": "行那你做一个报表儿到时候报给财务吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000467",
+        "index": 466,
+        "start_ms": 1800000,
+        "end_ms": 1802000,
+        "speaker_id": "speaker_3",
+        "text": "后勤呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000468",
+        "index": 467,
+        "start_ms": 1802000,
+        "end_ms": 1805000,
+        "speaker_id": "speaker_6",
+        "text": "后勤这边儿工作呃就没有了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000469",
+        "index": 468,
+        "start_ms": 1806000,
+        "end_ms": 1808000,
+        "speaker_id": "speaker_3",
+        "text": "行教务处主任有没有啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000470",
+        "index": 469,
+        "start_ms": 1808000,
+        "end_ms": 1810000,
+        "speaker_id": "speaker_7",
+        "text": "没有教务处",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000471",
+        "index": 470,
+        "start_ms": 1811000,
+        "end_ms": 1813000,
+        "speaker_id": "speaker_1",
+        "text": "行那",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000472",
+        "index": 471,
+        "start_ms": 1813000,
+        "end_ms": 1816000,
+        "speaker_id": "speaker_1",
+        "text": "今天这场会议就先开到这儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000473",
+        "index": 472,
+        "start_ms": 1816000,
+        "end_ms": 1826000,
+        "speaker_id": "speaker_1",
+        "text": "嗯下去以后，这个嗯副院长这边儿把所有这个部门儿这个工作都监督好安排好，行吧？嗯行散会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000474",
+        "index": 473,
+        "start_ms": 1824000,
+        "end_ms": 1825000,
+        "speaker_id": "speaker_3",
+        "text": "行。",
+        "status": "ok"
+      }
+    ]
+  }
+}

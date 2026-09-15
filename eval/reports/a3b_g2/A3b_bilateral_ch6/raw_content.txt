@@ -1,0 +1,16 @@
+{
+  "key_refs": [
+    "r1",
+    "r3"
+  ],
+  "action_candidates": [
+    {
+      "task": "明确待办",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "r1"
+      ]
+    }
+  ]
+}

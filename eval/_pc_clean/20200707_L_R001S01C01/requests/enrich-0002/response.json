@@ -1,0 +1,9 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:36:26.4372563Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"keywords\": [\n    \"婚庆公司合作\",\n    \"大堂布置\",\n    \"消毒工作\",\n    \"人员登记\",\n    \"婚礼场地管理\",\n    \"疫情隔离措施\",\n    \"阶梯式餐桌安排\",\n    \"蛋糕赠送\",\n    \"中式面点师培训\",\n    \"婚礼满意度调查\",\n    \"婚车停放安排\"\n  ]\n  \t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n "
+  },
+  "done": false
+}

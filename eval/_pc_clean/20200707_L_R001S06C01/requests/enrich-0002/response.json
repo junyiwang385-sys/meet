@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:50:02.6548547Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"keywords\": [\"品牌宣传\", \"客户拉拢\", \"线上广告\", \"线下合作\", \"学校合作\", \"景区合作\",\", \"\t\t]  \t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  }"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1469057200,
+  "load_duration": 1591500,
+  "prompt_eval_count": 1915,
+  "prompt_eval_duration": 459759000,
+  "eval_count": 49,
+  "eval_duration": 854470000
+}

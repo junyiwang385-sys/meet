@@ -1,0 +1,4332 @@
+{
+  "meeting": {
+    "meeting_id": "20200706_L_R001S03C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 479,
+    "nonempty_segment_count": 479,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 52000,
+        "end_ms": 55000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是主持人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 55000,
+        "end_ms": 57000,
+        "speaker_id": "speaker_2",
+        "text": "零二二我是律师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 57000,
+        "end_ms": 60000,
+        "speaker_id": "speaker_3",
+        "text": "零二六我是咨询人A",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 60000,
+        "end_ms": 61000,
+        "speaker_id": "speaker_4",
+        "text": "零幺三我是咨询人B",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 61000,
+        "end_ms": 63000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是咨询人C",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 63000,
+        "end_ms": 66000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是咨询人D",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 66000,
+        "end_ms": 68000,
+        "speaker_id": "speaker_7",
+        "text": "零二五我是咨询人E",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 68000,
+        "end_ms": 70000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 76000,
+        "end_ms": 77000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 84000,
+        "end_ms": 92000,
+        "speaker_id": "speaker_1",
+        "text": "行嗯今天咱们这个嗯邀请到了咱们行业的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 92000,
+        "end_ms": 101000,
+        "speaker_id": "speaker_1",
+        "text": "嗯著名的法律专家来给咱们做一个这个法律方面的嗯支援法律支援这一片儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 101000,
+        "end_ms": 106000,
+        "speaker_id": "speaker_1",
+        "text": "大家有什么想要咨询的嗯抓紧时间咨询",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 106000,
+        "end_ms": 110000,
+        "speaker_id": "speaker_1",
+        "text": "嗯从咱们这个A这边儿有什么想要咨询的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 111000,
+        "end_ms": 115000,
+        "speaker_id": "speaker_3",
+        "text": "我想先咨询一下儿咱们生活中最常见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 115000,
+        "end_ms": 124000,
+        "speaker_id": "speaker_3",
+        "text": "就是比方说我是甲我借给了乙五万块钱他给我对他给我写了个欠条儿在法律上这个成立吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 120000,
+        "end_ms": 121000,
+        "speaker_id": "speaker_1",
+        "text": "嗯借给乙五万块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 125000,
+        "end_ms": 126000,
+        "speaker_id": "speaker_2",
+        "text": "成立呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 126000,
+        "end_ms": 128000,
+        "speaker_id": "speaker_2",
+        "text": "就看你那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 127000,
+        "end_ms": 130000,
+        "speaker_id": "speaker_1",
+        "text": "那欠条儿要有什么格式吗什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 130000,
+        "end_ms": 134000,
+        "speaker_id": "speaker_3",
+        "text": "就只是一张普通的欠条儿然后欠条儿签了一下儿他的名字",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 134000,
+        "end_ms": 136000,
+        "speaker_id": "speaker_2",
+        "text": "那就那个有法律效力",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 136000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_3",
+        "text": "那欠条儿和借条儿有什么不同呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 139000,
+        "end_ms": 141000,
+        "speaker_id": "speaker_2",
+        "text": "欠条儿就是借条儿呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 141000,
+        "end_ms": 143000,
+        "speaker_id": "speaker_3",
+        "text": "但是欠条儿和借条儿不一样啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 144000,
+        "end_ms": 147000,
+        "speaker_id": "speaker_3",
+        "text": "他们说要负的法律责任不一样啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 147000,
+        "end_ms": 148000,
+        "speaker_id": "speaker_2",
+        "text": "什么法律责任不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 149000,
+        "end_ms": 151000,
+        "speaker_id": "speaker_3",
+        "text": "比方说我到法院起诉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 152000,
+        "end_ms": 154000,
+        "speaker_id": "speaker_3",
+        "text": "它欠条儿和借条儿的性质就不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 156000,
+        "end_ms": 158000,
+        "speaker_id": "speaker_3",
+        "text": "就因为这一字之差",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 158000,
+        "end_ms": 163000,
+        "speaker_id": "speaker_3",
+        "text": "如果是欠条儿或者借条儿之间的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 163000,
+        "end_ms": 166000,
+        "speaker_id": "speaker_3",
+        "text": "起诉性质上区别就比方说借条儿吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 167000,
+        "end_ms": 169000,
+        "speaker_id": "speaker_3",
+        "text": "就是当事人与我之间建立了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 169000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_3",
+        "text": "借贷款关系然后以一方将借款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 171000,
+        "end_ms": 171000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 171000,
+        "end_ms": 173000,
+        "speaker_id": "speaker_2",
+        "text": "债务人和债权人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 174000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_3",
+        "text": "交给后成立的这是合同方式",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 179000,
+        "end_ms": 179000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 180000,
+        "end_ms": 185000,
+        "speaker_id": "speaker_3",
+        "text": "欠条儿是法律欠缺损害比较大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 188000,
+        "end_ms": 189000,
+        "speaker_id": "speaker_2",
+        "text": "然后呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 189000,
+        "end_ms": 196000,
+        "speaker_id": "speaker_3",
+        "text": "比方说施工之类的东西呀他给我写了个欠条儿欠了好几十万在法律上告上法律为什么不成立呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 204000,
+        "end_ms": 208000,
+        "speaker_id": "speaker_3",
+        "text": "是和借条儿有一定的关系吗审核的原因吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 211000,
+        "end_ms": 214000,
+        "speaker_id": "speaker_3",
+        "text": "而且他借多少钱算不成立呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 216000,
+        "end_ms": 218000,
+        "speaker_id": "speaker_3",
+        "text": "就这个欠借条儿的关系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 219000,
+        "end_ms": 221000,
+        "speaker_id": "speaker_3",
+        "text": "它为什么欠条儿在法律上就不成立",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 221000,
+        "end_ms": 226000,
+        "speaker_id": "speaker_2",
+        "text": "欠条儿和借条儿的区别在于借条儿和欠条儿属于不同的法律关系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 226000,
+        "end_ms": 229000,
+        "speaker_id": "speaker_2",
+        "text": "借条儿对应的法律关系是借贷关系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 229000,
+        "end_ms": 238000,
+        "speaker_id": "speaker_2",
+        "text": "就是一方借钱给另一方欠条儿对应的法律关系就比较多了可能是欠的是货款啊分红啊投资款等各种情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 231000,
+        "end_ms": 232000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 239000,
+        "end_ms": 243000,
+        "speaker_id": "speaker_2",
+        "text": "总的来说就是一方拖欠另一方的债两者完全不同性质",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 244000,
+        "end_ms": 245000,
+        "speaker_id": "speaker_2",
+        "text": "总的来说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 246000,
+        "end_ms": 249000,
+        "speaker_id": "speaker_2",
+        "text": "借条儿跟欠条儿在诉讼中证明效力是一样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 249000,
+        "end_ms": 250000,
+        "speaker_id": "speaker_3",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 250000,
+        "end_ms": 255000,
+        "speaker_id": "speaker_1",
+        "text": "就是同样效果是一样的对就是只不过它一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 252000,
+        "end_ms": 253000,
+        "speaker_id": "speaker_2",
+        "text": "对法律效力是一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 256000,
+        "end_ms": 257000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 257000,
+        "end_ms": 264000,
+        "speaker_id": "speaker_2",
+        "text": "借条儿的诉讼时间为三年从借条儿标注的还款之日起超过三年未向法院起诉的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 265000,
+        "end_ms": 270000,
+        "speaker_id": "speaker_2",
+        "text": "法院不再保护这是诉讼时效如果你过了诉这个三年的诉讼时效的话就无法证明",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 271000,
+        "end_ms": 274000,
+        "speaker_id": "speaker_2",
+        "text": "法院不再法律保护你这个法律效力",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 277000,
+        "end_ms": 280000,
+        "speaker_id": "speaker_3",
+        "text": "那会不会出现告上去以后法律不成立的原因呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 285000,
+        "end_ms": 287000,
+        "speaker_id": "speaker_3",
+        "text": "他不承认这个条子怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 289000,
+        "end_ms": 293000,
+        "speaker_id": "speaker_2",
+        "text": "既然有他的签名儿了就是有那就是有合法就那个法律效力的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 294000,
+        "end_ms": 297000,
+        "speaker_id": "speaker_2",
+        "text": "如果说他不还钱的话法院可以强制执行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 298000,
+        "end_ms": 300000,
+        "speaker_id": "speaker_3",
+        "text": "多少钱以上不还钱法院可以那个什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 301000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_2",
+        "text": "一个额度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 303000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_3",
+        "text": "最大额度是多少呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 305000,
+        "end_ms": 306000,
+        "speaker_id": "speaker_2",
+        "text": "没有最大额度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 306000,
+        "end_ms": 309000,
+        "speaker_id": "speaker_3",
+        "text": "他借了他借了我两万块钱成立吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 309000,
+        "end_ms": 310000,
+        "speaker_id": "speaker_2",
+        "text": "成立",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 310000,
+        "end_ms": 313000,
+        "speaker_id": "speaker_2",
+        "text": "这属于如果他拖欠你不还款是属于老赖",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 314000,
+        "end_ms": 316000,
+        "speaker_id": "speaker_2",
+        "text": "你只需要花五十块钱就可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 316000,
+        "end_ms": 318000,
+        "speaker_id": "speaker_2",
+        "text": "付向法院付起诉费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 322000,
+        "end_ms": 325000,
+        "speaker_id": "speaker_3",
+        "text": "如果说我借了他两千块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 325000,
+        "end_ms": 331000,
+        "speaker_id": "speaker_3",
+        "text": "那我花五十块钱法院不承认它这个钱太少怎么办那我这个钱就没了吗我报案可不可以呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 331000,
+        "end_ms": 335000,
+        "speaker_id": "speaker_2",
+        "text": "多少钱你你再说一遍你这个两千块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 332000,
+        "end_ms": 335000,
+        "speaker_id": "speaker_3",
+        "text": "两千块钱就是一个民间债",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 336000,
+        "end_ms": 338000,
+        "speaker_id": "speaker_2",
+        "text": "两千块钱不属于立案标准",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 339000,
+        "end_ms": 341000,
+        "speaker_id": "speaker_3",
+        "text": "那我这钱就打水漂儿了吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 339000,
+        "end_ms": 341000,
+        "speaker_id": "speaker_2",
+        "text": "数额太数额",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 343000,
+        "end_ms": 346000,
+        "speaker_id": "speaker_2",
+        "text": "如果他不还你的话那就可能就打水漂儿了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 347000,
+        "end_ms": 350000,
+        "speaker_id": "speaker_3",
+        "text": "那就是如果碰上这种人就是自认倒霉呗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 351000,
+        "end_ms": 363000,
+        "speaker_id": "speaker_1",
+        "text": "自认倒霉是当事人说真的，所以期限嗯最低标准",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 352000,
+        "end_ms": 363000,
+        "speaker_id": "speaker_2",
+        "text": "只能是说真了的因为法律它所以起诉也有一个期界限吧你不可能说呃界限就是这个起诉这个金额你不你不可能说啊我就我借给你一百块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 363000,
+        "end_ms": 367000,
+        "speaker_id": "speaker_2",
+        "text": "你就向法院承认你想把我房子给我卖了那是不可能的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 367000,
+        "end_ms": 368000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 368000,
+        "end_ms": 370000,
+        "speaker_id": "speaker_2",
+        "text": "他也要那个遵循这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 371000,
+        "end_ms": 372000,
+        "speaker_id": "speaker_2",
+        "text": "风俗道德",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 373000,
+        "end_ms": 374000,
+        "speaker_id": "speaker_2",
+        "text": "公序良俗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 374000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_3",
+        "text": "承认法院只会承认一个最低标准",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 377000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 379000,
+        "end_ms": 383000,
+        "speaker_id": "speaker_3",
+        "text": "啊这个问完了还有就是最近呢我一个朋友",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 383000,
+        "end_ms": 387000,
+        "speaker_id": "speaker_3",
+        "text": "他结婚了但是刚结了一年多时间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 388000,
+        "end_ms": 393000,
+        "speaker_id": "speaker_3",
+        "text": "房产证儿上呢也不知道写没写没写没写他那个妻子的名字是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 394000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_3",
+        "text": "他们这属于婚后财产",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 397000,
+        "end_ms": 399000,
+        "speaker_id": "speaker_2",
+        "text": "啊婚后财产的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 398000,
+        "end_ms": 399000,
+        "speaker_id": "speaker_3",
+        "text": "他们要离婚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 399000,
+        "end_ms": 401000,
+        "speaker_id": "speaker_3",
+        "text": "这种要怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 401000,
+        "end_ms": 402000,
+        "speaker_id": "speaker_2",
+        "text": "这房子是要平分的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 403000,
+        "end_ms": 409000,
+        "speaker_id": "speaker_3",
+        "text": "没有写名字也要平分吗那他的个人财产和婚前财产它不一样吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 405000,
+        "end_ms": 406000,
+        "speaker_id": "speaker_2",
+        "text": "对呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 408000,
+        "end_ms": 409000,
+        "speaker_id": "speaker_2",
+        "text": "不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 409000,
+        "end_ms": 411000,
+        "speaker_id": "speaker_3",
+        "text": "有什么区别呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 410000,
+        "end_ms": 417000,
+        "speaker_id": "speaker_2",
+        "text": "如果说你婚前财产你去公证处公证处公证了你比如说你在结婚之前你有一套房子有十万块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 418000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_2",
+        "text": "那么结婚以后这个房子就是你们就算再离婚的话这房子也不会分给另一方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 423000,
+        "end_ms": 429000,
+        "speaker_id": "speaker_2",
+        "text": "但是如果说你结婚以后你挣的你们夫妻所共同挣取所赚取的财物",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 429000,
+        "end_ms": 434000,
+        "speaker_id": "speaker_3",
+        "text": "但是房产证儿上没有写妻子的名字",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 432000,
+        "end_ms": 434000,
+        "speaker_id": "speaker_2",
+        "text": "但是也是跟她有关系的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 434000,
+        "end_ms": 435000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 435000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_2",
+        "text": "是你的婚后财产",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 436000,
+        "end_ms": 438000,
+        "speaker_id": "speaker_3",
+        "text": "那怎么证明呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 438000,
+        "end_ms": 443000,
+        "speaker_id": "speaker_2",
+        "text": "怎么证明这就可以向银行提供那个证据呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 444000,
+        "end_ms": 446000,
+        "speaker_id": "speaker_3",
+        "text": "万一他们不是用贷款买的房",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 447000,
+        "end_ms": 449000,
+        "speaker_id": "speaker_2",
+        "text": "嗯你什么意思",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 447000,
+        "end_ms": 464000,
+        "speaker_id": "speaker_1",
+        "text": "呃这个这个我觉得这个以嗯咱们刚才说起诉到法院我觉的法院方面会调查这件事情这个事情肯定会调查清楚嗯行那咱这个A这边儿已经问完了咱那个啊因为时间原因咱抓紧时间问",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 454000,
+        "end_ms": 459000,
+        "speaker_id": "speaker_2",
+        "text": "是呀法院会调查的呀这个这个你就可以不用不用那么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 464000,
+        "end_ms": 469000,
+        "speaker_id": "speaker_1",
+        "text": "嗯咱嗯争取每个人咱都能问到这个嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 469000,
+        "end_ms": 474000,
+        "speaker_id": "speaker_1",
+        "text": "都能得到都能问问到问题都能得到解决",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 474000,
+        "end_ms": 477000,
+        "speaker_id": "speaker_1",
+        "text": "嗯然后咱们这个B同学",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 477000,
+        "end_ms": 481000,
+        "speaker_id": "speaker_4",
+        "text": "啊B这边儿就是现在不是地摊儿经济比较流行吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 481000,
+        "end_ms": 491000,
+        "speaker_id": "speaker_4",
+        "text": "然后这个就是比如说地摊儿上吃了一个不太卫生的东西啊我找他他不承认这个怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 492000,
+        "end_ms": 498000,
+        "speaker_id": "speaker_2",
+        "text": "嗯你可以向那个食品安全局这市场监督监督局举报他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 499000,
+        "end_ms": 504000,
+        "speaker_id": "speaker_2",
+        "text": "然后他们会派专业的人士去检测它的食物标准是否达标",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 504000,
+        "end_ms": 510000,
+        "speaker_id": "speaker_2",
+        "text": "如果不达标的话，那将进行罚款，还有对你的赔偿，医药费的赔偿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 510000,
+        "end_ms": 516000,
+        "speaker_id": "speaker_4",
+        "text": "嗯还有就是他们就现在就他们在这个街道上然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 516000,
+        "end_ms": 521000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这个他们在这个街道上向这街道上倾倒垃圾呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 521000,
+        "end_ms": 524000,
+        "speaker_id": "speaker_4",
+        "text": "排排污啊之类的那我们需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 524000,
+        "end_ms": 527000,
+        "speaker_id": "speaker_4",
+        "text": "这个需要怎么办呢向什么部门儿反应",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 530000,
+        "end_ms": 532000,
+        "speaker_id": "speaker_2",
+        "text": "现在是可以向城管反应",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 532000,
+        "end_ms": 537000,
+        "speaker_id": "speaker_4",
+        "text": "嗯但是城管要涉他们现在城管会涉及到一些暴力执法之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 539000,
+        "end_ms": 541000,
+        "speaker_id": "speaker_2",
+        "text": "城管暴力执法这个就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 544000,
+        "end_ms": 547000,
+        "speaker_id": "speaker_2",
+        "text": "这个就不属于民间的事情了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 547000,
+        "end_ms": 551000,
+        "speaker_id": "speaker_4",
+        "text": "嗯那这个这个到时就让这个他们去跟城管",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 550000,
+        "end_ms": 551000,
+        "speaker_id": "speaker_2",
+        "text": "他们会有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 551000,
+        "end_ms": 554000,
+        "speaker_id": "speaker_2",
+        "text": "如果城管是暴力执法的话，他们上级会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 554000,
+        "end_ms": 558000,
+        "speaker_id": "speaker_2",
+        "text": "处分的这个就不是法院的问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 558000,
+        "end_ms": 561000,
+        "speaker_id": "speaker_2",
+        "text": "这是他们系统内部的问题。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 563000,
+        "end_ms": 572000,
+        "speaker_id": "speaker_4",
+        "text": "那这个的话我们我们可不可以就是就是就是按这个消费者保护法去起诉他们或者怎么样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 573000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_2",
+        "text": "如果他对你进行赔偿的话，那么你就没有必要再起诉了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 577000,
+        "end_ms": 581000,
+        "speaker_id": "speaker_2",
+        "text": "如果说他死不承认并且",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 581000,
+        "end_ms": 586000,
+        "speaker_id": "speaker_2",
+        "text": "那个监督局已经查出来他们食品有问题了那你就可以向法院起诉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 586000,
+        "end_ms": 586000,
+        "speaker_id": "speaker_4",
+        "text": "可以起诉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 587000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_2",
+        "text": "属于民事纠纷对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 588000,
+        "end_ms": 589000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 589000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_1",
+        "text": "嗯民事方面的嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 592000,
+        "end_ms": 594000,
+        "speaker_id": "speaker_1",
+        "text": "那C同学C同学这边儿有什么想要问的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 595000,
+        "end_ms": 599000,
+        "speaker_id": "speaker_5",
+        "text": "嗯就比如说我有一个朋友，然后前一段儿时间被车撞了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 599000,
+        "end_ms": 600000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 600000,
+        "end_ms": 607000,
+        "speaker_id": "speaker_5",
+        "text": "然后这个肇事者逃逸了，但是经过监控呢就是锁定了他车牌号，然后去法院起诉了他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 607000,
+        "end_ms": 617000,
+        "speaker_id": "speaker_5",
+        "text": "法院那边儿要求就是向受害人这边儿嗯赔偿四万元对但是这个肇事者在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 613000,
+        "end_ms": 615000,
+        "speaker_id": "speaker_1",
+        "text": "四万块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 617000,
+        "end_ms": 620000,
+        "speaker_id": "speaker_5",
+        "text": "赔偿四千多之后就没有再赔偿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 621000,
+        "end_ms": 632000,
+        "speaker_id": "speaker_5",
+        "text": "然后对就没有再赔偿对找不到人了然后后来后来是可以找到他然后问让他就把剩下的赔偿款就是赔就是赔一下然后他说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 621000,
+        "end_ms": 625000,
+        "speaker_id": "speaker_1",
+        "text": "就找不着人啦还是怎么找不着人啦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 632000,
+        "end_ms": 640000,
+        "speaker_id": "speaker_5",
+        "text": "他就拒绝再继续赔款，他说有本事再去法院告我，遇到这种情况你觉得应该怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 640000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_2",
+        "text": "这个你们一审的时候就已经做出判决判决赔偿四万块钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 644000,
+        "end_ms": 646000,
+        "speaker_id": "speaker_5",
+        "text": "但是他并没有执行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 646000,
+        "end_ms": 649000,
+        "speaker_id": "speaker_2",
+        "text": "如果他不执行的话，法院可以强制执行，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 649000,
+        "end_ms": 656000,
+        "speaker_id": "speaker_2",
+        "text": "就是派法警去收购他的不动产比如说他有一个一辆十万块钱的车可以给它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 657000,
+        "end_ms": 662000,
+        "speaker_id": "speaker_2",
+        "text": "拍卖掉然后补偿给你们，对法院的强制执行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 659000,
+        "end_ms": 661000,
+        "speaker_id": "speaker_1",
+        "text": "强制执行是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 662000,
+        "end_ms": 665000,
+        "speaker_id": "speaker_5",
+        "text": "意思就是说再去法院申请对吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 664000,
+        "end_ms": 669000,
+        "speaker_id": "speaker_2",
+        "text": "对因为你们有一审的一审的判决书拿着一审的判决书就可以向法院申请强制执行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 664000,
+        "end_ms": 666000,
+        "speaker_id": "speaker_1",
+        "text": "二次申请",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 670000,
+        "end_ms": 671000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 671000,
+        "end_ms": 674000,
+        "speaker_id": "speaker_5",
+        "text": "还有一个问题就是说现在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 674000,
+        "end_ms": 679000,
+        "speaker_id": "speaker_5",
+        "text": "校园暴力这个事件就比较多我想问你如果在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 679000,
+        "end_ms": 686000,
+        "speaker_id": "speaker_5",
+        "text": "就是认遇到这个事情就是校园暴力这个事情的时候应该怎么办应该怎么样维护自己的权益",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 687000,
+        "end_ms": 695000,
+        "speaker_id": "speaker_2",
+        "text": "嗯咱们先不从法律的角度来讲咱们就从自身来讲你遇到你如果说被人欺负了你可能要先",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 695000,
+        "end_ms": 701000,
+        "speaker_id": "speaker_2",
+        "text": "对如果在不如果你还还手的话你可能就属于打架斗殴",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 695000,
+        "end_ms": 696000,
+        "speaker_id": "speaker_1",
+        "text": "还手了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 702000,
+        "end_ms": 707000,
+        "speaker_id": "speaker_2",
+        "text": "你可以向老师可以告诉老师，可以告诉家长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 707000,
+        "end_ms": 713000,
+        "speaker_id": "speaker_2",
+        "text": "先以学校内部的规定来处罚他们比如说停课开除",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 714000,
+        "end_ms": 717000,
+        "speaker_id": "speaker_2",
+        "text": "如果说事情更大的话，那可能就要报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 717000,
+        "end_ms": 721000,
+        "speaker_id": "speaker_2",
+        "text": "如果他对你造成了人身伤害的话，那可能就动用刑法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 721000,
+        "end_ms": 733000,
+        "speaker_id": "speaker_5",
+        "text": "但是如果说就是未成年，他们经经历了这种事情，就算报警了之后也不会经历什么严就是非常严重的处罚，然后还有二次的应该怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 733000,
+        "end_ms": 741000,
+        "speaker_id": "speaker_5",
+        "text": "就是虽然是去过警警察局，但是出来之后还是会那么做你觉得应该现在应该怎样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 741000,
+        "end_ms": 746000,
+        "speaker_id": "speaker_2",
+        "text": "就是如果他已经进过警察局的话，那么他就会留案底",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 746000,
+        "end_ms": 752000,
+        "speaker_id": "speaker_2",
+        "text": "就是这种这种学生呢学校老师会多方面关注他。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 752000,
+        "end_ms": 756000,
+        "speaker_id": "speaker_2",
+        "text": "如果说他再出现这种情况的话，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 756000,
+        "end_ms": 760000,
+        "speaker_id": "speaker_2",
+        "text": "那可能进又是要进警察局拘留",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 763000,
+        "end_ms": 765000,
+        "speaker_id": "speaker_5",
+        "text": "哦我的问题问完了谢谢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 765000,
+        "end_ms": 772000,
+        "speaker_id": "speaker_1",
+        "text": "刚刚才说到校园暴力这个事情是吧因为这个近两年咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 772000,
+        "end_ms": 776000,
+        "speaker_id": "speaker_1",
+        "text": "学校这个安全&热门话题嗯&热门话题安全问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 776000,
+        "end_ms": 782000,
+        "speaker_id": "speaker_1",
+        "text": "嗯这针对这个咱们先各位都有什么想想要问的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 782000,
+        "end_ms": 785000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿A这边儿有想要问的吗针对暴力这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 788000,
+        "end_ms": 791000,
+        "speaker_id": "speaker_3",
+        "text": "小孩子打架斗殴算校园暴力吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 790000,
+        "end_ms": 791000,
+        "speaker_id": "speaker_2",
+        "text": "不算",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 792000,
+        "end_ms": 796000,
+        "speaker_id": "speaker_1",
+        "text": "这个这这这个是怎么鉴定的这个现在这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 796000,
+        "end_ms": 797000,
+        "speaker_id": "speaker_2",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 796000,
+        "end_ms": 800000,
+        "speaker_id": "speaker_1",
+        "text": "怎么才算校园暴力怎么才算闹着玩儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 800000,
+        "end_ms": 807000,
+        "speaker_id": "speaker_2",
+        "text": "多人欺负一人对人对受凌人实行人身侵犯比方说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 802000,
+        "end_ms": 803000,
+        "speaker_id": "speaker_1",
+        "text": "多人欺负",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 807000,
+        "end_ms": 818000,
+        "speaker_id": "speaker_2",
+        "text": "一群人在厕所拿手机拍他一些不雅照儿或者说你强迫他做一些他个人违背他个人意愿的事情比如说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 810000,
+        "end_ms": 810000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 812000,
+        "end_ms": 813000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 817000,
+        "end_ms": 817000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 819000,
+        "end_ms": 820000,
+        "speaker_id": "speaker_2",
+        "text": "用手去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 821000,
+        "end_ms": 827000,
+        "speaker_id": "speaker_2",
+        "text": "掏厕所这是侵害个人个人个人那个名誉权",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 826000,
+        "end_ms": 827000,
+        "speaker_id": "speaker_1",
+        "text": "名誉权",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 828000,
+        "end_ms": 830000,
+        "speaker_id": "speaker_1",
+        "text": "就是就是就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 830000,
+        "end_ms": 839000,
+        "speaker_id": "speaker_1",
+        "text": "嗯就是在对方受害者不愿意的情况下强迫嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 836000,
+        "end_ms": 838000,
+        "speaker_id": "speaker_3",
+        "text": "违背个人意愿强迫他做一些事情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 839000,
+        "end_ms": 843000,
+        "speaker_id": "speaker_3",
+        "text": "那比方说有一个你们之间的一个人他就想",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 843000,
+        "end_ms": 847000,
+        "speaker_id": "speaker_3",
+        "text": "冲你使用暴力，然后创了一个属于QQ微信的一个群聊，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 847000,
+        "end_ms": 857000,
+        "speaker_id": "speaker_3",
+        "text": "然后在那里头他们四个人一直在骂那一个人说什么你去死什么之类的特别不雅的话，这算校园暴力还是网络暴力啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 854000,
+        "end_ms": 855000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 857000,
+        "end_ms": 859000,
+        "speaker_id": "speaker_2",
+        "text": "这个属于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 859000,
+        "end_ms": 863000,
+        "speaker_id": "speaker_2",
+        "text": "语言胁迫这个也可以报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 864000,
+        "end_ms": 868000,
+        "speaker_id": "speaker_3",
+        "text": "语言胁迫它算校园暴力吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 866000,
+        "end_ms": 874000,
+        "speaker_id": "speaker_1",
+        "text": "嗯现在现现在是这个微信上的一些这个话什么都可以作为证据的目前",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 873000,
+        "end_ms": 874000,
+        "speaker_id": "speaker_2",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 873000,
+        "end_ms": 874000,
+        "speaker_id": "speaker_3",
+        "text": "是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 875000,
+        "end_ms": 875000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 875000,
+        "end_ms": 876000,
+        "speaker_id": "speaker_2",
+        "text": "属于微信",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 876000,
+        "end_ms": 881000,
+        "speaker_id": "speaker_4",
+        "text": "嗯他这个对你名誉权是侵犯了你可以去起诉他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 881000,
+        "end_ms": 884000,
+        "speaker_id": "speaker_2",
+        "text": "可以可以让他赔偿你的精神损失费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 885000,
+        "end_ms": 889000,
+        "speaker_id": "speaker_3",
+        "text": "对如果你想往嗯因为长期受到欺负",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 889000,
+        "end_ms": 901000,
+        "speaker_id": "speaker_3",
+        "text": "所以导致轻生这个是要判处的话是要判嗯欺负嗯施暴者什么罪名",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 898000,
+        "end_ms": 905000,
+        "speaker_id": "speaker_2",
+        "text": "这个这个当前咱们国家还是没有也就是说检察院有法律漏洞吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 905000,
+        "end_ms": 910000,
+        "speaker_id": "speaker_2",
+        "text": "对这些长期受到凌辱的同学，最后轻生了也没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 905000,
+        "end_ms": 905000,
+        "speaker_id": "speaker_4",
+        "text": "他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 911000,
+        "end_ms": 920000,
+        "speaker_id": "speaker_2",
+        "text": "一个因为这种情况下，你没有无法判定到底是谁对他造成了什么样的伤害",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 912000,
+        "end_ms": 915000,
+        "speaker_id": "speaker_1",
+        "text": "就相当于法律的一个漏洞嗯嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 920000,
+        "end_ms": 927000,
+        "speaker_id": "speaker_2",
+        "text": "还有每个人的心理承受能力也不一样还有他的家庭环境也不一样比如说有的家庭",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 923000,
+        "end_ms": 924000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 927000,
+        "end_ms": 935000,
+        "speaker_id": "speaker_2",
+        "text": "呃他的孩子受到了欺负他可能家长会通过别的方式来反击回去或者说家庭就很有问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 935000,
+        "end_ms": 943000,
+        "speaker_id": "speaker_2",
+        "text": "孤寡老人带的孩子，那个老人岁数也大了，没有办法管孩子，最后孩子导致轻生这都没有无法界定，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 943000,
+        "end_ms": 946000,
+        "speaker_id": "speaker_4",
+        "text": "但是只能说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 944000,
+        "end_ms": 946000,
+        "speaker_id": "speaker_2",
+        "text": "只能说是加强学校管控",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 947000,
+        "end_ms": 951000,
+        "speaker_id": "speaker_2",
+        "text": "少那个酷那个制止这类问题发生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 953000,
+        "end_ms": 960000,
+        "speaker_id": "speaker_3",
+        "text": "那校园暴力的话，那个人几个人会对他围殴之类的东西，他如果不说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 961000,
+        "end_ms": 963000,
+        "speaker_id": "speaker_3",
+        "text": "会不会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 964000,
+        "end_ms": 968000,
+        "speaker_id": "speaker_3",
+        "text": "处理呢怎么处理这方面事情，他如果不说的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 968000,
+        "end_ms": 972000,
+        "speaker_id": "speaker_3",
+        "text": "学校老师也不管的话学校特别乱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 970000,
+        "end_ms": 972000,
+        "speaker_id": "speaker_2",
+        "text": "如果说都不知道的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 973000,
+        "end_ms": 984000,
+        "speaker_id": "speaker_1",
+        "text": "那这个事儿这个这就像刚才这个A同学，对就是这个现在这个法律",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 974000,
+        "end_ms": 984000,
+        "speaker_id": "speaker_2",
+        "text": "这也没法儿知道呀如果没有人向上举报的话这也就是民不告官不管",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 984000,
+        "end_ms": 989000,
+        "speaker_id": "speaker_1",
+        "text": "我们因为就是只有受害人他去报案",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 989000,
+        "end_ms": 989000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 990000,
+        "end_ms": 998000,
+        "speaker_id": "speaker_2",
+        "text": "或者说你已经受到了一种严重的损失那个伤害，比如说你已经受成为轻伤，重伤，或者说致人死亡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 990000,
+        "end_ms": 991000,
+        "speaker_id": "speaker_1",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 995000,
+        "end_ms": 996000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 998000,
+        "end_ms": 1002000,
+        "speaker_id": "speaker_2",
+        "text": "这个就不是所谓的民不告官不管的问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1003000,
+        "end_ms": 1003000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1003000,
+        "end_ms": 1005000,
+        "speaker_id": "speaker_2",
+        "text": "这是警察局必须涉入的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1005000,
+        "end_ms": 1011000,
+        "speaker_id": "speaker_1",
+        "text": "行，那咱这个话题就先到这儿，然后咱继续继续刚才这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1011000,
+        "end_ms": 1016000,
+        "speaker_id": "speaker_1",
+        "text": "呃说到了这个C这边儿C你还有什么想要问的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1016000,
+        "end_ms": 1018000,
+        "speaker_id": "speaker_5",
+        "text": "没有了对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1017000,
+        "end_ms": 1019000,
+        "speaker_id": "speaker_1",
+        "text": "没有了呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1020000,
+        "end_ms": 1023000,
+        "speaker_id": "speaker_1",
+        "text": "行那咱这个D这边儿呢D同学这边儿开始",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1024000,
+        "end_ms": 1031000,
+        "speaker_id": "speaker_6",
+        "text": "呃那个我是咨询人D然后就是前一段时间我有一个异性的朋友",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1031000,
+        "end_ms": 1038000,
+        "speaker_id": "speaker_6",
+        "text": "然后他通过微信或者什么网上一些交友渠道认识了一个女生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1038000,
+        "end_ms": 1045000,
+        "speaker_id": "speaker_6",
+        "text": "然后两个人在网上就聊天儿啊或者视频啊就，呃两个人都很谈得来，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1045000,
+        "end_ms": 1050000,
+        "speaker_id": "speaker_6",
+        "text": "然后就约人见面了，然后女生带他去了一个酒吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1050000,
+        "end_ms": 1055000,
+        "speaker_id": "speaker_6",
+        "text": "然后又点了两瓶酒之后就要价两万",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1056000,
+        "end_ms": 1057000,
+        "speaker_id": "speaker_6",
+        "text": "然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1056000,
+        "end_ms": 1057000,
+        "speaker_id": "speaker_1",
+        "text": "酒拖儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1057000,
+        "end_ms": 1062000,
+        "speaker_id": "speaker_6",
+        "text": "然后面对这种情况，我的朋友应该呃怎么办？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1057000,
+        "end_ms": 1058000,
+        "speaker_id": "speaker_1",
+        "text": "是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1065000,
+        "end_ms": 1067000,
+        "speaker_id": "speaker_2",
+        "text": "首先这个属于诈骗行为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1068000,
+        "end_ms": 1069000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1069000,
+        "end_ms": 1070000,
+        "speaker_id": "speaker_2",
+        "text": "违背就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1071000,
+        "end_ms": 1077000,
+        "speaker_id": "speaker_6",
+        "text": "这种嗯对方都是嗯对方当然不会承认自己是诈骗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1077000,
+        "end_ms": 1083000,
+        "speaker_id": "speaker_6",
+        "text": "就带他去那儿消费然后花了两万这个事情属于诈骗吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1083000,
+        "end_ms": 1084000,
+        "speaker_id": "speaker_2",
+        "text": "属于诈骗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1084000,
+        "end_ms": 1088000,
+        "speaker_id": "speaker_2",
+        "text": "这是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1085000,
+        "end_ms": 1088000,
+        "speaker_id": "speaker_6",
+        "text": "人家那个地方如果就是嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1089000,
+        "end_ms": 1094000,
+        "speaker_id": "speaker_6",
+        "text": "人家就是这一瓶酒就坐地起价，这也是诈骗吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1094000,
+        "end_ms": 1097000,
+        "speaker_id": "speaker_2",
+        "text": "他是在哄抬物价违背市场监督管理局的规定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1100000,
+        "end_ms": 1102000,
+        "speaker_id": "speaker_2",
+        "text": "对你要像呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1103000,
+        "end_ms": 1105000,
+        "speaker_id": "speaker_1",
+        "text": "怎么办到现在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1106000,
+        "end_ms": 1110000,
+        "speaker_id": "speaker_2",
+        "text": "对对你像就是嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1116000,
+        "end_ms": 1121000,
+        "speaker_id": "speaker_2",
+        "text": "对你像那个你像KTV里啊&嗯&每次去KTV点啤酒",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1121000,
+        "end_ms": 1130000,
+        "speaker_id": "speaker_2",
+        "text": "它那个价格是是有相对于外边是分包的那么说怎么样才能算是哄抬物价呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1126000,
+        "end_ms": 1126000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1130000,
+        "end_ms": 1136000,
+        "speaker_id": "speaker_2",
+        "text": "就是高于市场价格的嗯对有界限",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1132000,
+        "end_ms": 1135000,
+        "speaker_id": "speaker_1",
+        "text": "百分之多少有这个界限是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1136000,
+        "end_ms": 1142000,
+        "speaker_id": "speaker_2",
+        "text": "它其实KTV里面它只能说是相对于外面来说提高了百分之五十",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1142000,
+        "end_ms": 1144000,
+        "speaker_id": "speaker_2",
+        "text": "而且他们这个行业就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1145000,
+        "end_ms": 1147000,
+        "speaker_id": "speaker_2",
+        "text": "靠这个营销嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1147000,
+        "end_ms": 1150000,
+        "speaker_id": "speaker_1",
+        "text": "那你刚才刚才这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1151000,
+        "end_ms": 1153000,
+        "speaker_id": "speaker_1",
+        "text": "D这边儿说了这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1153000,
+        "end_ms": 1157000,
+        "speaker_id": "speaker_1",
+        "text": "嗯说这个她朋友这个事情",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1157000,
+        "end_ms": 1164000,
+        "speaker_id": "speaker_1",
+        "text": "你们平常生活中对这个事情都怎么看A这边儿对这个事情怎么看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1166000,
+        "end_ms": 1176000,
+        "speaker_id": "speaker_3",
+        "text": "感觉这种就属于哄抬物价，属于也是属于网络诈骗的，毕竟是从网上认识的啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1171000,
+        "end_ms": 1173000,
+        "speaker_id": "speaker_2",
+        "text": "就是酒托儿嘛说白了就是酒托儿嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1173000,
+        "end_ms": 1176000,
+        "speaker_id": "speaker_1",
+        "text": "你那个从你那个朋友是男的女的呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1177000,
+        "end_ms": 1178000,
+        "speaker_id": "speaker_6",
+        "text": "男性朋友",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1178000,
+        "end_ms": 1180000,
+        "speaker_id": "speaker_1",
+        "text": "男性朋友啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1178000,
+        "end_ms": 1181000,
+        "speaker_id": "speaker_3",
+        "text": "男性朋友约女网友然后被女网友",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1182000,
+        "end_ms": 1183000,
+        "speaker_id": "speaker_3",
+        "text": "骗钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1182000,
+        "end_ms": 1186000,
+        "speaker_id": "speaker_2",
+        "text": "骗钱那个骗钱这就属于诈骗嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1183000,
+        "end_ms": 1184000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1186000,
+        "end_ms": 1187000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1188000,
+        "end_ms": 1189000,
+        "speaker_id": "speaker_1",
+        "text": "诈骗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1190000,
+        "end_ms": 1198000,
+        "speaker_id": "speaker_1",
+        "text": "嗯那个B同学对这个事情有个什么样的看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1193000,
+        "end_ms": 1198000,
+        "speaker_id": "speaker_4",
+        "text": "这你首先你要保留证据看你自己是不是愿意你要是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1198000,
+        "end_ms": 1205000,
+        "speaker_id": "speaker_4",
+        "text": "不愿意的话还是一个就是一个词就是物有所值如果你觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1203000,
+        "end_ms": 1204000,
+        "speaker_id": "speaker_1",
+        "text": "嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1205000,
+        "end_ms": 1209000,
+        "speaker_id": "speaker_4",
+        "text": "觉得值的话就可以如果你觉得不值得的话就可以报警",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1209000,
+        "end_ms": 1212000,
+        "speaker_id": "speaker_1",
+        "text": "对所以针对这个事儿现在大家围绕这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1213000,
+        "end_ms": 1216000,
+        "speaker_id": "speaker_4",
+        "text": "留好证据吧所有的证据",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1214000,
+        "end_ms": 1220000,
+        "speaker_id": "speaker_1",
+        "text": "对留好证据还有就是要一定要，嗯网络是虚幻的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1220000,
+        "end_ms": 1220000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1220000,
+        "end_ms": 1224000,
+        "speaker_id": "speaker_1",
+        "text": "嗯你不一定你对面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1224000,
+        "end_ms": 1229000,
+        "speaker_id": "speaker_1",
+        "text": "嗯她说的说话这个态度跟她本人有可能不是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1229000,
+        "end_ms": 1235000,
+        "speaker_id": "speaker_1",
+        "text": "嗯大相径同有可能，对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1230000,
+        "end_ms": 1235000,
+        "speaker_id": "speaker_4",
+        "text": "可能嗯可能网网上给你聊的性别的女的但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1236000,
+        "end_ms": 1238000,
+        "speaker_id": "speaker_4",
+        "text": "拿着手机的可能是个三十岁男的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1238000,
+        "end_ms": 1243000,
+        "speaker_id": "speaker_1",
+        "text": "对这个很可能性非常的大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1238000,
+        "end_ms": 1243000,
+        "speaker_id": "speaker_4",
+        "text": "都有可能，所以说对所以说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1243000,
+        "end_ms": 1246000,
+        "speaker_id": "speaker_4",
+        "text": "还是，对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1245000,
+        "end_ms": 1249000,
+        "speaker_id": "speaker_1",
+        "text": "谨慎网上交友儿交友儿要谨慎嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1248000,
+        "end_ms": 1253000,
+        "speaker_id": "speaker_4",
+        "text": "可以交但是谨慎现实一点儿比较好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1253000,
+        "end_ms": 1254000,
+        "speaker_id": "speaker_1",
+        "text": "C这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1255000,
+        "end_ms": 1256000,
+        "speaker_id": "speaker_2",
+        "text": "对的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1256000,
+        "end_ms": 1263000,
+        "speaker_id": "speaker_5",
+        "text": "我这边儿有一个新的问题可以问一下儿吗就是说也是网上交友跟一个男人跟一个女人聊天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1257000,
+        "end_ms": 1259000,
+        "speaker_id": "speaker_1",
+        "text": "嗯嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1263000,
+        "end_ms": 1267000,
+        "speaker_id": "speaker_5",
+        "text": "然后就在这段聊天之中然后确定了关系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1267000,
+        "end_ms": 1271000,
+        "speaker_id": "speaker_5",
+        "text": "然后女方会向男方索要就是要钱，然后转账啊红包什么的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1271000,
+        "end_ms": 1277000,
+        "speaker_id": "speaker_5",
+        "text": "但是在就是多次转账之后，女方这边儿把男方拉黑了你说这样儿就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1277000,
+        "end_ms": 1288000,
+        "speaker_id": "speaker_5",
+        "text": "可以就是报警吗但是两个人在期间说是谈恋爱啊但是人女方可以说是我们这是正当恋爱他愿意给我愿意要就这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1279000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_2",
+        "text": "可以呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1285000,
+        "end_ms": 1286000,
+        "speaker_id": "speaker_2",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1288000,
+        "end_ms": 1291000,
+        "speaker_id": "speaker_2",
+        "text": "女方的目的就是以索取财物为目的的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1292000,
+        "end_ms": 1293000,
+        "speaker_id": "speaker_1",
+        "text": "目的不纯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1292000,
+        "end_ms": 1298000,
+        "speaker_id": "speaker_5",
+        "text": "对但是你怎么但是你嗯怎么鉴定人家就是对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1292000,
+        "end_ms": 1294000,
+        "speaker_id": "speaker_2",
+        "text": "目的不纯他的动机",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1296000,
+        "end_ms": 1297000,
+        "speaker_id": "speaker_1",
+        "text": "目的不纯呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1298000,
+        "end_ms": 1301000,
+        "speaker_id": "speaker_1",
+        "text": "对人家说人家原来就是想要谈恋爱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1301000,
+        "end_ms": 1304000,
+        "speaker_id": "speaker_5",
+        "text": "就是那种物质的女生也很多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1304000,
+        "end_ms": 1307000,
+        "speaker_id": "speaker_2",
+        "text": "就是法律调那个然后关系去调查吗调查他的背景",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1308000,
+        "end_ms": 1313000,
+        "speaker_id": "speaker_2",
+        "text": "他是什么样的一个人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1309000,
+        "end_ms": 1313000,
+        "speaker_id": "speaker_4",
+        "text": "这这这种人她可能不只针对于你这一个男的钓钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1314000,
+        "end_ms": 1319000,
+        "speaker_id": "speaker_2",
+        "text": "可以呀那她就是就是一个诈骗犯就是一个团伙儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1314000,
+        "end_ms": 1319000,
+        "speaker_id": "speaker_1",
+        "text": "她有可能是这个系系列对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1320000,
+        "end_ms": 1323000,
+        "speaker_id": "speaker_2",
+        "text": "如果真的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1320000,
+        "end_ms": 1323000,
+        "speaker_id": "speaker_4",
+        "text": "真的查出来是团伙作案的话那肯要举报他的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1323000,
+        "end_ms": 1326000,
+        "speaker_id": "speaker_2",
+        "text": "这就很容易定性啊如果说只是单独的对一个男生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1327000,
+        "end_ms": 1331000,
+        "speaker_id": "speaker_2",
+        "text": "那可能就是开始的时候就是想着跟他在一起",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1332000,
+        "end_ms": 1335000,
+        "speaker_id": "speaker_2",
+        "text": "然后可能因为别的事情而导致分手",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1335000,
+        "end_ms": 1339000,
+        "speaker_id": "speaker_2",
+        "text": "这个财物嗯只能说是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1340000,
+        "end_ms": 1342000,
+        "speaker_id": "speaker_2",
+        "text": "看多少了吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1343000,
+        "end_ms": 1348000,
+        "speaker_id": "speaker_2",
+        "text": "看最后给了多少多少份那个金额，如果金额较大的话是需要归还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1348000,
+        "end_ms": 1349000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1348000,
+        "end_ms": 1353000,
+        "speaker_id": "speaker_2",
+        "text": "因为男方给女方的目钱财的目的就是为了能继续在一起，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1353000,
+        "end_ms": 1358000,
+        "speaker_id": "speaker_2",
+        "text": "或者说下一步如果说女方不进行下一步的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1358000,
+        "end_ms": 1361000,
+        "speaker_id": "speaker_2",
+        "text": "深深交的话，那么这笔钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1362000,
+        "end_ms": 1363000,
+        "speaker_id": "speaker_2",
+        "text": "是需要退还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1363000,
+        "end_ms": 1380000,
+        "speaker_id": "speaker_5",
+        "text": "那那现在有一个就是如果这种情况是男方和女方是真的两个人在一块儿了很久了一年多吧然后嗯男方给了这女生很多的钱就是类似那种情况但是分手之后男方想要还这种是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1381000,
+        "end_ms": 1382000,
+        "speaker_id": "speaker_5",
+        "text": "怎么解决啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1383000,
+        "end_ms": 1384000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1384000,
+        "end_ms": 1386000,
+        "speaker_id": "speaker_2",
+        "text": "这种是肯定是要退还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1386000,
+        "end_ms": 1391000,
+        "speaker_id": "speaker_5",
+        "text": "这种需要退还吗两个人搞搞对象",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1388000,
+        "end_ms": 1391000,
+        "speaker_id": "speaker_2",
+        "text": "就是要要看情况如果说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1392000,
+        "end_ms": 1393000,
+        "speaker_id": "speaker_2",
+        "text": "看是多大份额的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1394000,
+        "end_ms": 1397000,
+        "speaker_id": "speaker_2",
+        "text": "只是出去吃吃饭逛个街的话这个可能",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1394000,
+        "end_ms": 1395000,
+        "speaker_id": "speaker_3",
+        "text": "这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1398000,
+        "end_ms": 1402000,
+        "speaker_id": "speaker_5",
+        "text": "就是红包转账不是平时的那种消费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1402000,
+        "end_ms": 1411000,
+        "speaker_id": "speaker_2",
+        "text": "就属于类似于五二零啊什么的纪念日啊转个账",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1406000,
+        "end_ms": 1411000,
+        "speaker_id": "speaker_3",
+        "text": "你像现在网上有一些案例就是关于就是说呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1411000,
+        "end_ms": 1419000,
+        "speaker_id": "speaker_3",
+        "text": "就是因为一直谈然后到分手以后再要回来是判处的话是进行要归还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1419000,
+        "end_ms": 1422000,
+        "speaker_id": "speaker_2",
+        "text": "因为因为你的目的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1423000,
+        "end_ms": 1424000,
+        "speaker_id": "speaker_2",
+        "text": "不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1424000,
+        "end_ms": 1433000,
+        "speaker_id": "speaker_5",
+        "text": "两个人在一块儿那么长时间了还",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1426000,
+        "end_ms": 1433000,
+        "speaker_id": "speaker_2",
+        "text": "在在一块儿这期间的话那个所赠送的那就是个人赠与那这个可以不要回来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1433000,
+        "end_ms": 1437000,
+        "speaker_id": "speaker_2",
+        "text": "就比方说嗯我为了娶你我给你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1437000,
+        "end_ms": 1444000,
+        "speaker_id": "speaker_2",
+        "text": "送了一辆宝马车给你买一套房子然后然后你又说你不合适了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1440000,
+        "end_ms": 1440000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1440000,
+        "end_ms": 1442000,
+        "speaker_id": "speaker_5",
+        "text": "对必须把这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1444000,
+        "end_ms": 1448000,
+        "speaker_id": "speaker_1",
+        "text": "也没有成",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1446000,
+        "end_ms": 1448000,
+        "speaker_id": "speaker_2",
+        "text": "也没有成那这种情况下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1448000,
+        "end_ms": 1452000,
+        "speaker_id": "speaker_2",
+        "text": "按照就算是没有刑法规定，按照公序良俗你也是应该返还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1453000,
+        "end_ms": 1464000,
+        "speaker_id": "speaker_2",
+        "text": "因为男方的目的是为了能和你结婚跟你结成夫妻关系，但你没有尽到这个义务，或者你没有想要下一步进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1456000,
+        "end_ms": 1459000,
+        "speaker_id": "speaker_1",
+        "text": "结婚就正常花费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1465000,
+        "end_ms": 1467000,
+        "speaker_id": "speaker_2",
+        "text": "这个这个这份钱是要归还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1467000,
+        "end_ms": 1472000,
+        "speaker_id": "speaker_2",
+        "text": "就比方说我给你我给你彩礼，我要娶你，但是你不嫁给我",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1472000,
+        "end_ms": 1474000,
+        "speaker_id": "speaker_2",
+        "text": "这个彩礼也是要还回来的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1474000,
+        "end_ms": 1481000,
+        "speaker_id": "speaker_5",
+        "text": "对那个彩礼彩礼是一开始就有这个定性嘛就是彩礼就是结婚啊要给这个人钱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1479000,
+        "end_ms": 1479000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1481000,
+        "end_ms": 1495000,
+        "speaker_id": "speaker_5",
+        "text": "但是平时的那种呃红包儿啊或者你像送什么礼物口红或者名贵的一些东西嘛化妆品什么的这种就必须要定义嘛就是你送给我的所以后面那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1489000,
+        "end_ms": 1490000,
+        "speaker_id": "speaker_2",
+        "text": "这个属于个人赠赠送",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1495000,
+        "end_ms": 1501000,
+        "speaker_id": "speaker_5",
+        "text": "发生什么事情啦就不会再说有那个还回去这种情况吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1500000,
+        "end_ms": 1501000,
+        "speaker_id": "speaker_2",
+        "text": "没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1501000,
+        "end_ms": 1506000,
+        "speaker_id": "speaker_2",
+        "text": "这个不受法律保护就是属于个人赠予嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1506000,
+        "end_ms": 1511000,
+        "speaker_id": "speaker_2",
+        "text": "不附任何条件的，就是条件就是我给你东西，你你对我付出感情，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1512000,
+        "end_ms": 1516000,
+        "speaker_id": "speaker_2",
+        "text": "如果说当时你们还在感情维系期间的话这就属于个人赠予",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1517000,
+        "end_ms": 1518000,
+        "speaker_id": "speaker_2",
+        "text": "是没有任何的利益关系的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1520000,
+        "end_ms": 1521000,
+        "speaker_id": "speaker_2",
+        "text": "这个是合法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1523000,
+        "end_ms": 1528000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行那咱继续咱刚才这个引入这个然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1529000,
+        "end_ms": 1530000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1530000,
+        "end_ms": 1536000,
+        "speaker_id": "speaker_1",
+        "text": "D这边儿还有什么问题吗没有问题了那咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1533000,
+        "end_ms": 1537000,
+        "speaker_id": "speaker_6",
+        "text": "啊我这边儿就没有什么问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1537000,
+        "end_ms": 1540000,
+        "speaker_id": "speaker_1",
+        "text": "E这边儿E同学嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1538000,
+        "end_ms": 1545000,
+        "speaker_id": "speaker_7",
+        "text": "我是咨询人E那我先想问问一个问题如果说去取取取钱的时候",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1545000,
+        "end_ms": 1552000,
+        "speaker_id": "speaker_7",
+        "text": "呃旁边有个人就是想要打劫你嘛然后把刀嗯都已经架上了这时候儿因为你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1548000,
+        "end_ms": 1548000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1550000,
+        "end_ms": 1551000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1553000,
+        "end_ms": 1564000,
+        "speaker_id": "speaker_7",
+        "text": "嗯上头然后不虚拿刀然后直接用刀呃就抢夺他的刀对他进行那个伤害这是要判什么呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1564000,
+        "end_ms": 1572000,
+        "speaker_id": "speaker_2",
+        "text": "这是正当防卫你不负你不负任何责任嗯嗯这也属于正当防卫",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1565000,
+        "end_ms": 1572000,
+        "speaker_id": "speaker_7",
+        "text": "但是你像如果说你拿刀把他手什么砍掉了那也是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1572000,
+        "end_ms": 1573000,
+        "speaker_id": "speaker_7",
+        "text": "正当防卫吗&对&",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1573000,
+        "end_ms": 1575000,
+        "speaker_id": "speaker_2",
+        "text": "因为他一开始拿着刀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1575000,
+        "end_ms": 1579000,
+        "speaker_id": "speaker_2",
+        "text": "向你强行索取财物并且他知道",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1579000,
+        "end_ms": 1582000,
+        "speaker_id": "speaker_2",
+        "text": "可能拿刀会对你造成伤害他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1582000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_2",
+        "text": "当事人明知或者已知这种行为对你造成伤害，并且希望或者放任这种情况下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1587000,
+        "end_ms": 1589000,
+        "speaker_id": "speaker_4",
+        "text": "那就是故意伤害",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1589000,
+        "end_ms": 1590000,
+        "speaker_id": "speaker_7",
+        "text": "对你像",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1589000,
+        "end_ms": 1591000,
+        "speaker_id": "speaker_2",
+        "text": "或者抢劫罪你这属于正当防卫。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1591000,
+        "end_ms": 1603000,
+        "speaker_id": "speaker_7",
+        "text": "你像很多情况，你像什么比如什么抢劫时什么什么，然后就正当防卫嘛故意把就是一失手把他杀了，这也算是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1601000,
+        "end_ms": 1602000,
+        "speaker_id": "speaker_2",
+        "text": "这也算正常的防卫",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1603000,
+        "end_ms": 1616000,
+        "speaker_id": "speaker_7",
+        "text": "但是你像判处他就不是这么判的，他是判了故意是对防卫过当",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1610000,
+        "end_ms": 1611000,
+        "speaker_id": "speaker_4",
+        "text": "防卫过当",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1612000,
+        "end_ms": 1613000,
+        "speaker_id": "speaker_1",
+        "text": "防卫过当",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1612000,
+        "end_ms": 1615000,
+        "speaker_id": "speaker_2",
+        "text": "呃今年今年刚改的这个刑法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1616000,
+        "end_ms": 1617000,
+        "speaker_id": "speaker_1",
+        "text": "刑法刚改",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1616000,
+        "end_ms": 1623000,
+        "speaker_id": "speaker_2",
+        "text": "对就这个对最高人民法院和检察院对这个正当防卫又进行了新的界定所以你这种情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1623000,
+        "end_ms": 1631000,
+        "speaker_id": "speaker_2",
+        "text": "现在是正当防卫，但是之前的话可能也是法律漏洞吧可能就是防卫过当&哦&",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 1628000,
+        "end_ms": 1629000,
+        "speaker_id": "speaker_1",
+        "text": "防卫过当啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 1631000,
+        "end_ms": 1637000,
+        "speaker_id": "speaker_2",
+        "text": "这个法律这东西它一直在改嘛一直随着社会的变迁也在法律也在变迁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 1637000,
+        "end_ms": 1640000,
+        "speaker_id": "speaker_7",
+        "text": "对行那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 1639000,
+        "end_ms": 1647000,
+        "speaker_id": "speaker_1",
+        "text": "应该说嗯法律在逐步的完善逐步的完善",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 1642000,
+        "end_ms": 1647000,
+        "speaker_id": "speaker_2",
+        "text": "完善对，中国还是没有一个很",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 1647000,
+        "end_ms": 1664000,
+        "speaker_id": "speaker_2",
+        "text": "完整的民法民法体系就是二零二一年一月一日才正式生效民法典的之前我们国家没有没有一个完整的民法民法典对它这情况它这情况一直在变嘛中国的法律一直在完善",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 1657000,
+        "end_ms": 1657000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 1657000,
+        "end_ms": 1660000,
+        "speaker_id": "speaker_7",
+        "text": "就是针针对情况在变",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 1665000,
+        "end_ms": 1687000,
+        "speaker_id": "speaker_7",
+        "text": "哦呃那呃下一个问题的话，就是如果说像现在年轻人都比较喜欢鞋子首饰一些东西，就是如果说你要去呃买的话，就是你以正品的价格买的，但他给你的是一个假的，这个时候是呃怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 1673000,
+        "end_ms": 1674000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 1685000,
+        "end_ms": 1687000,
+        "speaker_id": "speaker_2",
+        "text": "你可以告他呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 1687000,
+        "end_ms": 1692000,
+        "speaker_id": "speaker_2",
+        "text": "你可以搜集索要赔偿呀，他这属于售卖售卖假冒伪劣产品啊。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000430",
+        "index": 429,
+        "start_ms": 1693000,
+        "end_ms": 1694000,
+        "speaker_id": "speaker_7",
+        "text": "这属于诈骗了吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000431",
+        "index": 430,
+        "start_ms": 1695000,
+        "end_ms": 1696000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000432",
+        "index": 431,
+        "start_ms": 1697000,
+        "end_ms": 1703000,
+        "speaker_id": "speaker_2",
+        "text": "这个不属于诈骗他只能说是是那个售卖假冒伪劣产品，你可以向市场监督局举报他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000433",
+        "index": 432,
+        "start_ms": 1703000,
+        "end_ms": 1706000,
+        "speaker_id": "speaker_2",
+        "text": "然后向让他给你退还财物。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000434",
+        "index": 433,
+        "start_ms": 1706000,
+        "end_ms": 1717000,
+        "speaker_id": "speaker_7",
+        "text": "但是你像一般你都是在网上买的嘛他买完以后就直接把你拉黑了，然后你只有他一个那个微信号，就是万一是他小号的话，那也没有办法解决是吧。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000435",
+        "index": 434,
+        "start_ms": 1717000,
+        "end_ms": 1730000,
+        "speaker_id": "speaker_2",
+        "text": "可以可以查到这个联这个当事人的，你可以去视网监视网那个对。是可以查出来的，你可以查他的ID地址呀对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000436",
+        "index": 435,
+        "start_ms": 1722000,
+        "end_ms": 1723000,
+        "speaker_id": "speaker_1",
+        "text": "查他的ID",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000437",
+        "index": 436,
+        "start_ms": 1725000,
+        "end_ms": 1726000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000438",
+        "index": 437,
+        "start_ms": 1726000,
+        "end_ms": 1730000,
+        "speaker_id": "speaker_7",
+        "text": "就是查出他那个IP地址然后进行追踪是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000439",
+        "index": 438,
+        "start_ms": 1730000,
+        "end_ms": 1741000,
+        "speaker_id": "speaker_2",
+        "text": "这都这个现在这个公安局的网络系统是很发达的，比我们想象的都要强很多。完全可以查到。天网恢恢疏而不漏啊法网恢恢疏而不漏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000440",
+        "index": 439,
+        "start_ms": 1742000,
+        "end_ms": 1743000,
+        "speaker_id": "speaker_7",
+        "text": "行那没有别的问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000441",
+        "index": 440,
+        "start_ms": 1743000,
+        "end_ms": 1750000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行嗯那咱们这边儿嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000442",
+        "index": 441,
+        "start_ms": 1751000,
+        "end_ms": 1754000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿律师这边儿还有想要给我吗普及一下吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000443",
+        "index": 442,
+        "start_ms": 1755000,
+        "end_ms": 1756000,
+        "speaker_id": "speaker_1",
+        "text": "嗯普及一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000444",
+        "index": 443,
+        "start_ms": 1756000,
+        "end_ms": 1763000,
+        "speaker_id": "speaker_2",
+        "text": "我给在座的女性普及一下儿这个呃婚姻财产的问题吧好吧就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000445",
+        "index": 444,
+        "start_ms": 1766000,
+        "end_ms": 1767000,
+        "speaker_id": "speaker_2",
+        "text": "首先",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000446",
+        "index": 445,
+        "start_ms": 1767000,
+        "end_ms": 1774000,
+        "speaker_id": "speaker_2",
+        "text": "女孩子可能就觉得父母的财产最后不会给自己比如说你有一个弟弟或者妹妹嗯哥哥的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000447",
+        "index": 446,
+        "start_ms": 1777000,
+        "end_ms": 1783000,
+        "speaker_id": "speaker_2",
+        "text": "就是举个例子，比如说在座的两位嘉宾嗯，你有一个哥哥或者有一个弟弟，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000448",
+        "index": 447,
+        "start_ms": 1784000,
+        "end_ms": 1787000,
+        "speaker_id": "speaker_2",
+        "text": "然后你父母有一套房子，还有十万块钱的存款，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000449",
+        "index": 448,
+        "start_ms": 1788000,
+        "end_ms": 1793000,
+        "speaker_id": "speaker_2",
+        "text": "然后你们就会觉得弟弟以后要结婚，自己需要嫁出去的，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000450",
+        "index": 449,
+        "start_ms": 1793000,
+        "end_ms": 1796000,
+        "speaker_id": "speaker_2",
+        "text": "可能会觉得这个钱就不会给分给自己。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000451",
+        "index": 450,
+        "start_ms": 1796000,
+        "end_ms": 1800000,
+        "speaker_id": "speaker_2",
+        "text": "还有房子也不会分给你，其实你们是有是有份额的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000452",
+        "index": 451,
+        "start_ms": 1801000,
+        "end_ms": 1803000,
+        "speaker_id": "speaker_2",
+        "text": "你们两个是平分的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000453",
+        "index": 452,
+        "start_ms": 1803000,
+        "end_ms": 1808000,
+        "speaker_id": "speaker_2",
+        "text": "平等的，没有任何就是说男尊女卑的那个地位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000454",
+        "index": 453,
+        "start_ms": 1810000,
+        "end_ms": 1816000,
+        "speaker_id": "speaker_5",
+        "text": "那这个不应该是根据父母的意愿然后。就是父母来分配",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000455",
+        "index": 454,
+        "start_ms": 1814000,
+        "end_ms": 1816000,
+        "speaker_id": "speaker_2",
+        "text": "对呀如果说没有遗嘱的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000456",
+        "index": 455,
+        "start_ms": 1817000,
+        "end_ms": 1822000,
+        "speaker_id": "speaker_2",
+        "text": "没有遗嘱的话，你们两个是平分的，但是如果有遗嘱的话还是遗嘱为大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000457",
+        "index": 456,
+        "start_ms": 1822000,
+        "end_ms": 1826000,
+        "speaker_id": "speaker_2",
+        "text": "看你们父母想那个想给谁就是给谁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000458",
+        "index": 457,
+        "start_ms": 1826000,
+        "end_ms": 1829000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是嗯前几年嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000459",
+        "index": 458,
+        "start_ms": 1830000,
+        "end_ms": 1835000,
+        "speaker_id": "speaker_2",
+        "text": "在这个婚姻法实那个部分法律法修改之前就有骗婚的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000460",
+        "index": 459,
+        "start_ms": 1835000,
+        "end_ms": 1837000,
+        "speaker_id": "speaker_2",
+        "text": "就是男方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000461",
+        "index": 460,
+        "start_ms": 1838000,
+        "end_ms": 1840000,
+        "speaker_id": "speaker_2",
+        "text": "是一个开公司的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000462",
+        "index": 461,
+        "start_ms": 1841000,
+        "end_ms": 1848000,
+        "speaker_id": "speaker_2",
+        "text": "他向外借款一百万，去这个当一个公司的股东，然后再娶你",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000463",
+        "index": 462,
+        "start_ms": 1848000,
+        "end_ms": 1852000,
+        "speaker_id": "speaker_2",
+        "text": "让你来共同偿还这一百万的债务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000464",
+        "index": 463,
+        "start_ms": 1852000,
+        "end_ms": 1858000,
+        "speaker_id": "speaker_2",
+        "text": "之前的话是有是有义务要承担这个债务的，但是现在的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000465",
+        "index": 464,
+        "start_ms": 1858000,
+        "end_ms": 1869000,
+        "speaker_id": "speaker_2",
+        "text": "如果现在他不用再承担了，因为如果说他向外借款用作家用的话，比如说孩子生病了，需要花钱或者父母做手术，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000466",
+        "index": 465,
+        "start_ms": 1869000,
+        "end_ms": 1876000,
+        "speaker_id": "speaker_2",
+        "text": "或者说你们一块儿贷款买房子，这是夫妻共同的义务。如果他单纯的拿出去做生意，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000467",
+        "index": 466,
+        "start_ms": 1877000,
+        "end_ms": 1879000,
+        "speaker_id": "speaker_2",
+        "text": "这个是不用你们偿还的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000468",
+        "index": 467,
+        "start_ms": 1881000,
+        "end_ms": 1885000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是女孩子嘛对吧以后结婚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000469",
+        "index": 468,
+        "start_ms": 1887000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_2",
+        "text": "最好是在婚前就要在那个你们所住的地方，所住的那个房子加上你们的名字",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000470",
+        "index": 469,
+        "start_ms": 1894000,
+        "end_ms": 1897000,
+        "speaker_id": "speaker_2",
+        "text": "这样的话是对你们一个保障。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000471",
+        "index": 470,
+        "start_ms": 1897000,
+        "end_ms": 1901000,
+        "speaker_id": "speaker_2",
+        "text": "比如说男方突然要要他要跟你离婚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000472",
+        "index": 471,
+        "start_ms": 1902000,
+        "end_ms": 1905000,
+        "speaker_id": "speaker_2",
+        "text": "如果说房子上没有你名字的话，你将一无所有，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000473",
+        "index": 472,
+        "start_ms": 1906000,
+        "end_ms": 1914000,
+        "speaker_id": "speaker_1",
+        "text": "这不是属于共同财产吗？不属于，个人，嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000474",
+        "index": 473,
+        "start_ms": 1908000,
+        "end_ms": 1913000,
+        "speaker_id": "speaker_2",
+        "text": "对不属于共同因为如果不加你名字的话这属于他的婚前个人财产",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000475",
+        "index": 474,
+        "start_ms": 1913000,
+        "end_ms": 1917000,
+        "speaker_id": "speaker_2",
+        "text": "你分不到的，你必须要加上才可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000476",
+        "index": 475,
+        "start_ms": 1915000,
+        "end_ms": 1915000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000477",
+        "index": 476,
+        "start_ms": 1917000,
+        "end_ms": 1923000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行今天咱们这个律师嗯讲了这么多，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000478",
+        "index": 477,
+        "start_ms": 1924000,
+        "end_ms": 1929000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行因为咱们这个时间的原因咱本次这个嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000479",
+        "index": 478,
+        "start_ms": 1929000,
+        "end_ms": 1943000,
+        "speaker_id": "speaker_1",
+        "text": "法律援助会就先开到这儿后期有什么想要再咨询的，咱们私下咨询咱们的律师&好的&嗯行，那咱们这个会就先到这儿此结束啊&好&",
+        "status": "ok"
+      }
+    ]
+  }
+}

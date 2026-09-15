@@ -1,0 +1,42 @@
+{
+  "title": "会议结束前确认事项",
+  "key_points": [
+    "运营与后勤需提前协商婚车数量"
+  ],
+  "anchors": [
+    "婚车",
+    "32m12s-32m17s",
+    "32m17s-32m20s",
+    "32m20s-32m21s",
+    "32m22s-32m23s",
+    "32m23s-32m27s"
+  ],
+  "summary": "会议结束前确认运营与后勤需提前协商婚车数量，彩排时将安排相关事宜。双方将在彩排前完成婚车数量协调，确保活动顺利进行。",
+  "continues_previous": false,
+  "refs": [
+    "seg-000669",
+    "seg-000671"
+  ],
+  "action_candidates": [
+    {
+      "task": "协商婚车数量",
+      "owner": null,
+      "deadline": null,
+      "refs": [
+        "seg-000669"
+      ]
+    }
+  ],
+  "start_ref": "seg-000669",
+  "end_ref": "seg-000674",
+  "block_id": "blk-000014",
+  "segment_ids": [
+    "seg-000669",
+    "seg-000670",
+    "seg-000671",
+    "seg-000672",
+    "seg-000673",
+    "seg-000674"
+  ],
+  "key_data": []
+}

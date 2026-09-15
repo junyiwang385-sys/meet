@@ -1,0 +1,18 @@
+{
+  "model": "qwen3:4b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是会议事实整理器，只能依据当前请求中提供的会议内容生成结果。\n允许先在 <think>...</think> 中进行推理；思考结束后只能输出一个合法 JSON 对象，不要输出 Markdown、解释或代码围栏。\n不得虚构输入中没有的事实、数字、决定、风险、负责人或截止时间。\n不同请求可能提供完整 Timeline，也可能只提供章节摘要、待办候选或证据 JSON。Timeline 文本使用紧凑格式 [r38][14m48s-15m12s][sp3] 内容；r38 是 segment 的唯一引用 ID，时间全部使用分钟 m 和秒 s，sp3 是匿名 speaker 标识。即使当前请求没有 Timeline 行，字段中的 segment_id、refs、speaker_id 和 owner 仍使用同一套紧凑 r/sp ID；所有 ID 必须原样使用当前输入中出现的值，不要修改、补造或转换。\n普通讨论、建议和观点不能自动升级为决定或待办。\n没有明确依据的标量使用 null，没有明确依据的集合使用 []，不要用“暂无”“未明确”“N/A”等占位文字代替空值。"
+    },
+    {
+      "role": "user",
+      "content": "任务：\n复核下面各章节窗口提取的待办候选及其原文证据，输出最终待办。\n\n复核规则：\n- 只有明确要求后续执行的事项才保留。\n- 普通建议、观点、愿望和讨论必须删除。\n- 合并表达相同任务的候选，保留最明确的任务描述和证据。\n- owner 必须有原文依据；deadline 必须在原文明确出现，否则使用 null。\n\n输出结构：\n{\n  \"action_items\": [\n    {\n      \"task\": \"确认后的待办\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r1\"\n      ]\n    }\n  ]\n}\n\n候选：\n[\n  {\n    \"task\": \"评估项目成本与市场风险\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r104\"\n    ]\n  },\n  {\n    \"task\": \"制定详细计划\",\n    \"owner\": \"sp1\",\n    \"deadline\": null,\n    \"refs\": [\n      \"r172\"\n    ]\n  },\n  {\n    \"task\": \"制定盆栽业务具体实施计划\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r227\"\n    ]\n  },\n  {\n    \"task\": \"E同学需在1-1.5年内完成游戏设计公司实习\",\n    \"owner\": \"sp6\",\n    \"deadline\": null,\n    \"refs\": [\n      \"r265\",\n      \"r277\",\n      \"r282\"\n    ]\n  },\n  {\n    \"task\": \"每月推出以月份命名的特色甜品\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r352\"\n    ]\n  },\n  {\n    \"task\": \"制定猫类服务区域分隔与安全隔离计划\",\n    \"owner\": null,\n    \"deadline\": null,\n    \"refs\": [\n      \"r380\"\n    ]\n  }\n]\n\n证据：\n[\n  {\n    \"segment_id\": \"r104\",\n    \"speaker_id\": \"sp1\",\n    \"text\": \"对吧，嗯行，那那你这个项目可以再具体的再计划一下儿。整个成本啊，这边儿整个市场一个走向啊，还有这个后期怎么有风险是多少儿？风险的评估一下，然后在这个嗯\"\n  },\n  {\n    \"segment_id\": \"r172\",\n    \"speaker_id\": \"sp1\",\n    \"text\": \"这个项目的话，到时候儿再具体的有一个这个方面的计划写出来，然后我看看拿了以后就再给你指导一下。嗯咱\"\n  },\n  {\n    \"segment_id\": \"r227\",\n    \"speaker_id\": \"sp1\",\n    \"text\": \"嗯行，你这个想法儿。到时候儿再这个具体的计划一下儿。\"\n  },\n  {\n    \"segment_id\": \"r265\",\n    \"speaker_id\": \"sp6\",\n    \"text\": \"因为关于大学生创业嘛，因为呃目前大学生创业真的是比较困难，所以我的计划是因为我的专业的关系，我是学的计算机编程嘛\"\n  },\n  {\n    \"segment_id\": \"r277\",\n    \"speaker_id\": \"sp6\",\n    \"text\": \"我们现在每个人手机上几乎都是会下载一两款游戏的，所以我的目标是创在创创建一款大家都会老老大少小都会喜欢玩儿的一款游戏。然后\"\n  },\n  {\n    \"segment_id\": \"r282\",\n    \"speaker_id\": \"sp6\",\n    \"text\": \"然后结识一些人然后去有经验和资本之后，然后创建一个我们自己小的工作室，然后置办一两台或者三台电脑。\"\n  },\n  {\n    \"segment_id\": \"r352\",\n    \"speaker_id\": \"sp7\",\n    \"text\": \"就是我像我打算就是用一共有十二个月嘛，我打算每每一每个月都是有一个特色就是，甜品\"\n  },\n  {\n    \"segment_id\": \"r380\",\n    \"speaker_id\": \"sp7\",\n    \"text\": \"对，首首先你要确定一点就是呃\"\n  }\n]"
+    }
+  ],
+  "temperature": 0.0,
+  "max_tokens": 3072,
+  "response_format": {
+    "type": "json_object"
+  }
+}

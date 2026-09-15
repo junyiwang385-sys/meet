@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:01:59.5410819Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"title\": \"销售培训开场讨论\",\n  \"key_points\": [\n    \"销售的核心是把产品卖出去，需满足三个关键点：产品好、物有所值、顾客有需求（需创造需求）\",\n    \"销售需抓住消费者心理，突出产品优点以快速促成购买\",\n    \"微波炉案例说明：产品宣传功能可能夸大，实际使用场景有限（仅热剩饭）\",\n    \"销售培训聚焦于如何有效推广产品并实现转化\"\n  ],\n  \"anchors\": [\n    \"微波炉\",\n    \"热剩饭\",\n    \"3m20s-3m28s\",\n    \"3m34s-3m38s\",\n    \"3m43s-3m46s\",\n    \"3m53s-3m54s\",\n    \"3m55s-3m56s\",\n    \"3m57s-3m59s\"\n  ],\n  \"summary\": \"销售培训开场讨论中，专家总结销售核心是把产品卖出去，需满足三个关键点：产品好、物有所值、顾客有需求（需创造需求）。以微波炉为例，该产品宣传功能较夸大，实际仅用于热剩饭，说明销售需精准把握消费者心理，突出产品优点以实现有效转化。\",\n  \"continues_previous\": false,\n  \"key_refs\": [\n    \"r11\",\n    \"r31\",\n    \"r35\"\n  ],\n  \"action_candidates\": [\n    {\n      \"task\": \"明确待办\",\n      \"owner\": null,\n      \"deadline\": null,\n      \"refs\": [\n        \"r11\"\n      ]\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5826380300,
+  "load_duration": 1541000,
+  "prompt_eval_count": 2612,
+  "prompt_eval_duration": 622512000,
+  "eval_count": 369,
+  "eval_duration": 5065111000
+}

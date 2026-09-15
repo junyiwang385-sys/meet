@@ -1,0 +1,50 @@
+[
+  {
+    "k": 1,
+    "chunks": 8,
+    "avg_in_chars": 1089,
+    "max_in_chars": 1850,
+    "recall": 0.9,
+    "lowfreq_recall": 1.0
+  },
+  {
+    "k": 2,
+    "chunks": 4,
+    "avg_in_chars": 2180,
+    "max_in_chars": 2441,
+    "recall": 0.7,
+    "lowfreq_recall": 0.0
+  },
+  {
+    "k": 3,
+    "chunks": 3,
+    "avg_in_chars": 2906,
+    "max_in_chars": 3414,
+    "recall": 0.6,
+    "lowfreq_recall": 0.0
+  },
+  {
+    "k": 4,
+    "chunks": 2,
+    "avg_in_chars": 4360,
+    "max_in_chars": 4723,
+    "recall": 0.9,
+    "lowfreq_recall": 1.0
+  },
+  {
+    "k": 6,
+    "chunks": 2,
+    "avg_in_chars": 4360,
+    "max_in_chars": 6279,
+    "recall": 1.0,
+    "lowfreq_recall": 1.0
+  },
+  {
+    "k": 8,
+    "chunks": 1,
+    "avg_in_chars": 8721,
+    "max_in_chars": 8721,
+    "recall": 0.0,
+    "lowfreq_recall": 0.0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:10:05.4193082Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"task\": \"协商僵尸车问题\",\n  \"owner\": null,\n  \"deadline\": null,\n  \"refs\": [\n    \"r2\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 896937100,
+  "load_duration": 1044400,
+  "prompt_eval_count": 1323,
+  "prompt_eval_duration": 292835000,
+  "eval_count": 37,
+  "eval_duration": 493263000
+}

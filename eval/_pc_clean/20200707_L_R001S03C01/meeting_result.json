@@ -1,0 +1,3918 @@
+{
+  "meeting": {
+    "meeting_id": "20200707_L_R001S03C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 433,
+    "nonempty_segment_count": 433,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 31000,
+        "end_ms": 33000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是董事长",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 33000,
+        "end_ms": 34000,
+        "speaker_id": "speaker_2",
+        "text": "零二二我是总经理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 34000,
+        "end_ms": 36000,
+        "speaker_id": "speaker_3",
+        "text": "零二六我是保安部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 36000,
+        "end_ms": 38000,
+        "speaker_id": "speaker_4",
+        "text": "零幺三我是设备工程部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 38000,
+        "end_ms": 40000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是保洁部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 40000,
+        "end_ms": 42000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是财务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 42000,
+        "end_ms": 43000,
+        "speaker_id": "speaker_7",
+        "text": "零二五我是客服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 44000,
+        "end_ms": 51000,
+        "speaker_id": "speaker_2",
+        "text": "嗯好的今天我们这次我们的物业公司开一次会议，总结一下儿呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 52000,
+        "end_ms": 64000,
+        "speaker_id": "speaker_2",
+        "text": "上个月上个季上季度的公司情况，还有未来这一季度的嗯计划嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 62000,
+        "end_ms": 63000,
+        "speaker_id": "speaker_1",
+        "text": "一个计划",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 64000,
+        "end_ms": 71000,
+        "speaker_id": "speaker_2",
+        "text": "首先我我问一下儿保安部上个月上个季度咱们小区内有没有什么异常",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 73000,
+        "end_ms": 83000,
+        "speaker_id": "speaker_3",
+        "text": "上个小上上一季度小区里头有一位居民是一号儿楼的一个李大爷，丢了一辆自行车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 83000,
+        "end_ms": 89000,
+        "speaker_id": "speaker_3",
+        "text": "不过已经找回了在车棚里面丢的属于外来人士偷的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 83000,
+        "end_ms": 84000,
+        "speaker_id": "speaker_2",
+        "text": "在什么地方丢的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 89000,
+        "end_ms": 95000,
+        "speaker_id": "speaker_2",
+        "text": "嗯外来人士，那也就是说咱们小区的这个门禁卡方面还是有需要有待改进对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 94000,
+        "end_ms": 95000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 94000,
+        "end_ms": 101000,
+        "speaker_id": "speaker_7",
+        "text": "这个是客户儿那个小区的那个老大爷已经是向我这儿投诉了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 100000,
+        "end_ms": 101000,
+        "speaker_id": "speaker_2",
+        "text": "投诉了是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 101000,
+        "end_ms": 108000,
+        "speaker_id": "speaker_3",
+        "text": "嗯而且最主要的是门禁卡需要改进还需要最好是问一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 108000,
+        "end_ms": 109000,
+        "speaker_id": "speaker_2",
+        "text": "对，这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 109000,
+        "end_ms": 116000,
+        "speaker_id": "speaker_4",
+        "text": "这设备设备这个呃会改进下一步的这个一个是漏电系统还有一个就是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 116000,
+        "end_ms": 119000,
+        "speaker_id": "speaker_4",
+        "text": "防止一卡人一一卡多进",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 119000,
+        "end_ms": 120000,
+        "speaker_id": "speaker_1",
+        "text": "嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 120000,
+        "end_ms": 121000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 120000,
+        "end_ms": 123000,
+        "speaker_id": "speaker_2",
+        "text": "现在咱们小区就咱们小区就已经是刷卡制",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 124000,
+        "end_ms": 128000,
+        "speaker_id": "speaker_2",
+        "text": "那有没有可能改成人脸识别呀什么的大家有什么建议吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 128000,
+        "end_ms": 133000,
+        "speaker_id": "speaker_3",
+        "text": "人脸识别我建议还是不要改因为如果是租户的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 133000,
+        "end_ms": 135000,
+        "speaker_id": "speaker_3",
+        "text": "怕录的人脸识别太多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 135000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_4",
+        "text": "对，这个人脸这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 135000,
+        "end_ms": 140000,
+        "speaker_id": "speaker_6",
+        "text": "财务部这边儿觉得财务部这边儿觉得呃这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 136000,
+        "end_ms": 138000,
+        "speaker_id": "speaker_5",
+        "text": "不方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 140000,
+        "end_ms": 144000,
+        "speaker_id": "speaker_6",
+        "text": "呃设备是需要很大那个经费的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 143000,
+        "end_ms": 148000,
+        "speaker_id": "speaker_2",
+        "text": "不啊这个是这个经费是要那个全体的业主他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 148000,
+        "end_ms": 149000,
+        "speaker_id": "speaker_2",
+        "text": "共同承担",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 148000,
+        "end_ms": 152000,
+        "speaker_id": "speaker_4",
+        "text": "这个也要这个看业主愿不愿意了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 151000,
+        "end_ms": 152000,
+        "speaker_id": "speaker_2",
+        "text": "对啊所以我",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 152000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_7",
+        "text": "但是当初的话，他那个有业主向这里投诉就是咱们的物业费越收越多了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 153000,
+        "end_ms": 154000,
+        "speaker_id": "speaker_2",
+        "text": "我觉得咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 160000,
+        "end_ms": 169000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得人脸识别这个其实不太可行吧，比如说业主在家在小区里是可以那业主的朋友或者业主的父母",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 169000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_5",
+        "text": "谁要是想进来想来家里这不太方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 173000,
+        "end_ms": 176000,
+        "speaker_id": "speaker_4",
+        "text": "对咱们要录入的信息量太大了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 175000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_5",
+        "text": "对信息量太大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 177000,
+        "end_ms": 177000,
+        "speaker_id": "speaker_5",
+        "text": "然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 177000,
+        "end_ms": 182000,
+        "speaker_id": "speaker_2",
+        "text": "呃那怎么那怎么那咱们怎么处理这个外来人员呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 177000,
+        "end_ms": 181000,
+        "speaker_id": "speaker_6",
+        "text": "人员太杂这样还是会有那个问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 182000,
+        "end_ms": 188000,
+        "speaker_id": "speaker_4",
+        "text": "这个需不需要这个保安这一块儿去登记了吧？保安部这一块儿需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 188000,
+        "end_ms": 195000,
+        "speaker_id": "speaker_4",
+        "text": "对这个有卡有卡的人就让他出示门禁卡，没有卡的人就登记",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 195000,
+        "end_ms": 197000,
+        "speaker_id": "speaker_7",
+        "text": "但是也有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 196000,
+        "end_ms": 198000,
+        "speaker_id": "speaker_2",
+        "text": "但是也有业主没有忘了带门禁卡呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 198000,
+        "end_ms": 202000,
+        "speaker_id": "speaker_7",
+        "text": "但是也有业主就是进行投诉嘛他是亲戚来探亲",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 202000,
+        "end_ms": 205000,
+        "speaker_id": "speaker_7",
+        "text": "然后咱就是保安那块儿没让人家进去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 205000,
+        "end_ms": 207000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这个可以登记呀登记以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 207000,
+        "end_ms": 213000,
+        "speaker_id": "speaker_3",
+        "text": "这个其实可以就是因为保安室里头有那个电话嘛公用电话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 214000,
+        "end_ms": 220000,
+        "speaker_id": "speaker_3",
+        "text": "可以让业主的亲戚去保安室给业主家里头打一通电话确认他亲戚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 218000,
+        "end_ms": 220000,
+        "speaker_id": "speaker_2",
+        "text": "如果他不知道电话呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 218000,
+        "end_ms": 224000,
+        "speaker_id": "speaker_6",
+        "text": "嗯我这边儿我这边儿建议我们可以多安几个监控",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 224000,
+        "end_ms": 232000,
+        "speaker_id": "speaker_6",
+        "text": "这样的话就是呃防止东西丢失了的话，还可以呃通过监控来寻找一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 233000,
+        "end_ms": 236000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们咱们小区的监控有什么死角儿吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 236000,
+        "end_ms": 238000,
+        "speaker_id": "speaker_3",
+        "text": "监控死角儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 237000,
+        "end_ms": 237000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 238000,
+        "end_ms": 239000,
+        "speaker_id": "speaker_2",
+        "text": "有盲区吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 240000,
+        "end_ms": 248000,
+        "speaker_id": "speaker_3",
+        "text": "这个盲区还是有的挺大的。像一些公园儿里头好多地方都会有盲区，还有一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 248000,
+        "end_ms": 253000,
+        "speaker_id": "speaker_3",
+        "text": "小区的楼的侧面呀那个通道，它会有一些盲区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 254000,
+        "end_ms": 262000,
+        "speaker_id": "speaker_2",
+        "text": "那这个保安部儿可以向财务部儿申请一下儿申请一个报表儿把盲区都补上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 259000,
+        "end_ms": 260000,
+        "speaker_id": "speaker_3",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 261000,
+        "end_ms": 267000,
+        "speaker_id": "speaker_3",
+        "text": "而且也可以做一个居民的调查问卷儿嘛时常",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 267000,
+        "end_ms": 268000,
+        "speaker_id": "speaker_2",
+        "text": "调查问卷",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 267000,
+        "end_ms": 268000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 268000,
+        "end_ms": 278000,
+        "speaker_id": "speaker_7",
+        "text": "你像我们客服的话就是就会接到刚才所说的保安的话，他有些保安素质不是特别高就是对于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 278000,
+        "end_ms": 284000,
+        "speaker_id": "speaker_7",
+        "text": "业主他亲戚来了，态度不是特别好，这个保安部是不是该怎么做",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 285000,
+        "end_ms": 292000,
+        "speaker_id": "speaker_6",
+        "text": "呃我觉得还是要培训一下这些必要的这些呃礼仪呀这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 292000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_6",
+        "text": "还有一些就是呃外来人员没有卡或者怎么进入，我觉得应该呃加强一下儿培训，呃面对这些问题应该怎么处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 302000,
+        "end_ms": 303000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 303000,
+        "end_ms": 314000,
+        "speaker_id": "speaker_3",
+        "text": "可以在门口儿或者保安室安一些摄像头儿如果保安进行素质较低的一些东西的话可以直接进行相对于处罚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 314000,
+        "end_ms": 323000,
+        "speaker_id": "speaker_3",
+        "text": "罚金之类的东西，扣除相应一部分工资，这样的话他就会有所改进，也不用重新新招一些保安",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 324000,
+        "end_ms": 331000,
+        "speaker_id": "speaker_7",
+        "text": "但是是说会不会出现就有些问题就是他们被扣工资了心情更不好了对业主更是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 331000,
+        "end_ms": 332000,
+        "speaker_id": "speaker_2",
+        "text": "态度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 332000,
+        "end_ms": 334000,
+        "speaker_id": "speaker_3",
+        "text": "比方说什么呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 333000,
+        "end_ms": 339000,
+        "speaker_id": "speaker_7",
+        "text": "你就像他你想他对业主的亲戚来以后就是态度不会特别好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 339000,
+        "end_ms": 343000,
+        "speaker_id": "speaker_7",
+        "text": "然后导致监控拍下来以后对他进行了罚款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 343000,
+        "end_ms": 348000,
+        "speaker_id": "speaker_7",
+        "text": "罚款以后他的感觉这个月工资少了，他心情也不会特别好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 348000,
+        "end_ms": 351000,
+        "speaker_id": "speaker_7",
+        "text": "然后对业主的态度也会变得差点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 351000,
+        "end_ms": 356000,
+        "speaker_id": "speaker_1",
+        "text": "这这个的话如果遇到这种情况就开除他你知道吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 355000,
+        "end_ms": 356000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 356000,
+        "end_ms": 361000,
+        "speaker_id": "speaker_1",
+        "text": "咱公司刚才总经理你你这一块儿咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 361000,
+        "end_ms": 366000,
+        "speaker_id": "speaker_1",
+        "text": "嗯分公司这边儿制定嘞是什么样的这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 366000,
+        "end_ms": 370000,
+        "speaker_id": "speaker_1",
+        "text": "违章呢。关于这个态度问题这方面儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 369000,
+        "end_ms": 374000,
+        "speaker_id": "speaker_2",
+        "text": "如果态度问题，首先是第一次是口头儿警告，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 373000,
+        "end_ms": 374000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 374000,
+        "end_ms": 378000,
+        "speaker_id": "speaker_2",
+        "text": "第二次是罚款，第三次就是开除",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 378000,
+        "end_ms": 381000,
+        "speaker_id": "speaker_1",
+        "text": "对，咱这个一定要做好这这方面儿工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 380000,
+        "end_ms": 384000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是加强加强平时的教育，还有培训",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 385000,
+        "end_ms": 386000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 386000,
+        "end_ms": 387000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 387000,
+        "end_ms": 390000,
+        "speaker_id": "speaker_2",
+        "text": "嗯那这个设备工程部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 390000,
+        "end_ms": 396000,
+        "speaker_id": "speaker_2",
+        "text": "咱们小区现在哪些部分呃上季度有哪些需要维修",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 396000,
+        "end_ms": 398000,
+        "speaker_id": "speaker_2",
+        "text": "就以前维修过的，还有这季度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 396000,
+        "end_ms": 397000,
+        "speaker_id": "speaker_4",
+        "text": "上上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 398000,
+        "end_ms": 405000,
+        "speaker_id": "speaker_2",
+        "text": "现在汛期嘛夏季有什么需要整改的地方儿什么需要维修的设备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 404000,
+        "end_ms": 409000,
+        "speaker_id": "speaker_4",
+        "text": "上个季度的话主要是对这对楼体的这个保温层",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 409000,
+        "end_ms": 412000,
+        "speaker_id": "speaker_4",
+        "text": "还有对这个墙墙皮的脱落",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 412000,
+        "end_ms": 414000,
+        "speaker_id": "speaker_4",
+        "text": "进行了维修进行刷",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 413000,
+        "end_ms": 415000,
+        "speaker_id": "speaker_2",
+        "text": "是刷漆是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 414000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_4",
+        "text": "对对刷漆然后补补一下儿这个墙皮然后对这保温层的话有的地方脱落了然后该补的话就补一补",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 417000,
+        "end_ms": 418000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 423000,
+        "end_ms": 432000,
+        "speaker_id": "speaker_7",
+        "text": "对对对这个有有业主向咱们投诉了就是关于咱们这一块儿墙皮还有保温层就是没有及时处理好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 432000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_4",
+        "text": "对这个咱们咱往后会及时的去这个维修",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 437000,
+        "end_ms": 443000,
+        "speaker_id": "speaker_4",
+        "text": "然后汛期的话咱们用这措施就是呃多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 444000,
+        "end_ms": 455000,
+        "speaker_id": "speaker_4",
+        "text": "因为之前咱们的这呃有一些这个水抽水泵是没有开的，没有开起来咱们这个这个泵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 455000,
+        "end_ms": 459000,
+        "speaker_id": "speaker_4",
+        "text": "就是只派了一些专门儿专门儿的人去看守这个泵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 459000,
+        "end_ms": 464000,
+        "speaker_id": "speaker_4",
+        "text": "呃接下来这个汛期的话应该得雇一些这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 464000,
+        "end_ms": 473000,
+        "speaker_id": "speaker_4",
+        "text": "专业的相关的工作人员去就是对这个泵进行检修，然后下雨的话进行这个开泵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 473000,
+        "end_ms": 475000,
+        "speaker_id": "speaker_4",
+        "text": "去抽水排水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 476000,
+        "end_ms": 477000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 476000,
+        "end_ms": 486000,
+        "speaker_id": "speaker_4",
+        "text": "呃还有就是这个咱们小区这个井盖儿也会呃有一些这个破损呃然后维修的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 487000,
+        "end_ms": 493000,
+        "speaker_id": "speaker_4",
+        "text": "之前之前咱们用的是那种老式的井盖，就是比较沉比较不方便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 493000,
+        "end_ms": 505000,
+        "speaker_id": "speaker_4",
+        "text": "呃咱们现在要采用那种轻轻型的这种井盖儿，一个是方便这个呃我们去打开它维修和检查，再一个就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 505000,
+        "end_ms": 510000,
+        "speaker_id": "speaker_4",
+        "text": "它结实比之前老式的会更结实一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 510000,
+        "end_ms": 522000,
+        "speaker_id": "speaker_4",
+        "text": "呃还有就是这个刚才说到摄像头儿嘛呃这个摄像头儿也要更新了，就更新换代把它换成那种高清的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 522000,
+        "end_ms": 535000,
+        "speaker_id": "speaker_4",
+        "text": "然后一个是这个方便，咱们去看这个监控如果真的有盗窃的话，就是方便看到大家方便看到这个人的轮廓",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 536000,
+        "end_ms": 537000,
+        "speaker_id": "speaker_4",
+        "text": "还有脸",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 538000,
+        "end_ms": 547000,
+        "speaker_id": "speaker_4",
+        "text": "嗯再一个就是这个绿化绿化带，绿化部分啊这个绿化部分的话就是有一",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 547000,
+        "end_ms": 558000,
+        "speaker_id": "speaker_4",
+        "text": "有一部分绿化是遭到这个一些这个蚊虫啊这个蚂蚁呀之类的腐蚀就是它会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 558000,
+        "end_ms": 563000,
+        "speaker_id": "speaker_2",
+        "text": "你这个绿化方面一会儿咱们可以问这个安保部儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 565000,
+        "end_ms": 565000,
+        "speaker_id": "speaker_4",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 565000,
+        "end_ms": 568000,
+        "speaker_id": "speaker_2",
+        "text": "咱们现在就是解决一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 568000,
+        "end_ms": 571000,
+        "speaker_id": "speaker_2",
+        "text": "疫情就这个汛情期间嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 571000,
+        "end_ms": 572000,
+        "speaker_id": "speaker_4",
+        "text": "啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 571000,
+        "end_ms": 574000,
+        "speaker_id": "speaker_2",
+        "text": "就是防汛期间",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 574000,
+        "end_ms": 575000,
+        "speaker_id": "speaker_2",
+        "text": "现在是夏季",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 575000,
+        "end_ms": 577000,
+        "speaker_id": "speaker_1",
+        "text": "防汛措施这一块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 576000,
+        "end_ms": 580000,
+        "speaker_id": "speaker_2",
+        "text": "防汛措施下雨量比较大，咱们应该",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 580000,
+        "end_ms": 582000,
+        "speaker_id": "speaker_2",
+        "text": "各部门有没有什么建议",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 583000,
+        "end_ms": 588000,
+        "speaker_id": "speaker_2",
+        "text": "比如说呃停车场，咱们的地下停车场非常容易进水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 589000,
+        "end_ms": 594000,
+        "speaker_id": "speaker_2",
+        "text": "怎么如何防止地下车库被淹",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 594000,
+        "end_ms": 597000,
+        "speaker_id": "speaker_4",
+        "text": "这个就呃这个需要这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 597000,
+        "end_ms": 600000,
+        "speaker_id": "speaker_4",
+        "text": "加加一个加几个这个抽水泵嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 600000,
+        "end_ms": 602000,
+        "speaker_id": "speaker_2",
+        "text": "加几个抽水泵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 602000,
+        "end_ms": 607000,
+        "speaker_id": "speaker_4",
+        "text": "对对对呃再一个就是再一个就是我们如果看这个天气的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 608000,
+        "end_ms": 617000,
+        "speaker_id": "speaker_4",
+        "text": "天气预报如果预报接下来几天有雨的话那我们这个地下停车场最最地下这个最底层的一层和二层",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 617000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_4",
+        "text": "是可以不进行开放的。如果真的被淹的话，这个损失也是要这个承担的嘛但是这个要考虑到跟业主协商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 630000,
+        "end_ms": 632000,
+        "speaker_id": "speaker_4",
+        "text": "看他们的车到底需要停在哪",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 632000,
+        "end_ms": 639000,
+        "speaker_id": "speaker_2",
+        "text": "不啊那咱们业主如果说在咱们小区有车位的话，肯定还是要停到地下停车场，他们不会不会往外停的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 640000,
+        "end_ms": 642000,
+        "speaker_id": "speaker_2",
+        "text": "那么安保部儿对这方面儿有什么想法儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 642000,
+        "end_ms": 643000,
+        "speaker_id": "speaker_2",
+        "text": "就是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 643000,
+        "end_ms": 654000,
+        "speaker_id": "speaker_3",
+        "text": "地下停车场我觉得如果是真要设计的话，最好设计一个可以设置一个防水层或者一个地上停车场，或者给它安一个车棚这些东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 654000,
+        "end_ms": 656000,
+        "speaker_id": "speaker_2",
+        "text": "车车棚啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 655000,
+        "end_ms": 660000,
+        "speaker_id": "speaker_3",
+        "text": "因为相对于防水层来说的话车棚造价更低",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 661000,
+        "end_ms": 667000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得呃我觉得可以更新一更新一下儿那个排水系统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 667000,
+        "end_ms": 668000,
+        "speaker_id": "speaker_2",
+        "text": "排水系统",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 668000,
+        "end_ms": 670000,
+        "speaker_id": "speaker_6",
+        "text": "这样更便利一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 669000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们嗯工程部儿咱们那个停车场的排水系统现在还完善吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 675000,
+        "end_ms": 677000,
+        "speaker_id": "speaker_4",
+        "text": "排水系统一直一直都很完善",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 677000,
+        "end_ms": 678000,
+        "speaker_id": "speaker_2",
+        "text": "很完善是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 678000,
+        "end_ms": 683000,
+        "speaker_id": "speaker_4",
+        "text": "对但是如果真的下暴雨下就是那种特大暴雨的时候儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 699000,
+        "end_ms": 706000,
+        "speaker_id": "speaker_4",
+        "text": "嗯如果就是下这种大暴雨和特大暴雨的时候儿就是咱们会排不及这些水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 706000,
+        "end_ms": 712000,
+        "speaker_id": "speaker_4",
+        "text": "这个客户儿有反映然后就是说咱们就是下大暴雨的时候儿对有积水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 706000,
+        "end_ms": 708000,
+        "speaker_id": "speaker_2",
+        "text": "那那",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 710000,
+        "end_ms": 712000,
+        "speaker_id": "speaker_2",
+        "text": "有积水是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 712000,
+        "end_ms": 717000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们嗯设备工程部可以向财务部申请报表儿，可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 718000,
+        "end_ms": 719000,
+        "speaker_id": "speaker_2",
+        "text": "加装几个抽水泵",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 719000,
+        "end_ms": 720000,
+        "speaker_id": "speaker_4",
+        "text": "呃对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 720000,
+        "end_ms": 725000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是保洁部要经常去清理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 726000,
+        "end_ms": 727000,
+        "speaker_id": "speaker_2",
+        "text": "清理积水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 727000,
+        "end_ms": 741000,
+        "speaker_id": "speaker_7",
+        "text": "咱们主要就是清洁和安保嘛然后咱们人手的话也不需要说是再招一些特别的人员就是咱们你像安保部后勤工作都是比较轻松了咱们因为呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 730000,
+        "end_ms": 731000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 741000,
+        "end_ms": 753000,
+        "speaker_id": "speaker_7",
+        "text": "一个咱们一个小区嘛所以说咱们可以把一部分的安保人员和清洁人员就是安排出来，来进行一个那个处理。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 753000,
+        "end_ms": 754000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 753000,
+        "end_ms": 756000,
+        "speaker_id": "speaker_7",
+        "text": "这是咱我这个客服这个建议",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 758000,
+        "end_ms": 766000,
+        "speaker_id": "speaker_5",
+        "text": "保洁部儿这边儿觉得那个排水系统优先汛期，然后水量特别大排不出去咱们小区的这个绿化就会受到影响",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 758000,
+        "end_ms": 759000,
+        "speaker_id": "speaker_2",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 767000,
+        "end_ms": 780000,
+        "speaker_id": "speaker_5",
+        "text": "然后就是比如说草花园里那些草啊那些绿植就是嗯受到的伤害非常大，然后希望把这个小区就是地面上这个排水系统做的再更好一些，更完善一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 779000,
+        "end_ms": 781000,
+        "speaker_id": "speaker_2",
+        "text": "嗯嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 781000,
+        "end_ms": 784000,
+        "speaker_id": "speaker_2",
+        "text": "这除了积水的话就是还有反映的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 785000,
+        "end_ms": 788000,
+        "speaker_id": "speaker_2",
+        "text": "咱们小区的绿化就是可能做的不是很到位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 788000,
+        "end_ms": 790000,
+        "speaker_id": "speaker_5",
+        "text": "哦好就这种对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 790000,
+        "end_ms": 804000,
+        "speaker_id": "speaker_5",
+        "text": "嗯找那种修理人员专门儿再进行一下儿修改然后保洁这边儿有什么问题呢就是公示咱们小区的这个各种设施，比如说垃圾桶长凳有的都受到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 804000,
+        "end_ms": 820000,
+        "speaker_id": "speaker_5",
+        "text": "你就已经是不能再用了，对需要更新，然后这个是需要向财务部门跟财务部门沟通一下儿，然后一些绿化标识，这也需要采购一儿下，因为要贴在那些醒目的地方，对吧？然后还有第二个呢就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 820000,
+        "end_ms": 837000,
+        "speaker_id": "speaker_5",
+        "text": "社区现在小区里有很多，然后居民开始养宠物，然后对宠物这些，他们在小区里就是遛狗啊那些时候会产生一些垃圾，一些排泄物，一些宠物的，有的有的居民素质很高会处理，但有的就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 837000,
+        "end_ms": 841000,
+        "speaker_id": "speaker_5",
+        "text": "并不会说随手把他们宠物排出的那些垃圾，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 839000,
+        "end_ms": 843000,
+        "speaker_id": "speaker_2",
+        "text": "对对对但没有但没有处理那部分怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 843000,
+        "end_ms": 846000,
+        "speaker_id": "speaker_5",
+        "text": "所以就只有我们保洁人员来进行啊，但是就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 847000,
+        "end_ms": 849000,
+        "speaker_id": "speaker_5",
+        "text": "这样处理就会很困难了然",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 848000,
+        "end_ms": 853000,
+        "speaker_id": "speaker_2",
+        "text": "所以有什么别的有没有有没有什么别的想法儿呢，比如说加装垃圾袋",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 854000,
+        "end_ms": 857000,
+        "speaker_id": "speaker_7",
+        "text": "需要和安保一起就是什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 857000,
+        "end_ms": 864000,
+        "speaker_id": "speaker_2",
+        "text": "不安保有安保的工作他不可能就是每天盯着业主们去遛狗等到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 864000,
+        "end_ms": 866000,
+        "speaker_id": "speaker_2",
+        "text": "呃宠物们排",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 864000,
+        "end_ms": 868000,
+        "speaker_id": "speaker_7",
+        "text": "就是相当于可以咱们小区可以加一些监控",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 868000,
+        "end_ms": 879000,
+        "speaker_id": "speaker_6",
+        "text": "呃我觉得我有一个提议就是可以呃我们小区可以制定一个计划就是呃有人发现这样的行为然后举报的时候可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 879000,
+        "end_ms": 885000,
+        "speaker_id": "speaker_6",
+        "text": "呃进行奖励，然后对那个人进行惩罚，然后这样可能会增加一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 883000,
+        "end_ms": 886000,
+        "speaker_id": "speaker_2",
+        "text": "不不不这是业主这是业主他自己的小区呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 887000,
+        "end_ms": 893000,
+        "speaker_id": "speaker_6",
+        "text": "对，这是自己的小区，所以环境方面真的需要每个人都注意一下儿所以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 892000,
+        "end_ms": 897000,
+        "speaker_id": "speaker_3",
+        "text": "这方面可以咱们给他开放一个专门儿遛狗的场所",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 897000,
+        "end_ms": 898000,
+        "speaker_id": "speaker_2",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 899000,
+        "end_ms": 904000,
+        "speaker_id": "speaker_2",
+        "text": "小区内怎么可能还有那么多空余的场地，让他们去专门儿的遛狗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 903000,
+        "end_ms": 905000,
+        "speaker_id": "speaker_3",
+        "text": "就像公园儿给他改一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 905000,
+        "end_ms": 913000,
+        "speaker_id": "speaker_2",
+        "text": "就有没有这种情况？就是业主他并不是没有素质，只不过他忘了带一些清理垃圾的一些东西，有没有这种情况呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 914000,
+        "end_ms": 915000,
+        "speaker_id": "speaker_3",
+        "text": "可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 914000,
+        "end_ms": 922000,
+        "speaker_id": "speaker_5",
+        "text": "这种情况我觉得可以就是去跟保洁人员及时的说，然后及时清理不会到时候时间变得很长会很麻烦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 917000,
+        "end_ms": 918000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 920000,
+        "end_ms": 929000,
+        "speaker_id": "speaker_7",
+        "text": "那保洁人员是不是可以增加一些就是关于在旁边有一些关于什么沙土然后一些小铲子",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 929000,
+        "end_ms": 932000,
+        "speaker_id": "speaker_5",
+        "text": "对沙土我觉得可以在旁边备一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 931000,
+        "end_ms": 933000,
+        "speaker_id": "speaker_7",
+        "text": "对备备一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 932000,
+        "end_ms": 936000,
+        "speaker_id": "speaker_2",
+        "text": "沙土是埋起来吗直接就埋起来吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 935000,
+        "end_ms": 939000,
+        "speaker_id": "speaker_7",
+        "text": "就是就是放到呃上面然后再铲走",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 941000,
+        "end_ms": 942000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 942000,
+        "end_ms": 944000,
+        "speaker_id": "speaker_7",
+        "text": "这需要和保洁",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 944000,
+        "end_ms": 947000,
+        "speaker_id": "speaker_2",
+        "text": "就是在垃圾桶旁边放一些垃圾袋呀什么的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 947000,
+        "end_ms": 959000,
+        "speaker_id": "speaker_7",
+        "text": "对呀还有一些备用的土然后就是业主们可以不用说再上楼去拿工具什么这就需要呃保洁还有财务部进行一下儿商量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 958000,
+        "end_ms": 959000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 960000,
+        "end_ms": 968000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是怕业主在遛狗的时候儿，如果狗在草坪随地大小便，会怎么样怎么样处理那些粪便呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 969000,
+        "end_ms": 973000,
+        "speaker_id": "speaker_6",
+        "text": "所以所以就需要呃制定一下儿我们小区的那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 973000,
+        "end_ms": 974000,
+        "speaker_id": "speaker_4",
+        "text": "规章制度",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 974000,
+        "end_ms": 975000,
+        "speaker_id": "speaker_6",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 975000,
+        "end_ms": 977000,
+        "speaker_id": "speaker_2",
+        "text": "你没有什么想法儿吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 978000,
+        "end_ms": 982000,
+        "speaker_id": "speaker_3",
+        "text": "可以在草坪上用标语标志禁止大小便",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 982000,
+        "end_ms": 984000,
+        "speaker_id": "speaker_2",
+        "text": "那肯定是没有用的呀",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 983000,
+        "end_ms": 988000,
+        "speaker_id": "speaker_3",
+        "text": "有监控违者罚款，如果他看到了他还要干这些事的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 989000,
+        "end_ms": 991000,
+        "speaker_id": "speaker_2",
+        "text": "咱们不可能向业主罚款的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 992000,
+        "end_ms": 994000,
+        "speaker_id": "speaker_2",
+        "text": "咱们不可能向业主罚款的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 994000,
+        "end_ms": 999000,
+        "speaker_id": "speaker_3",
+        "text": "啊但是标语是肯定要做的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 999000,
+        "end_ms": 1000000,
+        "speaker_id": "speaker_2",
+        "text": "噢标语是肯定要做的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 999000,
+        "end_ms": 1003000,
+        "speaker_id": "speaker_6",
+        "text": "可以可以收多加收他们的那个物业费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 1004000,
+        "end_ms": 1006000,
+        "speaker_id": "speaker_2",
+        "text": "那你觉得业主会同意吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 1006000,
+        "end_ms": 1010000,
+        "speaker_id": "speaker_6",
+        "text": "如果他要那样做有人举报的话，他没有办法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 1008000,
+        "end_ms": 1011000,
+        "speaker_id": "speaker_7",
+        "text": "对咱们又不是所有人都收",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 1010000,
+        "end_ms": 1013000,
+        "speaker_id": "speaker_3",
+        "text": "对通过举报的话业主他这就处于",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 1011000,
+        "end_ms": 1018000,
+        "speaker_id": "speaker_2",
+        "text": "咱们咱们是服务服务类的公司，咱们不可能要强制业主去做一些什么选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 1019000,
+        "end_ms": 1026000,
+        "speaker_id": "speaker_2",
+        "text": "如果说业主举报向我们投诉就是咱不合理觉得这样不合理那我们该怎么办",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1025000,
+        "end_ms": 1029000,
+        "speaker_id": "speaker_3",
+        "text": "可以在垃圾桶旁边儿做一次性塑料手套儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1029000,
+        "end_ms": 1037000,
+        "speaker_id": "speaker_3",
+        "text": "让业主和和那种黑色的塑料袋让业主自己处理，然后放在垃圾桶旁边，并且在草坪旁边或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1038000,
+        "end_ms": 1047000,
+        "speaker_id": "speaker_3",
+        "text": "过道旁边多加一些垃圾桶方便业主处理，如果他们忘带工具的话，这样的话也不会在草坪上解决在草坪上解决的话业主他自己也可以处理这些东西。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1047000,
+        "end_ms": 1054000,
+        "speaker_id": "speaker_5",
+        "text": "对保洁这边儿也觉得是可以多加一些垃圾桶，然后就是专门儿就是宠物那些分类用的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1054000,
+        "end_ms": 1058000,
+        "speaker_id": "speaker_1",
+        "text": "这这个刚才我听你们说这个有人投诉吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1058000,
+        "end_ms": 1059000,
+        "speaker_id": "speaker_2",
+        "text": "这个有人投诉吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1059000,
+        "end_ms": 1068000,
+        "speaker_id": "speaker_7",
+        "text": "呃是有人投诉的就是毕竟咱们业主嘛素质都是有高有低的，也会有一些人就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1068000,
+        "end_ms": 1081000,
+        "speaker_id": "speaker_7",
+        "text": "自己的宠物在草坪上就是进行大便然后也没有进行处理，然后给咱们呃就是在草坪上呃旁边，然后就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1081000,
+        "end_ms": 1085000,
+        "speaker_id": "speaker_7",
+        "text": "来散步的业主造成很大困扰因为毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1084000,
+        "end_ms": 1086000,
+        "speaker_id": "speaker_6",
+        "text": "有气味儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1086000,
+        "end_ms": 1088000,
+        "speaker_id": "speaker_7",
+        "text": "对然后气味",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1088000,
+        "end_ms": 1097000,
+        "speaker_id": "speaker_7",
+        "text": "因为咱们保洁人员不可能就是说每天都是呃清一遍草坪呃草坪，因为那个东西吧比较难清理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1098000,
+        "end_ms": 1099000,
+        "speaker_id": "speaker_7",
+        "text": "但是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1098000,
+        "end_ms": 1102000,
+        "speaker_id": "speaker_1",
+        "text": "这个你都是怎么应对的他投诉的时候儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1100000,
+        "end_ms": 1106000,
+        "speaker_id": "speaker_7",
+        "text": "对这个工作啊是我们就是进行上门就是进行调解纠纷",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1106000,
+        "end_ms": 1110000,
+        "speaker_id": "speaker_7",
+        "text": "就是把呃把这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1110000,
+        "end_ms": 1121000,
+        "speaker_id": "speaker_7",
+        "text": "就是举报以后，我们是先通过查监控然后对于就是进行这种行为的业主就是有个了解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1121000,
+        "end_ms": 1133000,
+        "speaker_id": "speaker_7",
+        "text": "然后咱们就是可以通过给他打电话，然后请他注意一些这些方面嘛，但是具体的话像毕竟我们是服务行业，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1133000,
+        "end_ms": 1150000,
+        "speaker_id": "speaker_7",
+        "text": "呃业主怎么做，我们也没法儿那种特别大的指点这个需要咱们小区也是有一个基本的规章制度，然后这基本规章制度的话，实行是需要那个咱们全小区人去一起实行的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1150000,
+        "end_ms": 1162000,
+        "speaker_id": "speaker_7",
+        "text": "我觉得话就是可以由咱们的总经理制定一份就是关于呃给所有业主进行一个就是协议书吧那种类型",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1160000,
+        "end_ms": 1161000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1162000,
+        "end_ms": 1166000,
+        "speaker_id": "speaker_7",
+        "text": "最后看总经理呃具体商量一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1166000,
+        "end_ms": 1168000,
+        "speaker_id": "speaker_1",
+        "text": "总经理这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1168000,
+        "end_ms": 1170000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1171000,
+        "end_ms": 1177000,
+        "speaker_id": "speaker_2",
+        "text": "我觉得与业主协商不是一件很好的方案主要还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1178000,
+        "end_ms": 1200000,
+        "speaker_id": "speaker_6",
+        "text": "但是呃从从经费方面考虑的话因为我们小区里的各种事项都需要经费什么安装摄像头，然后绿化或者地下车库呃水呃水的问题滴水的问题，还有垃圾桶都需要经费，所以呃如果我们什么都做的太好的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1200000,
+        "end_ms": 1203000,
+        "speaker_id": "speaker_6",
+        "text": "我们其实经费上有很大压力",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1203000,
+        "end_ms": 1209000,
+        "speaker_id": "speaker_6",
+        "text": "所以还是需要和小区呃这些户主协商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1209000,
+        "end_ms": 1215000,
+        "speaker_id": "speaker_3",
+        "text": "这个可以通过咱们毕竟是一个小区服务公司嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1216000,
+        "end_ms": 1225000,
+        "speaker_id": "speaker_3",
+        "text": "咱们可以跟建房房地产公司这些甲方人员进行商量，让他们来承包这一部分经费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1225000,
+        "end_ms": 1226000,
+        "speaker_id": "speaker_2",
+        "text": "什么经费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1227000,
+        "end_ms": 1228000,
+        "speaker_id": "speaker_3",
+        "text": "社区的那些费用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1228000,
+        "end_ms": 1229000,
+        "speaker_id": "speaker_4",
+        "text": "物业费嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1229000,
+        "end_ms": 1230000,
+        "speaker_id": "speaker_3",
+        "text": "对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1232000,
+        "end_ms": 1236000,
+        "speaker_id": "speaker_2",
+        "text": "由你你想要由甲方来承担我们的物业费",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1237000,
+        "end_ms": 1241000,
+        "speaker_id": "speaker_3",
+        "text": "物业费只是一部分，像什么电梯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1242000,
+        "end_ms": 1252000,
+        "speaker_id": "speaker_3",
+        "text": "停车场的那些什么的，需要物业费以外，别的咱们需要收额外收物业费吗？收不了，所以这些新增的东西咱们可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1253000,
+        "end_ms": 1256000,
+        "speaker_id": "speaker_3",
+        "text": "由甲方房地产公司来为咱们提供",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1258000,
+        "end_ms": 1265000,
+        "speaker_id": "speaker_7",
+        "text": "但是一般房地产公司他就是和咱们物业，就是基本上没有什么存在的联系了因为他建完以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1266000,
+        "end_ms": 1274000,
+        "speaker_id": "speaker_3",
+        "text": "你看你可以去售房部询问一下儿一般都会管一下儿售后，如果是建房在三到五年以后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1277000,
+        "end_ms": 1282000,
+        "speaker_id": "speaker_2",
+        "text": "把这个话题先告一段落，咱们小区有没有就是宠物扑人的情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1283000,
+        "end_ms": 1286000,
+        "speaker_id": "speaker_2",
+        "text": "还有就是遛狗不栓绳儿的情况这种有没有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1286000,
+        "end_ms": 1287000,
+        "speaker_id": "speaker_7",
+        "text": "这种有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1287000,
+        "end_ms": 1299000,
+        "speaker_id": "speaker_7",
+        "text": "有业主已经反映就是已经被那个呃大型犬呃给咬了因为已经就是最后的解决的话就是进行协商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1299000,
+        "end_ms": 1303000,
+        "speaker_id": "speaker_7",
+        "text": "然后大型犬的主人就是进行了赔偿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1304000,
+        "end_ms": 1308000,
+        "speaker_id": "speaker_7",
+        "text": "这个方面的话是需要咱们注意一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1311000,
+        "end_ms": 1315000,
+        "speaker_id": "speaker_2",
+        "text": "那安保部儿还有没有就是其它的情况除了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1315000,
+        "end_ms": 1318000,
+        "speaker_id": "speaker_2",
+        "text": "就是上季度只是丢了一起自行车吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1319000,
+        "end_ms": 1320000,
+        "speaker_id": "speaker_3",
+        "text": "只是丢了一起自行车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1320000,
+        "end_ms": 1322000,
+        "speaker_id": "speaker_2",
+        "text": "没有别的问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1321000,
+        "end_ms": 1328000,
+        "speaker_id": "speaker_3",
+        "text": "没有还有就是社区的孩子老喜欢扎别人车胎，放别人的气儿这种问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1329000,
+        "end_ms": 1332000,
+        "speaker_id": "speaker_2",
+        "text": "这种问题那你觉得该怎么处理呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1333000,
+        "end_ms": 1338000,
+        "speaker_id": "speaker_3",
+        "text": "这种问题我感觉只能起到咱们只能起督促作用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1338000,
+        "end_ms": 1339000,
+        "speaker_id": "speaker_2",
+        "text": "督促作用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1339000,
+        "end_ms": 1342000,
+        "speaker_id": "speaker_3",
+        "text": "通过家长给孩子教育来",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1343000,
+        "end_ms": 1351000,
+        "speaker_id": "speaker_7",
+        "text": "客服这边儿的话就是建议就是加监控然后就是比如说因为业主他们的车胎被扎了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1351000,
+        "end_ms": 1355000,
+        "speaker_id": "speaker_7",
+        "text": "咱们就是可以对就是为了第一时间调调查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1352000,
+        "end_ms": 1356000,
+        "speaker_id": "speaker_6",
+        "text": "收到投诉之后呃为了避免我们还得赔偿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1356000,
+        "end_ms": 1357000,
+        "speaker_id": "speaker_7",
+        "text": "对第一时间调查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1359000,
+        "end_ms": 1367000,
+        "speaker_id": "speaker_7",
+        "text": "然后这一部分进行纠纷的话，我们客服就是可以进行就是安排人员进行协商",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1373000,
+        "end_ms": 1393000,
+        "speaker_id": "speaker_2",
+        "text": "还有一些就是小孩子吃完东西去社区里头那个属于一个休闲场所儿吧，一个就属于晚上遛弯儿的地方，往那个鱼塘里面扔一些垃圾之类的东西，这些东西有时候没有及时处理，还有客客户儿在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1393000,
+        "end_ms": 1397000,
+        "speaker_id": "speaker_7",
+        "text": "这样的话咱们保洁的话可以注意一下儿，然后每天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1396000,
+        "end_ms": 1410000,
+        "speaker_id": "speaker_5",
+        "text": "对，保洁接到客服这边儿的反馈就会马上处理然后现在就是因为现在都实行垃圾分类所以咱们的小区现在就简单那种垃圾桶不行了然后也需要采购一些那种专门儿专门儿的那些垃圾桶",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1400000,
+        "end_ms": 1402000,
+        "speaker_id": "speaker_7",
+        "text": "我们反馈处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1410000,
+        "end_ms": 1427000,
+        "speaker_id": "speaker_5",
+        "text": "呃进行回收。然后希望这个也就是咱们小区的物业就是可以通知到居民，让他们进行垃圾分类，因为有的比如说电池啊那些有害的它都是要回收的，如果只是把垃圾扔随便扔到垃圾桶里，然后我们保洁人员",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1415000,
+        "end_ms": 1419000,
+        "speaker_id": "speaker_7",
+        "text": "对关于厨余垃圾的话就是必须进行分类",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1427000,
+        "end_ms": 1437000,
+        "speaker_id": "speaker_5",
+        "text": "处理起来也非常麻烦就是很有难度，因为每天小区这么多居民产生了垃圾，不是说随便分一下类就能分清楚的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1437000,
+        "end_ms": 1440000,
+        "speaker_id": "speaker_5",
+        "text": "希望这个能能跟小区的居民能通知到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1440000,
+        "end_ms": 1445000,
+        "speaker_id": "speaker_7",
+        "text": "对可以根据客服的话，就是咱们客厨余垃圾是必须要分出来的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1445000,
+        "end_ms": 1455000,
+        "speaker_id": "speaker_7",
+        "text": "然后这个话就是需要咱们就是与外面就是咱们清洁部然后需要租一辆车，然后把垃圾",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1455000,
+        "end_ms": 1457000,
+        "speaker_id": "speaker_7",
+        "text": "就是不是租车啊就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1456000,
+        "end_ms": 1462000,
+        "speaker_id": "speaker_3",
+        "text": "这个就不用租车了，这个联系联系一下儿当地的垃圾站就可以了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1461000,
+        "end_ms": 1462000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1462000,
+        "end_ms": 1465000,
+        "speaker_id": "speaker_3",
+        "text": "让他们帮着咱们进行垃圾分分离",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1463000,
+        "end_ms": 1467000,
+        "speaker_id": "speaker_7",
+        "text": "就是说咱们呃然后就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1467000,
+        "end_ms": 1477000,
+        "speaker_id": "speaker_7",
+        "text": "及时的进行联系然后就是既然说，每天来几趟，因为毕竟一个很大的小区，它的产生垃圾会特别多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1478000,
+        "end_ms": 1481000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1481000,
+        "end_ms": 1487000,
+        "speaker_id": "speaker_3",
+        "text": "还有就是经理这边儿要负责时常与政府的通知保持联系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1487000,
+        "end_ms": 1491000,
+        "speaker_id": "speaker_3",
+        "text": "及时通知到居民有什么下发的条例之类的东西。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1491000,
+        "end_ms": 1492000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1491000,
+        "end_ms": 1495000,
+        "speaker_id": "speaker_3",
+        "text": "这样的话他们也认为咱们这边儿比较负责",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1495000,
+        "end_ms": 1499000,
+        "speaker_id": "speaker_2",
+        "text": "现在最主要的就是防洪",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1500000,
+        "end_ms": 1501000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1501000,
+        "end_ms": 1504000,
+        "speaker_id": "speaker_2",
+        "text": "咱们小区有没有这个漏雨的情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1506000,
+        "end_ms": 1508000,
+        "speaker_id": "speaker_3",
+        "text": "小区的漏雨情况比较少但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1507000,
+        "end_ms": 1510000,
+        "speaker_id": "speaker_7",
+        "text": "客服的话这边儿收到的比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1510000,
+        "end_ms": 1512000,
+        "speaker_id": "speaker_2",
+        "text": "比较少嗯对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1512000,
+        "end_ms": 1519000,
+        "speaker_id": "speaker_7",
+        "text": "然后及时的很多就是对它进呃呃加固固定",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1524000,
+        "end_ms": 1535000,
+        "speaker_id": "speaker_3",
+        "text": "然后防雨的话也可以就是，咱们毕竟有停车棚嘛，有很多居民说自己的停车棚什么车有时候儿停不进去这些东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1536000,
+        "end_ms": 1540000,
+        "speaker_id": "speaker_3",
+        "text": "这方面需要改进一下停车棚面积太小，居住人口太多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1543000,
+        "end_ms": 1552000,
+        "speaker_id": "speaker_7",
+        "text": "咱们停车场的话其实挺大的，是不是可以把停车场一部分？就是让出来也可以进行就是放自行车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1553000,
+        "end_ms": 1555000,
+        "speaker_id": "speaker_3",
+        "text": "这样的话不行，这样的话就太乱了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1555000,
+        "end_ms": 1562000,
+        "speaker_id": "speaker_3",
+        "text": "如果你又停自行车儿又停汽车的话，你就觉得停车场太乱，如果它影响了汽车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1562000,
+        "end_ms": 1566000,
+        "speaker_id": "speaker_3",
+        "text": "去停车场的路线的时候，就是非机动车",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1567000,
+        "end_ms": 1570000,
+        "speaker_id": "speaker_3",
+        "text": "他如果乱放的话，怎么办呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1569000,
+        "end_ms": 1573000,
+        "speaker_id": "speaker_4",
+        "text": "而而且后期后期如果你要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1573000,
+        "end_ms": 1575000,
+        "speaker_id": "speaker_4",
+        "text": "机动车变多了那你这种情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1576000,
+        "end_ms": 1584000,
+        "speaker_id": "speaker_7",
+        "text": "那那就只能需要财务室去考察一下，然后订一下，咱们需要购买材料还有进行就是扩建一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1585000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_7",
+        "text": "这个总经理你是怎么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1589000,
+        "end_ms": 1591000,
+        "speaker_id": "speaker_2",
+        "text": "但是上一个季度咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1592000,
+        "end_ms": 1594000,
+        "speaker_id": "speaker_2",
+        "text": "经费主要是运用在哪些地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1596000,
+        "end_ms": 1598000,
+        "speaker_id": "speaker_6",
+        "text": "嗯上个季度的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1599000,
+        "end_ms": 1605000,
+        "speaker_id": "speaker_6",
+        "text": "就是有有很多呃需要需要改进的地方嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1605000,
+        "end_ms": 1619000,
+        "speaker_id": "speaker_6",
+        "text": "比如说新加了垃圾桶什么的呃安装摄像头儿，摄像头坏了的地方又重新呃安装了一下儿，还有就是一些呃那个客户投诉的赔偿损失",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1619000,
+        "end_ms": 1628000,
+        "speaker_id": "speaker_7",
+        "text": "对还有一些上呃客客户儿就对咱们物业进进行褒奖，就是说咱们在就是消毒还有安全方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1629000,
+        "end_ms": 1639000,
+        "speaker_id": "speaker_7",
+        "text": "呃有些地方是做的特别好的，就是像咱们还会搞一些小福利，就是发放口罩以及消毒液什么的，就是财务部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1639000,
+        "end_ms": 1645000,
+        "speaker_id": "speaker_7",
+        "text": "哦上呃上一次就是上个月就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1645000,
+        "end_ms": 1651000,
+        "speaker_id": "speaker_7",
+        "text": "他的财务进行划分的一个重要的部分",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1653000,
+        "end_ms": 1659000,
+        "speaker_id": "speaker_2",
+        "text": "那上个季度主要咱们接到都有什么举报啊什么投诉啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1659000,
+        "end_ms": 1661000,
+        "speaker_id": "speaker_2",
+        "text": "都有哪些原因",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1660000,
+        "end_ms": 1666000,
+        "speaker_id": "speaker_6",
+        "text": "就就上个季度有那个电梯里嗯电梯里就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1666000,
+        "end_ms": 1677000,
+        "speaker_id": "speaker_6",
+        "text": "按键不好用了，然后刷卡，有的有的住户说刷卡呃不灵敏了，所以嗯改进了一下儿电梯里的那个设备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1677000,
+        "end_ms": 1679000,
+        "speaker_id": "speaker_2",
+        "text": "那是怎么改进的呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1679000,
+        "end_ms": 1681000,
+        "speaker_id": "speaker_2",
+        "text": "工程维修部是怎么改进的呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1681000,
+        "end_ms": 1685000,
+        "speaker_id": "speaker_4",
+        "text": "我这边儿就就是一个是及时的更新换代",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1685000,
+        "end_ms": 1689000,
+        "speaker_id": "speaker_2",
+        "text": "就直接就更新了吗还能用的情况下直接就更新了吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1686000,
+        "end_ms": 1687000,
+        "speaker_id": "speaker_4",
+        "text": "它",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1688000,
+        "end_ms": 1689000,
+        "speaker_id": "speaker_4",
+        "text": "看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1689000,
+        "end_ms": 1695000,
+        "speaker_id": "speaker_4",
+        "text": "这个这个时候儿就要看是呃业主的卡不灵敏，还是咱们的设备不灵敏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1695000,
+        "end_ms": 1706000,
+        "speaker_id": "speaker_4",
+        "text": "如果是这一栋楼的人都都反映说这个不太好用，那我们就要去检查我们的设备，是不是我们的设备出现了问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1706000,
+        "end_ms": 1715000,
+        "speaker_id": "speaker_4",
+        "text": "如果就单单是这一户儿居民的话，我们就可以考虑，呃让这个居民去这居民购就是让他去换那个电梯卡",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1715000,
+        "end_ms": 1725000,
+        "speaker_id": "speaker_7",
+        "text": "这一部分我们客服的话就会和设备呃管理这一块儿，就是把我们的意见然后给他，然后他就进行检查处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1725000,
+        "end_ms": 1726000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1728000,
+        "end_ms": 1731000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们安保这一",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1729000,
+        "end_ms": 1733000,
+        "speaker_id": "speaker_3",
+        "text": "还有反应的楼上往下乱扔垃圾和泼水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1734000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_2",
+        "text": "就高空坠物这方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1736000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1737000,
+        "end_ms": 1739000,
+        "speaker_id": "speaker_2",
+        "text": "这一定要多加这个安全标识",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1739000,
+        "end_ms": 1746000,
+        "speaker_id": "speaker_7",
+        "text": "对有客就是有业主反映就是差点被砸到但是幸好没有出现这种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1746000,
+        "end_ms": 1750000,
+        "speaker_id": "speaker_7",
+        "text": "就造成人员伤害的情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1749000,
+        "end_ms": 1753000,
+        "speaker_id": "speaker_2",
+        "text": "这种情况下我们要做好责任划分咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1754000,
+        "end_ms": 1757000,
+        "speaker_id": "speaker_2",
+        "text": "就是要做到告知的义务，就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1757000,
+        "end_ms": 1762000,
+        "speaker_id": "speaker_2",
+        "text": "呃如果高空抛物对人造成什么损害的话，他需要受到什么责任",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1762000,
+        "end_ms": 1764000,
+        "speaker_id": "speaker_2",
+        "text": "这个告示表儿咱们是要贴出来的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1764000,
+        "end_ms": 1770000,
+        "speaker_id": "speaker_2",
+        "text": "如果真的只是杀人了的话，那也是不归咱们管这是业主们的问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1772000,
+        "end_ms": 1777000,
+        "speaker_id": "speaker_2",
+        "text": "自行处理咱们可以负责调解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1773000,
+        "end_ms": 1775000,
+        "speaker_id": "speaker_1",
+        "text": "嗯自行处理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1778000,
+        "end_ms": 1784000,
+        "speaker_id": "speaker_2",
+        "text": "呃那咱们小区周边新盖的楼房在施工",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1785000,
+        "end_ms": 1790000,
+        "speaker_id": "speaker_2",
+        "text": "他们有没有吵扰到我们的业主，有没有业主收到这个举报这个问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1790000,
+        "end_ms": 1799000,
+        "speaker_id": "speaker_7",
+        "text": "哦这方面的话是有进行就是投诉的，但是特别少，因为咱们他们只是擦个边然后他们的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1800000,
+        "end_ms": 1807000,
+        "speaker_id": "speaker_7",
+        "text": "呃咱们小区的话，这个设备上的话就是咱们隔音是做的比较不错的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1807000,
+        "end_ms": 1816000,
+        "speaker_id": "speaker_7",
+        "text": "这个也是跟设备进行呃那个对接以后，他们就是对咱们的隔音进行了调查",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1817000,
+        "end_ms": 1825000,
+        "speaker_id": "speaker_4",
+        "text": "如果如果这种情况临近这个施工地段儿的话，我们就会加加装一些临时的这个隔音板儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1825000,
+        "end_ms": 1828000,
+        "speaker_id": "speaker_2",
+        "text": "隔音板儿嘛每个楼层都装吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1828000,
+        "end_ms": 1836000,
+        "speaker_id": "speaker_4",
+        "text": "呃这是临近这个施工地段儿的小区我们会实地考察一下儿它这个噪音是不是影响到居民的正常生活",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1836000,
+        "end_ms": 1843000,
+        "speaker_id": "speaker_4",
+        "text": "如果对这个居民的正常生活有影响的话而且对我们就可以加装一层这个隔音板儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1844000,
+        "end_ms": 1850000,
+        "speaker_id": "speaker_3",
+        "text": "也可以去和工地调节一下儿，如果调节不好的话，咱们可以和政府沟通一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1853000,
+        "end_ms": 1858000,
+        "speaker_id": "speaker_7",
+        "text": "行目前客服这里是大概这些投诉情况就这些了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1860000,
+        "end_ms": 1862000,
+        "speaker_id": "speaker_2",
+        "text": "那小区的绿化呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1863000,
+        "end_ms": 1868000,
+        "speaker_id": "speaker_2",
+        "text": "是不是都是什么品种的花啊草啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1872000,
+        "end_ms": 1874000,
+        "speaker_id": "speaker_3",
+        "text": "草就是属于普通的那种草",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1875000,
+        "end_ms": 1878000,
+        "speaker_id": "speaker_3",
+        "text": "就属于那种正常的绿化草坪一样那种",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1879000,
+        "end_ms": 1888000,
+        "speaker_id": "speaker_3",
+        "text": "花儿可以种一些牡丹之类的东西对易养植的花可以种一些牡丹啊像什么一些东西也可以找一部分种一些玫瑰",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1879000,
+        "end_ms": 1882000,
+        "speaker_id": "speaker_2",
+        "text": "易养易养植的东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1889000,
+        "end_ms": 1890000,
+        "speaker_id": "speaker_2",
+        "text": "那你们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1889000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_3",
+        "text": "不过就怕有些人进行采摘",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1892000,
+        "end_ms": 1899000,
+        "speaker_id": "speaker_7",
+        "text": "咱们财务部儿当初就是考虑到成本问题就是比较稍微简单的草没有说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1899000,
+        "end_ms": 1902000,
+        "speaker_id": "speaker_7",
+        "text": "做到那么精致还有就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1902000,
+        "end_ms": 1907000,
+        "speaker_id": "speaker_2",
+        "text": "那咱们现在保安部儿大概是一天巡逻几次平常都是几点开始巡逻",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1907000,
+        "end_ms": 1910000,
+        "speaker_id": "speaker_2",
+        "text": "还有你们设置几个几个点位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1910000,
+        "end_ms": 1913000,
+        "speaker_id": "speaker_3",
+        "text": "小区每一栋楼都有三个点位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1913000,
+        "end_ms": 1913000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1913000,
+        "end_ms": 1915000,
+        "speaker_id": "speaker_3",
+        "text": "大门有一个点位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1915000,
+        "end_ms": 1915000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1915000,
+        "end_ms": 1919000,
+        "speaker_id": "speaker_3",
+        "text": "然后公园儿和街道分布的有两个点位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1919000,
+        "end_ms": 1920000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1920000,
+        "end_ms": 1922000,
+        "speaker_id": "speaker_2",
+        "text": "我感觉后期",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1920000,
+        "end_ms": 1925000,
+        "speaker_id": "speaker_3",
+        "text": "他们每天早上会去巡逻三次，下午巡逻三次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1925000,
+        "end_ms": 1928000,
+        "speaker_id": "speaker_3",
+        "text": "上班儿时间呢就是从八点到中午的十二点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1928000,
+        "end_ms": 1934000,
+        "speaker_id": "speaker_3",
+        "text": "然后进行换班儿，分为上午班儿和中午班儿还有和下午班儿还有晚班儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1933000,
+        "end_ms": 1935000,
+        "speaker_id": "speaker_2",
+        "text": "那夜间巡逻的问题呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1935000,
+        "end_ms": 1942000,
+        "speaker_id": "speaker_3",
+        "text": "夜间巡逻的问题，保安我会让他们进行巡逻和督促的，因为有的保安会晚上就不巡逻了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1942000,
+        "end_ms": 1943000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1944000,
+        "end_ms": 1948000,
+        "speaker_id": "speaker_2",
+        "text": "那如果发现这种情况那你那你是同步你是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1947000,
+        "end_ms": 1950000,
+        "speaker_id": "speaker_3",
+        "text": "先是通报批评，然后进行罚款",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1950000,
+        "end_ms": 1953000,
+        "speaker_id": "speaker_2",
+        "text": "如果还是不改进的话直接开除",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1953000,
+        "end_ms": 1958000,
+        "speaker_id": "speaker_2",
+        "text": "还有那就是这个设备检修，大概是多久检修一次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1958000,
+        "end_ms": 1960000,
+        "speaker_id": "speaker_2",
+        "text": "还有主要出现的问题都在哪一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1960000,
+        "end_ms": 1963000,
+        "speaker_id": "speaker_4",
+        "text": "设备检修的话是咱们通常是一个季度检修一次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1963000,
+        "end_ms": 1965000,
+        "speaker_id": "speaker_2",
+        "text": "一个季度检测一次吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1965000,
+        "end_ms": 1969000,
+        "speaker_id": "speaker_4",
+        "text": "对对，因为如果检修太频繁的话，没有这个必要其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1970000,
+        "end_ms": 1970000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1971000,
+        "end_ms": 1973000,
+        "speaker_id": "speaker_4",
+        "text": "一个季度就够足够了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1973000,
+        "end_ms": 1979000,
+        "speaker_id": "speaker_2",
+        "text": "大概是哪些哪些设备是经常出现问题的，比如说电线呀什么水管管道啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1979000,
+        "end_ms": 1983000,
+        "speaker_id": "speaker_2",
+        "text": "那就什么太阳能啊一些东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1983000,
+        "end_ms": 1989000,
+        "speaker_id": "speaker_2",
+        "text": "现在小区业主们他们大多使用的是太阳能还是电呢现在这个夏季嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1989000,
+        "end_ms": 1994000,
+        "speaker_id": "speaker_2",
+        "text": "太阳能肯定是更加省省省这个节省支支出",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1995000,
+        "end_ms": 2000000,
+        "speaker_id": "speaker_2",
+        "text": "咱们小区现在是用太阳能的比较多呢，还是用这种自己家的电热水器比较多呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 2000000,
+        "end_ms": 2002000,
+        "speaker_id": "speaker_4",
+        "text": "用太阳能的比较多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 2002000,
+        "end_ms": 2008000,
+        "speaker_id": "speaker_2",
+        "text": "那用太阳能的有没有这种漏水的情况啊就比如说上水不及时关闭造成大量的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 2009000,
+        "end_ms": 2011000,
+        "speaker_id": "speaker_2",
+        "text": "呃只是影响到小区的居民",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 2011000,
+        "end_ms": 2022000,
+        "speaker_id": "speaker_4",
+        "text": "会去比如说这一栋楼的这个太阳能，我们会就是及时看哪是哪一个居民哪户儿居民的太阳能没有关",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 2022000,
+        "end_ms": 2027000,
+        "speaker_id": "speaker_4",
+        "text": "然后我们就会去提醒他就去跟那个他们那儿联系",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 2029000,
+        "end_ms": 2040000,
+        "speaker_id": "speaker_4",
+        "text": "然后呃至于这个嗯影响到其他小区居民的话他会有积水的我们会及时的去排排积水",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 2040000,
+        "end_ms": 2044000,
+        "speaker_id": "speaker_2",
+        "text": "嗯那保安部儿这边儿还有什么问题吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 2044000,
+        "end_ms": 2046000,
+        "speaker_id": "speaker_3",
+        "text": "保安部儿这边儿没什么问题了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 2046000,
+        "end_ms": 2049000,
+        "speaker_id": "speaker_2",
+        "text": "那这个保洁部儿呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 2049000,
+        "end_ms": 2057000,
+        "speaker_id": "speaker_5",
+        "text": "除了让财务部采购一些那些呃标识，比如说通知然后提示别的之外也没有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 2058000,
+        "end_ms": 2060000,
+        "speaker_id": "speaker_2",
+        "text": "嗯财务部呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 2060000,
+        "end_ms": 2064000,
+        "speaker_id": "speaker_6",
+        "text": "呃财务部的工作刚刚已经汇报完了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000430",
+        "index": 429,
+        "start_ms": 2065000,
+        "end_ms": 2068000,
+        "speaker_id": "speaker_2",
+        "text": "那客服部呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000431",
+        "index": 430,
+        "start_ms": 2068000,
+        "end_ms": 2073000,
+        "speaker_id": "speaker_7",
+        "text": "客服已经和各部门进行了那个协调，然后对接工作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000432",
+        "index": 431,
+        "start_ms": 2074000,
+        "end_ms": 2076000,
+        "speaker_id": "speaker_1",
+        "text": "行，我这边儿也没事儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000433",
+        "index": 432,
+        "start_ms": 2076000,
+        "end_ms": 2079000,
+        "speaker_id": "speaker_2",
+        "text": "嗯那咱们今天的会议就到此结束吧",
+        "status": "ok"
+      }
+    ]
+  }
+}

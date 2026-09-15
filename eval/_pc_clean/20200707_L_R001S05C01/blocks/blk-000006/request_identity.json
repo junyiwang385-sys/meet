@@ -1,0 +1,10 @@
+{
+  "fingerprint": "ae37ac3cb36277e1f6db4cc5e3219a66002fd088caf437f107f63647d09a9414",
+  "request_kind": "block-summary",
+  "artifact_sha256": {
+    "final_json": "6c522fb6ec4d9434ab779fa4441d042f274b7836b18345f709844043fe8d8be0",
+    "validated_result": "8c13d24ce870d3d2dd6f8686420b50eb32cf46935b469138e46ed2ba52c48b20",
+    "validation": "a1bc26ff11e0701c44696dfe0947d11506c66c7518f16249e903689646a9fa6d",
+    "status": "b5625b090e2121fb7da5d0871032fe1e8f6c73ba9595fb51e146df4c84381642"
+  }
+}

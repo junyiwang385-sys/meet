@@ -1,0 +1,12 @@
+{
+  "decisions": [
+    {
+      "decision": "会议结束",
+      "problem": "会议需要结束",
+      "options": [],
+      "rationale": "会议主持人宣布结束会议",
+      "owner": "",
+      "turn_ids": [301]
+    }
+  ]
+}

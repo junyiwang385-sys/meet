@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:20:59.2669729Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"keywords\": [\"欠条与借条的法律区别\", \"借贷关系的诉讼时效\", \"民间借贷纠纷处理\", \"婚内房产分割\", \"食品安全投诉\", \"城管执法问题\", \"校园暴力认定与处理\", \"网络诈骗防范\", \"酒托诈骗\", \"恋爱期间财物返还\"]}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2092206600,
+  "load_duration": 2142800,
+  "prompt_eval_count": 3746,
+  "prompt_eval_duration": 998161000,
+  "eval_count": 66,
+  "eval_duration": 940689000
+}

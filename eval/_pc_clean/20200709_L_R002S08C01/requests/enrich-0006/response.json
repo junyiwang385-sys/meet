@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T13:26:44.1085921Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"去北极旅游时，是否需要考虑雪盲症和雪崩等安全风险？\",\n      \"answer\": \"会议中明确指出北极旅游不存在雪崩风险，且雪盲症在该地区很少发生。\"\n    },\n    {\n      \"question\": \"公司是否计划为北极团建活动提供服装经费？\",\n      \"answer\": \"公司计划将大部分经费用于购买适合北极气候的服装，而其他如食宿等费用将另作安排。\"\n    },\n    {\n      \"question\": \"北极旅游的签证难度如何？\",\n      \"answer\": \"会议中存在对北极签证难度的分歧，一方认为旅游签证较易办理，另一方则指出实际存在较大难度。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2579856800,
+  "load_duration": 1746400,
+  "prompt_eval_count": 963,
+  "prompt_eval_duration": 239150000,
+  "eval_count": 168,
+  "eval_duration": 2266016000
+}

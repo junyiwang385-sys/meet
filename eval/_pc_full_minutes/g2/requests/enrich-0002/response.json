@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T08:45:04.408067Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"keywords\": [\n    \"化妆品产品讲解\",\n    \"消费者情绪安抚\",\n    \"产品包装设计\",\n    \"研发特点直观展示\",\n    \"市场竞争力分析\",\n    \"售后质量保障\",\n    \"会员消费激励\",\n    \"节日维护保养服务\",\n    \"专利成分保障\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2095322300,
+  "load_duration": 1596500,
+  "prompt_eval_count": 1703,
+  "prompt_eval_duration": 428956000,
+  "eval_count": 66,
+  "eval_duration": 904703000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:15:21.2322195Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"会议中提到的晚会具体举办时间是什么时候？\",\n      \"answer\": \"会议确定晚会将于12月31日晚上6点开始入席。\"\n    },\n    {\n      \"question\": \"如果天气寒冷，晚会是否需要调整为室内举办？\",\n      \"answer\": \"会议讨论后决定晚会将固定在体育馆内举办，以避免因天气变化导致的户外活动风险。\"\n    },\n    {\n      \"question\": \"晚会场地选择是否需要考虑外部租赁？\",\n      \"answer\": \"会议认为学校现有体育馆面积足够，无需外部租赁，应优先利用校内场地进行布置和宣传。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2141146100,
+  "load_duration": 1043600,
+  "prompt_eval_count": 837,
+  "prompt_eval_duration": 175381000,
+  "eval_count": 153,
+  "eval_duration": 1917945000
+}

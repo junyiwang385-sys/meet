@@ -1,0 +1,91 @@
+[
+  {
+    "task": "明确项目投资负责人",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000001"
+    ]
+  },
+  {
+    "task": "调查学生对证件照价格的敏感度",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000145"
+    ]
+  },
+  {
+    "task": "确定长期专业摄影师招聘标准",
+    "owner": "speaker_6",
+    "deadline": null,
+    "refs": [
+      "seg-000233"
+    ]
+  },
+  {
+    "task": "与景点合作开展旅拍",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000304"
+    ]
+  },
+  {
+    "task": "与学校、景区合作承包业务",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000328"
+    ]
+  },
+  {
+    "task": "讨论开业前三天的策略",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000370",
+      "seg-000371"
+    ]
+  },
+  {
+    "task": "启动打五折促销活动",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000372"
+    ]
+  },
+  {
+    "task": "招聘具备耐心和学习能力的助理",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000415"
+    ]
+  },
+  {
+    "task": "配置专业PS后期制作人员",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000417"
+    ]
+  },
+  {
+    "task": "定期开展销售活动",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000427"
+    ]
+  },
+  {
+    "task": "成立客户反馈小组",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000472"
+    ]
+  }
+]

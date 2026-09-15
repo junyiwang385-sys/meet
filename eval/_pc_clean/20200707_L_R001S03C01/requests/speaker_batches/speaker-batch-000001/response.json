@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:41:08.5166552Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"speakers\": [\n    {\n      \"speaker_id\": \"sp1\",\n      \"overview\": \"董事长强调需严格处理员工违规行为，包括开除措施，并关注防汛措施和投诉应对机制，要求分公司自行处理投诉相关事宜。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1413349700,
+  "load_duration": 1046500,
+  "prompt_eval_count": 2088,
+  "prompt_eval_duration": 493595000,
+  "eval_count": 60,
+  "eval_duration": 822439000
+}

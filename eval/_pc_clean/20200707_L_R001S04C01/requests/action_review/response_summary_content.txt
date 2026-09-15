@@ -1,0 +1,8 @@
+{
+  "task": "确定下半年考试安排标准",
+  "owner": null,
+  "deadline": null,
+  "refs": [
+    "r28"
+  ]
+}

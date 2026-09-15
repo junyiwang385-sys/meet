@@ -1,0 +1,42 @@
+[
+  {
+    "task": "明确大公司与小公司的界定标准",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000012"
+    ]
+  },
+  {
+    "task": "优先选择小公司积累实操经验",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000165"
+    ]
+  },
+  {
+    "task": "提供个性化就业分析",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000239"
+    ]
+  },
+  {
+    "task": "教务部总结会议内容",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000293"
+    ]
+  },
+  {
+    "task": "学生会主持心理疏导会",
+    "owner": "speaker_1",
+    "deadline": null,
+    "refs": [
+      "seg-000297"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "task": "协商僵尸车问题",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000002"
+    ]
+  },
+  {
+    "task": "在安全出口处增加摄像头",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000053"
+    ]
+  },
+  {
+    "task": "后厨主管检查食材新鲜度",
+    "owner": "speaker_2",
+    "deadline": null,
+    "refs": [
+      "seg-000161"
+    ]
+  },
+  {
+    "task": "针对销售平稳的日化产品实施跨楼层消费赠送购物券抵扣活动",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000248"
+    ]
+  },
+  {
+    "task": "确认上半年女装畅销款为潮流款式",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000331"
+    ]
+  },
+  {
+    "task": "与越南合作进口玉石原材料和成品",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000390"
+    ]
+  },
+  {
+    "task": "加强内部人员安保措施",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000427"
+    ]
+  },
+  {
+    "task": "日化区特价宣传单制作",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000511"
+    ]
+  },
+  {
+    "task": "服装部摆设与新款展示优化",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000522"
+    ]
+  },
+  {
+    "task": "首饰品类扩充计划",
+    "owner": null,
+    "deadline": null,
+    "refs": [
+      "seg-000528"
+    ]
+  }
+]

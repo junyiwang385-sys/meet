@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:46:59.3471721Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"keywords\": [\n    \"开拓新市场\",\n    \"篮球市场\",\n    \"健康餐\",\n    \"能量饮料\",\n    \"自动贩卖机\",\n    \"员工工资调整\",\n    \"市场风险评估\",\n    \"疫情应对措施\",\n    \"会员健康检测\"\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1384468200,
+  "load_duration": 1563300,
+  "prompt_eval_count": 1703,
+  "prompt_eval_duration": 412912000,
+  "eval_count": 61,
+  "eval_duration": 807620000
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3:4b",
+  "created_at": "2026-09-14T12:33:49.2669291Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"qa\": [\n    {\n      \"question\": \"过失致人死亡的最高刑罚是多少？\",\n      \"answer\": \"过失致人死亡的最高刑罚为七年有期徒刑，不会判处死刑。\"\n    },\n    {\n      \"question\": \"在交通事故中，若车主故意撞击小偷导致其受伤但未死亡，车主是否需要承担法律责任？\",\n      \"answer\": \"若车主在交通事故中故意撞击小偷导致其受伤但未死亡，车主无需承担法律责任，小偷将自行承担相应后果。\"\n    },\n    {\n      \"question\": \"过失杀人行为的法律定义是什么？\",\n      \"answer\": \"过失杀人是指行为人应当预见自己的行为可能发生危害结果，但因疏忽大意而未预见，或者已经预见但轻信能够避免，导致他人死亡的情形。\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2536742200,
+  "load_duration": 1042700,
+  "prompt_eval_count": 840,
+  "prompt_eval_duration": 177838000,
+  "eval_count": 183,
+  "eval_duration": 2293210000
+}

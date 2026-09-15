@@ -1,0 +1,42 @@
+[
+  {
+    "batch": 1,
+    "groups": 8,
+    "returned_summaries": 8,
+    "expected": 8,
+    "struct_ok_rate": 1.0,
+    "recall": 1.0,
+    "lowfreq_recall": 1.0,
+    "avg_chars": 184
+  },
+  {
+    "batch": 2,
+    "groups": 4,
+    "returned_summaries": 8,
+    "expected": 8,
+    "struct_ok_rate": 1.0,
+    "recall": 0.7,
+    "lowfreq_recall": 0.0,
+    "avg_chars": 123
+  },
+  {
+    "batch": 3,
+    "groups": 3,
+    "returned_summaries": 6,
+    "expected": 8,
+    "struct_ok_rate": 0.67,
+    "recall": 1.0,
+    "lowfreq_recall": 1.0,
+    "avg_chars": 152
+  },
+  {
+    "batch": 4,
+    "groups": 2,
+    "returned_summaries": 8,
+    "expected": 8,
+    "struct_ok_rate": 1.0,
+    "recall": 0.8,
+    "lowfreq_recall": 1.0,
+    "avg_chars": 60
+  }
+]

@@ -1,0 +1,4341 @@
+{
+  "meeting": {
+    "meeting_id": "20200707_L_R001S06C01",
+    "source": "golden_v2_timeline_clean"
+  },
+  "transcript": {
+    "segment_count": 480,
+    "nonempty_segment_count": 480,
+    "speaker_ids": [
+      "speaker_1",
+      "speaker_2",
+      "speaker_3",
+      "speaker_4",
+      "speaker_5",
+      "speaker_6",
+      "speaker_7"
+    ],
+    "segments": [
+      {
+        "segment_id": "seg-000001",
+        "index": 0,
+        "start_ms": 54000,
+        "end_ms": 56000,
+        "speaker_id": "speaker_1",
+        "text": "零零二我是投资",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000002",
+        "index": 1,
+        "start_ms": 57000,
+        "end_ms": 58000,
+        "speaker_id": "speaker_2",
+        "text": "零二二我是负责人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000003",
+        "index": 2,
+        "start_ms": 59000,
+        "end_ms": 60000,
+        "speaker_id": "speaker_3",
+        "text": "零二六我是财务部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000004",
+        "index": 3,
+        "start_ms": 60000,
+        "end_ms": 62000,
+        "speaker_id": "speaker_4",
+        "text": "零幺三我是销售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000005",
+        "index": 4,
+        "start_ms": 62000,
+        "end_ms": 64000,
+        "speaker_id": "speaker_5",
+        "text": "零二三我是总负责人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000006",
+        "index": 5,
+        "start_ms": 64000,
+        "end_ms": 66000,
+        "speaker_id": "speaker_6",
+        "text": "零二四我是风险评估",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000007",
+        "index": 6,
+        "start_ms": 66000,
+        "end_ms": 68000,
+        "speaker_id": "speaker_7",
+        "text": "零幺五我是宣传部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000008",
+        "index": 7,
+        "start_ms": 69000,
+        "end_ms": 75000,
+        "speaker_id": "speaker_1",
+        "text": "行好的，今天嗯这样的，今天把大家召集过来是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000009",
+        "index": 8,
+        "start_ms": 75000,
+        "end_ms": 76000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000010",
+        "index": 9,
+        "start_ms": 77000,
+        "end_ms": 79000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿你们有个项儿目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000011",
+        "index": 10,
+        "start_ms": 79000,
+        "end_ms": 84000,
+        "speaker_id": "speaker_1",
+        "text": "嗯我想听一下你们对这个项目的一个整个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000012",
+        "index": 11,
+        "start_ms": 84000,
+        "end_ms": 87000,
+        "speaker_id": "speaker_1",
+        "text": "呃整体的一个规划这一块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000013",
+        "index": 12,
+        "start_ms": 87000,
+        "end_ms": 93000,
+        "speaker_id": "speaker_1",
+        "text": "嗯然后确定是否对咱这个项目进行一个投资负责人这一块儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000014",
+        "index": 13,
+        "start_ms": 93000,
+        "end_ms": 96000,
+        "speaker_id": "speaker_5",
+        "text": "呃因为现在随着社会的发展",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000015",
+        "index": 14,
+        "start_ms": 96000,
+        "end_ms": 103000,
+        "speaker_id": "speaker_5",
+        "text": "许多人学生包括大人还是小孩儿，现在对照片对摄影都有了一定的了解",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000016",
+        "index": 15,
+        "start_ms": 103000,
+        "end_ms": 110000,
+        "speaker_id": "speaker_5",
+        "text": "很多人都想通过拍照儿就是留下来现在非常珍贵的一幕，把这些当成回忆以后来观看也是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000017",
+        "index": 16,
+        "start_ms": 110000,
+        "end_ms": 118000,
+        "speaker_id": "speaker_5",
+        "text": "特别好的，特别美好吧。所以呢我就想开一个这个摄影这个摄影公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000018",
+        "index": 17,
+        "start_ms": 118000,
+        "end_ms": 124000,
+        "speaker_id": "speaker_5",
+        "text": "然后今天呢就是希望各部门的那个主管咱们大家一起来探讨一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000019",
+        "index": 18,
+        "start_ms": 124000,
+        "end_ms": 130000,
+        "speaker_id": "speaker_5",
+        "text": "首先咱们就是项目先探讨一下儿这个婚这个摄影公司的选址",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000020",
+        "index": 19,
+        "start_ms": 130000,
+        "end_ms": 139000,
+        "speaker_id": "speaker_5",
+        "text": "咱们这个摄影呢不只是说婚纱摄影还是儿童摄影，它不是这么就是单一，咱们要打造的是一个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000021",
+        "index": 20,
+        "start_ms": 139000,
+        "end_ms": 145000,
+        "speaker_id": "speaker_5",
+        "text": "比如说婚纱摄影也可以拍情侣写真也可以拍个人写真，包括",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000022",
+        "index": 21,
+        "start_ms": 145000,
+        "end_ms": 150000,
+        "speaker_id": "speaker_5",
+        "text": "儿童的百天纪念照，就是一个全方面的一个摄影品牌",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000023",
+        "index": 22,
+        "start_ms": 150000,
+        "end_ms": 156000,
+        "speaker_id": "speaker_5",
+        "text": "现在我想跟各部门说一下，大家对选址有什么建议或者想法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000024",
+        "index": 23,
+        "start_ms": 157000,
+        "end_ms": 158000,
+        "speaker_id": "speaker_5",
+        "text": "开在哪里",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000025",
+        "index": 24,
+        "start_ms": 158000,
+        "end_ms": 159000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000026",
+        "index": 25,
+        "start_ms": 159000,
+        "end_ms": 163000,
+        "speaker_id": "speaker_3",
+        "text": "推荐开在市区闹市。就是商业区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000027",
+        "index": 26,
+        "start_ms": 163000,
+        "end_ms": 167000,
+        "speaker_id": "speaker_3",
+        "text": "这人流量比较大，而且就是这种一般",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000028",
+        "index": 27,
+        "start_ms": 169000,
+        "end_ms": 172000,
+        "speaker_id": "speaker_3",
+        "text": "摄像嘛也算是一种中高端吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000029",
+        "index": 28,
+        "start_ms": 173000,
+        "end_ms": 174000,
+        "speaker_id": "speaker_3",
+        "text": "对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000030",
+        "index": 29,
+        "start_ms": 174000,
+        "end_ms": 179000,
+        "speaker_id": "speaker_3",
+        "text": "这个咱们收费价格也不算低，所以属于中高端项目，环境一定要好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000031",
+        "index": 30,
+        "start_ms": 180000,
+        "end_ms": 182000,
+        "speaker_id": "speaker_3",
+        "text": "我个人建议在商业区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000032",
+        "index": 31,
+        "start_ms": 182000,
+        "end_ms": 185000,
+        "speaker_id": "speaker_5",
+        "text": "商业区是想开在哪",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000033",
+        "index": 32,
+        "start_ms": 183000,
+        "end_ms": 183000,
+        "speaker_id": "speaker_3",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000034",
+        "index": 33,
+        "start_ms": 183000,
+        "end_ms": 185000,
+        "speaker_id": "speaker_1",
+        "text": "有不同意见的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000035",
+        "index": 34,
+        "start_ms": 185000,
+        "end_ms": 186000,
+        "speaker_id": "speaker_5",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000036",
+        "index": 35,
+        "start_ms": 186000,
+        "end_ms": 187000,
+        "speaker_id": "speaker_1",
+        "text": "有不同意见的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000037",
+        "index": 36,
+        "start_ms": 189000,
+        "end_ms": 191000,
+        "speaker_id": "speaker_5",
+        "text": "我是想问一下是想开在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000038",
+        "index": 37,
+        "start_ms": 191000,
+        "end_ms": 192000,
+        "speaker_id": "speaker_3",
+        "text": "商业区的写字楼",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000039",
+        "index": 38,
+        "start_ms": 192000,
+        "end_ms": 195000,
+        "speaker_id": "speaker_5",
+        "text": "对，因为商业区周围肯定不止我们一家儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000040",
+        "index": 39,
+        "start_ms": 195000,
+        "end_ms": 204000,
+        "speaker_id": "speaker_5",
+        "text": "就比如说咱们去那个鲁冰花那一条街，上面的都是都是婚纱店，咱们要开在那儿竞争会大，咱们要开在别的地方",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000041",
+        "index": 40,
+        "start_ms": 196000,
+        "end_ms": 199000,
+        "speaker_id": "speaker_7",
+        "text": "我觉得还是开在商场街比较好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000042",
+        "index": 41,
+        "start_ms": 204000,
+        "end_ms": 211000,
+        "speaker_id": "speaker_5",
+        "text": "就是会比较突出，比较单一，所以想听一下其他部门对这个是怎么想的，说一下不同的看法吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000043",
+        "index": 42,
+        "start_ms": 210000,
+        "end_ms": 215000,
+        "speaker_id": "speaker_7",
+        "text": "宣传部的话感觉就是开在稍微就是也不算太偏",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000044",
+        "index": 43,
+        "start_ms": 215000,
+        "end_ms": 221000,
+        "speaker_id": "speaker_7",
+        "text": "就是也不要就是和这些特别多的那种婚纱照进行就是竞争嘛，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000045",
+        "index": 44,
+        "start_ms": 221000,
+        "end_ms": 225000,
+        "speaker_id": "speaker_7",
+        "text": "呃虽然咱们可能服务就是会特别好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000046",
+        "index": 45,
+        "start_ms": 225000,
+        "end_ms": 228000,
+        "speaker_id": "speaker_7",
+        "text": "也是竞争咱们是可以竞争过，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000047",
+        "index": 46,
+        "start_ms": 229000,
+        "end_ms": 233000,
+        "speaker_id": "speaker_7",
+        "text": "就是毕竟咱们价格可能还是稍微偏中高档的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000048",
+        "index": 47,
+        "start_ms": 233000,
+        "end_ms": 240000,
+        "speaker_id": "speaker_7",
+        "text": "然后这样的话客户选择的话就是会比较少，咱们的话就是这样选择的就是稍微就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000049",
+        "index": 48,
+        "start_ms": 240000,
+        "end_ms": 244000,
+        "speaker_id": "speaker_7",
+        "text": "以那种就是还是以个人写真为主吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000050",
+        "index": 49,
+        "start_ms": 244000,
+        "end_ms": 257000,
+        "speaker_id": "speaker_7",
+        "text": "就是你像婚纱照的话就是咱们可以找一个比较好的环境对它进行拍摄，咱们主打还是进行写真，然后就是进行宣传，我们是打算可以这么宣传效果还是比较好感觉",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000051",
+        "index": 50,
+        "start_ms": 259000,
+        "end_ms": 263000,
+        "speaker_id": "speaker_5",
+        "text": "风险评估这边儿对这个选址有什么异议吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000052",
+        "index": 51,
+        "start_ms": 264000,
+        "end_ms": 267000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得嗯我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000053",
+        "index": 52,
+        "start_ms": 267000,
+        "end_ms": 271000,
+        "speaker_id": "speaker_6",
+        "text": "开在商业区的话呃其实",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000054",
+        "index": 53,
+        "start_ms": 271000,
+        "end_ms": 276000,
+        "speaker_id": "speaker_6",
+        "text": "呃因为商业区物流量人流量虽然大，但是它毕竟",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000055",
+        "index": 54,
+        "start_ms": 276000,
+        "end_ms": 285000,
+        "speaker_id": "speaker_6",
+        "text": "嗯是吃的玩儿的比较多，像要呃想拍婚纱照什么或者写真什么的，就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000056",
+        "index": 55,
+        "start_ms": 285000,
+        "end_ms": 289000,
+        "speaker_id": "speaker_6",
+        "text": "呃我觉得应呃应该开在刚刚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000057",
+        "index": 56,
+        "start_ms": 289000,
+        "end_ms": 292000,
+        "speaker_id": "speaker_6",
+        "text": "呃上个部门说的嗯稍微",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000058",
+        "index": 57,
+        "start_ms": 292000,
+        "end_ms": 299000,
+        "speaker_id": "speaker_6",
+        "text": "不要太偏商业，不要太偏中心区一点的地段，这样竞争的比较少一点儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000059",
+        "index": 58,
+        "start_ms": 299000,
+        "end_ms": 301000,
+        "speaker_id": "speaker_6",
+        "text": "这是我的意见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000060",
+        "index": 59,
+        "start_ms": 301000,
+        "end_ms": 302000,
+        "speaker_id": "speaker_5",
+        "text": "销售部门呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000061",
+        "index": 60,
+        "start_ms": 302000,
+        "end_ms": 308000,
+        "speaker_id": "speaker_4",
+        "text": "嗯我觉得可以设在这个学校附近学校附近我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000062",
+        "index": 61,
+        "start_ms": 308000,
+        "end_ms": 318000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这个咱们这个学生嘛就是上大学以后，上学上学校以后，你难免要拍这个证件照儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000063",
+        "index": 62,
+        "start_ms": 318000,
+        "end_ms": 321000,
+        "speaker_id": "speaker_4",
+        "text": "写真或者毕业照之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000064",
+        "index": 63,
+        "start_ms": 322000,
+        "end_ms": 326000,
+        "speaker_id": "speaker_4",
+        "text": "这个一方面就是咱们的一个算是资源吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000065",
+        "index": 64,
+        "start_ms": 326000,
+        "end_ms": 330000,
+        "speaker_id": "speaker_4",
+        "text": "再再就说这个学校周围肯定要有小区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000066",
+        "index": 65,
+        "start_ms": 331000,
+        "end_ms": 332000,
+        "speaker_id": "speaker_4",
+        "text": "这些小区",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000067",
+        "index": 66,
+        "start_ms": 334000,
+        "end_ms": 343000,
+        "speaker_id": "speaker_4",
+        "text": "小区也是咱们的潜在客户，小区里边儿有人想拍写真啊，这个会有刚结婚，拍一些婚纱照之类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000068",
+        "index": 67,
+        "start_ms": 344000,
+        "end_ms": 348000,
+        "speaker_id": "speaker_4",
+        "text": "我觉得这个开学校附近是比较好一点",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000069",
+        "index": 68,
+        "start_ms": 349000,
+        "end_ms": 351000,
+        "speaker_id": "speaker_4",
+        "text": "就潜在客户的话比较多一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000070",
+        "index": 69,
+        "start_ms": 357000,
+        "end_ms": 362000,
+        "speaker_id": "speaker_5",
+        "text": "你现在咱们对咱们的定位是中高档，对吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000071",
+        "index": 70,
+        "start_ms": 361000,
+        "end_ms": 368000,
+        "speaker_id": "speaker_1",
+        "text": "不是刚刚才咱刚说想说这个选址嘞你再给我好这个方案，你这个你更倾向于哪里呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000072",
+        "index": 71,
+        "start_ms": 369000,
+        "end_ms": 373000,
+        "speaker_id": "speaker_5",
+        "text": "我更倾向于学校和小区，因为学生们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000073",
+        "index": 72,
+        "start_ms": 373000,
+        "end_ms": 379000,
+        "speaker_id": "speaker_5",
+        "text": "他们现在是消费的主体吧，而且他们在大学的时候肯定会有情侣",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000074",
+        "index": 73,
+        "start_ms": 373000,
+        "end_ms": 374000,
+        "speaker_id": "speaker_1",
+        "text": "你这",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000075",
+        "index": 74,
+        "start_ms": 380000,
+        "end_ms": 392000,
+        "speaker_id": "speaker_5",
+        "text": "还包括闺蜜，然后整个兄弟，然后就是宿舍嘛都会想拍照儿，毕业的时候还会拍毕业照儿嘛所以我觉得如果选在学校和小区的附近，因为小区里的居民还多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000076",
+        "index": 75,
+        "start_ms": 392000,
+        "end_ms": 398000,
+        "speaker_id": "speaker_5",
+        "text": "居民的年龄就范围就比较比较广阔，比如说他要结婚的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000077",
+        "index": 76,
+        "start_ms": 399000,
+        "end_ms": 407000,
+        "speaker_id": "speaker_5",
+        "text": "嗯已经结婚的，比如说要要拍全家福儿什么的，这些都可以，我我的个人倾向是开在临学校",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000078",
+        "index": 77,
+        "start_ms": 405000,
+        "end_ms": 411000,
+        "speaker_id": "speaker_7",
+        "text": "宣传部儿的话是就是关于大学它可能会存在就是那种关于就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000079",
+        "index": 78,
+        "start_ms": 411000,
+        "end_ms": 412000,
+        "speaker_id": "speaker_7",
+        "text": "多人婚礼",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000080",
+        "index": 79,
+        "start_ms": 412000,
+        "end_ms": 416000,
+        "speaker_id": "speaker_7",
+        "text": "呃不知道各个部门有没有听说过这个东西",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000081",
+        "index": 80,
+        "start_ms": 416000,
+        "end_ms": 423000,
+        "speaker_id": "speaker_7",
+        "text": "就是咱们可以就是开在学校附近的话，可能就是可以更好的跟大学进行一些合作",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000082",
+        "index": 81,
+        "start_ms": 423000,
+        "end_ms": 428000,
+        "speaker_id": "speaker_7",
+        "text": "然后因为咱们技术过硬，也可以承担一些这些项目儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000083",
+        "index": 82,
+        "start_ms": 430000,
+        "end_ms": 433000,
+        "speaker_id": "speaker_5",
+        "text": "那最开始宣传的时候有什么想法吗？",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000084",
+        "index": 83,
+        "start_ms": 433000,
+        "end_ms": 436000,
+        "speaker_id": "speaker_7",
+        "text": "呃宣传的话主要是咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000085",
+        "index": 84,
+        "start_ms": 436000,
+        "end_ms": 439000,
+        "speaker_id": "speaker_7",
+        "text": "首先定位嘛就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000086",
+        "index": 85,
+        "start_ms": 439000,
+        "end_ms": 446000,
+        "speaker_id": "speaker_7",
+        "text": "咱们不是主要是关于婚纱照的，嗯包括个人写真一些就是呃多方面的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000087",
+        "index": 86,
+        "start_ms": 446000,
+        "end_ms": 455000,
+        "speaker_id": "speaker_7",
+        "text": "所以说咱们就是就是像刚才选址就是选在大学附近，这样的话咱们就是可以满足各种有各种各样的需求吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000088",
+        "index": 87,
+        "start_ms": 455000,
+        "end_ms": 460000,
+        "speaker_id": "speaker_7",
+        "text": "因为毕竟你像大学里他们有就是你像共同的一个婚礼",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000089",
+        "index": 88,
+        "start_ms": 460000,
+        "end_ms": 470000,
+        "speaker_id": "speaker_7",
+        "text": "还有说就是有一些女学生吧就是比较喜欢就是拍一些比较好看的照，比如cos照儿以及各种呃美照儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000090",
+        "index": 89,
+        "start_ms": 470000,
+        "end_ms": 477000,
+        "speaker_id": "speaker_7",
+        "text": "就是咱们是可以进行对对写真就是咱们也是可以进行啊合作，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000091",
+        "index": 90,
+        "start_ms": 471000,
+        "end_ms": 472000,
+        "speaker_id": "speaker_5",
+        "text": "写真",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000092",
+        "index": 91,
+        "start_ms": 477000,
+        "end_ms": 480000,
+        "speaker_id": "speaker_7",
+        "text": "这样的话会就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000093",
+        "index": 92,
+        "start_ms": 480000,
+        "end_ms": 484000,
+        "speaker_id": "speaker_7",
+        "text": "也不需要咱们过多的宣传，也会有起到一个比较好的效果",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000094",
+        "index": 93,
+        "start_ms": 485000,
+        "end_ms": 495000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得嗯我觉得摄影的话，其实写真还有证件照儿，平时这种照片儿的利润其实没有婚纱照儿大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000095",
+        "index": 94,
+        "start_ms": 495000,
+        "end_ms": 501000,
+        "speaker_id": "speaker_6",
+        "text": "如果开在学校旁边的话，嗯因为学生结婚这件事情还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000096",
+        "index": 95,
+        "start_ms": 500000,
+        "end_ms": 505000,
+        "speaker_id": "speaker_5",
+        "text": "不是那刚才说了是学校和小区想找一个这两者都都存在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000097",
+        "index": 96,
+        "start_ms": 504000,
+        "end_ms": 508000,
+        "speaker_id": "speaker_6",
+        "text": "对我觉得小区旁边儿比较比学校合适一点儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000098",
+        "index": 97,
+        "start_ms": 509000,
+        "end_ms": 513000,
+        "speaker_id": "speaker_2",
+        "text": "这个说的部门儿说的都没有问题，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000099",
+        "index": 98,
+        "start_ms": 513000,
+        "end_ms": 516000,
+        "speaker_id": "speaker_2",
+        "text": "我想说的是虽然就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000100",
+        "index": 99,
+        "start_ms": 516000,
+        "end_ms": 519000,
+        "speaker_id": "speaker_2",
+        "text": "刚才说的证件照儿利润小或者是但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000101",
+        "index": 100,
+        "start_ms": 521000,
+        "end_ms": 524000,
+        "speaker_id": "speaker_2",
+        "text": "结婚这个人流量也不是很大，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000102",
+        "index": 101,
+        "start_ms": 523000,
+        "end_ms": 533000,
+        "speaker_id": "speaker_7",
+        "text": "你像结婚的话花费也是比较大，因为你要选景，选景选一个比较风景优美的景，是有可能要进行就是外出进行拍摄的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000103",
+        "index": 102,
+        "start_ms": 533000,
+        "end_ms": 538000,
+        "speaker_id": "speaker_7",
+        "text": "到后期处理的话，呃对于婚纱照肯定是要精通求精的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000104",
+        "index": 103,
+        "start_ms": 538000,
+        "end_ms": 550000,
+        "speaker_id": "speaker_6",
+        "text": "对，所以我们嗯这个修一张照片儿或者拍摄一张照片儿，这样的那个价格就会高高一点儿。现在嗯结婚这些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000105",
+        "index": 104,
+        "start_ms": 550000,
+        "end_ms": 558000,
+        "speaker_id": "speaker_6",
+        "text": "婚纱照儿是必备的，所以嗯还有甚至还有一些人什么二婚三婚，现在都很常见",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000106",
+        "index": 105,
+        "start_ms": 558000,
+        "end_ms": 565000,
+        "speaker_id": "speaker_6",
+        "text": "所以我觉得嗯这个价格儿上昂贵呃是应该的，因为这是婚纱照儿嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000107",
+        "index": 106,
+        "start_ms": 565000,
+        "end_ms": 568000,
+        "speaker_id": "speaker_6",
+        "text": "嗯所以还是有很多人可以接受的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000108",
+        "index": 107,
+        "start_ms": 566000,
+        "end_ms": 571000,
+        "speaker_id": "speaker_7",
+        "text": "咱们是毕竟是人生吗一个人生基本上就没有几次",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000109",
+        "index": 108,
+        "start_ms": 570000,
+        "end_ms": 571000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000110",
+        "index": 109,
+        "start_ms": 571000,
+        "end_ms": 576000,
+        "speaker_id": "speaker_2",
+        "text": "这个我想问一下儿这个宣传部咱们这个影楼宣传的怎么样了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000111",
+        "index": 110,
+        "start_ms": 576000,
+        "end_ms": 582000,
+        "speaker_id": "speaker_7",
+        "text": "哦首先影楼宣传的话，咱们主要还是通过咱们影楼儿上的广告儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000112",
+        "index": 111,
+        "start_ms": 582000,
+        "end_ms": 587000,
+        "speaker_id": "speaker_7",
+        "text": "以及就是咱们有工作人员去大学以及社区进行宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000113",
+        "index": 112,
+        "start_ms": 587000,
+        "end_ms": 592000,
+        "speaker_id": "speaker_2",
+        "text": "我想知道的就是宣传的效率怎么样，他们知道咱们影楼的人多吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000114",
+        "index": 113,
+        "start_ms": 590000,
+        "end_ms": 590000,
+        "speaker_id": "speaker_7",
+        "text": "效果",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000115",
+        "index": 114,
+        "start_ms": 592000,
+        "end_ms": 598000,
+        "speaker_id": "speaker_7",
+        "text": "呃已经来咱们影楼拍结婚照的就是已经有好几家了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000116",
+        "index": 115,
+        "start_ms": 597000,
+        "end_ms": 599000,
+        "speaker_id": "speaker_4",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000117",
+        "index": 116,
+        "start_ms": 599000,
+        "end_ms": 601000,
+        "speaker_id": "speaker_1",
+        "text": "你们说的我没听明白",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000118",
+        "index": 117,
+        "start_ms": 601000,
+        "end_ms": 604000,
+        "speaker_id": "speaker_1",
+        "text": "刚才咱不是说到了选址是吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000119",
+        "index": 118,
+        "start_ms": 604000,
+        "end_ms": 608000,
+        "speaker_id": "speaker_5",
+        "text": "对正在讨论在小区旁边儿好还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000120",
+        "index": 119,
+        "start_ms": 604000,
+        "end_ms": 607000,
+        "speaker_id": "speaker_7",
+        "text": "这个这个说对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000121",
+        "index": 120,
+        "start_ms": 606000,
+        "end_ms": 611000,
+        "speaker_id": "speaker_1",
+        "text": "哦在那咱这个地方儿还没整成呢，那怎么会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000122",
+        "index": 121,
+        "start_ms": 611000,
+        "end_ms": 613000,
+        "speaker_id": "speaker_1",
+        "text": "这个前期的一个宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000123",
+        "index": 122,
+        "start_ms": 614000,
+        "end_ms": 616000,
+        "speaker_id": "speaker_2",
+        "text": "所以现在我们是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000124",
+        "index": 123,
+        "start_ms": 614000,
+        "end_ms": 623000,
+        "speaker_id": "speaker_1",
+        "text": "这方面是怎么说嘞刚才你说你说什么来咱这儿已经有人来咱这儿了，这是什么个情况啊你刚才说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000125",
+        "index": 124,
+        "start_ms": 619000,
+        "end_ms": 620000,
+        "speaker_id": "speaker_2",
+        "text": "就就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000126",
+        "index": 125,
+        "start_ms": 623000,
+        "end_ms": 625000,
+        "speaker_id": "speaker_6",
+        "text": "来咱这儿询问过情况",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000127",
+        "index": 126,
+        "start_ms": 624000,
+        "end_ms": 628000,
+        "speaker_id": "speaker_2",
+        "text": "对对对对就是有人就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000128",
+        "index": 127,
+        "start_ms": 624000,
+        "end_ms": 627000,
+        "speaker_id": "speaker_1",
+        "text": "来这儿询问过情况啊",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000129",
+        "index": 128,
+        "start_ms": 627000,
+        "end_ms": 633000,
+        "speaker_id": "speaker_6",
+        "text": "因为我们宣传的力度比较大，然后呃有人看到那些广告儿就想来我们这儿问一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000130",
+        "index": 129,
+        "start_ms": 629000,
+        "end_ms": 630000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000131",
+        "index": 130,
+        "start_ms": 633000,
+        "end_ms": 634000,
+        "speaker_id": "speaker_2",
+        "text": "对对对是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000132",
+        "index": 131,
+        "start_ms": 633000,
+        "end_ms": 634000,
+        "speaker_id": "speaker_1",
+        "text": "嗯行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000133",
+        "index": 132,
+        "start_ms": 635000,
+        "end_ms": 636000,
+        "speaker_id": "speaker_1",
+        "text": "你继续",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000134",
+        "index": 133,
+        "start_ms": 635000,
+        "end_ms": 642000,
+        "speaker_id": "speaker_2",
+        "text": "那如果你看如果是对于选选址的话，我这个话题还没还没有问完，就是想知道如果宣传能力不够的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000135",
+        "index": 134,
+        "start_ms": 643000,
+        "end_ms": 645000,
+        "speaker_id": "speaker_2",
+        "text": "其实是可以开在商业街的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000136",
+        "index": 135,
+        "start_ms": 646000,
+        "end_ms": 649000,
+        "speaker_id": "speaker_2",
+        "text": "因为以上你们给的这些条件都非常的好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000137",
+        "index": 136,
+        "start_ms": 649000,
+        "end_ms": 654000,
+        "speaker_id": "speaker_2",
+        "text": "听了听也都有各有各的优点，各有各的缺点，虽然小区的人流量比较大",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000138",
+        "index": 137,
+        "start_ms": 655000,
+        "end_ms": 657000,
+        "speaker_id": "speaker_2",
+        "text": "既然宣传到了为什么不开在商业街呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000139",
+        "index": 138,
+        "start_ms": 658000,
+        "end_ms": 666000,
+        "speaker_id": "speaker_6",
+        "text": "因为商业街它呃地域，它因为它租的店铺都比较呃价格太贵了地皮",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000140",
+        "index": 139,
+        "start_ms": 666000,
+        "end_ms": 669000,
+        "speaker_id": "speaker_2",
+        "text": "那相对于学校来说呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000141",
+        "index": 140,
+        "start_ms": 666000,
+        "end_ms": 673000,
+        "speaker_id": "speaker_6",
+        "text": "你像拍拍摄的照片儿的话，不像每天每个人都会每天想拍照儿的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000142",
+        "index": 141,
+        "start_ms": 673000,
+        "end_ms": 679000,
+        "speaker_id": "speaker_2",
+        "text": "这个现在大多数人都喜欢带着对象或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000143",
+        "index": 142,
+        "start_ms": 673000,
+        "end_ms": 678000,
+        "speaker_id": "speaker_6",
+        "text": "所以他也没必要特别大的人流量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000144",
+        "index": 143,
+        "start_ms": 673000,
+        "end_ms": 676000,
+        "speaker_id": "speaker_4",
+        "text": "结婚照的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000145",
+        "index": 144,
+        "start_ms": 679000,
+        "end_ms": 684000,
+        "speaker_id": "speaker_2",
+        "text": "出去逛街之类的，如果在商业街或者商场旁边的话，大多数都会注意到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000146",
+        "index": 145,
+        "start_ms": 684000,
+        "end_ms": 688000,
+        "speaker_id": "speaker_3",
+        "text": "如果是小区旁边的话，他是不是注意的不太明显，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000147",
+        "index": 146,
+        "start_ms": 687000,
+        "end_ms": 689000,
+        "speaker_id": "speaker_7",
+        "text": "所以说咱们主要还是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000148",
+        "index": 147,
+        "start_ms": 689000,
+        "end_ms": 693000,
+        "speaker_id": "speaker_7",
+        "text": "包括学校嘛，因为毕竟学校是情侣聚集地。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000149",
+        "index": 148,
+        "start_ms": 693000,
+        "end_ms": 694000,
+        "speaker_id": "speaker_7",
+        "text": "你像",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000150",
+        "index": 149,
+        "start_ms": 694000,
+        "end_ms": 698000,
+        "speaker_id": "speaker_2",
+        "text": "对现在应该是年轻人较多但是如果是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000151",
+        "index": 150,
+        "start_ms": 696000,
+        "end_ms": 700000,
+        "speaker_id": "speaker_7",
+        "text": "对年轻人他你想中年人的话就很少就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000152",
+        "index": 151,
+        "start_ms": 700000,
+        "end_ms": 706000,
+        "speaker_id": "speaker_7",
+        "text": "再去拍了除非就是因为他们就是想要补一个但是这种情况也比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000153",
+        "index": 152,
+        "start_ms": 706000,
+        "end_ms": 709000,
+        "speaker_id": "speaker_7",
+        "text": "虽然，主力军还是呃学生，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000154",
+        "index": 153,
+        "start_ms": 709000,
+        "end_ms": 709000,
+        "speaker_id": "speaker_2",
+        "text": "学生",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000155",
+        "index": 154,
+        "start_ms": 709000,
+        "end_ms": 713000,
+        "speaker_id": "speaker_7",
+        "text": "对，可能以后就是马上就要面临结婚这一个问。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000156",
+        "index": 155,
+        "start_ms": 713000,
+        "end_ms": 718000,
+        "speaker_id": "speaker_2",
+        "text": "那你们那边儿宣传有没有做了解到就是当地的一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000157",
+        "index": 156,
+        "start_ms": 718000,
+        "end_ms": 720000,
+        "speaker_id": "speaker_2",
+        "text": "租赁的费用",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000158",
+        "index": 157,
+        "start_ms": 720000,
+        "end_ms": 725000,
+        "speaker_id": "speaker_7",
+        "text": "哦你像是呃像学校附近的话是比较优惠的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000159",
+        "index": 158,
+        "start_ms": 725000,
+        "end_ms": 727000,
+        "speaker_id": "speaker_2",
+        "text": "什么会比较优惠呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000160",
+        "index": 159,
+        "start_ms": 725000,
+        "end_ms": 728000,
+        "speaker_id": "speaker_7",
+        "text": "因为因为因为竞争就是比较少",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000161",
+        "index": 160,
+        "start_ms": 729000,
+        "end_ms": 733000,
+        "speaker_id": "speaker_3",
+        "text": "那别人也想干证件照儿之类的东西，他会竞争压力比较小吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000162",
+        "index": 161,
+        "start_ms": 732000,
+        "end_ms": 738000,
+        "speaker_id": "speaker_7",
+        "text": "证件照咱们咱们主要的话咱们是包括多方面的咱们包括写真十几类的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000163",
+        "index": 162,
+        "start_ms": 738000,
+        "end_ms": 745000,
+        "speaker_id": "speaker_7",
+        "text": "证件照的话那只是一个小屋子就可以解决的问题，咱们是一个稍微比较大点儿的团队",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000164",
+        "index": 163,
+        "start_ms": 743000,
+        "end_ms": 744000,
+        "speaker_id": "speaker_6",
+        "text": "宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000165",
+        "index": 164,
+        "start_ms": 745000,
+        "end_ms": 747000,
+        "speaker_id": "speaker_7",
+        "text": "然后咱们是稍微一个大一点，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000166",
+        "index": 165,
+        "start_ms": 745000,
+        "end_ms": 749000,
+        "speaker_id": "speaker_2",
+        "text": "啊如果这方面全校学生会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000167",
+        "index": 166,
+        "start_ms": 749000,
+        "end_ms": 759000,
+        "speaker_id": "speaker_2",
+        "text": "整体去拍那方面的证件照，如果那家比咱们又便宜，拍的又好，或者宣传力度做的跟咱们也差不多，咱们会不会有竞争方面的压力呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000168",
+        "index": 167,
+        "start_ms": 759000,
+        "end_ms": 763000,
+        "speaker_id": "speaker_7",
+        "text": "你像现在在学校旁边的影视楼是比较少的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000169",
+        "index": 168,
+        "start_ms": 763000,
+        "end_ms": 769000,
+        "speaker_id": "speaker_7",
+        "text": "所以说呃比如说那些小的就是那些证件照",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000170",
+        "index": 169,
+        "start_ms": 769000,
+        "end_ms": 771000,
+        "speaker_id": "speaker_2",
+        "text": "相相馆儿照相馆儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000171",
+        "index": 170,
+        "start_ms": 770000,
+        "end_ms": 776000,
+        "speaker_id": "speaker_7",
+        "text": "对一般小小小相馆对毕业照儿什么其实就可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000172",
+        "index": 171,
+        "start_ms": 771000,
+        "end_ms": 773000,
+        "speaker_id": "speaker_6",
+        "text": "毕业照儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000173",
+        "index": 172,
+        "start_ms": 774000,
+        "end_ms": 776000,
+        "speaker_id": "speaker_2",
+        "text": "呃但是我",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000174",
+        "index": 173,
+        "start_ms": 776000,
+        "end_ms": 794000,
+        "speaker_id": "speaker_2",
+        "text": "调查问卷儿了解了一下，当代学生，如果他们大部分人都是来采取小的这种小小的这种摄影的方式来采取的话，他们会不会选择省钱的方式呢咱们这儿是高档一个证件照儿就要好几十的话他们一个班级",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000175",
+        "index": 174,
+        "start_ms": 787000,
+        "end_ms": 789000,
+        "speaker_id": "speaker_7",
+        "text": "不不不主要是现在你像",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000176",
+        "index": 175,
+        "start_ms": 794000,
+        "end_ms": 800000,
+        "speaker_id": "speaker_2",
+        "text": "就只要一两百的话，他们会不会选择他们的证件照而不选择咱们的呢这方面有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000177",
+        "index": 176,
+        "start_ms": 799000,
+        "end_ms": 803000,
+        "speaker_id": "speaker_7",
+        "text": "首先你要明白一点证件照它并不是说那么高的价格",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000178",
+        "index": 177,
+        "start_ms": 803000,
+        "end_ms": 804000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000179",
+        "index": 178,
+        "start_ms": 803000,
+        "end_ms": 806000,
+        "speaker_id": "speaker_7",
+        "text": "因为咱们开展这个只是一个拓展业务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000180",
+        "index": 179,
+        "start_ms": 807000,
+        "end_ms": 809000,
+        "speaker_id": "speaker_2",
+        "text": "哦拓展业务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000181",
+        "index": 180,
+        "start_ms": 807000,
+        "end_ms": 811000,
+        "speaker_id": "speaker_7",
+        "text": "然后咱们主打还是就是写真以及婚纱照",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000182",
+        "index": 181,
+        "start_ms": 811000,
+        "end_ms": 815000,
+        "speaker_id": "speaker_2",
+        "text": "写真和婚纱是吧就是以大型摄影来来那个什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000183",
+        "index": 182,
+        "start_ms": 812000,
+        "end_ms": 819000,
+        "speaker_id": "speaker_7",
+        "text": "对对对对对他就是相当于咱们这个行业吧就相当于就是呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000184",
+        "index": 183,
+        "start_ms": 819000,
+        "end_ms": 824000,
+        "speaker_id": "speaker_7",
+        "text": "轻易没有开张，但是一开张的话就会呃那个起来的话就是就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000185",
+        "index": 184,
+        "start_ms": 825000,
+        "end_ms": 826000,
+        "speaker_id": "speaker_7",
+        "text": "会收获特别多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000186",
+        "index": 185,
+        "start_ms": 826000,
+        "end_ms": 828000,
+        "speaker_id": "speaker_2",
+        "text": "那为什么能这么保证呢",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000187",
+        "index": 186,
+        "start_ms": 829000,
+        "end_ms": 831000,
+        "speaker_id": "speaker_6",
+        "text": "因为写一现在一套写真",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000188",
+        "index": 187,
+        "start_ms": 832000,
+        "end_ms": 844000,
+        "speaker_id": "speaker_6",
+        "text": "呃或者一个婚纱照的拍摄，因为场地呀或者服装还有到妆容什么都需要很多费用，所以嗯这个想拍照的人肯定是有提前的预算的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000189",
+        "index": 188,
+        "start_ms": 839000,
+        "end_ms": 840000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000190",
+        "index": 189,
+        "start_ms": 843000,
+        "end_ms": 846000,
+        "speaker_id": "speaker_7",
+        "text": "我们既可以做证件照这些稍微呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000191",
+        "index": 190,
+        "start_ms": 846000,
+        "end_ms": 853000,
+        "speaker_id": "speaker_7",
+        "text": "比较简单的，也是可以做到，就是相当于我们是一个影视楼嘛，我们的技术是有的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000192",
+        "index": 191,
+        "start_ms": 848000,
+        "end_ms": 848000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000193",
+        "index": 192,
+        "start_ms": 853000,
+        "end_ms": 861000,
+        "speaker_id": "speaker_7",
+        "text": "然后我们可以相互价格在证件照儿上这个是给他们进行竞争。咱们但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000194",
+        "index": 193,
+        "start_ms": 858000,
+        "end_ms": 859000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000195",
+        "index": 194,
+        "start_ms": 861000,
+        "end_ms": 864000,
+        "speaker_id": "speaker_7",
+        "text": "咱们的写真以及婚纱照也是要以高质量的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000196",
+        "index": 195,
+        "start_ms": 864000,
+        "end_ms": 872000,
+        "speaker_id": "speaker_3",
+        "text": "啊然后就是稍微中高档然后进行那什么，因为毕竟现在年轻人呃在这个方面上比较重视",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000197",
+        "index": 196,
+        "start_ms": 873000,
+        "end_ms": 877000,
+        "speaker_id": "speaker_2",
+        "text": "为什么会比较重视呢？咱们是不是要和手机还要竞争",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000198",
+        "index": 197,
+        "start_ms": 878000,
+        "end_ms": 882000,
+        "speaker_id": "speaker_2",
+        "text": "这方面咱们有竞争压力吗？就说相对来说哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000199",
+        "index": 198,
+        "start_ms": 881000,
+        "end_ms": 886000,
+        "speaker_id": "speaker_7",
+        "text": "主要是以手机以手机的有对区别的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000200",
+        "index": 199,
+        "start_ms": 881000,
+        "end_ms": 885000,
+        "speaker_id": "speaker_6",
+        "text": "摄影摄影和手机拍照儿还是有很大区别的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000201",
+        "index": 200,
+        "start_ms": 885000,
+        "end_ms": 889000,
+        "speaker_id": "speaker_5",
+        "text": "肯定不一样一个是专业的一个只是平常业余而已",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000202",
+        "index": 201,
+        "start_ms": 886000,
+        "end_ms": 887000,
+        "speaker_id": "speaker_2",
+        "text": "哦",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000203",
+        "index": 202,
+        "start_ms": 888000,
+        "end_ms": 892000,
+        "speaker_id": "speaker_7",
+        "text": "那你想你像你手机拍照你只会说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000204",
+        "index": 203,
+        "start_ms": 892000,
+        "end_ms": 901000,
+        "speaker_id": "speaker_7",
+        "text": "选用一些美图软件进行修改，但是我们的话就是用一些色彩进行渲渲染。对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000205",
+        "index": 204,
+        "start_ms": 893000,
+        "end_ms": 897000,
+        "speaker_id": "speaker_6",
+        "text": "对啊而且我们有很专业的团队",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000206",
+        "index": 205,
+        "start_ms": 897000,
+        "end_ms": 903000,
+        "speaker_id": "speaker_2",
+        "text": "很专业的团队预算大概有多少吗？需要的设备和预算",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000207",
+        "index": 206,
+        "start_ms": 903000,
+        "end_ms": 904000,
+        "speaker_id": "speaker_7",
+        "text": "呃这个的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000208",
+        "index": 207,
+        "start_ms": 903000,
+        "end_ms": 910000,
+        "speaker_id": "speaker_2",
+        "text": "因为咱们这儿不是已经向财务这边儿保证了，说是要如果开张就可以立马有利润到账吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000209",
+        "index": 208,
+        "start_ms": 909000,
+        "end_ms": 910000,
+        "speaker_id": "speaker_7",
+        "text": "这个话题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000210",
+        "index": 209,
+        "start_ms": 910000,
+        "end_ms": 914000,
+        "speaker_id": "speaker_7",
+        "text": "不应该问我一个宣传部的，你应该是问一下",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000211",
+        "index": 210,
+        "start_ms": 913000,
+        "end_ms": 923000,
+        "speaker_id": "speaker_2",
+        "text": "就是大致在座的各位部门有没有什么就是利润之类的吗，就是如果是要定在学校的话，这个利润方面这边儿宣传部说是很快就可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000212",
+        "index": 211,
+        "start_ms": 924000,
+        "end_ms": 925000,
+        "speaker_id": "speaker_2",
+        "text": "到账的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000213",
+        "index": 212,
+        "start_ms": 924000,
+        "end_ms": 927000,
+        "speaker_id": "speaker_6",
+        "text": "这个得在一年到半年之内吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000214",
+        "index": 213,
+        "start_ms": 927000,
+        "end_ms": 930000,
+        "speaker_id": "speaker_2",
+        "text": "那一年到半年之内会亏损吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000215",
+        "index": 214,
+        "start_ms": 928000,
+        "end_ms": 930000,
+        "speaker_id": "speaker_6",
+        "text": "这有一个期限",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000216",
+        "index": 215,
+        "start_ms": 930000,
+        "end_ms": 932000,
+        "speaker_id": "speaker_1",
+        "text": "这边儿就咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000217",
+        "index": 216,
+        "start_ms": 933000,
+        "end_ms": 936000,
+        "speaker_id": "speaker_1",
+        "text": "嗯负责人总负责人这边儿说一下儿刚才",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000218",
+        "index": 217,
+        "start_ms": 936000,
+        "end_ms": 940000,
+        "speaker_id": "speaker_5",
+        "text": "听到这么多部门的意见啊我个人就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000219",
+        "index": 218,
+        "start_ms": 937000,
+        "end_ms": 938000,
+        "speaker_id": "speaker_1",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000220",
+        "index": 219,
+        "start_ms": 940000,
+        "end_ms": 956000,
+        "speaker_id": "speaker_5",
+        "text": "听从大多数部门的意见来说这个婚纱店选址还是要选在学校和小区的附近咱们可以把剩下来的钱更多的投入在咱们的装备上，咱们的管理上，比如说咱们的摄影机，咱们雇的摄影师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000221",
+        "index": 220,
+        "start_ms": 956000,
+        "end_ms": 964000,
+        "speaker_id": "speaker_5",
+        "text": "还有咱们的服装等这些上面，而不是说把这个开在商业区，这个租金就会比较高。咱们应该是把",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000222",
+        "index": 221,
+        "start_ms": 964000,
+        "end_ms": 974000,
+        "speaker_id": "speaker_5",
+        "text": "更多重心放在品质上，这样才会走得更加长远。现在我想问一下儿就是咱们大家对这个管理上面，咱们的摄影师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000223",
+        "index": 222,
+        "start_ms": 975000,
+        "end_ms": 984000,
+        "speaker_id": "speaker_5",
+        "text": "这个上面是有什么疑问吗？咱们是要租一个不是租一个就花钱雇佣一个摄影师，还是怎么样大家都自己说一下想法吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000224",
+        "index": 223,
+        "start_ms": 985000,
+        "end_ms": 986000,
+        "speaker_id": "speaker_4",
+        "text": "先找",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000225",
+        "index": 224,
+        "start_ms": 985000,
+        "end_ms": 987000,
+        "speaker_id": "speaker_7",
+        "text": "一个摄影师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000226",
+        "index": 225,
+        "start_ms": 987000,
+        "end_ms": 989000,
+        "speaker_id": "speaker_7",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000227",
+        "index": 226,
+        "start_ms": 988000,
+        "end_ms": 990000,
+        "speaker_id": "speaker_5",
+        "text": "专业的吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000228",
+        "index": 227,
+        "start_ms": 990000,
+        "end_ms": 995000,
+        "speaker_id": "speaker_7",
+        "text": "就是对专业肯定要专业，因为我们主打的就是稍微中高档一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000229",
+        "index": 228,
+        "start_ms": 996000,
+        "end_ms": 1003000,
+        "speaker_id": "speaker_7",
+        "text": "所以说咱们摄影师的话，就是你像现在的话就是摄影师这个是吧，他们一般都是也会有自己的设备",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000230",
+        "index": 229,
+        "start_ms": 1003000,
+        "end_ms": 1010000,
+        "speaker_id": "speaker_7",
+        "text": "然后这就可能就是咱们在招一个摄影师的情况下，就是他们也有可能带着他们自己的设备进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000231",
+        "index": 230,
+        "start_ms": 1010000,
+        "end_ms": 1018000,
+        "speaker_id": "speaker_7",
+        "text": "呃拍摄，这也有可能就是减少租赁设备的钱，所以说咱们在招这个的话必须要找专业的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000232",
+        "index": 231,
+        "start_ms": 1020000,
+        "end_ms": 1023000,
+        "speaker_id": "speaker_5",
+        "text": "我想问你啊你说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000233",
+        "index": 232,
+        "start_ms": 1020000,
+        "end_ms": 1036000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得啊摄影师我们必须得找一个呃长期的就是长期专业的那种，在我们公司里面不是说去外面呃临时什么有事的，对。不不应该这样因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000234",
+        "index": 233,
+        "start_ms": 1037000,
+        "end_ms": 1044000,
+        "speaker_id": "speaker_6",
+        "text": "嗯因为我们的照片质量不应该是这这一次和下一次做出来的感觉不一样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000235",
+        "index": 234,
+        "start_ms": 1044000,
+        "end_ms": 1049000,
+        "speaker_id": "speaker_6",
+        "text": "所以呃应该找一个长期的稳定一点儿的专业的摄影师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000236",
+        "index": 235,
+        "start_ms": 1051000,
+        "end_ms": 1059000,
+        "speaker_id": "speaker_5",
+        "text": "那咱们对这个服装大家都觉得怎么想啊管理管理部门这边儿说一下，服装还有设计",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000237",
+        "index": 236,
+        "start_ms": 1058000,
+        "end_ms": 1063000,
+        "speaker_id": "speaker_2",
+        "text": "服装肯定是需要多种多样的，就是哪种风格的服装都要有都要有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000238",
+        "index": 237,
+        "start_ms": 1064000,
+        "end_ms": 1066000,
+        "speaker_id": "speaker_2",
+        "text": "然后咱们还要嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000239",
+        "index": 238,
+        "start_ms": 1069000,
+        "end_ms": 1070000,
+        "speaker_id": "speaker_2",
+        "text": "就咱们就先说服装嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000240",
+        "index": 239,
+        "start_ms": 1071000,
+        "end_ms": 1075000,
+        "speaker_id": "speaker_2",
+        "text": "各种类型的服装都要有，而且各种那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000241",
+        "index": 240,
+        "start_ms": 1076000,
+        "end_ms": 1077000,
+        "speaker_id": "speaker_2",
+        "text": "嗯大小的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000242",
+        "index": 241,
+        "start_ms": 1077000,
+        "end_ms": 1083000,
+        "speaker_id": "speaker_2",
+        "text": "要相对来说要齐全一些，然后只是用来租用，就是拍照的时候临时穿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000243",
+        "index": 242,
+        "start_ms": 1085000,
+        "end_ms": 1086000,
+        "speaker_id": "speaker_2",
+        "text": "出售",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000244",
+        "index": 243,
+        "start_ms": 1087000,
+        "end_ms": 1089000,
+        "speaker_id": "speaker_2",
+        "text": "这是服装方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000245",
+        "index": 244,
+        "start_ms": 1089000,
+        "end_ms": 1101000,
+        "speaker_id": "speaker_7",
+        "text": "对像但是你像我们宣传部所了解的情况来说啊，就是你像旁边的一个就是鲁冰花的一个品牌摄影楼，他们是可以把这些呃婚纱是卖出去的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000246",
+        "index": 245,
+        "start_ms": 1101000,
+        "end_ms": 1102000,
+        "speaker_id": "speaker_7",
+        "text": "因为毕竟咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000247",
+        "index": 246,
+        "start_ms": 1103000,
+        "end_ms": 1107000,
+        "speaker_id": "speaker_7",
+        "text": "影楼投资肯定是要需要买一个婚纱照的，因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000248",
+        "index": 247,
+        "start_ms": 1107000,
+        "end_ms": 1111000,
+        "speaker_id": "speaker_7",
+        "text": "咱们租赁婚纱再进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000249",
+        "index": 248,
+        "start_ms": 1111000,
+        "end_ms": 1111000,
+        "speaker_id": "speaker_7",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000250",
+        "index": 249,
+        "start_ms": 1111000,
+        "end_ms": 1126000,
+        "speaker_id": "speaker_6",
+        "text": "我我也觉得可以把婚纱嗯售卖，因为因为婚纱这个呃都看主人，都看那个客人，他们对这个衣服的审美这个变化会很大，如果我们几年",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000251",
+        "index": 250,
+        "start_ms": 1114000,
+        "end_ms": 1115000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000252",
+        "index": 251,
+        "start_ms": 1126000,
+        "end_ms": 1130000,
+        "speaker_id": "speaker_6",
+        "text": "呃一直把那个服装留在那儿的话，也是我们一个成本上的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000253",
+        "index": 252,
+        "start_ms": 1131000,
+        "end_ms": 1132000,
+        "speaker_id": "speaker_6",
+        "text": "嗯飞驰",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000254",
+        "index": 253,
+        "start_ms": 1131000,
+        "end_ms": 1135000,
+        "speaker_id": "speaker_7",
+        "text": "对同时婚纱的保养的话，它是价格也是比较高的。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000255",
+        "index": 254,
+        "start_ms": 1135000,
+        "end_ms": 1136000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000256",
+        "index": 255,
+        "start_ms": 1135000,
+        "end_ms": 1137000,
+        "speaker_id": "speaker_1",
+        "text": "还有其他不同意见吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000257",
+        "index": 256,
+        "start_ms": 1138000,
+        "end_ms": 1142000,
+        "speaker_id": "speaker_4",
+        "text": "嗯我觉得。可以就是一个是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000258",
+        "index": 257,
+        "start_ms": 1142000,
+        "end_ms": 1149000,
+        "speaker_id": "speaker_4",
+        "text": "就看客户儿，客户儿如果想租赁的话，我们可以给客户儿想买的话，我们可以卖给她",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000259",
+        "index": 258,
+        "start_ms": 1149000,
+        "end_ms": 1154000,
+        "speaker_id": "speaker_4",
+        "text": "对吧？他如果不想买的话，他就有可能就只是这个他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000260",
+        "index": 259,
+        "start_ms": 1155000,
+        "end_ms": 1156000,
+        "speaker_id": "speaker_4",
+        "text": "他就穿两次嘛他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000261",
+        "index": 260,
+        "start_ms": 1156000,
+        "end_ms": 1160000,
+        "speaker_id": "speaker_4",
+        "text": "他说那我就结婚穿一次再往后的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000262",
+        "index": 261,
+        "start_ms": 1160000,
+        "end_ms": 1162000,
+        "speaker_id": "speaker_4",
+        "text": "呃如果她不自己买",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000263",
+        "index": 262,
+        "start_ms": 1163000,
+        "end_ms": 1167000,
+        "speaker_id": "speaker_4",
+        "text": "别的的话他就应该是穿不到我们婚纱的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000264",
+        "index": 263,
+        "start_ms": 1167000,
+        "end_ms": 1171000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这个是看客户儿怎么说，他如果想租赁的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000265",
+        "index": 264,
+        "start_ms": 1172000,
+        "end_ms": 1178000,
+        "speaker_id": "speaker_4",
+        "text": "我们也不是预期租租赁的方法，然后卖的话也不是不行都可以的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000266",
+        "index": 265,
+        "start_ms": 1179000,
+        "end_ms": 1188000,
+        "speaker_id": "speaker_4",
+        "text": "这个主要就是看这个客户儿客户这边儿是什么意思？我们就按这个客户儿就是来比较人性化的灵活一点儿。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000267",
+        "index": 266,
+        "start_ms": 1192000,
+        "end_ms": 1197000,
+        "speaker_id": "speaker_5",
+        "text": "风险评估部门对咱们这个就是咱们刚才说的服装这边儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000268",
+        "index": 267,
+        "start_ms": 1198000,
+        "end_ms": 1206000,
+        "speaker_id": "speaker_5",
+        "text": "还有摄影师这边儿就是你进行一下儿简单的总结比如说你觉得风险怎么样啊？还是说就比较可靠",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000269",
+        "index": 268,
+        "start_ms": 1206000,
+        "end_ms": 1219000,
+        "speaker_id": "speaker_6",
+        "text": "嗯摄影首先摄影师的话嗯应该就是雇佣一个长期专业的，这样的话呃每次客呃别人来拍照儿拍出来的这个专业水平都是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000270",
+        "index": 269,
+        "start_ms": 1211000,
+        "end_ms": 1212000,
+        "speaker_id": "speaker_5",
+        "text": "咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000271",
+        "index": 270,
+        "start_ms": 1219000,
+        "end_ms": 1223000,
+        "speaker_id": "speaker_6",
+        "text": "类似的一样的。然后为了挽留一下儿这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000272",
+        "index": 271,
+        "start_ms": 1224000,
+        "end_ms": 1226000,
+        "speaker_id": "speaker_6",
+        "text": "客户儿的需求嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000273",
+        "index": 272,
+        "start_ms": 1226000,
+        "end_ms": 1228000,
+        "speaker_id": "speaker_6",
+        "text": "嗯然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000274",
+        "index": 273,
+        "start_ms": 1228000,
+        "end_ms": 1235000,
+        "speaker_id": "speaker_6",
+        "text": "然后这个婚纱服装上面我觉得可以采用刚刚说的呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000275",
+        "index": 274,
+        "start_ms": 1236000,
+        "end_ms": 1251000,
+        "speaker_id": "speaker_6",
+        "text": "尊尊重一下儿客人的这个需求，他们如果想喜欢那个那套服装想要买下来的话，我们可以售卖，然后如果只是拍照儿租用的话，我们也可以租用这样风险来说相对最小。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000276",
+        "index": 275,
+        "start_ms": 1251000,
+        "end_ms": 1255000,
+        "speaker_id": "speaker_5",
+        "text": "因为刚开始我们嗯这个工作室起步",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000277",
+        "index": 276,
+        "start_ms": 1255000,
+        "end_ms": 1264000,
+        "speaker_id": "speaker_5",
+        "text": "很多人都会觉得这个消费水平有点儿高，咱们要采取什么活动让大家会觉得说啊在这里拍是物有所值就是说",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000278",
+        "index": 277,
+        "start_ms": 1265000,
+        "end_ms": 1270000,
+        "speaker_id": "speaker_5",
+        "text": "嗯我们的我们的质量和我们的服务一定要到位，大家对这个有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000279",
+        "index": 278,
+        "start_ms": 1270000,
+        "end_ms": 1273000,
+        "speaker_id": "speaker_5",
+        "text": "看法吗就是说采取什么活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000280",
+        "index": 279,
+        "start_ms": 1271000,
+        "end_ms": 1273000,
+        "speaker_id": "speaker_7",
+        "text": "我们可以免费提供妆容",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000281",
+        "index": 280,
+        "start_ms": 1274000,
+        "end_ms": 1276000,
+        "speaker_id": "speaker_5",
+        "text": "采取什么活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000282",
+        "index": 281,
+        "start_ms": 1276000,
+        "end_ms": 1279000,
+        "speaker_id": "speaker_7",
+        "text": "我们可以免费提供妆容，就是化妆、",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000283",
+        "index": 282,
+        "start_ms": 1279000,
+        "end_ms": 1280000,
+        "speaker_id": "speaker_5",
+        "text": "化妆",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000284",
+        "index": 283,
+        "start_ms": 1280000,
+        "end_ms": 1287000,
+        "speaker_id": "speaker_7",
+        "text": "比如说男嗯男性来拍照吧他拍照都是要需要化妆的，但是男生他也不会化妆",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000285",
+        "index": 284,
+        "start_ms": 1285000,
+        "end_ms": 1285000,
+        "speaker_id": "speaker_5",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000286",
+        "index": 285,
+        "start_ms": 1287000,
+        "end_ms": 1293000,
+        "speaker_id": "speaker_7",
+        "text": "此时就是我们免费为他提供服务。还有造型啊发型",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000287",
+        "index": 286,
+        "start_ms": 1293000,
+        "end_ms": 1299000,
+        "speaker_id": "speaker_7",
+        "text": "还有这个服装搭配，是我们可以免费进行提那个提供",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000288",
+        "index": 287,
+        "start_ms": 1299000,
+        "end_ms": 1304000,
+        "speaker_id": "speaker_7",
+        "text": "如果呃他认为我们的服装很合适的话就可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000289",
+        "index": 288,
+        "start_ms": 1304000,
+        "end_ms": 1306000,
+        "speaker_id": "speaker_7",
+        "text": "我们也进行一个售卖",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000290",
+        "index": 289,
+        "start_ms": 1306000,
+        "end_ms": 1307000,
+        "speaker_id": "speaker_7",
+        "text": "这样",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000291",
+        "index": 290,
+        "start_ms": 1307000,
+        "end_ms": 1309000,
+        "speaker_id": "speaker_5",
+        "text": "财务部门儿怎么看",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000292",
+        "index": 291,
+        "start_ms": 1310000,
+        "end_ms": 1311000,
+        "speaker_id": "speaker_3",
+        "text": "财务部门",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000293",
+        "index": 292,
+        "start_ms": 1310000,
+        "end_ms": 1313000,
+        "speaker_id": "speaker_5",
+        "text": "对对这个提供免费的妆容男士方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000294",
+        "index": 293,
+        "start_ms": 1313000,
+        "end_ms": 1320000,
+        "speaker_id": "speaker_3",
+        "text": "财务部门没有什么别的意见。就是如果假如说像这种提供妆容或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000295",
+        "index": 294,
+        "start_ms": 1321000,
+        "end_ms": 1326000,
+        "speaker_id": "speaker_3",
+        "text": "店面请摄影师和设备这方面，咱们会在半年一年之内保持亏损状态",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000296",
+        "index": 295,
+        "start_ms": 1328000,
+        "end_ms": 1335000,
+        "speaker_id": "speaker_6",
+        "text": "这个应该不会，因为嗯我们如果采购一次化妆品或者买一批衣服",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000297",
+        "index": 296,
+        "start_ms": 1335000,
+        "end_ms": 1342000,
+        "speaker_id": "speaker_6",
+        "text": "嗯这个使用时间都是非常长的，所以我们这个不用担心他会有亏损",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000298",
+        "index": 297,
+        "start_ms": 1342000,
+        "end_ms": 1351000,
+        "speaker_id": "speaker_3",
+        "text": "毕竟你像买一个呃婚纱的话也是要用几年以上的不可能就是单纯的呃就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000299",
+        "index": 298,
+        "start_ms": 1351000,
+        "end_ms": 1353000,
+        "speaker_id": "speaker_3",
+        "text": "使用一段时间就会换",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000300",
+        "index": 299,
+        "start_ms": 1353000,
+        "end_ms": 1356000,
+        "speaker_id": "speaker_2",
+        "text": "那宣传要怎么宣传才能保证客流量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000301",
+        "index": 300,
+        "start_ms": 1355000,
+        "end_ms": 1359000,
+        "speaker_id": "speaker_7",
+        "text": "宣传的话，就是感觉就是咱们首先是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000302",
+        "index": 301,
+        "start_ms": 1359000,
+        "end_ms": 1362000,
+        "speaker_id": "speaker_7",
+        "text": "需要与当有一些景点进行合作的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000303",
+        "index": 302,
+        "start_ms": 1363000,
+        "end_ms": 1365000,
+        "speaker_id": "speaker_2",
+        "text": "景点进行合作吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000304",
+        "index": 303,
+        "start_ms": 1365000,
+        "end_ms": 1368000,
+        "speaker_id": "speaker_7",
+        "text": "对，因为咱们你像婚纱照拍摄是需要外景的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000305",
+        "index": 304,
+        "start_ms": 1368000,
+        "end_ms": 1369000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000306",
+        "index": 305,
+        "start_ms": 1369000,
+        "end_ms": 1371000,
+        "speaker_id": "speaker_7",
+        "text": "对于外景的话，咱们对一些对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000307",
+        "index": 306,
+        "start_ms": 1370000,
+        "end_ms": 1375000,
+        "speaker_id": "speaker_5",
+        "text": "就是有有都是需要去旅拍，如果咱们就近就是近期有",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000308",
+        "index": 307,
+        "start_ms": 1373000,
+        "end_ms": 1374000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000309",
+        "index": 308,
+        "start_ms": 1375000,
+        "end_ms": 1386000,
+        "speaker_id": "speaker_5",
+        "text": "嗯有那个非常好的合适的地点的话也可以跟地点合作一下，也算是地点的景区为他们宣传，也算是咱们自己的品牌咱们的工作室宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000310",
+        "index": 309,
+        "start_ms": 1379000,
+        "end_ms": 1381000,
+        "speaker_id": "speaker_7",
+        "text": "对跟他合作一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000311",
+        "index": 310,
+        "start_ms": 1385000,
+        "end_ms": 1391000,
+        "speaker_id": "speaker_7",
+        "text": "对就我们把这些拍出来照片，然后就是进行宣传的时候就可以使用了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000312",
+        "index": 311,
+        "start_ms": 1385000,
+        "end_ms": 1387000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000313",
+        "index": 312,
+        "start_ms": 1391000,
+        "end_ms": 1397000,
+        "speaker_id": "speaker_7",
+        "text": "然后既可以就是宣传人家景点，然后咱们也就是可以宣传咱们自己的质量。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000314",
+        "index": 313,
+        "start_ms": 1399000,
+        "end_ms": 1401000,
+        "speaker_id": "speaker_5",
+        "text": "销售方面",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000315",
+        "index": 314,
+        "start_ms": 1401000,
+        "end_ms": 1409000,
+        "speaker_id": "speaker_5",
+        "text": "就是对于就是咱们怎么样拉拢客户，怎么样让客户介绍咱们这个有什么方法",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000316",
+        "index": 315,
+        "start_ms": 1409000,
+        "end_ms": 1413000,
+        "speaker_id": "speaker_4",
+        "text": "嗯方法就是宣传要做好宣传要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000317",
+        "index": 316,
+        "start_ms": 1413000,
+        "end_ms": 1414000,
+        "speaker_id": "speaker_5",
+        "text": "到位",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000318",
+        "index": 317,
+        "start_ms": 1413000,
+        "end_ms": 1418000,
+        "speaker_id": "speaker_4",
+        "text": "做的对他要做的够大够细致。嗯是这样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000319",
+        "index": 318,
+        "start_ms": 1419000,
+        "end_ms": 1420000,
+        "speaker_id": "speaker_4",
+        "text": "这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000320",
+        "index": 319,
+        "start_ms": 1420000,
+        "end_ms": 1424000,
+        "speaker_id": "speaker_4",
+        "text": "几方面嘛线上和线下，线上的话做一些广",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000321",
+        "index": 320,
+        "start_ms": 1424000,
+        "end_ms": 1425000,
+        "speaker_id": "speaker_4",
+        "text": "线上广告",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000322",
+        "index": 321,
+        "start_ms": 1425000,
+        "end_ms": 1426000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000323",
+        "index": 322,
+        "start_ms": 1425000,
+        "end_ms": 1431000,
+        "speaker_id": "speaker_7",
+        "text": "也是我们算正也是正在做的，因为毕竟咱们影楼也要开了嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000324",
+        "index": 323,
+        "start_ms": 1431000,
+        "end_ms": 1432000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000325",
+        "index": 324,
+        "start_ms": 1432000,
+        "end_ms": 1437000,
+        "speaker_id": "speaker_4",
+        "text": "然后政治方面一个是和一些这种学校啊或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000326",
+        "index": 325,
+        "start_ms": 1437000,
+        "end_ms": 1438000,
+        "speaker_id": "speaker_4",
+        "text": "结婚",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000327",
+        "index": 326,
+        "start_ms": 1438000,
+        "end_ms": 1439000,
+        "speaker_id": "speaker_5",
+        "text": "婚纱",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000328",
+        "index": 327,
+        "start_ms": 1440000,
+        "end_ms": 1447000,
+        "speaker_id": "speaker_4",
+        "text": "就是就跟一些学校嘛学校嘛谈一些合作跟一些景区谈一些合作就是要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000329",
+        "index": 328,
+        "start_ms": 1447000,
+        "end_ms": 1449000,
+        "speaker_id": "speaker_4",
+        "text": "承包他们的一些业务",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000330",
+        "index": 329,
+        "start_ms": 1449000,
+        "end_ms": 1453000,
+        "speaker_id": "speaker_4",
+        "text": "去让我们类似于婚纱照婚纱照这一类我们要去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000331",
+        "index": 330,
+        "start_ms": 1453000,
+        "end_ms": 1461000,
+        "speaker_id": "speaker_4",
+        "text": "去全盘接手他们的一些东西也不能也不能就是零零散散的直接把我们可以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000332",
+        "index": 331,
+        "start_ms": 1461000,
+        "end_ms": 1465000,
+        "speaker_id": "speaker_4",
+        "text": "去承包一部分项目去做",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000333",
+        "index": 332,
+        "start_ms": 1467000,
+        "end_ms": 1472000,
+        "speaker_id": "speaker_4",
+        "text": "然后嗯然后的话就是适当的就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000334",
+        "index": 333,
+        "start_ms": 1474000,
+        "end_ms": 1480000,
+        "speaker_id": "speaker_4",
+        "text": "听他刚才说的这个赠妆容呢我觉得赠妆容这个是很好的一方面的一个服务，但是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000335",
+        "index": 334,
+        "start_ms": 1481000,
+        "end_ms": 1484000,
+        "speaker_id": "speaker_4",
+        "text": "呃我觉得重点可以做男士也可以女士",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000336",
+        "index": 335,
+        "start_ms": 1484000,
+        "end_ms": 1487000,
+        "speaker_id": "speaker_4",
+        "text": "女士嘛她来的话，嗯她肯定是要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000337",
+        "index": 336,
+        "start_ms": 1486000,
+        "end_ms": 1491000,
+        "speaker_id": "speaker_6",
+        "text": "那女性的那个市场更大拍照大多数女士为多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000338",
+        "index": 337,
+        "start_ms": 1489000,
+        "end_ms": 1496000,
+        "speaker_id": "speaker_4",
+        "text": "对对对女性来的话她肯定是之前是化好妆的但是我们也可以对她进行精妆一下儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000339",
+        "index": 338,
+        "start_ms": 1497000,
+        "end_ms": 1501000,
+        "speaker_id": "speaker_4",
+        "text": "嗯就是在他这个基础上我们可以再进行一些就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000340",
+        "index": 339,
+        "start_ms": 1501000,
+        "end_ms": 1502000,
+        "speaker_id": "speaker_1",
+        "text": "线上",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000341",
+        "index": 340,
+        "start_ms": 1502000,
+        "end_ms": 1517000,
+        "speaker_id": "speaker_7",
+        "text": "对我们还可以呃像宣传的话惯一下还可以宣传一个就是关于像她们有的女生就想拍套写写真照，我们是可以就是在她选择套餐里提供就是多少件就是免费的就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000342",
+        "index": 341,
+        "start_ms": 1502000,
+        "end_ms": 1503000,
+        "speaker_id": "speaker_4",
+        "text": "对改善",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000343",
+        "index": 342,
+        "start_ms": 1511000,
+        "end_ms": 1512000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000344",
+        "index": 343,
+        "start_ms": 1518000,
+        "end_ms": 1521000,
+        "speaker_id": "speaker_7",
+        "text": "一服装就是进行他们选择",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000345",
+        "index": 344,
+        "start_ms": 1523000,
+        "end_ms": 1529000,
+        "speaker_id": "speaker_5",
+        "text": "我觉得咱们也可以就是举办一个这样的，就是也是算是说抽取这种幸运的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000346",
+        "index": 345,
+        "start_ms": 1529000,
+        "end_ms": 1536000,
+        "speaker_id": "speaker_5",
+        "text": "客户吧，给他们就是免费拍一拍一组写真，大家会觉得这个有所亏损吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000347",
+        "index": 346,
+        "start_ms": 1536000,
+        "end_ms": 1541000,
+        "speaker_id": "speaker_5",
+        "text": "或或者说在管理上就觉得因为这样肯定会增加工作量",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000348",
+        "index": 347,
+        "start_ms": 1541000,
+        "end_ms": 1544000,
+        "speaker_id": "speaker_5",
+        "text": "会有这样的顾虑吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000349",
+        "index": 348,
+        "start_ms": 1543000,
+        "end_ms": 1545000,
+        "speaker_id": "speaker_4",
+        "text": "咱们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000350",
+        "index": 349,
+        "start_ms": 1544000,
+        "end_ms": 1545000,
+        "speaker_id": "speaker_7",
+        "text": "会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000351",
+        "index": 350,
+        "start_ms": 1545000,
+        "end_ms": 1547000,
+        "speaker_id": "speaker_4",
+        "text": "咱们可以也不亏损嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000352",
+        "index": 351,
+        "start_ms": 1545000,
+        "end_ms": 1550000,
+        "speaker_id": "speaker_5",
+        "text": "但是这个活动不是经常都有，只是说偶尔一两个月才会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000353",
+        "index": 352,
+        "start_ms": 1550000,
+        "end_ms": 1557000,
+        "speaker_id": "speaker_5",
+        "text": "抽选一次这种幸运的群众我觉得我觉得这样儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000354",
+        "index": 353,
+        "start_ms": 1552000,
+        "end_ms": 1555000,
+        "speaker_id": "speaker_2",
+        "text": "现在这款就相当于就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000355",
+        "index": 354,
+        "start_ms": 1555000,
+        "end_ms": 1561000,
+        "speaker_id": "speaker_7",
+        "text": "如果你抽选的只是群众的话那没有任何意义如果说你抽选的是顾客的话",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000356",
+        "index": 355,
+        "start_ms": 1558000,
+        "end_ms": 1560000,
+        "speaker_id": "speaker_2",
+        "text": "那可能是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000357",
+        "index": 356,
+        "start_ms": 1562000,
+        "end_ms": 1564000,
+        "speaker_id": "speaker_7",
+        "text": "这样这种方法是就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000358",
+        "index": 357,
+        "start_ms": 1563000,
+        "end_ms": 1573000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得你你不是说想要嗯送别人一套写真或者什么，他们想拍什么照片儿就送他们一块照片儿是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000359",
+        "index": 358,
+        "start_ms": 1573000,
+        "end_ms": 1581000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得这样儿还不如在顾客他想拍照儿的时候呃多送他一套衣服或者几组照片儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000360",
+        "index": 359,
+        "start_ms": 1581000,
+        "end_ms": 1585000,
+        "speaker_id": "speaker_6",
+        "text": "直接给这个想要拍照儿的这个客户一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000361",
+        "index": 360,
+        "start_ms": 1585000,
+        "end_ms": 1587000,
+        "speaker_id": "speaker_6",
+        "text": "利润，然后一些好处，然后他",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000362",
+        "index": 361,
+        "start_ms": 1587000,
+        "end_ms": 1592000,
+        "speaker_id": "speaker_6",
+        "text": "拍完之后回去会和他身边的亲亲朋好友宣传",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000363",
+        "index": 362,
+        "start_ms": 1592000,
+        "end_ms": 1600000,
+        "speaker_id": "speaker_6",
+        "text": "嗯这样儿我觉得是比刚刚那个要从资金上嗯就省下来了很多然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000364",
+        "index": 363,
+        "start_ms": 1600000,
+        "end_ms": 1605000,
+        "speaker_id": "speaker_7",
+        "text": "宣传部的话这儿有一个不同意见啊就相当于咱们开业的时候儿拿什么吸引人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000365",
+        "index": 364,
+        "start_ms": 1606000,
+        "end_ms": 1615000,
+        "speaker_id": "speaker_7",
+        "text": "首先如果说咱们可以选择新人客户进行就是免费拍写真或者婚纱照的话，这话是特别可行的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000366",
+        "index": 365,
+        "start_ms": 1615000,
+        "end_ms": 1629000,
+        "speaker_id": "speaker_7",
+        "text": "毕竟咱们只会是在开业的时候，这一段时间进行这种活动，我感觉是比较合适，但是你要说就是每隔一两个月就抽一回的话，就就感感觉就可能这个奖项会比较廉价",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000367",
+        "index": 366,
+        "start_ms": 1628000,
+        "end_ms": 1629000,
+        "speaker_id": "speaker_6",
+        "text": "我觉得我觉得",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000368",
+        "index": 367,
+        "start_ms": 1630000,
+        "end_ms": 1649000,
+        "speaker_id": "speaker_6",
+        "text": "嗯不能免费送他们拍婚纱照儿，如果你刚开业的那段时间正好有好几对儿人想要结婚的话，我们的损失太大了，然后但是我们可以相对呃对他们那个价格儿上优惠一点儿，或者呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000369",
+        "index": 368,
+        "start_ms": 1641000,
+        "end_ms": 1643000,
+        "speaker_id": "speaker_2",
+        "text": "就是就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000370",
+        "index": 369,
+        "start_ms": 1648000,
+        "end_ms": 1650000,
+        "speaker_id": "speaker_2",
+        "text": "我感觉啊可以在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000371",
+        "index": 370,
+        "start_ms": 1650000,
+        "end_ms": 1652000,
+        "speaker_id": "speaker_2",
+        "text": "刚开业的前三天",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000372",
+        "index": 371,
+        "start_ms": 1653000,
+        "end_ms": 1655000,
+        "speaker_id": "speaker_2",
+        "text": "举行打五折活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000373",
+        "index": 372,
+        "start_ms": 1655000,
+        "end_ms": 1657000,
+        "speaker_id": "speaker_6",
+        "text": "嗯就",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000374",
+        "index": 373,
+        "start_ms": 1655000,
+        "end_ms": 1659000,
+        "speaker_id": "speaker_2",
+        "text": "不要想他亏钱的事儿，因为他们的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000375",
+        "index": 374,
+        "start_ms": 1659000,
+        "end_ms": 1663000,
+        "speaker_id": "speaker_2",
+        "text": "宣传力度咱们肯定要往上加大打五折或者",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000376",
+        "index": 375,
+        "start_ms": 1662000,
+        "end_ms": 1665000,
+        "speaker_id": "speaker_7",
+        "text": "对因为我们已经开始来咨询嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000377",
+        "index": 376,
+        "start_ms": 1665000,
+        "end_ms": 1666000,
+        "speaker_id": "speaker_2",
+        "text": "然后在前",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000378",
+        "index": 377,
+        "start_ms": 1667000,
+        "end_ms": 1670000,
+        "speaker_id": "speaker_2",
+        "text": "几个月的时候，咱们的工作内容可以成为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000379",
+        "index": 378,
+        "start_ms": 1670000,
+        "end_ms": 1682000,
+        "speaker_id": "speaker_2",
+        "text": "属于一个星期抽几名人员可以免费进行拍照儿，但是拍照儿的内容不可以，包括写真婚纱之类的东西，相对较便宜的那种普通的照片",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000380",
+        "index": 379,
+        "start_ms": 1682000,
+        "end_ms": 1686000,
+        "speaker_id": "speaker_2",
+        "text": "可以给它进行留中，然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000381",
+        "index": 380,
+        "start_ms": 1683000,
+        "end_ms": 1685000,
+        "speaker_id": "speaker_3",
+        "text": "证件照是吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000382",
+        "index": 381,
+        "start_ms": 1686000,
+        "end_ms": 1689000,
+        "speaker_id": "speaker_2",
+        "text": "这只是其中一点，因为咱们前面肯定会累嘛",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000383",
+        "index": 382,
+        "start_ms": 1690000,
+        "end_ms": 1697000,
+        "speaker_id": "speaker_2",
+        "text": "很累这样，而且还会公司进行亏损。但是现在先不要想亏损的问题，先把名气打出去",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000384",
+        "index": 383,
+        "start_ms": 1697000,
+        "end_ms": 1705000,
+        "speaker_id": "speaker_2",
+        "text": "如果咱们举行了两三个月这个活动以后，咱们可以慢慢儿的把这个密度减小，减小到了从第四个月开始以后，从",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000385",
+        "index": 384,
+        "start_ms": 1705000,
+        "end_ms": 1713000,
+        "speaker_id": "speaker_2",
+        "text": "一个学期抽几名，变成了两个学期抽几名，然后依次放宽了，后边儿可以再多添几个额外的项目",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000386",
+        "index": 385,
+        "start_ms": 1713000,
+        "end_ms": 1718000,
+        "speaker_id": "speaker_7",
+        "text": "对，咱们后面肯定是以一个摄影楼啊，每天是要有一个优惠套餐的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000387",
+        "index": 386,
+        "start_ms": 1718000,
+        "end_ms": 1725000,
+        "speaker_id": "speaker_7",
+        "text": "这就需要咱们就是等咱们选完址，然后就是进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000388",
+        "index": 387,
+        "start_ms": 1725000,
+        "end_ms": 1728000,
+        "speaker_id": "speaker_7",
+        "text": "运营情况以后，咱们再讨论一下这个问题",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000389",
+        "index": 388,
+        "start_ms": 1728000,
+        "end_ms": 1732000,
+        "speaker_id": "speaker_2",
+        "text": "也可以和顾客创建一个群聊，就是在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000390",
+        "index": 389,
+        "start_ms": 1733000,
+        "end_ms": 1735000,
+        "speaker_id": "speaker_2",
+        "text": "打出去人气以后咱们的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000391",
+        "index": 390,
+        "start_ms": 1735000,
+        "end_ms": 1736000,
+        "speaker_id": "speaker_2",
+        "text": "公司",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000392",
+        "index": 391,
+        "start_ms": 1736000,
+        "end_ms": 1739000,
+        "speaker_id": "speaker_2",
+        "text": "开始盈利的时候进行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000393",
+        "index": 392,
+        "start_ms": 1738000,
+        "end_ms": 1743000,
+        "speaker_id": "speaker_7",
+        "text": "那我现在就可以和已经向我咨询的人客户就是建立一个群",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000394",
+        "index": 393,
+        "start_ms": 1742000,
+        "end_ms": 1743000,
+        "speaker_id": "speaker_2",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000395",
+        "index": 394,
+        "start_ms": 1743000,
+        "end_ms": 1749000,
+        "speaker_id": "speaker_2",
+        "text": "然后抽取嘛就从他们人中抽取嘛就可以进行免费的拍摄，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000396",
+        "index": 395,
+        "start_ms": 1749000,
+        "end_ms": 1753000,
+        "speaker_id": "speaker_7",
+        "text": "免费就是发一个红包手气最佳嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000397",
+        "index": 396,
+        "start_ms": 1750000,
+        "end_ms": 1755000,
+        "speaker_id": "speaker_2",
+        "text": "对进行红包儿发起，然后再进行免费拍摄",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000398",
+        "index": 397,
+        "start_ms": 1755000,
+        "end_ms": 1758000,
+        "speaker_id": "speaker_2",
+        "text": "也不要发很多红包儿，然后让顾客们觉得这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000399",
+        "index": 398,
+        "start_ms": 1758000,
+        "end_ms": 1759000,
+        "speaker_id": "speaker_7",
+        "text": "比较好",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000400",
+        "index": 399,
+        "start_ms": 1759000,
+        "end_ms": 1764000,
+        "speaker_id": "speaker_2",
+        "text": "对比较好，然后这样的话就可以咱们名气越来越大了",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000401",
+        "index": 400,
+        "start_ms": 1763000,
+        "end_ms": 1764000,
+        "speaker_id": "speaker_7",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000402",
+        "index": 401,
+        "start_ms": 1765000,
+        "end_ms": 1773000,
+        "speaker_id": "speaker_5",
+        "text": "宣传我觉得这样应该就是差不多就开始宣传，咱们也可以把咱们这个咱们摄影师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000403",
+        "index": 402,
+        "start_ms": 1773000,
+        "end_ms": 1780000,
+        "speaker_id": "speaker_5",
+        "text": "拍过的一些作品先展展示出来，让顾客们看到咱们摄影师的实力拍出来的水平",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000404",
+        "index": 403,
+        "start_ms": 1780000,
+        "end_ms": 1787000,
+        "speaker_id": "speaker_5",
+        "text": "然后现在还有一个问题就是说咱们对咱们管理管理者就咱们需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000405",
+        "index": 404,
+        "start_ms": 1787000,
+        "end_ms": 1791000,
+        "speaker_id": "speaker_5",
+        "text": "需要招聘的这些人，就是有什么",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000406",
+        "index": 405,
+        "start_ms": 1792000,
+        "end_ms": 1794000,
+        "speaker_id": "speaker_5",
+        "text": "就是想要招一些什么样的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000407",
+        "index": 406,
+        "start_ms": 1793000,
+        "end_ms": 1796000,
+        "speaker_id": "speaker_7",
+        "text": "宣传的话就是需要一些就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000408",
+        "index": 407,
+        "start_ms": 1796000,
+        "end_ms": 1804000,
+        "speaker_id": "speaker_7",
+        "text": "和我一起就是去大学里或者是社呃社区里进行那个宣传的人员吧",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000409",
+        "index": 408,
+        "start_ms": 1804000,
+        "end_ms": 1805000,
+        "speaker_id": "speaker_7",
+        "text": "就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000410",
+        "index": 409,
+        "start_ms": 1806000,
+        "end_ms": 1815000,
+        "speaker_id": "speaker_7",
+        "text": "在网上就是进行管理一下，就是可以就是做一些就是稍微精美的画网页一类的这个方面的人才",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000411",
+        "index": 410,
+        "start_ms": 1820000,
+        "end_ms": 1826000,
+        "speaker_id": "speaker_7",
+        "text": "还要聘那个聘请专业的摄像师，呃若干名吧看咱们的规模",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000412",
+        "index": 411,
+        "start_ms": 1826000,
+        "end_ms": 1829000,
+        "speaker_id": "speaker_7",
+        "text": "取决于咱们的规模还有咱们的化妆师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000413",
+        "index": 412,
+        "start_ms": 1829000,
+        "end_ms": 1831000,
+        "speaker_id": "speaker_5",
+        "text": "招一些助理",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000414",
+        "index": 413,
+        "start_ms": 1831000,
+        "end_ms": 1832000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000415",
+        "index": 414,
+        "start_ms": 1831000,
+        "end_ms": 1839000,
+        "speaker_id": "speaker_5",
+        "text": "就是在找他们的时候，一定要找那种有耐心并且好学，然后就是说有问题会及时改正",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000416",
+        "index": 415,
+        "start_ms": 1836000,
+        "end_ms": 1836000,
+        "speaker_id": "speaker_6",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000417",
+        "index": 416,
+        "start_ms": 1840000,
+        "end_ms": 1845000,
+        "speaker_id": "speaker_6",
+        "text": "还要很需要聘请解平，后期PS师",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000418",
+        "index": 417,
+        "start_ms": 1845000,
+        "end_ms": 1853000,
+        "speaker_id": "speaker_5",
+        "text": "啊对PS摄影师管理管理者这边儿管理部门儿会把这个都弄好然后咱们这个销售部",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000419",
+        "index": 418,
+        "start_ms": 1853000,
+        "end_ms": 1857000,
+        "speaker_id": "speaker_4",
+        "text": "销售这边儿看啊就是几方面嘛一个是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000420",
+        "index": 419,
+        "start_ms": 1858000,
+        "end_ms": 1860000,
+        "speaker_id": "speaker_4",
+        "text": "嗯打电话一个是这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000421",
+        "index": 420,
+        "start_ms": 1861000,
+        "end_ms": 1866000,
+        "speaker_id": "speaker_5",
+        "text": "可以定期的对那些在咱们这个店里拍摄的人定期回访",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000422",
+        "index": 421,
+        "start_ms": 1866000,
+        "end_ms": 1867000,
+        "speaker_id": "speaker_4",
+        "text": "对对对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000423",
+        "index": 422,
+        "start_ms": 1866000,
+        "end_ms": 1872000,
+        "speaker_id": "speaker_5",
+        "text": "然后就说我们活动会及时想到这些优先参与的顾客，让他们来参加",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000424",
+        "index": 423,
+        "start_ms": 1872000,
+        "end_ms": 1875000,
+        "speaker_id": "speaker_4",
+        "text": "对咱们这儿有群嘛到时候可以在群里发一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000425",
+        "index": 424,
+        "start_ms": 1875000,
+        "end_ms": 1877000,
+        "speaker_id": "speaker_4",
+        "text": "通知啊公告啊对不对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000426",
+        "index": 425,
+        "start_ms": 1876000,
+        "end_ms": 1880000,
+        "speaker_id": "speaker_7",
+        "text": "对对对我们的群有可以识别到",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000427",
+        "index": 426,
+        "start_ms": 1880000,
+        "end_ms": 1886000,
+        "speaker_id": "speaker_4",
+        "text": "然后再一个销售来讲就是，嗯会定期的出一些这个销售活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000428",
+        "index": 427,
+        "start_ms": 1887000,
+        "end_ms": 1892000,
+        "speaker_id": "speaker_4",
+        "text": "就是就像刚才说的就是呃拍照片儿送照片儿之类的活动",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000429",
+        "index": 428,
+        "start_ms": 1892000,
+        "end_ms": 1894000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这样也是有营销策略的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000430",
+        "index": 429,
+        "start_ms": 1895000,
+        "end_ms": 1898000,
+        "speaker_id": "speaker_4",
+        "text": "嗯再一再一个营销这方面儿的话就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000431",
+        "index": 430,
+        "start_ms": 1898000,
+        "end_ms": 1904000,
+        "speaker_id": "speaker_4",
+        "text": "呃主要我们还是宣传做的好，营销卖的多就是这方面的内容",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000432",
+        "index": 431,
+        "start_ms": 1904000,
+        "end_ms": 1908000,
+        "speaker_id": "speaker_4",
+        "text": "嗯当然宣传这边做得多好我们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000433",
+        "index": 432,
+        "start_ms": 1908000,
+        "end_ms": 1912000,
+        "speaker_id": "speaker_4",
+        "text": "营销这方面就会省很大的力气。嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000434",
+        "index": 433,
+        "start_ms": 1913000,
+        "end_ms": 1917000,
+        "speaker_id": "speaker_4",
+        "text": "主要是营销营销这边儿没事儿几方面嘛，一方面就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000435",
+        "index": 434,
+        "start_ms": 1918000,
+        "end_ms": 1919000,
+        "speaker_id": "speaker_4",
+        "text": "呃",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000436",
+        "index": 435,
+        "start_ms": 1920000,
+        "end_ms": 1923000,
+        "speaker_id": "speaker_4",
+        "text": "出一些优惠活动再一方面就是拉客户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000437",
+        "index": 436,
+        "start_ms": 1924000,
+        "end_ms": 1930000,
+        "speaker_id": "speaker_4",
+        "text": "再一方面就是这个嗯用用咱们的老客户儿去推新客户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000438",
+        "index": 437,
+        "start_ms": 1931000,
+        "end_ms": 1933000,
+        "speaker_id": "speaker_4",
+        "text": "就是采取在网上拉新人的方式",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000439",
+        "index": 438,
+        "start_ms": 1933000,
+        "end_ms": 1941000,
+        "speaker_id": "speaker_7",
+        "text": "这个我们宣传可以那个就是在老客户儿那边儿就是拉一拉新的客户",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000440",
+        "index": 439,
+        "start_ms": 1940000,
+        "end_ms": 1941000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000441",
+        "index": 440,
+        "start_ms": 1942000,
+        "end_ms": 1943000,
+        "speaker_id": "speaker_4",
+        "text": "然后嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000442",
+        "index": 441,
+        "start_ms": 1943000,
+        "end_ms": 1948000,
+        "speaker_id": "speaker_4",
+        "text": "毕竟现在就是人人人人比较多然后",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000443",
+        "index": 442,
+        "start_ms": 1948000,
+        "end_ms": 1950000,
+        "speaker_id": "speaker_4",
+        "text": "这个需求量比较大，所以",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000444",
+        "index": 443,
+        "start_ms": 1950000,
+        "end_ms": 1954000,
+        "speaker_id": "speaker_4",
+        "text": "这个销售人员儿还是比较好做的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000445",
+        "index": 444,
+        "start_ms": 1954000,
+        "end_ms": 1956000,
+        "speaker_id": "speaker_4",
+        "text": "我们主要就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000446",
+        "index": 445,
+        "start_ms": 1956000,
+        "end_ms": 1958000,
+        "speaker_id": "speaker_4",
+        "text": "看你面对的不同的人群，我们需要",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000447",
+        "index": 446,
+        "start_ms": 1958000,
+        "end_ms": 1965000,
+        "speaker_id": "speaker_4",
+        "text": "去这个用不同的方式去面对。比如像这个学生，你就要可以找一些这个同龄人",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000448",
+        "index": 447,
+        "start_ms": 1965000,
+        "end_ms": 1969000,
+        "speaker_id": "speaker_4",
+        "text": "嗯不能说同龄人吧就是找一些比较年轻的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000449",
+        "index": 448,
+        "start_ms": 1969000,
+        "end_ms": 1970000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000450",
+        "index": 449,
+        "start_ms": 1970000,
+        "end_ms": 1974000,
+        "speaker_id": "speaker_4",
+        "text": "年轻的人去跟他们聊，让他们来我们这儿拍照儿",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000451",
+        "index": 450,
+        "start_ms": 1974000,
+        "end_ms": 1984000,
+        "speaker_id": "speaker_4",
+        "text": "然后稍微上岁数一些的人，就可以找一些这个跟他们年纪相仿的嘛像的人儿去跟他们",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000452",
+        "index": 451,
+        "start_ms": 1984000,
+        "end_ms": 1989000,
+        "speaker_id": "speaker_4",
+        "text": "说这个咱们的婚纱影楼的一些营销策略，今年可能是因为",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000453",
+        "index": 452,
+        "start_ms": 1989000,
+        "end_ms": 1993000,
+        "speaker_id": "speaker_4",
+        "text": "一些什么话题的不同，还有新客户儿这一些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000454",
+        "index": 453,
+        "start_ms": 1994000,
+        "end_ms": 1994000,
+        "speaker_id": "speaker_4",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000455",
+        "index": 454,
+        "start_ms": 1995000,
+        "end_ms": 1998000,
+        "speaker_id": "speaker_2",
+        "text": "那如果老推新的话会要赠送东西吗",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000456",
+        "index": 455,
+        "start_ms": 1998000,
+        "end_ms": 2001000,
+        "speaker_id": "speaker_4",
+        "text": "嗯这个可以对这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000457",
+        "index": 456,
+        "start_ms": 1999000,
+        "end_ms": 2001000,
+        "speaker_id": "speaker_2",
+        "text": "有好处之类的嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000458",
+        "index": 457,
+        "start_ms": 2001000,
+        "end_ms": 2006000,
+        "speaker_id": "speaker_6",
+        "text": "可以多可以多赠送摆台就是摆件送那个摆台作为咱们这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000459",
+        "index": 458,
+        "start_ms": 2005000,
+        "end_ms": 2006000,
+        "speaker_id": "speaker_2",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000460",
+        "index": 459,
+        "start_ms": 2006000,
+        "end_ms": 2020000,
+        "speaker_id": "speaker_4",
+        "text": "也可以赠赠就是比如像这那个老客户吧他拉够十个或者二十个三十个之类的人我们可以就给他一些嗯钱财奖励也不是不可以，但是我们也不可能特别多",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000461",
+        "index": 460,
+        "start_ms": 2021000,
+        "end_ms": 2029000,
+        "speaker_id": "speaker_7",
+        "text": "如何就找找咱们的总经理就是给他一个具体的方案，然后我们宣传就是把咱们的新方案宣传一下儿，",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000462",
+        "index": 461,
+        "start_ms": 2029000,
+        "end_ms": 2032000,
+        "speaker_id": "speaker_4",
+        "text": "对到时候可以做一个活动页，把咱们那个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000463",
+        "index": 462,
+        "start_ms": 2032000,
+        "end_ms": 2035000,
+        "speaker_id": "speaker_4",
+        "text": "就是营销方案嘛还有这个",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000464",
+        "index": 463,
+        "start_ms": 2035000,
+        "end_ms": 2038000,
+        "speaker_id": "speaker_4",
+        "text": "对奖励之类的都可以写在上面。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000465",
+        "index": 464,
+        "start_ms": 2039000,
+        "end_ms": 2046000,
+        "speaker_id": "speaker_5",
+        "text": "到时候也需要宣传部门和那个销售部门，因为销售部门是了解客户儿在",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000466",
+        "index": 465,
+        "start_ms": 2046000,
+        "end_ms": 2048000,
+        "speaker_id": "speaker_5",
+        "text": "拍摄时那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000467",
+        "index": 466,
+        "start_ms": 2048000,
+        "end_ms": 2050000,
+        "speaker_id": "speaker_4",
+        "text": "那些需求嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000468",
+        "index": 467,
+        "start_ms": 2049000,
+        "end_ms": 2054000,
+        "speaker_id": "speaker_5",
+        "text": "对那些需求，然后宣传人员是宣传部门，他们是在最开始的时候接触到那些",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000469",
+        "index": 468,
+        "start_ms": 2054000,
+        "end_ms": 2061000,
+        "speaker_id": "speaker_5",
+        "text": "呃宣传对想要拍照儿什么风格对这些顾客一定要然后可以成立一个拜就是",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000470",
+        "index": 469,
+        "start_ms": 2054000,
+        "end_ms": 2056000,
+        "speaker_id": "speaker_2",
+        "text": "想要拍照儿顾客",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000471",
+        "index": 470,
+        "start_ms": 2058000,
+        "end_ms": 2059000,
+        "speaker_id": "speaker_7",
+        "text": "对",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000472",
+        "index": 471,
+        "start_ms": 2061000,
+        "end_ms": 2071000,
+        "speaker_id": "speaker_5",
+        "text": "成立一个小组儿吧，就是专门儿联系一些售后，比如说拍出的照片顾客不满意，或者是有什么要改进的地方，一定要及时的更改及时的",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000473",
+        "index": 472,
+        "start_ms": 2062000,
+        "end_ms": 2063000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000474",
+        "index": 473,
+        "start_ms": 2070000,
+        "end_ms": 2070000,
+        "speaker_id": "speaker_7",
+        "text": "嗯",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000475",
+        "index": 474,
+        "start_ms": 2071000,
+        "end_ms": 2072000,
+        "speaker_id": "speaker_5",
+        "text": "把这个问题给解决。",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000476",
+        "index": 475,
+        "start_ms": 2072000,
+        "end_ms": 2074000,
+        "speaker_id": "speaker_7",
+        "text": "哦行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000477",
+        "index": 476,
+        "start_ms": 2073000,
+        "end_ms": 2074000,
+        "speaker_id": "speaker_1",
+        "text": "行",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000478",
+        "index": 477,
+        "start_ms": 2075000,
+        "end_ms": 2080000,
+        "speaker_id": "speaker_1",
+        "text": "嗯到时候儿这个负责人这一块儿做好这个相关的安排",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000479",
+        "index": 478,
+        "start_ms": 2080000,
+        "end_ms": 2084000,
+        "speaker_id": "speaker_1",
+        "text": "行吧？行，那咱们本场会议就到此结束，散会",
+        "status": "ok"
+      },
+      {
+        "segment_id": "seg-000480",
+        "index": 479,
+        "start_ms": 2081000,
+        "end_ms": 2082000,
+        "speaker_id": "speaker_5",
+        "text": "好",
+        "status": "ok"
+      }
+    ]
+  }
+}
