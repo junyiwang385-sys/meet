@@ -51,15 +51,22 @@ def main() -> int:
     mids = sorted(p.name[: -len(".golden.json")]
                   for p in (ROOT / "eval/golden_v2/out").glob("*.golden.json"))
     have_key = bool(os.environ.get("DASHSCOPE_API_KEY"))
+    # 裁判选择:默认本地 Ollama(无 key、不出网);JUDGE_BACKEND=qwen 且设了 DASHSCOPE_API_KEY 才用云千问。
     l2 = []
-    if have_key:
-        from judge.qwen_judge import QwenJudge
+    backend = os.environ.get("JUDGE_BACKEND", "ollama")
+    try:
         from metrics.geval_metrics import faithfulness, completeness, conciseness
-        judge = QwenJudge(model=os.environ.get("JUDGE_MODEL", "qwen3.8-max"))
+        if backend == "qwen" and have_key:
+            from judge.qwen_judge import QwenJudge
+            judge = QwenJudge()
+            print(f"L2 裁判 = 云千问({judge.get_model_name()})")
+        else:
+            from judge.ollama_judge import OllamaJudge
+            judge = OllamaJudge()
+            print(f"L2 裁判 = 本地 Ollama({judge.get_model_name()}),无 key。需 `ollama pull {judge.model}`(或 JUDGE_MODEL 指定已装模型)")
         l2 = [faithfulness(judge), completeness(judge), conciseness(judge)]
-        print(f"L2 千问裁判已启用({judge.__class__.__name__})")
-    else:
-        print("!! DASHSCOPE_API_KEY 未设 → 跳过 L2 千问忠实度(仅跑 L1 确定性)")
+    except Exception as exc:  # noqa: BLE001 —— 裁判初始化失败不阻断 L1
+        print(f"!! L2 裁判初始化失败,仅跑 L1: {type(exc).__name__}: {exc}")
 
     # 空金标(给无人工金标的场,让 build_case 能构造;KeypointRecall 不对它们跑)
     empty_golden = Path(tempfile.gettempdir()) / "_empty_keypoints.json"
