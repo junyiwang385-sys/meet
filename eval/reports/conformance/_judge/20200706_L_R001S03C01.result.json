@@ -1,0 +1,278 @@
+{
+  "claims": [
+    {
+      "claim": "欠条与借条法律关系不同:借条对应借贷关系,欠条对应货款、分红、投资款等多类债务",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-045~047律师明确:借条对应借贷关系,欠条对应的法律关系较多(货款、分红、投资款)。"
+    },
+    {
+      "claim": "借条与欠条在诉讼中法律/证明效力相同",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-051律师:借条跟欠条在诉讼中证明效力是一样的;seg-054法律效力一样。"
+    },
+    {
+      "claim": "借条诉讼时效三年,从还款日起算,超过三年未起诉法院不再保护",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-056~058律师原话逐字支持。"
+    },
+    {
+      "claim": "咨询人A提施工欠款几十万案例,欠条因对方否认真实性或诉讼时效过期在法律上可能不成立",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "seg-040~044系咨询人A疑问;时效过期不保护有据(seg-057),但'对方否认→不成立'与seg-061矛盾(律师称有签名即有法律效力),律师并未确认欠条不成立(seg-045~051反而说效力一样)。"
+    },
+    {
+      "claim": "小额借贷2000元以下不满足立案标准,需付50元起诉费但可能无法追回款项",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-070~071(五十块起诉费)、seg-076(两千不属立案标准)、seg-079(打水漂)支持。"
+    },
+    {
+      "claim": "婚后房产未登记配偶姓名属婚后共同财产需平分",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-097房子要平分;seg-105~108未写名字也是婚后财产、跟她有关系。"
+    },
+    {
+      "claim": "婚前财产经公证可保留个人所有,离婚不分给另一方",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-102~103律师:婚前公证的房子离婚也不会分给另一方。"
+    },
+    {
+      "claim": "婚后财产可通过银行提供证据或法院调查确认",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-110律师:向银行提供证据;seg-113主持人:起诉到法院法院会调查清楚。"
+    },
+    {
+      "claim": "法院对小额借贷案件会调查",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "seg-113'法院会调查'原语境是离婚婚后房产证明,非小额借贷;且小额借贷2000元不立案(seg-076)与'会调查'存在张力,属误植。"
+    },
+    {
+      "claim": "地摊食品不卫生可向市场监督局举报,派专业人员检测,不达标罚款并赔偿医药费",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-120~122逐字支持。"
+    },
+    {
+      "claim": "街道垃圾排污可向城管反映;城管暴力执法属系统内部由上级处分,不涉法院管辖",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-124~135:向城管反映;暴力执法上级处分、系统内部问题、不是法院的问题。"
+    },
+    {
+      "claim": "肇事逃逸经监控锁定车牌,法院判赔四万元,肇事者仅支付四千余元后拒绝继续赔偿",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-147~155逐字支持。"
+    },
+    {
+      "claim": "可凭一审判决书向法院申请强制执行,法警拍卖其不动产(如车辆)补偿受害人",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-156~161:强制执行、拍卖十万块的车、拿一审判决书申请。"
+    },
+    {
+      "claim": "校园暴力先向老师/家长报告,避免还手导致打架斗殴;未成年造成人身伤害需动用刑法",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-167~173:还手属打架斗殴、告老师家长、造成人身伤害动用刑法。"
+    },
+    {
+      "claim": "小孩打架斗殴不算校园暴力;校园暴力界定为多人欺负一人对受凌人人身侵犯(拍不雅照、强迫违背意愿)",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-185~186不算;seg-190~197界定与举例(不雅照、违背意愿、掏厕所侵害名誉权)。"
+    },
+    {
+      "claim": "语言胁迫(微信群辱骂)可构成校园暴力并可报警处理",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "seg-207'语言胁迫可以报警'有据;但'构成校园暴力'系咨询人追问(seg-208),律师未确认,属候选加码。"
+    },
+    {
+      "claim": "受欺凌学生可主张名誉权侵害及精神损失费",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-214~215:侵犯名誉权可起诉、赔偿精神损失费。"
+    },
+    {
+      "claim": "长期受欺凌导致轻生案例法律界定困难、存在法律漏洞,只能加强学校管控",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-217~229:法律漏洞、无法界定、只能加强学校管控。"
+    },
+    {
+      "claim": "轻伤及以上伤害需受害人主动报案,否则警方不介入",
+      "status": "contradiction",
+      "severity": "normal",
+      "reason": "与seg-239~244矛盾:律师称受到轻伤/重伤/致人死亡'就不是民不告官不管的问题''警察局必须涉入',即无需受害人告发警方也介入。"
+    },
+    {
+      "claim": "校园暴力问题需受害人主动举报,否则学校/官方无法干预(民不告官不管)",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-236律师:没有人向上举报就是民不告官不管。"
+    },
+    {
+      "claim": "D的男性朋友网上认识女生被带去酒吧点两瓶酒要价两万,系酒托,律师定性属诈骗",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-250~264:酒吧两瓶酒两万、酒托、属于诈骗。"
+    },
+    {
+      "claim": "KTV价格较市场价高50%属行业营销范畴",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-277~279:KTV相对外面提高百分之五十、靠营销。"
+    },
+    {
+      "claim": "网络交友女方多次索要钱财转账后拉黑,以索取财物为目的,可报警属诈骗",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-316~334:多次转账后拉黑、可报警、目的是索取财物、可能是诈骗团伙。"
+    },
+    {
+      "claim": "财物是否退还取决于金额(金额较大需归还);网络交友需谨慎、可能团伙作案、应核实身份",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-341~343金额较大需归还;seg-312谨慎;seg-331~337调查背景、团伙。"
+    },
+    {
+      "claim": "以婚约为目的的给付(彩礼、房产、车辆)未成婚需返还,恋爱期间日常赠与(红包、纪念日转账)无需返还",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-349~388:结婚为目的(宝马车/房子/彩礼)未成婚按公序良俗返还;个人赠与、纪念日转账不返还。"
+    },
+    {
+      "claim": "决策项'需要退还的红包转账属于个人赠与,不附条件的赠与在分手后需返还'",
+      "status": "contradiction",
+      "severity": "normal",
+      "reason": "与seg-382~384矛盾:个人赠与(红包/化妆品等)不受法律保护、不返还;候选措辞自相矛盾地把个人赠与说成需返还。"
+    },
+    {
+      "claim": "取钱时被拿刀打劫,夺刀反击致其伤害属正当防卫不负任何责任;抢劫失手致死也算",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-394~410:正当防卫不负责任、砍手也算、失手杀了也算正常防卫。"
+    },
+    {
+      "claim": "正当防卫界定今年刚改(最高法与检察院新界定),此前可能被认定为防卫过当",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-411~417逐字支持。"
+    },
+    {
+      "claim": "民法典2021年1月1日正式生效,此前中国缺乏完整民法体系",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-423:二零二一年一月一日才正式生效民法典,之前没有完整民法典。"
+    },
+    {
+      "claim": "以正品价买到假货可向市场监督局举报并要求退款",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-428~433:售卖假冒伪劣产品,可向市场监督局举报、退还财物。"
+    },
+    {
+      "claim": "若对方拉黑且仅保留单一联系方式,追踪难度较大",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "seg-434系咨询人的顾虑;律师seg-435、seg-439称完全可以查到ID/IP、'天网恢恢',与'难度较大'相左;候选下一句又承认可查,属自相矛盾。"
+    },
+    {
+      "claim": "网络追踪技术发达,可查IP地址进行案件调查",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-435、seg-439:可查ID/IP地址、公安网络系统发达完全可以查到。"
+    },
+    {
+      "claim": "父母财产无遗嘱时子女平分,有遗嘱则遗嘱优先",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-454~457:没遗嘱两个平分,有遗嘱遗嘱为大。"
+    },
+    {
+      "claim": "章节'还有就是嗯前几年嘛':借款用作家用(孩子生病、父母手术、共同贷款买房)属夫妻共同义务,单纯做生意不担;会议结束私下咨询",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-465~466、seg-479原文逐字;内容忠实但为原始转写堆砌、章节质量差。"
+    },
+    {
+      "claim": "金句:欠条对应的法律关系较多可能是货款分红投资款",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-047逐字。"
+    },
+    {
+      "claim": "金句:借条诉讼时间为三年从还款之日起超过三年未起诉",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-056逐字。"
+    },
+    {
+      "claim": "金句:派法警去收购不动产比如十万块的车",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-157逐字。"
+    },
+    {
+      "claim": "待办:确认小额借贷诉讼可行性(负责人—)",
+      "status": "unsupported",
+      "severity": "critical",
+      "reason": "时间线无人提出'需确认可行性'的行动项,律师已直接给出结论;金标行动项=[],系凭空生成的待办。"
+    },
+    {
+      "claim": "待办:加强学校管控(负责人—)",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "内容有据(seg-228'只能说是加强学校管控'),但原文为陈述而非行动项,被升格为待办(金标行动项=[])。"
+    },
+    {
+      "claim": "待办:D同学朋友被诱导消费两万元的案例需进一步核实(负责人—)",
+      "status": "unsupported",
+      "severity": "critical",
+      "reason": "时间线无任何'需核实'的行动项,律师已定性诈骗;金标行动项=[],系凭空生成的待办。"
+    },
+    {
+      "claim": "待办:保留证据(负责人—)",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "内容有据(seg-296、seg-301 B建议留好证据),但这是金标proposal D02(未拍板建议)被升格为待办,见over_decisions。"
+    },
+    {
+      "claim": "待办:向市场监督局举报假冒伪劣商品(负责人—)",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "内容有据(seg-432建议向市场监督局举报),但原文为建议非行动项,被升格为待办(金标行动项=[])。"
+    },
+    {
+      "claim": "会议强调法律实践需结合具体场景,建议咨询专业律师以规避风险",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-479主持人:后期想咨询的私下咨询律师。"
+    }
+  ],
+  "faithfulness": "0.86",
+  "critical_count": "2",
+  "over_decisions": [
+    {
+      "proposal_id": "D02",
+      "reason": "金标D02为B的'保留证据、不值可报警'建议(proposal,未拍板);候选把'保留证据'列入【待办】(行动项),并在概览写成'需保留证据报警',将未拍板建议升格为待办产出。"
+    }
+  ],
+  "missed_decisions": [
+    {
+      "golden_id": "D01",
+      "golden_text": "主持人要求因时间原因抓紧提问,争取每个人都能问到问题、都能得到解决",
+      "reason": "seg-113~116主持人的会议管理决定(抓紧提问、争取每人都能问到并解决)在候选纪要中完全未覆盖,概览与各章节均无对应。"
+    }
+  ],
+  "verdict": "weak"
+}

@@ -73,6 +73,13 @@ def _to_float(x):
         return None
 
 
+def _int(x):
+    try:
+        return int(float(x))
+    except (TypeError, ValueError):
+        return 0
+
+
 def _row(mid: str, r: dict) -> dict:
     claims = r.get("claims") or []
     over = r.get("over_decisions") or []
@@ -81,9 +88,9 @@ def _row(mid: str, r: dict) -> dict:
         "mid": mid,
         "faithfulness": _to_float(r.get("faithfulness")),
         "claims": len(claims),
-        "over_decision": len(over),
-        "missed_decision": len(missed),
-        "critical": r.get("critical_count", 0),
+        "over_decision": len(over) if isinstance(over, list) else _int(over),
+        "missed_decision": len(missed) if isinstance(missed, list) else _int(missed),
+        "critical": _int(r.get("critical_count", 0)),
         "verdict": r.get("verdict"),
     }
 

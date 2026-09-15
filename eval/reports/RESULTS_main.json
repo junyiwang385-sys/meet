@@ -16,6 +16,13 @@
       "keyword_purity": 1.0,
       "owner": 0.13776666666666668,
       "keypoint_recall": 0.97925
+    },
+    "conformance": {
+      "n": 30,
+      "faithfulness": 0.8733333333333333,
+      "over_per": 5.0,
+      "missed_per": 0.5333333333333333,
+      "critical_per": 2.0
     }
   }
 }

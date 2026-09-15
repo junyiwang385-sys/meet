@@ -1,5 +1,104 @@
 [
   {
+    "mid": "20200706_L_R001S01C01",
+    "faithfulness": 0.78,
+    "claims": 78,
+    "over_decision": 5,
+    "missed_decision": 1,
+    "critical": 4,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200706_L_R001S02C01",
+    "faithfulness": 0.83,
+    "claims": 59,
+    "over_decision": 4,
+    "missed_decision": 1,
+    "critical": 5,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200706_L_R001S03C01",
+    "faithfulness": 0.86,
+    "claims": 43,
+    "over_decision": 1,
+    "missed_decision": 1,
+    "critical": 2,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200706_L_R001S04C01",
+    "faithfulness": 0.91,
+    "claims": 64,
+    "over_decision": 3,
+    "missed_decision": 0,
+    "critical": 3,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200706_L_R001S05C01",
+    "faithfulness": 0.89,
+    "claims": 57,
+    "over_decision": 8,
+    "missed_decision": 0,
+    "critical": 1,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200706_L_R001S06C01",
+    "faithfulness": 0.84,
+    "claims": 61,
+    "over_decision": 9,
+    "missed_decision": 0,
+    "critical": 4,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200706_L_R001S07C01",
+    "faithfulness": 0.86,
+    "claims": 75,
+    "over_decision": 5,
+    "missed_decision": 0,
+    "critical": 1,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200706_L_R001S08C01",
+    "faithfulness": 0.78,
+    "claims": 74,
+    "over_decision": 1,
+    "missed_decision": 0,
+    "critical": 1,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200707_L_R001S01C01",
+    "faithfulness": 0.88,
+    "claims": 61,
+    "over_decision": 3,
+    "missed_decision": 0,
+    "critical": 1,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200707_L_R001S02C01",
+    "faithfulness": 0.92,
+    "claims": 49,
+    "over_decision": 6,
+    "missed_decision": 1,
+    "critical": 1,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200707_L_R001S03C01",
+    "faithfulness": 0.9,
+    "claims": 64,
+    "over_decision": 8,
+    "missed_decision": 0,
+    "critical": 2,
+    "verdict": "weak"
+  },
+  {
     "mid": "20200707_L_R001S04C01",
     "faithfulness": 0.85,
     "claims": 62,
@@ -7,5 +106,167 @@
     "missed_decision": 0,
     "critical": 2,
     "verdict": "weak"
+  },
+  {
+    "mid": "20200707_L_R001S05C01",
+    "faithfulness": 0.93,
+    "claims": 75,
+    "over_decision": 7,
+    "missed_decision": 2,
+    "critical": 2,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200707_L_R001S06C01",
+    "faithfulness": 0.82,
+    "claims": 56,
+    "over_decision": 11,
+    "missed_decision": 0,
+    "critical": 4,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200707_L_R001S07C01",
+    "faithfulness": 0.89,
+    "claims": 72,
+    "over_decision": 8,
+    "missed_decision": 0,
+    "critical": 4,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200707_L_R001S08C01",
+    "faithfulness": 0.92,
+    "claims": 65,
+    "over_decision": 4,
+    "missed_decision": 0,
+    "critical": 0,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200708_L_R002S01C01",
+    "faithfulness": 0.73,
+    "claims": 58,
+    "over_decision": 4,
+    "missed_decision": 0,
+    "critical": 9,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200708_L_R002S02C01",
+    "faithfulness": 0.84,
+    "claims": 67,
+    "over_decision": 2,
+    "missed_decision": 4,
+    "critical": 0,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200708_L_R002S03C01",
+    "faithfulness": 0.93,
+    "claims": 74,
+    "over_decision": 6,
+    "missed_decision": 1,
+    "critical": 0,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200708_L_R002S04C01",
+    "faithfulness": 0.93,
+    "claims": 74,
+    "over_decision": 3,
+    "missed_decision": 0,
+    "critical": 0,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200708_L_R002S05C01",
+    "faithfulness": 0.83,
+    "claims": 59,
+    "over_decision": 7,
+    "missed_decision": 0,
+    "critical": 2,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200708_L_R002S07C01",
+    "faithfulness": 0.89,
+    "claims": 50,
+    "over_decision": 5,
+    "missed_decision": 1,
+    "critical": 2,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200708_L_R002S08C01",
+    "faithfulness": 0.9,
+    "claims": 73,
+    "over_decision": 4,
+    "missed_decision": 0,
+    "critical": 2,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200709_L_R002S01C01",
+    "faithfulness": 0.97,
+    "claims": 50,
+    "over_decision": 5,
+    "missed_decision": 2,
+    "critical": 0,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200709_L_R002S03C01",
+    "faithfulness": 0.98,
+    "claims": 45,
+    "over_decision": 5,
+    "missed_decision": 0,
+    "critical": 0,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200709_L_R002S04C01",
+    "faithfulness": 0.92,
+    "claims": 49,
+    "over_decision": 3,
+    "missed_decision": 0,
+    "critical": 0,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200709_L_R002S05C01",
+    "faithfulness": 0.94,
+    "claims": 51,
+    "over_decision": 3,
+    "missed_decision": 2,
+    "critical": 0,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200709_L_R002S06C01",
+    "faithfulness": 0.89,
+    "claims": 66,
+    "over_decision": 7,
+    "missed_decision": 0,
+    "critical": 1,
+    "verdict": "weak"
+  },
+  {
+    "mid": "20200709_L_R002S07C01",
+    "faithfulness": 0.77,
+    "claims": 63,
+    "over_decision": 5,
+    "missed_decision": 0,
+    "critical": 3,
+    "verdict": "fail"
+  },
+  {
+    "mid": "20200709_L_R002S08C01",
+    "faithfulness": 0.82,
+    "claims": 78,
+    "over_decision": 5,
+    "missed_decision": 0,
+    "critical": 4,
+    "verdict": "fail"
   }
 ]

@@ -1,0 +1,390 @@
+{
+  "claims": [
+    {
+      "claim": "确定摄影公司选址在商场街",
+      "status": "contradiction",
+      "severity": "normal",
+      "reason": "商场街/商业区仅为财务、宣传部的建议(seg-000026,000041),最终总负责人拍板选学校和小区附近(seg-000220),与本条矛盾。"
+    },
+    {
+      "claim": "最终决定开在大学附近和小区附近",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000220总负责人明确选址学校和小区附近,即金标D01真实决定。"
+    },
+    {
+      "claim": "决定将影楼选址在小区旁边，而非商业街",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "最终决定是学校和小区(seg-000220),仅说小区旁边不全面;而非商业街方向正确(seg-000139租金贵被否)。"
+    },
+    {
+      "claim": "将证件照作为拓展业务的切入点，以中低价位提供服务以吸引学生群体",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "证件照是拓展业务有据(seg-000179),证件照上价格竞争(seg-000193);但'中低价位'为概括,时间线未明确定价档,seg-000177仅称证件照价格不高。"
+    },
+    {
+      "claim": "婚纱店选址应选在学校和小区附近，以减少租金成本并更专注于品质提升",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000220-221省下租金投入装备管理、重心放品质,与本条一致(D01)。"
+    },
+    {
+      "claim": "摄影师需长期聘用专业人员，确保照片质量稳定",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000233-235明确找长期稳定专业摄影师、保证质量一致(金标D04,提议)。"
+    },
+    {
+      "claim": "服装需提供多种风格且齐全，用于租赁而非直接销售",
+      "status": "contradiction",
+      "severity": "normal",
+      "reason": "时间线明确讨论婚纱可售卖(seg-000245,000250,000258)、采取租售结合(D05);'而非直接销售'与时间线矛盾。"
+    },
+    {
+      "claim": "客户租赁婚纱时可提供租赁服务；若客户希望购买则可销售",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000258,000264-266看客户需求灵活租或卖,与本条一致(D05)。"
+    },
+    {
+      "claim": "提供免费妆容、造型和发型服务以提升客户体验",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000286-287免费提供妆容、造型、发型、服装搭配(D06,提议)。"
+    },
+    {
+      "claim": "工作室在半年至一年内保持亏损状态是可接受的，因采购的化妆品和婚纱使用周期长",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "财务称半年一年保持亏损(seg-000295),但风险评估反驳称不用担心亏损、使用周期长(seg-000296-297);候选把争议一方结论表述为定论,部分支持。"
+    },
+    {
+      "claim": "与景点合作进行婚纱照外景拍摄，以实现景点宣传和工作室品牌宣传",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000302-309,000313与景点合作旅拍、互相宣传(D07)。"
+    },
+    {
+      "claim": "在销售方面加强线上和线下宣传，确保宣传到位",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000319-321线上线下、线上广告,seg-000316-318宣传到位。"
+    },
+    {
+      "claim": "与学校和景区合作，承包婚纱照相关业务",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000328-332跟学校景区谈合作、承包业务。"
+    },
+    {
+      "claim": "重点提供女性赠妆容服务，以提升女性客户体验",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "免费妆容最初针对男性(seg-000284),销售称男士女士都可(seg-000335),风险称女性市场更大(seg-000337);'重点女性'为倾向性概括,部分支持。"
+    },
+    {
+      "claim": "举办免费写真拍摄活动，吸引客户参与",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "总负责人提议抽幸运客户免费拍写真(seg-000345-346),但遭宣传部质疑廉价(seg-000366)、风险评估反对(seg-000368),未拍板(D08);表述为已定活动不准确。"
+    },
+    {
+      "claim": "在开业前三天举行打五折活动",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000371-372明确提出开业前三天打五折(D09,提议)。"
+    },
+    {
+      "claim": "开业后逐步减少活动频率，从每月抽选1-2名顾客免费拍摄，逐步增加活动密度",
+      "status": "contradiction",
+      "severity": "critical",
+      "reason": "时间线为一个星期抽几名(seg-000379)、之后逐步减小密度(seg-000384);候选编造'每月抽选1-2名'具体数字,且'逐步增加活动密度'与'减小密度'矛盾。"
+    },
+    {
+      "claim": "开业后建立客户群，通过群内活动（如红包抽选）吸引免费拍摄",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000389-397建群、发红包手气最佳者免费拍摄(D11)。"
+    },
+    {
+      "claim": "开始宣传并展示摄影师过往作品以提升顾客对摄影水平的认知",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000402-403展示摄影师作品让顾客看到实力。"
+    },
+    {
+      "claim": "招聘宣传人员负责在大学或社区进行线下宣传",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000407-408需要去大学社区宣传的人员。"
+    },
+    {
+      "claim": "招聘网页设计人员负责线上管理",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000410在网上管理、做精美网页方面的人才。"
+    },
+    {
+      "claim": "招聘专业摄像师和化妆师根据业务规模",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000411-412聘请专业摄像师若干名、看规模,还有化妆师。"
+    },
+    {
+      "claim": "招聘有耐心、好学且能及时改正问题的助理",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000413,000415招助理、要有耐心好学、有问题及时改正。"
+    },
+    {
+      "claim": "招聘PS后期制作人员",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000417需要聘请后期PS师。"
+    },
+    {
+      "claim": "销售部定期回访店内拍摄顾客",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000421对店里拍摄的人定期回访。"
+    },
+    {
+      "claim": "通过微信群及时发送活动通知和公告",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000424-425群里发通知公告。"
+    },
+    {
+      "claim": "销售部定期推出优惠活动如拍照片送照片",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000427-428定期出销售活动、拍照片送照片。"
+    },
+    {
+      "claim": "利用老客户推荐新客户进行营销",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000437-439用老客户推新客户、老客户拉新。"
+    },
+    {
+      "claim": "针对不同人群采用差异化营销策略",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000446-451按不同人群/年龄用不同方式面对。"
+    },
+    {
+      "claim": "成立专门小组负责处理客户对拍摄照片的不满意或改进建议",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000472-475成立小组联系售后、照片不满意及时更改解决(D13)。"
+    },
+    {
+      "claim": "待办:明确项目投资负责人",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "seg-000013确定是否投资及负责人、seg-000478负责人做好安排(金标A01);表述为待办方向合理但未明确指派对象。"
+    },
+    {
+      "claim": "待办:调查学生对证件照价格的敏感度",
+      "status": "unsupported",
+      "severity": "critical",
+      "reason": "seg-000174 speaker_2称已做调查问卷了解学生倾向,时间线并无'调查证件照价格敏感度'这一未来待办,系凭讨论臆造行动项。"
+    },
+    {
+      "claim": "待办:确定长期专业摄影师招聘标准（负责人 speaker_6）",
+      "status": "unsupported",
+      "severity": "critical",
+      "reason": "时间线仅有speaker_6主张找长期专业摄影师(seg-000233),并未设立'招聘标准'待办,更未指派speaker_6为负责人,系编造owner。"
+    },
+    {
+      "claim": "待办:与景点合作开展旅拍",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "内容有据(seg-000302-309),但属提议非已定行动(D07)。"
+    },
+    {
+      "claim": "待办:与学校、景区合作承包业务",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000328-332谈合作、承包业务,内容有据。"
+    },
+    {
+      "claim": "待办:讨论开业前三天的策略",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "开业前三天打五折已被讨论(seg-000371-372),将其列为待讨论待办属对讨论内容的弱概括。"
+    },
+    {
+      "claim": "待办:启动打五折促销活动",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "内容源自seg-000371-372提议,属提议内容。"
+    },
+    {
+      "claim": "待办:招聘具备耐心和学习能力的助理",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000413-415有据。"
+    },
+    {
+      "claim": "待办:配置专业PS后期制作人员",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000417聘请后期PS师有据。"
+    },
+    {
+      "claim": "待办:定期开展销售活动",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000427定期出销售活动有据。"
+    },
+    {
+      "claim": "待办:成立客户反馈小组",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000472-475成立售后小组有据(D13)。"
+    },
+    {
+      "claim": "概览:确定选址学校和小区周边并规避商业区高租金风险",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000220-221选学校小区、避商业区高租金,与D01一致。"
+    },
+    {
+      "claim": "概览:兼顾学生证件照需求与婚纱高利润项目",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000094婚纱利润大,seg-000061-062学生证件照,seg-000179证件照拓展、主打婚纱写真。"
+    },
+    {
+      "claim": "章1:财务部建议选址商业区以利用高人流量",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000026-030财务(speaker_3)建议商业区、人流量大(CF03/D02)。"
+    },
+    {
+      "claim": "章1:宣传部主张开在商场街避免与婚纱店直接竞争",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000041宣传部主张商场街,seg-000043-044避免与众多婚纱店竞争。"
+    },
+    {
+      "claim": "章1:风险评估部建议避开中心区减少竞争",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000058风险评估建议不太偏中心区、竞争少一点。"
+    },
+    {
+      "claim": "章2:影楼定位中高档",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000070定位中高档、seg-000228主打中高档。"
+    },
+    {
+      "claim": "章2:目前已通过校园及社区宣传接触目标客户，已有少量婚纱照案例",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000112校园社区宣传,seg-000115已有好几家来拍结婚照/来询问(seg-000126)。"
+    },
+    {
+      "claim": "章5:宣传部确认一年内可实现盈利，半年内不亏损",
+      "status": "contradiction",
+      "severity": "critical",
+      "reason": "给出期限的是风险评估speaker_6'一年到半年之内'(seg-000213)而非宣传部,且财务称半年一年会保持亏损(seg-000295);候选错误归因宣传部并编造'半年内不亏损'的确定结论。"
+    },
+    {
+      "claim": "章6:财务部门同意提供免费妆容可覆盖短期亏损，因化妆品和婚纱使用周期长",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "使用周期长不担心亏损是风险评估speaker_6所说(seg-000296-297),财务仅称对妆容没别的意见(seg-000294);归因财务'同意可覆盖亏损'张冠李戴,部分支持。"
+    },
+    {
+      "claim": "章6:风险评估部门确认婚纱和摄影服务风险较低",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000275风险评估称租售结合风险相对最小。"
+    },
+    {
+      "claim": "章9:在2-3个月内启动打五折促销活动",
+      "status": "partial",
+      "severity": "normal",
+      "reason": "打五折是开业前三天(seg-000371-372),两三个月是抽名免费拍活动的周期(seg-000383-384);候选把打五折与2-3个月周期混淆。"
+    },
+    {
+      "claim": "章11:老客户拉新可赠送摆台，拉够十/二十/三十可给钱财奖励",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "seg-000458赠摆台,seg-000460拉够十/二十/三十给钱财奖励(D12)。"
+    },
+    {
+      "claim": "金句:很多人都想通过拍照儿留下珍贵一幕当成回忆",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "逐字对应seg-000016。"
+    },
+    {
+      "claim": "金句:婚纱照找好环境拍摄、主打写真进行宣传效果好",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "逐字对应seg-000050。"
+    },
+    {
+      "claim": "金句:更多重心放在品质上才会走得更长远",
+      "status": "supported",
+      "severity": "normal",
+      "reason": "逐字对应seg-000220-222。"
+    }
+  ],
+  "faithfulness": "0.82",
+  "critical_count": "4",
+  "over_decisions": [
+    {
+      "proposal_id": "D02",
+      "reason": "候选决策首条'确定摄影公司选址在商场街'把财务部关于商业区/商场街的提议直接升格为已定决策(且与真实决定D01矛盾)。"
+    },
+    {
+      "proposal_id": "D04",
+      "reason": "'摄影师需长期聘用专业人员'把长期专业摄影师的提议表述为决策。"
+    },
+    {
+      "proposal_id": "D05",
+      "reason": "'服装...用于租赁而非直接销售'及'客户租赁/购买灵活'把服装租售结合的提议列为决策。"
+    },
+    {
+      "proposal_id": "D06",
+      "reason": "'提供免费妆容、造型和发型服务'把免费妆容提议列为决策。"
+    },
+    {
+      "proposal_id": "D07",
+      "reason": "'与景点合作进行婚纱照外景拍摄'既列入决策又列入待办,把景点合作提议升格。"
+    },
+    {
+      "proposal_id": "D08",
+      "reason": "'举办免费写真拍摄活动'把遭质疑与反对、未拍板的抽奖免费写真提议表述为已定决策。"
+    },
+    {
+      "proposal_id": "D09",
+      "reason": "'在开业前三天举行打五折活动'既列决策又列待办,把打五折提议升格为决策/待办。"
+    },
+    {
+      "proposal_id": "D10",
+      "reason": "'开业后逐步减少活动频率...免费拍摄'把前几个月抽名免费拍普通照的提议表述为决策。"
+    },
+    {
+      "proposal_id": "D11",
+      "reason": "'建立客户群通过群内红包抽选吸引免费拍摄'把建群发红包的提议列为决策。"
+    },
+    {
+      "proposal_id": "D12",
+      "reason": "'利用老客户推荐新客户营销'及章内赠摆台/钱财奖励把老客户拉新奖励提议表述为既定营销决策。"
+    },
+    {
+      "proposal_id": "D13",
+      "reason": "'成立专门小组处理客户不满意/改进建议'既列决策又列待办,把成立售后小组的提议升格。"
+    }
+  ],
+  "missed_decisions": [],
+  "verdict": "fail"
+}
