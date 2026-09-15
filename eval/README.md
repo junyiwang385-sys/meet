@@ -1,7 +1,14 @@
 # meet 评测框架
 
-基于 **DeepEval**(业界开源 LLM 评测框架)+ **千问 qwen3.8-max 裁判**,融合项目已有的人工金标与召回逻辑。
-评测跑在 PC/CI,不上板端;裁判用云端千问(比端侧 4B 大 → 判定可靠),不影响端侧离线部署。
+> 口径已对齐现实(2026-09-14):**核心 = 自建确定性评测(独立 Python,主判据)**;
+> **DeepEval = 可选 CI 皮**(把 L1 指标包成 BaseMetric + GEval 裁判,为 CI 门禁);
+> **裁判默认本地 Ollama(无 key、不出网)**,决策符合度权威用 opus 子agent,云千问可选。
+> 主入口 `python eval/run_all.py` → `reports/RESULTS_main`。全景见 `评测框架总览.md`,契约见其 §四。
+
+**注意主次**:本项目 62 个评测脚本里只有 6 个用 DeepEval;银标召回 / 维度 / 决策符合度 / 转写 / 分章
+全是独立 Python,不依赖 DeepEval 也能全跑。DeepEval 只贡献 L2 的 GEval 裁判指标 + `deepeval test run` CI 壳。
+
+下面这套 DeepEval 8 指标是**其中的 L1+L2 封装**(评测跑 PC/CI,不上板端;裁判可本地/云,不影响端侧离线部署):
 
 ## 指标(8 个,两层)+ 裁判校准
 

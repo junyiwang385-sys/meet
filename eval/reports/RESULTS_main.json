@@ -1,0 +1,21 @@
+{
+  "line": "clean n=30",
+  "sections": {
+    "dimensions": {
+      "n": 30,
+      "line": "clean",
+      "core_recall": 0.824,
+      "dec_cover": 0.907,
+      "dec_out": 1.227,
+      "act_cover": 0.931,
+      "act_out": 2.743,
+      "quote_verbatim": 0.853
+    },
+    "l1": {
+      "anchor": 1.0,
+      "keyword_purity": 1.0,
+      "owner": 0.13776666666666668,
+      "keypoint_recall": 0.97925
+    }
+  }
+}
