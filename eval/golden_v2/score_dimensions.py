@@ -167,6 +167,18 @@ def main():
               f"金句逐字保真={mrate('quote_verbatim'):.2f}")
         print("解读: 覆盖=该条内容在纪要里被提到(理解到了); 产出=结构化字段产出条数/金标条数;"
               " '覆盖高但产出低'=理解到了却没抽成结构(尤其待办, 印证 4B 抽取弱); 参考为银标、文本比对, 供方向判断。")
+        # 供 run_all 聚合:落盘 aggregate + 逐场
+        agg = {
+            "n": n, "line": "clean" if CLEAN else "board",
+            "core_recall": round(mean(lambda r: r["core_recall"]), 3),
+            "dec_cover": round(mrate("dec_cover"), 3), "dec_out": round(mrate("dec_out"), 3),
+            "act_cover": round(mrate("act_cover"), 3), "act_out": round(mrate("act_out"), 3),
+            "quote_verbatim": round(mrate("quote_verbatim"), 3),
+        }
+        out = ROOT / f"eval/reports/dimensions/results_{agg['line']}.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps({"aggregate": agg, "rows": rows}, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"→ {out}")
 
 
 if __name__ == "__main__":

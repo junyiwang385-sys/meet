@@ -52,9 +52,15 @@ def main() -> int:
                   for p in (ROOT / "eval/golden_v2/out").glob("*.golden.json"))
     have_key = bool(os.environ.get("DASHSCOPE_API_KEY"))
     # 裁判选择:默认本地 Ollama(无 key、不出网);JUDGE_BACKEND=qwen 且设了 DASHSCOPE_API_KEY 才用云千问。
+    # --no-l2:只跑 L1 确定性(run_all 的确定性骨架用,不碰裁判)。
     l2 = []
     backend = os.environ.get("JUDGE_BACKEND", "ollama")
+    if "--no-l2" in sys.argv:
+        print("--no-l2 → 仅跑 L1 确定性")
+        backend = "none"
     try:
+        if backend == "none":
+            raise RuntimeError("L2 skipped")
         from metrics.geval_metrics import faithfulness, completeness, conciseness
         if backend == "qwen" and have_key:
             from judge.qwen_judge import QwenJudge
