@@ -1,0 +1,220 @@
+[
+  {
+    "mid": "20200706_L_R001S01C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.182
+  },
+  {
+    "mid": "20200706_L_R001S02C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.2
+  },
+  {
+    "mid": "20200706_L_R001S03C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200706_L_R001S04C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.214
+  },
+  {
+    "mid": "20200706_L_R001S05C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200706_L_R001S06C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200706_L_R001S07C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.25
+  },
+  {
+    "mid": "20200706_L_R001S08C01",
+    "has_golden": true,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0,
+    "KeypointRecall": 1.0,
+    "KeypointRecall_lowfreq": 1.0
+  },
+  {
+    "mid": "20200707_L_R001S01C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.474
+  },
+  {
+    "mid": "20200707_L_R001S02C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.417
+  },
+  {
+    "mid": "20200707_L_R001S03C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.32
+  },
+  {
+    "mid": "20200707_L_R001S04C01",
+    "has_golden": true,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.235,
+    "KeypointRecall": 0.917,
+    "KeypointRecall_lowfreq": 0.667
+  },
+  {
+    "mid": "20200707_L_R001S05C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200707_L_R001S06C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.067
+  },
+  {
+    "mid": "20200707_L_R001S07C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.2
+  },
+  {
+    "mid": "20200707_L_R001S08C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200708_L_R002S01C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": null,
+    "DecisionOwnerMetric": 0.143
+  },
+  {
+    "mid": "20200708_L_R002S02C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200708_L_R002S03C01",
+    "has_golden": true,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0,
+    "KeypointRecall": 1.0,
+    "KeypointRecall_lowfreq": null
+  },
+  {
+    "mid": "20200708_L_R002S04C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.125
+  },
+  {
+    "mid": "20200708_L_R002S05C01",
+    "has_golden": true,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.222,
+    "KeypointRecall": 1.0,
+    "KeypointRecall_lowfreq": 1.0
+  },
+  {
+    "mid": "20200708_L_R002S07C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.154
+  },
+  {
+    "mid": "20200708_L_R002S08C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.062
+  },
+  {
+    "mid": "20200709_L_R002S01C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.333
+  },
+  {
+    "mid": "20200709_L_R002S03C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.273
+  },
+  {
+    "mid": "20200709_L_R002S04C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200709_L_R002S05C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200709_L_R002S06C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.062
+  },
+  {
+    "mid": "20200709_L_R002S07C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.0
+  },
+  {
+    "mid": "20200709_L_R002S08C01",
+    "has_golden": false,
+    "AnchorSupportMetric": 1.0,
+    "KeywordPurityMetric": 1.0,
+    "DecisionOwnerMetric": 0.2
+  }
+]
