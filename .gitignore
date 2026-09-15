@@ -58,3 +58,20 @@ data/lifelog_quant/dataset_np/
 eval/reports/**/_g*/
 eval/reports/**/_llm/
 eval/reports/ctx_exp_*/A*/
+
+# eval 中间产物/scratch(生成物,不入库)
+eval/_pc_clean/
+eval/_pc_full_minutes/
+eval/local_rerun/
+eval/golden_v2/_pc_*/
+eval/transcription/_out/
+eval/finetune/_out/
+eval/finetune/_data/
+# eval 实验报告的逐块 LLM dump(留 RESULTS*.md,丢 scratch)
+eval/reports/ctx_exp_*/
+eval/reports/chunk_size_g2/*/
+eval/reports/batch_g2/*/
+eval/reports/a3b_g2/*/
+eval/reports/a0_vs_a1/*/
+eval/reports/cross_ref/*/
+!eval/reports/**/RESULTS*.md

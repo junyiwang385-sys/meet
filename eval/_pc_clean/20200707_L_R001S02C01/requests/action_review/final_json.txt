@@ -1,8 +1,0 @@
-{
-  "task": "请主播多拍卖货视频",
-  "owner": null,
-  "deadline": null,
-  "refs": [
-    "r1"
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "task": "申请监控盲区报表",
-  "owner": "sp2",
-  "deadline": null,
-  "refs": [
-    "r64"
-  ]
-}

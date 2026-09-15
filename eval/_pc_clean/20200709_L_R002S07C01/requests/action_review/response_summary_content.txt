@@ -1,8 +1,0 @@
-{
-  "task": "确定河北15天行程方案",
-  "owner": "sp3",
-  "deadline": null,
-  "refs": [
-    "r44"
-  ]
-}

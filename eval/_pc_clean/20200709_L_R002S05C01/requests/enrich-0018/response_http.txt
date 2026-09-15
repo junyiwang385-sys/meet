@@ -1,1 +1,0 @@
-{"model":"qwen3:4b","created_at":"2026-09-14T13:39:34.0336882Z","message":{"role":"assistant","content":"{\"purpose\": \"明确幼儿园安全接送流程优化及各园运营关键问题的协同解决\"}"},"done":true,"done_reason":"stop","total_duration":754743500,"load_duration":1049800,"prompt_eval_count":1093,"prompt_eval_duration":300723000,"eval_count":21,"eval_duration":283100000}

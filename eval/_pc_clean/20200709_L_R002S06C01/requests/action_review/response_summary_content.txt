@@ -1,8 +1,0 @@
-{
-  "task": "协调DJ到店时间及安排",
-  "owner": "sp6",
-  "deadline": null,
-  "refs": [
-    "r10"
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "task": "对本地英语教师进行外教教学方法培训",
-  "owner": null,
-  "deadline": null,
-  "refs": [
-    "r1"
-  ]
-}

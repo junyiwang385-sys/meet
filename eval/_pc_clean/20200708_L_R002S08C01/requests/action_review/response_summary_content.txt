@@ -1,8 +1,0 @@
-{
-  "task": "协商僵尸车问题",
-  "owner": null,
-  "deadline": null,
-  "refs": [
-    "r2"
-  ]
-}

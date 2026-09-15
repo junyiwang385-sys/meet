@@ -1,2 +1,0 @@
-{"summaries":[{"seg":1,"summary":"..."}, {"seg":2,"summary":"..."}, {"seg":3,"summary":"..."}, {"seg":4,"summary":"..."}] 
-}

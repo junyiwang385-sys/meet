@@ -1,8 +1,0 @@
-{
-  "task": "招募精通按摩原理及肌肉群作用的人员",
-  "owner": null,
-  "deadline": null,
-  "refs": [
-    "r74"
-  ]
-  }
