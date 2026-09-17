@@ -74,6 +74,7 @@ _KIND_OUTPUT_TOKENS = {
     "full-summary": 1400,
     "speaker-batch": 1400,
     "action-review": 3072,
+    "decision-extract": 768,
     "full": 3072,
 }
 

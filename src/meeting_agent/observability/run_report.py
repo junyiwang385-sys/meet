@@ -68,6 +68,10 @@ def _kind_from_dir(request_dir: pathlib.Path, llm_dir: pathlib.Path) -> str:
         return "action-review"
     if rel.startswith("requests/speaker_batches"):
         return "speaker-batch"
+    if rel.startswith("requests/enrich"):
+        return "enrichment"
+    if rel.startswith("decisions/"):
+        return "decision-extract"
     return "other"
 
 
@@ -228,11 +232,17 @@ def build_run_report(root: pathlib.Path) -> dict[str, Any]:
     report["enrichment"] = {
         "present": bool(enrichment),
         "keywords": len(enrichment.get("keywords") or []),
+        "keyword_index": len(enrichment.get("keyword_index") or []),
         "qa": len(enrichment.get("qa") or []),
         "quotes": len(quotes),
         "quotes_verbatim": sum(1 for q in quotes if isinstance(q, dict) and q.get("verbatim")),
         "decisions": len(enrichment.get("decisions") or []),
         "has_outline": bool(enrichment.get("outline_summary")),
+    }
+    # 决策双口径:A2 起决策提回主链路(summary.decisions 为权威),enrichment.decisions 为旧口径(待删)。
+    report["decisions_source"] = {
+        "summary": len(meeting_summary.get("decisions") or []),
+        "enrichment": len(enrichment.get("decisions") or []),
     }
 
     # 内存峰值 + 泄漏判定：读 runtime/memory_summary.json（键名跨采样器可能不同，多候选 + 存原始键）
@@ -315,7 +325,7 @@ def _optimization_flags(report: dict[str, Any]) -> list[str]:
         flags.append(f"speaker 假边界多：{seg['blocks_opened_by_speaker']}/{bc} 块由换人开启（过切嫌疑）")
 
     # think 未关：抽取类仍有 thinking
-    for kind in ("block-summary", "full-summary", "speaker-batch"):
+    for kind in ("block-summary", "full-summary", "speaker-batch", "decision-extract"):
         st = econ["thinking_chars_by_kind"].get(kind)
         if st and st.get("avg"):
             flags.append(f"think 未关：{kind} 仍在思考（均 {st['avg']} 字/次），应 /no_think")
