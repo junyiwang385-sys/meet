@@ -29,8 +29,16 @@ def candidate_text_from(mr: dict) -> str:
         parts.append("【概览】" + (ov.get("text") if isinstance(ov, dict) else str(ov)))
     for ch in summary.get("chapters") or []:
         parts.append(f"【章】{ch.get('title','')}：{ch.get('overview','')}")
-    for d in enrich.get("decisions") or []:
-        parts.append(f"【决策】{d.get('decision','') if isinstance(d, dict) else d}")
+    # 决策口径:优先 A2 的 summary.decisions(带 type=decision/proposal,权威、评测卖点 over 以此为准);
+    # 无则回退旧 enrichment.decisions(富展示视图,decision 字段)。
+    summary_decisions = summary.get("decisions") or []
+    if summary_decisions:
+        for d in summary_decisions:
+            typ = d.get("type") or "decision"
+            parts.append(f"【决策/{typ}】{d.get('text', '')}")
+    else:
+        for d in enrich.get("decisions") or []:
+            parts.append(f"【决策】{d.get('decision', '') if isinstance(d, dict) else d}")
     for a in summary.get("action_items") or []:
         parts.append(f"【待办】{a.get('task','')}（负责人 {a.get('owner') or '—'}）")
     for q in (enrich.get("quotes") or [])[:10]:
