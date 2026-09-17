@@ -1174,6 +1174,66 @@ def _fallback_block_summary(
     }
 
 
+# ── A2 决策抽取:独立调用(保专用注意力)+ 复用 A 层块 + key_points 当锚 + 收紧 decision/proposal 判定 ──
+_DECISION_SYS = "你是会议事实整理器,只依据当前提供的会议内容,输出严格 JSON,不解释、不编造。"
+
+
+def _decision_messages(block_segments: list[dict[str, Any]], key_points: list[str]) -> list[dict[str, str]]:
+    """块级决策抽取提示词。key_points 作锚(帮定位,不照抄);收紧判定压 over_decision。"""
+    kp = "；".join(str(k) for k in (key_points or []) if str(k).strip())
+    user = (
+        "从下面这一小段会议 Timeline 抽取【决策与提议】。\n"
+        f"本块已抽要点(仅作定位锚,不要照抄):{kp}\n\n"
+        "严格判定(收紧,防把讨论写成决定):\n"
+        "- decision = 会议明确拍板 / 形成结论 / 已决定实施的事项;\n"
+        "- proposal = 只是建议 / 设想 / 讨论中 / 等确认 / 有分歧、尚未拍板的;\n"
+        "- 拿不准是否已拍板 → 一律记 proposal,绝不升格成 decision;\n"
+        "- 每条:{text: 一句话完整表述, type: \"decision\"或\"proposal\", owner: 负责人的 seg-id 或 null, "
+        "refs: [支持该条的本段 seg-id]};\n"
+        "- 只依据本段,不编造;owner 无明确依据用 null;refs 必须是本段出现的 seg-id。\n"
+        "输出 {\"decisions\":[...]};本段无决策或提议时输出 {\"decisions\":[]}。\n\nTimeline:\n"
+        + render_timeline(block_segments)
+    )
+    return [{"role": "system", "content": _DECISION_SYS}, {"role": "user", "content": user}]
+
+
+def _validate_decisions(
+    content: str, finish_reason: Any, truncated: bool, block_seg_ids: set[str]
+) -> list[dict[str, Any]]:
+    if finish_reason != "stop":
+        raise SummaryValidationError(f"decision finish_reason is {finish_reason!r}")
+    if truncated:
+        raise SummaryValidationError("decision input was truncated")
+    raw = parse_content(content)
+    items = raw.get("decisions")
+    items = items if isinstance(items, list) else []
+    out: list[dict[str, Any]] = []
+    for d in items:
+        if not isinstance(d, dict):
+            continue
+        text = clean_text(d.get("text") or d.get("decision"))
+        if not text:
+            continue
+        refs = [str(r) for r in (d.get("refs") or []) if str(r) in block_seg_ids]
+        if not refs:
+            continue  # 证据锚不上本段 → 丢(不编造)
+        owner = d.get("owner")
+        owner = str(owner) if owner and str(owner) in block_seg_ids else None
+        typ = d.get("type") if d.get("type") in ("decision", "proposal") else "proposal"
+        out.append({"text": text, "type": typ, "owner": owner, "refs": refs})
+    return out
+
+
+def _dedup_decisions(decisions: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """跨块按文本近似去重(复用 _task_similar);decision 优先于同义 proposal。"""
+    kept: list[dict[str, Any]] = []
+    for d in sorted(decisions, key=lambda x: 0 if x.get("type") == "decision" else 1):
+        if any(_task_similar(d["text"], k["text"]) for k in kept):
+            continue
+        kept.append(d)
+    return kept
+
+
 def _fallback_overview(
     chapters: list[dict[str, Any]],
     segment_by_id: dict[str, dict[str, Any]],
@@ -2163,6 +2223,34 @@ def run_product_summary_stage(
             if len(floor) > len(action_items):
                 action_items = floor
 
+        # A2 决策抽取:决策提回主链路——独立调用(保专用注意力,不并进块摘要)、复用 A 层块、
+        # 喂 block 已抽 key_points 当锚、收紧 decision/proposal 判定。某块失败优雅降级(跳过不崩)。
+        decisions: list[dict[str, Any]] = []
+        for block in block_results:
+            dseg_ids = {str(sid) for sid in block["segment_ids"]}
+            dsegs = [segment_by_id[sid] for sid in block["segment_ids"] if sid in segment_by_id]
+            if not dsegs:
+                continue
+            dec_messages = _decision_messages(dsegs, block.get("key_points") or [])
+            dec_estimate = estimate_message_tokens(dec_messages, budget)
+            if dec_estimate > budget.input_token_budget:
+                continue
+            try:
+                block_decisions = run_request(
+                    messages=dec_messages,
+                    request_dir=out_dir / "decisions" / block["block_id"],
+                    request_id=f"decision-{block['block_id']}",
+                    request_kind="decision-extract",
+                    phase="llm_decision",
+                    estimate=dec_estimate,
+                    validator=(lambda content, finish_reason, truncated, ids=dseg_ids:
+                               _validate_decisions(content, finish_reason, truncated, ids)),
+                )
+                decisions.extend(block_decisions)
+            except SummaryValidationError:
+                continue
+        decisions = _dedup_decisions(decisions)
+
         speaker_documents = _build_speaker_documents(nonempty)
         speaker_documents, speaker_truncations = _truncate_speaker_documents(
             speaker_documents,
@@ -2308,6 +2396,9 @@ def run_product_summary_stage(
             }
         )
         summary, quality = validate_summary_object(summary, segments)
+        # A2:validate 后回填决策(保住 decision/proposal 的 type;refs 已在 _validate_decisions 校验过)。
+        summary["decisions"] = decisions
+        quality["checks"]["decisions_from_blocks"] = True
         quality["checks"].update(
             {
                 "full_meeting_coverage": segmentation["coverage_complete"],
